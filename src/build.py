@@ -898,7 +898,7 @@ def build_home(games_data: list[tuple[dict, dict]]) -> str:
 <section class="panel"><h2>How we call it</h2>{legend_html()}
 <p style="margin-top:var(--s4)"><a href="/faq/">Read the FAQ →</a></p></section>
 """
-    return page_shell(f"Is it safe to update? — {SITE_NAME}", SITE_DESC, "/", "home", body + FILTER_JS, extra_jsonld=[itemlist])
+    return page_shell(f"ModSafe — Is it safe to update? Mod compatibility for {len(GAMES)} games", SITE_DESC, "/", "home", body + FILTER_JS, extra_jsonld=[itemlist])
 
 
 def build_games_index(games_data) -> str:
