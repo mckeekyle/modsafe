@@ -1,0 +1,122 @@
+{
+  "game": "msfs-2024",
+  "verified_at": "2026-10-15",
+  "manager": {
+    "name": "Community folder (+ FlyByWire Installer)",
+    "url": "https://github.com/flybywiresim/installer"
+  },
+  "intro": "Free, well-maintained add-ons that most simmers start with. Everything goes in the Community folder or installs through its own official installer.",
+  "mods": [
+    {
+      "id": "fbw-installer",
+      "name": "FlyByWire Installer",
+      "category": "Tools",
+      "summary": "Official installer and updater for FlyByWire aircraft and SimBridge; keeps them in sync with Sim Updates.",
+      "source": "github",
+      "url": "https://github.com/flybywiresim/installer",
+      "requires": []
+    },
+    {
+      "id": "fbw-a32nx",
+      "name": "FlyByWire A32NX",
+      "category": "Aircraft",
+      "summary": "Study-level freeware A320neo with realistic systems and flight management.",
+      "source": "official",
+      "url": "https://docs.flybywiresim.com/aircraft/a32nx/",
+      "requires": [
+        "fbw-installer"
+      ],
+      "framework_id": "fbw-a32nx",
+      "note": "Pick the MSFS 2024 build in the installer."
+    },
+    {
+      "id": "fbw-a380x",
+      "name": "FlyByWire A380X",
+      "category": "Aircraft",
+      "summary": "Freeware A380 from the same team, with detailed systems and cockpit.",
+      "source": "official",
+      "url": "https://docs.flybywiresim.com/aircraft/a380x/",
+      "requires": [
+        "fbw-installer"
+      ]
+    },
+    {
+      "id": "simbridge",
+      "name": "FlyByWire SimBridge",
+      "category": "Tools",
+      "summary": "Companion app for FlyByWire aircraft: charts, terrain display and remote MCDU in your browser.",
+      "source": "github",
+      "url": "https://github.com/flybywiresim/simbridge",
+      "requires": [
+        "fbw-installer"
+      ]
+    },
+    {
+      "id": "little-navmap",
+      "name": "Little Navmap",
+      "category": "Planning",
+      "summary": "Free flight planner and live moving map that connects to the sim over SimConnect.",
+      "source": "github",
+      "url": "https://github.com/albar965/littlenavmap",
+      "requires": []
+    },
+    {
+      "id": "volanta",
+      "name": "Volanta",
+      "category": "Tools",
+      "summary": "Free flight tracker and logbook with a live map and automatic flight history.",
+      "source": "official",
+      "url": "https://volanta.app/",
+      "requires": []
+    },
+    {
+      "id": "fsltl",
+      "name": "FSLTL (FS Live Traffic Liveries)",
+      "category": "Traffic",
+      "summary": "Free real-world AI traffic models and liveries, with an injector for live traffic.",
+      "source": "official",
+      "url": "https://fslivetrafficliveries.com/",
+      "requires": []
+    },
+    {
+      "id": "vpilot",
+      "name": "vPilot (VATSIM)",
+      "category": "Online",
+      "summary": "Pilot client for flying online with live human air traffic control on VATSIM.",
+      "source": "official",
+      "url": "https://vpilot.rosscarlson.dev/",
+      "requires": []
+    },
+    {
+      "id": "fsuipc7",
+      "name": "FSUIPC7 (free unregistered)",
+      "category": "Tools",
+      "summary": "Long-standing interface many add-ons, tools and cockpit builders depend on.",
+      "source": "official",
+      "url": "https://fsuipc.com/",
+      "requires": [],
+      "framework_id": "fsuipc7",
+      "note": "Unregistered use is free; some features need a paid key."
+    },
+    {
+      "id": "mobiflight",
+      "name": "MobiFlight Connector",
+      "category": "Hardware",
+      "summary": "Free software for home cockpit panels, Arduino builds and StreamDeck-style inputs.",
+      "source": "official",
+      "url": "https://www.mobiflight.com/",
+      "requires": [],
+      "framework_id": "mobiflight"
+    },
+    {
+      "id": "headwind-a339x",
+      "name": "Headwind A339X",
+      "category": "Aircraft",
+      "summary": "Freeware A330-900neo built on FlyByWire tech. Check its site for MSFS 2024 support.",
+      "source": "official",
+      "url": "https://headwindsim.net/",
+      "requires": []
+    }
+  ],
+  "noun": "add-ons"
+}

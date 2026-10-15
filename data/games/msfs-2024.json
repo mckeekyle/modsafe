@@ -1,0 +1,427 @@
+{
+  "generated_at": "2026-10-15T23:57:53Z",
+  "game": {
+    "slug": "msfs-2024",
+    "name": "Microsoft Flight Simulator 2024",
+    "steam_appid": 2537590,
+    "latest_patch": {
+      "version": "7",
+      "label": "Sim Update 7",
+      "title": "Sim Update 7 Release Notes [1.9.18.0] - Available Now",
+      "published_at": "2026-10-13T22:44:53Z",
+      "published_unix": 1791931493,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1846651706672616"
+    }
+  },
+  "verdict": "Just patched, wait",
+  "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
+  "frameworks": [
+    {
+      "id": "fbw-a32nx",
+      "name": "FlyByWire A32NX (freeware)",
+      "short": "FBW A32NX",
+      "url": "https://flybywiresim.com/",
+      "source": "github",
+      "repo": "flybywiresim/aircraft",
+      "tracked": true,
+      "sensitive": true,
+      "status": "Just patched, wait",
+      "base_status": "Unknown / check",
+      "reason": "Latest release predates patch Sim Update 7; compatibility is unverified \u2014 check the project page.",
+      "breakage_reports": [],
+      "official": null,
+      "release_tag": "v2024.1.0",
+      "release_name": "v2024.1.0",
+      "release_published_at": "2026-08-22T18:22:33Z",
+      "release_url": "https://github.com/flybywiresim/aircraft/releases/tag/v2024.1.0",
+      "mentions_patch": false,
+      "newer_than_patch": false,
+      "mention_releases": []
+    },
+    {
+      "id": "fsuipc7",
+      "name": "FSUIPC7",
+      "short": "FSUIPC7",
+      "url": "https://fsuipc.com/",
+      "source": "fsuipc",
+      "repo": null,
+      "tracked": true,
+      "sensitive": true,
+      "status": "Just patched, wait",
+      "base_status": "Unknown / check",
+      "reason": "Latest release predates patch Sim Update 7; compatibility is unverified \u2014 check the project page.",
+      "breakage_reports": [],
+      "official": null,
+      "release_tag": "7.5.9",
+      "release_name": "FSUIPC7 7.5.9",
+      "release_published_at": "2026-09-29T12:00:00Z",
+      "release_url": "https://fsuipc.com/",
+      "mentions_patch": false,
+      "newer_than_patch": false,
+      "mention_releases": []
+    },
+    {
+      "id": "mobiflight",
+      "name": "MobiFlight Connector (SimConnect/WASM)",
+      "short": "MobiFlight",
+      "url": "https://www.mobiflight.com/",
+      "source": "github",
+      "repo": "MobiFlight/MobiFlight-Connector",
+      "tracked": true,
+      "sensitive": true,
+      "status": "Just patched, wait",
+      "base_status": "Unknown / check",
+      "reason": "Latest release predates patch Sim Update 7; compatibility is unverified \u2014 check the project page.",
+      "breakage_reports": [],
+      "official": null,
+      "release_tag": "11.3.1",
+      "release_name": "11.3.1 (Hotfix)",
+      "release_published_at": "2026-10-06T10:51:23Z",
+      "release_url": "https://github.com/MobiFlight/MobiFlight-Connector/releases/tag/11.3.1",
+      "mentions_patch": false,
+      "newer_than_patch": false,
+      "mention_releases": []
+    },
+    {
+      "id": "navigraph",
+      "name": "Navigraph Navdata Center",
+      "short": "Navigraph",
+      "url": "https://navigraph.com/downloads",
+      "source": "manual",
+      "tracked": false,
+      "sensitive": false,
+      "status": "Not affected by patches",
+      "reason": "Installs AIRAC navigation data into the Community folder; it follows the 28-day AIRAC cycle, not sim patches. No public release feed; check navigraph.com/downloads after a Sim Update.",
+      "release_tag": null,
+      "release_published_at": null,
+      "release_url": "https://navigraph.com/downloads"
+    }
+  ],
+  "history": [
+    {
+      "version": "7",
+      "label": "Sim Update 7",
+      "title": "Sim Update 7 Release Notes [1.9.18.0] - Available Now",
+      "published_at": "2026-10-13T22:44:53Z",
+      "published_unix": 1791931493,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1846651706672616",
+      "frameworks": [
+        {
+          "id": "fbw-a32nx",
+          "short": "FBW A32NX",
+          "name": "FlyByWire A32NX (freeware)",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        },
+        {
+          "id": "fsuipc7",
+          "short": "FSUIPC7",
+          "name": "FSUIPC7",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        },
+        {
+          "id": "mobiflight",
+          "short": "MobiFlight",
+          "name": "MobiFlight Connector (SimConnect/WASM)",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "6",
+      "label": "Sim Update 6",
+      "title": "Sim Update 6 Release Notes [1.8.14.0] - Available Now",
+      "published_at": "2026-08-13T18:03:05Z",
+      "published_unix": 1786644185,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840944183777571",
+      "frameworks": [
+        {
+          "id": "fbw-a32nx",
+          "short": "FBW A32NX",
+          "name": "FlyByWire A32NX (freeware)",
+          "status": "Likely safe",
+          "release_tag": "v2024.1.0",
+          "release_published_at": "2026-08-22T18:22:33Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "fsuipc7",
+          "short": "FSUIPC7",
+          "name": "FSUIPC7",
+          "status": "Likely safe",
+          "release_tag": "7.5.9",
+          "release_published_at": "2026-09-29T12:00:00Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "mobiflight",
+          "short": "MobiFlight",
+          "name": "MobiFlight Connector (SimConnect/WASM)",
+          "status": "Likely safe",
+          "release_tag": "11.2.0.3",
+          "release_published_at": "2026-08-19T13:49:44Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "5.1",
+      "label": "Sim Update 5.1",
+      "title": "Sim Update 5.1 Release Notes [1.7.35.0] - Available Now",
+      "published_at": "2026-06-29T20:12:16Z",
+      "published_unix": 1782763936,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1836506165560919",
+      "frameworks": [
+        {
+          "id": "fbw-a32nx",
+          "short": "FBW A32NX",
+          "name": "FlyByWire A32NX (freeware)",
+          "status": "Likely safe",
+          "release_tag": "v2024.1.0",
+          "release_published_at": "2026-08-22T18:22:33Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "fsuipc7",
+          "short": "FSUIPC7",
+          "name": "FSUIPC7",
+          "status": "Likely safe",
+          "release_tag": "7.5.9",
+          "release_published_at": "2026-09-29T12:00:00Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "mobiflight",
+          "short": "MobiFlight",
+          "name": "MobiFlight Connector (SimConnect/WASM)",
+          "status": "Likely safe",
+          "release_tag": "11.2.0",
+          "release_published_at": "2026-07-29T13:25:58Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "5",
+      "label": "Sim Update 5",
+      "title": "Sim Update 5 Release Notes [1.7.27.0] - Available Now",
+      "published_at": "2026-04-30T17:07:50Z",
+      "published_unix": 1777568870,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1831432155569075",
+      "frameworks": [
+        {
+          "id": "fbw-a32nx",
+          "short": "FBW A32NX",
+          "name": "FlyByWire A32NX (freeware)",
+          "status": "Likely safe",
+          "release_tag": "v2024.1.0",
+          "release_published_at": "2026-08-22T18:22:33Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "fsuipc7",
+          "short": "FSUIPC7",
+          "name": "FSUIPC7",
+          "status": "Likely safe",
+          "release_tag": "7.5.9",
+          "release_published_at": "2026-09-29T12:00:00Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "mobiflight",
+          "short": "MobiFlight",
+          "name": "MobiFlight Connector (SimConnect/WASM)",
+          "status": "Likely safe",
+          "release_tag": "11.1.0",
+          "release_published_at": "2026-05-13T06:49:37Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "4",
+      "label": "Sim Update 4",
+      "title": "Sim Update 4 Release Notes [1.6.32.0] - Available Now",
+      "published_at": "2025-12-08T16:05:00Z",
+      "published_unix": 1765209900,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1818118366182917",
+      "frameworks": [
+        {
+          "id": "fbw-a32nx",
+          "short": "FBW A32NX",
+          "name": "FlyByWire A32NX (freeware)",
+          "status": "Likely safe",
+          "release_tag": "v2024.1.0",
+          "release_published_at": "2026-08-22T18:22:33Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "fsuipc7",
+          "short": "FSUIPC7",
+          "name": "FSUIPC7",
+          "status": "Likely safe",
+          "release_tag": "7.5.9",
+          "release_published_at": "2026-09-29T12:00:00Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "mobiflight",
+          "short": "MobiFlight",
+          "name": "MobiFlight Connector (SimConnect/WASM)",
+          "status": "Likely safe",
+          "release_tag": "11.0.0",
+          "release_published_at": "2026-03-16T14:50:54Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "3",
+      "label": "Sim Update 3",
+      "title": "Sim Update 3 Release Notes [1.5.27.0] - Available Now",
+      "published_at": "2025-08-20T15:28:39Z",
+      "published_unix": 1755703719,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1808601382414131",
+      "frameworks": [
+        {
+          "id": "fbw-a32nx",
+          "short": "FBW A32NX",
+          "name": "FlyByWire A32NX (freeware)",
+          "status": "Likely safe",
+          "release_tag": "v2024.1.0",
+          "release_published_at": "2026-08-22T18:22:33Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "fsuipc7",
+          "short": "FSUIPC7",
+          "name": "FSUIPC7",
+          "status": "Likely safe",
+          "release_tag": "7.5.9",
+          "release_published_at": "2026-09-29T12:00:00Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "mobiflight",
+          "short": "MobiFlight",
+          "name": "MobiFlight Connector (SimConnect/WASM)",
+          "status": "Likely safe",
+          "release_tag": "11.0.0",
+          "release_published_at": "2026-03-16T14:50:54Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "2",
+      "label": "Sim Update 2",
+      "title": "Sim Update 2 Release Notes [1.4.20.0] - Available Now",
+      "published_at": "2025-05-15T15:09:50Z",
+      "published_unix": 1747321790,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1799817379471250",
+      "frameworks": [
+        {
+          "id": "fbw-a32nx",
+          "short": "FBW A32NX",
+          "name": "FlyByWire A32NX (freeware)",
+          "status": "Likely safe",
+          "release_tag": "v2024.1.0",
+          "release_published_at": "2026-08-22T18:22:33Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "fsuipc7",
+          "short": "FSUIPC7",
+          "name": "FSUIPC7",
+          "status": "Likely safe",
+          "release_tag": "7.5.9",
+          "release_published_at": "2026-09-29T12:00:00Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "mobiflight",
+          "short": "MobiFlight",
+          "name": "MobiFlight Connector (SimConnect/WASM)",
+          "status": "Safe",
+          "release_tag": "11.0.0",
+          "release_published_at": "2026-03-16T14:50:54Z",
+          "mentions_patch": true
+        }
+      ]
+    }
+  ],
+  "news": [
+    {
+      "title": "Sim Update 7 Release Notes [1.9.18.0] - Available Now",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1846651706672616",
+      "published_at": "2026-10-13T22:44:53Z",
+      "is_patch": true
+    },
+    {
+      "title": "Sim Update 6 Release Notes [1.8.14.0] - Available Now",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840944183777571",
+      "published_at": "2026-08-13T18:03:05Z",
+      "is_patch": true
+    },
+    {
+      "title": "World Update 22: United States National Parks",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1836506165568946",
+      "published_at": "2026-07-02T20:03:41Z",
+      "is_patch": false
+    },
+    {
+      "title": "Sim Update 5.1 Release Notes [1.7.35.0] - Available Now",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1836506165560919",
+      "published_at": "2026-06-29T20:12:16Z",
+      "is_patch": true
+    },
+    {
+      "title": "World Update 21: Australia",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1831432155580463",
+      "published_at": "2026-05-05T15:32:44Z",
+      "is_patch": false
+    },
+    {
+      "title": "Sim Update 5 Release Notes [1.7.27.0] - Available Now",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1831432155569075",
+      "published_at": "2026-04-30T17:07:50Z",
+      "is_patch": true
+    },
+    {
+      "title": "Sim Update 5 Beta Now Available | Microsoft Flight Simulator 2024",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1824644522840220",
+      "published_at": "2026-02-13T18:33:54Z",
+      "is_patch": false
+    },
+    {
+      "title": "Sim Update 4 Release Notes [1.6.32.0] - Available Now",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1818118366182917",
+      "published_at": "2025-12-08T16:05:00Z",
+      "is_patch": true
+    },
+    {
+      "title": "Top-Rated Aircraft Sale",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1813041031382779",
+      "published_at": "2025-10-14T20:30:11Z",
+      "is_patch": false
+    },
+    {
+      "title": "Microsoft Flight Simulator Releases World Update 20: Japan",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1811772772240522",
+      "published_at": "2025-09-25T10:30:30Z",
+      "is_patch": false
+    }
+  ],
+  "channels": [],
+  "sources": {
+    "steam_news": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=2537590&count=100"
+  }
+}

@@ -97,7 +97,23 @@ def gh_headers() -> dict:
 # --- source adapters: each returns a list of "release-like" dicts -------------
 
 def releases_github(fw: dict) -> list[dict]:
-    return http_get_json(f"https://api.github.com/repos/{fw['repo']}/releases?per_page=30", gh_headers())
+    rels = http_get_json(f"https://api.github.com/repos/{fw['repo']}/releases?per_page=30", gh_headers())
+    if fw.get("tag_prefix"):  # monorepos shipping several products (e.g. FlyByWire v2020.* vs v2024.*)
+        rels = [r for r in rels if (r.get("tag_name") or "").startswith(fw["tag_prefix"])]
+    return rels
+
+
+def releases_fsuipc(fw: dict) -> list[dict]:
+    """fsuipc.com (official) front page states 'FSUIPC7 Version 7.5.9 Released 29/09/2026'."""
+    import html as _h
+    import re as _re
+    t = _h.unescape(_re.sub(r"\s+", " ", _re.sub(r"<[^>]+>", " ", http_get_text("https://fsuipc.com/"))))
+    m = _re.search(r"FSUIPC7 Version (\d+\.\d+\.\d+[a-z]?) Released (\d{1,2})/(\d{1,2})/(\d{4})", t)
+    if not m:
+        raise RuntimeError("FSUIPC7 version not found on fsuipc.com")
+    v, d, mo, y = m.groups()
+    return [{"tag_name": v, "name": f"FSUIPC7 {v}", "body": "", "published_at": f"{y}-{int(mo):02d}-{int(d):02d}T12:00:00Z",
+             "html_url": "https://fsuipc.com/", "prerelease": False, "draft": False}]
 
 
 def releases_github_tags(fw: dict, n: int = 4) -> list[dict]:
@@ -151,7 +167,7 @@ def releases_decky_store(fw: dict) -> list[dict]:
              "html_url": fw["url"], "prerelease": False, "draft": False} for v in p.get("versions", [])[:10]]
 
 
-SOURCES = {"decky_store": releases_decky_store, "github": releases_github, "github_tags": releases_github_tags, "thunderstore": releases_thunderstore}
+SOURCES = {"fsuipc": releases_fsuipc, "decky_store": releases_decky_store, "github": releases_github, "github_tags": releases_github_tags, "thunderstore": releases_thunderstore}
 
 
 def http_get_text(url: str, timeout: int = 30) -> str:
@@ -218,8 +234,10 @@ def breakage_reports(repo: str, since_iso: str, patch_version: str | None, patch
 def manual_entry(fw: dict) -> dict:
     return {
         "id": fw["id"], "name": fw["name"], "short": fw["short"], "url": fw["url"],
-        "source": "manual", "tracked": False, "sensitive": True, "status": V_MANUAL,
-        "reason": fw.get("note", "Not tracked automatically — check the project page."),
+        "source": "manual", "tracked": False, "sensitive": not fw.get("agnostic"),
+        "status": "Not affected by patches" if fw.get("agnostic") else V_MANUAL,
+        "reason": " ".join(x for x in (fw.get("agnostic_note"), fw.get("note") or fw.get("manual_note")) if x)
+        or "Not tracked automatically — check the project page.",
         "release_tag": None, "release_published_at": None, "release_url": fw["url"],
     }
 

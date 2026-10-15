@@ -568,7 +568,7 @@ def vbadge(status: str) -> str:
 
 
 def badge(status: str, tracked: bool = True) -> str:
-    if not tracked:
+    if not tracked and status != "Not affected by patches":
         status = "Check manually"
     return f'<span class="badge {status_class(status)}">{icon(status)}{esc(status)}</span>'
 
@@ -577,9 +577,9 @@ def verdict_sentence(game: dict, data: dict) -> str:
     v = data["verdict"]
     p = data["game"]["latest_patch"]["label"]
     fws = [f for f in data["frameworks"] if f.get("tracked", True) and f.get("sensitive", True)]
-    manual = [f["short"] for f in data["frameworks"] if not f.get("tracked", True)]
+    manual = [f["short"] for f in data["frameworks"] if not f.get("tracked", True) and f["status"] == "Check manually"]
     worst = [f["short"] for f in fws if f["status"] == v]
-    tail = f" Also check {', '.join(manual)} manually (Nexus-only, not counted)." if manual else ""
+    tail = f" Also check {', '.join(manual)} manually (no public release feed, not counted)." if manual else ""
     if v == "Safe":
         msg = f"Every patch-sensitive framework has explicit support for {p}."
     elif v == "Likely safe":
@@ -625,7 +625,7 @@ LEGEND = [
     ("Breakage reported", "Open issues on the project's tracker say it broke after the patch."),
     ("Not ported yet", "Minecraft: no build exists for that version yet."),
     ("Not affected by patches", "Version-agnostic tools (mod managers, generic loaders). Not counted in the verdict."),
-    ("Check manually", "Nexus-only mods we can't track automatically. Not counted in the verdict."),
+    ("Check manually", "Tools without a public release feed (e.g. Nexus-only). Not counted in the verdict."),
 ]
 
 
@@ -710,7 +710,7 @@ def build_game_page(game: dict, data: dict) -> str:
 {f'<p class="note" role="note"><strong>⚠ {esc(game["note"])}</strong></p>' if game.get("note") else ''}
 </div>
 </section>
-<nav class="tabs" aria-label="On this page"><a href="#status">Status</a><a href="#fw-heading">Frameworks</a>{'<a href="#history">Patch history</a>' if data.get("history") else ''}{'<a href="#mods">Essential mods</a>' if mods_mod.load_mods(slug) else ''}<a href="#news">News</a><a href="#faq-heading">FAQ</a></nav>
+<nav class="tabs" aria-label="On this page"><a href="#status">Status</a><a href="#fw-heading">Frameworks</a>{'<a href="#history">Patch history</a>' if data.get("history") else ''}{'<a href="#mods">Essential ' + (mods_mod.load_mods(slug) or {}).get("noun", "mods") + '</a>' if mods_mod.load_mods(slug) else ''}<a href="#news">News</a><a href="#faq-heading">FAQ</a></nav>
 <div class="vgrid" id="status">
 <section class="panel" aria-labelledby="verdict-heading">
 <h2 id="verdict-heading">Verdict for {esc(p['label'])}</h2>
@@ -804,30 +804,31 @@ def mods_teaser(game: dict, data: dict) -> str:
         return ""
     s = game["slug"]
     guide = f'<a href="/{s}/install/">How to install →</a>' if mods_mod.load_guide(s) else ""
-    return (f'<div class="sec-head" id="mods"><h2>Essential mods</h2><span class="sec-links"><a href="/{s}/mods/">All {len(mods["mods"])} →</a> {guide}</span></div>'
+    return (f'<div class="sec-head" id="mods"><h2>Essential {mods.get("noun", "mods")}</h2><span class="sec-links"><a href="/{s}/mods/">All {len(mods["mods"])} →</a> {guide}</span></div>'
             f'<section class="mod-grid">{mod_cards(game, data, mods, 6)}</section>')
 
 
 def build_mods_page(game: dict, data: dict, mods: dict) -> str:
     slug = game["slug"]
     mgr = mods["manager"]
+    noun = mods.get("noun", "mods")
     body = f"""
-<p class="crumbs"><a href="/">Home</a> › <a href="/games/">Games</a> › <a href="/{slug}/">{esc(game['name'])}</a> › Essential mods</p>
-<section class="page-hero"><h1>Essential {esc(game['name'])} mods</h1>
+<p class="crumbs"><a href="/">Home</a> › <a href="/games/">Games</a> › <a href="/{slug}/">{esc(game['name'])}</a> › Essential {noun}</p>
+<section class="page-hero"><h1>Essential {esc(game['name'])} {noun}</h1>
 <p class="lede">{esc(mods['intro'])}</p>
 <p class="muted">Hand-picked by ModSafe, listed in install order. We link only to the official download pages and never host files. Badges reflect our live framework status for {esc(data['game']['latest_patch']['label'])}. List verified {esc(mods['verified_at'])}.</p>
-<p class="cta-row"><a class="btn" href="/{slug}/install/">📘 How to install mods</a> <a class="btn ghost" href="{esc(mgr['url'])}" rel="noopener external">Recommended manager: {esc(mgr['name'])} ↗</a>
+<p class="cta-row"><a class="btn" href="/{slug}/install/">📘 How to install {noun}</a> <a class="btn ghost" href="{esc(mgr['url'])}" rel="noopener external">Recommended manager: {esc(mgr['name'])} ↗</a>
 {f'<a class="btn ghost" href="{esc(mods["compat_list"])}" rel="noopener external">Community compatibility list ↗</a>' if mods.get('compat_list') else ''}</p>
 </section>
 <section class="mod-grid">{mod_cards(game, data, mods)}</section>
 <p class="disclaimer">Mod pages and requirements can change; always read the mod's own page before installing. Not affiliated with Nexus Mods or any mod author.</p>
 """
-    itemlist = {"@context": "https://schema.org", "@type": "ItemList", "name": f"Essential {game['name']} mods",
+    itemlist = {"@context": "https://schema.org", "@type": "ItemList", "name": f"Essential {game['name']} {noun}",
                 "itemListOrder": "https://schema.org/ItemListOrderAscending",
                 "itemListElement": [{"@type": "ListItem", "position": i, "name": m["name"], "url": m["url"]}
                                     for i, m in enumerate(mods["mods"], 1)]}
-    return page_shell(f"Essential {game['name']} mods ({len(mods['mods'])}) & install order — ModSafe",
-                      f"{len(mods['mods'])} essential {game['name']} mods in install order, with requirements and live compatibility after the latest patch.",
+    return page_shell(f"Essential {game['name']} {noun} ({len(mods['mods'])}) & install order — ModSafe",
+                      f"{len(mods['mods'])} essential {game['name']} {noun} in install order, with requirements and live compatibility after the latest patch.",
                       f"/{slug}/mods/", slug, body,
                       extra_jsonld=[itemlist, breadcrumb_ld([("Games", "/"), (game["name"], f"/{slug}/"), ("Essential mods", f"/{slug}/mods/")])])
 

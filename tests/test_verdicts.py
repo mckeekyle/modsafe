@@ -71,7 +71,7 @@ class TestSilverlock(unittest.TestCase):
 class TestClassification(unittest.TestCase):
     def test_agnostic_set(self):
         agn = {f["id"] for g in GAMES for f in g["frameworks"] if f.get("agnostic")}
-        self.assertEqual(agn, {"bg3mm", "bepinexpack", "asi-loader", "harmony", "harmony-bl", "decky-steamgriddb", "decky-cssloader", "decky-protondb", "decky-powertools"})
+        self.assertEqual(agn, {"bg3mm", "bepinexpack", "asi-loader", "harmony", "harmony-bl", "decky-steamgriddb", "decky-cssloader", "decky-protondb", "decky-powertools", "navigraph"})
         for g in GAMES:
             for f in g["frameworks"]:
                 if f["id"] in {"cet", "red4ext", "redscript", "skse64", "f4se", "bg3se", "smapi"}:

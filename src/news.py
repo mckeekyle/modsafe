@@ -29,6 +29,7 @@ PATCH_RE = re.compile(r"(?i)\b(patch|hotfix|update|title update|version\s?\d|v\d
 
 # Names/aliases used to tag headlines with tracked games.
 ALIASES = {
+    "msfs-2024": [r"flight simulator 2024", r"\bmsfs ?2024\b"], "msfs-2020": [r"flight simulator (?:\()?2020", r"\bmsfs ?2020\b"],
     "steam-deck": [r"steam ?deck", r"steamos", r"decky"],
     "cyberpunk-2077": [r"cyberpunk"], "skyrim-se": [r"skyrim"], "fallout-4": [r"fallout 4"],
     "baldurs-gate-3": [r"baldur'?s gate 3", r"\bbg3\b"], "stardew-valley": [r"stardew"],

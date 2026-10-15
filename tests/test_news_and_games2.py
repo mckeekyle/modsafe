@@ -141,3 +141,32 @@ class TestSteamDeck(unittest.TestCase):
         r = update.releases_decky_store({"package": "PowerTools", "url": "u"})
         self.assertEqual((r[0]["tag_name"], r[0]["prerelease"]), ("2.0.3", False))
         update._decky_cache.clear()
+
+
+class TestMSFS(unittest.TestCase):
+    def test_sim_update_rule(self):
+        from games import GAMES_BY_SLUG
+        from status_logic import detect_patch
+        r = GAMES_BY_SLUG["msfs-2024"]["patch_rule"]
+        self.assertEqual(detect_patch("Sim Update 7 Release Notes [1.9.18.0] - Available Now", r)["version"], "7")
+        self.assertEqual(detect_patch("Release Notes - Sim Update 16 [1.39.9.0] Now Available", r)["version"], "16")
+        self.assertEqual(detect_patch("Sim Update 5.1 Release Notes [1.7.35.0] - Available Now", r)["version"], "5.1")
+        for t in ("Sim Update 16 Beta [1.39.0.0] Available Now!", "World Update 22: United States National Parks",
+                  "October 15th, 2026 MSFS Weekly Briefing", "City Update 13: California Now Available"):
+            self.assertIsNone(detect_patch(t, r), t)
+
+    def test_fsuipc_parse_and_tag_prefix(self):
+        import update
+        orig = update.http_get_text
+        update.http_get_text = lambda *_a, **_k: "<p>FSUIPC7</p> Version 7.5.9 <b>Released 29/09/2026</b>".replace("<p>FSUIPC7</p>", "FSUIPC7")
+        try:
+            r = update.releases_fsuipc({})[0]
+        finally:
+            update.http_get_text = orig
+        self.assertEqual((r["tag_name"], r["published_at"][:10]), ("7.5.9", "2026-09-29"))
+        orig_j = update.http_get_json
+        update.http_get_json = lambda *_a, **_k: [{"tag_name": "v2020.15.0"}, {"tag_name": "v2024.1.0"}]
+        try:
+            self.assertEqual([x["tag_name"] for x in update.releases_github({"repo": "x/y", "tag_prefix": "v2024."})], ["v2024.1.0"])
+        finally:
+            update.http_get_json = orig_j
