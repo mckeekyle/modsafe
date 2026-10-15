@@ -61,7 +61,8 @@ def base_head(title: str, description: str, path: str, extra_jsonld: list | None
     canon = f"{SITE_URL}{path}"
     seg = path.strip("/").split("/")[0]
     alt_json = f"{SITE_URL}/{seg}/status.json" if any(g["slug"] == seg for g in GAMES) else f"{SITE_URL}/games.json"
-    og_image = f"{SITE_URL}/og-default.svg"
+    og_name = f"{seg}.png" if (STATIC / "og" / f"{seg}.png").exists() and seg in GAMES_SLUGS else "default.png"
+    og_image = f"{SITE_URL}/og/{og_name}"
     jsonld = [
         {
             "@context": "https://schema.org",
@@ -102,7 +103,11 @@ def base_head(title: str, description: str, path: str, extra_jsonld: list | None
 <meta property="og:description" content="{esc(description)}">
 <meta property="og:url" content="{esc(canon)}">
 <meta property="og:image" content="{esc(og_image)}">
-<meta name="twitter:card" content="summary">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{esc(title)}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{esc(og_image)}">
 <meta name="twitter:title" content="{esc(title)}">
 <meta name="twitter:description" content="{esc(description)}">
 <meta name="theme-color" content="#07090f">
@@ -404,6 +409,12 @@ main > .disclaimer { margin-top: var(--s4); }
 .footer p { margin: 0 0 var(--s3); }
 .footer nav { gap: var(--s2) var(--s4); }
 html, body { overflow-x: hidden; }
+.updated { margin: var(--s1) 0 0 !important; font-size: .8rem !important; color: var(--dim); }
+.toggle { display: inline-flex; align-items: center; gap: var(--s2); padding: var(--s2) var(--s4); border: 1px solid var(--line); border-radius: 999px;
+  background: var(--panel); cursor: pointer; font-weight: 600; }
+.toggle input { accent-color: var(--neon); width: 18px; height: 18px; }
+.footer .all-games { color: var(--neon); font-weight: 700; }
+[hidden] { display: none !important; }
 @media (max-width: 820px) {
   main { padding: var(--s4) var(--s4) var(--s7); }
   main > * + * { margin-top: var(--s5); }
@@ -418,6 +429,7 @@ html, body { overflow-x: hidden; }
   .home-hero, .game-hero { padding: var(--s5) var(--s4); }
   .footer-in { padding: var(--s6) var(--s4); }
   .filters select { flex: 1 1 45%; }
+  .footer nav a.more { display: none; }
 }
 """
 
@@ -449,7 +461,8 @@ def brand() -> str:
 
 
 def footer() -> str:
-    game_links = " ".join(f'<a href="/{g["slug"]}/">{esc(g["short"])}</a>' for g in GAMES)
+    game_links = " ".join(f'<a href="/{g["slug"]}/"{" class=more" if i >= 6 else ""}>{esc(g["short"])}</a>' for i, g in enumerate(GAMES))
+    game_links += ' <a href="/games/" class="all-games">All games →</a>'
     return f"""<footer class="footer"><div class="footer-in">
 <div>{brand()}
 <p>Know if your mods survived the patch before you hit update.</p>
@@ -772,6 +785,7 @@ def game_cards(games_data, compact: bool = False) -> str:
 <div class="card-body">
 <h3><a href="/{game['slug']}/" class="stretched">{esc(game['name'])}</a></h3>
 <p class="card-meta"><span>Patch <strong>{esc(p['label'])}</strong></span><span>{esc(fmt_date(p.get('published_at')))}</span></p>
+<p class="updated">Checked <time class="ago" datetime="{esc(data.get('generated_at', ''))}">{esc(fmt_date(data.get('generated_at')))}</time></p>
 {f'<div class="chips">{chips}</div>' if chips else ''}
 <p class="view">View status →</p>
 </div>
@@ -779,18 +793,25 @@ def game_cards(games_data, compact: bool = False) -> str:
     return "".join(cards)
 
 
+AGO_JS = """<script>
+(function(){var n=Date.now();[].forEach.call(document.querySelectorAll('time.ago'),function(t){var d=Date.parse(t.getAttribute('datetime'));if(!d)return;var m=Math.max(0,Math.round((n-d)/60000)),s=m<1?'just now':m<60?m+' min ago':m<1440?Math.round(m/60)+' h ago':Math.round(m/1440)+' d ago';t.textContent=s;t.title=new Date(d).toLocaleString();});})();
+</script>"""
+
+
 FILTER_JS = """<script>
 (function(){var q=document.getElementById('gq'),st=document.getElementById('gs'),ge=document.getElementById('gg'),cards=[].slice.call(document.querySelectorAll('.game-card')),cnt=document.getElementById('gcount');
 function f(){var t=(q.value||'').toLowerCase().trim(),s=st.value,g=ge.value,n=0;cards.forEach(function(c){var ok=(!t||c.dataset.name.indexOf(t)>-1)&&(!s||c.dataset.status===s)&&(!g||c.dataset.genre===g);c.hidden=!ok;if(ok)n++;});cnt.textContent=n+' of '+cards.length+' games';}
-[q,st,ge].forEach(function(e){e.addEventListener('input',f);});f();})();
-</script>"""
+[q,st,ge].forEach(function(e){e.addEventListener('input',f);});f();
+document.addEventListener('keydown',function(e){var t=e.target.tagName;if(e.key==='/'&&!/INPUT|SELECT|TEXTAREA/.test(t)&&!e.ctrlKey&&!e.metaKey){e.preventDefault();q.focus();}if(e.key==='Escape'&&e.target===q){q.value='';f();q.blur();}});})();
+</script>""" + AGO_JS
+
 
 
 def filter_bar(games_data) -> str:
     genres = sorted({g.get("genre", "") for g, _ in games_data if g.get("genre")})
     gopts = "".join(f'<option value="{esc(x)}">{esc(x)}</option>' for x in genres)
     return f"""<form class="filters" role="search" onsubmit="return false">
-<label class="sr" for="gq">Search games</label><input id="gq" type="search" placeholder="🔍 Search games…" autocomplete="off">
+<label class="sr" for="gq">Search games</label><input id="gq" type="search" placeholder="🔍 Search games…  (press / )" autocomplete="off" aria-keyshortcuts="/">
 <label class="sr" for="gs">Status</label><select id="gs"><option value="">All statuses</option><option value="ok">✔ Safe</option><option value="likely">◑ Likely safe</option><option value="wait">⏳ Just patched, wait</option><option value="broken">✖ Breakage / not ported</option></select>
 <label class="sr" for="gg">Genre</label><select id="gg"><option value="">All genres</option>{gopts}</select>
 <span id="gcount" class="muted" aria-live="polite"></span>
@@ -804,6 +825,25 @@ def load_news() -> dict:
         except ValueError:
             pass
     return {"items": [], "sources": []}
+
+
+AROUND_LIMIT = 12
+RELEVANT_RE = __import__("re").compile(
+    r"(?i)\b(mods?|modding|modders?|patch(?:es)?|updates?|hotfix|pc|steam|nexus|dlc|early access|expansion|"
+    r"remaster|remake|launch(?:es|ed)?|release[sd]?|free|demo|playtest|roadmap|1\.0)\b")
+HARDWARE_RE = __import__("re").compile(r"(?i)\b(mouse|keyboard|headset|monitor|gpu|cpu|ssd|laptop|deal|sale|% off|razer|logitech|amd|intel|nvidia)\b")
+
+
+def around_pc(items: list[dict]) -> list[dict]:
+    """Untracked headlines, preferring modding/PC-game relevance over hardware, deals and industry chatter."""
+    rest = [i for i in items if not i.get("games")]
+    def score(i):
+        t = i["title"]
+        return (2 if RELEVANT_RE.search(t) else 0) - (2 if HARDWARE_RE.search(t) else 0)
+    picked = [i for i in rest if score(i) > 0]
+    if len(picked) < AROUND_LIMIT:
+        picked += [i for i in rest if score(i) == 0][: AROUND_LIMIT - len(picked)]
+    return sorted(picked, key=lambda i: i["published_at"], reverse=True)[:AROUND_LIMIT]
 
 
 def news_list(items: list[dict], limit: int | None = None) -> str:
@@ -866,10 +906,13 @@ def build_news_page() -> str:
     srcs = ", ".join(f'<a href="{esc(x["url"])}">{esc(x["name"])}</a>' for x in news.get("sources", []) if x.get("ok"))
     body = f"""<p class="crumbs"><a href="/">Home</a> › News</p>
 <section class="page-hero"><h1>Latest gaming news</h1><p class="lede">Official Steam announcements for the games we track, plus headlines from PC gaming outlets. Patches are highlighted; every link goes to the original source.</p></section>
+<label class="toggle"><input type="checkbox" id="tracked-only"> Show tracked games only</label>
 <div class="sec-head"><h2>Patches &amp; tracked games</h2></div>
 <section class="panel">{news_list([i for i in news.get("items", []) if i.get("games")])}</section>
-<div class="sec-head"><h2>Around PC gaming</h2></div>
-<section class="panel">{news_list([i for i in news.get("items", []) if not i.get("games")], 30)}</section>
+<div class="sec-head around"><h2>Around PC gaming</h2></div>
+<section class="panel around">{news_list(around_pc(news.get("items", [])), AROUND_LIMIT)}</section>
+<script>(function(){{var c=document.getElementById('tracked-only'),k='modsafe-tracked-only';try{{c.checked=localStorage.getItem(k)==='1';}}catch(e){{}}
+function a(){{[].forEach.call(document.querySelectorAll('.around'),function(x){{x.hidden=c.checked;}});try{{localStorage.setItem(k,c.checked?'1':'0');}}catch(e){{}}}}c.addEventListener('change',a);a();}})();</script>
 <p class="disclaimer">Sources: Steam announcements{", " + srcs if srcs else ""}. Updated {esc(fmt_date(news.get("generated_at")))} (UTC). Headlines belong to their publishers.</p>"""
     return page_shell(f"Latest gaming news — {SITE_NAME}", "Patch notes for modded games and PC gaming headlines, updated several times a day.",
                       "/news/", "news", body, extra_jsonld=[breadcrumb_ld([("Home", "/"), ("News", "/news/")])])

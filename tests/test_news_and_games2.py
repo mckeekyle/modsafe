@@ -80,3 +80,34 @@ class TestOrganization(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestPolish(unittest.TestCase):
+    def test_og_tags(self):
+        import build
+        html = build.page_shell("t", "d", "/skyrim-se/", "skyrim-se", "x")
+        self.assertIn('content="https://modsafe.app/og/skyrim-se.png"', html)
+        self.assertIn('summary_large_image', html)
+        self.assertIn('og:image:width" content="1200"', html)
+        self.assertIn('/og/default.png', build.page_shell("t", "d", "/faq/", "faq", "x"))
+        root = Path(__file__).resolve().parents[1]
+        from PIL import Image  # noqa: F401  (dev-only dependency; skip if missing)
+        for slug in ("default", "skyrim-se", "minecraft"):
+            self.assertEqual(Image.open(root / "static/og" / f"{slug}.png").size, (1200, 630))
+
+    def test_around_pc_prefers_relevant(self):
+        import build
+        mk = lambda t, d: {"title": t, "url": t, "source": "x", "published_at": d, "games": []}
+        items = [mk("Razer mouse deal 40% off", "2026-10-15T00:00:00Z"), mk("Big RPG gets mod support on PC", "2026-10-14T00:00:00Z"),
+                 mk("Studio layoffs", "2026-10-13T00:00:00Z")]
+        out = [i["title"] for i in build.around_pc(items)]
+        self.assertEqual(out[0], "Big RPG gets mod support on PC")
+        self.assertNotIn("Razer mouse deal 40% off", out)
+
+    def test_footer_and_shortcut(self):
+        import build
+        html = build.page_shell("t", "d", "/", "home", "x")
+        self.assertIn('class=more', html)
+        self.assertIn('All games →', html)
+        self.assertIn("e.key==='/'", build.FILTER_JS)
+        self.assertIn("time.ago", build.FILTER_JS)
