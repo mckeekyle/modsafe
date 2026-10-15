@@ -58,6 +58,8 @@ def status_class(status: str) -> str:
 
 def base_head(title: str, description: str, path: str, extra_jsonld: list | None = None) -> str:
     canon = f"{SITE_URL}{path}"
+    seg = path.strip("/").split("/")[0]
+    alt_json = f"{SITE_URL}/{seg}/status.json" if any(g["slug"] == seg for g in GAMES) else f"{SITE_URL}/games.json"
     og_image = f"{SITE_URL}/og-default.svg"
     jsonld = [
         {
@@ -90,6 +92,8 @@ def base_head(title: str, description: str, path: str, extra_jsonld: list | None
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(description)}">
 <link rel="canonical" href="{esc(canon)}">
+<link rel="alternate" type="application/json" href="{esc(alt_json)}">
+<link rel="alternate" type="text/plain" title="llms.txt" href="{esc(SITE_URL)}/llms.txt">
 <meta name="robots" content="index,follow">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="{esc(SITE_NAME)}">
@@ -261,8 +265,7 @@ NEWSLETTER_COPY = "Get patch-day alerts: know if your mods survived before you u
 
 
 def nav(active: str) -> str:
-    links = [("/", "home", "Games"), ("/faq/", "faq", "FAQ"), ("/newsletter/", "newsletter", "Alerts"),
-             ("/games.json", "json", "JSON")]
+    links = [("/", "home", "Games"), ("/faq/", "faq", "FAQ"), ("/newsletter/", "newsletter", "Alerts")]
     items = []
     for href, key, label in links:
         aria = ' aria-current="page"' if key == active else ""
@@ -273,11 +276,13 @@ def nav(active: str) -> str:
 def footer() -> str:
     return f"""<footer class="footer">
 <p>Not affiliated with any game developer, publisher, Nexus Mods, Thunderstore, Modrinth or Mojang. Data from public APIs: Steam Web API, GitHub, Thunderstore, Mojang, Fabric, Forge, NeoForge, Modrinth.</p>
-<p><a href="{esc(SITE_URL)}/">{esc(SITE_URL)}</a></p>
+<p><a href="{esc(SITE_URL)}/">{esc(SITE_URL)}</a> · <span class="muted">For developers &amp; AI:</span> <a href="/games.json">Data (JSON)</a> · <a href="/llms.txt">llms.txt</a></p>
 </footer>"""
 
 
 def sponsor_slot() -> str:
+    # Hidden until a real sponsor exists (placeholder text looked unfinished to visitors).
+    return ""
     return """<aside class="sponsor" aria-label="Sponsor">
 <p class="sponsor-label">Sponsor slot</p>
 <p>Your modding tool or host here. <a href="mailto:sponsors@modsafe.app">Contact</a> (placeholder).</p>
@@ -476,7 +481,7 @@ def build_game_page(game: dict, data: dict) -> str:
 <h2 id="faq-heading">{esc(game['name'])} modding FAQ</h2>
 {faq_html}
 </section>
-<section class="panel"><p><a href="/{slug}/history/">Patch history →</a> · <a href="/{slug}/status.json">JSON →</a> · <a href="{esc(game['wiki'])}">Modding resources →</a></p></section>
+<section class="panel"><p><a href="/{slug}/history/">Patch history →</a> · <a href="{esc(game['wiki'])}">Modding resources →</a></p></section>
 """
     return page_shell(
         f"Is it safe to update {game['name']}? Mod status for {p['label']} — ModSafe",
@@ -542,7 +547,7 @@ def build_home(games_data: list[tuple[dict, dict]]) -> str:
 {newsletter()}
 {sponsor_slot()}
 <section class="panel"><p class="disclaimer">{esc(STATUS_EXPLAINER)}</p>
-<p><a href="/faq/">FAQ →</a> · <a href="/games.json">Machine-readable JSON →</a> · <a href="/llms.txt">llms.txt</a></p></section>
+<p><a href="/faq/">FAQ →</a> · <a href="/newsletter/">Patch alerts →</a></p></section>
 """
     return page_shell(f"Is it safe to update? — {SITE_NAME}", SITE_DESC, "/", "home", body, extra_jsonld=[itemlist])
 

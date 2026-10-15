@@ -131,3 +131,15 @@ class TestAnalyticsBeacon(unittest.TestCase):
             self.assertIn("abc123", html)
         finally:
             build.CF_ANALYTICS_TOKEN = old
+
+
+class TestNavTidy(unittest.TestCase):
+    def test_no_json_in_header_but_in_footer_and_head(self):
+        import build
+        html = build.page_shell("t", "d", "/skyrim-se/", "skyrim-se", "x")
+        nav = html[html.index('<nav'):html.index('</nav>')]
+        self.assertNotIn("json", nav.lower())
+        foot = html[html.index('<footer'):]
+        self.assertIn('href="/games.json"', foot)
+        self.assertIn('rel="alternate" type="application/json" href="https://modsafe.app/skyrim-se/status.json"', html)
+        self.assertNotIn("placeholder", html.lower())
