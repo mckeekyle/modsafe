@@ -14,6 +14,8 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data" / "games"
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from games import GAMES  # noqa: E402
+GAMES_SLUGS = {g["slug"] for g in GAMES}
+NEWS_FILE = ROOT / "data" / "news.json"
 DIST = ROOT / "dist"
 STATIC = ROOT / "static"
 
@@ -24,9 +26,8 @@ CF_ANALYTICS_TOKEN = os.environ.get("CF_ANALYTICS_TOKEN", "").strip()
 SITE_URL = os.environ.get("SITE_URL", "https://modsafe.app").rstrip("/")
 SITE_NAME = "ModSafe — Mod Compatibility After Game Patches"
 SITE_DESC = (
-    "Is it safe to update? Live status of core mod frameworks and loaders (script extenders, "
-    "BepInEx, SMAPI, Fabric/Forge) after each official game patch, for Cyberpunk 2077, Skyrim SE, "
-    "Fallout 4, Baldur\'s Gate 3, Stardew Valley, Lethal Company, GTA V and Minecraft."
+    "Is it safe to update? Live status of core mod frameworks and loaders (script extenders, BepInEx, SMAPI, "
+    "tModLoader, Fabric/Forge and more) after each official patch, for " + str(len(GAMES)) + " heavily modded PC games."
 )
 
 
@@ -303,6 +304,38 @@ section { margin: 0 0 1.75rem; }
 .footer nav a:hover { color: var(--neon); }
 .footer .dev { width: 100%; text-align: right; }
 
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.games-menu { position: relative; }
+.games-menu summary { list-style: none; cursor: pointer; color: var(--muted); font-weight: 600; padding: .45rem .8rem; border-radius: 999px; }
+.games-menu summary::-webkit-details-marker { display: none; }
+.games-menu summary::after { content: " ▾"; }
+.games-menu[open] summary, .games-menu summary:hover, .games-menu summary[aria-current] { color: var(--text); background: rgba(255,255,255,.07); }
+.menu-pop { position: absolute; right: 0; top: calc(100% + .4rem); z-index: 30; width: min(92vw, 520px); display: grid; grid-template-columns: 1fr 1fr; gap: .15rem;
+  padding: .6rem; border-radius: 14px; background: #0d1422; border: 1px solid rgba(0,240,255,.3); box-shadow: 0 20px 60px rgba(0,0,0,.6); }
+.menu-pop a { padding: .45rem .6rem; border-radius: 8px; color: var(--text); text-decoration: none; font-size: .92rem; }
+.menu-pop a:hover, .menu-pop a[aria-current] { background: rgba(0,240,255,.12); color: var(--neon); }
+.menu-pop .all { grid-column: 1 / -1; color: var(--neon); font-weight: 700; border-bottom: 1px solid var(--line); border-radius: 8px 8px 0 0; }
+.nav { align-items: center; }
+.filters { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; margin: 0 0 1rem; }
+.filters input, .filters select { background: var(--panel); color: var(--text); border: 1px solid var(--line); border-radius: 10px; padding: .6rem .8rem; font: inherit; }
+.filters input { flex: 1 1 240px; }
+.filters input:focus, .filters select:focus { outline: 2px solid var(--neon); outline-offset: 1px; }
+.game-card[hidden] { display: none; }
+.view { margin: .6rem 0 0 !important; color: var(--neon); font-weight: 700; font-family: var(--head); }
+.game-card:hover .view { text-decoration: underline; }
+.tabs { position: sticky; top: 58px; z-index: 15; display: flex; gap: .3rem; overflow-x: auto; margin: 1rem 0 0; padding: .45rem; border-radius: 14px;
+  background: rgba(13,20,34,.92); backdrop-filter: blur(10px); border: 1px solid var(--line); scrollbar-width: none; }
+.tabs a { white-space: nowrap; padding: .45rem .9rem; border-radius: 10px; color: var(--muted); text-decoration: none; font-weight: 600; font-family: var(--head); }
+.tabs a:hover { background: rgba(0,240,255,.12); color: var(--neon); }
+[id] { scroll-margin-top: 130px; }
+.news { list-style: none; margin: 0; padding: 0; display: grid; gap: .1rem; }
+.news li { padding: .65rem .5rem; border-bottom: 1px solid var(--line); }
+.news li:last-child { border-bottom: 0; }
+.news li > a { color: var(--text); font-weight: 600; text-decoration: none; }
+.news li > a:hover { color: var(--neon); }
+.news li.hl { background: linear-gradient(90deg, rgba(255,159,28,.1), transparent); border-left: 3px solid var(--wait); padding-left: .7rem; border-radius: 6px; }
+.nmeta { display: flex; flex-wrap: wrap; gap: .35rem; align-items: center; color: var(--dim); font-size: .82rem; margin-top: .2rem; }
+.nmeta .chip { text-decoration: none; }
 @media (max-width: 820px) {
   .vgrid { grid-template-columns: 1fr; }
   .footer-in { grid-template-columns: 1fr; }
@@ -310,6 +343,8 @@ section { margin: 0 0 1.75rem; }
 }
 @media (max-width: 560px) {
   .header-in { flex-wrap: wrap; padding: .6rem 1rem; }
+  .menu-pop { position: fixed; left: 4vw; right: 4vw; width: auto; top: 96px; grid-template-columns: 1fr 1fr; }
+  .tabs { top: 96px; }
   .nav a { padding: .35rem .65rem; font-size: .92rem; }
   main { padding: 1rem .85rem 2.5rem; }
   .home-hero, .game-hero { border-radius: 16px; }
@@ -326,9 +361,16 @@ NEWSLETTER_URL = "https://modsafes-newsletter.beehiiv.com/subscribe"
 NEWSLETTER_COPY = "Get patch-day alerts: know if your mods survived before you update."
 
 
+def games_menu(active: str) -> str:
+    items = "".join(f'<a href="/{g["slug"]}/"{" aria-current=page" if g["slug"] == active else ""}>{esc(g["name"])}</a>' for g in GAMES)
+    cur = ' aria-current="page"' if active in ("games",) or active in GAMES_SLUGS else ""
+    return (f'<details class="games-menu"><summary{cur}>🎮 Games</summary><div class="menu-pop">'
+            f'<a class="all" href="/games/">All games →</a>{items}</div></details>')
+
+
 def nav(active: str) -> str:
-    links = [("/", "home", "Games"), ("/faq/", "faq", "FAQ"), ("/newsletter/", "newsletter", "🔔 Alerts")]
-    items = []
+    links = [("/news/", "news", "News"), ("/faq/", "faq", "FAQ"), ("/newsletter/", "newsletter", "🔔 Alerts")]
+    items = [games_menu(active)]
     for href, key, label in links:
         aria = ' aria-current="page"' if key == active else ""
         cls = ' class="cta"' if key == "newsletter" and key != active else ""
@@ -537,7 +579,7 @@ def build_game_page(game: dict, data: dict) -> str:
                                  "contentUrl": f"{SITE_URL}/{slug}/status.json"}]}
     vc = status_class(data["verdict"])
     body = f"""
-<p class="crumbs"><a href="/">Games</a> › {esc(game['name'])}</p>
+<p class="crumbs"><a href="/">Home</a> › <a href="/games/">Games</a> › {esc(game['name'])}</p>
 <section class="game-hero v-{vc}" style="--hero:url('{game_img(slug, "hero")}')">
 <div>
 <h1>Is it safe to update {esc(game['name'])}?</h1>
@@ -546,7 +588,8 @@ def build_game_page(game: dict, data: dict) -> str:
 {f'<p class="note" role="note"><strong>⚠ {esc(game["note"])}</strong></p>' if game.get("note") else ''}
 </div>
 </section>
-<div class="vgrid">
+<nav class="tabs" aria-label="On this page"><a href="#status">Status</a><a href="#fw-heading">Frameworks</a><a href="#history">Patch history</a><a href="#news">News</a><a href="#faq-heading">FAQ</a></nav>
+<div class="vgrid" id="status">
 <section class="panel" aria-labelledby="verdict-heading">
 <h2 id="verdict-heading">Verdict for {esc(p['label'])}</h2>
 <p class="big-say">{esc(verdict_sentence(game, data))}</p>
@@ -567,12 +610,16 @@ def build_game_page(game: dict, data: dict) -> str:
 <section class="fw-grid" aria-labelledby="fw-heading">{framework_cards(data)}</section>
 {f'<ul>{extra}</ul>' if extra else ''}
 <p class="disclaimer">{esc(data.get('disclaimer', ''))} Items marked “Check manually” are not counted in the verdict.</p>
+<div class="sec-head" id="history"><h2>Patch history</h2><a href="/{slug}/history/">Full history →</a></div>
+<section class="hist-list">{history_cards(data, 4)}</section>
+<div class="sec-head" id="news"><h2>{esc(game['short'])} news</h2><a href="/news/">All news →</a></div>
+<section class="panel">{news_list(game_news(slug, data), 8)}</section>
 {newsletter()}
 <div class="sec-head"><h2 id="faq-heading">{esc(game['short'])} modding FAQ</h2></div>
 <section class="faq-list" aria-labelledby="faq-heading">
 {faq_html}
 </section>
-<section class="links"><a href="/{slug}/history/">📜 Patch history</a> <a href="{esc(game['wiki'])}">🛠 Modding resources</a> <a href="/">🎮 All games</a></section>
+<section class="links"><a href="/{slug}/history/">📜 Full patch history</a> <a href="{esc(game['wiki'])}">🛠 Modding resources</a> <a href="/">🎮 All games</a></section>
 """
     return page_shell(
         f"Is it safe to update {game['name']}? Mod status for {p['label']} — ModSafe",
@@ -580,6 +627,28 @@ def build_game_page(game: dict, data: dict) -> str:
         f"/{slug}/", slug, body,
         extra_jsonld=[dataset, faq_ld(faq), breadcrumb_ld([("Games", "/"), (game["name"], f"/{slug}/")])],
     )
+
+
+def history_cards(data: dict, limit: int | None = None) -> str:
+    sections = []
+    for entry in (data.get("history", []) or [])[:limit] if limit else data.get("history", []):
+        cells = "".join(
+            f'<li>{badge(fw["status"])} <strong>{esc(fw["short"])}</strong> <code>{esc(fw.get("release_tag") or "—")}</code></li>'
+            for fw in entry.get("frameworks", []))
+        sections.append(f"""<article class="hist-card" id="patch-{esc(entry['label']).replace(' ', '-')}">
+<h3>{esc(entry['label'])}</h3>
+<p class="muted">{esc(fmt_date(entry.get('published_at')))} · <a href="{esc(entry.get('url', ''))}">{esc(entry.get('title', ''))}</a></p>
+<ul class="hist-fw">{cells}</ul>
+</article>""")
+    return "".join(sections) or '<p class="muted">No patch history for this game (data is hand-maintained or only the latest patch is known).</p>'
+
+
+def game_news(slug: str, data: dict) -> list[dict]:
+    items = [i for i in load_news().get("items", []) if slug in i.get("games", [])]
+    if not items:
+        items = [{"title": n["title"], "url": n["url"], "source": "Steam", "published_at": n["published_at"],
+                  "games": [], "highlight": n.get("is_patch")} for n in data.get("news", [])]
+    return items
 
 
 def build_game_history(game: dict, data: dict) -> str:
@@ -595,7 +664,7 @@ def build_game_history(game: dict, data: dict) -> str:
 </article>""")
     slug = game["slug"]
     body = f"""
-<p class="crumbs"><a href="/">Games</a> › <a href="/{slug}/">{esc(game['name'])}</a> › History</p>
+<p class="crumbs"><a href="/">Home</a> › <a href="/games/">Games</a> › <a href="/{slug}/">{esc(game['name'])}</a> › History</p>
 <section class="page-hero"><h1>{esc(game['name'])} patch history</h1>
 <p class="lede">How tracked frameworks looked relative to each recent {esc(game['name'])} patch, using the same rules as the main page.</p></section>
 <section class="hist-list">{''.join(sections) or '<p>No patch history available.</p>'}</section>
@@ -606,19 +675,65 @@ def build_game_history(game: dict, data: dict) -> str:
                       extra_jsonld=[breadcrumb_ld([("Games", "/"), (game["name"], f"/{slug}/"), ("History", f"/{slug}/history/")])])
 
 
-def build_home(games_data: list[tuple[dict, dict]]) -> str:
+def game_cards(games_data, compact: bool = False) -> str:
     cards = []
     for i, (game, data) in enumerate(games_data):
         p = data["game"]["latest_patch"]
-        chips = "".join(f'<span class="chip">{esc(f["short"])}</span>' for f in data["frameworks"])
-        cards.append(f"""<article class="game-card v-{status_class(data['verdict'])}">
+        chips = "" if compact else "".join(f'<span class="chip">{esc(f["short"])}</span>' for f in data["frameworks"])
+        cls = status_class(data["verdict"])
+        cards.append(f"""<article class="game-card v-{cls}" data-name="{esc(game['name'].lower())} {esc(game['short'].lower())}" data-status="{cls}" data-genre="{esc(game.get('genre', ''))}">
 <div class="card-art"><img src="{game_img(game['slug'])}" width="616" height="353" {'loading="lazy" ' if i > 2 else ''}decoding="async" alt="{esc(game['name'])} cover art">{badge(data['verdict'])}</div>
 <div class="card-body">
 <h3><a href="/{game['slug']}/" class="stretched">{esc(game['name'])}</a></h3>
 <p class="card-meta"><span>Patch <strong>{esc(p['label'])}</strong></span><span>{esc(fmt_date(p.get('published_at')))}</span></p>
-<div class="chips">{chips}</div>
+{f'<div class="chips">{chips}</div>' if chips else ''}
+<p class="view">View status →</p>
 </div>
 </article>""")
+    return "".join(cards)
+
+
+FILTER_JS = """<script>
+(function(){var q=document.getElementById('gq'),st=document.getElementById('gs'),ge=document.getElementById('gg'),cards=[].slice.call(document.querySelectorAll('.game-card')),cnt=document.getElementById('gcount');
+function f(){var t=(q.value||'').toLowerCase().trim(),s=st.value,g=ge.value,n=0;cards.forEach(function(c){var ok=(!t||c.dataset.name.indexOf(t)>-1)&&(!s||c.dataset.status===s)&&(!g||c.dataset.genre===g);c.hidden=!ok;if(ok)n++;});cnt.textContent=n+' of '+cards.length+' games';}
+[q,st,ge].forEach(function(e){e.addEventListener('input',f);});f();})();
+</script>"""
+
+
+def filter_bar(games_data) -> str:
+    genres = sorted({g.get("genre", "") for g, _ in games_data if g.get("genre")})
+    gopts = "".join(f'<option value="{esc(x)}">{esc(x)}</option>' for x in genres)
+    return f"""<form class="filters" role="search" onsubmit="return false">
+<label class="sr" for="gq">Search games</label><input id="gq" type="search" placeholder="🔍 Search games…" autocomplete="off">
+<label class="sr" for="gs">Status</label><select id="gs"><option value="">All statuses</option><option value="ok">✔ Safe</option><option value="likely">◑ Likely safe</option><option value="wait">⏳ Just patched, wait</option><option value="broken">✖ Breakage / not ported</option></select>
+<label class="sr" for="gg">Genre</label><select id="gg"><option value="">All genres</option>{gopts}</select>
+<span id="gcount" class="muted" aria-live="polite"></span>
+</form>"""
+
+
+def load_news() -> dict:
+    if NEWS_FILE.exists():
+        try:
+            return json.loads(NEWS_FILE.read_text(encoding="utf-8"))
+        except ValueError:
+            pass
+    return {"items": [], "sources": []}
+
+
+def news_list(items: list[dict], limit: int | None = None) -> str:
+    names = {g["slug"]: g["short"] for g in GAMES}
+    lis = []
+    for it in items[:limit] if limit else items:
+        tags = "".join(f'<a class="chip" href="/{s}/">{esc(names.get(s, s))}</a>' for s in it.get("games", []))
+        hl = ' class="hl"' if it.get("highlight") else ""
+        flag = '<span class="badge wait">🛠 Patch</span> ' if it.get("highlight") else ""
+        lis.append(f"""<li{hl}>{flag}<a href="{esc(it['url'])}" rel="noopener" target="_blank">{esc(it['title'])}</a>
+<span class="nmeta">{esc(it['source'])} · {esc(fmt_date(it['published_at']))} {tags}</span></li>""")
+    return f'<ul class="news">{"".join(lis) or "<li>No recent headlines.</li>"}</ul>'
+
+
+def build_home(games_data: list[tuple[dict, dict]]) -> str:
+    news = load_news()
     itemlist = {"@context": "https://schema.org", "@type": "ItemList", "name": "Games tracked by ModSafe",
                 "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": g["name"], "url": f"{SITE_URL}/{g['slug']}/"}
                                     for i, (g, _) in enumerate(games_data)]}
@@ -633,15 +748,42 @@ def build_home(games_data: list[tuple[dict, dict]]) -> str:
 <div class="hero-actions"><a class="btn" href="#games">🎮 Pick your game</a> <a class="btn ghost" href="/newsletter/">🔔 Get patch alerts</a></div>
 <div class="stats"><div><strong>{len(games_data)}</strong>games tracked</div><div><strong>{n_fw}</strong>frameworks watched</div><div><strong>{n_ok}/{len(games_data)}</strong>safe or likely safe now</div></div>
 </section>
-<div class="sec-head" id="games"><h2>Choose your game</h2><span class="muted">Refreshed every few hours</span></div>
+<div class="sec-head" id="games"><h2>Choose your game</h2><a href="/games/">All games →</a></div>
+<p class="muted">Every game has its own page with the verdict, each framework, patch history, news and FAQ. Tap a card.</p>
+{filter_bar(games_data)}
 <section class="game-grid" aria-label="Games">
-{''.join(cards)}
+{game_cards(games_data, compact=True)}
 </section>
+<div class="sec-head"><h2>Latest gaming news</h2><a href="/news/">All news →</a></div>
+<section class="panel">{news_list(news.get("items", []), 8)}</section>
 {newsletter()}
 <section class="panel"><h2>How we call it</h2><p class="disclaimer">{esc(STATUS_EXPLAINER)}</p>
 <p><a href="/faq/">Read the FAQ →</a></p></section>
 """
-    return page_shell(f"Is it safe to update? — {SITE_NAME}", SITE_DESC, "/", "home", body, extra_jsonld=[itemlist])
+    return page_shell(f"Is it safe to update? — {SITE_NAME}", SITE_DESC, "/", "home", body + FILTER_JS, extra_jsonld=[itemlist])
+
+
+def build_games_index(games_data) -> str:
+    body = f"""<p class="crumbs"><a href="/">Home</a> › Games</p>
+<section class="page-hero"><h1>All games</h1><p class="lede">Pick a game to see whether its mod frameworks survived the latest patch.</p></section>
+{filter_bar(games_data)}
+<section class="game-grid" aria-label="Games">{game_cards(games_data)}</section>"""
+    ld = {"@context": "https://schema.org", "@type": "ItemList", "name": "Games tracked by ModSafe",
+          "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": g["name"], "url": f"{SITE_URL}/{g['slug']}/"}
+                              for i, (g, _) in enumerate(games_data)]}
+    return page_shell(f"All games — {SITE_NAME}", "Mod framework patch status for every game ModSafe tracks.", "/games/", "games",
+                      body + FILTER_JS, extra_jsonld=[ld, breadcrumb_ld([("Home", "/"), ("Games", "/games/")])])
+
+
+def build_news_page() -> str:
+    news = load_news()
+    srcs = ", ".join(f'<a href="{esc(x["url"])}">{esc(x["name"])}</a>' for x in news.get("sources", []) if x.get("ok"))
+    body = f"""<p class="crumbs"><a href="/">Home</a> › News</p>
+<section class="page-hero"><h1>Latest gaming news</h1><p class="lede">Headlines from official Steam announcements for the games we track, plus reputable PC gaming outlets. Patches for tracked games are highlighted. We only show headlines and always link to the original.</p></section>
+<section class="panel">{news_list(news.get("items", []))}</section>
+<p class="disclaimer">Sources: Steam announcements{", " + srcs if srcs else ""}. Updated {esc(fmt_date(news.get("generated_at")))} (UTC). Headlines belong to their publishers.</p>"""
+    return page_shell(f"Latest gaming news — {SITE_NAME}", "Patch notes for modded games and PC gaming headlines, updated several times a day.",
+                      "/news/", "news", body, extra_jsonld=[breadcrumb_ld([("Home", "/"), ("News", "/news/")])])
 
 
 GENERAL_FAQ = [
@@ -652,7 +794,7 @@ GENERAL_FAQ = [
      "a": "Some core mods (for example Address Library and Buffout 4) are only distributed on Nexus Mods. Nexus' API terms forbid scraping, so ModSafe links them instead of guessing, and leaves them out of the verdict."},
     {"q": "Where does the data come from?",
      "a": "Steam Web API news (official announcements), Mojang's version manifest, GitHub releases/tags, the Thunderstore package API, Fabric meta, Forge promotions, NeoForge Maven and the Modrinth API. Refreshed every few hours."},
-    {"q": "Which games are covered?", "a": "Cyberpunk 2077, Skyrim Special Edition, Fallout 4, Baldur's Gate 3, Stardew Valley, Lethal Company, Grand Theft Auto V (single-player) and Minecraft: Java Edition."},
+    {"q": "Which games are covered?", "a": ", ".join(g["name"] for g in GAMES) + "."},
 ]
 
 
@@ -704,7 +846,7 @@ def build_robots() -> str:
 
 
 def sitemap_urls() -> list[str]:
-    urls = ["/", "/faq/", "/newsletter/"]
+    urls = ["/", "/games/", "/news/", "/faq/", "/newsletter/"]
     for g in GAMES:
         urls += [f"/{g['slug']}/", f"/{g['slug']}/history/"]
     return urls + ["/games.json", "/llms.txt"]
@@ -770,6 +912,8 @@ def main() -> int:
             legacy = json.loads(json.dumps(d))
             legacy["game"]["latest_patch"]["version"] = legacy["game"]["latest_patch"].get("version")
             write(DIST / "status.json", json.dumps(legacy, indent=2) + "\n")
+    write(DIST / "games" / "index.html", build_games_index(games_data))
+    write(DIST / "news" / "index.html", build_news_page())
     write(DIST / "faq" / "index.html", build_faq())
     write(DIST / "newsletter" / "index.html", build_newsletter_page())
     import shutil

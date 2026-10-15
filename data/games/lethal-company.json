@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T20:18:49Z",
+  "generated_at": "2026-10-15T22:18:38Z",
   "game": {
     "slug": "lethal-company",
     "name": "Lethal Company",
@@ -659,6 +659,68 @@
           "mentions_patch": false
         }
       ]
+    }
+  ],
+  "news": [
+    {
+      "title": "Version 80 - The Blooming Update",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1828894815563326",
+      "published_at": "2026-04-05T08:27:11Z",
+      "is_patch": true
+    },
+    {
+      "title": "Version 80 Beta!",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1828441623109104",
+      "published_at": "2026-03-30T05:59:41Z",
+      "is_patch": false
+    },
+    {
+      "title": "Handy Patch V73",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1811772772540321",
+      "published_at": "2025-10-04T11:40:12Z",
+      "is_patch": true
+    },
+    {
+      "title": "V72 Bug fix patch",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1801617199407807",
+      "published_at": "2025-06-06T00:21:24Z",
+      "is_patch": true
+    },
+    {
+      "title": "V71 Bug fix patch",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1801617199346487",
+      "published_at": "2025-06-04T04:03:21Z",
+      "is_patch": true
+    },
+    {
+      "title": "V70 - The Incubating Update",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1800991756395986",
+      "published_at": "2025-06-01T03:43:51Z",
+      "is_patch": true
+    },
+    {
+      "title": "Jolly Patch V69",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1785774543572415",
+      "published_at": "2024-12-13T23:08:24Z",
+      "is_patch": true
+    },
+    {
+      "title": "1 Year Anniversary!",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6212245217911777747",
+      "published_at": "2024-10-23T04:53:50Z",
+      "is_patch": false
+    },
+    {
+      "title": "The Bag Patch - Version 64",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6242640076595327323",
+      "published_at": "2024-09-05T03:59:37Z",
+      "is_patch": true
+    },
+    {
+      "title": "V62 Patch",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6909171012614570560",
+      "published_at": "2024-08-20T17:41:10Z",
+      "is_patch": true
     }
   ],
   "sources": {

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T20:27:37Z",
+  "generated_at": "2026-10-15T22:18:39Z",
   "game": {
     "slug": "gta-v",
     "name": "Grand Theft Auto V",
@@ -55,6 +55,68 @@
     }
   ],
   "history": [],
+  "news": [
+    {
+      "title": "Experience Halloween Thrills All Throughout October in GTA Online",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1845383656393775",
+      "is_patch": false,
+      "published_at": "2026-10-05T15:22:49Z"
+    },
+    {
+      "title": "Compete Across Entrepreneurial Endeavors in the Business Rivalries Event",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1843481262692369",
+      "is_patch": false,
+      "published_at": "2026-09-10T14:12:27Z"
+    },
+    {
+      "title": "Declare Your Allegiance and Determine Who Owns Los Santos in the Brand Wars Event",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840944183786534",
+      "is_patch": false,
+      "published_at": "2026-08-17T16:26:51Z"
+    },
+    {
+      "title": "Plan the Perfect Getaway During the Summer Heist Event",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1839676055888608",
+      "is_patch": false,
+      "published_at": "2026-07-31T15:43:38Z"
+    },
+    {
+      "title": "Apprehend the New Pegassi Ignus Pursuit Law Enforcement Vehicle",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1839041357029759",
+      "is_patch": false,
+      "published_at": "2026-07-24T14:39:02Z"
+    },
+    {
+      "title": "The Kortz Center Heist Now Available in GTA Online",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1838407329254306",
+      "is_patch": false,
+      "published_at": "2026-07-15T14:00:16Z"
+    },
+    {
+      "title": "The Kortz Center Heist, Coming to GTA Online July 14",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1837955055356438",
+      "is_patch": false,
+      "published_at": "2026-07-10T10:51:33Z"
+    },
+    {
+      "title": "Enjoy Star-Spangled GTA Online Bonuses This Independence Day",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1836506165570549",
+      "is_patch": false,
+      "published_at": "2026-07-03T13:44:14Z"
+    },
+    {
+      "title": "Earn Special Rewards in GTA Online with the Fine Art Collector Program",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1835871199315621",
+      "is_patch": false,
+      "published_at": "2026-06-23T13:57:16Z"
+    },
+    {
+      "title": "The Next Big Score",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1835871199312632",
+      "is_patch": false,
+      "published_at": "2026-06-22T10:43:51Z"
+    }
+  ],
   "last_verified": "2026-10-15",
   "sources": {
     "manual": "data/manual/gta-v.json",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T22:14:23Z",
+  "generated_at": "2026-10-15T22:19:20Z",
   "game": {
     "slug": "bannerlord",
     "name": "Mount & Blade II: Bannerlord",
@@ -397,6 +397,68 @@
           "mentions_patch": true
         }
       ]
+    }
+  ],
+  "news": [
+    {
+      "title": "Beta Patch Notes - WS v1.3.0 / BL v1.5.0",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1841579228662390",
+      "published_at": "2026-08-19T12:05:05Z",
+      "is_patch": false
+    },
+    {
+      "title": "War Sails Modding Competition",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840944183780314",
+      "published_at": "2026-08-14T17:03:00Z",
+      "is_patch": false
+    },
+    {
+      "title": "War Sails Modding Kit Release & Patch WS v1.2.8 / BL v1.4.8",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840310314351373",
+      "published_at": "2026-08-10T12:09:06Z",
+      "is_patch": true
+    },
+    {
+      "title": "Patch Notes - WS v1.2.7 / BL v1.4.7",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1836506165580665",
+      "published_at": "2026-07-08T13:22:27Z",
+      "is_patch": true
+    },
+    {
+      "title": "Community Tales #18",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1836506165556277",
+      "published_at": "2026-06-27T11:13:39Z",
+      "is_patch": false
+    },
+    {
+      "title": "Mount & Blade Summer Sale!",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1836506165551490",
+      "published_at": "2026-06-25T19:01:15Z",
+      "is_patch": false
+    },
+    {
+      "title": "Patch Notes - WS v1.2.6 / BL v1.4.6",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1835236783559860",
+      "published_at": "2026-06-11T10:03:09Z",
+      "is_patch": true
+    },
+    {
+      "title": "Patch Notes - WS v1.2.5 / BL v1.4.5",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1833334318569123",
+      "published_at": "2026-05-21T14:27:02Z",
+      "is_patch": true
+    },
+    {
+      "title": "Beta WS v1.2.1 / BL v1.4.1 - Seaborne Village Raids",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1830797770230332",
+      "published_at": "2026-04-22T10:50:57Z",
+      "is_patch": false
+    },
+    {
+      "title": "Mount & Blade Medieval Fest Sale!",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1830163047266745",
+      "published_at": "2026-04-20T17:13:44Z",
+      "is_patch": false
     }
   ],
   "sources": {

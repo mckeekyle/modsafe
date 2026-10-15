@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T22:14:00Z",
+  "generated_at": "2026-10-15T22:19:12Z",
   "game": {
     "slug": "rimworld",
     "name": "RimWorld",
@@ -397,6 +397,68 @@
           "mentions_patch": false
         }
       ]
+    }
+  ],
+  "news": [
+    {
+      "title": "Announcing the Waylith Engine and Update 1.7",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1846018067941786",
+      "published_at": "2026-10-12T17:17:45Z",
+      "is_patch": false
+    },
+    {
+      "title": "The Jugust merch caravan has arrived!",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1839676055889403",
+      "published_at": "2026-07-31T21:28:40Z",
+      "is_patch": false
+    },
+    {
+      "title": "Get the RimWorld x Project Zomboid bundle",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1839676055883540",
+      "published_at": "2026-07-29T20:54:05Z",
+      "is_patch": false
+    },
+    {
+      "title": "RimWorld x Abiotic Factor bundle out now",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1837955055364275",
+      "published_at": "2026-07-13T19:22:48Z",
+      "is_patch": false
+    },
+    {
+      "title": "Update 1.6.4850 released",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1834602721199984",
+      "published_at": "2026-06-08T19:12:10Z",
+      "is_patch": true
+    },
+    {
+      "title": "RimWorld x Going Medieval bundle now available",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1828441623105411",
+      "published_at": "2026-03-27T18:53:51Z",
+      "is_patch": false
+    },
+    {
+      "title": "The winter merch collection is here! \u2744\ufe0f",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1817483467037824",
+      "published_at": "2025-11-27T21:09:31Z",
+      "is_patch": false
+    },
+    {
+      "title": "Happy birthday, RimWorld!",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1815034433047502",
+      "published_at": "2025-11-04T22:55:25Z",
+      "is_patch": false
+    },
+    {
+      "title": "Update 1.6.4630 released",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1815034432907541",
+      "published_at": "2025-10-31T15:30:18Z",
+      "is_patch": true
+    },
+    {
+      "title": "Bring home a thrumbo and boomalope!",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1813041031254610",
+      "published_at": "2025-10-10T22:45:49Z",
+      "is_patch": false
     }
   ],
   "sources": {

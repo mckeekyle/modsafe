@@ -300,7 +300,11 @@ def build_steam_game(game: dict) -> dict:
             row.append({"id": fw["id"], "short": fw["short"], "name": fw["name"], **snap})
         history.append({**p, "frameworks": row})
 
-    return {"latest_patch": latest, "frameworks": fws, "history": history,
+    patch_urls = {p["url"] for p in patches}
+    news_out = [{"title": n.get("title", ""), "url": n.get("url", ""),
+                 "published_at": datetime.fromtimestamp(int(n["date"]), tz=timezone.utc).isoformat().replace("+00:00", "Z"),
+                 "is_patch": n.get("url") in patch_urls} for n in news[:10] if n.get("date")]
+    return {"latest_patch": latest, "frameworks": fws, "history": history, "news": news_out,
             "sources": {"steam_news": STEAM_NEWS.format(appid=game["steam_appid"]).split("&maxlength")[0]}}
 
 
@@ -366,7 +370,9 @@ def build_minecraft(game: dict) -> dict:
             ev["status"] = {"Updated for latest patch": "Safe", "Likely OK": "Likely safe"}.get(ev["status"], "Not ported")
             row.append({"id": fw["id"], "short": fw["short"], "name": fw["name"], **ev})
         history.append({**p, "frameworks": row})
-    return {"latest_patch": latest, "frameworks": fws, "history": history,
+    news_out = [{"title": f"Minecraft Java Edition {v['id']} released", "is_patch": True,
+                 "url": patch_of(v)["url"], "published_at": patch_of(v)["published_at"]} for v in releases[:5]]
+    return {"latest_patch": latest, "frameworks": fws, "history": history, "news": news_out,
             "latest_snapshot": man["latest"].get("snapshot"),
             "sources": {"mojang_manifest": MC_MANIFEST, "fabric_meta": FABRIC_GAME, "forge_promotions": FORGE_PROMOS,
                         "neoforge_maven": NEOFORGE_VERSIONS, "modrinth": "https://api.modrinth.com/v2"}}
@@ -399,7 +405,15 @@ def build_manual_game(game: dict) -> dict:
                     "reason": fw.get("agnostic_note", ""), "release_tag": rel.get("tag_name") if rel else None,
                     "release_published_at": rel.get("published_at") if rel else None,
                     "release_url": (rel or {}).get("html_url") or fw["url"]})
-    return {"latest_patch": latest, "frameworks": fws, "history": [], "last_verified": man["last_verified"],
+    news_out = []
+    try:
+        items = http_get_json(STEAM_NEWS.format(appid=game["steam_appid"])).get("appnews", {}).get("newsitems", [])
+        news_out = [{"title": n["title"], "url": n["url"], "is_patch": False,
+                     "published_at": datetime.fromtimestamp(int(n["date"]), tz=timezone.utc).isoformat().replace("+00:00", "Z")}
+                    for n in items[:10]]
+    except Exception as e:  # noqa: BLE001
+        print(f"  steam news failed for {game['slug']}: {e}", file=sys.stderr)
+    return {"latest_patch": latest, "frameworks": fws, "history": [], "news": news_out, "last_verified": man["last_verified"],
             "sources": {"manual": game["manual_file"], "patch_sources": lp.get("sources", [])}}
 
 
@@ -442,6 +456,12 @@ def main(argv: list[str]) -> int:
         print(f"  patch {lp['label']} ({lp['published_at'][:10]}) → {payload['verdict']}")
         for fw in payload["frameworks"]:
             print(f"    {fw['short']:12} {fw['status']:26} {fw.get('release_tag') or '—'}")
+    if not only:
+        try:
+            import news as _news
+            _news.main()
+        except Exception as e:  # noqa: BLE001
+            print(f"WARNING: news feed failed ({e}); keeping previous data/news.json", file=sys.stderr)
     missing = [g["slug"] for g in GAMES if not (DATA_DIR / f"{g['slug']}.json").exists()]
     if missing:
         print(f"ERROR: no data at all for {missing}", file=sys.stderr)

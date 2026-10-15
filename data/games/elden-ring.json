@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T22:13:41Z",
+  "generated_at": "2026-10-15T22:18:53Z",
   "game": {
     "slug": "elden-ring",
     "name": "Elden Ring",
@@ -405,6 +405,68 @@
           "mentions_patch": false
         }
       ]
+    }
+  ],
+  "news": [
+    {
+      "title": "STARSCOURGE RADAHN JOINS THE ELDEN RING FIGUARTS MINI SERIES",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1845383656393031",
+      "published_at": "2026-10-05T10:00:24Z",
+      "is_patch": false
+    },
+    {
+      "title": "New Elden Ring Mini Replicas Arrive: Malenia, Messmer & Wylder",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1842846814452378",
+      "published_at": "2026-09-07T07:25:52Z",
+      "is_patch": false
+    },
+    {
+      "title": "ELDEN RING - Community Quests",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1842846814440454",
+      "published_at": "2026-09-02T14:10:31Z",
+      "is_patch": false
+    },
+    {
+      "title": "ELDEN RING - Tarnished Pack DLC is available now",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1842212951303612",
+      "published_at": "2026-08-28T15:39:42Z",
+      "is_patch": false
+    },
+    {
+      "title": "Patch Notes Version 1.17",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1842212951300120",
+      "published_at": "2026-08-27T14:00:22Z",
+      "is_patch": true
+    },
+    {
+      "title": "ELDEN RING - RAGING WOLF 1/6 SCALE STATUE",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1832700592786543",
+      "published_at": "2026-05-13T14:20:38Z",
+      "is_patch": false
+    },
+    {
+      "title": "ELDEN RING: SHADOW OF THE ERDTREE \u2013 Official Vinyl Soundtrack",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1830163047259363",
+      "published_at": "2026-04-17T08:00:23Z",
+      "is_patch": false
+    },
+    {
+      "title": "Discover the ELDEN RING Blaidd The Half-Wolf Lamp",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1823191198601680",
+      "published_at": "2026-01-29T09:00:43Z",
+      "is_patch": false
+    },
+    {
+      "title": "Release Note for 2025/12/16",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1818752592134836",
+      "published_at": "2025-12-16T07:05:57Z",
+      "is_patch": false
+    },
+    {
+      "title": "ELDEN RING - Patch Notes Version 1.16.1",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1808601382443022",
+      "published_at": "2025-08-21T12:09:05Z",
+      "is_patch": true
     }
   ],
   "sources": {

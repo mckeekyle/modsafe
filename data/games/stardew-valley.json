@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T20:18:38Z",
+  "generated_at": "2026-10-15T22:18:29Z",
   "game": {
     "slug": "stardew-valley",
     "name": "Stardew Valley",
@@ -269,6 +269,68 @@
           "mentions_patch": false
         }
       ]
+    }
+  ],
+  "news": [
+    {
+      "title": "Stardew Valley 10-year Anniversary",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1825727806709248",
+      "published_at": "2026-02-26T23:40:00Z",
+      "is_patch": false
+    },
+    {
+      "title": "Stardew Valley Merchandise by Fangamer -- Special Promotion",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1816849002015096",
+      "published_at": "2025-11-21T17:58:09Z",
+      "is_patch": false
+    },
+    {
+      "title": "Stardew Valley 1.6.15 Patch now available",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1786573930663336",
+      "published_at": "2024-12-20T18:14:21Z",
+      "is_patch": true
+    },
+    {
+      "title": "Stardew Valley up for \"Labor of Love\" Steam Award",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1786573930637526",
+      "published_at": "2024-12-20T00:42:25Z",
+      "is_patch": false
+    },
+    {
+      "title": "Stardew Valley up for \"Labor of Love\" Steam Award Nomination",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1784506358991087",
+      "published_at": "2024-11-27T21:35:42Z",
+      "is_patch": false
+    },
+    {
+      "title": "Stardew Valley x Fangamer Merch Holiday Sale",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1783238125358744",
+      "published_at": "2024-11-19T01:16:31Z",
+      "is_patch": false
+    },
+    {
+      "title": "1.6.14 Update",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6148070194801749418",
+      "published_at": "2024-11-12T08:07:20Z",
+      "is_patch": true
+    },
+    {
+      "title": "Minor update 1.6.13",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6148070194801619948",
+      "published_at": "2024-11-08T07:04:25Z",
+      "is_patch": true
+    },
+    {
+      "title": "1.6.12 Update",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6148070194801588759",
+      "published_at": "2024-11-07T08:25:48Z",
+      "is_patch": true
+    },
+    {
+      "title": "Update 1.6.11",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6148070194801553515",
+      "published_at": "2024-11-06T06:46:34Z",
+      "is_patch": true
     }
   ],
   "sources": {

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T20:18:33Z",
+  "generated_at": "2026-10-15T22:18:13Z",
   "game": {
     "slug": "fallout-4",
     "name": "Fallout 4",
@@ -300,6 +300,68 @@
           "mentions_patch": false
         }
       ]
+    }
+  ],
+  "news": [
+    {
+      "title": "Fallout 4 Creation Kit Update - October 15",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1846651706677951",
+      "published_at": "2026-10-15T14:35:13Z",
+      "is_patch": false
+    },
+    {
+      "title": "Fallout 4 Update - August 18th ",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840944183789236",
+      "published_at": "2026-08-18T16:12:21Z",
+      "is_patch": true
+    },
+    {
+      "title": "Fallout 4 Update - May 27th",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1833968530885542",
+      "published_at": "2026-05-27T14:18:02Z",
+      "is_patch": true
+    },
+    {
+      "title": "Fallout Shelter Announce on Amazon Prime Video",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1821922921813622",
+      "published_at": "2026-01-15T16:55:08Z",
+      "is_patch": false
+    },
+    {
+      "title": "Find a new adventure in the Commonwealth with these Fallout 4 Creations.",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1819386365100052",
+      "published_at": "2025-12-21T17:41:06Z",
+      "is_patch": false
+    },
+    {
+      "title": "Fallout 4 December Patch - now available",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1818752592136433",
+      "published_at": "2025-12-16T16:35:30Z",
+      "is_patch": true
+    },
+    {
+      "title": "Fallout 4 - November Patch Now Available",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1816849002015332",
+      "published_at": "2025-11-21T19:13:41Z",
+      "is_patch": true
+    },
+    {
+      "title": "Fallout 4 - November 17th Hotfix",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1816307528971099",
+      "published_at": "2025-11-17T16:25:09Z",
+      "is_patch": true
+    },
+    {
+      "title": "Watch the Fallout Season 2 Official Trailer",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1816307528917031",
+      "published_at": "2025-11-13T15:46:50Z",
+      "is_patch": false
+    },
+    {
+      "title": "Fallout 4 Upcoming Hotfixes and Creation Storage Increase",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1816215235364760",
+      "published_at": "2025-11-12T22:41:22Z",
+      "is_patch": false
     }
   ],
   "sources": {

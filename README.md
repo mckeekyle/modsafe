@@ -19,6 +19,12 @@ Static site that tracks whether each game's core mod frameworks/loaders have cau
 | Terraria | `/terraria/` | Steam news (105600) | tModLoader (GitHub) |
 | RimWorld | `/rimworld/` | Steam news (294100) | Harmony (agnostic), HugsLib (GitHub) |
 | Mount & Blade II: Bannerlord | `/bannerlord/` | Steam news (261550) | BLSE, Harmony (agnostic) |
+| Starfield | `/starfield/` | Steam (1716740) | SFSE (tags + sfse.silverlock.org); Address Library (manual) |
+| Elden Ring | `/elden-ring/` | Steam (1245620) | Seamless Co-op, me3 (GitHub releases) |
+| Valheim | `/valheim/` | Steam (892970) | BepInExPack_Valheim (Thunderstore), Jötunn (GitHub) |
+| Terraria | `/terraria/` | Steam (105600) | tModLoader (GitHub) |
+| RimWorld | `/rimworld/` | Steam (294100) | HugsLib; Harmony (agnostic) |
+| Bannerlord | `/bannerlord/` | Steam (261550) | BLSE; Harmony (agnostic) |
 | Minecraft Java | `/minecraft/` | Mojang version manifest | Fabric Loader (meta), Fabric API/Sodium/Iris/Lithium (Modrinth), Forge (promotions), NeoForge (Maven) |
 
 Games are configured in `src/games.py`. "Manual" items (Nexus-only) are linked but excluded from the verdict; ModSafe never scrapes Nexus or SteamDB.
@@ -60,6 +66,10 @@ Optional GitHub API token (higher rate limit for cron):
 export GITHUB_TOKEN=ghp_...   # or GH_TOKEN
 ./update
 ```
+
+## News feed
+
+`src/news.py` (run by `./update`) writes `data/news.json`: headline, source, date and link only, from Steam announcements of tracked games + PC Gamer, Rock Paper Shotgun and Eurogamer RSS. Items older than 21 days are dropped; patches for tracked games are highlighted. Shown on `/` and `/news/`, and per game.
 
 ## Tests
 

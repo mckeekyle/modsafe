@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T20:18:37Z",
+  "generated_at": "2026-10-15T22:18:28Z",
   "game": {
     "slug": "baldurs-gate-3",
     "name": "Baldur's Gate 3",
@@ -397,6 +397,68 @@
           "mentions_patch": false
         }
       ]
+    }
+  ],
+  "news": [
+    {
+      "title": "Hotfix #36 Now Live!",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1827626365770693",
+      "published_at": "2026-03-26T14:40:05Z",
+      "is_patch": true
+    },
+    {
+      "title": "Community Update #36 A Very Moddy Christmas",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1817483467045820",
+      "published_at": "2025-12-01T16:12:32Z",
+      "is_patch": false
+    },
+    {
+      "title": "Hotfix #35 Now Live!",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1816849002010720",
+      "published_at": "2025-11-20T13:24:05Z",
+      "is_patch": true
+    },
+    {
+      "title": "Hotfix #34 Now Live!",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1811138915557937",
+      "published_at": "2025-09-23T15:06:20Z",
+      "is_patch": true
+    },
+    {
+      "title": "Community Update #35 Baldur's Gate 3 Turns Two",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1806698490814073",
+      "published_at": "2025-08-04T14:59:31Z",
+      "is_patch": false
+    },
+    {
+      "title": "Room Temperature Fix #33 Now Live!",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1806698490682773",
+      "published_at": "2025-07-31T13:29:16Z",
+      "is_patch": true
+    },
+    {
+      "title": "Community Update #34 - Connecting With Cross-Play & Hotfix #32",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1799817379628890",
+      "published_at": "2025-05-20T13:07:57Z",
+      "is_patch": false
+    },
+    {
+      "title": "Hotfix #31 Now Live!",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1799722702491181",
+      "published_at": "2025-05-14T11:03:14Z",
+      "is_patch": true
+    },
+    {
+      "title": "Hotfix #30 Now Live!",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1798454487574630",
+      "published_at": "2025-04-30T15:30:04Z",
+      "is_patch": true
+    },
+    {
+      "title": "The Final Patch: New Subclasses, Photo Mode, and Cross-Play",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1796631172407499",
+      "published_at": "2025-04-15T13:15:34Z",
+      "is_patch": true
     }
   ],
   "sources": {
