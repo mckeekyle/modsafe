@@ -29,6 +29,7 @@ PATCH_RE = re.compile(r"(?i)\b(patch|hotfix|update|title update|version\s?\d|v\d
 
 # Names/aliases used to tag headlines with tracked games.
 ALIASES = {
+    "steam-deck": [r"steam ?deck", r"steamos", r"decky"],
     "cyberpunk-2077": [r"cyberpunk"], "skyrim-se": [r"skyrim"], "fallout-4": [r"fallout 4"],
     "baldurs-gate-3": [r"baldur'?s gate 3", r"\bbg3\b"], "stardew-valley": [r"stardew"],
     "lethal-company": [r"lethal company"], "gta-v": [r"\bgta (?:5|v)\b", r"grand theft auto v\b"],

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T22:19:20Z",
+  "generated_at": "2026-10-15T22:59:06Z",
   "game": {
     "slug": "bannerlord",
     "name": "Mount & Blade II: Bannerlord",
@@ -461,6 +461,7 @@
       "is_patch": false
     }
   ],
+  "channels": [],
   "sources": {
     "steam_news": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=261550&count=100"
   }

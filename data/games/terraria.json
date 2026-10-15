@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T22:19:06Z",
+  "generated_at": "2026-10-15T22:58:53Z",
   "game": {
     "slug": "terraria",
     "name": "Terraria",
@@ -141,6 +141,7 @@
       "is_patch": false
     }
   ],
+  "channels": [],
   "sources": {
     "steam_news": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=105600&count=100"
   }

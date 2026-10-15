@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T22:18:38Z",
+  "generated_at": "2026-10-15T22:58:33Z",
   "game": {
     "slug": "lethal-company",
     "name": "Lethal Company",
@@ -723,6 +723,7 @@
       "is_patch": true
     }
   ],
+  "channels": [],
   "sources": {
     "steam_news": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1966720&count=100"
   }

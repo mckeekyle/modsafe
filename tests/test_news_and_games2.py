@@ -120,3 +120,24 @@ class TestCacheBusting(unittest.TestCase):
         self.assertIn(f'/styles.css?v={build.CSS_VER}', html)
         self.assertIn("immutable", build.HEADERS)
         self.assertIn(".games-menu:not([open]) .menu-pop { display: none; }", build.CSS)
+
+
+class TestSteamDeck(unittest.TestCase):
+    def test_stable_vs_beta_rule(self):
+        from games import GAMES_BY_SLUG
+        from status_logic import detect_patch
+        g = GAMES_BY_SLUG["steam-deck"]
+        self.assertEqual(detect_patch("SteamOS 3.8.28", g["patch_rule"])["version"], "3.8.28")
+        for t in ("SteamOS 3.9.2 Beta", "SteamOS 3.9.1 Preview", "Steam Client Update: October 13th"):
+            self.assertIsNone(detect_patch(t, g["patch_rule"]), t)
+        import re
+        self.assertTrue(re.search(g["channels"][0]["include"], "SteamOS 3.9.2 Beta", re.I))
+        self.assertEqual(g["genre"], "Platform")
+        self.assertFalse(g["frameworks"][0].get("agnostic"))  # Decky drives the verdict
+
+    def test_decky_store_adapter(self):
+        import update
+        update._decky_cache[:] = [{"name": "PowerTools", "versions": [{"name": "2.0.3", "created": "2024-06-18T14:02:00Z"}]}]
+        r = update.releases_decky_store({"package": "PowerTools", "url": "u"})
+        self.assertEqual((r[0]["tag_name"], r[0]["prerelease"]), ("2.0.3", False))
+        update._decky_cache.clear()

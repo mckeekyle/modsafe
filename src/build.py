@@ -700,12 +700,13 @@ def build_game_page(game: dict, data: dict) -> str:
 </section>
 <section class="panel" aria-label="Patch details">
 <dl class="patch-meta">
-<dt>Latest patch</dt><dd><strong>{esc(p['label'])}</strong></dd>
+<dt>{"Latest Stable" if data.get("channels") else "Latest patch"}</dt><dd><strong>{esc(p['label'])}</strong></dd>
 <dt>Released</dt><dd>{esc(fmt_date(p.get('published_at')))}</dd>
 <dt>Source</dt><dd><a href="{esc(p.get('url', ''))}">{esc(p.get('title', ''))}</a></dd>
 {snap}
 {f"<dt>Builds</dt><dd>" + ", ".join(f"{esc(k.title())} <code>{esc(v)}</code>" for k, v in p["builds"].items()) + "</dd>" if p.get("builds") else ""}
 {f"<dt>Last manually verified</dt><dd><strong>{esc(data['last_verified'])}</strong> <span class='muted'>(hand-maintained data)</span></dd>" if data.get("last_verified") else ""}
+{"".join(f"<dt>{esc(c['name'])}</dt><dd><a href='{esc(c['url'])}'>{esc(c['title'])}</a> <span class='muted'>· {esc(fmt_date(c['published_at']))} · not counted in the verdict</span></dd>" for c in data.get("channels", []))}
 <dt>Data refreshed</dt><dd>{esc(fmt_date(data.get('generated_at')))} <span class="muted">(UTC)</span></dd>
 </dl>
 </section>

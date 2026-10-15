@@ -349,6 +349,46 @@ GAMES = [
         "wiki": "https://minecraft.wiki/w/Java_Edition",
         "blurb": "Each Java release needs new Fabric/Forge/NeoForge builds, and every mod must be ported to the new version.",
     },
+    {
+        "slug": "steam-deck",
+        "name": "Steam Deck (SteamOS)",
+        "short": "Steam Deck",
+        "kind_label": "platform",
+        "developer": "Valve",
+        "genre": "Platform",
+        "steam_appid": 1675200,
+        "patch_rule": {
+            # Stable-channel posts are titled exactly "SteamOS 3.8.28"; Beta/Preview posts carry a suffix.
+            "include": r"^SteamOS\s+\d+\.\d+(?:\.\d+)?\s*$",
+            "exclude": r"beta|preview|client",
+            "version": r"(\d+\.\d+(?:\.\d+)?)",
+            "require_version": True,
+            "label": "SteamOS {v}",
+        },
+        "news_include": r"steamos|steam deck",  # skip the frequent Steam client beta posts
+        "channels": [
+            {"name": "Beta", "include": r"^SteamOS\s+\d+\.\d+(?:\.\d+)?\s+Beta\b"},
+            {"name": "Preview", "include": r"^SteamOS\s+\d+\.\d+(?:\.\d+)?\s+Preview\b"},
+        ],
+        "frameworks": [
+            {"id": "decky-loader", "name": "Decky Loader", "short": "Decky", "source": "github",
+             "repo": "SteamDeckHomebrew/decky-loader", "url": "https://github.com/SteamDeckHomebrew/decky-loader"},
+            {"id": "decky-steamgriddb", "name": "SteamGridDB (Decky plugin)", "short": "SteamGridDB", "source": "decky_store",
+             "package": "SteamGridDB", "url": "https://github.com/SteamGridDB/decky-steamgriddb", "issues_repo": "SteamGridDB/decky-steamgriddb",
+             "agnostic": True, "agnostic_note": "Plugin runs inside Decky Loader; it follows Steam client UI changes, not SteamOS builds, and updates via the Decky store."},
+            {"id": "decky-cssloader", "name": "CSS Loader (Decky plugin)", "short": "CSS Loader", "source": "decky_store",
+             "package": "CSS Loader", "url": "https://github.com/DeckThemes/SDH-CssLoader",
+             "agnostic": True, "agnostic_note": "Plugin runs inside Decky Loader; themes can drift with Steam client UI changes, not SteamOS builds."},
+            {"id": "decky-protondb", "name": "ProtonDB Badges (Decky plugin)", "short": "ProtonDB Badges", "source": "decky_store",
+             "package": "ProtonDB Badges", "url": "https://github.com/OMGDuke/protondb-decky",
+             "agnostic": True, "agnostic_note": "Plugin runs inside Decky Loader; it follows Steam client UI changes, not SteamOS builds."},
+            {"id": "decky-powertools", "name": "PowerTools (Decky plugin)", "short": "PowerTools", "source": "decky_store",
+             "package": "PowerTools", "url": "https://github.com/NGnius/PowerTools",
+             "agnostic": True, "agnostic_note": "Plugin runs inside Decky Loader; hardware-level settings rarely depend on the SteamOS point release."},
+        ],
+        "wiki": "https://decky.xyz/",
+        "blurb": "SteamOS and Steam client updates can break Decky Loader's injection into the Steam UI; plugins wait on Decky.",
+    },
 ]
 
 GAMES_BY_SLUG = {g["slug"]: g for g in GAMES}

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T22:17:58Z",
+  "generated_at": "2026-10-15T22:58:02Z",
   "game": {
     "slug": "cyberpunk-2077",
     "name": "Cyberpunk 2077",
@@ -989,6 +989,7 @@
       "is_patch": false
     }
   ],
+  "channels": [],
   "sources": {
     "steam_news": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1091500&count=100"
   }

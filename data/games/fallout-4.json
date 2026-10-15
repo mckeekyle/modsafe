@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T22:18:13Z",
+  "generated_at": "2026-10-15T22:58:16Z",
   "game": {
     "slug": "fallout-4",
     "name": "Fallout 4",
@@ -364,6 +364,7 @@
       "is_patch": false
     }
   ],
+  "channels": [],
   "sources": {
     "steam_news": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=377160&count=100"
   }

@@ -136,7 +136,22 @@ def releases_thunderstore(fw: dict) -> list[dict]:
     ]
 
 
-SOURCES = {"github": releases_github, "github_tags": releases_github_tags, "thunderstore": releases_thunderstore}
+DECKY_STORE = "https://plugins.deckbrew.xyz/plugins"
+_decky_cache: list = []
+
+
+def releases_decky_store(fw: dict) -> list[dict]:
+    """Official Decky plugin store API (public JSON): versions with created timestamps."""
+    if not _decky_cache:
+        _decky_cache.extend(http_get_json(DECKY_STORE))
+    p = next((x for x in _decky_cache if x.get("name") == fw["package"]), None)
+    if not p:
+        raise RuntimeError(f"Plugin {fw['package']!r} not in Decky store")
+    return [{"tag_name": v["name"], "name": f"{p['name']} {v['name']}", "body": "", "published_at": v.get("created"),
+             "html_url": fw["url"], "prerelease": False, "draft": False} for v in p.get("versions", [])[:10]]
+
+
+SOURCES = {"decky_store": releases_decky_store, "github": releases_github, "github_tags": releases_github_tags, "thunderstore": releases_thunderstore}
 
 
 def http_get_text(url: str, timeout: int = 30) -> str:
@@ -303,8 +318,21 @@ def build_steam_game(game: dict) -> dict:
     patch_urls = {p["url"] for p in patches}
     news_out = [{"title": n.get("title", ""), "url": n.get("url", ""),
                  "published_at": datetime.fromtimestamp(int(n["date"]), tz=timezone.utc).isoformat().replace("+00:00", "Z"),
-                 "is_patch": n.get("url") in patch_urls} for n in news[:10] if n.get("date")]
-    return {"latest_patch": latest, "frameworks": fws, "history": history, "news": news_out,
+                 "is_patch": n.get("url") in patch_urls} for n in news
+                if n.get("date") and (not game.get("news_include") or __import__("re").search(game["news_include"], n.get("title", ""), __import__("re").I))][:10]
+    channels = []
+    for ch in game.get("channels", []):
+        hit = next((n for n in news if __import__("re").search(ch["include"], n.get("title", ""), __import__("re").I)), None)
+        if hit:
+            channels.append({"name": ch["name"], "title": hit["title"], "url": hit.get("url", ""),
+                             "published_at": datetime.fromtimestamp(int(hit["date"]), tz=timezone.utc).isoformat().replace("+00:00", "Z")})
+    pre = [r for r in rels_by.get(game["frameworks"][0]["id"], []) if r.get("prerelease")]
+    stable = pick_latest_stable_release(rels_by.get(game["frameworks"][0]["id"], []) or [])
+    pre = [r for r in pre if stable and (parse_iso(r.get("published_at")) or patch_dt) > parse_iso(stable.get("published_at"))]
+    if channels and pre:
+        channels.append({"name": f"{game['frameworks'][0]['short']} pre-release", "title": pre[0].get("tag_name"),
+                         "url": pre[0].get("html_url"), "published_at": pre[0].get("published_at")})
+    return {"latest_patch": latest, "frameworks": fws, "history": history, "news": news_out, "channels": channels,
             "sources": {"steam_news": STEAM_NEWS.format(appid=game["steam_appid"]).split("&maxlength")[0]}}
 
 
@@ -372,7 +400,19 @@ def build_minecraft(game: dict) -> dict:
         history.append({**p, "frameworks": row})
     news_out = [{"title": f"Minecraft Java Edition {v['id']} released", "is_patch": True,
                  "url": patch_of(v)["url"], "published_at": patch_of(v)["published_at"]} for v in releases[:5]]
-    return {"latest_patch": latest, "frameworks": fws, "history": history, "news": news_out,
+    channels = []
+    for ch in game.get("channels", []):
+        hit = next((n for n in news if __import__("re").search(ch["include"], n.get("title", ""), __import__("re").I)), None)
+        if hit:
+            channels.append({"name": ch["name"], "title": hit["title"], "url": hit.get("url", ""),
+                             "published_at": datetime.fromtimestamp(int(hit["date"]), tz=timezone.utc).isoformat().replace("+00:00", "Z")})
+    pre = [r for r in rels_by.get(game["frameworks"][0]["id"], []) if r.get("prerelease")]
+    stable = pick_latest_stable_release(rels_by.get(game["frameworks"][0]["id"], []) or [])
+    pre = [r for r in pre if stable and (parse_iso(r.get("published_at")) or patch_dt) > parse_iso(stable.get("published_at"))]
+    if channels and pre:
+        channels.append({"name": f"{game['frameworks'][0]['short']} pre-release", "title": pre[0].get("tag_name"),
+                         "url": pre[0].get("html_url"), "published_at": pre[0].get("published_at")})
+    return {"latest_patch": latest, "frameworks": fws, "history": history, "news": news_out, "channels": channels,
             "latest_snapshot": man["latest"].get("snapshot"),
             "sources": {"mojang_manifest": MC_MANIFEST, "fabric_meta": FABRIC_GAME, "forge_promotions": FORGE_PROMOS,
                         "neoforge_maven": NEOFORGE_VERSIONS, "modrinth": "https://api.modrinth.com/v2"}}
