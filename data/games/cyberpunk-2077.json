@@ -1,27 +1,31 @@
 {
-  "generated_at": "2026-10-15T19:17:48.017329Z",
+  "generated_at": "2026-10-15T20:04:22Z",
   "game": {
+    "slug": "cyberpunk-2077",
     "name": "Cyberpunk 2077",
     "steam_appid": 1091500,
     "latest_patch": {
       "version": "2.31",
+      "label": "Patch 2.31",
       "title": "Patch 2.31",
       "published_at": "2025-09-11T10:09:03Z",
       "published_unix": 1757585343,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1810503566412448",
-      "gid": "1810503566412448",
-      "summary": "Patch 2.31 for Cyberpunk 2077 is now live!This update includes an AutoDrive upgrade and Photo Mode adjustments. It also addresses common issues encountered by players. For details, check the full list of changes below:VehiclesUpdated AutoDrive. When driving to a selected point, the vehicle now drives smoothly, overtakes blocking vehicles and no longer stops at traffic lights. Free Roam mode has also been upgraded to follow traffic rules and navigate the city more reliably.Fixed an issue where Jo"
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1810503566412448"
     }
   },
+  "verdict": "Unknown / check",
+  "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
   "frameworks": [
     {
       "id": "cet",
       "name": "Cyber Engine Tweaks",
       "short": "CET",
-      "repo": "maximegmd/CyberEngineTweaks",
       "url": "https://github.com/maximegmd/CyberEngineTweaks",
+      "source": "github",
+      "repo": "maximegmd/CyberEngineTweaks",
+      "tracked": true,
       "status": "Updated for latest patch",
-      "reason": "Latest release is on/after patch 2.31; an earlier post-patch release (v1.37.0) explicitly mentioned that version.",
+      "reason": "Latest release is on/after patch Patch 2.31; an earlier post-patch release (v1.37.0) explicitly mentioned that version.",
       "release_tag": "v1.37.1",
       "release_name": "v1.37.1",
       "release_published_at": "2025-09-28T10:49:01Z",
@@ -36,10 +40,12 @@
       "id": "red4ext",
       "name": "RED4ext",
       "short": "RED4ext",
-      "repo": "WopsS/RED4ext",
       "url": "https://github.com/WopsS/RED4ext",
+      "source": "github",
+      "repo": "WopsS/RED4ext",
+      "tracked": true,
       "status": "Updated for latest patch",
-      "reason": "Latest release is on/after patch 2.31; an earlier post-patch release (v1.29.0) explicitly mentioned that version.",
+      "reason": "Latest release is on/after patch Patch 2.31; an earlier post-patch release (v1.29.0) explicitly mentioned that version.",
       "release_tag": "v1.30.0",
       "release_name": "v1.30.0",
       "release_published_at": "2026-03-09T18:53:07Z",
@@ -54,10 +60,12 @@
       "id": "redscript",
       "name": "redscript",
       "short": "redscript",
-      "repo": "jac3km4/redscript",
       "url": "https://github.com/jac3km4/redscript",
+      "source": "github",
+      "repo": "jac3km4/redscript",
+      "tracked": true,
       "status": "Unknown / check",
-      "reason": "Latest release predates patch 2.31; compatibility is unverified \u2014 check the project page.",
+      "reason": "Latest release predates patch Patch 2.31; compatibility is unverified \u2014 check the project page.",
       "release_tag": "v0.5.31",
       "release_name": "v0.5.31",
       "release_published_at": "2025-08-28T20:47:17Z",
@@ -70,10 +78,12 @@
       "id": "archive-xl",
       "name": "ArchiveXL",
       "short": "ArchiveXL",
-      "repo": "psiberx/cp2077-archive-xl",
       "url": "https://github.com/psiberx/cp2077-archive-xl",
+      "source": "github",
+      "repo": "psiberx/cp2077-archive-xl",
+      "tracked": true,
       "status": "Updated for latest patch",
-      "reason": "Latest release is on/after patch 2.31; an earlier post-patch release (v1.26.0) explicitly mentioned that version.",
+      "reason": "Latest release is on/after patch Patch 2.31; an earlier post-patch release (v1.26.0) explicitly mentioned that version.",
       "release_tag": "v1.27.4",
       "release_name": "ArchiveXL 1.27.4",
       "release_published_at": "2026-10-05T06:51:36Z",
@@ -88,10 +98,12 @@
       "id": "tweak-xl",
       "name": "TweakXL",
       "short": "TweakXL",
-      "repo": "psiberx/cp2077-tweak-xl",
       "url": "https://github.com/psiberx/cp2077-tweak-xl",
+      "source": "github",
+      "repo": "psiberx/cp2077-tweak-xl",
+      "tracked": true,
       "status": "Likely OK",
-      "reason": "Latest release is newer than patch 2.31, but notes do not explicitly mention that version.",
+      "reason": "Latest release is newer than patch Patch 2.31, but notes do not explicitly mention that version.",
       "release_tag": "v1.11.4",
       "release_name": "TweakXL 1.11.4",
       "release_published_at": "2026-07-28T18:01:57Z",
@@ -104,10 +116,12 @@
       "id": "codeware",
       "name": "Codeware",
       "short": "Codeware",
-      "repo": "psiberx/cp2077-codeware",
       "url": "https://github.com/psiberx/cp2077-codeware",
+      "source": "github",
+      "repo": "psiberx/cp2077-codeware",
+      "tracked": true,
       "status": "Updated for latest patch",
-      "reason": "Latest release is on/after patch 2.31; an earlier post-patch release (v1.18.0) explicitly mentioned that version.",
+      "reason": "Latest release is on/after patch Patch 2.31; an earlier post-patch release (v1.18.0) explicitly mentioned that version.",
       "release_tag": "v1.20.5",
       "release_name": "Codeware 1.20.5",
       "release_published_at": "2026-09-20T07:44:34Z",
@@ -122,6 +136,7 @@
   "history": [
     {
       "version": "2.31",
+      "label": "Patch 2.31",
       "title": "Patch 2.31",
       "published_at": "2025-09-11T10:09:03Z",
       "published_unix": 1757585343,
@@ -185,6 +200,7 @@
     },
     {
       "version": "2.3",
+      "label": "Patch 2.3",
       "title": "Update 2.3 Patch Notes",
       "published_at": "2025-07-16T16:12:38Z",
       "published_unix": 1752682358,
@@ -248,6 +264,7 @@
     },
     {
       "version": "2.21",
+      "label": "Patch 2.21",
       "title": "Patch 2.21",
       "published_at": "2025-01-23T11:05:43Z",
       "published_unix": 1737630343,
@@ -311,6 +328,7 @@
     },
     {
       "version": "2.2",
+      "label": "Patch 2.2",
       "title": "Update 2.2 is live!",
       "published_at": "2024-12-10T17:01:18Z",
       "published_unix": 1733850078,
@@ -374,6 +392,7 @@
     },
     {
       "version": "2.13",
+      "label": "Patch 2.13",
       "title": "Patch 2.13",
       "published_at": "2024-09-12T12:02:11Z",
       "published_unix": 1726142531,
@@ -437,6 +456,7 @@
     },
     {
       "version": "2.12",
+      "label": "Patch 2.12",
       "title": "Patch 2.12",
       "published_at": "2024-02-29T11:01:35Z",
       "published_unix": 1709204495,
@@ -500,6 +520,7 @@
     },
     {
       "version": "2.11",
+      "label": "Patch 2.11",
       "title": "Patch 2.11",
       "published_at": "2024-01-31T11:08:08Z",
       "published_unix": 1706699288,
@@ -563,6 +584,7 @@
     },
     {
       "version": "2.1",
+      "label": "Patch 2.1",
       "title": "Update 2.1",
       "published_at": "2023-12-05T11:10:40Z",
       "published_unix": 1701774640,
@@ -626,6 +648,7 @@
     },
     {
       "version": "2.02",
+      "label": "Patch 2.02",
       "title": "Patch 2.02",
       "published_at": "2023-10-26T10:10:55Z",
       "published_unix": 1698315055,
@@ -689,6 +712,7 @@
     },
     {
       "version": "2.01",
+      "label": "Patch 2.01",
       "title": "Patch 2.01",
       "published_at": "2023-10-05T10:04:20Z",
       "published_unix": 1696500260,
@@ -752,6 +776,7 @@
     },
     {
       "version": "2.0",
+      "label": "Patch 2.0",
       "title": "Update 2.0",
       "published_at": "2023-09-21T15:02:39Z",
       "published_unix": 1695308559,
@@ -815,6 +840,7 @@
     },
     {
       "version": "1.63",
+      "label": "Patch 1.63",
       "title": "Patch 1.63 \u2014 list of changes",
       "published_at": "2023-06-20T12:07:40Z",
       "published_unix": 1687262860,
@@ -875,200 +901,9 @@
           "mentions_patch": false
         }
       ]
-    },
-    {
-      "version": "1.62",
-      "title": "Patch 1.62 \u2014 Ray Tracing: Overdrive Mode",
-      "published_at": "2023-04-11T11:03:08Z",
-      "published_unix": 1681210988,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5121196841306328909",
-      "frameworks": [
-        {
-          "id": "cet",
-          "short": "CET",
-          "name": "Cyber Engine Tweaks",
-          "status": "Likely OK",
-          "release_tag": "v1.25.1",
-          "release_published_at": "2023-06-23T20:44:00Z",
-          "mentions_patch": false
-        },
-        {
-          "id": "red4ext",
-          "short": "RED4ext",
-          "name": "RED4ext",
-          "status": "Updated for latest patch",
-          "release_tag": "v1.12.0",
-          "release_published_at": "2023-04-20T17:27:27Z",
-          "mentions_patch": true
-        },
-        {
-          "id": "redscript",
-          "short": "redscript",
-          "name": "redscript",
-          "status": "Likely OK",
-          "release_tag": "v0.5.24",
-          "release_published_at": "2024-05-30T22:17:15Z",
-          "mentions_patch": false
-        },
-        {
-          "id": "archive-xl",
-          "short": "ArchiveXL",
-          "name": "ArchiveXL",
-          "status": "Likely OK",
-          "release_tag": "v1.19.1",
-          "release_published_at": "2025-01-05T04:45:24Z",
-          "mentions_patch": false
-        },
-        {
-          "id": "tweak-xl",
-          "short": "TweakXL",
-          "name": "TweakXL",
-          "status": "Likely OK",
-          "release_tag": "v1.6.0",
-          "release_published_at": "2023-12-06T15:09:23Z",
-          "mentions_patch": false
-        },
-        {
-          "id": "codeware",
-          "short": "Codeware",
-          "name": "Codeware",
-          "status": "Likely OK",
-          "release_tag": "v1.11.0",
-          "release_published_at": "2024-06-14T18:38:27Z",
-          "mentions_patch": false
-        }
-      ]
-    },
-    {
-      "version": "1.61",
-      "title": "Patch 1.61",
-      "published_at": "2022-11-08T12:03:59Z",
-      "published_unix": 1667909039,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/4732747437219989700",
-      "frameworks": [
-        {
-          "id": "cet",
-          "short": "CET",
-          "name": "Cyber Engine Tweaks",
-          "status": "Likely OK",
-          "release_tag": "v1.25.1",
-          "release_published_at": "2023-06-23T20:44:00Z",
-          "mentions_patch": false
-        },
-        {
-          "id": "red4ext",
-          "short": "RED4ext",
-          "name": "RED4ext",
-          "status": "Likely OK",
-          "release_tag": "v1.10.1",
-          "release_published_at": "2023-02-01T18:25:49Z",
-          "mentions_patch": false
-        },
-        {
-          "id": "redscript",
-          "short": "redscript",
-          "name": "redscript",
-          "status": "Likely OK",
-          "release_tag": "v0.5.24",
-          "release_published_at": "2024-05-30T22:17:15Z",
-          "mentions_patch": false
-        },
-        {
-          "id": "archive-xl",
-          "short": "ArchiveXL",
-          "name": "ArchiveXL",
-          "status": "Likely OK",
-          "release_tag": "v1.19.1",
-          "release_published_at": "2025-01-05T04:45:24Z",
-          "mentions_patch": false
-        },
-        {
-          "id": "tweak-xl",
-          "short": "TweakXL",
-          "name": "TweakXL",
-          "status": "Likely OK",
-          "release_tag": "v1.6.0",
-          "release_published_at": "2023-12-06T15:09:23Z",
-          "mentions_patch": false
-        },
-        {
-          "id": "codeware",
-          "short": "Codeware",
-          "name": "Codeware",
-          "status": "Likely OK",
-          "release_tag": "v1.11.0",
-          "release_published_at": "2024-06-14T18:38:27Z",
-          "mentions_patch": false
-        }
-      ]
-    },
-    {
-      "version": "1.52",
-      "title": "Patch 1.52",
-      "published_at": "2022-03-22T12:42:15Z",
-      "published_unix": 1647952935,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/4259848535845652761",
-      "frameworks": [
-        {
-          "id": "cet",
-          "short": "CET",
-          "name": "Cyber Engine Tweaks",
-          "status": "Likely OK",
-          "release_tag": "v1.25.1",
-          "release_published_at": "2023-06-23T20:44:00Z",
-          "mentions_patch": false
-        },
-        {
-          "id": "red4ext",
-          "short": "RED4ext",
-          "name": "RED4ext",
-          "status": "Likely OK",
-          "release_tag": "v1.10.1",
-          "release_published_at": "2023-02-01T18:25:49Z",
-          "mentions_patch": false
-        },
-        {
-          "id": "redscript",
-          "short": "redscript",
-          "name": "redscript",
-          "status": "Likely OK",
-          "release_tag": "v0.5.24",
-          "release_published_at": "2024-05-30T22:17:15Z",
-          "mentions_patch": false
-        },
-        {
-          "id": "archive-xl",
-          "short": "ArchiveXL",
-          "name": "ArchiveXL",
-          "status": "Likely OK",
-          "release_tag": "v1.19.1",
-          "release_published_at": "2025-01-05T04:45:24Z",
-          "mentions_patch": false
-        },
-        {
-          "id": "tweak-xl",
-          "short": "TweakXL",
-          "name": "TweakXL",
-          "status": "Likely OK",
-          "release_tag": "v1.6.0",
-          "release_published_at": "2023-12-06T15:09:23Z",
-          "mentions_patch": false
-        },
-        {
-          "id": "codeware",
-          "short": "Codeware",
-          "name": "Codeware",
-          "status": "Likely OK",
-          "release_tag": "v1.11.0",
-          "release_published_at": "2024-06-14T18:38:27Z",
-          "mentions_patch": false
-        }
-      ]
     }
   ],
-  "disclaimer": "Statuses are inferred from public Steam news and GitHub release dates/notes. They are not guarantees. Always verify on the framework's GitHub/Nexus page and the Cyberpunk modding wiki before updating.",
   "sources": {
-    "steam_news": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/",
-    "github": "https://api.github.com"
+    "steam_news": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1091500&count=100"
   }
 }

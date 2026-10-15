@@ -1,0 +1,297 @@
+{
+  "generated_at": "2026-10-15T20:04:28Z",
+  "game": {
+    "slug": "fallout-4",
+    "name": "Fallout 4",
+    "steam_appid": 377160,
+    "latest_patch": {
+      "version": null,
+      "label": "Update 2026-08-18",
+      "title": "Fallout 4 Update - August 18th ",
+      "published_at": "2026-08-18T16:12:21Z",
+      "published_unix": 1787069541,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840944183789236"
+    }
+  },
+  "verdict": "Unknown / check",
+  "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
+  "frameworks": [
+    {
+      "id": "f4se",
+      "name": "Fallout 4 Script Extender (F4SE)",
+      "short": "F4SE",
+      "url": "https://f4se.silverlock.org/",
+      "source": "github_tags",
+      "repo": "ianpatt/f4se",
+      "tracked": true,
+      "status": "Unknown / check",
+      "reason": "Latest release predates patch Update 2026-08-18; compatibility is unverified \u2014 check the project page. (Date is the tagged commit on GitHub; builds are published on the official site.)",
+      "release_tag": "v0.7.9",
+      "release_name": "v0.7.9",
+      "release_published_at": "2026-08-16T18:48:30Z",
+      "release_url": "https://github.com/ianpatt/f4se/releases/tag/v0.7.9",
+      "mentions_patch": false,
+      "newer_than_patch": false,
+      "mention_releases": []
+    },
+    {
+      "id": "address-library-f4",
+      "name": "Address Library for F4SE Plugins",
+      "short": "Address Lib",
+      "url": "https://www.nexusmods.com/fallout4/mods/47327",
+      "source": "manual",
+      "tracked": false,
+      "status": "Unknown / check",
+      "reason": "Distributed on Nexus Mods only; ModSafe does not scrape Nexus. Check the mod page.",
+      "release_tag": null,
+      "release_published_at": null,
+      "release_url": "https://www.nexusmods.com/fallout4/mods/47327"
+    },
+    {
+      "id": "buffout4",
+      "name": "Buffout 4 / Buffout 4 NG",
+      "short": "Buffout 4",
+      "url": "https://www.nexusmods.com/fallout4/mods/64880",
+      "source": "manual",
+      "tracked": false,
+      "status": "Unknown / check",
+      "reason": "Original Buffout 4 is unmaintained; the NG fork is distributed on Nexus Mods only. Check the mod page.",
+      "release_tag": null,
+      "release_published_at": null,
+      "release_url": "https://www.nexusmods.com/fallout4/mods/64880"
+    }
+  ],
+  "history": [
+    {
+      "version": null,
+      "label": "Update 2026-08-18",
+      "title": "Fallout 4 Update - August 18th ",
+      "published_at": "2026-08-18T16:12:21Z",
+      "published_unix": 1787069541,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840944183789236",
+      "frameworks": [
+        {
+          "id": "f4se",
+          "short": "F4SE",
+          "name": "Fallout 4 Script Extender (F4SE)",
+          "status": "Unknown / check",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": null,
+      "label": "Update 2026-05-27",
+      "title": "Fallout 4 Update - May 27th",
+      "published_at": "2026-05-27T14:18:02Z",
+      "published_unix": 1779891482,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1833968530885542",
+      "frameworks": [
+        {
+          "id": "f4se",
+          "short": "F4SE",
+          "name": "Fallout 4 Script Extender (F4SE)",
+          "status": "Likely OK",
+          "release_tag": "v0.7.9",
+          "release_published_at": "2026-08-16T18:48:30Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": null,
+      "label": "Update 2025-12-16",
+      "title": "Fallout 4 December Patch - now available",
+      "published_at": "2025-12-16T16:35:30Z",
+      "published_unix": 1765902930,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1818752592136433",
+      "frameworks": [
+        {
+          "id": "f4se",
+          "short": "F4SE",
+          "name": "Fallout 4 Script Extender (F4SE)",
+          "status": "Likely OK",
+          "release_tag": "v0.7.7",
+          "release_published_at": "2025-12-16T17:36:45Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": null,
+      "label": "Update 2025-11-21",
+      "title": "Fallout 4 - November Patch Now Available",
+      "published_at": "2025-11-21T19:13:41Z",
+      "published_unix": 1763752421,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1816849002015332",
+      "frameworks": [
+        {
+          "id": "f4se",
+          "short": "F4SE",
+          "name": "Fallout 4 Script Extender (F4SE)",
+          "status": "Likely OK",
+          "release_tag": "v0.7.6",
+          "release_published_at": "2025-11-25T22:47:28Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": null,
+      "label": "Update 2025-11-17",
+      "title": "Fallout 4 - November 17th Hotfix",
+      "published_at": "2025-11-17T16:25:09Z",
+      "published_unix": 1763396709,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1816307528971099",
+      "frameworks": [
+        {
+          "id": "f4se",
+          "short": "F4SE",
+          "name": "Fallout 4 Script Extender (F4SE)",
+          "status": "Likely OK",
+          "release_tag": "v0.7.6",
+          "release_published_at": "2025-11-25T22:47:28Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": null,
+      "label": "Update 2025-11-04",
+      "title": "Fallout 4 - Creations Menu Update - November 10th",
+      "published_at": "2025-11-04T18:31:57Z",
+      "published_unix": 1762281117,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1815034433041639",
+      "frameworks": [
+        {
+          "id": "f4se",
+          "short": "F4SE",
+          "name": "Fallout 4 Script Extender (F4SE)",
+          "status": "Likely OK",
+          "release_tag": "v0.7.6",
+          "release_published_at": "2025-11-25T22:47:28Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": null,
+      "label": "Update 2024-05-13",
+      "title": "Fallout 4 \u2013 Next Gen Update 2 Notes",
+      "published_at": "2024-05-13T16:43:13Z",
+      "published_unix": 1715618593,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5768625435410729013",
+      "frameworks": [
+        {
+          "id": "f4se",
+          "short": "F4SE",
+          "name": "Fallout 4 Script Extender (F4SE)",
+          "status": "Likely OK",
+          "release_tag": "v0.7.6",
+          "release_published_at": "2025-11-25T22:47:28Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": null,
+      "label": "Update 2024-04-25",
+      "title": "Fallout 4 Next Gen \u2013 Update Notes",
+      "published_at": "2024-04-25T14:36:34Z",
+      "published_unix": 1714055794,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5759616966664772192",
+      "frameworks": [
+        {
+          "id": "f4se",
+          "short": "F4SE",
+          "name": "Fallout 4 Script Extender (F4SE)",
+          "status": "Likely OK",
+          "release_tag": "v0.7.6",
+          "release_published_at": "2025-11-25T22:47:28Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.10.40",
+      "label": "1.10.40",
+      "title": "Fallout 4: 1.10.40 Update",
+      "published_at": "2017-11-07T16:58:06Z",
+      "published_unix": 1510073886,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/4249665521682980752",
+      "frameworks": [
+        {
+          "id": "f4se",
+          "short": "F4SE",
+          "name": "Fallout 4 Script Extender (F4SE)",
+          "status": "Likely OK",
+          "release_tag": "v0.7.6",
+          "release_published_at": "2025-11-25T22:47:28Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": null,
+      "label": "Update 2017-01-31",
+      "title": "Fallout 4 1.9 Update Live",
+      "published_at": "2017-01-31T18:32:54Z",
+      "published_unix": 1485887574,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/4249665521682981072",
+      "frameworks": [
+        {
+          "id": "f4se",
+          "short": "F4SE",
+          "name": "Fallout 4 Script Extender (F4SE)",
+          "status": "Likely OK",
+          "release_tag": "v0.7.6",
+          "release_published_at": "2025-11-25T22:47:28Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": null,
+      "label": "Update 2016-11-07",
+      "title": "\u200b\u200b\u200b\u200bNew Fallout 4 Update (v 1.8) on Steam",
+      "published_at": "2016-11-07T20:07:24Z",
+      "published_unix": 1478549244,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/4249665521682981284",
+      "frameworks": [
+        {
+          "id": "f4se",
+          "short": "F4SE",
+          "name": "Fallout 4 Script Extender (F4SE)",
+          "status": "Likely OK",
+          "release_tag": "v0.7.6",
+          "release_published_at": "2025-11-25T22:47:28Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.7.19",
+      "label": "1.7.19",
+      "title": "Fallout 4 1.7.19 and Nuka-World Update",
+      "published_at": "2016-09-29T15:19:55Z",
+      "published_unix": 1475162395,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/4249665521682981400",
+      "frameworks": [
+        {
+          "id": "f4se",
+          "short": "F4SE",
+          "name": "Fallout 4 Script Extender (F4SE)",
+          "status": "Likely OK",
+          "release_tag": "v0.7.6",
+          "release_published_at": "2025-11-25T22:47:28Z",
+          "mentions_patch": false
+        }
+      ]
+    }
+  ],
+  "sources": {
+    "steam_news": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=377160&count=100"
+  }
+}

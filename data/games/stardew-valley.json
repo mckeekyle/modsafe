@@ -1,0 +1,271 @@
+{
+  "generated_at": "2026-10-15T20:04:31Z",
+  "game": {
+    "slug": "stardew-valley",
+    "name": "Stardew Valley",
+    "steam_appid": 413150,
+    "latest_patch": {
+      "version": "1.6.15",
+      "label": "1.6.15",
+      "title": "Stardew Valley 1.6.15 Patch now available",
+      "published_at": "2024-12-20T18:14:21Z",
+      "published_unix": 1734718461,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1786573930663336"
+    }
+  },
+  "verdict": "Likely OK",
+  "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
+  "frameworks": [
+    {
+      "id": "smapi",
+      "name": "SMAPI (Stardew Modding API)",
+      "short": "SMAPI",
+      "url": "https://smapi.io/",
+      "source": "github",
+      "repo": "Pathoschild/SMAPI",
+      "tracked": true,
+      "status": "Likely OK",
+      "reason": "Latest release is newer than patch 1.6.15, but notes do not explicitly mention that version.",
+      "release_tag": "4.5.2",
+      "release_name": "4.5.2",
+      "release_published_at": "2026-03-22T23:55:42Z",
+      "release_url": "https://github.com/Pathoschild/SMAPI/releases/tag/4.5.2",
+      "mentions_patch": false,
+      "newer_than_patch": true,
+      "mention_releases": []
+    }
+  ],
+  "history": [
+    {
+      "version": "1.6.15",
+      "label": "1.6.15",
+      "title": "Stardew Valley 1.6.15 Patch now available",
+      "published_at": "2024-12-20T18:14:21Z",
+      "published_unix": 1734718461,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1786573930663336",
+      "frameworks": [
+        {
+          "id": "smapi",
+          "short": "SMAPI",
+          "name": "SMAPI (Stardew Modding API)",
+          "status": "Updated for latest patch",
+          "release_tag": "4.1.10",
+          "release_published_at": "2024-12-19T15:49:49Z",
+          "mentions_patch": true
+        }
+      ]
+    },
+    {
+      "version": "1.6.14",
+      "label": "1.6.14",
+      "title": "1.6.14 Update",
+      "published_at": "2024-11-12T08:07:20Z",
+      "published_unix": 1731398840,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6148070194801749418",
+      "frameworks": [
+        {
+          "id": "smapi",
+          "short": "SMAPI",
+          "name": "SMAPI (Stardew Modding API)",
+          "status": "Updated for latest patch",
+          "release_tag": "4.5.2",
+          "release_published_at": "2026-03-22T23:55:42Z",
+          "mentions_patch": true
+        }
+      ]
+    },
+    {
+      "version": "1.6.13",
+      "label": "1.6.13",
+      "title": "Minor update 1.6.13",
+      "published_at": "2024-11-08T07:04:25Z",
+      "published_unix": 1731049465,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6148070194801619948",
+      "frameworks": [
+        {
+          "id": "smapi",
+          "short": "SMAPI",
+          "name": "SMAPI (Stardew Modding API)",
+          "status": "Likely OK",
+          "release_tag": "4.1.7",
+          "release_published_at": "2024-11-12T17:12:16Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.6.12",
+      "label": "1.6.12",
+      "title": "1.6.12 Update",
+      "published_at": "2024-11-07T08:25:48Z",
+      "published_unix": 1730967948,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6148070194801588759",
+      "frameworks": [
+        {
+          "id": "smapi",
+          "short": "SMAPI",
+          "name": "SMAPI (Stardew Modding API)",
+          "status": "Likely OK",
+          "release_tag": "4.1.6",
+          "release_published_at": "2024-11-08T04:27:23Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.6.11",
+      "label": "1.6.11",
+      "title": "Update 1.6.11",
+      "published_at": "2024-11-06T06:46:34Z",
+      "published_unix": 1730875594,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6148070194801553515",
+      "frameworks": [
+        {
+          "id": "smapi",
+          "short": "SMAPI",
+          "name": "SMAPI (Stardew Modding API)",
+          "status": "Likely OK",
+          "release_tag": "4.1.5",
+          "release_published_at": "2024-11-07T06:25:58Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.6.10",
+      "label": "1.6.10",
+      "title": "1.6.10 Bug Fix Patch",
+      "published_at": "2024-11-05T00:04:17Z",
+      "published_unix": 1730765057,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6146943657174044314",
+      "frameworks": [
+        {
+          "id": "smapi",
+          "short": "SMAPI",
+          "name": "SMAPI (Stardew Modding API)",
+          "status": "Updated for latest patch",
+          "release_tag": "4.1.6",
+          "release_published_at": "2024-11-08T04:27:23Z",
+          "mentions_patch": true
+        }
+      ]
+    },
+    {
+      "version": "1.6.9",
+      "label": "1.6.9",
+      "title": "1.6.9 Update Now Available",
+      "published_at": "2024-11-04T17:57:56Z",
+      "published_unix": 1730743076,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6146943657174036265",
+      "frameworks": [
+        {
+          "id": "smapi",
+          "short": "SMAPI",
+          "name": "SMAPI (Stardew Modding API)",
+          "status": "Updated for latest patch",
+          "release_tag": "4.1.5",
+          "release_published_at": "2024-11-07T06:25:58Z",
+          "mentions_patch": true
+        }
+      ]
+    },
+    {
+      "version": "1.6.6",
+      "label": "1.6.6",
+      "title": "Stardew Valley 1.6.6 Patch Notes",
+      "published_at": "2024-04-26T19:39:05Z",
+      "published_unix": 1714160345,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5759616966669183785",
+      "frameworks": [
+        {
+          "id": "smapi",
+          "short": "SMAPI",
+          "name": "SMAPI (Stardew Modding API)",
+          "status": "Likely OK",
+          "release_tag": "4.0.8",
+          "release_published_at": "2024-04-26T21:50:30Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.6.5",
+      "label": "1.6.5",
+      "title": "1.6.5 patch notes",
+      "published_at": "2024-04-19T17:29:01Z",
+      "published_unix": 1713547741,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5762994032395159679",
+      "frameworks": [
+        {
+          "id": "smapi",
+          "short": "SMAPI",
+          "name": "SMAPI (Stardew Modding API)",
+          "status": "Likely OK",
+          "release_tag": "4.0.8",
+          "release_published_at": "2024-04-26T21:50:30Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.6.4",
+      "label": "1.6.4",
+      "title": "1.6.4 hotfix 1",
+      "published_at": "2024-04-19T08:39:32Z",
+      "published_unix": 1713515972,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5762994032393818369",
+      "frameworks": [
+        {
+          "id": "smapi",
+          "short": "SMAPI",
+          "name": "SMAPI (Stardew Modding API)",
+          "status": "Updated for latest patch",
+          "release_tag": "4.0.8",
+          "release_published_at": "2024-04-26T21:50:30Z",
+          "mentions_patch": true
+        }
+      ]
+    },
+    {
+      "version": "1.6.3",
+      "label": "1.6.3",
+      "title": "Stardew Valley 1.6.3 Patch",
+      "published_at": "2024-03-27T20:53:54Z",
+      "published_unix": 1711572834,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5749481331434481650",
+      "frameworks": [
+        {
+          "id": "smapi",
+          "short": "SMAPI",
+          "name": "SMAPI (Stardew Modding API)",
+          "status": "Updated for latest patch",
+          "release_tag": "4.0.3",
+          "release_published_at": "2024-03-27T23:48:35Z",
+          "mentions_patch": true
+        }
+      ]
+    },
+    {
+      "version": "1.6.2",
+      "label": "1.6.2",
+      "title": "Patch 1.6.2",
+      "published_at": "2024-03-21T04:24:01Z",
+      "published_unix": 1710995041,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5686430301716627452",
+      "frameworks": [
+        {
+          "id": "smapi",
+          "short": "SMAPI",
+          "name": "SMAPI (Stardew Modding API)",
+          "status": "Likely OK",
+          "release_tag": "4.0.1",
+          "release_published_at": "2024-03-24T16:12:20Z",
+          "mentions_patch": false
+        }
+      ]
+    }
+  ],
+  "sources": {
+    "steam_news": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=413150&count=100"
+  }
+}

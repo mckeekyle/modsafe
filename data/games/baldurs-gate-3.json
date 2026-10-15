@@ -1,0 +1,397 @@
+{
+  "generated_at": "2026-10-15T20:04:30Z",
+  "game": {
+    "slug": "baldurs-gate-3",
+    "name": "Baldur's Gate 3",
+    "steam_appid": 1086940,
+    "latest_patch": {
+      "version": "Hotfix #36",
+      "label": "Hotfix #36",
+      "title": "Hotfix #36 Now Live!",
+      "published_at": "2026-03-26T14:40:05Z",
+      "published_unix": 1774536005,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1827626365770693"
+    }
+  },
+  "verdict": "Unknown / check",
+  "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
+  "frameworks": [
+    {
+      "id": "bg3se",
+      "name": "BG3 Script Extender",
+      "short": "BG3SE",
+      "url": "https://github.com/Norbyte/bg3se",
+      "source": "github",
+      "repo": "Norbyte/bg3se",
+      "tracked": true,
+      "status": "Likely OK",
+      "reason": "Latest release is newer than patch Hotfix #36, but notes do not explicitly mention that version.",
+      "release_tag": "v33",
+      "release_name": "Script Extender (2026 Oct 12)",
+      "release_published_at": "2026-10-12T21:35:28Z",
+      "release_url": "https://github.com/Norbyte/bg3se/releases/tag/v33",
+      "mentions_patch": false,
+      "newer_than_patch": true,
+      "mention_releases": []
+    },
+    {
+      "id": "bg3mm",
+      "name": "BG3 Mod Manager",
+      "short": "BG3MM",
+      "url": "https://github.com/LaughingLeader/BG3ModManager",
+      "source": "github",
+      "repo": "LaughingLeader/BG3ModManager",
+      "tracked": true,
+      "status": "Unknown / check",
+      "reason": "Latest release predates patch Hotfix #36; compatibility is unverified \u2014 check the project page.",
+      "release_tag": "1.0.12.9",
+      "release_name": "Latest Release (Windows)",
+      "release_published_at": "2025-05-18T18:42:15Z",
+      "release_url": "https://github.com/LaughingLeader/BG3ModManager/releases/tag/1.0.12.9",
+      "mentions_patch": false,
+      "newer_than_patch": false,
+      "mention_releases": []
+    }
+  ],
+  "history": [
+    {
+      "version": "Hotfix #36",
+      "label": "Hotfix #36",
+      "title": "Hotfix #36 Now Live!",
+      "published_at": "2026-03-26T14:40:05Z",
+      "published_unix": 1774536005,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1827626365770693",
+      "frameworks": [
+        {
+          "id": "bg3se",
+          "short": "BG3SE",
+          "name": "BG3 Script Extender",
+          "status": "Likely OK",
+          "release_tag": "v31",
+          "release_published_at": "2026-04-17T10:46:04Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "bg3mm",
+          "short": "BG3MM",
+          "name": "BG3 Mod Manager",
+          "status": "Unknown / check",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "Hotfix #35",
+      "label": "Hotfix #35",
+      "title": "Hotfix #35 Now Live!",
+      "published_at": "2025-11-20T13:24:05Z",
+      "published_unix": 1763645045,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1816849002010720",
+      "frameworks": [
+        {
+          "id": "bg3se",
+          "short": "BG3SE",
+          "name": "BG3 Script Extender",
+          "status": "Likely OK",
+          "release_tag": "v31",
+          "release_published_at": "2026-04-17T10:46:04Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "bg3mm",
+          "short": "BG3MM",
+          "name": "BG3 Mod Manager",
+          "status": "Unknown / check",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "Hotfix #34",
+      "label": "Hotfix #34",
+      "title": "Hotfix #34 Now Live!",
+      "published_at": "2025-09-23T15:06:20Z",
+      "published_unix": 1758639980,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1811138915557937",
+      "frameworks": [
+        {
+          "id": "bg3se",
+          "short": "BG3SE",
+          "name": "BG3 Script Extender",
+          "status": "Likely OK",
+          "release_tag": "v31",
+          "release_published_at": "2026-04-17T10:46:04Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "bg3mm",
+          "short": "BG3MM",
+          "name": "BG3 Mod Manager",
+          "status": "Unknown / check",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "Room Temperature Fix #33",
+      "label": "Room Temperature Fix #33",
+      "title": "Room Temperature Fix #33 Now Live!",
+      "published_at": "2025-07-31T13:29:16Z",
+      "published_unix": 1753968556,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1806698490682773",
+      "frameworks": [
+        {
+          "id": "bg3se",
+          "short": "BG3SE",
+          "name": "BG3 Script Extender",
+          "status": "Likely OK",
+          "release_tag": "v31",
+          "release_published_at": "2026-04-17T10:46:04Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "bg3mm",
+          "short": "BG3MM",
+          "name": "BG3 Mod Manager",
+          "status": "Unknown / check",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "Hotfix #31",
+      "label": "Hotfix #31",
+      "title": "Hotfix #31 Now Live!",
+      "published_at": "2025-05-14T11:03:14Z",
+      "published_unix": 1747220594,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1799722702491181",
+      "frameworks": [
+        {
+          "id": "bg3se",
+          "short": "BG3SE",
+          "name": "BG3 Script Extender",
+          "status": "Likely OK",
+          "release_tag": "v31",
+          "release_published_at": "2026-04-17T10:46:04Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "bg3mm",
+          "short": "BG3MM",
+          "name": "BG3 Mod Manager",
+          "status": "Likely OK",
+          "release_tag": "1.0.12.9",
+          "release_published_at": "2025-05-18T18:42:15Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "Hotfix #30",
+      "label": "Hotfix #30",
+      "title": "Hotfix #30 Now Live!",
+      "published_at": "2025-04-30T15:30:04Z",
+      "published_unix": 1746027004,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1798454487574630",
+      "frameworks": [
+        {
+          "id": "bg3se",
+          "short": "BG3SE",
+          "name": "BG3 Script Extender",
+          "status": "Likely OK",
+          "release_tag": "v31",
+          "release_published_at": "2026-04-17T10:46:04Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "bg3mm",
+          "short": "BG3MM",
+          "name": "BG3 Mod Manager",
+          "status": "Likely OK",
+          "release_tag": "1.0.12.3",
+          "release_published_at": "2025-05-01T02:15:08Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": null,
+      "label": "The Final Patch: New Subclasses, Photo Mode, and Cross-Play",
+      "title": "The Final Patch: New Subclasses, Photo Mode, and Cross-Play",
+      "published_at": "2025-04-15T13:15:34Z",
+      "published_unix": 1744722934,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1796631172407499",
+      "frameworks": [
+        {
+          "id": "bg3se",
+          "short": "BG3SE",
+          "name": "BG3 Script Extender",
+          "status": "Likely OK",
+          "release_tag": "v31",
+          "release_published_at": "2026-04-17T10:46:04Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "bg3mm",
+          "short": "BG3MM",
+          "name": "BG3 Mod Manager",
+          "status": "Likely OK",
+          "release_tag": "1.0.12.0",
+          "release_published_at": "2025-04-15T21:02:29Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "Hotfix #28",
+      "label": "Hotfix #28",
+      "title": "Hotfix #28 Now Live!",
+      "published_at": "2024-10-16T11:35:44Z",
+      "published_unix": 1729078544,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6212244583171984368",
+      "frameworks": [
+        {
+          "id": "bg3se",
+          "short": "BG3SE",
+          "name": "BG3 Script Extender",
+          "status": "Likely OK",
+          "release_tag": "v31",
+          "release_published_at": "2026-04-17T10:46:04Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "bg3mm",
+          "short": "BG3MM",
+          "name": "BG3 Mod Manager",
+          "status": "Likely OK",
+          "release_tag": "1.0.12.0",
+          "release_published_at": "2025-04-15T21:02:29Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "Hotfix #27",
+      "label": "Hotfix #27",
+      "title": "Hotfix #27 Now Live!",
+      "published_at": "2024-10-01T16:18:18Z",
+      "published_unix": 1727799498,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6339469370200698392",
+      "frameworks": [
+        {
+          "id": "bg3se",
+          "short": "BG3SE",
+          "name": "BG3 Script Extender",
+          "status": "Likely OK",
+          "release_tag": "v31",
+          "release_published_at": "2026-04-17T10:46:04Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "bg3mm",
+          "short": "BG3MM",
+          "name": "BG3 Mod Manager",
+          "status": "Likely OK",
+          "release_tag": "1.0.12.0",
+          "release_published_at": "2025-04-15T21:02:29Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "Hotfix #26",
+      "label": "Hotfix #26",
+      "title": "Hotfix #26 Now Live!",
+      "published_at": "2024-09-19T14:33:03Z",
+      "published_unix": 1726756383,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6341720536502865104",
+      "frameworks": [
+        {
+          "id": "bg3se",
+          "short": "BG3SE",
+          "name": "BG3 Script Extender",
+          "status": "Likely OK",
+          "release_tag": "v31",
+          "release_published_at": "2026-04-17T10:46:04Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "bg3mm",
+          "short": "BG3MM",
+          "name": "BG3 Mod Manager",
+          "status": "Likely OK",
+          "release_tag": "1.0.12.0",
+          "release_published_at": "2025-04-15T21:02:29Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "Patch #7",
+      "label": "Patch #7",
+      "title": "Patch #7 Now Live!",
+      "published_at": "2024-09-05T13:38:37Z",
+      "published_unix": 1725543517,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6242640076596793610",
+      "frameworks": [
+        {
+          "id": "bg3se",
+          "short": "BG3SE",
+          "name": "BG3 Script Extender",
+          "status": "Likely OK",
+          "release_tag": "v31",
+          "release_published_at": "2026-04-17T10:46:04Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "bg3mm",
+          "short": "BG3MM",
+          "name": "BG3 Mod Manager",
+          "status": "Likely OK",
+          "release_tag": "1.0.11.0",
+          "release_published_at": "2024-09-06T01:48:17Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "Hotfix #25",
+      "label": "Hotfix #25",
+      "title": "Hotfix #25 Now Live!",
+      "published_at": "2024-04-10T13:55:13Z",
+      "published_unix": 1712757313,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5762993398269377189",
+      "frameworks": [
+        {
+          "id": "bg3se",
+          "short": "BG3SE",
+          "name": "BG3 Script Extender",
+          "status": "Likely OK",
+          "release_tag": "updater-20240430",
+          "release_published_at": "2024-04-30T19:25:30Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "bg3mm",
+          "short": "BG3MM",
+          "name": "BG3 Mod Manager",
+          "status": "Likely OK",
+          "release_tag": "1.0.11.0",
+          "release_published_at": "2024-09-06T01:48:17Z",
+          "mentions_patch": false
+        }
+      ]
+    }
+  ],
+  "sources": {
+    "steam_news": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1086940&count=100"
+  }
+}

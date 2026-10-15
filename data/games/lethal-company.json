@@ -1,0 +1,649 @@
+{
+  "generated_at": "2026-10-15T20:04:35Z",
+  "game": {
+    "slug": "lethal-company",
+    "name": "Lethal Company",
+    "steam_appid": 1966720,
+    "latest_patch": {
+      "version": "80",
+      "label": "v80",
+      "title": "Version 80 - The Blooming Update",
+      "published_at": "2026-04-05T08:27:11Z",
+      "published_unix": 1775377631,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1828894815563326"
+    }
+  },
+  "verdict": "Unknown / check",
+  "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
+  "frameworks": [
+    {
+      "id": "bepinexpack",
+      "name": "BepInExPack",
+      "short": "BepInEx",
+      "url": "https://thunderstore.io/c/lethal-company/p/BepInEx/BepInExPack/",
+      "source": "thunderstore",
+      "repo": "BepInEx/BepInExPack",
+      "tracked": true,
+      "status": "Unknown / check",
+      "reason": "Latest release predates patch v80; compatibility is unverified \u2014 check the project page.",
+      "release_tag": "5.4.2305",
+      "release_name": "BepInEx-BepInExPack 5.4.2305",
+      "release_published_at": "2026-03-17T05:05:21Z",
+      "release_url": "https://thunderstore.io/c/lethal-company/p/BepInEx/BepInExPack/",
+      "mentions_patch": false,
+      "newer_than_patch": false,
+      "mention_releases": []
+    },
+    {
+      "id": "lethallib",
+      "name": "LethalLib",
+      "short": "LethalLib",
+      "url": "https://thunderstore.io/c/lethal-company/p/Evaisa/LethalLib/",
+      "source": "thunderstore",
+      "repo": "Evaisa/LethalLib",
+      "tracked": true,
+      "status": "Unknown / check",
+      "reason": "Latest release predates patch v80; compatibility is unverified \u2014 check the project page.",
+      "release_tag": "1.2.0",
+      "release_name": "Evaisa-LethalLib 1.2.0",
+      "release_published_at": "2026-04-01T20:01:23Z",
+      "release_url": "https://thunderstore.io/c/lethal-company/p/Evaisa/LethalLib/",
+      "mentions_patch": false,
+      "newer_than_patch": false,
+      "mention_releases": []
+    },
+    {
+      "id": "lethallevelloader",
+      "name": "LethalLevelLoader",
+      "short": "LLL",
+      "url": "https://thunderstore.io/c/lethal-company/p/IAmBatby/LethalLevelLoader/",
+      "source": "thunderstore",
+      "repo": "IAmBatby/LethalLevelLoader",
+      "tracked": true,
+      "status": "Likely OK",
+      "reason": "Latest release is newer than patch v80, but notes do not explicitly mention that version.",
+      "release_tag": "1.7.13",
+      "release_name": "IAmBatby-LethalLevelLoader 1.7.13",
+      "release_published_at": "2026-09-18T10:52:51Z",
+      "release_url": "https://thunderstore.io/c/lethal-company/p/IAmBatby/LethalLevelLoader/",
+      "mentions_patch": false,
+      "newer_than_patch": true,
+      "mention_releases": []
+    },
+    {
+      "id": "morecompany",
+      "name": "MoreCompany",
+      "short": "MoreCompany",
+      "url": "https://thunderstore.io/c/lethal-company/p/notnotnotswipez/MoreCompany/",
+      "source": "thunderstore",
+      "repo": "notnotnotswipez/MoreCompany",
+      "tracked": true,
+      "status": "Likely OK",
+      "reason": "Latest release is newer than patch v80, but notes do not explicitly mention that version.",
+      "release_tag": "1.14.0",
+      "release_name": "notnotnotswipez-MoreCompany 1.14.0",
+      "release_published_at": "2026-04-25T01:28:40Z",
+      "release_url": "https://thunderstore.io/c/lethal-company/p/notnotnotswipez/MoreCompany/",
+      "mentions_patch": false,
+      "newer_than_patch": true,
+      "mention_releases": []
+    }
+  ],
+  "history": [
+    {
+      "version": "80",
+      "label": "v80",
+      "title": "Version 80 - The Blooming Update",
+      "published_at": "2026-04-05T08:27:11Z",
+      "published_unix": 1775377631,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1828894815563326",
+      "frameworks": [
+        {
+          "id": "bepinexpack",
+          "short": "BepInEx",
+          "name": "BepInExPack",
+          "status": "Unknown / check",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        },
+        {
+          "id": "lethallib",
+          "short": "LethalLib",
+          "name": "LethalLib",
+          "status": "Unknown / check",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        },
+        {
+          "id": "lethallevelloader",
+          "short": "LLL",
+          "name": "LethalLevelLoader",
+          "status": "Likely OK",
+          "release_tag": "1.7.13",
+          "release_published_at": "2026-09-18T10:52:51Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "morecompany",
+          "short": "MoreCompany",
+          "name": "MoreCompany",
+          "status": "Likely OK",
+          "release_tag": "1.14.0",
+          "release_published_at": "2026-04-25T01:28:40Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "73",
+      "label": "v73",
+      "title": "Handy Patch V73",
+      "published_at": "2025-10-04T11:40:12Z",
+      "published_unix": 1759578012,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1811772772540321",
+      "frameworks": [
+        {
+          "id": "bepinexpack",
+          "short": "BepInEx",
+          "name": "BepInExPack",
+          "status": "Likely OK",
+          "release_tag": "5.4.2305",
+          "release_published_at": "2026-03-17T05:05:21Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "lethallib",
+          "short": "LethalLib",
+          "name": "LethalLib",
+          "status": "Likely OK",
+          "release_tag": "1.2.0",
+          "release_published_at": "2026-04-01T20:01:23Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "lethallevelloader",
+          "short": "LLL",
+          "name": "LethalLevelLoader",
+          "status": "Likely OK",
+          "release_tag": "1.7.13",
+          "release_published_at": "2026-09-18T10:52:51Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "morecompany",
+          "short": "MoreCompany",
+          "name": "MoreCompany",
+          "status": "Likely OK",
+          "release_tag": "1.14.0",
+          "release_published_at": "2026-04-25T01:28:40Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "72",
+      "label": "v72",
+      "title": "V72 Bug fix patch",
+      "published_at": "2025-06-06T00:21:24Z",
+      "published_unix": 1749169284,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1801617199407807",
+      "frameworks": [
+        {
+          "id": "bepinexpack",
+          "short": "BepInEx",
+          "name": "BepInExPack",
+          "status": "Likely OK",
+          "release_tag": "5.4.2305",
+          "release_published_at": "2026-03-17T05:05:21Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "lethallib",
+          "short": "LethalLib",
+          "name": "LethalLib",
+          "status": "Likely OK",
+          "release_tag": "1.2.0",
+          "release_published_at": "2026-04-01T20:01:23Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "lethallevelloader",
+          "short": "LLL",
+          "name": "LethalLevelLoader",
+          "status": "Likely OK",
+          "release_tag": "1.7.13",
+          "release_published_at": "2026-09-18T10:52:51Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "morecompany",
+          "short": "MoreCompany",
+          "name": "MoreCompany",
+          "status": "Likely OK",
+          "release_tag": "1.14.0",
+          "release_published_at": "2026-04-25T01:28:40Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "71",
+      "label": "v71",
+      "title": "V71 Bug fix patch",
+      "published_at": "2025-06-04T04:03:21Z",
+      "published_unix": 1749009801,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1801617199346487",
+      "frameworks": [
+        {
+          "id": "bepinexpack",
+          "short": "BepInEx",
+          "name": "BepInExPack",
+          "status": "Likely OK",
+          "release_tag": "5.4.2305",
+          "release_published_at": "2026-03-17T05:05:21Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "lethallib",
+          "short": "LethalLib",
+          "name": "LethalLib",
+          "status": "Likely OK",
+          "release_tag": "1.2.0",
+          "release_published_at": "2026-04-01T20:01:23Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "lethallevelloader",
+          "short": "LLL",
+          "name": "LethalLevelLoader",
+          "status": "Likely OK",
+          "release_tag": "1.7.13",
+          "release_published_at": "2026-09-18T10:52:51Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "morecompany",
+          "short": "MoreCompany",
+          "name": "MoreCompany",
+          "status": "Likely OK",
+          "release_tag": "1.14.0",
+          "release_published_at": "2026-04-25T01:28:40Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "70",
+      "label": "v70",
+      "title": "V70 - The Incubating Update",
+      "published_at": "2025-06-01T03:43:51Z",
+      "published_unix": 1748749431,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1800991756395986",
+      "frameworks": [
+        {
+          "id": "bepinexpack",
+          "short": "BepInEx",
+          "name": "BepInExPack",
+          "status": "Likely OK",
+          "release_tag": "5.4.2305",
+          "release_published_at": "2026-03-17T05:05:21Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "lethallib",
+          "short": "LethalLib",
+          "name": "LethalLib",
+          "status": "Likely OK",
+          "release_tag": "1.2.0",
+          "release_published_at": "2026-04-01T20:01:23Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "lethallevelloader",
+          "short": "LLL",
+          "name": "LethalLevelLoader",
+          "status": "Likely OK",
+          "release_tag": "1.7.13",
+          "release_published_at": "2026-09-18T10:52:51Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "morecompany",
+          "short": "MoreCompany",
+          "name": "MoreCompany",
+          "status": "Likely OK",
+          "release_tag": "1.14.0",
+          "release_published_at": "2026-04-25T01:28:40Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "69",
+      "label": "v69",
+      "title": "Jolly Patch V69",
+      "published_at": "2024-12-13T23:08:24Z",
+      "published_unix": 1734131304,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1785774543572415",
+      "frameworks": [
+        {
+          "id": "bepinexpack",
+          "short": "BepInEx",
+          "name": "BepInExPack",
+          "status": "Likely OK",
+          "release_tag": "5.4.2305",
+          "release_published_at": "2026-03-17T05:05:21Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "lethallib",
+          "short": "LethalLib",
+          "name": "LethalLib",
+          "status": "Likely OK",
+          "release_tag": "1.2.0",
+          "release_published_at": "2026-04-01T20:01:23Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "lethallevelloader",
+          "short": "LLL",
+          "name": "LethalLevelLoader",
+          "status": "Likely OK",
+          "release_tag": "1.7.13",
+          "release_published_at": "2026-09-18T10:52:51Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "morecompany",
+          "short": "MoreCompany",
+          "name": "MoreCompany",
+          "status": "Likely OK",
+          "release_tag": "1.14.0",
+          "release_published_at": "2026-04-25T01:28:40Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "64",
+      "label": "v64",
+      "title": "The Bag Patch - Version 64",
+      "published_at": "2024-09-05T03:59:37Z",
+      "published_unix": 1725508777,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6242640076595327323",
+      "frameworks": [
+        {
+          "id": "bepinexpack",
+          "short": "BepInEx",
+          "name": "BepInExPack",
+          "status": "Likely OK",
+          "release_tag": "5.4.2305",
+          "release_published_at": "2026-03-17T05:05:21Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "lethallib",
+          "short": "LethalLib",
+          "name": "LethalLib",
+          "status": "Likely OK",
+          "release_tag": "1.2.0",
+          "release_published_at": "2026-04-01T20:01:23Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "lethallevelloader",
+          "short": "LLL",
+          "name": "LethalLevelLoader",
+          "status": "Likely OK",
+          "release_tag": "1.7.13",
+          "release_published_at": "2026-09-18T10:52:51Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "morecompany",
+          "short": "MoreCompany",
+          "name": "MoreCompany",
+          "status": "Likely OK",
+          "release_tag": "1.14.0",
+          "release_published_at": "2026-04-25T01:28:40Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "62",
+      "label": "v62",
+      "title": "V62 Patch",
+      "published_at": "2024-08-20T17:41:10Z",
+      "published_unix": 1724175670,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6909171012614570560",
+      "frameworks": [
+        {
+          "id": "bepinexpack",
+          "short": "BepInEx",
+          "name": "BepInExPack",
+          "status": "Likely OK",
+          "release_tag": "5.4.2305",
+          "release_published_at": "2026-03-17T05:05:21Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "lethallib",
+          "short": "LethalLib",
+          "name": "LethalLib",
+          "status": "Likely OK",
+          "release_tag": "1.2.0",
+          "release_published_at": "2026-04-01T20:01:23Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "lethallevelloader",
+          "short": "LLL",
+          "name": "LethalLevelLoader",
+          "status": "Likely OK",
+          "release_tag": "1.7.13",
+          "release_published_at": "2026-09-18T10:52:51Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "morecompany",
+          "short": "MoreCompany",
+          "name": "MoreCompany",
+          "status": "Likely OK",
+          "release_tag": "1.14.0",
+          "release_published_at": "2026-04-25T01:28:40Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "61",
+      "label": "v61",
+      "title": "Small Patch V61",
+      "published_at": "2024-08-17T16:07:50Z",
+      "published_unix": 1723910870,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6909171012603398735",
+      "frameworks": [
+        {
+          "id": "bepinexpack",
+          "short": "BepInEx",
+          "name": "BepInExPack",
+          "status": "Likely OK",
+          "release_tag": "5.4.2305",
+          "release_published_at": "2026-03-17T05:05:21Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "lethallib",
+          "short": "LethalLib",
+          "name": "LethalLib",
+          "status": "Likely OK",
+          "release_tag": "1.2.0",
+          "release_published_at": "2026-04-01T20:01:23Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "lethallevelloader",
+          "short": "LLL",
+          "name": "LethalLevelLoader",
+          "status": "Likely OK",
+          "release_tag": "1.7.13",
+          "release_published_at": "2026-09-18T10:52:51Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "morecompany",
+          "short": "MoreCompany",
+          "name": "MoreCompany",
+          "status": "Likely OK",
+          "release_tag": "1.14.0",
+          "release_published_at": "2026-04-25T01:28:40Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "60",
+      "label": "v60",
+      "title": "Version 60 - The Stuffy Update",
+      "published_at": "2024-08-17T09:41:19Z",
+      "published_unix": 1723887679,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6909171012602420129",
+      "frameworks": [
+        {
+          "id": "bepinexpack",
+          "short": "BepInEx",
+          "name": "BepInExPack",
+          "status": "Likely OK",
+          "release_tag": "5.4.2305",
+          "release_published_at": "2026-03-17T05:05:21Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "lethallib",
+          "short": "LethalLib",
+          "name": "LethalLib",
+          "status": "Likely OK",
+          "release_tag": "1.2.0",
+          "release_published_at": "2026-04-01T20:01:23Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "lethallevelloader",
+          "short": "LLL",
+          "name": "LethalLevelLoader",
+          "status": "Likely OK",
+          "release_tag": "1.7.13",
+          "release_published_at": "2026-09-18T10:52:51Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "morecompany",
+          "short": "MoreCompany",
+          "name": "MoreCompany",
+          "status": "Likely OK",
+          "release_tag": "1.14.0",
+          "release_published_at": "2026-04-25T01:28:40Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "55",
+      "label": "v55",
+      "title": "Version 55 - The Cruising Update",
+      "published_at": "2024-07-06T19:56:00Z",
+      "published_unix": 1720295760,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5842939267343376814",
+      "frameworks": [
+        {
+          "id": "bepinexpack",
+          "short": "BepInEx",
+          "name": "BepInExPack",
+          "status": "Likely OK",
+          "release_tag": "5.4.2305",
+          "release_published_at": "2026-03-17T05:05:21Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "lethallib",
+          "short": "LethalLib",
+          "name": "LethalLib",
+          "status": "Likely OK",
+          "release_tag": "1.2.0",
+          "release_published_at": "2026-04-01T20:01:23Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "lethallevelloader",
+          "short": "LLL",
+          "name": "LethalLevelLoader",
+          "status": "Likely OK",
+          "release_tag": "1.7.13",
+          "release_published_at": "2026-09-18T10:52:51Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "morecompany",
+          "short": "MoreCompany",
+          "name": "MoreCompany",
+          "status": "Likely OK",
+          "release_tag": "1.14.0",
+          "release_published_at": "2026-04-25T01:28:40Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "50",
+      "label": "v50",
+      "title": "Version 50 - The Hopping Update",
+      "published_at": "2024-04-13T19:18:34Z",
+      "published_unix": 1713035914,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6474562312189361059",
+      "frameworks": [
+        {
+          "id": "bepinexpack",
+          "short": "BepInEx",
+          "name": "BepInExPack",
+          "status": "Likely OK",
+          "release_tag": "5.4.2305",
+          "release_published_at": "2026-03-17T05:05:21Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "lethallib",
+          "short": "LethalLib",
+          "name": "LethalLib",
+          "status": "Likely OK",
+          "release_tag": "1.2.0",
+          "release_published_at": "2026-04-01T20:01:23Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "lethallevelloader",
+          "short": "LLL",
+          "name": "LethalLevelLoader",
+          "status": "Likely OK",
+          "release_tag": "1.7.13",
+          "release_published_at": "2026-09-18T10:52:51Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "morecompany",
+          "short": "MoreCompany",
+          "name": "MoreCompany",
+          "status": "Likely OK",
+          "release_tag": "1.14.0",
+          "release_published_at": "2026-04-25T01:28:40Z",
+          "mentions_patch": false
+        }
+      ]
+    }
+  ],
+  "sources": {
+    "steam_news": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1966720&count=100"
+  }
+}

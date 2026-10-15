@@ -200,6 +200,7 @@ def determine_framework_status(
     release_tag: str,
     patch_version: str,
     patch_published_at: str,
+    mention_fn=None,
 ) -> dict[str, Any]:
     """
     Decide status for one framework relative to the latest game patch.
@@ -209,7 +210,11 @@ def determine_framework_status(
     release_dt = parse_iso(release_published_at)
     patch_dt = parse_iso(patch_published_at)
     combined_notes = f"{release_tag or ''}\n{release_notes or ''}"
-    mentions = notes_mention_patch(combined_notes, patch_version) if patch_version else False
+    if mention_fn is not None:
+        mentions = bool(mention_fn(combined_notes))
+    else:
+        mentions = notes_mention_patch(combined_notes, patch_version) if patch_version else False
+    patch_version = patch_version or "(unnumbered)"
 
     newer_than_patch = False
     if release_dt and patch_dt:
@@ -258,6 +263,7 @@ def status_for_patch_history(
     releases: list[dict[str, Any]],
     patch_version: str,
     patch_published_at: str,
+    mention_fn=None,
 ) -> dict[str, Any]:
     """
     For a historical patch, find the best matching release evidence:
@@ -273,7 +279,8 @@ def status_for_patch_history(
         body = r.get("body") or ""
         pub = r.get("published_at")
         notes = f"{tag}\n{body}"
-        if notes_mention_patch(notes, patch_version):
+        hit = mention_fn(notes) if mention_fn is not None else notes_mention_patch(notes, patch_version)
+        if hit:
             mentioned.append(r)
         rdt = parse_iso(pub)
         if patch_dt and rdt and rdt >= patch_dt and not r.get("prerelease"):
@@ -369,6 +376,7 @@ def determine_with_lineage(
     patch_version: str,
     patch_published_at: str,
     lineage_mention_tags: list[str],
+    mention_fn=None,
 ) -> dict[str, Any]:
     """
     Like determine_framework_status, but if the latest notes omit the version while
@@ -381,6 +389,7 @@ def determine_with_lineage(
         release_tag=release_tag,
         patch_version=patch_version,
         patch_published_at=patch_published_at,
+        mention_fn=mention_fn,
     )
     if base["status"] == STATUS_UPDATED:
         return base
@@ -396,3 +405,126 @@ def determine_with_lineage(
             "newer_than_patch": True,
         }
     return base
+
+
+# ---------------------------------------------------------------------------
+# Multi-game helpers
+# ---------------------------------------------------------------------------
+
+def detect_patch(title: str, rule: dict[str, Any]) -> Optional[dict[str, Any]]:
+    """
+    Generic Steam-announcement patch detector driven by a per-game rule:
+      include: regex the title must match
+      exclude: regex that disqualifies the title (teasers, betas, CK updates…)
+      version: regex whose group(1) is the version (optional)
+      label:   format string for display, using {v} (version) or {date}
+    Returns {"version": str|None, "label_hint": str} or None.
+    """
+    if not title:
+        return None
+    t = title.strip()
+    if rule.get("exclude") and re.search(rule["exclude"], t, re.I):
+        return None
+    if not re.search(rule["include"], t, re.I):
+        return None
+    version = None
+    if rule.get("version"):
+        m = re.search(rule["version"], t, re.I)
+        if m:
+            version = m.group(1)
+    if rule.get("require_version") and not version:
+        return None
+    return {"version": version}
+
+
+def make_mention_fn(version: Optional[str], template: Optional[str]):
+    """Build a notes->bool matcher for a patch version (None => never matches)."""
+    if not version:
+        return lambda _notes: False
+    if template:
+        rx = re.compile(template.format(v=re.escape(version)), re.I)
+        return lambda notes: bool(rx.search(notes or ""))
+    return lambda notes: notes_mention_patch(notes or "", version)
+
+
+def list_patches_generic(news_items: list[dict[str, Any]], rule: dict[str, Any], limit: int = 15) -> list[dict[str, Any]]:
+    """Patch announcements newest first, de-duplicated by version/label."""
+    raw = []
+    for item in news_items:
+        title = item.get("title") or ""
+        d = detect_patch(title, rule)
+        if not d or item.get("date") is None:
+            continue
+        published = datetime.fromtimestamp(int(item["date"]), tz=timezone.utc)
+        date_s = published.strftime("%Y-%m-%d")
+        v = d["version"]
+        if v:
+            label = (rule.get("label") or "{v}").format(v=v, date=date_s, title=title)
+        else:
+            label = (rule.get("label_noversion") or "{date}").format(date=date_s, title=title)
+        raw.append(
+            {
+                "version": v,
+                "label": label.strip(),
+                "title": title,
+                "published_at": published.isoformat().replace("+00:00", "Z"),
+                "published_unix": int(item["date"]),
+                "url": item.get("url") or "",
+            }
+        )
+    raw.sort(key=lambda c: c["published_unix"], reverse=True)
+    seen: set[str] = set()
+    out = []
+    for c in raw:
+        key = c["label"]
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(c)
+        if len(out) >= limit:
+            break
+    return out
+
+
+def overall_verdict(statuses: list[str]) -> str:
+    """Game-level verdict = the weakest status among auto-tracked frameworks."""
+    if not statuses:
+        return STATUS_UNKNOWN
+    if any(s == STATUS_UNKNOWN for s in statuses):
+        return STATUS_UNKNOWN
+    if any(s == STATUS_LIKELY for s in statuses):
+        return STATUS_LIKELY
+    return STATUS_UPDATED
+
+
+# --- Minecraft -------------------------------------------------------------
+
+def neoforge_versions_for(mc_version: str, versions: list[str]) -> list[str]:
+    """
+    NeoForge versions targeting a Minecraft release.
+    Old scheme: MC 1.21.4 -> 21.4.x, MC 1.21 -> 21.0.x.
+    New scheme (MC 26.x): MC 26.3 -> 26.3.0.x, MC 26.1.2 -> 26.1.2.x.
+    """
+    parts = mc_version.split(".")
+    if parts[0] == "1" and len(parts) >= 2:
+        minor = parts[1]
+        patch = parts[2] if len(parts) > 2 else "0"
+        prefix = f"{minor}.{patch}."
+        return [v for v in versions if v.startswith(prefix)]
+    if len(parts) == 2:
+        prefixes = (f"{mc_version}.0.",)
+    else:
+        prefixes = (f"{mc_version}.",)
+    return [v for v in versions if v.startswith(prefixes)]
+
+
+def loader_support_status(*, has_stable: bool, has_any: bool, what: str, mc_version: str) -> dict[str, str]:
+    """Map 'a build exists for this MC version' evidence to the honest statuses."""
+    if has_stable:
+        return {"status": STATUS_UPDATED, "reason": f"{what} publishes a stable build for Minecraft {mc_version}."}
+    if has_any:
+        return {
+            "status": STATUS_LIKELY,
+            "reason": f"{what} has only beta/latest (not recommended/stable) builds for Minecraft {mc_version}.",
+        }
+    return {"status": STATUS_UNKNOWN, "reason": f"No {what} build found for Minecraft {mc_version} yet."}

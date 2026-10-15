@@ -1,0 +1,664 @@
+{
+  "generated_at": "2026-10-15T20:04:27Z",
+  "game": {
+    "slug": "skyrim-se",
+    "name": "Skyrim Special Edition",
+    "steam_appid": 489830,
+    "latest_patch": {
+      "version": "1.7.99",
+      "label": "1.7.99",
+      "title": "The Elder Scrolls V: Skyrim Anniversary Edition - Update 1.7.99 (Updated Aug 27)",
+      "published_at": "2026-08-20T14:55:37Z",
+      "published_unix": 1787237737,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1841579228665884"
+    }
+  },
+  "verdict": "Likely OK",
+  "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
+  "frameworks": [
+    {
+      "id": "skse64",
+      "name": "Skyrim Script Extender (SKSE64)",
+      "short": "SKSE64",
+      "url": "https://skse.silverlock.org/",
+      "source": "github_tags",
+      "repo": "ianpatt/skse64",
+      "tracked": true,
+      "status": "Likely OK",
+      "reason": "Latest release is newer than patch 1.7.99, but notes do not explicitly mention that version. (Date is the tagged commit on GitHub; builds are published on the official site.)",
+      "release_tag": "v2.3.1",
+      "release_name": "v2.3.1",
+      "release_published_at": "2026-08-27T15:43:38Z",
+      "release_url": "https://github.com/ianpatt/skse64/releases/tag/v2.3.1",
+      "mentions_patch": false,
+      "newer_than_patch": true,
+      "mention_releases": []
+    },
+    {
+      "id": "engine-fixes",
+      "name": "SSE Engine Fixes",
+      "short": "Engine Fixes",
+      "url": "https://github.com/aers/EngineFixesSkyrim64",
+      "source": "github",
+      "repo": "aers/EngineFixesSkyrim64",
+      "tracked": true,
+      "status": "Likely OK",
+      "reason": "Latest release is newer than patch 1.7.99, but notes do not explicitly mention that version.",
+      "release_tag": "7.0.21-beta5",
+      "release_name": "",
+      "release_published_at": "2026-08-23T20:18:38Z",
+      "release_url": "https://github.com/aers/EngineFixesSkyrim64/releases/tag/7.0.21-beta5",
+      "mentions_patch": false,
+      "newer_than_patch": true,
+      "mention_releases": []
+    },
+    {
+      "id": "papyrus-extender",
+      "name": "powerofthree's Papyrus Extender",
+      "short": "PapyrusExt",
+      "url": "https://github.com/powerof3/PapyrusExtenderSSE",
+      "source": "github",
+      "repo": "powerof3/PapyrusExtenderSSE",
+      "tracked": true,
+      "status": "Likely OK",
+      "reason": "Latest release is newer than patch 1.7.99, but notes do not explicitly mention that version.",
+      "release_tag": "v6.5.2",
+      "release_name": "v6.5.2",
+      "release_published_at": "2026-09-05T12:42:36Z",
+      "release_url": "https://github.com/powerof3/PapyrusExtenderSSE/releases/tag/v6.5.2",
+      "mentions_patch": false,
+      "newer_than_patch": true,
+      "mention_releases": []
+    },
+    {
+      "id": "crash-logger",
+      "name": "Crash Logger SSE AE VR",
+      "short": "CrashLogger",
+      "url": "https://github.com/alandtse/CrashLoggerSSE",
+      "source": "github",
+      "repo": "alandtse/CrashLoggerSSE",
+      "tracked": true,
+      "status": "Updated for latest patch",
+      "reason": "Latest release notes mention patch 1.7.99 and the release is on/after the patch date.",
+      "release_tag": "v1.25.0",
+      "release_name": "v1.25.0",
+      "release_published_at": "2026-08-21T09:13:59Z",
+      "release_url": "https://github.com/alandtse/CrashLoggerSSE/releases/tag/v1.25.0",
+      "mentions_patch": true,
+      "newer_than_patch": true,
+      "mention_releases": [
+        "v1.25.0"
+      ]
+    },
+    {
+      "id": "address-library",
+      "name": "Address Library for SKSE Plugins",
+      "short": "Address Lib",
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/32444",
+      "source": "manual",
+      "tracked": false,
+      "status": "Unknown / check",
+      "reason": "Distributed on Nexus Mods only; ModSafe does not scrape Nexus. Check the mod page.",
+      "release_tag": null,
+      "release_published_at": null,
+      "release_url": "https://www.nexusmods.com/skyrimspecialedition/mods/32444"
+    }
+  ],
+  "history": [
+    {
+      "version": "1.7.99",
+      "label": "1.7.99",
+      "title": "The Elder Scrolls V: Skyrim Anniversary Edition - Update 1.7.99 (Updated Aug 27)",
+      "published_at": "2026-08-20T14:55:37Z",
+      "published_unix": 1787237737,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1841579228665884",
+      "frameworks": [
+        {
+          "id": "skse64",
+          "short": "SKSE64",
+          "name": "Skyrim Script Extender (SKSE64)",
+          "status": "Likely OK",
+          "release_tag": "v2.3.1",
+          "release_published_at": "2026-08-27T15:43:38Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "engine-fixes",
+          "short": "Engine Fixes",
+          "name": "SSE Engine Fixes",
+          "status": "Likely OK",
+          "release_tag": "7.0.21-beta2",
+          "release_published_at": "2026-08-21T21:00:08Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "papyrus-extender",
+          "short": "PapyrusExt",
+          "name": "powerofthree's Papyrus Extender",
+          "status": "Likely OK",
+          "release_tag": "v6.5.0",
+          "release_published_at": "2026-08-25T18:16:25Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "crash-logger",
+          "short": "CrashLogger",
+          "name": "Crash Logger SSE AE VR",
+          "status": "Updated for latest patch",
+          "release_tag": "v1.25.0",
+          "release_published_at": "2026-08-21T09:13:59Z",
+          "mentions_patch": true
+        }
+      ]
+    },
+    {
+      "version": "1.6.640",
+      "label": "1.6.640",
+      "title": "The Elder Scrolls V: Skyrim Anniversary Edition - Update 1.6.640",
+      "published_at": "2022-09-20T18:20:48Z",
+      "published_unix": 1663698048,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6258337460562640347",
+      "frameworks": [
+        {
+          "id": "skse64",
+          "short": "SKSE64",
+          "name": "Skyrim Script Extender (SKSE64)",
+          "status": "Likely OK",
+          "release_tag": "v2.2.7",
+          "release_published_at": "2026-08-20T04:57:20Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "engine-fixes",
+          "short": "Engine Fixes",
+          "name": "SSE Engine Fixes",
+          "status": "Likely OK",
+          "release_tag": "7.0-beta",
+          "release_published_at": "2025-08-19T09:37:13Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "papyrus-extender",
+          "short": "PapyrusExt",
+          "name": "powerofthree's Papyrus Extender",
+          "status": "Likely OK",
+          "release_tag": "v5.3.0",
+          "release_published_at": "2022-10-14T21:37:37Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "crash-logger",
+          "short": "CrashLogger",
+          "name": "Crash Logger SSE AE VR",
+          "status": "Likely OK",
+          "release_tag": "v1.5.0",
+          "release_published_at": "2022-12-01T07:55:09Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.6.629",
+      "label": "1.6.629",
+      "title": "The Elder Scrolls V: Skyrim Anniversary Edition - Update 1.6.629",
+      "published_at": "2022-09-15T11:09:05Z",
+      "published_unix": 1663240145,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6258337460543332485",
+      "frameworks": [
+        {
+          "id": "skse64",
+          "short": "SKSE64",
+          "name": "Skyrim Script Extender (SKSE64)",
+          "status": "Likely OK",
+          "release_tag": "v2.2.7",
+          "release_published_at": "2026-08-20T04:57:20Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "engine-fixes",
+          "short": "Engine Fixes",
+          "name": "SSE Engine Fixes",
+          "status": "Likely OK",
+          "release_tag": "7.0-beta",
+          "release_published_at": "2025-08-19T09:37:13Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "papyrus-extender",
+          "short": "PapyrusExt",
+          "name": "powerofthree's Papyrus Extender",
+          "status": "Likely OK",
+          "release_tag": "v5.3.0",
+          "release_published_at": "2022-10-14T21:37:37Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "crash-logger",
+          "short": "CrashLogger",
+          "name": "Crash Logger SSE AE VR",
+          "status": "Likely OK",
+          "release_tag": "v1.5.0",
+          "release_published_at": "2022-12-01T07:55:09Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.6.353",
+      "label": "1.6.353",
+      "title": "The Elder Scrolls V: Skyrim Anniversary Edition - Update 1.6.353",
+      "published_at": "2022-01-06T15:04:10Z",
+      "published_unix": 1641481450,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/4224939386876509763",
+      "frameworks": [
+        {
+          "id": "skse64",
+          "short": "SKSE64",
+          "name": "Skyrim Script Extender (SKSE64)",
+          "status": "Likely OK",
+          "release_tag": "v2.2.7",
+          "release_published_at": "2026-08-20T04:57:20Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "engine-fixes",
+          "short": "Engine Fixes",
+          "name": "SSE Engine Fixes",
+          "status": "Likely OK",
+          "release_tag": "6.0.2",
+          "release_published_at": "2022-01-09T06:18:49Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "papyrus-extender",
+          "short": "PapyrusExt",
+          "name": "powerofthree's Papyrus Extender",
+          "status": "Likely OK",
+          "release_tag": "v5.3.0",
+          "release_published_at": "2022-10-14T21:37:37Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "crash-logger",
+          "short": "CrashLogger",
+          "name": "Crash Logger SSE AE VR",
+          "status": "Likely OK",
+          "release_tag": "v1.5.0",
+          "release_published_at": "2022-12-01T07:55:09Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.6.342",
+      "label": "1.6.342",
+      "title": "The Elder Scrolls V: Skyrim Anniversary Edition - Update 1.6.342",
+      "published_at": "2021-12-13T15:36:09Z",
+      "published_unix": 1639409769,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/4224936849665461638",
+      "frameworks": [
+        {
+          "id": "skse64",
+          "short": "SKSE64",
+          "name": "Skyrim Script Extender (SKSE64)",
+          "status": "Likely OK",
+          "release_tag": "v2.2.7",
+          "release_published_at": "2026-08-20T04:57:20Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "engine-fixes",
+          "short": "Engine Fixes",
+          "name": "SSE Engine Fixes",
+          "status": "Likely OK",
+          "release_tag": "6.0.2",
+          "release_published_at": "2022-01-09T06:18:49Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "papyrus-extender",
+          "short": "PapyrusExt",
+          "name": "powerofthree's Papyrus Extender",
+          "status": "Likely OK",
+          "release_tag": "v5.3.0",
+          "release_published_at": "2022-10-14T21:37:37Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "crash-logger",
+          "short": "CrashLogger",
+          "name": "Crash Logger SSE AE VR",
+          "status": "Likely OK",
+          "release_tag": "v1.5.0",
+          "release_published_at": "2022-12-01T07:55:09Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.6.323",
+      "label": "1.6.323",
+      "title": "The Elder Scrolls V: Skyrim Anniversary Edition - Update 1.6.323",
+      "published_at": "2021-11-22T15:45:53Z",
+      "published_unix": 1637595953,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/4227186657155872732",
+      "frameworks": [
+        {
+          "id": "skse64",
+          "short": "SKSE64",
+          "name": "Skyrim Script Extender (SKSE64)",
+          "status": "Likely OK",
+          "release_tag": "v2.2.7",
+          "release_published_at": "2026-08-20T04:57:20Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "engine-fixes",
+          "short": "Engine Fixes",
+          "name": "SSE Engine Fixes",
+          "status": "Likely OK",
+          "release_tag": "6.0.2",
+          "release_published_at": "2022-01-09T06:18:49Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "papyrus-extender",
+          "short": "PapyrusExt",
+          "name": "powerofthree's Papyrus Extender",
+          "status": "Likely OK",
+          "release_tag": "v5.3.0",
+          "release_published_at": "2022-10-14T21:37:37Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "crash-logger",
+          "short": "CrashLogger",
+          "name": "Crash Logger SSE AE VR",
+          "status": "Likely OK",
+          "release_tag": "v1.5.0",
+          "release_published_at": "2022-12-01T07:55:09Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.6",
+      "label": "1.6",
+      "title": "The Elder Scrolls V: Skyrim Anniversary Edition - Update 1.6",
+      "published_at": "2021-11-11T05:52:52Z",
+      "published_unix": 1636609972,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/4971405952699782913",
+      "frameworks": [
+        {
+          "id": "skse64",
+          "short": "SKSE64",
+          "name": "Skyrim Script Extender (SKSE64)",
+          "status": "Likely OK",
+          "release_tag": "v2.2.7",
+          "release_published_at": "2026-08-20T04:57:20Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "engine-fixes",
+          "short": "Engine Fixes",
+          "name": "SSE Engine Fixes",
+          "status": "Likely OK",
+          "release_tag": "6.0.2",
+          "release_published_at": "2022-01-09T06:18:49Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "papyrus-extender",
+          "short": "PapyrusExt",
+          "name": "powerofthree's Papyrus Extender",
+          "status": "Likely OK",
+          "release_tag": "v5.3.0",
+          "release_published_at": "2022-10-14T21:37:37Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "crash-logger",
+          "short": "CrashLogger",
+          "name": "Crash Logger SSE AE VR",
+          "status": "Updated for latest patch",
+          "release_tag": "v1.12.1",
+          "release_published_at": "2023-12-22T10:36:55Z",
+          "mentions_patch": true
+        }
+      ]
+    },
+    {
+      "version": "1.5.16",
+      "label": "1.5.16",
+      "title": "Skyrim Special Edition 1.5.16 Update",
+      "published_at": "2017-11-07T17:05:45Z",
+      "published_unix": 1510074345,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/2140760316608552508",
+      "frameworks": [
+        {
+          "id": "skse64",
+          "short": "SKSE64",
+          "name": "Skyrim Script Extender (SKSE64)",
+          "status": "Likely OK",
+          "release_tag": "v2.2.7",
+          "release_published_at": "2026-08-20T04:57:20Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "engine-fixes",
+          "short": "Engine Fixes",
+          "name": "SSE Engine Fixes",
+          "status": "Likely OK",
+          "release_tag": "5.6.1",
+          "release_published_at": "2021-07-14T19:09:15Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "papyrus-extender",
+          "short": "PapyrusExt",
+          "name": "powerofthree's Papyrus Extender",
+          "status": "Likely OK",
+          "release_tag": "v5.3.0",
+          "release_published_at": "2022-10-14T21:37:37Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "crash-logger",
+          "short": "CrashLogger",
+          "name": "Crash Logger SSE AE VR",
+          "status": "Likely OK",
+          "release_tag": "v1.5.0",
+          "release_published_at": "2022-12-01T07:55:09Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.4",
+      "label": "1.4",
+      "title": "Skyrim Special Edition 1.4 Update",
+      "published_at": "2017-01-31T18:20:19Z",
+      "published_unix": 1485886819,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/75834708006877434",
+      "frameworks": [
+        {
+          "id": "skse64",
+          "short": "SKSE64",
+          "name": "Skyrim Script Extender (SKSE64)",
+          "status": "Likely OK",
+          "release_tag": "v2.2.7",
+          "release_published_at": "2026-08-20T04:57:20Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "engine-fixes",
+          "short": "Engine Fixes",
+          "name": "SSE Engine Fixes",
+          "status": "Likely OK",
+          "release_tag": "5.6.1",
+          "release_published_at": "2021-07-14T19:09:15Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "papyrus-extender",
+          "short": "PapyrusExt",
+          "name": "powerofthree's Papyrus Extender",
+          "status": "Likely OK",
+          "release_tag": "v5.3.0",
+          "release_published_at": "2022-10-14T21:37:37Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "crash-logger",
+          "short": "CrashLogger",
+          "name": "Crash Logger SSE AE VR",
+          "status": "Likely OK",
+          "release_tag": "v1.5.0",
+          "release_published_at": "2022-12-01T07:55:09Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.3",
+      "label": "1.3",
+      "title": "Skyrim Special Edition 1.3 Update",
+      "published_at": "2016-11-21T19:25:05Z",
+      "published_unix": 1479756305,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/127619582134189706",
+      "frameworks": [
+        {
+          "id": "skse64",
+          "short": "SKSE64",
+          "name": "Skyrim Script Extender (SKSE64)",
+          "status": "Likely OK",
+          "release_tag": "v2.2.7",
+          "release_published_at": "2026-08-20T04:57:20Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "engine-fixes",
+          "short": "Engine Fixes",
+          "name": "SSE Engine Fixes",
+          "status": "Likely OK",
+          "release_tag": "5.6.1",
+          "release_published_at": "2021-07-14T19:09:15Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "papyrus-extender",
+          "short": "PapyrusExt",
+          "name": "powerofthree's Papyrus Extender",
+          "status": "Likely OK",
+          "release_tag": "v5.3.0",
+          "release_published_at": "2022-10-14T21:37:37Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "crash-logger",
+          "short": "CrashLogger",
+          "name": "Crash Logger SSE AE VR",
+          "status": "Likely OK",
+          "release_tag": "v1.5.0",
+          "release_published_at": "2022-12-01T07:55:09Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.2",
+      "label": "1.2",
+      "title": "Skyrim 1.2 Update - Live on Steam",
+      "published_at": "2016-11-11T18:21:58Z",
+      "published_unix": 1478888518,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/136626237878499466",
+      "frameworks": [
+        {
+          "id": "skse64",
+          "short": "SKSE64",
+          "name": "Skyrim Script Extender (SKSE64)",
+          "status": "Likely OK",
+          "release_tag": "v2.2.7",
+          "release_published_at": "2026-08-20T04:57:20Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "engine-fixes",
+          "short": "Engine Fixes",
+          "name": "SSE Engine Fixes",
+          "status": "Likely OK",
+          "release_tag": "5.6.1",
+          "release_published_at": "2021-07-14T19:09:15Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "papyrus-extender",
+          "short": "PapyrusExt",
+          "name": "powerofthree's Papyrus Extender",
+          "status": "Likely OK",
+          "release_tag": "v5.3.0",
+          "release_published_at": "2022-10-14T21:37:37Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "crash-logger",
+          "short": "CrashLogger",
+          "name": "Crash Logger SSE AE VR",
+          "status": "Likely OK",
+          "release_tag": "v1.5.0",
+          "release_published_at": "2022-12-01T07:55:09Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.1",
+      "label": "1.1",
+      "title": "Skyrim Special Edition 1.1 Update Live on Steam",
+      "published_at": "2016-11-07T20:07:03Z",
+      "published_unix": 1478549223,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/182787402055808230",
+      "frameworks": [
+        {
+          "id": "skse64",
+          "short": "SKSE64",
+          "name": "Skyrim Script Extender (SKSE64)",
+          "status": "Likely OK",
+          "release_tag": "v2.2.7",
+          "release_published_at": "2026-08-20T04:57:20Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "engine-fixes",
+          "short": "Engine Fixes",
+          "name": "SSE Engine Fixes",
+          "status": "Likely OK",
+          "release_tag": "5.6.1",
+          "release_published_at": "2021-07-14T19:09:15Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "papyrus-extender",
+          "short": "PapyrusExt",
+          "name": "powerofthree's Papyrus Extender",
+          "status": "Updated for latest patch",
+          "release_tag": "v6.1.1",
+          "release_published_at": "2025-07-29T06:25:25Z",
+          "mentions_patch": true
+        },
+        {
+          "id": "crash-logger",
+          "short": "CrashLogger",
+          "name": "Crash Logger SSE AE VR",
+          "status": "Likely OK",
+          "release_tag": "v1.5.0",
+          "release_published_at": "2022-12-01T07:55:09Z",
+          "mentions_patch": false
+        }
+      ]
+    }
+  ],
+  "sources": {
+    "steam_news": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=489830&count=100"
+  }
+}
