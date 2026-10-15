@@ -111,3 +111,12 @@ class TestPolish(unittest.TestCase):
         self.assertIn('All games →', html)
         self.assertIn("e.key==='/'", build.FILTER_JS)
         self.assertIn("time.ago", build.FILTER_JS)
+
+
+class TestCacheBusting(unittest.TestCase):
+    def test_css_versioned_and_headers(self):
+        import build
+        html = build.page_shell("t", "d", "/", "home", "x")
+        self.assertIn(f'/styles.css?v={build.CSS_VER}', html)
+        self.assertIn("immutable", build.HEADERS)
+        self.assertIn(".games-menu:not([open]) .menu-pop { display: none; }", build.CSS)

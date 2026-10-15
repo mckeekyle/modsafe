@@ -112,7 +112,7 @@ def base_head(title: str, description: str, path: str, extra_jsonld: list | None
 <meta name="twitter:description" content="{esc(description)}">
 <meta name="theme-color" content="#07090f">
 <link rel="preload" href="/fonts/chakra-petch-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/styles.css?v={CSS_VER}">
 {blocks}
 </head>
 """
@@ -321,6 +321,8 @@ section { margin: 0 0 1.75rem; }
 .menu-pop a:hover, .menu-pop a[aria-current] { background: rgba(0,240,255,.12); color: var(--neon); }
 .menu-pop .all { grid-column: 1 / -1; color: var(--neon); font-weight: 700; border-bottom: 1px solid var(--line); border-radius: 8px 8px 0 0; }
 .nav { align-items: center; }
+.games-menu:not([open]) .menu-pop { display: none; }
+@media (max-width: 640px) { .menu-pop { position: fixed; left: 4vw; right: 4vw; top: 64px; width: auto; max-height: 75vh; overflow-y: auto; } }
 .filters { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; margin: 0 0 1rem; }
 .filters input, .filters select { background: var(--panel); color: var(--text); border: 1px solid var(--line); border-radius: 10px; padding: .6rem .8rem; font: inherit; }
 .filters input { flex: 1 1 240px; }
@@ -511,7 +513,8 @@ def page_shell(title, description, path, active, body, extra_jsonld=None) -> str
 </main>
 {footer()}
 <script type="text/javascript" async src="https://subscribe-forms.beehiiv.com/attribution.js"></script>
-{cf_beacon()}</body>
+{cf_beacon()}{MENU_JS}
+</body>
 </html>
 """
     )
@@ -1017,6 +1020,25 @@ def games_index(games_data) -> dict:
                       for g, d in games_data]}
 
 
+MENU_JS = "<script>(function(){var d=document.querySelector('.games-menu');if(!d)return;document.addEventListener('click',function(e){if(d.open&&!d.contains(e.target))d.open=false;});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&d.open){d.open=false;d.querySelector('summary').focus();}});})();</script>"
+CSS_VER = __import__("hashlib").sha256(CSS.encode()).hexdigest()[:10]
+HEADERS = """/*
+  X-Content-Type-Options: nosniff
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+/
+  Cache-Control: public, max-age=0, must-revalidate
+/styles.css
+  Cache-Control: public, max-age=31536000, immutable
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+/img/*
+  Cache-Control: public, max-age=604800
+/og/*
+  Cache-Control: public, max-age=86400
+"""
+
+
 def write(path: Path, content: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(content, encoding="utf-8")
@@ -1063,6 +1085,7 @@ def main() -> int:
     write(DIST / "robots.txt", build_robots())
     write(DIST / "sitemap.xml", build_sitemap())
     write(DIST / "_redirects", REDIRECTS)
+    write(DIST / "_headers", HEADERS)
     print("Done.")
     return 0
 
