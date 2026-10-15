@@ -1,0 +1,405 @@
+{
+  "generated_at": "2026-10-15T22:13:47Z",
+  "game": {
+    "slug": "valheim",
+    "name": "Valheim",
+    "steam_appid": 892970,
+    "latest_patch": {
+      "version": "1.0.20",
+      "label": "1.0.20",
+      "title": "Patch 1.0.20",
+      "published_at": "2026-10-15T08:58:17Z",
+      "published_unix": 1792054697,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1846651706676865"
+    }
+  },
+  "verdict": "Just patched, wait",
+  "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
+  "frameworks": [
+    {
+      "id": "bepinexpack-valheim",
+      "name": "BepInExPack Valheim",
+      "short": "BepInEx",
+      "url": "https://thunderstore.io/c/valheim/p/denikson/BepInExPack_Valheim/",
+      "source": "thunderstore",
+      "repo": "denikson/BepInExPack_Valheim",
+      "tracked": true,
+      "sensitive": true,
+      "status": "Just patched, wait",
+      "base_status": "Unknown / check",
+      "reason": "Latest release predates patch 1.0.20; compatibility is unverified \u2014 check the project page.",
+      "breakage_reports": [],
+      "official": null,
+      "release_tag": "5.4.2351",
+      "release_name": "denikson-BepInExPack_Valheim 5.4.2351",
+      "release_published_at": "2026-09-24T06:11:48Z",
+      "release_url": "https://thunderstore.io/c/valheim/p/denikson/BepInExPack_Valheim/",
+      "mentions_patch": false,
+      "newer_than_patch": false,
+      "mention_releases": []
+    },
+    {
+      "id": "jotunn",
+      "name": "J\u00f6tunn (mod library)",
+      "short": "J\u00f6tunn",
+      "url": "https://github.com/Valheim-Modding/Jotunn",
+      "source": "github",
+      "repo": "Valheim-Modding/Jotunn",
+      "tracked": true,
+      "sensitive": true,
+      "status": "Just patched, wait",
+      "base_status": "Unknown / check",
+      "reason": "Latest release predates patch 1.0.20; compatibility is unverified \u2014 check the project page.",
+      "breakage_reports": [],
+      "official": null,
+      "release_tag": "v2.30.2",
+      "release_name": "v2.30.2",
+      "release_published_at": "2026-09-21T17:13:29Z",
+      "release_url": "https://github.com/Valheim-Modding/Jotunn/releases/tag/v2.30.2",
+      "mentions_patch": false,
+      "newer_than_patch": false,
+      "mention_releases": []
+    }
+  ],
+  "history": [
+    {
+      "version": "1.0.20",
+      "label": "1.0.20",
+      "title": "Patch 1.0.20",
+      "published_at": "2026-10-15T08:58:17Z",
+      "published_unix": 1792054697,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1846651706676865",
+      "frameworks": [
+        {
+          "id": "bepinexpack-valheim",
+          "short": "BepInEx",
+          "name": "BepInExPack Valheim",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        },
+        {
+          "id": "jotunn",
+          "short": "J\u00f6tunn",
+          "name": "J\u00f6tunn (mod library)",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.0.17",
+      "label": "1.0.17",
+      "title": "Patch 1.0.17",
+      "published_at": "2026-10-06T12:11:50Z",
+      "published_unix": 1791288710,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1845383656396226",
+      "frameworks": [
+        {
+          "id": "bepinexpack-valheim",
+          "short": "BepInEx",
+          "name": "BepInExPack Valheim",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        },
+        {
+          "id": "jotunn",
+          "short": "J\u00f6tunn",
+          "name": "J\u00f6tunn (mod library)",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.0.16",
+      "label": "1.0.16",
+      "title": "Patch 1.0.16",
+      "published_at": "2026-09-25T12:18:42Z",
+      "published_unix": 1790338722,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844751498224366",
+      "frameworks": [
+        {
+          "id": "bepinexpack-valheim",
+          "short": "BepInEx",
+          "name": "BepInExPack Valheim",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        },
+        {
+          "id": "jotunn",
+          "short": "J\u00f6tunn",
+          "name": "J\u00f6tunn (mod library)",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.0.15",
+      "label": "1.0.15",
+      "title": "Patch 1.0.15",
+      "published_at": "2026-09-18T12:43:25Z",
+      "published_unix": 1789735405,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844115010494664",
+      "frameworks": [
+        {
+          "id": "bepinexpack-valheim",
+          "short": "BepInEx",
+          "name": "BepInExPack Valheim",
+          "status": "Likely safe",
+          "release_tag": "5.4.2351",
+          "release_published_at": "2026-09-24T06:11:48Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "jotunn",
+          "short": "J\u00f6tunn",
+          "name": "J\u00f6tunn (mod library)",
+          "status": "Likely safe",
+          "release_tag": "v2.30.2",
+          "release_published_at": "2026-09-21T17:13:29Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.0.14",
+      "label": "1.0.14",
+      "title": "Patch 1.0.14",
+      "published_at": "2026-09-17T11:12:10Z",
+      "published_unix": 1789643530,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844115010491701",
+      "frameworks": [
+        {
+          "id": "bepinexpack-valheim",
+          "short": "BepInEx",
+          "name": "BepInExPack Valheim",
+          "status": "Likely safe",
+          "release_tag": "5.4.2351",
+          "release_published_at": "2026-09-24T06:11:48Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "jotunn",
+          "short": "J\u00f6tunn",
+          "name": "J\u00f6tunn (mod library)",
+          "status": "Likely safe",
+          "release_tag": "v2.30.1",
+          "release_published_at": "2026-09-17T21:24:00Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.0.10",
+      "label": "1.0.10",
+      "title": "Hotfix 1.0.10 & 1.0.12",
+      "published_at": "2026-09-11T13:09:02Z",
+      "published_unix": 1789132142,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1843481262695240",
+      "frameworks": [
+        {
+          "id": "bepinexpack-valheim",
+          "short": "BepInEx",
+          "name": "BepInExPack Valheim",
+          "status": "Likely safe",
+          "release_tag": "5.4.2351",
+          "release_published_at": "2026-09-24T06:11:48Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "jotunn",
+          "short": "J\u00f6tunn",
+          "name": "J\u00f6tunn (mod library)",
+          "status": "Likely safe",
+          "release_tag": "v2.30.1",
+          "release_published_at": "2026-09-17T21:24:00Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "0.221.12",
+      "label": "0.221.12",
+      "title": "Patch 0.221.12",
+      "published_at": "2026-02-19T08:09:28Z",
+      "published_unix": 1771488568,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1825093633184197",
+      "frameworks": [
+        {
+          "id": "bepinexpack-valheim",
+          "short": "BepInEx",
+          "name": "BepInExPack Valheim",
+          "status": "Likely safe",
+          "release_tag": "5.4.2351",
+          "release_published_at": "2026-09-24T06:11:48Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "jotunn",
+          "short": "J\u00f6tunn",
+          "name": "J\u00f6tunn (mod library)",
+          "status": "Likely safe",
+          "release_tag": "v2.28.0",
+          "release_published_at": "2026-03-06T18:54:13Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "0.221.10",
+      "label": "0.221.10",
+      "title": "Patch 0.221.10 \u2013 Five Years of Valheim!",
+      "published_at": "2026-02-02T09:01:19Z",
+      "published_unix": 1770022879,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1823191198610897",
+      "frameworks": [
+        {
+          "id": "bepinexpack-valheim",
+          "short": "BepInEx",
+          "name": "BepInExPack Valheim",
+          "status": "Likely safe",
+          "release_tag": "5.4.2351",
+          "release_published_at": "2026-09-24T06:11:48Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "jotunn",
+          "short": "J\u00f6tunn",
+          "name": "J\u00f6tunn (mod library)",
+          "status": "Likely safe",
+          "release_tag": "v2.28.0",
+          "release_published_at": "2026-03-06T18:54:13Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "0.221.4",
+      "label": "0.221.4",
+      "title": "Patch 0.221.4 \u2013 Call To Arms",
+      "published_at": "2025-09-09T11:02:14Z",
+      "published_unix": 1757415734,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1809869180193981",
+      "frameworks": [
+        {
+          "id": "bepinexpack-valheim",
+          "short": "BepInEx",
+          "name": "BepInExPack Valheim",
+          "status": "Likely safe",
+          "release_tag": "5.4.2351",
+          "release_published_at": "2026-09-24T06:11:48Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "jotunn",
+          "short": "J\u00f6tunn",
+          "name": "J\u00f6tunn (mod library)",
+          "status": "Likely safe",
+          "release_tag": "v2.27.0",
+          "release_published_at": "2025-10-07T19:35:26Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "0.220.5",
+      "label": "0.220.5",
+      "title": "Patch 0.220.5",
+      "published_at": "2025-04-01T07:06:14Z",
+      "published_unix": 1743491174,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1795283637972351",
+      "frameworks": [
+        {
+          "id": "bepinexpack-valheim",
+          "short": "BepInEx",
+          "name": "BepInExPack Valheim",
+          "status": "Likely safe",
+          "release_tag": "5.4.2351",
+          "release_published_at": "2026-09-24T06:11:48Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "jotunn",
+          "short": "J\u00f6tunn",
+          "name": "J\u00f6tunn (mod library)",
+          "status": "Likely safe",
+          "release_tag": "v2.25.0",
+          "release_published_at": "2025-05-18T20:36:07Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "0.220.4",
+      "label": "0.220.4",
+      "title": "Patch 0.220.4",
+      "published_at": "2025-03-19T08:30:26Z",
+      "published_unix": 1742373026,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1794102528262393",
+      "frameworks": [
+        {
+          "id": "bepinexpack-valheim",
+          "short": "BepInEx",
+          "name": "BepInExPack Valheim",
+          "status": "Likely safe",
+          "release_tag": "5.4.2351",
+          "release_published_at": "2026-09-24T06:11:48Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "jotunn",
+          "short": "J\u00f6tunn",
+          "name": "J\u00f6tunn (mod library)",
+          "status": "Likely safe",
+          "release_tag": "v2.25.0",
+          "release_published_at": "2025-05-18T20:36:07Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "0.220.3",
+      "label": "0.220.3",
+      "title": "Patch 0.220.3",
+      "published_at": "2025-03-04T09:16:50Z",
+      "published_unix": 1741079810,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1792751526166512",
+      "frameworks": [
+        {
+          "id": "bepinexpack-valheim",
+          "short": "BepInEx",
+          "name": "BepInExPack Valheim",
+          "status": "Likely safe",
+          "release_tag": "5.4.2351",
+          "release_published_at": "2026-09-24T06:11:48Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "jotunn",
+          "short": "J\u00f6tunn",
+          "name": "J\u00f6tunn (mod library)",
+          "status": "Safe",
+          "release_tag": "v2.24.1",
+          "release_published_at": "2025-03-04T10:48:51Z",
+          "mentions_patch": true
+        }
+      ]
+    }
+  ],
+  "sources": {
+    "steam_news": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=892970&count=100"
+  }
+}

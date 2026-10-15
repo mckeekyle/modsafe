@@ -1,0 +1,405 @@
+{
+  "generated_at": "2026-10-15T22:14:00Z",
+  "game": {
+    "slug": "rimworld",
+    "name": "RimWorld",
+    "steam_appid": 294100,
+    "latest_patch": {
+      "version": "1.6.4850",
+      "label": "1.6.4850",
+      "title": "Update 1.6.4850 released",
+      "published_at": "2026-06-08T19:12:10Z",
+      "published_unix": 1780945930,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1834602721199984"
+    }
+  },
+  "verdict": "Likely safe",
+  "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
+  "frameworks": [
+    {
+      "id": "harmony",
+      "name": "Harmony",
+      "short": "Harmony",
+      "url": "https://github.com/pardeike/Harmony",
+      "source": "github",
+      "repo": "pardeike/Harmony",
+      "tracked": true,
+      "sensitive": false,
+      "status": "Not affected by patches",
+      "base_status": "Likely OK",
+      "reason": "Generic .NET runtime patching library, not tied to a RimWorld build. Latest: Latest release is newer than patch 1.6.4850, but notes do not explicitly mention that version.",
+      "breakage_reports": [],
+      "official": null,
+      "release_tag": "v2.4.3",
+      "release_name": "Harmony 2.4.3",
+      "release_published_at": "2026-10-11T15:38:46Z",
+      "release_url": "https://github.com/pardeike/Harmony/releases/tag/v2.4.3",
+      "mentions_patch": false,
+      "newer_than_patch": true,
+      "mention_releases": []
+    },
+    {
+      "id": "hugslib",
+      "name": "HugsLib",
+      "short": "HugsLib",
+      "url": "https://github.com/UnlimitedHugs/RimworldHugsLib",
+      "source": "github",
+      "repo": "UnlimitedHugs/RimworldHugsLib",
+      "tracked": true,
+      "sensitive": true,
+      "status": "Likely safe",
+      "base_status": "Unknown / check",
+      "reason": "Latest release predates patch 1.6.4850; compatibility is unverified \u2014 check the project page. No open breakage reports 129 days after the patch.",
+      "breakage_reports": [],
+      "official": null,
+      "release_tag": "v12.0.0",
+      "release_name": "12.0.0: Update to Rimworld 1.6",
+      "release_published_at": "2025-07-13T19:17:00Z",
+      "release_url": "https://github.com/UnlimitedHugs/RimworldHugsLib/releases/tag/v12.0.0",
+      "mentions_patch": false,
+      "newer_than_patch": false,
+      "mention_releases": []
+    }
+  ],
+  "history": [
+    {
+      "version": "1.6.4850",
+      "label": "1.6.4850",
+      "title": "Update 1.6.4850 released",
+      "published_at": "2026-06-08T19:12:10Z",
+      "published_unix": 1780945930,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1834602721199984",
+      "frameworks": [
+        {
+          "id": "harmony",
+          "short": "Harmony",
+          "name": "Harmony",
+          "status": "Not affected by patches",
+          "release_tag": "v2.4.3",
+          "release_published_at": "2026-10-11T15:38:46Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "hugslib",
+          "short": "HugsLib",
+          "name": "HugsLib",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.6.4630",
+      "label": "1.6.4630",
+      "title": "Update 1.6.4630 released",
+      "published_at": "2025-10-31T15:30:18Z",
+      "published_unix": 1761924618,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1815034432907541",
+      "frameworks": [
+        {
+          "id": "harmony",
+          "short": "Harmony",
+          "name": "Harmony",
+          "status": "Not affected by patches",
+          "release_tag": "v2.4.2.0",
+          "release_published_at": "2025-11-13T00:28:38Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "hugslib",
+          "short": "HugsLib",
+          "name": "HugsLib",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.6.4566",
+      "label": "1.6.4566",
+      "title": "Update 1.6.4566 improves gravships, shuttles, and more",
+      "published_at": "2025-08-28T19:32:41Z",
+      "published_unix": 1756409561,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1809235871595783",
+      "frameworks": [
+        {
+          "id": "harmony",
+          "short": "Harmony",
+          "name": "Harmony",
+          "status": "Not affected by patches",
+          "release_tag": "v2.4.2.0",
+          "release_published_at": "2025-11-13T00:28:38Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "hugslib",
+          "short": "HugsLib",
+          "name": "HugsLib",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.6.4543",
+      "label": "1.6.4543",
+      "title": "Update 1.6.4543 released",
+      "published_at": "2025-08-06T01:21:33Z",
+      "published_unix": 1754443293,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1807332909521747",
+      "frameworks": [
+        {
+          "id": "harmony",
+          "short": "Harmony",
+          "name": "Harmony",
+          "status": "Not affected by patches",
+          "release_tag": "v2.4.0.0",
+          "release_published_at": "2025-08-17T20:53:16Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "hugslib",
+          "short": "HugsLib",
+          "name": "HugsLib",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.6.4535",
+      "label": "1.6.4535",
+      "title": "Update 1.6.4535 released",
+      "published_at": "2025-07-29T00:04:01Z",
+      "published_unix": 1753747441,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1806064758753874",
+      "frameworks": [
+        {
+          "id": "harmony",
+          "short": "Harmony",
+          "name": "Harmony",
+          "status": "Not affected by patches",
+          "release_tag": "v2.4.0.0",
+          "release_published_at": "2025-08-17T20:53:16Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "hugslib",
+          "short": "HugsLib",
+          "name": "HugsLib",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.6.4528",
+      "label": "1.6.4528",
+      "title": "Update 1.6.4528 released",
+      "published_at": "2025-07-22T16:00:28Z",
+      "published_unix": 1753200028,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1805431065502024",
+      "frameworks": [
+        {
+          "id": "harmony",
+          "short": "Harmony",
+          "name": "Harmony",
+          "status": "Not affected by patches",
+          "release_tag": "v2.4.0.0",
+          "release_published_at": "2025-08-17T20:53:16Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "hugslib",
+          "short": "HugsLib",
+          "name": "HugsLib",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.5.4104",
+      "label": "1.5.4104",
+      "title": "Update 1.5.4104 released",
+      "published_at": "2024-05-24T14:42:39Z",
+      "published_unix": 1716561759,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5741605105611129970",
+      "frameworks": [
+        {
+          "id": "harmony",
+          "short": "Harmony",
+          "name": "Harmony",
+          "status": "Not affected by patches",
+          "release_tag": "v2.3.4.0",
+          "release_published_at": "2025-02-05T22:37:42Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "hugslib",
+          "short": "HugsLib",
+          "name": "HugsLib",
+          "status": "Likely safe",
+          "release_tag": "v11.0.4",
+          "release_published_at": "2024-05-26T19:16:04Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.4.3704",
+      "label": "1.4.3704",
+      "title": "Update 1.4.3704 released",
+      "published_at": "2023-04-19T22:56:13Z",
+      "published_unix": 1681944973,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5133583099793279722",
+      "frameworks": [
+        {
+          "id": "harmony",
+          "short": "Harmony",
+          "name": "Harmony",
+          "status": "Not affected by patches",
+          "release_tag": "v2.3.0.0",
+          "release_published_at": "2024-02-26T09:36:33Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "hugslib",
+          "short": "HugsLib",
+          "name": "HugsLib",
+          "status": "Likely safe",
+          "release_tag": "v11.0.2",
+          "release_published_at": "2024-03-17T18:02:34Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.4.3682",
+      "label": "1.4.3682",
+      "title": "Update 1.4.3682 released",
+      "published_at": "2023-03-28T21:33:39Z",
+      "published_unix": 1680039219,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5143713753748133342",
+      "frameworks": [
+        {
+          "id": "harmony",
+          "short": "Harmony",
+          "name": "Harmony",
+          "status": "Not affected by patches",
+          "release_tag": "v2.3.0.0",
+          "release_published_at": "2024-02-26T09:36:33Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "hugslib",
+          "short": "HugsLib",
+          "name": "HugsLib",
+          "status": "Likely safe",
+          "release_tag": "v11.0.2",
+          "release_published_at": "2024-03-17T18:02:34Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.4.3641",
+      "label": "1.4.3641",
+      "title": "Update 1.4.3641 released",
+      "published_at": "2023-02-15T20:03:37Z",
+      "published_unix": 1676491417,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5059267908811675497",
+      "frameworks": [
+        {
+          "id": "harmony",
+          "short": "Harmony",
+          "name": "Harmony",
+          "status": "Not affected by patches",
+          "release_tag": "v2.3.0.0",
+          "release_published_at": "2024-02-26T09:36:33Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "hugslib",
+          "short": "HugsLib",
+          "name": "HugsLib",
+          "status": "Likely safe",
+          "release_tag": "v11.0.2",
+          "release_published_at": "2024-03-17T18:02:34Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.4.3613",
+      "label": "1.4.3613",
+      "title": "Update 1.4.3613 released",
+      "published_at": "2023-01-18T23:57:57Z",
+      "published_unix": 1674086277,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5035621474408967505",
+      "frameworks": [
+        {
+          "id": "harmony",
+          "short": "Harmony",
+          "name": "Harmony",
+          "status": "Not affected by patches",
+          "release_tag": "v2.3.0.0",
+          "release_published_at": "2024-02-26T09:36:33Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "hugslib",
+          "short": "HugsLib",
+          "name": "HugsLib",
+          "status": "Likely safe",
+          "release_tag": "v11.0.2",
+          "release_published_at": "2024-03-17T18:02:34Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.4.3563",
+      "label": "1.4.3563",
+      "title": "Update 1.4.3563 improves quest reward variety",
+      "published_at": "2022-11-29T19:36:10Z",
+      "published_unix": 1669750570,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/4836332027674600365",
+      "frameworks": [
+        {
+          "id": "harmony",
+          "short": "Harmony",
+          "name": "Harmony",
+          "status": "Not affected by patches",
+          "release_tag": "v2.3.0.0",
+          "release_published_at": "2024-02-26T09:36:33Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "hugslib",
+          "short": "HugsLib",
+          "name": "HugsLib",
+          "status": "Likely safe",
+          "release_tag": "v11.0.2",
+          "release_published_at": "2024-03-17T18:02:34Z",
+          "mentions_patch": false
+        }
+      ]
+    }
+  ],
+  "sources": {
+    "steam_news": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=294100&count=100"
+  }
+}

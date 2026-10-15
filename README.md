@@ -13,6 +13,12 @@ Static site that tracks whether each game's core mod frameworks/loaders have cau
 | Stardew Valley | `/stardew-valley/` | Steam news (413150) | SMAPI (+ link to smapi.io/mods) |
 | Lethal Company | `/lethal-company/` | Steam news (1966720) | BepInExPack, LethalLib, LethalLevelLoader, MoreCompany (Thunderstore API) |
 | GTA V (single-player) | `/gta-v/` | Hand-maintained `data/manual/gta-v.json` (Legacy 271590 + Enhanced 3240220 builds) | Script Hook V (manual, never fetched from dev-c.com), Ultimate ASI Loader (GitHub, version-agnostic) |
+| Starfield | `/starfield/` | Steam news (1716740) | SFSE (GitHub tags); Address Library (Nexus, manual) |
+| Elden Ring | `/elden-ring/` | Steam news (1245620) | Seamless Co-op, Mod Engine 3 (me3) |
+| Valheim | `/valheim/` | Steam news (892970) | BepInExPack Valheim (Thunderstore), Jötunn (GitHub) |
+| Terraria | `/terraria/` | Steam news (105600) | tModLoader (GitHub) |
+| RimWorld | `/rimworld/` | Steam news (294100) | Harmony (agnostic), HugsLib (GitHub) |
+| Mount & Blade II: Bannerlord | `/bannerlord/` | Steam news (261550) | BLSE, Harmony (agnostic) |
 | Minecraft Java | `/minecraft/` | Mojang version manifest | Fabric Loader (meta), Fabric API/Sodium/Iris/Lithium (Modrinth), Forge (promotions), NeoForge (Maven) |
 
 Games are configured in `src/games.py`. "Manual" items (Nexus-only) are linked but excluded from the verdict; ModSafe never scrapes Nexus or SteamDB.

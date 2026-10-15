@@ -1,0 +1,405 @@
+{
+  "generated_at": "2026-10-15T22:14:23Z",
+  "game": {
+    "slug": "bannerlord",
+    "name": "Mount & Blade II: Bannerlord",
+    "steam_appid": 261550,
+    "latest_patch": {
+      "version": "1.4.8",
+      "label": "BL v1.4.8",
+      "title": "War Sails Modding Kit Release & Patch WS v1.2.8 / BL v1.4.8",
+      "published_at": "2026-08-10T12:09:06Z",
+      "published_unix": 1786363746,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840310314351373"
+    }
+  },
+  "verdict": "Likely safe",
+  "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
+  "frameworks": [
+    {
+      "id": "blse",
+      "name": "Bannerlord Software Extender (BLSE)",
+      "short": "BLSE",
+      "url": "https://github.com/BUTR/Bannerlord.BLSE",
+      "source": "github",
+      "repo": "BUTR/Bannerlord.BLSE",
+      "tracked": true,
+      "sensitive": true,
+      "status": "Likely safe",
+      "base_status": "Likely OK",
+      "reason": "Latest release is newer than patch BL v1.4.8, but notes do not explicitly mention that version.",
+      "breakage_reports": [],
+      "official": null,
+      "release_tag": "v1.7.4",
+      "release_name": "Release 1.7.4",
+      "release_published_at": "2026-10-13T20:57:11Z",
+      "release_url": "https://github.com/BUTR/Bannerlord.BLSE/releases/tag/v1.7.4",
+      "mentions_patch": false,
+      "newer_than_patch": true,
+      "mention_releases": []
+    },
+    {
+      "id": "harmony-bl",
+      "name": "Harmony",
+      "short": "Harmony",
+      "url": "https://github.com/pardeike/Harmony",
+      "source": "github",
+      "repo": "pardeike/Harmony",
+      "tracked": true,
+      "sensitive": false,
+      "status": "Not affected by patches",
+      "base_status": "Likely OK",
+      "reason": "Generic .NET runtime patching library, not tied to a Bannerlord build. Latest: Latest release is newer than patch BL v1.4.8, but notes do not explicitly mention that version.",
+      "breakage_reports": [],
+      "official": null,
+      "release_tag": "v2.4.3",
+      "release_name": "Harmony 2.4.3",
+      "release_published_at": "2026-10-11T15:38:46Z",
+      "release_url": "https://github.com/pardeike/Harmony/releases/tag/v2.4.3",
+      "mentions_patch": false,
+      "newer_than_patch": true,
+      "mention_releases": []
+    }
+  ],
+  "history": [
+    {
+      "version": "1.4.8",
+      "label": "BL v1.4.8",
+      "title": "War Sails Modding Kit Release & Patch WS v1.2.8 / BL v1.4.8",
+      "published_at": "2026-08-10T12:09:06Z",
+      "published_unix": 1786363746,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840310314351373",
+      "frameworks": [
+        {
+          "id": "blse",
+          "short": "BLSE",
+          "name": "Bannerlord Software Extender (BLSE)",
+          "status": "Likely safe",
+          "release_tag": "v1.7.0",
+          "release_published_at": "2026-08-23T17:09:17Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "harmony-bl",
+          "short": "Harmony",
+          "name": "Harmony",
+          "status": "Not affected by patches",
+          "release_tag": "v2.4.3",
+          "release_published_at": "2026-10-11T15:38:46Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.4.7",
+      "label": "BL v1.4.7",
+      "title": "Patch Notes - WS v1.2.7 / BL v1.4.7",
+      "published_at": "2026-07-08T13:22:27Z",
+      "published_unix": 1783516947,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1836506165580665",
+      "frameworks": [
+        {
+          "id": "blse",
+          "short": "BLSE",
+          "name": "Bannerlord Software Extender (BLSE)",
+          "status": "Likely safe",
+          "release_tag": "v1.7.0",
+          "release_published_at": "2026-08-23T17:09:17Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "harmony-bl",
+          "short": "Harmony",
+          "name": "Harmony",
+          "status": "Not affected by patches",
+          "release_tag": "v2.4.3",
+          "release_published_at": "2026-10-11T15:38:46Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.4.6",
+      "label": "BL v1.4.6",
+      "title": "Patch Notes - WS v1.2.6 / BL v1.4.6",
+      "published_at": "2026-06-11T10:03:09Z",
+      "published_unix": 1781172189,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1835236783559860",
+      "frameworks": [
+        {
+          "id": "blse",
+          "short": "BLSE",
+          "name": "Bannerlord Software Extender (BLSE)",
+          "status": "Likely safe",
+          "release_tag": "v1.7.0",
+          "release_published_at": "2026-08-23T17:09:17Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "harmony-bl",
+          "short": "Harmony",
+          "name": "Harmony",
+          "status": "Not affected by patches",
+          "release_tag": "v2.4.3",
+          "release_published_at": "2026-10-11T15:38:46Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.4.5",
+      "label": "BL v1.4.5",
+      "title": "Patch Notes - WS v1.2.5 / BL v1.4.5",
+      "published_at": "2026-05-21T14:27:02Z",
+      "published_unix": 1779373622,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1833334318569123",
+      "frameworks": [
+        {
+          "id": "blse",
+          "short": "BLSE",
+          "name": "Bannerlord Software Extender (BLSE)",
+          "status": "Likely safe",
+          "release_tag": "v1.7.0",
+          "release_published_at": "2026-08-23T17:09:17Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "harmony-bl",
+          "short": "Harmony",
+          "name": "Harmony",
+          "status": "Not affected by patches",
+          "release_tag": "v2.4.3",
+          "release_published_at": "2026-10-11T15:38:46Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.3.14",
+      "label": "BL v1.3.14",
+      "title": "Patch Notes - WS v1.1.2 / BL v1.3.14",
+      "published_at": "2026-02-03T09:34:39Z",
+      "published_unix": 1770111279,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1823191198616261",
+      "frameworks": [
+        {
+          "id": "blse",
+          "short": "BLSE",
+          "name": "Bannerlord Software Extender (BLSE)",
+          "status": "Likely safe",
+          "release_tag": "v1.6.3",
+          "release_published_at": "2026-04-25T17:32:00Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "harmony-bl",
+          "short": "Harmony",
+          "name": "Harmony",
+          "status": "Not affected by patches",
+          "release_tag": "v2.4.3",
+          "release_published_at": "2026-10-11T15:38:46Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.3.13",
+      "label": "BL v1.3.13",
+      "title": "Patch Notes - WS v1.1.1 / BL v1.3.13",
+      "published_at": "2025-12-24T14:57:37Z",
+      "published_unix": 1766588257,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1819386365106738",
+      "frameworks": [
+        {
+          "id": "blse",
+          "short": "BLSE",
+          "name": "Bannerlord Software Extender (BLSE)",
+          "status": "Likely safe",
+          "release_tag": "v1.6.0",
+          "release_published_at": "2026-01-27T12:08:48Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "harmony-bl",
+          "short": "Harmony",
+          "name": "Harmony",
+          "status": "Not affected by patches",
+          "release_tag": "v2.4.3",
+          "release_published_at": "2026-10-11T15:38:46Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.3.11",
+      "label": "BL v1.3.11",
+      "title": "Patch Notes - WS v1.0.7 / BL v1.3.11",
+      "published_at": "2025-12-16T14:39:53Z",
+      "published_unix": 1765895993,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1818752592136045",
+      "frameworks": [
+        {
+          "id": "blse",
+          "short": "BLSE",
+          "name": "Bannerlord Software Extender (BLSE)",
+          "status": "Likely safe",
+          "release_tag": "v1.6.0",
+          "release_published_at": "2026-01-27T12:08:48Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "harmony-bl",
+          "short": "Harmony",
+          "name": "Harmony",
+          "status": "Not affected by patches",
+          "release_tag": "v2.4.3",
+          "release_published_at": "2026-10-11T15:38:46Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.3.10",
+      "label": "BL v1.3.10",
+      "title": "Patch Notes - WS v1.0.6 / BL v1.3.10",
+      "published_at": "2025-12-08T10:31:12Z",
+      "published_unix": 1765189872,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1818118366182217",
+      "frameworks": [
+        {
+          "id": "blse",
+          "short": "BLSE",
+          "name": "Bannerlord Software Extender (BLSE)",
+          "status": "Likely safe",
+          "release_tag": "v1.5.12",
+          "release_published_at": "2025-12-09T22:00:05Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "harmony-bl",
+          "short": "Harmony",
+          "name": "Harmony",
+          "status": "Not affected by patches",
+          "release_tag": "v2.4.3",
+          "release_published_at": "2026-10-11T15:38:46Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.3.9",
+      "label": "BL v1.3.9",
+      "title": "Patch Notes - WS v1.0.5 / BL v1.3.9",
+      "published_at": "2025-12-02T10:44:41Z",
+      "published_unix": 1764672281,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1817483467047988",
+      "frameworks": [
+        {
+          "id": "blse",
+          "short": "BLSE",
+          "name": "Bannerlord Software Extender (BLSE)",
+          "status": "Likely safe",
+          "release_tag": "v1.5.9",
+          "release_published_at": "2025-12-05T17:33:29Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "harmony-bl",
+          "short": "Harmony",
+          "name": "Harmony",
+          "status": "Not affected by patches",
+          "release_tag": "v2.4.3",
+          "release_published_at": "2026-10-11T15:38:46Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.3.8",
+      "label": "BL v1.3.8",
+      "title": "Patch Notes - WS v1.0.4 / BL v1.3.8",
+      "published_at": "2025-11-29T17:46:39Z",
+      "published_unix": 1764438399,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1817483467041742",
+      "frameworks": [
+        {
+          "id": "blse",
+          "short": "BLSE",
+          "name": "Bannerlord Software Extender (BLSE)",
+          "status": "Likely safe",
+          "release_tag": "v1.5.9",
+          "release_published_at": "2025-12-05T17:33:29Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "harmony-bl",
+          "short": "Harmony",
+          "name": "Harmony",
+          "status": "Not affected by patches",
+          "release_tag": "v2.4.3",
+          "release_published_at": "2026-10-11T15:38:46Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.3.7",
+      "label": "BL v1.3.7",
+      "title": "Patch Notes - WS v1.0.3 / BL v1.3.7",
+      "published_at": "2025-11-28T18:06:58Z",
+      "published_unix": 1764353218,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1817483467040157",
+      "frameworks": [
+        {
+          "id": "blse",
+          "short": "BLSE",
+          "name": "Bannerlord Software Extender (BLSE)",
+          "status": "Likely safe",
+          "release_tag": "v1.5.9",
+          "release_published_at": "2025-12-05T17:33:29Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "harmony-bl",
+          "short": "Harmony",
+          "name": "Harmony",
+          "status": "Not affected by patches",
+          "release_tag": "v2.4.3",
+          "release_published_at": "2026-10-11T15:38:46Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.3.6",
+      "label": "BL v1.3.6",
+      "title": "Patch Notes - WS v1.0.2 / BL v1.3.6",
+      "published_at": "2025-11-27T17:01:17Z",
+      "published_unix": 1764262877,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1817483467037253",
+      "frameworks": [
+        {
+          "id": "blse",
+          "short": "BLSE",
+          "name": "Bannerlord Software Extender (BLSE)",
+          "status": "Likely safe",
+          "release_tag": "v1.5.9",
+          "release_published_at": "2025-12-05T17:33:29Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "harmony-bl",
+          "short": "Harmony",
+          "name": "Harmony",
+          "status": "Not affected by patches",
+          "release_tag": "v2.4.3",
+          "release_published_at": "2026-10-11T15:38:46Z",
+          "mentions_patch": true
+        }
+      ]
+    }
+  ],
+  "sources": {
+    "steam_news": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=261550&count=100"
+  }
+}

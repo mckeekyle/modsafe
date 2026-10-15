@@ -1,0 +1,85 @@
+{
+  "generated_at": "2026-10-15T22:13:54Z",
+  "game": {
+    "slug": "terraria",
+    "name": "Terraria",
+    "steam_appid": 105600,
+    "latest_patch": {
+      "version": "1.4.5.7",
+      "label": "1.4.5.7",
+      "title": "Terraria 1.4.5.7 - Out Now for PC! (Console/Mobile Soon)",
+      "published_at": "2026-08-19T20:45:37Z",
+      "published_unix": 1787172337,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1841579228663704"
+    }
+  },
+  "verdict": "Likely safe",
+  "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
+  "frameworks": [
+    {
+      "id": "tmodloader",
+      "name": "tModLoader",
+      "short": "tModLoader",
+      "url": "https://github.com/tModLoader/tModLoader",
+      "source": "github",
+      "repo": "tModLoader/tModLoader",
+      "tracked": true,
+      "sensitive": true,
+      "status": "Likely safe",
+      "base_status": "Likely OK",
+      "reason": "Latest release is newer than patch 1.4.5.7, but notes do not explicitly mention that version.",
+      "breakage_reports": [],
+      "official": null,
+      "release_tag": "v2026.08.3.0",
+      "release_name": "1.4.4-refs/heads/stable Version Update: v2026.08.3.0",
+      "release_published_at": "2026-10-01T00:08:55Z",
+      "release_url": "https://github.com/tModLoader/tModLoader/releases/tag/v2026.08.3.0",
+      "mentions_patch": false,
+      "newer_than_patch": true,
+      "mention_releases": []
+    }
+  ],
+  "history": [
+    {
+      "version": "1.4.5.7",
+      "label": "1.4.5.7",
+      "title": "Terraria 1.4.5.7 - Out Now for PC! (Console/Mobile Soon)",
+      "published_at": "2026-08-19T20:45:37Z",
+      "published_unix": 1787172337,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1841579228663704",
+      "frameworks": [
+        {
+          "id": "tmodloader",
+          "short": "tModLoader",
+          "name": "tModLoader",
+          "status": "Likely safe",
+          "release_tag": "v2026.07.3.0",
+          "release_published_at": "2026-09-01T00:11:46Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.4.5",
+      "label": "1.4.5",
+      "title": "Terraria 1.4.5: Bigger & Boulder - Available Now!",
+      "published_at": "2026-01-27T15:16:37Z",
+      "published_unix": 1769526997,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1822556746169234",
+      "frameworks": [
+        {
+          "id": "tmodloader",
+          "short": "tModLoader",
+          "name": "tModLoader",
+          "status": "Safe",
+          "release_tag": "v0.11.8.11",
+          "release_published_at": "2026-08-27T23:29:48Z",
+          "mentions_patch": true
+        }
+      ]
+    }
+  ],
+  "sources": {
+    "steam_news": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=105600&count=100"
+  }
+}

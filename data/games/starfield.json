@@ -1,0 +1,294 @@
+{
+  "generated_at": "2026-10-15T22:13:37Z",
+  "game": {
+    "slug": "starfield",
+    "name": "Starfield",
+    "steam_appid": 1716740,
+    "latest_patch": {
+      "version": "1.16.244",
+      "label": "1.16.244",
+      "title": "Starfield Update 1.16.244 \u2013 June 11, 2026",
+      "published_at": "2026-06-11T15:15:06Z",
+      "published_unix": 1781190906,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1835236783560763"
+    }
+  },
+  "verdict": "Safe",
+  "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
+  "frameworks": [
+    {
+      "id": "sfse",
+      "name": "Starfield Script Extender (SFSE)",
+      "short": "SFSE",
+      "url": "https://sfse.silverlock.org/",
+      "source": "github_tags",
+      "repo": "ianpatt/sfse",
+      "tracked": true,
+      "sensitive": true,
+      "status": "Safe",
+      "base_status": "Unknown / check",
+      "reason": "Official page (https://sfse.silverlock.org/) lists build 0.2.21 for runtime 1.16.244, matching the latest tag (Bethesda often ships updates to a beta branch first). Latest release predates patch 1.16.244; compatibility is unverified \u2014 check the project page. (Date is the tagged commit on GitHub; builds are published on the official site.)",
+      "breakage_reports": [],
+      "official": {
+        "runtime": "1.16.244",
+        "build": "0.2.21",
+        "supports_current": true,
+        "page": "https://sfse.silverlock.org/"
+      },
+      "release_tag": "v0.2.21",
+      "release_name": "v0.2.21",
+      "release_published_at": "2026-06-10T04:45:17Z",
+      "release_url": "https://github.com/ianpatt/sfse/releases/tag/v0.2.21",
+      "mentions_patch": false,
+      "newer_than_patch": false,
+      "mention_releases": []
+    },
+    {
+      "id": "address-library-sf",
+      "name": "Address Library for SFSE Plugins",
+      "short": "Address Lib",
+      "url": "https://www.nexusmods.com/starfield/mods/3256",
+      "source": "manual",
+      "tracked": false,
+      "sensitive": true,
+      "status": "Check manually",
+      "reason": "Distributed on Nexus Mods only; ModSafe does not scrape Nexus. Check the mod page.",
+      "release_tag": null,
+      "release_published_at": null,
+      "release_url": "https://www.nexusmods.com/starfield/mods/3256"
+    }
+  ],
+  "history": [
+    {
+      "version": "1.16.244",
+      "label": "1.16.244",
+      "title": "Starfield Update 1.16.244 \u2013 June 11, 2026",
+      "published_at": "2026-06-11T15:15:06Z",
+      "published_unix": 1781190906,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1835236783560763",
+      "frameworks": [
+        {
+          "id": "sfse",
+          "short": "SFSE",
+          "name": "Starfield Script Extender (SFSE)",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.16.242",
+      "label": "1.16.242",
+      "title": "Starfield Update 1.16.242 \u2013 May 14, 2026",
+      "published_at": "2026-05-22T16:51:29Z",
+      "published_unix": 1779468689,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1833334318572332",
+      "frameworks": [
+        {
+          "id": "sfse",
+          "short": "SFSE",
+          "name": "Starfield Script Extender (SFSE)",
+          "status": "Likely safe",
+          "release_tag": "v0.2.21",
+          "release_published_at": "2026-06-10T04:45:17Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.16.236",
+      "label": "1.16.236",
+      "title": "Starfield Update 1.16.236 \u2013 April 7, 2026",
+      "published_at": "2026-04-07T15:28:10Z",
+      "published_unix": 1775575690,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1828894815567746",
+      "frameworks": [
+        {
+          "id": "sfse",
+          "short": "SFSE",
+          "name": "Starfield Script Extender (SFSE)",
+          "status": "Likely safe",
+          "release_tag": "v0.2.20",
+          "release_published_at": "2026-05-14T15:30:10Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.15.222",
+      "label": "1.15.222",
+      "title": "Starfield Update 1.15.222 - August 5, 2025",
+      "published_at": "2025-07-22T15:54:51Z",
+      "published_unix": 1753199691,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1805431065501987",
+      "frameworks": [
+        {
+          "id": "sfse",
+          "short": "SFSE",
+          "name": "Starfield Script Extender (SFSE)",
+          "status": "Likely safe",
+          "release_tag": "v0.2.18",
+          "release_published_at": "2025-08-06T02:49:18Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.15.216",
+      "label": "1.15.216",
+      "title": "Starfield Update 1.15.216 \u2013 May 22, 2025",
+      "published_at": "2025-05-06T15:26:41Z",
+      "published_unix": 1746545201,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1798454487767416",
+      "frameworks": [
+        {
+          "id": "sfse",
+          "short": "SFSE",
+          "name": "Starfield Script Extender (SFSE)",
+          "status": "Likely safe",
+          "release_tag": "v0.2.18",
+          "release_published_at": "2025-08-06T02:49:18Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.14.74",
+      "label": "1.14.74",
+      "title": "Starfield Update 1.14.74 \u2013 November 19, 2024",
+      "published_at": "2024-11-05T17:10:05Z",
+      "published_unix": 1730826605,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6146943657174067793",
+      "frameworks": [
+        {
+          "id": "sfse",
+          "short": "SFSE",
+          "name": "Starfield Script Extender (SFSE)",
+          "status": "Likely safe",
+          "release_tag": "v0.2.18",
+          "release_published_at": "2025-08-06T02:49:18Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.14.70",
+      "label": "1.14.70",
+      "title": "Starfield Update 1.14.70 \u2013 September 30, 2024",
+      "published_at": "2024-09-18T14:46:02Z",
+      "published_unix": 1726670762,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6341720536499253210",
+      "frameworks": [
+        {
+          "id": "sfse",
+          "short": "SFSE",
+          "name": "Starfield Script Extender (SFSE)",
+          "status": "Likely safe",
+          "release_tag": "v0.2.18",
+          "release_published_at": "2025-08-06T02:49:18Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.12.30",
+      "label": "1.12.30",
+      "title": "Starfield Update 1.12.30 - June 9, 2024",
+      "published_at": "2024-06-09T22:00:32Z",
+      "published_unix": 1717970432,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5746109972561139047",
+      "frameworks": [
+        {
+          "id": "sfse",
+          "short": "SFSE",
+          "name": "Starfield Script Extender (SFSE)",
+          "status": "Likely safe",
+          "release_tag": "v0.2.18",
+          "release_published_at": "2025-08-06T02:49:18Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.11.36",
+      "label": "1.11.36",
+      "title": "Starfield Update 1.11.36 - May 15, 2024",
+      "published_at": "2024-05-01T15:09:58Z",
+      "published_unix": 1714576198,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5766372999940258228",
+      "frameworks": [
+        {
+          "id": "sfse",
+          "short": "SFSE",
+          "name": "Starfield Script Extender (SFSE)",
+          "status": "Likely safe",
+          "release_tag": "v0.2.18",
+          "release_published_at": "2025-08-06T02:49:18Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.10.31",
+      "label": "1.10.31",
+      "title": "Starfield Update 1.10.31 - March 19, 2024",
+      "published_at": "2024-03-06T16:39:34Z",
+      "published_unix": 1709743174,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5679673637649039127",
+      "frameworks": [
+        {
+          "id": "sfse",
+          "short": "SFSE",
+          "name": "Starfield Script Extender (SFSE)",
+          "status": "Likely safe",
+          "release_tag": "v0.2.18",
+          "release_published_at": "2025-08-06T02:49:18Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.9.67",
+      "label": "1.9.67",
+      "title": "Starfield Update 1.9.67 Notes \u2013 February 20, 2024",
+      "published_at": "2024-02-07T16:15:33Z",
+      "published_unix": 1707322533,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5589599109262035510",
+      "frameworks": [
+        {
+          "id": "sfse",
+          "short": "SFSE",
+          "name": "Starfield Script Extender (SFSE)",
+          "status": "Likely safe",
+          "release_tag": "v0.2.18",
+          "release_published_at": "2025-08-06T02:49:18Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.9.51",
+      "label": "1.9.51",
+      "title": "Starfield Update 1.9.51 Notes \u2013 January 30, 2024",
+      "published_at": "2024-01-18T16:14:34Z",
+      "published_unix": 1705594474,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5510784213098362871",
+      "frameworks": [
+        {
+          "id": "sfse",
+          "short": "SFSE",
+          "name": "Starfield Script Extender (SFSE)",
+          "status": "Likely safe",
+          "release_tag": "v0.2.18",
+          "release_published_at": "2025-08-06T02:49:18Z",
+          "mentions_patch": false
+        }
+      ]
+    }
+  ],
+  "sources": {
+    "steam_news": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1716740&count=100"
+  }
+}

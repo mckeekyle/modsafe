@@ -1,0 +1,413 @@
+{
+  "generated_at": "2026-10-15T22:13:41Z",
+  "game": {
+    "slug": "elden-ring",
+    "name": "Elden Ring",
+    "steam_appid": 1245620,
+    "latest_patch": {
+      "version": "1.17",
+      "label": "1.17",
+      "title": "Patch Notes Version 1.17",
+      "published_at": "2026-08-27T14:00:22Z",
+      "published_unix": 1787839222,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1842212951300120"
+    }
+  },
+  "verdict": "Breakage reported",
+  "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
+  "frameworks": [
+    {
+      "id": "seamless-coop",
+      "name": "Seamless Co-op",
+      "short": "Seamless Co-op",
+      "url": "https://github.com/LukeYui/EldenRingSeamlessCoopRelease",
+      "source": "github",
+      "repo": "LukeYui/EldenRingSeamlessCoopRelease",
+      "tracked": true,
+      "sensitive": true,
+      "status": "Safe",
+      "base_status": "Updated for latest patch",
+      "reason": "Latest release notes mention patch 1.17 and the release is on/after the patch date.",
+      "breakage_reports": [],
+      "official": null,
+      "release_tag": "v2.0.1",
+      "release_name": "BETA v2.0.1",
+      "release_published_at": "2026-09-03T19:40:04Z",
+      "release_url": "https://github.com/yuiamoroll/EldenRingSeamlessCoopRelease/releases/tag/v2.0.1",
+      "mentions_patch": true,
+      "newer_than_patch": true,
+      "mention_releases": [
+        "v2.0.1"
+      ]
+    },
+    {
+      "id": "me3",
+      "name": "Mod Engine 3 (me3)",
+      "short": "me3",
+      "url": "https://github.com/garyttierney/me3",
+      "source": "github",
+      "repo": "garyttierney/me3",
+      "tracked": true,
+      "sensitive": true,
+      "status": "Breakage reported",
+      "base_status": "Unknown / check",
+      "reason": "Latest release predates patch 1.17; compatibility is unverified \u2014 check the project page. 1 open issue(s) report breakage since the patch/latest release.",
+      "breakage_reports": [
+        {
+          "title": "Elden Ring 1.17.0.0 crashes in me3_mod_host.dll 0.13.0 during system allocator hook",
+          "url": "https://github.com/garyttierney/me3/issues/877",
+          "created_at": "2026-09-05T01:42:48Z"
+        }
+      ],
+      "official": null,
+      "release_tag": "v0.13.0",
+      "release_name": "v0.13.0",
+      "release_published_at": "2026-08-11T22:32:19Z",
+      "release_url": "https://github.com/garyttierney/me3/releases/tag/v0.13.0",
+      "mentions_patch": false,
+      "newer_than_patch": false,
+      "mention_releases": []
+    }
+  ],
+  "history": [
+    {
+      "version": "1.17",
+      "label": "1.17",
+      "title": "Patch Notes Version 1.17",
+      "published_at": "2026-08-27T14:00:22Z",
+      "published_unix": 1787839222,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1842212951300120",
+      "frameworks": [
+        {
+          "id": "seamless-coop",
+          "short": "Seamless Co-op",
+          "name": "Seamless Co-op",
+          "status": "Safe",
+          "release_tag": "v2.0.1",
+          "release_published_at": "2026-09-03T19:40:04Z",
+          "mentions_patch": true
+        },
+        {
+          "id": "me3",
+          "short": "me3",
+          "name": "Mod Engine 3 (me3)",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.16.1",
+      "label": "1.16.1",
+      "title": "ELDEN RING - Patch Notes Version 1.16.1",
+      "published_at": "2025-08-21T12:09:05Z",
+      "published_unix": 1755778145,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1808601382443022",
+      "frameworks": [
+        {
+          "id": "seamless-coop",
+          "short": "Seamless Co-op",
+          "name": "Seamless Co-op",
+          "status": "Likely safe",
+          "release_tag": "v1.9.2",
+          "release_published_at": "2026-02-02T22:35:49Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "me3",
+          "short": "me3",
+          "name": "Mod Engine 3 (me3)",
+          "status": "Likely safe",
+          "release_tag": "v0.8.0",
+          "release_published_at": "2025-09-05T21:39:50Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.16",
+      "label": "1.16",
+      "title": "Patch Notes Version 1.16",
+      "published_at": "2024-10-17T07:40:57Z",
+      "published_unix": 1729150857,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6212244583175036162",
+      "frameworks": [
+        {
+          "id": "seamless-coop",
+          "short": "Seamless Co-op",
+          "name": "Seamless Co-op",
+          "status": "Likely safe",
+          "release_tag": "v1.9.0",
+          "release_published_at": "2025-01-21T18:05:10Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "me3",
+          "short": "me3",
+          "name": "Mod Engine 3 (me3)",
+          "status": "Safe",
+          "release_tag": "v0.12.0",
+          "release_published_at": "2026-07-18T15:51:21Z",
+          "mentions_patch": true
+        }
+      ]
+    },
+    {
+      "version": "1.15",
+      "label": "1.15",
+      "title": "Patch Notes Version 1.15",
+      "published_at": "2024-10-02T08:20:50Z",
+      "published_unix": 1727857250,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6350729003489816555",
+      "frameworks": [
+        {
+          "id": "seamless-coop",
+          "short": "Seamless Co-op",
+          "name": "Seamless Co-op",
+          "status": "Likely safe",
+          "release_tag": "v1.9.0",
+          "release_published_at": "2025-01-21T18:05:10Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "me3",
+          "short": "me3",
+          "name": "Mod Engine 3 (me3)",
+          "status": "Likely safe",
+          "release_tag": "v0.1.0",
+          "release_published_at": "2025-05-31T09:29:22Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.14",
+      "label": "1.14",
+      "title": "Patch Notes Version 1.14",
+      "published_at": "2024-09-11T14:15:49Z",
+      "published_unix": 1726064149,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6250522009509658757",
+      "frameworks": [
+        {
+          "id": "seamless-coop",
+          "short": "Seamless Co-op",
+          "name": "Seamless Co-op",
+          "status": "Likely safe",
+          "release_tag": "v1.8.5",
+          "release_published_at": "2024-09-11T21:09:04Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "me3",
+          "short": "me3",
+          "name": "Mod Engine 3 (me3)",
+          "status": "Likely safe",
+          "release_tag": "v0.1.0",
+          "release_published_at": "2025-05-31T09:29:22Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.13.2",
+      "label": "1.13.2",
+      "title": "Patch Notes Version 1.13.2",
+      "published_at": "2024-08-08T13:00:13Z",
+      "published_unix": 1723122013,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5963414363390447947",
+      "frameworks": [
+        {
+          "id": "seamless-coop",
+          "short": "Seamless Co-op",
+          "name": "Seamless Co-op",
+          "status": "Likely safe",
+          "release_tag": "v1.8.4",
+          "release_published_at": "2024-08-11T21:37:42Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "me3",
+          "short": "me3",
+          "name": "Mod Engine 3 (me3)",
+          "status": "Likely safe",
+          "release_tag": "v0.1.0",
+          "release_published_at": "2025-05-31T09:29:22Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.13",
+      "label": "1.13",
+      "title": "Patch Notes Version 1.13",
+      "published_at": "2024-07-30T12:00:53Z",
+      "published_unix": 1722340853,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5963413094366301750",
+      "frameworks": [
+        {
+          "id": "seamless-coop",
+          "short": "Seamless Co-op",
+          "name": "Seamless Co-op",
+          "status": "Likely safe",
+          "release_tag": "v1.8.2",
+          "release_published_at": "2024-07-30T19:37:09Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "me3",
+          "short": "me3",
+          "name": "Mod Engine 3 (me3)",
+          "status": "Likely safe",
+          "release_tag": "v0.1.0",
+          "release_published_at": "2025-05-31T09:29:22Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.12.3",
+      "label": "1.12.3",
+      "title": "Patch Notes Version 1.12.3",
+      "published_at": "2024-07-04T12:05:17Z",
+      "published_unix": 1720094717,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5842939267334895168",
+      "frameworks": [
+        {
+          "id": "seamless-coop",
+          "short": "Seamless Co-op",
+          "name": "Seamless Co-op",
+          "status": "Likely safe",
+          "release_tag": "v1.7.7",
+          "release_published_at": "2024-07-06T19:23:07Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "me3",
+          "short": "me3",
+          "name": "Mod Engine 3 (me3)",
+          "status": "Likely safe",
+          "release_tag": "v0.1.0",
+          "release_published_at": "2025-05-31T09:29:22Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.12.2",
+      "label": "1.12.2",
+      "title": "Patch Notes Version 1.12.2",
+      "published_at": "2024-06-26T14:35:22Z",
+      "published_unix": 1719412522,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5842939267306109180",
+      "frameworks": [
+        {
+          "id": "seamless-coop",
+          "short": "Seamless Co-op",
+          "name": "Seamless Co-op",
+          "status": "Likely safe",
+          "release_tag": "v1.7.2",
+          "release_published_at": "2024-06-30T14:10:24Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "me3",
+          "short": "me3",
+          "name": "Mod Engine 3 (me3)",
+          "status": "Likely safe",
+          "release_tag": "v0.1.0",
+          "release_published_at": "2025-05-31T09:29:22Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.12",
+      "label": "1.12",
+      "title": "Patch Notes Version 1.12",
+      "published_at": "2024-06-20T13:20:37Z",
+      "published_unix": 1718889637,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5759622039976214240",
+      "frameworks": [
+        {
+          "id": "seamless-coop",
+          "short": "Seamless Co-op",
+          "name": "Seamless Co-op",
+          "status": "Likely safe",
+          "release_tag": "v1.7.2",
+          "release_published_at": "2024-06-30T14:10:24Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "me3",
+          "short": "me3",
+          "name": "Mod Engine 3 (me3)",
+          "status": "Likely safe",
+          "release_tag": "v0.1.0",
+          "release_published_at": "2025-05-31T09:29:22Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.10.1",
+      "label": "1.10.1",
+      "title": "Patch Notes Version 1.10.1",
+      "published_at": "2024-01-11T14:30:26Z",
+      "published_unix": 1704983426,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6300039510119919466",
+      "frameworks": [
+        {
+          "id": "seamless-coop",
+          "short": "Seamless Co-op",
+          "name": "Seamless Co-op",
+          "status": "Likely safe",
+          "release_tag": "v1.7.2",
+          "release_published_at": "2024-06-30T14:10:24Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "me3",
+          "short": "me3",
+          "name": "Mod Engine 3 (me3)",
+          "status": "Likely safe",
+          "release_tag": "v0.1.0",
+          "release_published_at": "2025-05-31T09:29:22Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
+      "version": "1.10",
+      "label": "1.10",
+      "title": "Patch Notes Version 1.10",
+      "published_at": "2023-07-27T10:16:19Z",
+      "published_unix": 1690452979,
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5124584686245627693",
+      "frameworks": [
+        {
+          "id": "seamless-coop",
+          "short": "Seamless Co-op",
+          "name": "Seamless Co-op",
+          "status": "Likely safe",
+          "release_tag": "v1.7.2",
+          "release_published_at": "2024-06-30T14:10:24Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "me3",
+          "short": "me3",
+          "name": "Mod Engine 3 (me3)",
+          "status": "Likely safe",
+          "release_tag": "v0.1.0",
+          "release_published_at": "2025-05-31T09:29:22Z",
+          "mentions_patch": false
+        }
+      ]
+    }
+  ],
+  "sources": {
+    "steam_news": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1245620&count=100"
+  }
+}
