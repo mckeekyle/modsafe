@@ -353,6 +353,72 @@ section { margin: 0 0 1.75rem; }
   .stats { gap: 1rem; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+/* ===== spacing system & rhythm (v3 QA) ===== */
+:root { --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s5: 24px; --s6: 32px; --s7: 48px; --s8: 64px; --measure: 72ch; }
+main { padding: var(--s5) var(--s5) var(--s8); }
+main > * { margin-top: 0; margin-bottom: 0; }
+main > * + * { margin-top: var(--s6); }
+main > .sec-head { margin-top: var(--s7); margin-bottom: 0; }
+main > .sec-head + * { margin-top: var(--s4); }
+main > .sec-head + p.muted { margin-top: var(--s2); }
+main > p.muted + .filters { margin-top: var(--s4); }
+main > .filters + .game-grid { margin-top: var(--s4); }
+main > .crumbs { margin: 0; }
+main > .crumbs + * { margin-top: var(--s3); }
+main > .tabs { margin-top: var(--s4); }
+main > .tabs + * { margin-top: var(--s5); }
+main > .disclaimer { margin-top: var(--s4); }
+.panel, .newsletter, .faq-item, .hist-card { padding: var(--s5); }
+.panel > :first-child, .newsletter > :first-child, .faq-item > :first-child, .hist-card > :first-child { margin-top: 0; }
+.panel > :last-child, .newsletter > :last-child, .faq-item > :last-child, .hist-card > :last-child { margin-bottom: 0; }
+.panel h2, .newsletter h2 { margin-bottom: var(--s3); }
+.game-grid { gap: var(--s5); }
+.fw-grid { gap: var(--s4); }
+.faq-list, .hist-list { gap: var(--s3); }
+.faq-item p, .page-hero .lede, .big-say, .disclaimer { max-width: var(--measure); }
+.page-hero { padding: var(--s5) 0 0; }
+.page-hero h1 { margin: 0 0 var(--s3); }
+.page-hero .lede { margin: 0; }
+.home-hero h1 { margin: var(--s4) 0 var(--s4); }
+.home-hero .lede { margin: 0; }
+.legend { margin: var(--s5) 0; }
+.stats { margin-top: var(--s6); }
+.game-hero h1 { margin: 0 0 var(--s4); }
+.game-hero .lede { margin-top: var(--s4); }
+.card-body { padding: var(--s3) var(--s4) var(--s4); }
+.card-body h3 { margin: 0 0 var(--s1); }
+.card-meta { margin: 0; }
+.view { margin-top: var(--s3) !important; }
+.patch-meta { gap: var(--s2) var(--s4); }
+.patch-meta dt { font-size: .78rem; color: var(--muted); }
+.news li { padding: var(--s3) var(--s2); }
+.news li.hl { padding-left: var(--s3); }
+.newsletter .nl-note { margin-top: var(--s3); font-size: .88rem; }
+.newsletter iframe, .newsletter [data-beehiiv-form] { display: block; max-width: 100%; margin: var(--s3) 0 0; }
+.legend-dl { display: grid; grid-template-columns: max-content 1fr; gap: var(--s3) var(--s4); margin: 0; align-items: baseline; }
+.legend-dl dd { margin: 0; color: #c8d3e8; }
+.benefits { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--s3); grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.benefits li { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: var(--s4); }
+.benefits strong { display: block; font-family: var(--head); font-size: 1.05rem; margin-bottom: var(--s1); }
+.footer-in { padding: var(--s7) var(--s5) var(--s7); gap: var(--s6); }
+.footer p { margin: 0 0 var(--s3); }
+.footer nav { gap: var(--s2) var(--s4); }
+html, body { overflow-x: hidden; }
+@media (max-width: 820px) {
+  main { padding: var(--s4) var(--s4) var(--s7); }
+  main > * + * { margin-top: var(--s5); }
+  main > .sec-head { margin-top: var(--s6); }
+  .tabs { position: static; flex-wrap: wrap; overflow: visible; }
+  .game-grid { gap: var(--s4); }
+}
+@media (max-width: 560px) {
+  .panel, .newsletter, .faq-item, .hist-card { padding: var(--s4); }
+  .legend-dl { grid-template-columns: 1fr; gap: var(--s1); }
+  .legend-dl dd { margin-bottom: var(--s3); }
+  .home-hero, .game-hero { padding: var(--s5) var(--s4); }
+  .footer-in { padding: var(--s6) var(--s4); }
+  .filters select { flex: 1 1 45%; }
+}
 """
 
 
@@ -402,10 +468,10 @@ def sponsor_slot() -> str:
 </aside>"""
 
 
-def newsletter(heading_level: str = "h2") -> str:
+def newsletter(heading_level: str = "h2", heading: bool = True) -> str:
+    head = f'<{heading_level} id="nl-heading">Patch-day alerts</{heading_level}>\n<p>{esc(NEWSLETTER_COPY)}</p>' if heading else '<h2 id="nl-heading" class="sr">Subscribe</h2>'
     return f"""<section class="newsletter" aria-labelledby="nl-heading">
-<{heading_level} id="nl-heading">Patch-day alerts</{heading_level}>
-<p>{esc(NEWSLETTER_COPY)}</p>
+{head}
 <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="{NEWSLETTER_FORM_ID}"></script>
 <p class="nl-note">Form not loading? <a href="{NEWSLETTER_URL}">Subscribe on beehiiv →</a></p>
 </section>"""
@@ -482,8 +548,8 @@ def verdict_sentence(game: dict, data: dict) -> str:
     if v == "Safe":
         msg = f"Every patch-sensitive framework has explicit support for {p}."
     elif v == "Likely safe":
-        msg = (f"No breakage evidence for {p}: {', '.join(worst)} {'has' if len(worst) == 1 else 'have'} no release that names the patch, "
-               "but there are post-patch releases or no breakage reports since. Probably fine; skim the notes.")
+        msg = (f"No sign of trouble with {p}. {', '.join(worst)} {'hasn’t' if len(worst) == 1 else 'haven’t'} named this patch in a release, "
+               "but there’s either a newer release or no breakage reports since. Probably fine — skim the notes before updating.")
     elif v == "Just patched, wait":
         msg = f"{p} is under a week old and {', '.join(worst)} {'has' if len(worst) == 1 else 'have'} not updated yet. Hold the update a few days."
     elif v == "Breakage reported":
@@ -515,6 +581,27 @@ STATUS_EXPLAINER = (
     "patch. Not ported yet (Minecraft): no build exists for that version. Not affected by patches: version-agnostic "
     "tools such as mod managers or generic loaders; they don't count toward the verdict."
 )
+
+
+LEGEND = [
+    ("Safe", "A release explicitly supports the current patch (release notes, the maintainer's official page, or a stable build for that version)."),
+    ("Likely safe", "Released after the patch without naming it, or the patch is over a week old with no breakage reports."),
+    ("Just patched, wait", "The patch is under 7 days old and the framework hasn't updated yet."),
+    ("Breakage reported", "Open issues on the project's tracker say it broke after the patch."),
+    ("Not ported yet", "Minecraft: no build exists for that version yet."),
+    ("Not affected by patches", "Version-agnostic tools (mod managers, generic loaders). Not counted in the verdict."),
+    ("Check manually", "Nexus-only mods we can't track automatically. Not counted in the verdict."),
+]
+
+
+def legend_html() -> str:
+    return '<dl class="legend-dl">' + "".join(f"<dt>{badge(k)}</dt><dd>{esc(v)}</dd>" for k, v in LEGEND) + "</dl>"
+
+
+def faq_article(item: dict, tag: str = "h3", idx: int | None = None) -> str:
+    body = legend_html() if item["a"] == STATUS_EXPLAINER else f"<p>{esc(item['a'])}</p>"
+    ident = f' id="faq-{idx}"' if idx is not None else ""
+    return f'<article class="faq-item"{ident}><{tag}>{esc(item["q"])}</{tag}>{body}</article>'
 
 
 def game_faq(game: dict, data: dict) -> list[dict]:
@@ -567,7 +654,7 @@ def build_game_page(game: dict, data: dict) -> str:
         reps = "".join(f'<li><a href="{esc(r["url"])}">{esc(r["title"])}</a></li>' for r in fw.get("breakage_reports") or [])
         return f"<li><strong>{esc(fw['short'])}:</strong> {esc(fw.get('reason', ''))}" + (f"<ul>{reps}</ul>" if reps else "") + "</li>"
     faq = game_faq(game, data)
-    faq_html = "".join(f'<article class="faq-item"><h3>{esc(i["q"])}</h3><p>{esc(i["a"])}</p></article>' for i in faq)
+    faq_html = "".join(faq_article(i) for i in faq)
     extra = "".join(f'<li><a href="{esc(u)}">{esc(n)}</a></li>' for n, u in game.get("extra_links", []))
     snap = f"<dt>Latest snapshot</dt><dd><code>{esc(data['latest_snapshot'])}</code> (not tracked)</dd>" if data.get("latest_snapshot") else ""
     dataset = {"@context": "https://schema.org", "@type": "Dataset",
@@ -588,7 +675,7 @@ def build_game_page(game: dict, data: dict) -> str:
 {f'<p class="note" role="note"><strong>⚠ {esc(game["note"])}</strong></p>' if game.get("note") else ''}
 </div>
 </section>
-<nav class="tabs" aria-label="On this page"><a href="#status">Status</a><a href="#fw-heading">Frameworks</a><a href="#history">Patch history</a><a href="#news">News</a><a href="#faq-heading">FAQ</a></nav>
+<nav class="tabs" aria-label="On this page"><a href="#status">Status</a><a href="#fw-heading">Frameworks</a>{'<a href="#history">Patch history</a>' if data.get("history") else ''}<a href="#news">News</a><a href="#faq-heading">FAQ</a></nav>
 <div class="vgrid" id="status">
 <section class="panel" aria-labelledby="verdict-heading">
 <h2 id="verdict-heading">Verdict for {esc(p['label'])}</h2>
@@ -610,8 +697,7 @@ def build_game_page(game: dict, data: dict) -> str:
 <section class="fw-grid" aria-labelledby="fw-heading">{framework_cards(data)}</section>
 {f'<ul>{extra}</ul>' if extra else ''}
 <p class="disclaimer">{esc(data.get('disclaimer', ''))} Items marked “Check manually” are not counted in the verdict.</p>
-<div class="sec-head" id="history"><h2>Patch history</h2><a href="/{slug}/history/">Full history →</a></div>
-<section class="hist-list">{history_cards(data, 4)}</section>
+{f'<div class="sec-head" id="history"><h2>Patch history</h2><a href="/{slug}/history/">Full history →</a></div><section class="hist-list">{history_cards(data, 4)}</section>' if data.get("history") else ""}
 <div class="sec-head" id="news"><h2>{esc(game['short'])} news</h2><a href="/news/">All news →</a></div>
 <section class="panel">{news_list(game_news(slug, data), 8)}</section>
 {newsletter()}
@@ -619,7 +705,7 @@ def build_game_page(game: dict, data: dict) -> str:
 <section class="faq-list" aria-labelledby="faq-heading">
 {faq_html}
 </section>
-<section class="links"><a href="/{slug}/history/">📜 Full patch history</a> <a href="{esc(game['wiki'])}">🛠 Modding resources</a> <a href="/">🎮 All games</a></section>
+<section class="links">{f'<a href="/{slug}/history/">📜 Full patch history</a>' if data.get("history") else ''} <a href="{esc(game['wiki'])}">🛠 Modding resources</a> <a href="/">🎮 All games</a></section>
 """
     return page_shell(
         f"Is it safe to update {game['name']}? Mod status for {p['label']} — ModSafe",
@@ -729,7 +815,7 @@ def news_list(items: list[dict], limit: int | None = None) -> str:
         flag = '<span class="badge wait">🛠 Patch</span> ' if it.get("highlight") else ""
         lis.append(f"""<li{hl}>{flag}<a href="{esc(it['url'])}" rel="noopener" target="_blank">{esc(it['title'])}</a>
 <span class="nmeta">{esc(it['source'])} · {esc(fmt_date(it['published_at']))} {tags}</span></li>""")
-    return f'<ul class="news">{"".join(lis) or "<li>No recent headlines.</li>"}</ul>'
+    return f'<ul class="news">{"".join(lis) or '<li class="muted">No headlines in the last few weeks.</li>'}</ul>'
 
 
 def build_home(games_data: list[tuple[dict, dict]]) -> str:
@@ -757,8 +843,8 @@ def build_home(games_data: list[tuple[dict, dict]]) -> str:
 <div class="sec-head"><h2>Latest gaming news</h2><a href="/news/">All news →</a></div>
 <section class="panel">{news_list(news.get("items", []), 8)}</section>
 {newsletter()}
-<section class="panel"><h2>How we call it</h2><p class="disclaimer">{esc(STATUS_EXPLAINER)}</p>
-<p><a href="/faq/">Read the FAQ →</a></p></section>
+<section class="panel"><h2>How we call it</h2>{legend_html()}
+<p style="margin-top:var(--s4)"><a href="/faq/">Read the FAQ →</a></p></section>
 """
     return page_shell(f"Is it safe to update? — {SITE_NAME}", SITE_DESC, "/", "home", body + FILTER_JS, extra_jsonld=[itemlist])
 
@@ -779,8 +865,11 @@ def build_news_page() -> str:
     news = load_news()
     srcs = ", ".join(f'<a href="{esc(x["url"])}">{esc(x["name"])}</a>' for x in news.get("sources", []) if x.get("ok"))
     body = f"""<p class="crumbs"><a href="/">Home</a> › News</p>
-<section class="page-hero"><h1>Latest gaming news</h1><p class="lede">Headlines from official Steam announcements for the games we track, plus reputable PC gaming outlets. Patches for tracked games are highlighted. We only show headlines and always link to the original.</p></section>
-<section class="panel">{news_list(news.get("items", []))}</section>
+<section class="page-hero"><h1>Latest gaming news</h1><p class="lede">Official Steam announcements for the games we track, plus headlines from PC gaming outlets. Patches are highlighted; every link goes to the original source.</p></section>
+<div class="sec-head"><h2>Patches &amp; tracked games</h2></div>
+<section class="panel">{news_list([i for i in news.get("items", []) if i.get("games")])}</section>
+<div class="sec-head"><h2>Around PC gaming</h2></div>
+<section class="panel">{news_list([i for i in news.get("items", []) if not i.get("games")], 30)}</section>
 <p class="disclaimer">Sources: Steam announcements{", " + srcs if srcs else ""}. Updated {esc(fmt_date(news.get("generated_at")))} (UTC). Headlines belong to their publishers.</p>"""
     return page_shell(f"Latest gaming news — {SITE_NAME}", "Patch notes for modded games and PC gaming headlines, updated several times a day.",
                       "/news/", "news", body, extra_jsonld=[breadcrumb_ld([("Home", "/"), ("News", "/news/")])])
@@ -799,8 +888,7 @@ GENERAL_FAQ = [
 
 
 def build_faq() -> str:
-    arts = "".join(f'<article class="faq-item" id="faq-{i}"><h2>{esc(it["q"])}</h2><p>{esc(it["a"])}</p></article>'
-                   for i, it in enumerate(GENERAL_FAQ))
+    arts = "".join(faq_article(it, "h2", i) for i, it in enumerate(GENERAL_FAQ))
     body = f"""<section class="page-hero"><h1>FAQ</h1><p class="lede">Updating modded games after a patch.</p></section>
 <section class="faq-list">{arts}</section>
 {newsletter()}
@@ -810,9 +898,16 @@ def build_faq() -> str:
 
 
 def build_newsletter_page() -> str:
-    body = f"""<section class="page-hero"><h1>Patch-day alerts</h1><p class="lede">{esc(NEWSLETTER_COPY)}</p></section>
-{newsletter("h2")}"""
-    return page_shell(f"Patch-day alerts — {SITE_NAME}", NEWSLETTER_COPY, "/newsletter/", "newsletter", body)
+    body = f"""<p class="crumbs"><a href="/">Home</a> › Alerts</p>
+<section class="page-hero"><h1>Patch-day alerts</h1><p class="lede">{esc(NEWSLETTER_COPY)}</p></section>
+<ul class="benefits">
+<li><strong>⚡ Patch drops</strong>A heads-up when a tracked game patches, with which frameworks are already updated.</li>
+<li><strong>✔ All clear</strong>When the script extenders and loaders you rely on catch up.</li>
+<li><strong>🔕 Low noise</strong>Only patch-day news. No spam; unsubscribe any time.</li>
+</ul>
+{newsletter(heading=False)}"""
+    return page_shell(f"Patch-day alerts — {SITE_NAME}", NEWSLETTER_COPY, "/newsletter/", "newsletter", body,
+                      extra_jsonld=[breadcrumb_ld([("Home", "/"), ("Alerts", "/newsletter/")])])
 
 
 OG_SVG = """<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
