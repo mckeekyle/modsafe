@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data" / "games"
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from games import GAMES  # noqa: E402
+import mods as mods_mod  # noqa: E402
 GAMES_SLUGS = {g["slug"] for g in GAMES}
 NEWS_FILE = ROOT / "data" / "news.json"
 DIST = ROOT / "dist"
@@ -412,6 +413,23 @@ main > .disclaimer { margin-top: var(--s4); }
 .footer p { margin: 0 0 var(--s3); }
 .footer nav { gap: var(--s2) var(--s4); }
 html, body { overflow-x: hidden; }
+.mod-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: var(--s4); }
+.mod-card { display: flex; flex-direction: column; gap: var(--s2); padding: var(--s4); border-radius: 14px; background: var(--panel); border: 1px solid var(--line); }
+.mod-card p { margin: 0; }
+.mod-top { display: flex; gap: var(--s3); align-items: center; }
+.mod-top h3 { margin: 0; font-size: 1.05rem; }
+.mod-n { flex: none; width: 32px; height: 32px; display: grid; place-items: center; border-radius: 50%; background: rgba(0,240,255,.12); color: var(--neon); font-family: var(--head); font-weight: 700; }
+.mod-cat { font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; color: var(--dim); }
+.mod-req, .mod-why, .mod-note { font-size: .85rem; color: var(--muted); }
+.mod-note { border-left: 3px solid var(--neon); padding-left: var(--s2); }
+.mod-foot { margin-top: auto; display: flex; flex-wrap: wrap; gap: var(--s2); align-items: center; justify-content: space-between; padding-top: var(--s2); }
+.mod-foot .dl { font-weight: 700; color: var(--neon); text-decoration: none; }
+.mod-foot .dl:hover { text-decoration: underline; }
+.cta-row { display: flex; flex-wrap: wrap; gap: var(--s2); margin-top: var(--s4); }
+.guide { max-width: 78ch; line-height: 1.7; }
+.guide h2 { margin-top: var(--s6); } .guide h2:first-child { margin-top: 0; }
+.guide li { margin: var(--s2) 0; }
+.sec-links { display: flex; gap: var(--s4); }
 .updated { margin: var(--s1) 0 0 !important; font-size: .8rem !important; color: var(--dim); }
 .toggle { display: inline-flex; align-items: center; gap: var(--s2); padding: var(--s2) var(--s4); border: 1px solid var(--line); border-radius: 999px;
   background: var(--panel); cursor: pointer; font-weight: 600; }
@@ -692,7 +710,7 @@ def build_game_page(game: dict, data: dict) -> str:
 {f'<p class="note" role="note"><strong>⚠ {esc(game["note"])}</strong></p>' if game.get("note") else ''}
 </div>
 </section>
-<nav class="tabs" aria-label="On this page"><a href="#status">Status</a><a href="#fw-heading">Frameworks</a>{'<a href="#history">Patch history</a>' if data.get("history") else ''}<a href="#news">News</a><a href="#faq-heading">FAQ</a></nav>
+<nav class="tabs" aria-label="On this page"><a href="#status">Status</a><a href="#fw-heading">Frameworks</a>{'<a href="#history">Patch history</a>' if data.get("history") else ''}{'<a href="#mods">Essential mods</a>' if mods_mod.load_mods(slug) else ''}<a href="#news">News</a><a href="#faq-heading">FAQ</a></nav>
 <div class="vgrid" id="status">
 <section class="panel" aria-labelledby="verdict-heading">
 <h2 id="verdict-heading">Verdict for {esc(p['label'])}</h2>
@@ -716,6 +734,7 @@ def build_game_page(game: dict, data: dict) -> str:
 {f'<ul>{extra}</ul>' if extra else ''}
 <p class="disclaimer">{esc(data.get('disclaimer', ''))} Items marked “Check manually” are not counted in the verdict.</p>
 {f'<div class="sec-head" id="history"><h2>Patch history</h2><a href="/{slug}/history/">Full history →</a></div><section class="hist-list">{history_cards(data, 4)}</section>' if data.get("history") else ""}
+{mods_teaser(game, data)}
 <div class="sec-head" id="news"><h2>{esc(game['short'])} news</h2><a href="/news/">All news →</a></div>
 <section class="panel">{news_list(game_news(slug, data), 8)}</section>
 {newsletter()}
@@ -753,6 +772,81 @@ def game_news(slug: str, data: dict) -> list[dict]:
         items = [{"title": n["title"], "url": n["url"], "source": "Steam", "published_at": n["published_at"],
                   "games": [], "highlight": n.get("is_patch")} for n in data.get("news", [])]
     return items
+
+
+def host_label(url: str) -> str:
+    h = url.split("/")[2].replace("www.", "")
+    return {"nexusmods.com": "Nexus Mods", "github.com": "GitHub", "thunderstore.io": "Thunderstore", "modrinth.com": "Modrinth",
+            "flightsim.to": "flightsim.to"}.get(h, h)
+
+
+def mod_cards(game: dict, data: dict, mods: dict, limit: int | None = None) -> str:
+    names = {m["id"]: m["name"] for m in mods["mods"]}
+    names.update({f["id"]: f["short"] for f in data.get("frameworks", [])})
+    out = []
+    for n, m in enumerate(mods["mods"][:limit] if limit else mods["mods"], 1):
+        st, why = mods_mod.compat(m, data)
+        req = ", ".join(esc(names.get(r, r)) for r in m.get("requires", []))
+        out.append(f"""<article class="mod-card" id="mod-{esc(m['id'])}">
+<div class="mod-top"><span class="mod-n">{n}</span><div><h3>{esc(m['name'])}</h3><p class="mod-cat">{esc(m['category'])}</p></div></div>
+<p>{esc(m['summary'])}</p>
+{f'<p class="mod-note">{esc(m["note"])}</p>' if m.get('note') else ''}
+<p class="mod-req">{('Requires: ' + req) if req else 'No requirements'}</p>
+<div class="mod-foot">{badge(st)}<a class="dl" href="{esc(m['url'])}" rel="noopener external">Get it on {esc(host_label(m['url']))} ↗</a></div>
+<p class="mod-why muted">{esc(why)}</p>
+</article>""")
+    return "".join(out)
+
+
+def mods_teaser(game: dict, data: dict) -> str:
+    mods = mods_mod.load_mods(game["slug"])
+    if not mods:
+        return ""
+    s = game["slug"]
+    guide = f'<a href="/{s}/install/">How to install →</a>' if mods_mod.load_guide(s) else ""
+    return (f'<div class="sec-head" id="mods"><h2>Essential mods</h2><span class="sec-links"><a href="/{s}/mods/">All {len(mods["mods"])} →</a> {guide}</span></div>'
+            f'<section class="mod-grid">{mod_cards(game, data, mods, 6)}</section>')
+
+
+def build_mods_page(game: dict, data: dict, mods: dict) -> str:
+    slug = game["slug"]
+    mgr = mods["manager"]
+    body = f"""
+<p class="crumbs"><a href="/">Home</a> › <a href="/games/">Games</a> › <a href="/{slug}/">{esc(game['name'])}</a> › Essential mods</p>
+<section class="page-hero"><h1>Essential {esc(game['name'])} mods</h1>
+<p class="lede">{esc(mods['intro'])}</p>
+<p class="muted">Hand-picked by ModSafe, listed in install order. We link only to the official download pages and never host files. Badges reflect our live framework status for {esc(data['game']['latest_patch']['label'])}. List verified {esc(mods['verified_at'])}.</p>
+<p class="cta-row"><a class="btn" href="/{slug}/install/">📘 How to install mods</a> <a class="btn ghost" href="{esc(mgr['url'])}" rel="noopener external">Recommended manager: {esc(mgr['name'])} ↗</a>
+{f'<a class="btn ghost" href="{esc(mods["compat_list"])}" rel="noopener external">Community compatibility list ↗</a>' if mods.get('compat_list') else ''}</p>
+</section>
+<section class="mod-grid">{mod_cards(game, data, mods)}</section>
+<p class="disclaimer">Mod pages and requirements can change; always read the mod's own page before installing. Not affiliated with Nexus Mods or any mod author.</p>
+"""
+    itemlist = {"@context": "https://schema.org", "@type": "ItemList", "name": f"Essential {game['name']} mods",
+                "itemListOrder": "https://schema.org/ItemListOrderAscending",
+                "itemListElement": [{"@type": "ListItem", "position": i, "name": m["name"], "url": m["url"]}
+                                    for i, m in enumerate(mods["mods"], 1)]}
+    return page_shell(f"Essential {game['name']} mods ({len(mods['mods'])}) & install order — ModSafe",
+                      f"{len(mods['mods'])} essential {game['name']} mods in install order, with requirements and live compatibility after the latest patch.",
+                      f"/{slug}/mods/", slug, body,
+                      extra_jsonld=[itemlist, breadcrumb_ld([("Games", "/"), (game["name"], f"/{slug}/"), ("Essential mods", f"/{slug}/mods/")])])
+
+
+def build_install_page(game: dict, data: dict, md: str) -> str:
+    slug = game["slug"]
+    g = mods_mod.guide_parts(md)
+    body = f"""
+<p class="crumbs"><a href="/">Home</a> › <a href="/games/">Games</a> › <a href="/{slug}/">{esc(game['name'])}</a> › Install guide</p>
+<section class="page-hero"><h1>{esc(g['title'])}</h1>
+<p class="lede">Current status: {vbadge(data['verdict'])} for {esc(data['game']['latest_patch']['label'])}. <a href="/{slug}/">Check frameworks →</a></p></section>
+<article class="panel guide">{mods_mod.md_to_html(g['body'])}</article>
+<section class="links"><a href="/{slug}/mods/">🧩 Essential mods list</a> <a href="/{slug}/">📊 {esc(game['short'])} status</a></section>
+"""
+    howto = {"@context": "https://schema.org", "@type": "HowTo", "name": g["title"], "description": g["intro"][:300],
+             "step": [{"@type": "HowToStep", "position": i, "name": s["name"], "text": s["text"],
+                       "url": f"{SITE_URL}/{slug}/install/#steps"} for i, s in enumerate(g["steps"], 1)]}
+    return page_shell(f"{g['title']} (beginner guide) — ModSafe", g["intro"][:155], f"/{slug}/install/", slug, body,
+                      extra_jsonld=[howto, breadcrumb_ld([("Games", "/"), (game["name"], f"/{slug}/"), ("Install guide", f"/{slug}/install/")])])
 
 
 def build_game_history(game: dict, data: dict) -> str:
@@ -983,6 +1077,11 @@ def build_llms_txt(games_data) -> str:
         lines += [f"## {game['name']}", f"- Page: {SITE_URL}/{game['slug']}/", f"- JSON: {SITE_URL}/{game['slug']}/status.json",
                   f"- Latest patch: {p['label']} ({p.get('published_at')}) {p.get('url')}", f"- Verdict: {data['verdict']}",
                   f"- Generated (UTC): {data.get('generated_at')}"]
+        if (mm := mods_mod.load_mods(game["slug"])):
+            lines.append(f"- Essential mods: {SITE_URL}/{game['slug']}/mods/ (JSON: {SITE_URL}/{game['slug']}/mods.json): "
+                         + "; ".join(f"{m['name']} {m['url']}" for m in mm["mods"]))
+        if mods_mod.load_guide(game["slug"]):
+            lines.append(f"- Install guide: {SITE_URL}/{game['slug']}/install/")
         for fw in data["frameworks"]:
             tr = "" if fw.get("tracked", True) else " [not auto-tracked]"
             lines.append(f"  - {fw['name']}: {fw['status']}{tr}; release {fw.get('release_tag')} {fw.get('release_published_at') or ''}; {fw.get('reason')}")
@@ -1000,6 +1099,10 @@ def sitemap_urls() -> list[str]:
     urls = ["/", "/games/", "/news/", "/faq/", "/newsletter/"]
     for g in GAMES:
         urls += [f"/{g['slug']}/", f"/{g['slug']}/history/"]
+        if mods_mod.load_mods(g["slug"]):
+            urls.append(f"/{g['slug']}/mods/")
+        if mods_mod.load_guide(g["slug"]):
+            urls.append(f"/{g['slug']}/install/")
     return urls + ["/games.json", "/llms.txt"]
 
 
@@ -1077,6 +1180,11 @@ def main() -> int:
         write(DIST / g["slug"] / "index.html", build_game_page(g, d))
         write(DIST / g["slug"] / "history" / "index.html", build_game_history(g, d))
         write(DIST / g["slug"] / "status.json", json.dumps(d, indent=2) + "\n")
+        if (m := mods_mod.load_mods(g["slug"])):
+            write(DIST / g["slug"] / "mods" / "index.html", build_mods_page(g, d, m))
+            write(DIST / g["slug"] / "mods.json", json.dumps(m, indent=2, ensure_ascii=False) + "\n")
+        if (md := mods_mod.load_guide(g["slug"])):
+            write(DIST / g["slug"] / "install" / "index.html", build_install_page(g, d, md))
         if g["slug"] == "cyberpunk-2077":
             # Legacy endpoint kept for existing consumers (same shape as v1 + extra fields).
             legacy = json.loads(json.dumps(d))

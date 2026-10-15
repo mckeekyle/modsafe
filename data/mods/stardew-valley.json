@@ -1,0 +1,200 @@
+{
+  "game": "stardew-valley",
+  "verified_at": "2026-10-15",
+  "manager": {
+    "name": "SMAPI (with Stardrop or Vortex optional)",
+    "url": "https://smapi.io/",
+    "alt": {
+      "name": "Stardrop mod manager",
+      "url": "https://github.com/Floogen/Stardrop"
+    }
+  },
+  "intro": "Almost everything runs on SMAPI. Unzip each mod into the game's Mods folder; SMAPI's console tells you exactly what's missing or outdated.",
+  "compat_list": "https://smapi.io/mods",
+  "mods": [
+    {
+      "id": "smapi",
+      "name": "SMAPI",
+      "category": "Framework",
+      "summary": "The mod loader itself; checks every mod for updates and errors on launch.",
+      "source": "nexus",
+      "nexus_domain": "stardewvalley",
+      "nexus_id": 2400,
+      "url": "https://www.nexusmods.com/stardewvalley/mods/2400",
+      "requires": [],
+      "framework_id": "smapi"
+    },
+    {
+      "id": "content-patcher",
+      "name": "Content Patcher",
+      "category": "Framework",
+      "summary": "Loads content packs (art, dialogue, events) without replacing game files.",
+      "source": "nexus",
+      "nexus_domain": "stardewvalley",
+      "nexus_id": 1915,
+      "url": "https://www.nexusmods.com/stardewvalley/mods/1915",
+      "requires": [
+        "smapi"
+      ]
+    },
+    {
+      "id": "gmcm",
+      "name": "Generic Mod Config Menu",
+      "category": "Interface",
+      "summary": "One in-game settings menu for every mod that supports it.",
+      "source": "nexus",
+      "nexus_domain": "stardewvalley",
+      "nexus_id": 5098,
+      "url": "https://www.nexusmods.com/stardewvalley/mods/5098",
+      "requires": [
+        "smapi"
+      ]
+    },
+    {
+      "id": "spacecore",
+      "name": "SpaceCore",
+      "category": "Framework",
+      "summary": "Shared code library that many larger mods require.",
+      "source": "nexus",
+      "nexus_domain": "stardewvalley",
+      "nexus_id": 1348,
+      "url": "https://www.nexusmods.com/stardewvalley/mods/1348",
+      "requires": [
+        "smapi"
+      ]
+    },
+    {
+      "id": "json-assets",
+      "name": "Json Assets",
+      "category": "Framework",
+      "summary": "Older framework for custom crops and items; only needed if a mod asks for it.",
+      "source": "nexus",
+      "nexus_domain": "stardewvalley",
+      "nexus_id": 1720,
+      "url": "https://www.nexusmods.com/stardewvalley/mods/1720",
+      "requires": [
+        "smapi",
+        "spacecore"
+      ]
+    },
+    {
+      "id": "ftm",
+      "name": "Farm Type Manager",
+      "category": "Framework",
+      "summary": "Spawns forage, ore and monsters for mods like Stardew Valley Expanded.",
+      "source": "nexus",
+      "nexus_domain": "stardewvalley",
+      "nexus_id": 3231,
+      "url": "https://www.nexusmods.com/stardewvalley/mods/3231",
+      "requires": [
+        "smapi"
+      ]
+    },
+    {
+      "id": "lookup-anything",
+      "name": "Lookup Anything",
+      "category": "Quality of life",
+      "summary": "Press F1 on anything to see its stats, gift tastes or growth time.",
+      "source": "nexus",
+      "nexus_domain": "stardewvalley",
+      "nexus_id": 541,
+      "url": "https://www.nexusmods.com/stardewvalley/mods/541",
+      "requires": [
+        "smapi"
+      ]
+    },
+    {
+      "id": "chests-anywhere",
+      "name": "Chests Anywhere",
+      "category": "Quality of life",
+      "summary": "Open and organise any chest from anywhere on the map.",
+      "source": "nexus",
+      "nexus_domain": "stardewvalley",
+      "nexus_id": 518,
+      "url": "https://www.nexusmods.com/stardewvalley/mods/518",
+      "requires": [
+        "smapi"
+      ]
+    },
+    {
+      "id": "automate",
+      "name": "Automate",
+      "category": "Quality of life",
+      "summary": "Machines next to chests pull ingredients and store output by themselves.",
+      "source": "nexus",
+      "nexus_domain": "stardewvalley",
+      "nexus_id": 1063,
+      "url": "https://www.nexusmods.com/stardewvalley/mods/1063",
+      "requires": [
+        "smapi"
+      ]
+    },
+    {
+      "id": "npc-map-locations",
+      "name": "NPC Map Locations",
+      "category": "Interface",
+      "summary": "Shows villagers on the map so you can find them for gifts.",
+      "source": "nexus",
+      "nexus_domain": "stardewvalley",
+      "nexus_id": 239,
+      "url": "https://www.nexusmods.com/stardewvalley/mods/239",
+      "requires": [
+        "smapi"
+      ]
+    },
+    {
+      "id": "ui-info-suite-2",
+      "name": "UI Info Suite 2",
+      "category": "Interface",
+      "summary": "Luck, weather, crop timers and more right on the HUD.",
+      "source": "nexus",
+      "nexus_domain": "stardewvalley",
+      "nexus_id": 7098,
+      "url": "https://www.nexusmods.com/stardewvalley/mods/7098",
+      "requires": [
+        "smapi"
+      ]
+    },
+    {
+      "id": "cjb-cheats",
+      "name": "CJB Cheats Menu",
+      "category": "Tools",
+      "summary": "Optional cheat and debug menu: time control, speed, relationships.",
+      "source": "nexus",
+      "nexus_domain": "stardewvalley",
+      "nexus_id": 4,
+      "url": "https://www.nexusmods.com/stardewvalley/mods/4",
+      "requires": [
+        "smapi"
+      ]
+    },
+    {
+      "id": "cjb-item-spawner",
+      "name": "CJB Item Spawner",
+      "category": "Tools",
+      "summary": "Spawn any item; handy for testing or recovering a lost one.",
+      "source": "nexus",
+      "nexus_domain": "stardewvalley",
+      "nexus_id": 93,
+      "url": "https://www.nexusmods.com/stardewvalley/mods/93",
+      "requires": [
+        "smapi"
+      ]
+    },
+    {
+      "id": "sve",
+      "name": "Stardew Valley Expanded",
+      "category": "Content",
+      "summary": "Huge fan expansion with new areas, characters and events. Start a new save for the best experience.",
+      "source": "nexus",
+      "nexus_domain": "stardewvalley",
+      "nexus_id": 3753,
+      "url": "https://www.nexusmods.com/stardewvalley/mods/3753",
+      "requires": [
+        "smapi",
+        "content-patcher",
+        "ftm"
+      ]
+    }
+  ]
+}

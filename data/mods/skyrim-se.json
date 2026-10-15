@@ -1,0 +1,182 @@
+{
+  "game": "skyrim-se",
+  "verified_at": "2026-10-15",
+  "manager": {
+    "name": "Mod Organizer 2",
+    "url": "https://www.nexusmods.com/skyrimspecialedition/mods/6194",
+    "alt": {
+      "name": "Vortex",
+      "url": "https://github.com/Nexus-Mods/Vortex"
+    }
+  },
+  "intro": "A lean, stable base that nearly every modern Skyrim SE/AE load order builds on. Install in this order; most later mods assume these are present.",
+  "mods": [
+    {
+      "id": "skse64",
+      "name": "Skyrim Script Extender (SKSE64)",
+      "category": "Framework",
+      "summary": "Lets plugins hook the game executable; required by most of this list.",
+      "source": "nexus",
+      "nexus_domain": "skyrimspecialedition",
+      "nexus_id": 30379,
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/30379",
+      "requires": [],
+      "framework_id": "skse64",
+      "note": "Must match your exact game build. Install via the mod manager, then always launch through skse64_loader.exe."
+    },
+    {
+      "id": "address-library",
+      "name": "Address Library for SKSE Plugins",
+      "category": "Framework",
+      "summary": "Version-independent lookup table so SKSE plugins survive minor game updates.",
+      "source": "nexus",
+      "nexus_domain": "skyrimspecialedition",
+      "nexus_id": 32444,
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/32444",
+      "requires": [
+        "skse64"
+      ],
+      "framework_id": "address-library"
+    },
+    {
+      "id": "engine-fixes",
+      "name": "SSE Engine Fixes",
+      "category": "Fixes",
+      "summary": "Patches dozens of engine bugs and crash sources; part 2 (preloader DLLs) goes in the game folder manually.",
+      "source": "nexus",
+      "nexus_domain": "skyrimspecialedition",
+      "nexus_id": 17230,
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/17230",
+      "requires": [
+        "skse64",
+        "address-library"
+      ],
+      "framework_id": "engine-fixes"
+    },
+    {
+      "id": "ussep",
+      "name": "Unofficial Skyrim Special Edition Patch (USSEP)",
+      "category": "Fixes",
+      "summary": "Community fix-pack for thousands of quest, item and dialogue bugs. Keep it near the top of the plugin list.",
+      "source": "nexus",
+      "nexus_domain": "skyrimspecialedition",
+      "nexus_id": 266,
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/266",
+      "requires": []
+    },
+    {
+      "id": "po3-tweaks",
+      "name": "powerofthree's Tweaks",
+      "category": "Fixes",
+      "summary": "Small engine fixes and quality-of-life toggles that many other plugins expect.",
+      "source": "nexus",
+      "nexus_domain": "skyrimspecialedition",
+      "nexus_id": 51073,
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/51073",
+      "requires": [
+        "skse64",
+        "address-library"
+      ]
+    },
+    {
+      "id": "display-tweaks",
+      "name": "SSE Display Tweaks",
+      "category": "Performance",
+      "summary": "Unlocks frame rate, fixes high-FPS physics and adds borderless/window options.",
+      "source": "nexus",
+      "nexus_domain": "skyrimspecialedition",
+      "nexus_id": 34705,
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/34705",
+      "requires": [
+        "skse64",
+        "address-library"
+      ]
+    },
+    {
+      "id": "skyui",
+      "name": "SkyUI",
+      "category": "Interface",
+      "summary": "PC-friendly inventory, favorites and magic menus plus the Mod Configuration Menu (MCM).",
+      "source": "nexus",
+      "nexus_domain": "skyrimspecialedition",
+      "nexus_id": 12604,
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/12604",
+      "requires": [
+        "skse64"
+      ]
+    },
+    {
+      "id": "mcm-helper",
+      "name": "MCM Helper",
+      "category": "Interface",
+      "summary": "Framework that lets mods build their settings menus reliably inside SkyUI's MCM.",
+      "source": "nexus",
+      "nexus_domain": "skyrimspecialedition",
+      "nexus_id": 53000,
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/53000",
+      "requires": [
+        "skse64",
+        "address-library",
+        "skyui"
+      ]
+    },
+    {
+      "id": "better-dialogue",
+      "name": "Better Dialogue Controls",
+      "category": "Interface",
+      "summary": "Stops the mouse and keyboard from picking the wrong line in conversations.",
+      "source": "nexus",
+      "nexus_domain": "skyrimspecialedition",
+      "nexus_id": 1429,
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/1429",
+      "requires": []
+    },
+    {
+      "id": "better-messagebox",
+      "name": "Better MessageBox Controls",
+      "category": "Interface",
+      "summary": "Keyboard and gamepad navigation for pop-up message boxes.",
+      "source": "nexus",
+      "nexus_domain": "skyrimspecialedition",
+      "nexus_id": 1428,
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/1428",
+      "requires": []
+    },
+    {
+      "id": "racemenu",
+      "name": "RaceMenu",
+      "category": "Character",
+      "summary": "Expanded character creator with sliders, overlays and presets.",
+      "source": "nexus",
+      "nexus_domain": "skyrimspecialedition",
+      "nexus_id": 19080,
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/19080",
+      "requires": [
+        "skse64",
+        "address-library"
+      ]
+    },
+    {
+      "id": "aqwm",
+      "name": "A Quality World Map",
+      "category": "Visuals",
+      "summary": "Sharper, readable world map with roads; pick the variant that matches your other landscape mods.",
+      "source": "nexus",
+      "nexus_domain": "skyrimspecialedition",
+      "nexus_id": 5804,
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/5804",
+      "requires": []
+    },
+    {
+      "id": "smim",
+      "name": "Static Mesh Improvement Mod (SMIM)",
+      "category": "Visuals",
+      "summary": "Rebuilt models for thousands of everyday objects; light on performance.",
+      "source": "nexus",
+      "nexus_domain": "skyrimspecialedition",
+      "nexus_id": 659,
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/659",
+      "requires": []
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "game": "cyberpunk-2077",
+  "verified_at": "2026-10-15",
+  "manager": {
+    "name": "Vortex",
+    "url": "https://github.com/Nexus-Mods/Vortex",
+    "alt": {
+      "name": "Mod Organizer 2 (via its Cyberpunk plugin) or manual install",
+      "url": "https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/users-modding-cyberpunk-2077"
+    }
+  },
+  "intro": "The six core frameworks first, then the mods that depend on them. After every game patch, wait for the frameworks to update before launching.",
+  "mods": [
+    {
+      "id": "cet",
+      "name": "Cyber Engine Tweaks",
+      "category": "Framework",
+      "summary": "Lua scripting layer and in-game overlay that many gameplay and UI mods run on.",
+      "source": "nexus",
+      "nexus_domain": "cyberpunk2077",
+      "nexus_id": 107,
+      "url": "https://www.nexusmods.com/cyberpunk2077/mods/107",
+      "requires": [],
+      "framework_id": "cet"
+    },
+    {
+      "id": "red4ext",
+      "name": "RED4ext",
+      "category": "Framework",
+      "summary": "Native plugin loader for the game's engine; Codeware and others build on it.",
+      "source": "nexus",
+      "nexus_domain": "cyberpunk2077",
+      "nexus_id": 2380,
+      "url": "https://www.nexusmods.com/cyberpunk2077/mods/2380",
+      "requires": [],
+      "framework_id": "red4ext"
+    },
+    {
+      "id": "redscript",
+      "name": "redscript",
+      "category": "Framework",
+      "summary": "Compiler for the game's script language; needed for most gameplay tweaks.",
+      "source": "nexus",
+      "nexus_domain": "cyberpunk2077",
+      "nexus_id": 1511,
+      "url": "https://www.nexusmods.com/cyberpunk2077/mods/1511",
+      "requires": [],
+      "framework_id": "redscript"
+    },
+    {
+      "id": "archive-xl",
+      "name": "ArchiveXL",
+      "category": "Framework",
+      "summary": "Loads new items, appearances and world edits without overwriting game files.",
+      "source": "nexus",
+      "nexus_domain": "cyberpunk2077",
+      "nexus_id": 4198,
+      "url": "https://www.nexusmods.com/cyberpunk2077/mods/4198",
+      "requires": [
+        "red4ext"
+      ],
+      "framework_id": "archive-xl"
+    },
+    {
+      "id": "tweak-xl",
+      "name": "TweakXL",
+      "category": "Framework",
+      "summary": "Loads game-database edits from mods so they don't conflict.",
+      "source": "nexus",
+      "nexus_domain": "cyberpunk2077",
+      "nexus_id": 4197,
+      "url": "https://www.nexusmods.com/cyberpunk2077/mods/4197",
+      "requires": [
+        "red4ext"
+      ],
+      "framework_id": "tweak-xl"
+    },
+    {
+      "id": "codeware",
+      "name": "Codeware",
+      "category": "Framework",
+      "summary": "Extra scripting APIs for mod authors; a frequent hidden requirement.",
+      "source": "nexus",
+      "nexus_domain": "cyberpunk2077",
+      "nexus_id": 7780,
+      "url": "https://www.nexusmods.com/cyberpunk2077/mods/7780",
+      "requires": [
+        "red4ext",
+        "redscript"
+      ],
+      "framework_id": "codeware"
+    },
+    {
+      "id": "native-settings-ui",
+      "name": "Native Settings UI",
+      "category": "Interface",
+      "summary": "Adds mod options pages inside the game's own Settings menu.",
+      "source": "nexus",
+      "nexus_domain": "cyberpunk2077",
+      "nexus_id": 3518,
+      "url": "https://www.nexusmods.com/cyberpunk2077/mods/3518",
+      "requires": [
+        "cet"
+      ]
+    },
+    {
+      "id": "mod-settings",
+      "name": "Mod Settings",
+      "category": "Interface",
+      "summary": "Another in-menu settings framework used by redscript mods; install both to be safe.",
+      "source": "nexus",
+      "nexus_domain": "cyberpunk2077",
+      "nexus_id": 4885,
+      "url": "https://www.nexusmods.com/cyberpunk2077/mods/4885",
+      "requires": [
+        "red4ext",
+        "redscript"
+      ]
+    },
+    {
+      "id": "virtual-atelier",
+      "name": "Virtual Atelier",
+      "category": "Gameplay",
+      "summary": "In-game web store for buying modded clothing and weapons.",
+      "source": "nexus",
+      "nexus_domain": "cyberpunk2077",
+      "nexus_id": 2987,
+      "url": "https://www.nexusmods.com/cyberpunk2077/mods/2987",
+      "requires": [
+        "cet",
+        "redscript",
+        "archive-xl",
+        "tweak-xl"
+      ]
+    },
+    {
+      "id": "equipment-ex",
+      "name": "Equipment-EX",
+      "category": "Gameplay",
+      "summary": "Transmog wardrobe: wear any look while keeping your armor stats.",
+      "source": "nexus",
+      "nexus_domain": "cyberpunk2077",
+      "nexus_id": 6945,
+      "url": "https://www.nexusmods.com/cyberpunk2077/mods/6945",
+      "requires": [
+        "red4ext",
+        "redscript",
+        "archive-xl",
+        "tweak-xl",
+        "codeware"
+      ]
+    },
+    {
+      "id": "limited-hud",
+      "name": "Limited HUD",
+      "category": "Interface",
+      "summary": "Hides HUD widgets until they're relevant, for a cleaner screen.",
+      "source": "nexus",
+      "nexus_domain": "cyberpunk2077",
+      "nexus_id": 2592,
+      "url": "https://www.nexusmods.com/cyberpunk2077/mods/2592",
+      "requires": [
+        "cet",
+        "redscript"
+      ]
+    },
+    {
+      "id": "amm",
+      "name": "Appearance Menu Mod (AMM)",
+      "category": "Tools",
+      "summary": "Photo-mode toolkit: spawn NPCs, change appearances, place props.",
+      "source": "nexus",
+      "nexus_domain": "cyberpunk2077",
+      "nexus_id": 790,
+      "url": "https://www.nexusmods.com/cyberpunk2077/mods/790",
+      "requires": [
+        "cet",
+        "archive-xl",
+        "tweak-xl",
+        "codeware"
+      ]
+    },
+    {
+      "id": "no-intro-videos",
+      "name": "No Intro Videos",
+      "category": "Quality of life",
+      "summary": "Skips the startup logos so you reach the menu in seconds.",
+      "source": "nexus",
+      "nexus_domain": "cyberpunk2077",
+      "nexus_id": 533,
+      "url": "https://www.nexusmods.com/cyberpunk2077/mods/533",
+      "requires": []
+    }
+  ]
+}
