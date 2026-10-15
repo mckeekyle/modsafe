@@ -104,7 +104,8 @@ def base_head(title: str, description: str, path: str, extra_jsonld: list | None
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="{esc(title)}">
 <meta name="twitter:description" content="{esc(description)}">
-<meta name="theme-color" content="#0a0e17">
+<meta name="theme-color" content="#07090f">
+<link rel="preload" href="/fonts/chakra-petch-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/styles.css">
 {blocks}
 </head>
@@ -112,150 +113,211 @@ def base_head(title: str, description: str, path: str, extra_jsonld: list | None
 
 
 CSS = """
+@font-face { font-family: "Chakra Petch"; font-weight: 600; font-display: swap; src: url(/fonts/chakra-petch-latin-600-normal.woff2) format("woff2"); }
+@font-face { font-family: "Chakra Petch"; font-weight: 700; font-display: swap; src: url(/fonts/chakra-petch-latin-700-normal.woff2) format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 400; font-display: swap; src: url(/fonts/inter-latin-400-normal.woff2) format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 600 800; font-display: swap; src: url(/fonts/inter-latin-600-normal.woff2) format("woff2"); }
 :root {
-  --bg: #0a0e17;
-  --panel: #121826;
-  --text: #e8eef8;
-  --muted: #9aa8bc;
-  --accent: #00f0ff;
-  --accent2: #ff2a6d;
-  --ok: #1f9d55;
-  --likely: #c9a227;
-  --unknown: #c0392b;
-  --border: #243044;
-  --focus: #ffe66d;
-  --font: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, sans-serif;
+  --bg: #07090f; --bg2: #0c111c; --panel: #111827; --panel2: #161f33; --line: #22304a;
+  --text: #eef3ff; --muted: #a3b1c9; --dim: #7d8aa3;
+  --neon: #00f0ff; --neon2: #ff2a6d; --lime: #b6ff3b;
+  --ok: #22e07a; --likely: #ffd23f; --wait: #ff9f1c; --broken: #ff4d5e; --agn: #7aa2ff; --manual: #9aa5b8;
+  --focus: #ffe66d; --r: 14px;
+  --head: "Chakra Petch", "Inter", system-ui, sans-serif;
+  --font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --mono: ui-monospace, "Cascadia Code", "SF Mono", Menlo, Consolas, monospace;
 }
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body {
-  margin: 0;
-  font-family: var(--font);
-  background: radial-gradient(1200px 600px at 10% -10%, #1a2740 0%, var(--bg) 55%);
-  color: var(--text);
-  line-height: 1.55;
-  min-height: 100vh;
-}
-a { color: var(--accent); }
-a:hover { text-decoration-thickness: 2px; }
-a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible {
-  outline: 3px solid var(--focus);
-  outline-offset: 2px;
-}
-.skip {
-  position: absolute; left: -9999px; top: auto;
-}
-.skip:focus {
-  left: 1rem; top: 1rem; z-index: 100;
-  background: var(--focus); color: #000; padding: .5rem 1rem;
-}
-.header {
-  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
-  gap: 1rem; padding: 1rem 1.25rem; border-bottom: 1px solid var(--border);
-  background: rgba(10,14,23,.85); backdrop-filter: blur(8px);
-  position: sticky; top: 0; z-index: 10;
-}
-.brand a { color: var(--text); text-decoration: none; font-weight: 700; letter-spacing: .02em; }
-.nav { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; }
-.nav a { color: var(--muted); text-decoration: none; font-weight: 600; }
-.nav a[aria-current="page"], .nav a:hover { color: var(--accent); }
-main { max-width: 1120px; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
-.hero h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); margin: 0 0 .5rem; }
-.lede { color: var(--muted); font-size: 1.05rem; max-width: 60ch; }
-.panel, .sponsor, .newsletter, .hist-card, .faq-item {
-  background: var(--panel); border: 1px solid var(--border);
-  border-radius: 12px; padding: 1.25rem 1.35rem; margin: 1.25rem 0;
-}
-.sponsor { border-style: dashed; }
-.sponsor-label { text-transform: uppercase; letter-spacing: .08em; font-size: .75rem; color: var(--accent2); margin: 0 0 .35rem; }
-.patch-meta { display: grid; grid-template-columns: 10rem 1fr; gap: .4rem 1rem; margin: 0; }
-.patch-meta dt { color: var(--muted); }
+body { margin: 0; font-family: var(--font); color: var(--text); line-height: 1.6; min-height: 100vh;
+  background:
+    radial-gradient(900px 500px at 85% -10%, rgba(255,42,109,.16), transparent 60%),
+    radial-gradient(900px 600px at 0% 0%, rgba(0,240,255,.12), transparent 60%),
+    linear-gradient(180deg, var(--bg2), var(--bg) 40%);
+  background-attachment: fixed; }
+body::before { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: -1; opacity: .35;
+  background-image: linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+  background-size: 48px 48px; }
+h1, h2, h3, .brand, .btn, .eyebrow, .vbadge { font-family: var(--head); letter-spacing: .01em; }
+h1 { font-weight: 700; line-height: 1.05; }
+h2 { font-size: 1.45rem; margin: 0 0 .75rem; }
+a { color: var(--neon); text-underline-offset: 3px; }
+a:hover { color: #7ff8ff; }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 6px; }
+code { font-family: var(--mono); font-size: .88em; color: #cfe3ff; }
+.skip { position: absolute; left: -9999px; }
+.skip:focus { left: 1rem; top: 1rem; z-index: 100; background: var(--focus); color: #000; padding: .5rem 1rem; }
+.muted, .disclaimer, .nl-note { color: var(--muted); }
+.disclaimer { font-size: .9rem; }
+
+/* header */
+.header { position: sticky; top: 0; z-index: 20; backdrop-filter: blur(12px); background: rgba(7,9,15,.78);
+  border-bottom: 1px solid rgba(0,240,255,.18); box-shadow: 0 1px 0 rgba(255,42,109,.12); }
+.header-in { max-width: 1200px; margin: 0 auto; padding: .7rem 1.25rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.brand a { display: inline-flex; align-items: center; gap: .6rem; color: var(--text); text-decoration: none; font-weight: 700; font-size: 1.3rem; }
+.brand b { color: var(--neon); text-shadow: 0 0 18px rgba(0,240,255,.55); }
+.logo { border-radius: 9px; filter: drop-shadow(0 0 8px rgba(0,240,255,.45)); }
+.nav { display: flex; gap: .3rem; flex-wrap: wrap; }
+.nav a { color: var(--muted); text-decoration: none; font-weight: 600; padding: .45rem .8rem; border-radius: 999px; transition: .15s; }
+.nav a:hover { color: var(--text); background: rgba(255,255,255,.06); }
+.nav a[aria-current="page"] { color: #031018; background: var(--neon); box-shadow: 0 0 18px rgba(0,240,255,.45); }
+.nav a.cta { border: 1px solid var(--neon2); color: #ffd1dd; }
+.nav a.cta:hover { background: rgba(255,42,109,.18); }
+
+main { max-width: 1200px; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+section { margin: 0 0 1.75rem; }
+
+/* buttons */
+.btn { display: inline-flex; align-items: center; gap: .45rem; padding: .8rem 1.3rem; border-radius: 12px; font-weight: 700; font-size: 1.05rem;
+  text-decoration: none; color: #031018; background: linear-gradient(135deg, var(--neon), #59ffb4); box-shadow: 0 0 0 1px rgba(255,255,255,.1) inset, 0 8px 28px rgba(0,240,255,.28);
+  transition: transform .15s, box-shadow .15s; }
+.btn:hover { color: #031018; transform: translateY(-2px); box-shadow: 0 12px 36px rgba(0,240,255,.4); }
+.btn.ghost { background: transparent; color: var(--text); border: 1px solid rgba(255,42,109,.6); box-shadow: none; }
+.btn.ghost:hover { background: rgba(255,42,109,.14); color: var(--text); }
+
+/* status badges */
+.badge { display: inline-flex; align-items: center; gap: .35rem; padding: .22rem .65rem; border-radius: 999px; font-size: .8rem; font-weight: 700;
+  border: 1px solid currentColor; background: rgba(255,255,255,.04); white-space: nowrap; }
+.badge .ico { font-size: .95em; line-height: 1; }
+.badge.ok { color: var(--ok); background: rgba(34,224,122,.1); }
+.badge.likely { color: var(--likely); background: rgba(255,210,63,.1); }
+.badge.wait { color: var(--wait); background: rgba(255,159,28,.12); }
+.badge.broken { color: var(--broken); background: rgba(255,77,94,.12); }
+.badge.agnostic { color: var(--agn); background: rgba(122,162,255,.1); }
+.badge.manual, .badge.unknown { color: var(--manual); background: rgba(154,165,184,.08); }
+.vbadge { display: inline-flex; align-items: center; gap: .6rem; padding: .55rem 1.1rem; border-radius: 14px; font-weight: 700; font-size: 1.35rem;
+  border: 2px solid currentColor; background: rgba(0,0,0,.45); backdrop-filter: blur(6px); }
+.vbadge .ico { font-size: 1.3em; }
+.vbadge.ok { color: var(--ok); box-shadow: 0 0 28px rgba(34,224,122,.35); }
+.vbadge.likely { color: var(--likely); box-shadow: 0 0 28px rgba(255,210,63,.3); }
+.vbadge.wait { color: var(--wait); box-shadow: 0 0 28px rgba(255,159,28,.35); }
+.vbadge.broken { color: var(--broken); box-shadow: 0 0 28px rgba(255,77,94,.4); }
+.vbadge.unknown { color: var(--manual); }
+
+/* home hero */
+.home-hero { position: relative; overflow: hidden; border-radius: 22px; padding: clamp(1.5rem, 4vw, 3.25rem); margin-top: .5rem;
+  border: 1px solid rgba(0,240,255,.25); background: linear-gradient(120deg, rgba(7,9,15,.96) 0%, rgba(7,9,15,.82) 45%, rgba(7,9,15,.35) 100%), var(--hero) center / cover;
+  box-shadow: 0 30px 80px rgba(0,0,0,.55), inset 0 0 0 1px rgba(255,255,255,.03); }
+.home-hero::after { content: ""; position: absolute; inset: auto 0 0 0; height: 3px; background: linear-gradient(90deg, var(--neon), var(--neon2), var(--lime)); }
+.home-hero h1 { font-size: clamp(2.2rem, 6vw, 4rem); margin: .4rem 0 .9rem; max-width: 14ch; text-transform: uppercase; }
+.home-hero h1 em { font-style: normal; color: var(--neon); text-shadow: 0 0 28px rgba(0,240,255,.55); }
+.home-hero .lede { font-size: 1.12rem; color: #cdd7ea; max-width: 56ch; }
+.eyebrow { display: inline-block; margin: 0; color: var(--neon2); text-transform: uppercase; letter-spacing: .18em; font-size: .8rem; font-weight: 700;
+  padding: .25rem .6rem; border: 1px solid rgba(255,42,109,.5); border-radius: 6px; background: rgba(255,42,109,.08); }
+.legend { display: flex; flex-wrap: wrap; gap: .45rem; margin: 1rem 0 1.4rem; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: .7rem; }
+.stats { display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 1.6rem; color: var(--muted); font-size: .92rem; }
+.stats strong { display: block; font-family: var(--head); font-size: 1.6rem; color: var(--text); line-height: 1.1; }
+
+/* section headings */
+.sec-head { display: flex; align-items: end; justify-content: space-between; gap: 1rem; margin: 2.2rem 0 1rem; }
+.sec-head h2 { font-size: clamp(1.4rem, 3vw, 1.9rem); margin: 0; text-transform: uppercase; }
+.sec-head h2::before { content: ""; display: inline-block; width: 10px; height: 1.1em; margin-right: .6rem; vertical-align: -3px; border-radius: 3px;
+  background: linear-gradient(var(--neon), var(--neon2)); box-shadow: 0 0 14px rgba(0,240,255,.6); }
+
+/* game cards */
+.game-grid { display: grid; gap: 1.1rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr)); }
+.game-card { position: relative; border-radius: var(--r); overflow: hidden; background: var(--panel); border: 1px solid var(--line);
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s; isolation: isolate; }
+.game-card:hover, .game-card:focus-within { transform: translateY(-4px); border-color: var(--glow, var(--neon)); box-shadow: 0 18px 50px rgba(0,0,0,.55), 0 0 0 1px var(--glow, var(--neon)), 0 0 34px -6px var(--glow, var(--neon)); }
+.game-card.v-ok { --glow: var(--ok); } .game-card.v-likely { --glow: var(--likely); } .game-card.v-wait { --glow: var(--wait); } .game-card.v-broken { --glow: var(--broken); }
+.card-art { position: relative; aspect-ratio: 616 / 353; overflow: hidden; }
+.card-art img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .35s ease; }
+.game-card:hover .card-art img { transform: scale(1.05); }
+.card-art::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 35%, rgba(17,24,39,.6) 70%, var(--panel) 100%); }
+.card-art .badge { position: absolute; z-index: 2; left: .8rem; bottom: .7rem; font-size: .85rem; backdrop-filter: blur(6px); background: rgba(7,9,15,.75); }
+.card-body { padding: .3rem 1.1rem 1.1rem; }
+.card-body h3 { font-size: 1.3rem; margin: 0 0 .25rem; }
+.card-body h3 a { color: var(--text); text-decoration: none; }
+.card-body p { margin: .2rem 0; font-size: .92rem; }
+.card-meta { display: flex; justify-content: space-between; gap: .5rem; color: var(--muted); }
+.card-meta strong { color: var(--text); }
+.chips { display: flex; flex-wrap: wrap; gap: .3rem; margin-top: .6rem; }
+.chip { font-size: .74rem; padding: .12rem .5rem; border-radius: 6px; background: rgba(255,255,255,.05); border: 1px solid var(--line); color: var(--muted); }
+.stretched::after { content: ""; position: absolute; inset: 0; z-index: 3; }
+
+/* panels */
+.panel, .newsletter, .faq-item, .hist-card { background: linear-gradient(180deg, var(--panel2), var(--panel)); border: 1px solid var(--line);
+  border-radius: var(--r); padding: clamp(1.1rem, 2.5vw, 1.6rem); }
+.newsletter { position: relative; overflow: hidden; border-color: rgba(255,42,109,.45);
+  background: radial-gradient(600px 200px at 100% 0%, rgba(255,42,109,.22), transparent 70%), radial-gradient(500px 200px at 0% 100%, rgba(0,240,255,.15), transparent 70%), var(--panel); }
+.newsletter h2 { text-transform: uppercase; }
+.newsletter h2::before { content: "🔔 "; }
+
+/* game hero */
+.crumbs { color: var(--dim); font-size: .88rem; margin: 0 0 .7rem; }
+.crumbs a { color: var(--muted); }
+.game-hero { position: relative; overflow: hidden; border-radius: 22px; min-height: clamp(300px, 42vw, 440px); display: flex; align-items: flex-end;
+  padding: clamp(1.25rem, 4vw, 2.75rem); border: 1px solid rgba(255,255,255,.08);
+  background: linear-gradient(0deg, rgba(7,9,15,.97) 8%, rgba(7,9,15,.6) 55%, rgba(7,9,15,.15) 100%), linear-gradient(90deg, rgba(7,9,15,.85), transparent 70%), var(--hero) center 30% / cover;
+  box-shadow: 0 30px 80px rgba(0,0,0,.55); }
+.game-hero::after { content: ""; position: absolute; inset: auto 0 0 0; height: 3px; background: linear-gradient(90deg, var(--glow, var(--neon)), transparent); }
+.game-hero.v-ok { --glow: var(--ok); } .game-hero.v-likely { --glow: var(--likely); } .game-hero.v-wait { --glow: var(--wait); } .game-hero.v-broken { --glow: var(--broken); }
+.game-hero h1 { font-size: clamp(1.9rem, 5vw, 3.4rem); margin: 0 0 .9rem; text-transform: uppercase; text-shadow: 0 4px 30px rgba(0,0,0,.6); max-width: 22ch; }
+.game-hero .lede { color: #d5def0; max-width: 62ch; margin: .9rem 0 0; }
+.micro { font-family: var(--head); font-weight: 600; font-size: 1.1rem; margin-left: .6rem; color: #e9f0ff; }
+.note { margin: 1rem 0 0; padding: .8rem 1rem; border-radius: 10px; background: rgba(255,77,94,.16); border: 1px solid rgba(255,77,94,.65); color: #ffe3e6; max-width: 70ch; }
+
+/* verdict grid */
+.vgrid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 1.1rem; margin-top: 1.25rem; }
+.patch-meta { display: grid; grid-template-columns: auto 1fr; gap: .45rem 1rem; margin: 0; font-size: .95rem; }
+.patch-meta dt { color: var(--dim); text-transform: uppercase; font-size: .76rem; letter-spacing: .08em; padding-top: .2rem; }
 .patch-meta dd { margin: 0; }
-.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-table { width: 100%; border-collapse: collapse; min-width: 560px; }
-th, td { text-align: left; padding: .65rem .5rem; border-bottom: 1px solid var(--border); vertical-align: top; }
-th { color: var(--muted); font-size: .85rem; font-weight: 600; }
-.badge {
-  display: inline-block; padding: .2rem .55rem; border-radius: 999px;
-  font-size: .8rem; font-weight: 700; color: #fff;
+.big-say { font-size: 1.12rem; margin: .3rem 0 0; }
+
+/* framework cards */
+.fw-grid { display: grid; gap: .8rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); }
+.fw { position: relative; background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--c, var(--line)); border-radius: 12px; padding: .9rem 1rem;
+  transition: border-color .15s, transform .15s; }
+.fw:hover { transform: translateY(-2px); border-color: var(--c, var(--neon)); }
+.fw.ok { --c: var(--ok); } .fw.likely { --c: var(--likely); } .fw.wait { --c: var(--wait); } .fw.broken { --c: var(--broken); } .fw.agnostic { --c: var(--agn); } .fw.manual, .fw.unknown { --c: var(--manual); }
+.fw h3 { font-size: 1.08rem; margin: 0 0 .45rem; }
+.fw h3 a { color: var(--text); text-decoration: none; }
+.fw h3 a:hover { color: var(--neon); }
+.fw .rel { display: flex; justify-content: space-between; gap: .5rem; margin-top: .55rem; font-size: .86rem; color: var(--muted); }
+.fw details { margin-top: .5rem; font-size: .87rem; color: var(--muted); }
+.fw summary { cursor: pointer; color: var(--dim); }
+.fw ul { padding-left: 1.1rem; }
+.links { display: flex; flex-wrap: wrap; gap: .6rem; }
+.links a { padding: .5rem .9rem; border: 1px solid var(--line); border-radius: 10px; text-decoration: none; background: var(--panel); }
+.links a:hover { border-color: var(--neon); }
+
+/* faq + history */
+.faq-list { display: grid; gap: .7rem; }
+.faq-item h2, .faq-item h3 { font-size: 1.12rem; margin: 0 0 .4rem; color: #fff; }
+.faq-item p { margin: 0; color: #c8d3e8; }
+.page-hero { padding: 1.5rem 0 .5rem; }
+.page-hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); margin: 0 0 .5rem; text-transform: uppercase; }
+.page-hero .lede { color: var(--muted); font-size: 1.1rem; max-width: 60ch; }
+.hist-list { display: grid; gap: .8rem; }
+.hist-card h3 { margin: 0; }
+.hist-fw { list-style: none; padding: 0; margin: .7rem 0 0; display: flex; flex-wrap: wrap; gap: .45rem .9rem; }
+.hist-fw li { display: flex; gap: .4rem; align-items: center; font-size: .9rem; }
+
+/* footer */
+.footer { border-top: 1px solid var(--line); background: rgba(7,9,15,.7); margin-top: 2rem; }
+.footer-in { max-width: 1200px; margin: 0 auto; padding: 1.75rem 1.25rem 2.5rem; display: grid; grid-template-columns: 1.3fr 1fr; gap: 1.5rem; color: var(--dim); font-size: .86rem; }
+.footer .brand a { font-size: 1.1rem; }
+.footer nav { display: flex; flex-wrap: wrap; gap: .35rem 1rem; justify-content: flex-end; align-content: start; }
+.footer nav a { color: var(--muted); text-decoration: none; }
+.footer nav a:hover { color: var(--neon); }
+.footer .dev { width: 100%; text-align: right; }
+
+@media (max-width: 820px) {
+  .vgrid { grid-template-columns: 1fr; }
+  .footer-in { grid-template-columns: 1fr; }
+  .footer nav, .footer .dev { justify-content: flex-start; text-align: left; }
 }
-.badge.ok { background: var(--ok); }
-.badge.likely { background: var(--likely); color: #111; }
-.badge.unknown { background: var(--unknown); }
-.disclaimer, .muted, .nl-note { color: var(--muted); font-size: .92rem; }
-code { font-family: var(--mono); font-size: .9em; }
-.reasons { margin-top: 1rem; }
-.hist-fw { list-style: none; padding: 0; margin: .75rem 0 0; display: grid; gap: .5rem; }
-.hist-fw li { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; }
-.nl-form { display: flex; flex-wrap: wrap; gap: .5rem; align-items: end; margin: .75rem 0; }
-.nl-form label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
-.nl-form input {
-  flex: 1 1 220px; padding: .65rem .75rem; border-radius: 8px;
-  border: 1px solid var(--border); background: var(--bg); color: var(--text);
+@media (max-width: 560px) {
+  .header-in { flex-wrap: wrap; padding: .6rem 1rem; }
+  .nav a { padding: .35rem .65rem; font-size: .92rem; }
+  main { padding: 1rem .85rem 2.5rem; }
+  .home-hero, .game-hero { border-radius: 16px; }
+  .vbadge { font-size: 1.1rem; }
+  .micro { display: block; margin: .5rem 0 0; }
+  .stats { gap: 1rem; }
 }
-.nl-form button {
-  padding: .65rem 1rem; border-radius: 8px; border: none;
-  background: var(--accent2); color: #fff; font-weight: 700; opacity: .55; cursor: not-allowed;
-}
-.faq-item h2 { font-size: 1.15rem; margin-top: 0; }
-.footer {
-  max-width: 960px; margin: 0 auto; padding: 1rem 1.25rem 2.5rem;
-  color: var(--muted); font-size: .85rem; border-top: 1px solid var(--border);
-}
-.verdict-big { font-size: 1rem; padding: .35rem .8rem; }
-.game-grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
-.game-card { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 1.1rem 1.2rem; }
-.game-card h2 { font-size: 1.15rem; margin: 0 0 .4rem; }
-.game-card h2 a { color: var(--text); text-decoration: none; }
-.game-card p { margin: .35rem 0; }
-.crumbs { color: var(--muted); font-size: .9rem; }
-.badge.manual { background: #4a5568; }
-.badge.wait { background: #e67e22; color: #111; }
-.badge.broken { background: var(--unknown); }
-.badge.agnostic { background: #3b5b8c; }
-.badge.unknown { background: #6b7280; }
-.logo { vertical-align: middle; margin-right: .5rem; border-radius: 8px; }
-.brand a { display: inline-flex; align-items: center; }
-.home-hero { display: grid; grid-template-columns: 1.2fr 1fr; gap: 1.5rem; align-items: center; margin: .5rem 0 1.5rem;
-  padding: 1.75rem; border-radius: 16px; border: 1px solid var(--border);
-  background: linear-gradient(135deg, #0f1a2e 0%, #111a2b 60%, #1a1030 100%); }
-.home-hero h1 { font-size: clamp(1.8rem, 4.5vw, 2.8rem); line-height: 1.15; margin: .25rem 0 .75rem; }
-.home-hero-img { width: 100%; height: auto; border-radius: 12px; }
-.eyebrow { color: var(--accent); text-transform: uppercase; letter-spacing: .12em; font-size: .8rem; font-weight: 700; margin: 0; }
-.home-hero .badge { margin: .15rem 0; }
-.btn { display: inline-block; padding: .65rem 1.1rem; border-radius: 10px; background: var(--accent); color: #031018;
-  font-weight: 800; text-decoration: none; margin: .25rem .4rem .25rem 0; transition: transform .15s, box-shadow .15s; }
-.btn:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(0,240,255,.25); }
-.btn.ghost { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
-.game-grid { grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 1.1rem; }
-.game-card { position: relative; padding: 0; overflow: hidden; border-top: 4px solid var(--border);
-  transition: transform .18s ease, box-shadow .18s ease, border-color .18s; }
-.game-card.v-ok { border-top-color: var(--ok); }
-.game-card.v-likely { border-top-color: var(--likely); }
-.game-card.v-wait { border-top-color: #e67e22; }
-.game-card.v-broken { border-top-color: var(--unknown); }
-.game-card:hover, .game-card:focus-within { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(0,0,0,.45); border-color: var(--accent); }
-.card-img img { display: block; width: 100%; height: auto; aspect-ratio: 460 / 215; object-fit: cover; }
-.card-body { padding: .9rem 1.1rem 1.1rem; }
-.stretched::after { content: ""; position: absolute; inset: 0; }
-.game-hero { position: relative; display: grid; grid-template-columns: minmax(0, 460px) 1fr; gap: 1.5rem; align-items: center;
-  padding: 1.5rem; border-radius: 16px; overflow: hidden; border: 1px solid var(--border); margin: .5rem 0 1rem;
-  background: linear-gradient(90deg, rgba(10,14,23,.92), rgba(10,14,23,.75)), var(--hero) center / cover; }
-.game-hero img { width: 100%; height: auto; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,.5); }
-.game-hero h1 { font-size: clamp(1.5rem, 3.5vw, 2.2rem); margin: 0 0 .5rem; }
-.note { background: rgba(255,42,109,.12); border-left: 3px solid var(--accent2); padding: .5rem .75rem; border-radius: 6px; }
-@media (max-width: 760px) {
-  .home-hero, .game-hero { grid-template-columns: 1fr; padding: 1.1rem; }
-  .home-hero-img { order: -1; }
-}
-@media (max-width: 600px) {
-  .patch-meta { grid-template-columns: 1fr; }
-  .patch-meta dt { margin-top: .35rem; }
-}
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
 """
 
 
@@ -265,19 +327,28 @@ NEWSLETTER_COPY = "Get patch-day alerts: know if your mods survived before you u
 
 
 def nav(active: str) -> str:
-    links = [("/", "home", "Games"), ("/faq/", "faq", "FAQ"), ("/newsletter/", "newsletter", "Alerts")]
+    links = [("/", "home", "Games"), ("/faq/", "faq", "FAQ"), ("/newsletter/", "newsletter", "🔔 Alerts")]
     items = []
     for href, key, label in links:
         aria = ' aria-current="page"' if key == active else ""
-        items.append(f'<a href="{href}"{aria}>{esc(label)}</a>')
+        cls = ' class="cta"' if key == "newsletter" and key != active else ""
+        items.append(f'<a href="{href}"{aria}{cls}>{esc(label)}</a>')
     return f'<nav class="nav" aria-label="Primary">{" ".join(items)}</nav>'
 
 
+def brand() -> str:
+    return '<div class="brand"><a href="/"><img src="/img/logo.png" width="34" height="34" alt="" class="logo"><span>Mod<b>Safe</b></span></a></div>'
+
+
 def footer() -> str:
-    return f"""<footer class="footer">
-<p>Not affiliated with any game developer, publisher, Nexus Mods, Thunderstore, Modrinth or Mojang. Data from public APIs: Steam Web API, GitHub, Thunderstore, Mojang, Fabric, Forge, NeoForge, Modrinth.</p>
-<p><a href="{esc(SITE_URL)}/">{esc(SITE_URL)}</a> · <span class="muted">For developers &amp; AI:</span> <a href="/games.json">Data (JSON)</a> · <a href="/llms.txt">llms.txt</a></p>
-</footer>"""
+    game_links = " ".join(f'<a href="/{g["slug"]}/">{esc(g["short"])}</a>' for g in GAMES)
+    return f"""<footer class="footer"><div class="footer-in">
+<div>{brand()}
+<p>Know if your mods survived the patch before you hit update.</p>
+<p>Not affiliated with any game developer, publisher, Nexus Mods, Thunderstore, Modrinth or Mojang. Game art © its respective owners. Data from public APIs (Steam, GitHub, Thunderstore, Mojang, Fabric, Forge, NeoForge, Modrinth).</p></div>
+<div><nav aria-label="Footer">{game_links} <a href="/faq/">FAQ</a> <a href="/newsletter/">Alerts</a></nav>
+<p class="dev">For developers &amp; AI: <a href="/games.json">Data (JSON)</a> · <a href="/llms.txt">llms.txt</a></p></div>
+</div></footer>"""
 
 
 def sponsor_slot() -> str:
@@ -310,10 +381,10 @@ def page_shell(title, description, path, active, body, extra_jsonld=None) -> str
         base_head(title, description, path, extra_jsonld)
         + f"""<body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="header">
-<div class="brand"><a href="/"><img src="/img/logo.png" width="32" height="32" alt="" class="logo">ModSafe</a></div>
+<header class="header"><div class="header-in">
+{brand()}
 {nav(active)}
-</header>
+</div></header>
 <main id="main">
 {body}
 </main>
@@ -325,14 +396,38 @@ def page_shell(title, description, path, active, body, extra_jsonld=None) -> str
     )
 
 
-def game_img(slug: str) -> str:
-    return f"/img/{slug}.svg" if (STATIC / "img" / f"{slug}.svg").exists() else f"/img/{slug}.jpg"
+def game_img(slug: str, kind: str = "cap") -> str:
+    """kind: 'cap' (616x353 card art) or 'hero' (1600x516 banner). Falls back to SVG tile / header.jpg."""
+    if (STATIC / "img" / f"{slug}-{kind}.webp").exists():
+        return f"/img/{slug}-{kind}.webp"
+    if (STATIC / "img" / f"{slug}.svg").exists():
+        return f"/img/{slug}.svg"
+    return f"/img/{slug}.jpg"
+
+
+ICONS = {"ok": "✔", "likely": "◑", "wait": "⏳", "broken": "✖", "agnostic": "∞", "manual": "?", "unknown": "?"}
+MICROCOPY = {
+    "Safe": "GG — update away.",
+    "Likely safe": "Looking good. Skim the notes, then go.",
+    "Just patched, wait": "Fresh patch. Hold your horses.",
+    "Breakage reported": "Ouch. Don't update yet.",
+    "Not ported yet": "Mods haven't caught up yet.",
+    "No data": "Couldn't reach the data. Check manually.",
+}
+
+
+def icon(status: str) -> str:
+    return f'<span class="ico" aria-hidden="true">{ICONS[status_class(status)]}</span>'
+
+
+def vbadge(status: str) -> str:
+    return f'<span class="vbadge {status_class(status)}">{icon(status)}{esc(status)}</span>'
 
 
 def badge(status: str, tracked: bool = True) -> str:
     if not tracked:
         status = "Check manually"
-    return f'<span class="badge {status_class(status)}">{esc(status)}</span>'
+    return f'<span class="badge {status_class(status)}">{icon(status)}{esc(status)}</span>'
 
 
 def verdict_sentence(game: dict, data: dict) -> str:
@@ -408,18 +503,19 @@ def game_faq(game: dict, data: dict) -> list[dict]:
     return items
 
 
-def framework_rows(data: dict) -> str:
-    rows = []
+def framework_cards(data: dict) -> str:
+    out = []
     for fw in data["frameworks"]:
         tracked = fw.get("tracked", True)
-        rows.append(f"""<tr>
-<td><a href="{esc(fw['url'])}">{esc(fw['name'])}</a></td>
-<td>{badge(fw['status'], tracked)}</td>
-<td><code>{esc(fw.get('release_tag') or '—')}</code></td>
-<td>{esc(fmt_date(fw.get('release_published_at')))}</td>
-<td><a href="{esc(fw.get('release_url') or fw['url'])}">Source</a></td>
-</tr>""")
-    return "".join(rows)
+        st = fw["status"] if tracked else "Check manually"
+        reps = "".join(f'<li><a href="{esc(r["url"])}">{esc(r["title"])}</a></li>' for r in fw.get("breakage_reports") or [])
+        out.append(f"""<article class="fw {status_class(st)}">
+<h3><a href="{esc(fw['url'])}">{esc(fw['name'])}</a></h3>
+{badge(st)}
+<div class="rel"><span><code>{esc(fw.get('release_tag') or '—')}</code></span><span>{esc(fmt_date(fw.get('release_published_at')))} · <a href="{esc(fw.get('release_url') or fw['url'])}">source</a></span></div>
+<details><summary>Why?</summary><p>{esc(fw.get('reason', ''))}</p>{f"<ul>{reps}</ul>" if reps else ""}</details>
+</article>""")
+    return "".join(out)
 
 
 def build_game_page(game: dict, data: dict) -> str:
@@ -428,7 +524,6 @@ def build_game_page(game: dict, data: dict) -> str:
     def reason_li(fw):
         reps = "".join(f'<li><a href="{esc(r["url"])}">{esc(r["title"])}</a></li>' for r in fw.get("breakage_reports") or [])
         return f"<li><strong>{esc(fw['short'])}:</strong> {esc(fw.get('reason', ''))}" + (f"<ul>{reps}</ul>" if reps else "") + "</li>"
-    reasons = "".join(reason_li(fw) for fw in data["frameworks"])
     faq = game_faq(game, data)
     faq_html = "".join(f'<article class="faq-item"><h3>{esc(i["q"])}</h3><p>{esc(i["a"])}</p></article>' for i in faq)
     extra = "".join(f'<li><a href="{esc(u)}">{esc(n)}</a></li>' for n, u in game.get("extra_links", []))
@@ -440,21 +535,23 @@ def build_game_page(game: dict, data: dict) -> str:
                "creator": {"@type": "Organization", "name": "ModSafe"}, "dateModified": data.get("generated_at"),
                "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json",
                                  "contentUrl": f"{SITE_URL}/{slug}/status.json"}]}
+    vc = status_class(data["verdict"])
     body = f"""
 <p class="crumbs"><a href="/">Games</a> › {esc(game['name'])}</p>
-<section class="game-hero" style="--hero:url('{game_img(slug)}')">
-<img src="{game_img(slug)}" width="460" height="215" alt="{esc(game['name'])} key art" fetchpriority="high">
+<section class="game-hero v-{vc}" style="--hero:url('{game_img(slug, "hero")}')">
 <div>
 <h1>Is it safe to update {esc(game['name'])}?</h1>
-<p><span class="badge verdict-big {status_class(data['verdict'])}">{esc(data['verdict'])}</span> <span class="muted">for {esc(p['label'])}</span></p>
+<p>{vbadge(data['verdict'])}<span class="micro">{esc(MICROCOPY.get(data['verdict'], ''))}</span></p>
 <p class="lede">{esc(game['blurb'])}</p>
 {f'<p class="note" role="note"><strong>⚠ {esc(game["note"])}</strong></p>' if game.get("note") else ''}
 </div>
 </section>
+<div class="vgrid">
 <section class="panel" aria-labelledby="verdict-heading">
 <h2 id="verdict-heading">Verdict for {esc(p['label'])}</h2>
-<p><span class="badge verdict-big {status_class(data['verdict'])}">{esc(data['verdict'])}</span></p>
-<p>{esc(verdict_sentence(game, data))}</p>
+<p class="big-say">{esc(verdict_sentence(game, data))}</p>
+</section>
+<section class="panel" aria-label="Patch details">
 <dl class="patch-meta">
 <dt>Latest patch</dt><dd><strong>{esc(p['label'])}</strong></dd>
 <dt>Released</dt><dd>{esc(fmt_date(p.get('published_at')))}</dd>
@@ -465,23 +562,17 @@ def build_game_page(game: dict, data: dict) -> str:
 <dt>Data refreshed</dt><dd>{esc(fmt_date(data.get('generated_at')))} <span class="muted">(UTC)</span></dd>
 </dl>
 </section>
-<section class="panel" aria-labelledby="fw-heading">
-<h2 id="fw-heading">Core frameworks &amp; loaders</h2>
-<div class="table-wrap"><table>
-<thead><tr><th scope="col">Framework</th><th scope="col">Status</th><th scope="col">Latest release</th><th scope="col">Released</th><th scope="col">Link</th></tr></thead>
-<tbody>{framework_rows(data)}</tbody>
-</table></div>
-<details class="reasons"><summary>Why these statuses?</summary><ul>{reasons}</ul></details>
+</div>
+<div class="sec-head"><h2 id="fw-heading">Frameworks &amp; loaders</h2></div>
+<section class="fw-grid" aria-labelledby="fw-heading">{framework_cards(data)}</section>
 {f'<ul>{extra}</ul>' if extra else ''}
 <p class="disclaimer">{esc(data.get('disclaimer', ''))} Items marked “Check manually” are not counted in the verdict.</p>
-</section>
 {newsletter()}
-{sponsor_slot()}
+<div class="sec-head"><h2 id="faq-heading">{esc(game['short'])} modding FAQ</h2></div>
 <section class="faq-list" aria-labelledby="faq-heading">
-<h2 id="faq-heading">{esc(game['name'])} modding FAQ</h2>
 {faq_html}
 </section>
-<section class="panel"><p><a href="/{slug}/history/">Patch history →</a> · <a href="{esc(game['wiki'])}">Modding resources →</a></p></section>
+<section class="links"><a href="/{slug}/history/">📜 Patch history</a> <a href="{esc(game['wiki'])}">🛠 Modding resources</a> <a href="/">🎮 All games</a></section>
 """
     return page_shell(
         f"Is it safe to update {game['name']}? Mod status for {p['label']} — ModSafe",
@@ -505,7 +596,7 @@ def build_game_history(game: dict, data: dict) -> str:
     slug = game["slug"]
     body = f"""
 <p class="crumbs"><a href="/">Games</a> › <a href="/{slug}/">{esc(game['name'])}</a> › History</p>
-<section class="hero"><h1>{esc(game['name'])} patch history</h1>
+<section class="page-hero"><h1>{esc(game['name'])} patch history</h1>
 <p class="lede">How tracked frameworks looked relative to each recent {esc(game['name'])} patch, using the same rules as the main page.</p></section>
 <section class="hist-list">{''.join(sections) or '<p>No patch history available.</p>'}</section>
 """
@@ -517,37 +608,38 @@ def build_game_history(game: dict, data: dict) -> str:
 
 def build_home(games_data: list[tuple[dict, dict]]) -> str:
     cards = []
-    for game, data in games_data:
+    for i, (game, data) in enumerate(games_data):
         p = data["game"]["latest_patch"]
+        chips = "".join(f'<span class="chip">{esc(f["short"])}</span>' for f in data["frameworks"])
         cards.append(f"""<article class="game-card v-{status_class(data['verdict'])}">
-<a class="card-img" href="/{game['slug']}/" tabindex="-1" aria-hidden="true"><img src="{game_img(game['slug'])}" width="460" height="215" loading="lazy" decoding="async" alt=""></a>
+<div class="card-art"><img src="{game_img(game['slug'])}" width="616" height="353" {'loading="lazy" ' if i > 2 else ''}decoding="async" alt="{esc(game['name'])} cover art">{badge(data['verdict'])}</div>
 <div class="card-body">
-<h2><a href="/{game['slug']}/" class="stretched">{esc(game['name'])}</a></h2>
-<p><span class="badge {status_class(data['verdict'])}">{esc(data['verdict'])}</span></p>
-<p class="muted">Latest patch <strong>{esc(p['label'])}</strong> · {esc(fmt_date(p.get('published_at')))}</p>
-<p class="muted">{esc(', '.join(f['short'] for f in data['frameworks']))}</p>
+<h3><a href="/{game['slug']}/" class="stretched">{esc(game['name'])}</a></h3>
+<p class="card-meta"><span>Patch <strong>{esc(p['label'])}</strong></span><span>{esc(fmt_date(p.get('published_at')))}</span></p>
+<div class="chips">{chips}</div>
 </div>
 </article>""")
     itemlist = {"@context": "https://schema.org", "@type": "ItemList", "name": "Games tracked by ModSafe",
                 "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": g["name"], "url": f"{SITE_URL}/{g['slug']}/"}
                                     for i, (g, _) in enumerate(games_data)]}
+    n_fw = sum(len(d["frameworks"]) for _, d in games_data)
+    n_ok = sum(1 for _, d in games_data if d["verdict"] in ("Safe", "Likely safe"))
     body = f"""
-<section class="home-hero">
-<div class="home-hero-text">
+<section class="home-hero" style="--hero:url('/img/cyberpunk-2077-hero.webp')">
 <p class="eyebrow">Patch day, minus the panic</p>
-<h1>Is it safe to update your modded game?</h1>
-<p class="lede">When a patch drops, script extenders and mod loaders break first. ModSafe watches each game's core frameworks and tells you plainly: <span class="badge ok">Safe</span> <span class="badge likely">Likely safe</span> <span class="badge wait">Just patched, wait</span> <span class="badge broken">Breakage reported</span></p>
-<p><a class="btn" href="#games">See your game ↓</a> <a class="btn ghost" href="/newsletter/">Get patch alerts</a></p>
-</div>
-<img class="home-hero-img" src="/img/brand-banner.jpg" width="1200" height="400" alt="ModSafe shield logo" fetchpriority="high">
+<h1>Did your mods <em>survive</em> the patch?</h1>
+<p class="lede">A new update drops, and script extenders and mod loaders break first. ModSafe watches every game's core frameworks so you know whether to hit update or hold the line.</p>
+<div class="legend"><span class="badge ok">{icon("Safe")}Safe</span><span class="badge likely">{icon("Likely safe")}Likely safe</span><span class="badge wait">{icon("Just patched, wait")}Just patched, wait</span><span class="badge broken">{icon("Breakage reported")}Breakage reported</span></div>
+<div class="hero-actions"><a class="btn" href="#games">🎮 Pick your game</a> <a class="btn ghost" href="/newsletter/">🔔 Get patch alerts</a></div>
+<div class="stats"><div><strong>{len(games_data)}</strong>games tracked</div><div><strong>{n_fw}</strong>frameworks watched</div><div><strong>{n_ok}/{len(games_data)}</strong>safe or likely safe now</div></div>
 </section>
-<section class="game-grid" id="games" aria-label="Games">
+<div class="sec-head" id="games"><h2>Choose your game</h2><span class="muted">Refreshed every few hours</span></div>
+<section class="game-grid" aria-label="Games">
 {''.join(cards)}
 </section>
 {newsletter()}
-{sponsor_slot()}
-<section class="panel"><p class="disclaimer">{esc(STATUS_EXPLAINER)}</p>
-<p><a href="/faq/">FAQ →</a> · <a href="/newsletter/">Patch alerts →</a></p></section>
+<section class="panel"><h2>How we call it</h2><p class="disclaimer">{esc(STATUS_EXPLAINER)}</p>
+<p><a href="/faq/">Read the FAQ →</a></p></section>
 """
     return page_shell(f"Is it safe to update? — {SITE_NAME}", SITE_DESC, "/", "home", body, extra_jsonld=[itemlist])
 
@@ -567,7 +659,7 @@ GENERAL_FAQ = [
 def build_faq() -> str:
     arts = "".join(f'<article class="faq-item" id="faq-{i}"><h2>{esc(it["q"])}</h2><p>{esc(it["a"])}</p></article>'
                    for i, it in enumerate(GENERAL_FAQ))
-    body = f"""<section class="hero"><h1>FAQ</h1><p class="lede">Updating modded games after a patch.</p></section>
+    body = f"""<section class="page-hero"><h1>FAQ</h1><p class="lede">Updating modded games after a patch.</p></section>
 <section class="faq-list">{arts}</section>
 {newsletter()}
 <section class="panel"><p>Game-specific FAQs: {' · '.join(f'<a href="/{g["slug"]}/#faq-heading">{esc(g["name"])}</a>' for g in GAMES)}</p></section>"""
@@ -576,7 +668,7 @@ def build_faq() -> str:
 
 
 def build_newsletter_page() -> str:
-    body = f"""<section class="hero"><h1>Patch-day alerts</h1><p class="lede">{esc(NEWSLETTER_COPY)}</p></section>
+    body = f"""<section class="page-hero"><h1>Patch-day alerts</h1><p class="lede">{esc(NEWSLETTER_COPY)}</p></section>
 {newsletter("h2")}"""
     return page_shell(f"Patch-day alerts — {SITE_NAME}", NEWSLETTER_COPY, "/newsletter/", "newsletter", body)
 
