@@ -146,3 +146,8 @@ No paid APIs required. Steam news and GitHub releases are public.
 ## Disclaimer
 
 Not affiliated with CD PROJEKT RED, Nexus Mods, or framework authors. Statuses are inferred from public timestamps and release notes — always confirm on the project page and the [redmodding wiki](https://wiki.redmodding.org/) before updating.
+
+## Analytics (Cloudflare Web Analytics, cookie-free)
+
+Preferred: Cloudflare dashboard → Workers & Pages → `modsafe` → Metrics → **Web Analytics → Enable**. Cloudflare injects the beacon itself on the next deploy, with no code change.
+Alternative: create a Web Analytics site for `modsafe.app` (manual JS snippet), then set the Pages env var `CF_ANALYTICS_TOKEN=<site token>`. The build then adds the beacon to every page. The token is public.

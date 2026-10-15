@@ -17,6 +17,10 @@ from games import GAMES  # noqa: E402
 DIST = ROOT / "dist"
 STATIC = ROOT / "static"
 
+# Cloudflare Web Analytics (cookie-free). Optional: only needed for a manually created
+# Web Analytics site. If Analytics is enabled on the Pages project itself, Cloudflare
+# injects the beacon automatically and this stays empty. The token is public (it ships in HTML).
+CF_ANALYTICS_TOKEN = os.environ.get("CF_ANALYTICS_TOKEN", "").strip()
 SITE_URL = os.environ.get("SITE_URL", "https://modsafe.app").rstrip("/")
 SITE_NAME = "ModSafe — Mod Compatibility After Game Patches"
 SITE_DESC = (
@@ -289,6 +293,13 @@ def newsletter(heading_level: str = "h2") -> str:
 </section>"""
 
 
+def cf_beacon() -> str:
+    if not CF_ANALYTICS_TOKEN:
+        return ""
+    cfg = json.dumps({"token": CF_ANALYTICS_TOKEN})
+    return f"<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js\" data-cf-beacon='{esc(cfg)}'></script>\n"
+
+
 def page_shell(title, description, path, active, body, extra_jsonld=None) -> str:
     return (
         base_head(title, description, path, extra_jsonld)
@@ -303,7 +314,7 @@ def page_shell(title, description, path, active, body, extra_jsonld=None) -> str
 </main>
 {footer()}
 <script type="text/javascript" async src="https://subscribe-forms.beehiiv.com/attribution.js"></script>
-</body>
+{cf_beacon()}</body>
 </html>
 """
     )

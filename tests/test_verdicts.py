@@ -116,3 +116,18 @@ class TestManualGTA(unittest.TestCase):
         self.assertIn("2026-10-15", html)
         self.assertIn("GTA Online", html)
         self.assertIn("1.0.1158.13", html)
+
+
+class TestAnalyticsBeacon(unittest.TestCase):
+    def test_beacon_optional(self):
+        import build
+        old = build.CF_ANALYTICS_TOKEN
+        try:
+            build.CF_ANALYTICS_TOKEN = ""
+            self.assertNotIn("cloudflareinsights", build.page_shell("t", "d", "/", "home", "x"))
+            build.CF_ANALYTICS_TOKEN = "abc123"
+            html = build.page_shell("t", "d", "/", "home", "x")
+            self.assertIn("static.cloudflareinsights.com/beacon.min.js", html)
+            self.assertIn("abc123", html)
+        finally:
+            build.CF_ANALYTICS_TOKEN = old
