@@ -637,3 +637,18 @@ def parse_silverlock(text: str) -> Optional[dict[str, str]]:
             runtime, build = (m.group(1), m.group(2)) if i == 0 else (m.group(2), m.group(1))
             best = (m.start(), {"runtime": runtime, "build": build})
     return best[1] if best else None
+
+
+MANUAL_STALE_DAYS = 14
+
+
+def manual_hook_verdict(*, supported: list[str], current: list[str], patch_age: float, verified_age: float) -> dict[str, str]:
+    """Verdict for a hand-maintained 'supported builds' record (e.g. Script Hook V)."""
+    missing = [b for b in current if b not in supported]
+    if not missing:
+        if verified_age > MANUAL_STALE_DAYS:
+            return {"status": V_LIKELY, "reason": f"Supported builds matched the game when last checked, but that was {int(verified_age)} days ago."}
+        return {"status": V_SAFE, "reason": "Supports the current game build(s): " + ", ".join(current) + "."}
+    if patch_age < FRESH_PATCH_DAYS:
+        return {"status": V_WAIT, "reason": "No build yet for " + ", ".join(missing) + "; the update is under a week old."}
+    return {"status": V_NOT_PORTED, "reason": "No build yet for " + ", ".join(missing) + "."}

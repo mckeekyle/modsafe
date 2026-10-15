@@ -34,6 +34,7 @@ from status_logic import (  # noqa: E402
     history_label,
     is_breakage_title,
     parse_silverlock,
+    manual_hook_verdict,
     patch_age_days,
     user_verdict,
     list_patches_generic,
@@ -371,12 +372,45 @@ def build_minecraft(game: dict) -> dict:
                         "neoforge_maven": NEOFORGE_VERSIONS, "modrinth": "https://api.modrinth.com/v2"}}
 
 
+def build_manual_game(game: dict) -> dict:
+    """Hand-maintained game (GTA V): patch + hook data from data/manual/*.json; never fetches dev-c.com."""
+    man = json.loads((ROOT / game["manual_file"]).read_text(encoding="utf-8"))
+    lp = man["latest_patch"]
+    latest = {k: lp.get(k) for k in ("label", "version", "published_at", "title", "url", "builds", "sources", "notes")}
+    verified_age = patch_age_days(man["last_verified"] + "T00:00:00Z")
+    age = patch_age_days(lp["published_at"])
+    fws = []
+    for fw in game["frameworks"]:
+        base = {"id": fw["id"], "name": fw["name"], "short": fw["short"], "url": fw["url"], "source": fw["source"],
+                "tracked": True, "sensitive": not fw.get("agnostic"), "release_url": fw["url"]}
+        if fw["source"] == "manual_shv":
+            shv = man["script_hook_v"]
+            v = manual_hook_verdict(supported=shv["supported_builds"], current=list(lp["builds"].values()),
+                                    patch_age=age, verified_age=verified_age)
+            fws.append({**base, **v, "release_tag": shv["version"], "release_published_at": shv["released"] + "T00:00:00Z",
+                        "reason": v["reason"] + f" (Manually verified {man['last_verified']}.)", "manual_data": True})
+            continue
+        try:
+            rel = pick_latest_stable_release(SOURCES[fw["source"]](fw))
+        except Exception as e:  # noqa: BLE001
+            rel = None
+            print(f"  {fw['id']} fetch failed: {e}", file=sys.stderr)
+        fws.append({**base, "status": "Not affected by patches" if fw.get("agnostic") else V_NODATA,
+                    "reason": fw.get("agnostic_note", ""), "release_tag": rel.get("tag_name") if rel else None,
+                    "release_published_at": rel.get("published_at") if rel else None,
+                    "release_url": (rel or {}).get("html_url") or fw["url"]})
+    return {"latest_patch": latest, "frameworks": fws, "history": [], "last_verified": man["last_verified"],
+            "sources": {"manual": game["manual_file"], "patch_sources": lp.get("sources", [])}}
+
+
 DISCLAIMER = ("Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/"
               "NeoForge/Modrinth APIs). They are not guarantees — verify on each project's page before updating.")
 
 
 def build_game(game: dict) -> dict:
-    body = build_minecraft(game) if game.get("kind") == "minecraft" else build_steam_game(game)
+    kind = game.get("kind")
+    body = (build_minecraft(game) if kind == "minecraft" else build_manual_game(game) if kind == "manual"
+            else build_steam_game(game))
     tracked = [f["status"] for f in body["frameworks"] if f.get("tracked") and f.get("sensitive", True)]
     return {
         "generated_at": now_iso(),

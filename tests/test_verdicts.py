@@ -71,7 +71,7 @@ class TestSilverlock(unittest.TestCase):
 class TestClassification(unittest.TestCase):
     def test_agnostic_set(self):
         agn = {f["id"] for g in GAMES for f in g["frameworks"] if f.get("agnostic")}
-        self.assertEqual(agn, {"bg3mm", "bepinexpack"})
+        self.assertEqual(agn, {"bg3mm", "bepinexpack", "asi-loader"})
         for g in GAMES:
             for f in g["frameworks"]:
                 if f["id"] in {"cet", "red4ext", "redscript", "skse64", "f4se", "bg3se", "smapi"}:
@@ -80,3 +80,39 @@ class TestClassification(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestManualGTA(unittest.TestCase):
+    def test_hook_verdicts(self):
+        from status_logic import manual_hook_verdict
+        cur = ["1.0.3889.0", "1.0.1158.13"]
+        self.assertEqual(manual_hook_verdict(supported=cur, current=cur, patch_age=90, verified_age=0)["status"], V_SAFE)
+        self.assertEqual(manual_hook_verdict(supported=cur, current=cur, patch_age=90, verified_age=30)["status"], V_LIKELY)
+        self.assertEqual(manual_hook_verdict(supported=cur[:1], current=cur, patch_age=2, verified_age=0)["status"], V_WAIT)
+        self.assertEqual(manual_hook_verdict(supported=cur[:1], current=cur, patch_age=20, verified_age=0)["status"], V_NOT_PORTED)
+
+    def test_manual_file_and_no_devc_fetch(self):
+        import json
+        root = Path(__file__).resolve().parents[1]
+        d = json.loads((root / "data/manual/gta-v.json").read_text())
+        self.assertIn("last_verified", d)
+        self.assertEqual(set(d["latest_patch"]["builds"]), {"legacy", "enhanced"})
+        src = (root / "src/update.py").read_text()
+        self.assertNotIn("://www.dev-c.com", src)
+        gta = next(g for g in GAMES if g["slug"] == "gta-v")
+        self.assertTrue(next(f for f in gta["frameworks"] if f["id"] == "asi-loader")["agnostic"])
+        self.assertIn("GTA Online", gta["note"])
+
+    def test_build_shows_verified_and_warning(self):
+        import json, tempfile, build
+        from games import GAMES as G
+        g = next(x for x in G if x["slug"] == "gta-v")
+        d = {"generated_at": "2026-10-15T00:00:00Z", "verdict": V_SAFE, "disclaimer": "", "last_verified": "2026-10-15",
+             "game": {"slug": "gta-v", "name": g["name"], "latest_patch": {"label": "TU 1.73", "published_at": "2026-07-14T00:00:00Z",
+                      "builds": {"legacy": "1.0.3889.0", "enhanced": "1.0.1158.13"}, "url": "", "title": ""}},
+             "frameworks": [], "history": []}
+        html = build.build_game_page(g, d)
+        self.assertIn("Last manually verified", html)
+        self.assertIn("2026-10-15", html)
+        self.assertIn("GTA Online", html)
+        self.assertIn("1.0.1158.13", html)

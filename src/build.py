@@ -22,7 +22,7 @@ SITE_NAME = "ModSafe — Mod Compatibility After Game Patches"
 SITE_DESC = (
     "Is it safe to update? Live status of core mod frameworks and loaders (script extenders, "
     "BepInEx, SMAPI, Fabric/Forge) after each official game patch, for Cyberpunk 2077, Skyrim SE, "
-    "Fallout 4, Baldur's Gate 3, Stardew Valley, Lethal Company and Minecraft."
+    "Fallout 4, Baldur\'s Gate 3, Stardew Valley, Lethal Company, GTA V and Minecraft."
 )
 
 
@@ -369,6 +369,7 @@ def game_faq(game: dict, data: dict) -> list[dict]:
     tracked = [f["name"] for f in data["frameworks"] if f.get("tracked")]
     manual = [f["name"] for f in data["frameworks"] if not f.get("tracked")]
     src = ("the Mojang version manifest" if game.get("kind") == "minecraft"
+           else "a hand-maintained record checked by ModSafe (Rockstar title updates and the Script Hook V page)" if game.get("kind") == "manual"
            else f"official Steam announcements (app {game.get('steam_appid')})")
     items = [
         {"q": f"Is it safe to update {game['name']} with mods?",
@@ -380,6 +381,11 @@ def game_faq(game: dict, data: dict) -> list[dict]:
         {"q": "Where does the data come from?",
          "a": f"Game patches come from {src}. Framework data comes from public release APIs (GitHub, Thunderstore, Fabric/Forge/NeoForge meta, Modrinth). ModSafe does not scrape Nexus Mods or SteamDB."},
     ]
+    if game["slug"] == "gta-v":
+        items.append({"q": "Can I use mods in GTA Online?",
+                      "a": "No. Only mod single-player (Story Mode). Script Hook V closes the game if you go online, and modding GTA Online risks a permanent ban. Keep a clean install or remove mods before playing Online."})
+        items.append({"q": "Does this cover GTA V Enhanced and Legacy?",
+                      "a": "Yes. ModSafe tracks the executable build for both the Legacy (Steam app 271590) and Enhanced (Steam app 3240220) editions, and checks that Script Hook V lists both."})
     if game["slug"] == "stardew-valley":
         items.append({"q": "How do I check individual Stardew mods?",
                       "a": "Use the official SMAPI mod compatibility list at smapi.io/mods, which tracks compatible, broken and obsolete mods."})
@@ -426,7 +432,7 @@ def build_game_page(game: dict, data: dict) -> str:
 <h1>Is it safe to update {esc(game['name'])}?</h1>
 <p><span class="badge verdict-big {status_class(data['verdict'])}">{esc(data['verdict'])}</span> <span class="muted">for {esc(p['label'])}</span></p>
 <p class="lede">{esc(game['blurb'])}</p>
-{f'<p class="note">{esc(game["note"])}</p>' if game.get("note") else ''}
+{f'<p class="note" role="note"><strong>⚠ {esc(game["note"])}</strong></p>' if game.get("note") else ''}
 </div>
 </section>
 <section class="panel" aria-labelledby="verdict-heading">
@@ -438,6 +444,8 @@ def build_game_page(game: dict, data: dict) -> str:
 <dt>Released</dt><dd>{esc(fmt_date(p.get('published_at')))}</dd>
 <dt>Source</dt><dd><a href="{esc(p.get('url', ''))}">{esc(p.get('title', ''))}</a></dd>
 {snap}
+{f"<dt>Builds</dt><dd>" + ", ".join(f"{esc(k.title())} <code>{esc(v)}</code>" for k, v in p["builds"].items()) + "</dd>" if p.get("builds") else ""}
+{f"<dt>Last manually verified</dt><dd><strong>{esc(data['last_verified'])}</strong> <span class='muted'>(hand-maintained data)</span></dd>" if data.get("last_verified") else ""}
 <dt>Data refreshed</dt><dd>{esc(fmt_date(data.get('generated_at')))} <span class="muted">(UTC)</span></dd>
 </dl>
 </section>
@@ -536,7 +544,7 @@ GENERAL_FAQ = [
      "a": "Some core mods (for example Address Library and Buffout 4) are only distributed on Nexus Mods. Nexus' API terms forbid scraping, so ModSafe links them instead of guessing, and leaves them out of the verdict."},
     {"q": "Where does the data come from?",
      "a": "Steam Web API news (official announcements), Mojang's version manifest, GitHub releases/tags, the Thunderstore package API, Fabric meta, Forge promotions, NeoForge Maven and the Modrinth API. Refreshed every few hours."},
-    {"q": "Which games are covered?", "a": "Cyberpunk 2077, Skyrim Special Edition, Fallout 4, Baldur's Gate 3, Stardew Valley, Lethal Company and Minecraft: Java Edition."},
+    {"q": "Which games are covered?", "a": "Cyberpunk 2077, Skyrim Special Edition, Fallout 4, Baldur's Gate 3, Stardew Valley, Lethal Company, Grand Theft Auto V (single-player) and Minecraft: Java Edition."},
 ]
 
 
