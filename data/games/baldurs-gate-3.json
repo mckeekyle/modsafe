@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T20:04:30Z",
+  "generated_at": "2026-10-15T20:18:37Z",
   "game": {
     "slug": "baldurs-gate-3",
     "name": "Baldur's Gate 3",
@@ -13,7 +13,7 @@
       "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1827626365770693"
     }
   },
-  "verdict": "Unknown / check",
+  "verdict": "Likely safe",
   "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
   "frameworks": [
     {
@@ -24,8 +24,12 @@
       "source": "github",
       "repo": "Norbyte/bg3se",
       "tracked": true,
-      "status": "Likely OK",
+      "sensitive": true,
+      "status": "Likely safe",
+      "base_status": "Likely OK",
       "reason": "Latest release is newer than patch Hotfix #36, but notes do not explicitly mention that version.",
+      "breakage_reports": [],
+      "official": null,
       "release_tag": "v33",
       "release_name": "Script Extender (2026 Oct 12)",
       "release_published_at": "2026-10-12T21:35:28Z",
@@ -42,8 +46,12 @@
       "source": "github",
       "repo": "LaughingLeader/BG3ModManager",
       "tracked": true,
-      "status": "Unknown / check",
-      "reason": "Latest release predates patch Hotfix #36; compatibility is unverified \u2014 check the project page.",
+      "sensitive": false,
+      "status": "Not affected by patches",
+      "base_status": "Unknown / check",
+      "reason": "A load-order/mod manager that edits files outside the game binary; game patches don't break it. Latest: Latest release predates patch Hotfix #36; compatibility is unverified \u2014 check the project page.",
+      "breakage_reports": [],
+      "official": null,
       "release_tag": "1.0.12.9",
       "release_name": "Latest Release (Windows)",
       "release_published_at": "2025-05-18T18:42:15Z",
@@ -66,7 +74,7 @@
           "id": "bg3se",
           "short": "BG3SE",
           "name": "BG3 Script Extender",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v31",
           "release_published_at": "2026-04-17T10:46:04Z",
           "mentions_patch": false
@@ -75,7 +83,7 @@
           "id": "bg3mm",
           "short": "BG3MM",
           "name": "BG3 Mod Manager",
-          "status": "Unknown / check",
+          "status": "Not affected by patches",
           "release_tag": null,
           "release_published_at": null,
           "mentions_patch": false
@@ -94,7 +102,7 @@
           "id": "bg3se",
           "short": "BG3SE",
           "name": "BG3 Script Extender",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v31",
           "release_published_at": "2026-04-17T10:46:04Z",
           "mentions_patch": false
@@ -103,7 +111,7 @@
           "id": "bg3mm",
           "short": "BG3MM",
           "name": "BG3 Mod Manager",
-          "status": "Unknown / check",
+          "status": "Not affected by patches",
           "release_tag": null,
           "release_published_at": null,
           "mentions_patch": false
@@ -122,7 +130,7 @@
           "id": "bg3se",
           "short": "BG3SE",
           "name": "BG3 Script Extender",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v31",
           "release_published_at": "2026-04-17T10:46:04Z",
           "mentions_patch": false
@@ -131,7 +139,7 @@
           "id": "bg3mm",
           "short": "BG3MM",
           "name": "BG3 Mod Manager",
-          "status": "Unknown / check",
+          "status": "Not affected by patches",
           "release_tag": null,
           "release_published_at": null,
           "mentions_patch": false
@@ -150,7 +158,7 @@
           "id": "bg3se",
           "short": "BG3SE",
           "name": "BG3 Script Extender",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v31",
           "release_published_at": "2026-04-17T10:46:04Z",
           "mentions_patch": false
@@ -159,7 +167,7 @@
           "id": "bg3mm",
           "short": "BG3MM",
           "name": "BG3 Mod Manager",
-          "status": "Unknown / check",
+          "status": "Not affected by patches",
           "release_tag": null,
           "release_published_at": null,
           "mentions_patch": false
@@ -178,7 +186,7 @@
           "id": "bg3se",
           "short": "BG3SE",
           "name": "BG3 Script Extender",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v31",
           "release_published_at": "2026-04-17T10:46:04Z",
           "mentions_patch": false
@@ -187,7 +195,7 @@
           "id": "bg3mm",
           "short": "BG3MM",
           "name": "BG3 Mod Manager",
-          "status": "Likely OK",
+          "status": "Not affected by patches",
           "release_tag": "1.0.12.9",
           "release_published_at": "2025-05-18T18:42:15Z",
           "mentions_patch": false
@@ -206,7 +214,7 @@
           "id": "bg3se",
           "short": "BG3SE",
           "name": "BG3 Script Extender",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v31",
           "release_published_at": "2026-04-17T10:46:04Z",
           "mentions_patch": false
@@ -215,7 +223,7 @@
           "id": "bg3mm",
           "short": "BG3MM",
           "name": "BG3 Mod Manager",
-          "status": "Likely OK",
+          "status": "Not affected by patches",
           "release_tag": "1.0.12.3",
           "release_published_at": "2025-05-01T02:15:08Z",
           "mentions_patch": false
@@ -234,7 +242,7 @@
           "id": "bg3se",
           "short": "BG3SE",
           "name": "BG3 Script Extender",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v31",
           "release_published_at": "2026-04-17T10:46:04Z",
           "mentions_patch": false
@@ -243,7 +251,7 @@
           "id": "bg3mm",
           "short": "BG3MM",
           "name": "BG3 Mod Manager",
-          "status": "Likely OK",
+          "status": "Not affected by patches",
           "release_tag": "1.0.12.0",
           "release_published_at": "2025-04-15T21:02:29Z",
           "mentions_patch": false
@@ -262,7 +270,7 @@
           "id": "bg3se",
           "short": "BG3SE",
           "name": "BG3 Script Extender",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v31",
           "release_published_at": "2026-04-17T10:46:04Z",
           "mentions_patch": false
@@ -271,7 +279,7 @@
           "id": "bg3mm",
           "short": "BG3MM",
           "name": "BG3 Mod Manager",
-          "status": "Likely OK",
+          "status": "Not affected by patches",
           "release_tag": "1.0.12.0",
           "release_published_at": "2025-04-15T21:02:29Z",
           "mentions_patch": false
@@ -290,7 +298,7 @@
           "id": "bg3se",
           "short": "BG3SE",
           "name": "BG3 Script Extender",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v31",
           "release_published_at": "2026-04-17T10:46:04Z",
           "mentions_patch": false
@@ -299,7 +307,7 @@
           "id": "bg3mm",
           "short": "BG3MM",
           "name": "BG3 Mod Manager",
-          "status": "Likely OK",
+          "status": "Not affected by patches",
           "release_tag": "1.0.12.0",
           "release_published_at": "2025-04-15T21:02:29Z",
           "mentions_patch": false
@@ -318,7 +326,7 @@
           "id": "bg3se",
           "short": "BG3SE",
           "name": "BG3 Script Extender",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v31",
           "release_published_at": "2026-04-17T10:46:04Z",
           "mentions_patch": false
@@ -327,7 +335,7 @@
           "id": "bg3mm",
           "short": "BG3MM",
           "name": "BG3 Mod Manager",
-          "status": "Likely OK",
+          "status": "Not affected by patches",
           "release_tag": "1.0.12.0",
           "release_published_at": "2025-04-15T21:02:29Z",
           "mentions_patch": false
@@ -346,7 +354,7 @@
           "id": "bg3se",
           "short": "BG3SE",
           "name": "BG3 Script Extender",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v31",
           "release_published_at": "2026-04-17T10:46:04Z",
           "mentions_patch": false
@@ -355,7 +363,7 @@
           "id": "bg3mm",
           "short": "BG3MM",
           "name": "BG3 Mod Manager",
-          "status": "Likely OK",
+          "status": "Not affected by patches",
           "release_tag": "1.0.11.0",
           "release_published_at": "2024-09-06T01:48:17Z",
           "mentions_patch": false
@@ -374,7 +382,7 @@
           "id": "bg3se",
           "short": "BG3SE",
           "name": "BG3 Script Extender",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "updater-20240430",
           "release_published_at": "2024-04-30T19:25:30Z",
           "mentions_patch": false
@@ -383,7 +391,7 @@
           "id": "bg3mm",
           "short": "BG3MM",
           "name": "BG3 Mod Manager",
-          "status": "Likely OK",
+          "status": "Not affected by patches",
           "release_tag": "1.0.11.0",
           "release_published_at": "2024-09-06T01:48:17Z",
           "mentions_patch": false

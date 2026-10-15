@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T20:04:28Z",
+  "generated_at": "2026-10-15T20:18:33Z",
   "game": {
     "slug": "fallout-4",
     "name": "Fallout 4",
@@ -13,7 +13,7 @@
       "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840944183789236"
     }
   },
-  "verdict": "Unknown / check",
+  "verdict": "Safe",
   "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
   "frameworks": [
     {
@@ -24,8 +24,17 @@
       "source": "github_tags",
       "repo": "ianpatt/f4se",
       "tracked": true,
-      "status": "Unknown / check",
-      "reason": "Latest release predates patch Update 2026-08-18; compatibility is unverified \u2014 check the project page. (Date is the tagged commit on GitHub; builds are published on the official site.)",
+      "sensitive": true,
+      "status": "Safe",
+      "base_status": "Unknown / check",
+      "reason": "Official page (https://f4se.silverlock.org/) lists build 0.7.9 for runtime 1.11.240, matching the latest tag (Bethesda often ships updates to a beta branch first). Latest release predates patch Update 2026-08-18; compatibility is unverified \u2014 check the project page. (Date is the tagged commit on GitHub; builds are published on the official site.)",
+      "breakage_reports": [],
+      "official": {
+        "runtime": "1.11.240",
+        "build": "0.7.9",
+        "supports_current": true,
+        "page": "https://f4se.silverlock.org/"
+      },
       "release_tag": "v0.7.9",
       "release_name": "v0.7.9",
       "release_published_at": "2026-08-16T18:48:30Z",
@@ -41,7 +50,8 @@
       "url": "https://www.nexusmods.com/fallout4/mods/47327",
       "source": "manual",
       "tracked": false,
-      "status": "Unknown / check",
+      "sensitive": true,
+      "status": "Check manually",
       "reason": "Distributed on Nexus Mods only; ModSafe does not scrape Nexus. Check the mod page.",
       "release_tag": null,
       "release_published_at": null,
@@ -54,7 +64,8 @@
       "url": "https://www.nexusmods.com/fallout4/mods/64880",
       "source": "manual",
       "tracked": false,
-      "status": "Unknown / check",
+      "sensitive": true,
+      "status": "Check manually",
       "reason": "Original Buffout 4 is unmaintained; the NG fork is distributed on Nexus Mods only. Check the mod page.",
       "release_tag": null,
       "release_published_at": null,
@@ -74,7 +85,7 @@
           "id": "f4se",
           "short": "F4SE",
           "name": "Fallout 4 Script Extender (F4SE)",
-          "status": "Unknown / check",
+          "status": "No post-patch release",
           "release_tag": null,
           "release_published_at": null,
           "mentions_patch": false
@@ -93,7 +104,7 @@
           "id": "f4se",
           "short": "F4SE",
           "name": "Fallout 4 Script Extender (F4SE)",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v0.7.9",
           "release_published_at": "2026-08-16T18:48:30Z",
           "mentions_patch": false
@@ -112,7 +123,7 @@
           "id": "f4se",
           "short": "F4SE",
           "name": "Fallout 4 Script Extender (F4SE)",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v0.7.7",
           "release_published_at": "2025-12-16T17:36:45Z",
           "mentions_patch": false
@@ -131,7 +142,7 @@
           "id": "f4se",
           "short": "F4SE",
           "name": "Fallout 4 Script Extender (F4SE)",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v0.7.6",
           "release_published_at": "2025-11-25T22:47:28Z",
           "mentions_patch": false
@@ -150,7 +161,7 @@
           "id": "f4se",
           "short": "F4SE",
           "name": "Fallout 4 Script Extender (F4SE)",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v0.7.6",
           "release_published_at": "2025-11-25T22:47:28Z",
           "mentions_patch": false
@@ -169,7 +180,7 @@
           "id": "f4se",
           "short": "F4SE",
           "name": "Fallout 4 Script Extender (F4SE)",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v0.7.6",
           "release_published_at": "2025-11-25T22:47:28Z",
           "mentions_patch": false
@@ -188,7 +199,7 @@
           "id": "f4se",
           "short": "F4SE",
           "name": "Fallout 4 Script Extender (F4SE)",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v0.7.6",
           "release_published_at": "2025-11-25T22:47:28Z",
           "mentions_patch": false
@@ -207,7 +218,7 @@
           "id": "f4se",
           "short": "F4SE",
           "name": "Fallout 4 Script Extender (F4SE)",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v0.7.6",
           "release_published_at": "2025-11-25T22:47:28Z",
           "mentions_patch": false
@@ -226,7 +237,7 @@
           "id": "f4se",
           "short": "F4SE",
           "name": "Fallout 4 Script Extender (F4SE)",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v0.7.6",
           "release_published_at": "2025-11-25T22:47:28Z",
           "mentions_patch": false
@@ -245,7 +256,7 @@
           "id": "f4se",
           "short": "F4SE",
           "name": "Fallout 4 Script Extender (F4SE)",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v0.7.6",
           "release_published_at": "2025-11-25T22:47:28Z",
           "mentions_patch": false
@@ -264,7 +275,7 @@
           "id": "f4se",
           "short": "F4SE",
           "name": "Fallout 4 Script Extender (F4SE)",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v0.7.6",
           "release_published_at": "2025-11-25T22:47:28Z",
           "mentions_patch": false
@@ -283,7 +294,7 @@
           "id": "f4se",
           "short": "F4SE",
           "name": "Fallout 4 Script Extender (F4SE)",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v0.7.6",
           "release_published_at": "2025-11-25T22:47:28Z",
           "mentions_patch": false

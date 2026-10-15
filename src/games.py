@@ -6,6 +6,12 @@ Framework `source` kinds:
   thunderstore-> Thunderstore public package API (namespace/name)
   manual      -> not tracked automatically (e.g. Nexus-only); shown with a link, excluded from verdict
 Minecraft uses dedicated loader sources (see update.py).
+
+Flags:
+  agnostic=True     -> version-agnostic tool (mod manager, generic loader); shown as "Not affected by patches"
+                       and excluded from the verdict. Everything else is patch-sensitive.
+  official_page     -> maintainer page listing the supported runtime (silverlock.org) used as support evidence
+  issues_repo       -> GitHub repo searched for post-patch breakage reports (defaults to repo)
 """
 
 from status_logic import FRAMEWORKS as CP_FRAMEWORKS
@@ -43,7 +49,7 @@ GAMES = [
         },
         "frameworks": [
             {"id": "skse64", "name": "Skyrim Script Extender (SKSE64)", "short": "SKSE64", "source": "github_tags",
-             "repo": "ianpatt/skse64", "url": "https://skse.silverlock.org/"},
+             "repo": "ianpatt/skse64", "url": "https://skse.silverlock.org/", "official_page": "https://skse.silverlock.org/"},
             {"id": "engine-fixes", "name": "SSE Engine Fixes", "short": "Engine Fixes", "source": "github",
              "repo": "aers/EngineFixesSkyrim64", "url": "https://github.com/aers/EngineFixesSkyrim64"},
             {"id": "papyrus-extender", "name": "powerofthree's Papyrus Extender", "short": "PapyrusExt", "source": "github",
@@ -72,7 +78,7 @@ GAMES = [
         },
         "frameworks": [
             {"id": "f4se", "name": "Fallout 4 Script Extender (F4SE)", "short": "F4SE", "source": "github_tags",
-             "repo": "ianpatt/f4se", "url": "https://f4se.silverlock.org/"},
+             "repo": "ianpatt/f4se", "url": "https://f4se.silverlock.org/", "official_page": "https://f4se.silverlock.org/"},
             {"id": "address-library-f4", "name": "Address Library for F4SE Plugins", "short": "Address Lib", "source": "manual",
              "url": "https://www.nexusmods.com/fallout4/mods/47327",
              "note": "Distributed on Nexus Mods only; ModSafe does not scrape Nexus. Check the mod page."},
@@ -100,7 +106,8 @@ GAMES = [
             {"id": "bg3se", "name": "BG3 Script Extender", "short": "BG3SE", "source": "github",
              "repo": "Norbyte/bg3se", "url": "https://github.com/Norbyte/bg3se"},
             {"id": "bg3mm", "name": "BG3 Mod Manager", "short": "BG3MM", "source": "github",
-             "repo": "LaughingLeader/BG3ModManager", "url": "https://github.com/LaughingLeader/BG3ModManager"},
+             "repo": "LaughingLeader/BG3ModManager", "url": "https://github.com/LaughingLeader/BG3ModManager",
+             "agnostic": True, "agnostic_note": "A load-order/mod manager that edits files outside the game binary; game patches don't break it."},
         ],
         "wiki": "https://bg3.community/",
         "blurb": "Larian warns mods may break with each patch or hotfix; Script Extender mods need a matching BG3SE build.",
@@ -142,13 +149,14 @@ GAMES = [
         },
         "frameworks": [
             {"id": "bepinexpack", "name": "BepInExPack", "short": "BepInEx", "source": "thunderstore",
-             "package": "BepInEx/BepInExPack", "url": "https://thunderstore.io/c/lethal-company/p/BepInEx/BepInExPack/"},
-            {"id": "lethallib", "name": "LethalLib", "short": "LethalLib", "source": "thunderstore",
-             "package": "Evaisa/LethalLib", "url": "https://thunderstore.io/c/lethal-company/p/Evaisa/LethalLib/"},
+             "package": "BepInEx/BepInExPack", "url": "https://thunderstore.io/c/lethal-company/p/BepInEx/BepInExPack/",
+             "agnostic": True, "agnostic_note": "Generic Unity/Mono plugin loader, not built against a specific Lethal Company version."},
+            {"id": "lethallib", "name": "LethalLib", "short": "LethalLib", "source": "github",
+             "repo": "EvaisaDev/LethalLib", "url": "https://thunderstore.io/c/lethal-company/p/Evaisa/LethalLib/"},
             {"id": "lethallevelloader", "name": "LethalLevelLoader", "short": "LLL", "source": "thunderstore",
-             "package": "IAmBatby/LethalLevelLoader", "url": "https://thunderstore.io/c/lethal-company/p/IAmBatby/LethalLevelLoader/"},
+             "package": "IAmBatby/LethalLevelLoader", "issues_repo": "pacoito123/LC_LethalLevelLoader", "url": "https://thunderstore.io/c/lethal-company/p/IAmBatby/LethalLevelLoader/"},
             {"id": "morecompany", "name": "MoreCompany", "short": "MoreCompany", "source": "thunderstore",
-             "package": "notnotnotswipez/MoreCompany", "url": "https://thunderstore.io/c/lethal-company/p/notnotnotswipez/MoreCompany/"},
+             "package": "notnotnotswipez/MoreCompany", "issues_repo": "notnotnotswipez/MoreCompany", "url": "https://thunderstore.io/c/lethal-company/p/notnotnotswipez/MoreCompany/"},
         ],
         "wiki": "https://thunderstore.io/c/lethal-company/",
         "blurb": "Game version bumps (v50, v70, v80…) regularly break level, item and lobby mods built on BepInEx.",

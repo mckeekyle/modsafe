@@ -15,6 +15,7 @@ DATA_DIR = ROOT / "data" / "games"
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from games import GAMES  # noqa: E402
 DIST = ROOT / "dist"
+STATIC = ROOT / "static"
 
 SITE_URL = os.environ.get("SITE_URL", "https://modsafe.app").rstrip("/")
 SITE_NAME = "ModSafe — Mod Compatibility After Game Patches"
@@ -40,12 +41,15 @@ def fmt_date(iso: str | None) -> str:
         return iso[:10]
 
 
+STATUS_CLASSES = {
+    "Safe": "ok", "Likely safe": "likely", "Just patched, wait": "wait", "Breakage reported": "broken",
+    "Not ported yet": "broken", "Not ported": "broken", "No data": "unknown", "No post-patch release": "unknown",
+    "Not affected by patches": "agnostic", "Check manually": "manual",
+}
+
+
 def status_class(status: str) -> str:
-    if status.startswith("Updated"):
-        return "ok"
-    if status.startswith("Likely"):
-        return "likely"
-    return "unknown"
+    return STATUS_CLASSES.get(status, "unknown")
 
 
 def base_head(title: str, description: str, path: str, extra_jsonld: list | None = None) -> str:
@@ -148,7 +152,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
 .nav { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; }
 .nav a { color: var(--muted); text-decoration: none; font-weight: 600; }
 .nav a[aria-current="page"], .nav a:hover { color: var(--accent); }
-main { max-width: 960px; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+main { max-width: 1120px; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
 .hero h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); margin: 0 0 .5rem; }
 .lede { color: var(--muted); font-size: 1.05rem; max-width: 60ch; }
 .panel, .sponsor, .newsletter, .hist-card, .faq-item {
@@ -199,6 +203,44 @@ code { font-family: var(--mono); font-size: .9em; }
 .game-card p { margin: .35rem 0; }
 .crumbs { color: var(--muted); font-size: .9rem; }
 .badge.manual { background: #4a5568; }
+.badge.wait { background: #e67e22; color: #111; }
+.badge.broken { background: var(--unknown); }
+.badge.agnostic { background: #3b5b8c; }
+.badge.unknown { background: #6b7280; }
+.logo { vertical-align: middle; margin-right: .5rem; border-radius: 8px; }
+.brand a { display: inline-flex; align-items: center; }
+.home-hero { display: grid; grid-template-columns: 1.2fr 1fr; gap: 1.5rem; align-items: center; margin: .5rem 0 1.5rem;
+  padding: 1.75rem; border-radius: 16px; border: 1px solid var(--border);
+  background: linear-gradient(135deg, #0f1a2e 0%, #111a2b 60%, #1a1030 100%); }
+.home-hero h1 { font-size: clamp(1.8rem, 4.5vw, 2.8rem); line-height: 1.15; margin: .25rem 0 .75rem; }
+.home-hero-img { width: 100%; height: auto; border-radius: 12px; }
+.eyebrow { color: var(--accent); text-transform: uppercase; letter-spacing: .12em; font-size: .8rem; font-weight: 700; margin: 0; }
+.home-hero .badge { margin: .15rem 0; }
+.btn { display: inline-block; padding: .65rem 1.1rem; border-radius: 10px; background: var(--accent); color: #031018;
+  font-weight: 800; text-decoration: none; margin: .25rem .4rem .25rem 0; transition: transform .15s, box-shadow .15s; }
+.btn:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(0,240,255,.25); }
+.btn.ghost { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+.game-grid { grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 1.1rem; }
+.game-card { position: relative; padding: 0; overflow: hidden; border-top: 4px solid var(--border);
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s; }
+.game-card.v-ok { border-top-color: var(--ok); }
+.game-card.v-likely { border-top-color: var(--likely); }
+.game-card.v-wait { border-top-color: #e67e22; }
+.game-card.v-broken { border-top-color: var(--unknown); }
+.game-card:hover, .game-card:focus-within { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(0,0,0,.45); border-color: var(--accent); }
+.card-img img { display: block; width: 100%; height: auto; aspect-ratio: 460 / 215; object-fit: cover; }
+.card-body { padding: .9rem 1.1rem 1.1rem; }
+.stretched::after { content: ""; position: absolute; inset: 0; }
+.game-hero { position: relative; display: grid; grid-template-columns: minmax(0, 460px) 1fr; gap: 1.5rem; align-items: center;
+  padding: 1.5rem; border-radius: 16px; overflow: hidden; border: 1px solid var(--border); margin: .5rem 0 1rem;
+  background: linear-gradient(90deg, rgba(10,14,23,.92), rgba(10,14,23,.75)), var(--hero) center / cover; }
+.game-hero img { width: 100%; height: auto; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,.5); }
+.game-hero h1 { font-size: clamp(1.5rem, 3.5vw, 2.2rem); margin: 0 0 .5rem; }
+.note { background: rgba(255,42,109,.12); border-left: 3px solid var(--accent2); padding: .5rem .75rem; border-radius: 6px; }
+@media (max-width: 760px) {
+  .home-hero, .game-hero { grid-template-columns: 1fr; padding: 1.1rem; }
+  .home-hero-img { order: -1; }
+}
 @media (max-width: 600px) {
   .patch-meta { grid-template-columns: 1fr; }
   .patch-meta dt { margin-top: .35rem; }
@@ -253,7 +295,7 @@ def page_shell(title, description, path, active, body, extra_jsonld=None) -> str
         + f"""<body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="header">
-<div class="brand"><a href="/">ModSafe</a></div>
+<div class="brand"><a href="/"><img src="/img/logo.png" width="32" height="32" alt="" class="logo">ModSafe</a></div>
 {nav(active)}
 </header>
 <main id="main">
@@ -267,21 +309,37 @@ def page_shell(title, description, path, active, body, extra_jsonld=None) -> str
     )
 
 
+def game_img(slug: str) -> str:
+    return f"/img/{slug}.svg" if (STATIC / "img" / f"{slug}.svg").exists() else f"/img/{slug}.jpg"
+
+
 def badge(status: str, tracked: bool = True) -> str:
     if not tracked:
-        return '<span class="badge manual">Check manually</span>'
+        status = "Check manually"
     return f'<span class="badge {status_class(status)}">{esc(status)}</span>'
 
 
 def verdict_sentence(game: dict, data: dict) -> str:
     v = data["verdict"]
     p = data["game"]["latest_patch"]["label"]
-    if v.startswith("Updated"):
-        return f"All tracked {game['name']} frameworks have releases that explicitly mention {p}."
-    if v.startswith("Likely"):
-        return f"Every tracked {game['name']} framework has a release dated on/after {p}, but not all name it explicitly. Probably safe — verify the ones marked Likely OK."
-    unk = [f["short"] for f in data["frameworks"] if f.get("tracked") and f["status"].startswith("Unknown")]
-    return f"Not confirmed: {', '.join(unk)} {'has' if len(unk)==1 else 'have'} no release since {p}. Check before updating, or hold the update."
+    fws = [f for f in data["frameworks"] if f.get("tracked", True) and f.get("sensitive", True)]
+    manual = [f["short"] for f in data["frameworks"] if not f.get("tracked", True)]
+    worst = [f["short"] for f in fws if f["status"] == v]
+    tail = f" Also check {', '.join(manual)} manually (Nexus-only, not counted)." if manual else ""
+    if v == "Safe":
+        msg = f"Every patch-sensitive framework has explicit support for {p}."
+    elif v == "Likely safe":
+        msg = (f"No breakage evidence for {p}: {', '.join(worst)} {'has' if len(worst) == 1 else 'have'} no release that names the patch, "
+               "but there are post-patch releases or no breakage reports since. Probably fine; skim the notes.")
+    elif v == "Just patched, wait":
+        msg = f"{p} is under a week old and {', '.join(worst)} {'has' if len(worst) == 1 else 'have'} not updated yet. Hold the update a few days."
+    elif v == "Breakage reported":
+        msg = f"Open issues report breakage after {p} for {', '.join(worst)}. Hold the update or check the linked reports."
+    elif v == "Not ported yet":
+        msg = f"{', '.join(worst)} {'has' if len(worst) == 1 else 'have'} no build for {p} yet. Stay on your current version if you depend on them."
+    else:
+        msg = "Some data could not be fetched; check the project pages."
+    return msg + tail
 
 
 def breadcrumb_ld(items: list[tuple[str, str]]) -> dict:
@@ -297,9 +355,12 @@ def faq_ld(items: list[dict]) -> dict:
 
 
 STATUS_EXPLAINER = (
-    "Updated for latest patch: a release on/after the patch explicitly names the patch version (or, for loaders, "
-    "a stable build exists for that game version). Likely OK: a release is dated on/after the patch but does not "
-    "name it (or only beta builds exist). Unknown / check: the latest release predates the patch, or data is missing."
+    "Safe: a release explicitly supports the current patch (release notes, the maintainer's official page, or a stable "
+    "build for that game version). Likely safe: a release is dated after the patch but doesn't name it, or the patch is "
+    "over a week old with no breakage reports on the project's issue tracker. Just patched, wait: the patch is under 7 "
+    "days old and the framework hasn't updated. Breakage reported: open issues report the framework broke after the "
+    "patch. Not ported yet (Minecraft): no build exists for that version. Not affected by patches: version-agnostic "
+    "tools such as mod managers or generic loaders; they don't count toward the verdict."
 )
 
 
@@ -342,7 +403,10 @@ def framework_rows(data: dict) -> str:
 def build_game_page(game: dict, data: dict) -> str:
     p = data["game"]["latest_patch"]
     slug = game["slug"]
-    reasons = "".join(f"<li><strong>{esc(fw['short'])}:</strong> {esc(fw.get('reason', ''))}</li>" for fw in data["frameworks"])
+    def reason_li(fw):
+        reps = "".join(f'<li><a href="{esc(r["url"])}">{esc(r["title"])}</a></li>' for r in fw.get("breakage_reports") or [])
+        return f"<li><strong>{esc(fw['short'])}:</strong> {esc(fw.get('reason', ''))}" + (f"<ul>{reps}</ul>" if reps else "") + "</li>"
+    reasons = "".join(reason_li(fw) for fw in data["frameworks"])
     faq = game_faq(game, data)
     faq_html = "".join(f'<article class="faq-item"><h3>{esc(i["q"])}</h3><p>{esc(i["a"])}</p></article>' for i in faq)
     extra = "".join(f'<li><a href="{esc(u)}">{esc(n)}</a></li>' for n, u in game.get("extra_links", []))
@@ -356,9 +420,14 @@ def build_game_page(game: dict, data: dict) -> str:
                                  "contentUrl": f"{SITE_URL}/{slug}/status.json"}]}
     body = f"""
 <p class="crumbs"><a href="/">Games</a> › {esc(game['name'])}</p>
-<section class="hero">
-<h1>Is it safe to update {esc(game['name'])}? Mod framework status</h1>
+<section class="game-hero" style="--hero:url('{game_img(slug)}')">
+<img src="{game_img(slug)}" width="460" height="215" alt="{esc(game['name'])} key art" fetchpriority="high">
+<div>
+<h1>Is it safe to update {esc(game['name'])}?</h1>
+<p><span class="badge verdict-big {status_class(data['verdict'])}">{esc(data['verdict'])}</span> <span class="muted">for {esc(p['label'])}</span></p>
 <p class="lede">{esc(game['blurb'])}</p>
+{f'<p class="note">{esc(game["note"])}</p>' if game.get("note") else ''}
+</div>
 </section>
 <section class="panel" aria-labelledby="verdict-heading">
 <h2 id="verdict-heading">Verdict for {esc(p['label'])}</h2>
@@ -426,22 +495,29 @@ def build_home(games_data: list[tuple[dict, dict]]) -> str:
     cards = []
     for game, data in games_data:
         p = data["game"]["latest_patch"]
-        cards.append(f"""<article class="game-card">
-<h2><a href="/{game['slug']}/">{esc(game['name'])}</a></h2>
+        cards.append(f"""<article class="game-card v-{status_class(data['verdict'])}">
+<a class="card-img" href="/{game['slug']}/" tabindex="-1" aria-hidden="true"><img src="{game_img(game['slug'])}" width="460" height="215" loading="lazy" decoding="async" alt=""></a>
+<div class="card-body">
+<h2><a href="/{game['slug']}/" class="stretched">{esc(game['name'])}</a></h2>
 <p><span class="badge {status_class(data['verdict'])}">{esc(data['verdict'])}</span></p>
 <p class="muted">Latest patch <strong>{esc(p['label'])}</strong> · {esc(fmt_date(p.get('published_at')))}</p>
 <p class="muted">{esc(', '.join(f['short'] for f in data['frameworks']))}</p>
-<p><a href="/{game['slug']}/">Details →</a></p>
+</div>
 </article>""")
     itemlist = {"@context": "https://schema.org", "@type": "ItemList", "name": "Games tracked by ModSafe",
                 "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": g["name"], "url": f"{SITE_URL}/{g['slug']}/"}
                                     for i, (g, _) in enumerate(games_data)]}
     body = f"""
-<section class="hero">
-<h1>Is it safe to update? Mod framework status by game</h1>
-<p class="lede">When a game patch drops, script extenders and mod loaders break first. ModSafe checks public release data for each game's core frameworks and gives an honest verdict: Updated, Likely OK, or Unknown — check.</p>
+<section class="home-hero">
+<div class="home-hero-text">
+<p class="eyebrow">Patch day, minus the panic</p>
+<h1>Is it safe to update your modded game?</h1>
+<p class="lede">When a patch drops, script extenders and mod loaders break first. ModSafe watches each game's core frameworks and tells you plainly: <span class="badge ok">Safe</span> <span class="badge likely">Likely safe</span> <span class="badge wait">Just patched, wait</span> <span class="badge broken">Breakage reported</span></p>
+<p><a class="btn" href="#games">See your game ↓</a> <a class="btn ghost" href="/newsletter/">Get patch alerts</a></p>
+</div>
+<img class="home-hero-img" src="/img/brand-banner.jpg" width="1200" height="400" alt="ModSafe shield logo" fetchpriority="high">
 </section>
-<section class="game-grid" aria-label="Games">
+<section class="game-grid" id="games" aria-label="Games">
 {''.join(cards)}
 </section>
 {newsletter()}
@@ -580,6 +656,8 @@ def main() -> int:
             write(DIST / "status.json", json.dumps(legacy, indent=2) + "\n")
     write(DIST / "faq" / "index.html", build_faq())
     write(DIST / "newsletter" / "index.html", build_newsletter_page())
+    import shutil
+    shutil.copytree(STATIC, DIST, dirs_exist_ok=True)
     write(DIST / "styles.css", CSS)
     write(DIST / "og-default.svg", OG_SVG)
     write(DIST / "games.json", json.dumps(games_index(games_data), indent=2) + "\n")

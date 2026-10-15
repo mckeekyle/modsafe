@@ -19,11 +19,17 @@ A game's verdict is the weakest status among its auto-tracked frameworks.
 
 Statuses are evidence-based and deliberately cautious:
 
-| Status | Meaning |
-|--------|---------|
-| **Updated for latest patch** | A post-patch GitHub release explicitly mentions the current game patch version (in notes or release name), and the latest stable release is still on/after the patch |
-| **Likely OK** | Latest release is on/after the patch date, but notes do not name that version |
-| **Unknown / check** | Latest release predates the patch (or data is missing) — verify before updating |
+| Label | Meaning |
+|-------|---------|
+| **Safe** | A release explicitly supports the current patch (notes mention it, incl. "upcoming" releases ≤7 days before; maintainer page e.g. silverlock.org lists the runtime; or a stable build exists for the MC version) |
+| **Likely safe** | Release dated after the patch without naming it, or patch >7 days old with no open breakage issues (issues filed within 30 days of the patch whose titles mention crash/broken + update/patch/version) |
+| **Just patched, wait** | Patch <7 days old and no post-patch release |
+| **Breakage reported** | Open GitHub issues report breakage after the patch |
+| **Not ported yet** | Minecraft: no build for that version |
+| **Not affected by patches** | Version-agnostic tool (BG3 Mod Manager, BepInExPack); excluded from verdict |
+| **Check manually** | Nexus-only (Address Library, Buffout 4); excluded from verdict |
+
+A game's verdict is the worst label among its patch-sensitive, auto-tracked frameworks. Raw evidence (`base_status`, `breakage_reports`, `official`) is kept in each game's JSON.
 
 ## Quick start
 

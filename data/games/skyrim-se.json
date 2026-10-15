@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T20:04:27Z",
+  "generated_at": "2026-10-15T20:18:31Z",
   "game": {
     "slug": "skyrim-se",
     "name": "Skyrim Special Edition",
@@ -13,7 +13,7 @@
       "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1841579228665884"
     }
   },
-  "verdict": "Likely OK",
+  "verdict": "Likely safe",
   "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
   "frameworks": [
     {
@@ -24,8 +24,17 @@
       "source": "github_tags",
       "repo": "ianpatt/skse64",
       "tracked": true,
-      "status": "Likely OK",
-      "reason": "Latest release is newer than patch 1.7.99, but notes do not explicitly mention that version. (Date is the tagged commit on GitHub; builds are published on the official site.)",
+      "sensitive": true,
+      "status": "Safe",
+      "base_status": "Likely OK",
+      "reason": "Official page (https://skse.silverlock.org/) lists build 2.3.1 for runtime 1.7.104, matching the latest tag (Bethesda often ships updates to a beta branch first). Latest release is newer than patch 1.7.99, but notes do not explicitly mention that version. (Date is the tagged commit on GitHub; builds are published on the official site.)",
+      "breakage_reports": [],
+      "official": {
+        "runtime": "1.7.104",
+        "build": "2.3.1",
+        "supports_current": true,
+        "page": "https://skse.silverlock.org/"
+      },
       "release_tag": "v2.3.1",
       "release_name": "v2.3.1",
       "release_published_at": "2026-08-27T15:43:38Z",
@@ -42,8 +51,12 @@
       "source": "github",
       "repo": "aers/EngineFixesSkyrim64",
       "tracked": true,
-      "status": "Likely OK",
+      "sensitive": true,
+      "status": "Likely safe",
+      "base_status": "Likely OK",
       "reason": "Latest release is newer than patch 1.7.99, but notes do not explicitly mention that version.",
+      "breakage_reports": [],
+      "official": null,
       "release_tag": "7.0.21-beta5",
       "release_name": "",
       "release_published_at": "2026-08-23T20:18:38Z",
@@ -60,8 +73,12 @@
       "source": "github",
       "repo": "powerof3/PapyrusExtenderSSE",
       "tracked": true,
-      "status": "Likely OK",
+      "sensitive": true,
+      "status": "Likely safe",
+      "base_status": "Likely OK",
       "reason": "Latest release is newer than patch 1.7.99, but notes do not explicitly mention that version.",
+      "breakage_reports": [],
+      "official": null,
       "release_tag": "v6.5.2",
       "release_name": "v6.5.2",
       "release_published_at": "2026-09-05T12:42:36Z",
@@ -78,8 +95,12 @@
       "source": "github",
       "repo": "alandtse/CrashLoggerSSE",
       "tracked": true,
-      "status": "Updated for latest patch",
+      "sensitive": true,
+      "status": "Safe",
+      "base_status": "Updated for latest patch",
       "reason": "Latest release notes mention patch 1.7.99 and the release is on/after the patch date.",
+      "breakage_reports": [],
+      "official": null,
       "release_tag": "v1.25.0",
       "release_name": "v1.25.0",
       "release_published_at": "2026-08-21T09:13:59Z",
@@ -97,7 +118,8 @@
       "url": "https://www.nexusmods.com/skyrimspecialedition/mods/32444",
       "source": "manual",
       "tracked": false,
-      "status": "Unknown / check",
+      "sensitive": true,
+      "status": "Check manually",
       "reason": "Distributed on Nexus Mods only; ModSafe does not scrape Nexus. Check the mod page.",
       "release_tag": null,
       "release_published_at": null,
@@ -117,7 +139,7 @@
           "id": "skse64",
           "short": "SKSE64",
           "name": "Skyrim Script Extender (SKSE64)",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v2.3.1",
           "release_published_at": "2026-08-27T15:43:38Z",
           "mentions_patch": false
@@ -126,7 +148,7 @@
           "id": "engine-fixes",
           "short": "Engine Fixes",
           "name": "SSE Engine Fixes",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "7.0.21-beta2",
           "release_published_at": "2026-08-21T21:00:08Z",
           "mentions_patch": false
@@ -135,7 +157,7 @@
           "id": "papyrus-extender",
           "short": "PapyrusExt",
           "name": "powerofthree's Papyrus Extender",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v6.5.0",
           "release_published_at": "2026-08-25T18:16:25Z",
           "mentions_patch": false
@@ -144,7 +166,7 @@
           "id": "crash-logger",
           "short": "CrashLogger",
           "name": "Crash Logger SSE AE VR",
-          "status": "Updated for latest patch",
+          "status": "Safe",
           "release_tag": "v1.25.0",
           "release_published_at": "2026-08-21T09:13:59Z",
           "mentions_patch": true
@@ -163,7 +185,7 @@
           "id": "skse64",
           "short": "SKSE64",
           "name": "Skyrim Script Extender (SKSE64)",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v2.2.7",
           "release_published_at": "2026-08-20T04:57:20Z",
           "mentions_patch": false
@@ -172,7 +194,7 @@
           "id": "engine-fixes",
           "short": "Engine Fixes",
           "name": "SSE Engine Fixes",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "7.0-beta",
           "release_published_at": "2025-08-19T09:37:13Z",
           "mentions_patch": false
@@ -181,7 +203,7 @@
           "id": "papyrus-extender",
           "short": "PapyrusExt",
           "name": "powerofthree's Papyrus Extender",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v5.3.0",
           "release_published_at": "2022-10-14T21:37:37Z",
           "mentions_patch": false
@@ -190,7 +212,7 @@
           "id": "crash-logger",
           "short": "CrashLogger",
           "name": "Crash Logger SSE AE VR",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v1.5.0",
           "release_published_at": "2022-12-01T07:55:09Z",
           "mentions_patch": false
@@ -209,7 +231,7 @@
           "id": "skse64",
           "short": "SKSE64",
           "name": "Skyrim Script Extender (SKSE64)",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v2.2.7",
           "release_published_at": "2026-08-20T04:57:20Z",
           "mentions_patch": false
@@ -218,7 +240,7 @@
           "id": "engine-fixes",
           "short": "Engine Fixes",
           "name": "SSE Engine Fixes",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "7.0-beta",
           "release_published_at": "2025-08-19T09:37:13Z",
           "mentions_patch": false
@@ -227,7 +249,7 @@
           "id": "papyrus-extender",
           "short": "PapyrusExt",
           "name": "powerofthree's Papyrus Extender",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v5.3.0",
           "release_published_at": "2022-10-14T21:37:37Z",
           "mentions_patch": false
@@ -236,7 +258,7 @@
           "id": "crash-logger",
           "short": "CrashLogger",
           "name": "Crash Logger SSE AE VR",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v1.5.0",
           "release_published_at": "2022-12-01T07:55:09Z",
           "mentions_patch": false
@@ -255,7 +277,7 @@
           "id": "skse64",
           "short": "SKSE64",
           "name": "Skyrim Script Extender (SKSE64)",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v2.2.7",
           "release_published_at": "2026-08-20T04:57:20Z",
           "mentions_patch": false
@@ -264,7 +286,7 @@
           "id": "engine-fixes",
           "short": "Engine Fixes",
           "name": "SSE Engine Fixes",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "6.0.2",
           "release_published_at": "2022-01-09T06:18:49Z",
           "mentions_patch": false
@@ -273,7 +295,7 @@
           "id": "papyrus-extender",
           "short": "PapyrusExt",
           "name": "powerofthree's Papyrus Extender",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v5.3.0",
           "release_published_at": "2022-10-14T21:37:37Z",
           "mentions_patch": false
@@ -282,7 +304,7 @@
           "id": "crash-logger",
           "short": "CrashLogger",
           "name": "Crash Logger SSE AE VR",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v1.5.0",
           "release_published_at": "2022-12-01T07:55:09Z",
           "mentions_patch": false
@@ -301,7 +323,7 @@
           "id": "skse64",
           "short": "SKSE64",
           "name": "Skyrim Script Extender (SKSE64)",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v2.2.7",
           "release_published_at": "2026-08-20T04:57:20Z",
           "mentions_patch": false
@@ -310,7 +332,7 @@
           "id": "engine-fixes",
           "short": "Engine Fixes",
           "name": "SSE Engine Fixes",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "6.0.2",
           "release_published_at": "2022-01-09T06:18:49Z",
           "mentions_patch": false
@@ -319,7 +341,7 @@
           "id": "papyrus-extender",
           "short": "PapyrusExt",
           "name": "powerofthree's Papyrus Extender",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v5.3.0",
           "release_published_at": "2022-10-14T21:37:37Z",
           "mentions_patch": false
@@ -328,7 +350,7 @@
           "id": "crash-logger",
           "short": "CrashLogger",
           "name": "Crash Logger SSE AE VR",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v1.5.0",
           "release_published_at": "2022-12-01T07:55:09Z",
           "mentions_patch": false
@@ -347,7 +369,7 @@
           "id": "skse64",
           "short": "SKSE64",
           "name": "Skyrim Script Extender (SKSE64)",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v2.2.7",
           "release_published_at": "2026-08-20T04:57:20Z",
           "mentions_patch": false
@@ -356,7 +378,7 @@
           "id": "engine-fixes",
           "short": "Engine Fixes",
           "name": "SSE Engine Fixes",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "6.0.2",
           "release_published_at": "2022-01-09T06:18:49Z",
           "mentions_patch": false
@@ -365,7 +387,7 @@
           "id": "papyrus-extender",
           "short": "PapyrusExt",
           "name": "powerofthree's Papyrus Extender",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v5.3.0",
           "release_published_at": "2022-10-14T21:37:37Z",
           "mentions_patch": false
@@ -374,7 +396,7 @@
           "id": "crash-logger",
           "short": "CrashLogger",
           "name": "Crash Logger SSE AE VR",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v1.5.0",
           "release_published_at": "2022-12-01T07:55:09Z",
           "mentions_patch": false
@@ -393,7 +415,7 @@
           "id": "skse64",
           "short": "SKSE64",
           "name": "Skyrim Script Extender (SKSE64)",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v2.2.7",
           "release_published_at": "2026-08-20T04:57:20Z",
           "mentions_patch": false
@@ -402,7 +424,7 @@
           "id": "engine-fixes",
           "short": "Engine Fixes",
           "name": "SSE Engine Fixes",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "6.0.2",
           "release_published_at": "2022-01-09T06:18:49Z",
           "mentions_patch": false
@@ -411,7 +433,7 @@
           "id": "papyrus-extender",
           "short": "PapyrusExt",
           "name": "powerofthree's Papyrus Extender",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v5.3.0",
           "release_published_at": "2022-10-14T21:37:37Z",
           "mentions_patch": false
@@ -420,7 +442,7 @@
           "id": "crash-logger",
           "short": "CrashLogger",
           "name": "Crash Logger SSE AE VR",
-          "status": "Updated for latest patch",
+          "status": "Safe",
           "release_tag": "v1.12.1",
           "release_published_at": "2023-12-22T10:36:55Z",
           "mentions_patch": true
@@ -439,7 +461,7 @@
           "id": "skse64",
           "short": "SKSE64",
           "name": "Skyrim Script Extender (SKSE64)",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v2.2.7",
           "release_published_at": "2026-08-20T04:57:20Z",
           "mentions_patch": false
@@ -448,7 +470,7 @@
           "id": "engine-fixes",
           "short": "Engine Fixes",
           "name": "SSE Engine Fixes",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "5.6.1",
           "release_published_at": "2021-07-14T19:09:15Z",
           "mentions_patch": false
@@ -457,7 +479,7 @@
           "id": "papyrus-extender",
           "short": "PapyrusExt",
           "name": "powerofthree's Papyrus Extender",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v5.3.0",
           "release_published_at": "2022-10-14T21:37:37Z",
           "mentions_patch": false
@@ -466,7 +488,7 @@
           "id": "crash-logger",
           "short": "CrashLogger",
           "name": "Crash Logger SSE AE VR",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v1.5.0",
           "release_published_at": "2022-12-01T07:55:09Z",
           "mentions_patch": false
@@ -485,7 +507,7 @@
           "id": "skse64",
           "short": "SKSE64",
           "name": "Skyrim Script Extender (SKSE64)",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v2.2.7",
           "release_published_at": "2026-08-20T04:57:20Z",
           "mentions_patch": false
@@ -494,7 +516,7 @@
           "id": "engine-fixes",
           "short": "Engine Fixes",
           "name": "SSE Engine Fixes",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "5.6.1",
           "release_published_at": "2021-07-14T19:09:15Z",
           "mentions_patch": false
@@ -503,7 +525,7 @@
           "id": "papyrus-extender",
           "short": "PapyrusExt",
           "name": "powerofthree's Papyrus Extender",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v5.3.0",
           "release_published_at": "2022-10-14T21:37:37Z",
           "mentions_patch": false
@@ -512,7 +534,7 @@
           "id": "crash-logger",
           "short": "CrashLogger",
           "name": "Crash Logger SSE AE VR",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v1.5.0",
           "release_published_at": "2022-12-01T07:55:09Z",
           "mentions_patch": false
@@ -531,7 +553,7 @@
           "id": "skse64",
           "short": "SKSE64",
           "name": "Skyrim Script Extender (SKSE64)",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v2.2.7",
           "release_published_at": "2026-08-20T04:57:20Z",
           "mentions_patch": false
@@ -540,7 +562,7 @@
           "id": "engine-fixes",
           "short": "Engine Fixes",
           "name": "SSE Engine Fixes",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "5.6.1",
           "release_published_at": "2021-07-14T19:09:15Z",
           "mentions_patch": false
@@ -549,7 +571,7 @@
           "id": "papyrus-extender",
           "short": "PapyrusExt",
           "name": "powerofthree's Papyrus Extender",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v5.3.0",
           "release_published_at": "2022-10-14T21:37:37Z",
           "mentions_patch": false
@@ -558,7 +580,7 @@
           "id": "crash-logger",
           "short": "CrashLogger",
           "name": "Crash Logger SSE AE VR",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v1.5.0",
           "release_published_at": "2022-12-01T07:55:09Z",
           "mentions_patch": false
@@ -577,7 +599,7 @@
           "id": "skse64",
           "short": "SKSE64",
           "name": "Skyrim Script Extender (SKSE64)",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v2.2.7",
           "release_published_at": "2026-08-20T04:57:20Z",
           "mentions_patch": false
@@ -586,7 +608,7 @@
           "id": "engine-fixes",
           "short": "Engine Fixes",
           "name": "SSE Engine Fixes",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "5.6.1",
           "release_published_at": "2021-07-14T19:09:15Z",
           "mentions_patch": false
@@ -595,7 +617,7 @@
           "id": "papyrus-extender",
           "short": "PapyrusExt",
           "name": "powerofthree's Papyrus Extender",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v5.3.0",
           "release_published_at": "2022-10-14T21:37:37Z",
           "mentions_patch": false
@@ -604,7 +626,7 @@
           "id": "crash-logger",
           "short": "CrashLogger",
           "name": "Crash Logger SSE AE VR",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v1.5.0",
           "release_published_at": "2022-12-01T07:55:09Z",
           "mentions_patch": false
@@ -623,7 +645,7 @@
           "id": "skse64",
           "short": "SKSE64",
           "name": "Skyrim Script Extender (SKSE64)",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v2.2.7",
           "release_published_at": "2026-08-20T04:57:20Z",
           "mentions_patch": false
@@ -632,7 +654,7 @@
           "id": "engine-fixes",
           "short": "Engine Fixes",
           "name": "SSE Engine Fixes",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "5.6.1",
           "release_published_at": "2021-07-14T19:09:15Z",
           "mentions_patch": false
@@ -641,7 +663,7 @@
           "id": "papyrus-extender",
           "short": "PapyrusExt",
           "name": "powerofthree's Papyrus Extender",
-          "status": "Updated for latest patch",
+          "status": "Safe",
           "release_tag": "v6.1.1",
           "release_published_at": "2025-07-29T06:25:25Z",
           "mentions_patch": true
@@ -650,7 +672,7 @@
           "id": "crash-logger",
           "short": "CrashLogger",
           "name": "Crash Logger SSE AE VR",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "v1.5.0",
           "release_published_at": "2022-12-01T07:55:09Z",
           "mentions_patch": false

@@ -528,3 +528,112 @@ def loader_support_status(*, has_stable: bool, has_any: bool, what: str, mc_vers
             "reason": f"{what} has only beta/latest (not recommended/stable) builds for Minecraft {mc_version}.",
         }
     return {"status": STATUS_UNKNOWN, "reason": f"No {what} build found for Minecraft {mc_version} yet."}
+
+
+# ---------------------------------------------------------------------------
+# User-facing verdicts (v3): friendlier labels, patch-sensitivity, time signal
+# ---------------------------------------------------------------------------
+
+V_SAFE = "Safe"
+V_LIKELY = "Likely safe"
+V_WAIT = "Just patched, wait"
+V_BROKEN = "Breakage reported"
+V_NOT_PORTED = "Not ported yet"
+V_NODATA = "No data"
+V_AGNOSTIC = "Not affected by patches"
+V_MANUAL = "Check manually"
+
+# Lower = worse. Only these participate in the game verdict.
+VERDICT_RANK = {V_BROKEN: 0, V_NOT_PORTED: 1, V_WAIT: 2, V_NODATA: 3, V_LIKELY: 4, V_SAFE: 5}
+
+FRESH_PATCH_DAYS = 7
+
+BREAK_WORD_RE = re.compile(
+    r"(?i)\b(crash\w*|broken|breaks?|not working|doesn'?t work|does not work|won'?t (?:load|launch|start)|"
+    r"fails? to (?:load|launch|start)|incompatib\w*|not compatible|stopped working)\b"
+)
+PATCH_WORD_RE = re.compile(r"(?i)\b(patch|update[ds]?|hotfix|new version|game version|latest version|runtime)\b")
+
+
+def is_breakage_title(title: str, patch_version: Optional[str] = None) -> bool:
+    """Issue title reports breakage *tied to a game update* (both signals required)."""
+    if not title or not BREAK_WORD_RE.search(title):
+        return False
+    if PATCH_WORD_RE.search(title):
+        return True
+    if patch_version and re.search(rf"(?<![\w.]){re.escape(patch_version)}(?![\w])", title, re.I):
+        return True
+    return False
+
+
+def patch_age_days(patch_published_at: str, now: Optional[datetime] = None) -> float:
+    dt = parse_iso(patch_published_at)
+    if not dt:
+        return 0.0
+    now = now or datetime.now(timezone.utc)
+    return (now - dt).total_seconds() / 86400
+
+
+def user_verdict(
+    *,
+    base_status: Optional[str],
+    age_days: float,
+    sensitive: bool = True,
+    breakage: Optional[list] = None,
+    official_support: bool = False,
+    has_error: bool = False,
+    absence_is_definitive: bool = False,
+) -> str:
+    """
+    Map evidence to a user-facing label.
+      base_status: STATUS_UPDATED / STATUS_LIKELY / STATUS_UNKNOWN from release evidence
+      breakage: open issues reporting update breakage filed since the patch (after latest release)
+      official_support: maintainer's official page lists support for the current runtime
+      absence_is_definitive: (Minecraft) no build for this version means it's genuinely unsupported
+    """
+    if not sensitive:
+        return V_AGNOSTIC
+    if has_error or base_status is None:
+        return V_NODATA
+    if base_status == STATUS_UPDATED or official_support:
+        return V_SAFE
+    if breakage:
+        return V_BROKEN
+    if base_status == STATUS_LIKELY:
+        return V_LIKELY
+    # No release since the patch.
+    if age_days < FRESH_PATCH_DAYS:
+        return V_WAIT
+    if absence_is_definitive:
+        return V_NOT_PORTED
+    return V_LIKELY
+
+
+def game_verdict(labels: list[str]) -> str:
+    ranked = [l for l in labels if l in VERDICT_RANK]
+    if not ranked:
+        return V_NODATA
+    return min(ranked, key=lambda l: VERDICT_RANK[l])
+
+
+def history_label(base_status: str) -> str:
+    return {STATUS_UPDATED: V_SAFE, STATUS_LIKELY: V_LIKELY}.get(base_status, "No post-patch release")
+
+
+SILVERLOCK_RE = [
+    # F4SE: "Fallout 4 runtime 1.11.240 - build: 0.7.9"
+    re.compile(r"runtime\s+(\d+(?:\.\d+)+)\s*-\s*build:?\s*(\d+(?:\.\d+)+)", re.I),
+    # SKSE: "build 2.3.1 (game version 1.7.104)"
+    re.compile(r"build\s+(\d+(?:\.\d+)+)\s*\(game version\s+(\d+(?:\.\d+)+)\)", re.I),
+]
+
+
+def parse_silverlock(text: str) -> Optional[dict[str, str]]:
+    """First (current) runtime/build pair on an ianpatt silverlock.org page."""
+    best = None
+    for i, rx in enumerate(SILVERLOCK_RE):
+        m = rx.search(text or "")
+        if m and (best is None or m.start() < best[0]):
+            runtime, build = (m.group(1), m.group(2)) if i == 0 else (m.group(2), m.group(1))
+            best = (m.start(), {"runtime": runtime, "build": build})
+    return best[1] if best else None

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T20:04:31Z",
+  "generated_at": "2026-10-15T20:18:38Z",
   "game": {
     "slug": "stardew-valley",
     "name": "Stardew Valley",
@@ -13,7 +13,7 @@
       "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1786573930663336"
     }
   },
-  "verdict": "Likely OK",
+  "verdict": "Safe",
   "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
   "frameworks": [
     {
@@ -24,15 +24,21 @@
       "source": "github",
       "repo": "Pathoschild/SMAPI",
       "tracked": true,
-      "status": "Likely OK",
-      "reason": "Latest release is newer than patch 1.6.15, but notes do not explicitly mention that version.",
+      "sensitive": true,
+      "status": "Safe",
+      "base_status": "Updated for latest patch",
+      "reason": "Latest release is on/after patch 1.6.15; an earlier post-patch release (4.1.10) explicitly mentioned that version.",
+      "breakage_reports": [],
+      "official": null,
       "release_tag": "4.5.2",
       "release_name": "4.5.2",
       "release_published_at": "2026-03-22T23:55:42Z",
       "release_url": "https://github.com/Pathoschild/SMAPI/releases/tag/4.5.2",
-      "mentions_patch": false,
+      "mentions_patch": true,
       "newer_than_patch": true,
-      "mention_releases": []
+      "mention_releases": [
+        "4.1.10"
+      ]
     }
   ],
   "history": [
@@ -48,7 +54,7 @@
           "id": "smapi",
           "short": "SMAPI",
           "name": "SMAPI (Stardew Modding API)",
-          "status": "Updated for latest patch",
+          "status": "Safe",
           "release_tag": "4.1.10",
           "release_published_at": "2024-12-19T15:49:49Z",
           "mentions_patch": true
@@ -67,7 +73,7 @@
           "id": "smapi",
           "short": "SMAPI",
           "name": "SMAPI (Stardew Modding API)",
-          "status": "Updated for latest patch",
+          "status": "Safe",
           "release_tag": "4.5.2",
           "release_published_at": "2026-03-22T23:55:42Z",
           "mentions_patch": true
@@ -86,7 +92,7 @@
           "id": "smapi",
           "short": "SMAPI",
           "name": "SMAPI (Stardew Modding API)",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "4.1.7",
           "release_published_at": "2024-11-12T17:12:16Z",
           "mentions_patch": false
@@ -105,7 +111,7 @@
           "id": "smapi",
           "short": "SMAPI",
           "name": "SMAPI (Stardew Modding API)",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "4.1.6",
           "release_published_at": "2024-11-08T04:27:23Z",
           "mentions_patch": false
@@ -124,7 +130,7 @@
           "id": "smapi",
           "short": "SMAPI",
           "name": "SMAPI (Stardew Modding API)",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "4.1.5",
           "release_published_at": "2024-11-07T06:25:58Z",
           "mentions_patch": false
@@ -143,7 +149,7 @@
           "id": "smapi",
           "short": "SMAPI",
           "name": "SMAPI (Stardew Modding API)",
-          "status": "Updated for latest patch",
+          "status": "Safe",
           "release_tag": "4.1.6",
           "release_published_at": "2024-11-08T04:27:23Z",
           "mentions_patch": true
@@ -162,7 +168,7 @@
           "id": "smapi",
           "short": "SMAPI",
           "name": "SMAPI (Stardew Modding API)",
-          "status": "Updated for latest patch",
+          "status": "Safe",
           "release_tag": "4.1.5",
           "release_published_at": "2024-11-07T06:25:58Z",
           "mentions_patch": true
@@ -181,7 +187,7 @@
           "id": "smapi",
           "short": "SMAPI",
           "name": "SMAPI (Stardew Modding API)",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "4.0.8",
           "release_published_at": "2024-04-26T21:50:30Z",
           "mentions_patch": false
@@ -200,7 +206,7 @@
           "id": "smapi",
           "short": "SMAPI",
           "name": "SMAPI (Stardew Modding API)",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "4.0.8",
           "release_published_at": "2024-04-26T21:50:30Z",
           "mentions_patch": false
@@ -219,7 +225,7 @@
           "id": "smapi",
           "short": "SMAPI",
           "name": "SMAPI (Stardew Modding API)",
-          "status": "Updated for latest patch",
+          "status": "Safe",
           "release_tag": "4.0.8",
           "release_published_at": "2024-04-26T21:50:30Z",
           "mentions_patch": true
@@ -238,7 +244,7 @@
           "id": "smapi",
           "short": "SMAPI",
           "name": "SMAPI (Stardew Modding API)",
-          "status": "Updated for latest patch",
+          "status": "Safe",
           "release_tag": "4.0.3",
           "release_published_at": "2024-03-27T23:48:35Z",
           "mentions_patch": true
@@ -257,7 +263,7 @@
           "id": "smapi",
           "short": "SMAPI",
           "name": "SMAPI (Stardew Modding API)",
-          "status": "Likely OK",
+          "status": "Likely safe",
           "release_tag": "4.0.1",
           "release_published_at": "2024-03-24T16:12:20Z",
           "mentions_patch": false

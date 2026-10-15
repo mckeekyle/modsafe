@@ -26,7 +26,16 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from games import GAMES  # noqa: E402
 from status_logic import (  # noqa: E402
     STATUS_UNKNOWN,
+    STATUS_UPDATED,
+    V_MANUAL,
+    V_NODATA,
     determine_with_lineage,
+    game_verdict,
+    history_label,
+    is_breakage_title,
+    parse_silverlock,
+    patch_age_days,
+    user_verdict,
     list_patches_generic,
     loader_support_status,
     make_mention_fn,
@@ -129,10 +138,71 @@ def releases_thunderstore(fw: dict) -> list[dict]:
 SOURCES = {"github": releases_github, "github_tags": releases_github_tags, "thunderstore": releases_thunderstore}
 
 
+def http_get_text(url: str, timeout: int = 30) -> str:
+    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return r.read().decode("utf-8", "replace")
+
+
+def official_support(fw: dict, rel: dict, patch_dt) -> dict | None:
+    """silverlock.org lists the current runtime/build. Counts as support when the listed build is the
+    latest tag and that tag isn't older than the patch minus a 3-day beta-branch window."""
+    if not fw.get("official_page"):
+        return None
+    try:
+        import html as _h
+        import re as _re
+        text = _h.unescape(_re.sub(r"<[^>]+>", " ", http_get_text(fw["official_page"])))
+    except Exception as e:  # noqa: BLE001
+        print(f"  official page failed for {fw['id']}: {e}", file=sys.stderr)
+        return None
+    info = parse_silverlock(text)
+    if not info:
+        return None
+    tag = (rel.get("tag_name") or "").lstrip("v")
+    rdt = parse_iso(rel.get("published_at"))
+    from datetime import timedelta
+    ok = info["build"] == tag and rdt is not None and patch_dt is not None and rdt >= patch_dt - timedelta(days=3)
+    return {**info, "supports_current": ok, "page": fw["official_page"]}
+
+
+_last_search = [0.0]
+
+
+BREAKAGE_WINDOW_DAYS = 30
+from datetime import timedelta as _td  # noqa: E402
+PRE_PATCH_WINDOW = _td(days=7)
+
+
+def breakage_reports(repo: str, since_iso: str, patch_version: str | None, patch_dt=None) -> list[dict]:
+    """Open GitHub issues filed since `since_iso` (and within BREAKAGE_WINDOW_DAYS of the patch, when
+    patch-caused breakage actually surfaces) whose titles report update-related breakage."""
+    wait = 6.5 - (time.time() - _last_search[0])  # search API: 10 req/min unauthenticated
+    if wait > 0:
+        time.sleep(wait)
+    _last_search[0] = time.time()
+    q = urllib.parse.quote(f"repo:{repo} is:issue is:open created:>={since_iso[:10]}")
+    try:
+        res = http_get_json(f"https://api.github.com/search/issues?q={q}&per_page=50", gh_headers())
+    except Exception as e:  # noqa: BLE001
+        print(f"  issue search failed for {repo}: {e}", file=sys.stderr)
+        return []
+    from datetime import timedelta
+    out = []
+    for i in res.get("items", []):
+        if not is_breakage_title(i["title"], patch_version):
+            continue
+        cdt = parse_iso(i["created_at"])
+        if patch_dt and cdt and cdt > patch_dt + timedelta(days=BREAKAGE_WINDOW_DAYS):
+            continue
+        out.append({"title": i["title"], "url": i["html_url"], "created_at": i["created_at"]})
+    return out
+
+
 def manual_entry(fw: dict) -> dict:
     return {
         "id": fw["id"], "name": fw["name"], "short": fw["short"], "url": fw["url"],
-        "source": "manual", "tracked": False, "status": STATUS_UNKNOWN,
+        "source": "manual", "tracked": False, "sensitive": True, "status": V_MANUAL,
         "reason": fw.get("note", "Not tracked automatically — check the project page."),
         "release_tag": None, "release_published_at": None, "release_url": fw["url"],
     }
@@ -154,25 +224,27 @@ def build_steam_game(game: dict) -> dict:
             fws.append(manual_entry(fw))
             continue
         base = {"id": fw["id"], "name": fw["name"], "short": fw["short"], "url": fw["url"],
-                "source": fw["source"], "repo": fw.get("repo") or fw.get("package"), "tracked": True}
+                "source": fw["source"], "repo": fw.get("repo") or fw.get("package"), "tracked": True,
+                "sensitive": not fw.get("agnostic")}
         try:
             rels = SOURCES[fw["source"]](fw)
             time.sleep(0.5)
         except Exception as e:  # noqa: BLE001
-            fws.append({**base, "status": STATUS_UNKNOWN, "reason": f"Fetch failed: {e}", "release_tag": None,
+            fws.append({**base, "status": V_NODATA, "base_status": None, "reason": f"Fetch failed: {e}", "release_tag": None,
                         "release_published_at": None, "release_url": fw["url"], "error": str(e)})
             continue
         rels_by[fw["id"]] = rels
         rel = pick_latest_stable_release(rels)
         if not rel:
-            fws.append({**base, "status": STATUS_UNKNOWN, "reason": "No releases found.", "release_tag": None,
+            fws.append({**base, "status": V_NODATA, "base_status": None, "reason": "No releases found.", "release_tag": None,
                         "release_published_at": None, "release_url": fw["url"]})
             continue
         lineage = []
         for r in rels:
             rdt = parse_iso(r.get("published_at"))
             notes = f"{r.get('tag_name') or ''}\n{r.get('name') or ''}\n{r.get('body') or ''}"
-            if rdt and patch_dt and rdt >= patch_dt and mfn(notes) and r.get("tag_name") not in lineage:
+            # Authors often ship "updated for the upcoming X" a few days before the announcement.
+            if rdt and patch_dt and rdt >= patch_dt - PRE_PATCH_WINDOW and mfn(notes) and r.get("tag_name") not in lineage:
                 lineage.append(r.get("tag_name"))
         v = determine_with_lineage(
             release_published_at=rel.get("published_at"),
@@ -184,11 +256,32 @@ def build_steam_game(game: dict) -> dict:
             mention_fn=mfn,
         )
         reason = v["reason"]
+        age = patch_age_days(latest["published_at"])
+        sensitive = not fw.get("agnostic")
+        official = official_support(fw, rel, patch_dt) if sensitive and v["status"] != STATUS_UPDATED else None
+        reports: list[dict] = []
+        issues_repo = fw.get("issues_repo") or (fw.get("repo") if fw["source"] != "thunderstore" else None)
+        if sensitive and v["status"] != STATUS_UPDATED and not (official and official["supports_current"]) and issues_repo:
+            rdt = parse_iso(rel.get("published_at"))
+            since = max([d for d in (patch_dt, rdt) if d]).isoformat()
+            reports = breakage_reports(issues_repo, since, latest.get("version"), patch_dt)
+        label = user_verdict(base_status=v["status"], age_days=age, sensitive=sensitive, breakage=reports,
+                             official_support=bool(official and official["supports_current"]))
+        if not sensitive:
+            reason = fw.get("agnostic_note", "Version-agnostic tool.") + " Latest: " + reason
+        elif official and official["supports_current"]:
+            reason = (f"Official page ({official['page']}) lists build {official['build']} for runtime "
+                      f"{official['runtime']}, matching the latest tag (Bethesda often ships updates to a beta branch first). ") + reason
+        elif reports:
+            reason += f" {len(reports)} open issue(s) report breakage since the patch/latest release."
+        elif v["status"] != STATUS_UPDATED and label == "Likely safe" and v["status"] == STATUS_UNKNOWN:
+            reason += f" No open breakage reports {int(age)} days after the patch." if issues_repo else f" Patch is {int(age)} days old; no breakage signal available."
         if fw["source"] == "github_tags":
             reason += " (Date is the tagged commit on GitHub; builds are published on the official site.)"
         if rel.get("deprecated"):
             reason += " (Package is marked deprecated on Thunderstore.)"
-        fws.append({**base, "status": v["status"], "reason": reason, "release_tag": rel.get("tag_name"),
+        fws.append({**base, "status": label, "base_status": v["status"], "reason": reason,
+                    "breakage_reports": reports, "official": official, "release_tag": rel.get("tag_name"),
                     "release_name": rel.get("name"), "release_published_at": rel.get("published_at"),
                     "release_url": rel.get("html_url") or fw["url"], "mentions_patch": v["mentions_patch"],
                     "newer_than_patch": v["newer_than_patch"], "mention_releases": lineage})
@@ -202,6 +295,7 @@ def build_steam_game(game: dict) -> dict:
                 continue
             snap = status_for_patch_history(releases=rels_by[fw["id"]], patch_version=p["label"],
                                             patch_published_at=p["published_at"], mention_fn=pm)
+            snap["status"] = history_label(snap["status"]) if not fw.get("agnostic") else "Not affected by patches"
             row.append({"id": fw["id"], "short": fw["short"], "name": fw["name"], **snap})
         history.append({**p, "frameworks": row})
 
@@ -254,16 +348,23 @@ def build_minecraft(game: dict) -> dict:
                 "url": f"https://www.minecraft.net/en-us/article/minecraft-java-edition-{v['id'].replace('.', '-')}"}
 
     latest = patch_of(releases[0])
+    age = patch_age_days(latest["published_at"])
     fws = []
     for fw in game["frameworks"]:
         ev = evaluate(fw, latest["version"])
+        ev["base_status"] = ev["status"]
+        ev["status"] = user_verdict(base_status=ev["status"], age_days=age, absence_is_definitive=True)
         fws.append({"id": fw["id"], "name": fw["name"], "short": fw["short"], "url": fw["url"], "source": fw["source"],
-                    "tracked": True, "release_url": fw["url"], **ev})
+                    "tracked": True, "sensitive": True, "release_url": fw["url"], **ev})
     history = []
     for v in releases[:8]:
         p = patch_of(v)
-        history.append({**p, "frameworks": [{"id": fw["id"], "short": fw["short"], "name": fw["name"],
-                                             **evaluate(fw, p["version"])} for fw in game["frameworks"]]})
+        row = []
+        for fw in game["frameworks"]:
+            ev = evaluate(fw, p["version"])
+            ev["status"] = {"Updated for latest patch": "Safe", "Likely OK": "Likely safe"}.get(ev["status"], "Not ported")
+            row.append({"id": fw["id"], "short": fw["short"], "name": fw["name"], **ev})
+        history.append({**p, "frameworks": row})
     return {"latest_patch": latest, "frameworks": fws, "history": history,
             "latest_snapshot": man["latest"].get("snapshot"),
             "sources": {"mojang_manifest": MC_MANIFEST, "fabric_meta": FABRIC_GAME, "forge_promotions": FORGE_PROMOS,
@@ -276,12 +377,12 @@ DISCLAIMER = ("Statuses are inferred from public release data (Steam news, GitHu
 
 def build_game(game: dict) -> dict:
     body = build_minecraft(game) if game.get("kind") == "minecraft" else build_steam_game(game)
-    tracked = [f["status"] for f in body["frameworks"] if f.get("tracked")]
+    tracked = [f["status"] for f in body["frameworks"] if f.get("tracked") and f.get("sensitive", True)]
     return {
         "generated_at": now_iso(),
         "game": {"slug": game["slug"], "name": game["name"], "steam_appid": game.get("steam_appid"),
                  "latest_patch": body.pop("latest_patch")},
-        "verdict": overall_verdict(tracked),
+        "verdict": game_verdict(tracked),
         "disclaimer": DISCLAIMER,
         **body,
     }
