@@ -357,7 +357,8 @@ section { margin: 0 0 1.75rem; }
   .home-hero, .game-hero { border-radius: 16px; }
   .vbadge { font-size: 1.1rem; }
   .micro { display: block; margin: .5rem 0 0; }
-  .stats { gap: 1rem; }
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: .75rem; font-size: .8rem; }
+  .stats strong { font-size: 1.35rem; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
 /* ===== spacing system & rhythm (v3 QA) ===== */
@@ -787,7 +788,7 @@ def game_cards(games_data, compact: bool = False) -> str:
 <div class="card-art"><img src="{game_img(game['slug'])}" width="616" height="353" {'loading="lazy" ' if i > 2 else ''}decoding="async" alt="{esc(game['name'])} cover art">{badge(data['verdict'])}</div>
 <div class="card-body">
 <h3><a href="/{game['slug']}/" class="stretched">{esc(game['name'])}</a></h3>
-<p class="card-meta"><span>Patch <strong>{esc(p['label'])}</strong></span><span>{esc(fmt_date(p.get('published_at')))}</span></p>
+<p class="card-meta"><span>{patch_label_html(p['label'])}</span><span>{esc(fmt_date(p.get('published_at')))}</span></p>
 <p class="updated">Checked <time class="ago" datetime="{esc(data.get('generated_at', ''))}">{esc(fmt_date(data.get('generated_at')))}</time></p>
 {f'<div class="chips">{chips}</div>' if chips else ''}
 <p class="view">View status →</p>
@@ -847,6 +848,14 @@ def around_pc(items: list[dict]) -> list[dict]:
     if len(picked) < AROUND_LIMIT:
         picked += [i for i in rest if score(i) == 0][: AROUND_LIMIT - len(picked)]
     return sorted(picked, key=lambda i: i["published_at"], reverse=True)[:AROUND_LIMIT]
+
+
+def patch_label_html(label: str) -> str:
+    """'Patch 2.31' / 'Update 2026-08-18' read fine alone; bare versions like '1.7.99' get a 'Patch' prefix."""
+    import re as _re
+    if _re.match(r"(?i)(patch|update|hotfix|title update|tu\b|v?er(sion)?\b|release|build|snapshot|minecraft)", label.strip()):
+        return f"<strong>{esc(label)}</strong>"
+    return f"Patch <strong>{esc(label)}</strong>"
 
 
 def news_list(items: list[dict], limit: int | None = None) -> str:
