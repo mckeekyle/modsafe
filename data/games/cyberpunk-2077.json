@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T06:30:25Z",
+  "generated_at": "2026-10-16T12:31:50Z",
   "game": {
     "slug": "cyberpunk-2077",
     "name": "Cyberpunk 2077",
@@ -75,7 +75,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch Patch 2.31; compatibility is unverified \u2014 check the project page. No open breakage reports 399 days after the patch.",
+      "reason": "Latest release predates patch Patch 2.31; compatibility is unverified \u2014 check the project page. No open breakage reports 400 days after the patch.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v0.5.31",
