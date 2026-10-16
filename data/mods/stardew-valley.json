@@ -22,7 +22,8 @@
       "nexus_id": 2400,
       "url": "https://www.nexusmods.com/stardewvalley/mods/2400",
       "requires": [],
-      "framework_id": "smapi"
+      "framework_id": "smapi",
+      "last_updated": "2026-03-14"
     },
     {
       "id": "content-patcher",
@@ -35,7 +36,8 @@
       "url": "https://www.nexusmods.com/stardewvalley/mods/1915",
       "requires": [
         "smapi"
-      ]
+      ],
+      "last_updated": "2026-04-16"
     },
     {
       "id": "gmcm",
@@ -48,7 +50,8 @@
       "url": "https://www.nexusmods.com/stardewvalley/mods/5098",
       "requires": [
         "smapi"
-      ]
+      ],
+      "last_updated": "2025-10-18"
     },
     {
       "id": "spacecore",
@@ -61,7 +64,8 @@
       "url": "https://www.nexusmods.com/stardewvalley/mods/1348",
       "requires": [
         "smapi"
-      ]
+      ],
+      "last_updated": "2025-10-19"
     },
     {
       "id": "json-assets",
@@ -75,7 +79,11 @@
       "requires": [
         "smapi",
         "spacecore"
-      ]
+      ],
+      "also_requires": [
+        "Expanded Preconditions Utility"
+      ],
+      "last_updated": "2025-10-18"
     },
     {
       "id": "ftm",
@@ -87,8 +95,10 @@
       "nexus_id": 3231,
       "url": "https://www.nexusmods.com/stardewvalley/mods/3231",
       "requires": [
-        "smapi"
-      ]
+        "smapi",
+        "content-patcher"
+      ],
+      "last_updated": "2025-11-14"
     },
     {
       "id": "lookup-anything",
@@ -101,20 +111,22 @@
       "url": "https://www.nexusmods.com/stardewvalley/mods/541",
       "requires": [
         "smapi"
-      ]
+      ],
+      "last_updated": "2026-03-15"
     },
     {
       "id": "chests-anywhere",
       "name": "Chests Anywhere",
       "category": "Quality of life",
-      "summary": "Open and organise any chest from anywhere on the map.",
+      "summary": "Open and organize any chest from anywhere on the map.",
       "source": "nexus",
       "nexus_domain": "stardewvalley",
       "nexus_id": 518,
       "url": "https://www.nexusmods.com/stardewvalley/mods/518",
       "requires": [
         "smapi"
-      ]
+      ],
+      "last_updated": "2026-03-15"
     },
     {
       "id": "automate",
@@ -127,7 +139,8 @@
       "url": "https://www.nexusmods.com/stardewvalley/mods/1063",
       "requires": [
         "smapi"
-      ]
+      ],
+      "last_updated": "2026-03-15"
     },
     {
       "id": "npc-map-locations",
@@ -140,7 +153,8 @@
       "url": "https://www.nexusmods.com/stardewvalley/mods/239",
       "requires": [
         "smapi"
-      ]
+      ],
+      "last_updated": "2026-04-25"
     },
     {
       "id": "ui-info-suite-2",
@@ -153,7 +167,8 @@
       "url": "https://www.nexusmods.com/stardewvalley/mods/7098",
       "requires": [
         "smapi"
-      ]
+      ],
+      "last_updated": "2024-11-12"
     },
     {
       "id": "cjb-cheats",
@@ -166,7 +181,8 @@
       "url": "https://www.nexusmods.com/stardewvalley/mods/4",
       "requires": [
         "smapi"
-      ]
+      ],
+      "last_updated": "2026-04-20"
     },
     {
       "id": "cjb-item-spawner",
@@ -179,7 +195,8 @@
       "url": "https://www.nexusmods.com/stardewvalley/mods/93",
       "requires": [
         "smapi"
-      ]
+      ],
+      "last_updated": "2026-03-15"
     },
     {
       "id": "sve",
@@ -194,7 +211,8 @@
         "smapi",
         "content-patcher",
         "ftm"
-      ]
+      ],
+      "last_updated": "2025-06-30"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T01:31:41Z",
+  "generated_at": "2026-10-16T05:30:27Z",
   "game": {
     "slug": "elden-ring",
     "name": "Elden Ring",
@@ -10,10 +10,10 @@
       "title": "Patch Notes Version 1.17",
       "published_at": "2026-08-27T14:00:22Z",
       "published_unix": 1787839222,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1842212951300120"
+      "url": "https://store.steampowered.com/news/app/1245620/view/1842212951300120"
     }
   },
-  "verdict": "Breakage reported",
+  "verdict": "Likely safe",
   "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
   "frameworks": [
     {
@@ -49,14 +49,17 @@
       "repo": "garyttierney/me3",
       "tracked": true,
       "sensitive": true,
-      "status": "Breakage reported",
+      "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch 1.17; compatibility is unverified \u2014 check the project page. 1 open issue(s) report breakage since the patch/latest release.",
+      "reason": "Latest release predates patch 1.17; compatibility is unverified \u2014 check the project page. One unconfirmed user report of breakage is open ('Elden Ring 1.17.0.0 crashes in me3_mod_host.dll 0.13.0 during system allocator hook'); not yet confirmed by the maintainers or other users, so it isn't counted as breakage.",
       "breakage_reports": [
         {
           "title": "Elden Ring 1.17.0.0 crashes in me3_mod_host.dll 0.13.0 during system allocator hook",
           "url": "https://github.com/garyttierney/me3/issues/877",
-          "created_at": "2026-09-05T01:42:48Z"
+          "created_at": "2026-09-05T01:42:48Z",
+          "labels": [],
+          "comments": 1,
+          "thumbs_up": 0
         }
       ],
       "official": null,
@@ -76,7 +79,7 @@
       "title": "Patch Notes Version 1.17",
       "published_at": "2026-08-27T14:00:22Z",
       "published_unix": 1787839222,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1842212951300120",
+      "url": "https://store.steampowered.com/news/app/1245620/view/1842212951300120",
       "frameworks": [
         {
           "id": "seamless-coop",
@@ -104,7 +107,7 @@
       "title": "ELDEN RING - Patch Notes Version 1.16.1",
       "published_at": "2025-08-21T12:09:05Z",
       "published_unix": 1755778145,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1808601382443022",
+      "url": "https://store.steampowered.com/news/app/1245620/view/1808601382443022",
       "frameworks": [
         {
           "id": "seamless-coop",
@@ -132,7 +135,7 @@
       "title": "Patch Notes Version 1.16",
       "published_at": "2024-10-17T07:40:57Z",
       "published_unix": 1729150857,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6212244583175036162",
+      "url": "https://store.steampowered.com/news/app/1245620/view/6212244583175036162",
       "frameworks": [
         {
           "id": "seamless-coop",
@@ -160,7 +163,7 @@
       "title": "Patch Notes Version 1.15",
       "published_at": "2024-10-02T08:20:50Z",
       "published_unix": 1727857250,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6350729003489816555",
+      "url": "https://store.steampowered.com/news/app/1245620/view/6350729003489816555",
       "frameworks": [
         {
           "id": "seamless-coop",
@@ -188,7 +191,7 @@
       "title": "Patch Notes Version 1.14",
       "published_at": "2024-09-11T14:15:49Z",
       "published_unix": 1726064149,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6250522009509658757",
+      "url": "https://store.steampowered.com/news/app/1245620/view/6250522009509658757",
       "frameworks": [
         {
           "id": "seamless-coop",
@@ -216,7 +219,7 @@
       "title": "Patch Notes Version 1.13.2",
       "published_at": "2024-08-08T13:00:13Z",
       "published_unix": 1723122013,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5963414363390447947",
+      "url": "https://store.steampowered.com/news/app/1245620/view/5963414363390447947",
       "frameworks": [
         {
           "id": "seamless-coop",
@@ -244,7 +247,7 @@
       "title": "Patch Notes Version 1.13",
       "published_at": "2024-07-30T12:00:53Z",
       "published_unix": 1722340853,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5963413094366301750",
+      "url": "https://store.steampowered.com/news/app/1245620/view/5963413094366301750",
       "frameworks": [
         {
           "id": "seamless-coop",
@@ -272,7 +275,7 @@
       "title": "Patch Notes Version 1.12.3",
       "published_at": "2024-07-04T12:05:17Z",
       "published_unix": 1720094717,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5842939267334895168",
+      "url": "https://store.steampowered.com/news/app/1245620/view/5842939267334895168",
       "frameworks": [
         {
           "id": "seamless-coop",
@@ -300,7 +303,7 @@
       "title": "Patch Notes Version 1.12.2",
       "published_at": "2024-06-26T14:35:22Z",
       "published_unix": 1719412522,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5842939267306109180",
+      "url": "https://store.steampowered.com/news/app/1245620/view/5842939267306109180",
       "frameworks": [
         {
           "id": "seamless-coop",
@@ -328,7 +331,7 @@
       "title": "Patch Notes Version 1.12",
       "published_at": "2024-06-20T13:20:37Z",
       "published_unix": 1718889637,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5759622039976214240",
+      "url": "https://store.steampowered.com/news/app/1245620/view/5759622039976214240",
       "frameworks": [
         {
           "id": "seamless-coop",
@@ -356,7 +359,7 @@
       "title": "Patch Notes Version 1.10.1",
       "published_at": "2024-01-11T14:30:26Z",
       "published_unix": 1704983426,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6300039510119919466",
+      "url": "https://store.steampowered.com/news/app/1245620/view/6300039510119919466",
       "frameworks": [
         {
           "id": "seamless-coop",
@@ -384,7 +387,7 @@
       "title": "Patch Notes Version 1.10",
       "published_at": "2023-07-27T10:16:19Z",
       "published_unix": 1690452979,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5124584686245627693",
+      "url": "https://store.steampowered.com/news/app/1245620/view/5124584686245627693",
       "frameworks": [
         {
           "id": "seamless-coop",
@@ -410,61 +413,61 @@
   "news": [
     {
       "title": "STARSCOURGE RADAHN JOINS THE ELDEN RING FIGUARTS MINI SERIES",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1845383656393031",
+      "url": "https://store.steampowered.com/news/app/1245620/view/1845383656393031",
       "published_at": "2026-10-05T10:00:24Z",
       "is_patch": false
     },
     {
       "title": "New Elden Ring Mini Replicas Arrive: Malenia, Messmer & Wylder",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1842846814452378",
+      "url": "https://store.steampowered.com/news/app/1245620/view/1842846814452378",
       "published_at": "2026-09-07T07:25:52Z",
       "is_patch": false
     },
     {
       "title": "ELDEN RING - Community Quests",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1842846814440454",
+      "url": "https://store.steampowered.com/news/app/1245620/view/1842846814440454",
       "published_at": "2026-09-02T14:10:31Z",
       "is_patch": false
     },
     {
       "title": "ELDEN RING - Tarnished Pack DLC is available now",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1842212951303612",
+      "url": "https://store.steampowered.com/news/app/1245620/view/1842212951303612",
       "published_at": "2026-08-28T15:39:42Z",
       "is_patch": false
     },
     {
       "title": "Patch Notes Version 1.17",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1842212951300120",
+      "url": "https://store.steampowered.com/news/app/1245620/view/1842212951300120",
       "published_at": "2026-08-27T14:00:22Z",
       "is_patch": true
     },
     {
       "title": "ELDEN RING - RAGING WOLF 1/6 SCALE STATUE",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1832700592786543",
+      "url": "https://store.steampowered.com/news/app/1245620/view/1832700592786543",
       "published_at": "2026-05-13T14:20:38Z",
       "is_patch": false
     },
     {
       "title": "ELDEN RING: SHADOW OF THE ERDTREE \u2013 Official Vinyl Soundtrack",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1830163047259363",
+      "url": "https://store.steampowered.com/news/app/1245620/view/1830163047259363",
       "published_at": "2026-04-17T08:00:23Z",
       "is_patch": false
     },
     {
       "title": "Discover the ELDEN RING Blaidd The Half-Wolf Lamp",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1823191198601680",
+      "url": "https://store.steampowered.com/news/app/1245620/view/1823191198601680",
       "published_at": "2026-01-29T09:00:43Z",
       "is_patch": false
     },
     {
       "title": "Release Note for 2025/12/16",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1818752592134836",
+      "url": "https://store.steampowered.com/news/app/1245620/view/1818752592134836",
       "published_at": "2025-12-16T07:05:57Z",
       "is_patch": false
     },
     {
       "title": "ELDEN RING - Patch Notes Version 1.16.1",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1808601382443022",
+      "url": "https://store.steampowered.com/news/app/1245620/view/1808601382443022",
       "published_at": "2025-08-21T12:09:05Z",
       "is_patch": true
     }

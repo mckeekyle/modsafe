@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T01:32:00Z",
+  "generated_at": "2026-10-16T05:30:47Z",
   "game": {
     "slug": "rimworld",
     "name": "RimWorld",
@@ -10,7 +10,7 @@
       "title": "Update 1.6.4850 released",
       "published_at": "2026-06-08T19:12:10Z",
       "published_unix": 1780945930,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1834602721199984"
+      "url": "https://store.steampowered.com/news/app/294100/view/1834602721199984"
     }
   },
   "verdict": "Likely safe",
@@ -27,7 +27,7 @@
       "sensitive": false,
       "status": "Not affected by patches",
       "base_status": "Likely OK",
-      "reason": "Generic .NET runtime patching library, not tied to a RimWorld build. Latest: Latest release is newer than patch 1.6.4850, but notes do not explicitly mention that version.",
+      "reason": "Generic .NET runtime patching library, not tied to a RimWorld build. Latest release: v2.4.3 (2026-10-11).",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v2.4.3",
@@ -68,7 +68,7 @@
       "title": "Update 1.6.4850 released",
       "published_at": "2026-06-08T19:12:10Z",
       "published_unix": 1780945930,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1834602721199984",
+      "url": "https://store.steampowered.com/news/app/294100/view/1834602721199984",
       "frameworks": [
         {
           "id": "harmony",
@@ -96,7 +96,7 @@
       "title": "Update 1.6.4630 released",
       "published_at": "2025-10-31T15:30:18Z",
       "published_unix": 1761924618,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1815034432907541",
+      "url": "https://store.steampowered.com/news/app/294100/view/1815034432907541",
       "frameworks": [
         {
           "id": "harmony",
@@ -124,7 +124,7 @@
       "title": "Update 1.6.4566 improves gravships, shuttles, and more",
       "published_at": "2025-08-28T19:32:41Z",
       "published_unix": 1756409561,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1809235871595783",
+      "url": "https://store.steampowered.com/news/app/294100/view/1809235871595783",
       "frameworks": [
         {
           "id": "harmony",
@@ -152,7 +152,7 @@
       "title": "Update 1.6.4543 released",
       "published_at": "2025-08-06T01:21:33Z",
       "published_unix": 1754443293,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1807332909521747",
+      "url": "https://store.steampowered.com/news/app/294100/view/1807332909521747",
       "frameworks": [
         {
           "id": "harmony",
@@ -180,7 +180,7 @@
       "title": "Update 1.6.4535 released",
       "published_at": "2025-07-29T00:04:01Z",
       "published_unix": 1753747441,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1806064758753874",
+      "url": "https://store.steampowered.com/news/app/294100/view/1806064758753874",
       "frameworks": [
         {
           "id": "harmony",
@@ -208,7 +208,7 @@
       "title": "Update 1.6.4528 released",
       "published_at": "2025-07-22T16:00:28Z",
       "published_unix": 1753200028,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1805431065502024",
+      "url": "https://store.steampowered.com/news/app/294100/view/1805431065502024",
       "frameworks": [
         {
           "id": "harmony",
@@ -236,7 +236,7 @@
       "title": "Update 1.5.4104 released",
       "published_at": "2024-05-24T14:42:39Z",
       "published_unix": 1716561759,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5741605105611129970",
+      "url": "https://store.steampowered.com/news/app/294100/view/5741605105611129970",
       "frameworks": [
         {
           "id": "harmony",
@@ -264,7 +264,7 @@
       "title": "Update 1.4.3704 released",
       "published_at": "2023-04-19T22:56:13Z",
       "published_unix": 1681944973,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5133583099793279722",
+      "url": "https://store.steampowered.com/news/app/294100/view/5133583099793279722",
       "frameworks": [
         {
           "id": "harmony",
@@ -292,7 +292,7 @@
       "title": "Update 1.4.3682 released",
       "published_at": "2023-03-28T21:33:39Z",
       "published_unix": 1680039219,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5143713753748133342",
+      "url": "https://store.steampowered.com/news/app/294100/view/5143713753748133342",
       "frameworks": [
         {
           "id": "harmony",
@@ -320,7 +320,7 @@
       "title": "Update 1.4.3641 released",
       "published_at": "2023-02-15T20:03:37Z",
       "published_unix": 1676491417,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5059267908811675497",
+      "url": "https://store.steampowered.com/news/app/294100/view/5059267908811675497",
       "frameworks": [
         {
           "id": "harmony",
@@ -348,7 +348,7 @@
       "title": "Update 1.4.3613 released",
       "published_at": "2023-01-18T23:57:57Z",
       "published_unix": 1674086277,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5035621474408967505",
+      "url": "https://store.steampowered.com/news/app/294100/view/5035621474408967505",
       "frameworks": [
         {
           "id": "harmony",
@@ -376,7 +376,7 @@
       "title": "Update 1.4.3563 improves quest reward variety",
       "published_at": "2022-11-29T19:36:10Z",
       "published_unix": 1669750570,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/4836332027674600365",
+      "url": "https://store.steampowered.com/news/app/294100/view/4836332027674600365",
       "frameworks": [
         {
           "id": "harmony",
@@ -402,61 +402,61 @@
   "news": [
     {
       "title": "Announcing the Waylith Engine and Update 1.7",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1846018067941786",
+      "url": "https://store.steampowered.com/news/app/294100/view/1846018067941786",
       "published_at": "2026-10-12T17:17:45Z",
       "is_patch": false
     },
     {
       "title": "The Jugust merch caravan has arrived!",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1839676055889403",
+      "url": "https://store.steampowered.com/news/app/294100/view/1839676055889403",
       "published_at": "2026-07-31T21:28:40Z",
       "is_patch": false
     },
     {
       "title": "Get the RimWorld x Project Zomboid bundle",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1839676055883540",
+      "url": "https://store.steampowered.com/news/app/294100/view/1839676055883540",
       "published_at": "2026-07-29T20:54:05Z",
       "is_patch": false
     },
     {
       "title": "RimWorld x Abiotic Factor bundle out now",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1837955055364275",
+      "url": "https://store.steampowered.com/news/app/294100/view/1837955055364275",
       "published_at": "2026-07-13T19:22:48Z",
       "is_patch": false
     },
     {
       "title": "Update 1.6.4850 released",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1834602721199984",
+      "url": "https://store.steampowered.com/news/app/294100/view/1834602721199984",
       "published_at": "2026-06-08T19:12:10Z",
       "is_patch": true
     },
     {
       "title": "RimWorld x Going Medieval bundle now available",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1828441623105411",
+      "url": "https://store.steampowered.com/news/app/294100/view/1828441623105411",
       "published_at": "2026-03-27T18:53:51Z",
       "is_patch": false
     },
     {
       "title": "The winter merch collection is here! \u2744\ufe0f",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1817483467037824",
+      "url": "https://store.steampowered.com/news/app/294100/view/1817483467037824",
       "published_at": "2025-11-27T21:09:31Z",
       "is_patch": false
     },
     {
       "title": "Happy birthday, RimWorld!",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1815034433047502",
+      "url": "https://store.steampowered.com/news/app/294100/view/1815034433047502",
       "published_at": "2025-11-04T22:55:25Z",
       "is_patch": false
     },
     {
       "title": "Update 1.6.4630 released",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1815034432907541",
+      "url": "https://store.steampowered.com/news/app/294100/view/1815034432907541",
       "published_at": "2025-10-31T15:30:18Z",
       "is_patch": true
     },
     {
       "title": "Bring home a thrumbo and boomalope!",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1813041031254610",
+      "url": "https://store.steampowered.com/news/app/294100/view/1813041031254610",
       "published_at": "2025-10-10T22:45:49Z",
       "is_patch": false
     }

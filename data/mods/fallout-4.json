@@ -22,7 +22,8 @@
       "url": "https://www.nexusmods.com/fallout4/mods/42147",
       "requires": [],
       "framework_id": "f4se",
-      "note": "Must match your game build (Next-Gen vs Old-Gen). Launch through f4se_loader.exe."
+      "note": "Must match your game build (Next-Gen vs Old-Gen). Launch through f4se_loader.exe.",
+      "last_updated": "2026-08-18"
     },
     {
       "id": "address-library-f4",
@@ -36,7 +37,8 @@
       "requires": [
         "f4se"
       ],
-      "framework_id": "address-library-f4"
+      "framework_id": "address-library-f4",
+      "last_updated": "2026-08-21"
     },
     {
       "id": "buffout4",
@@ -51,7 +53,9 @@
         "f4se",
         "address-library-f4"
       ],
-      "framework_id": "buffout4"
+      "framework_id": "buffout4",
+      "last_updated": "2026-07-29",
+      "note": "Check the supported game versions on its page against your build (Next-Gen/Anniversary vs Old-Gen)."
     },
     {
       "id": "ufo4p",
@@ -62,7 +66,8 @@
       "nexus_domain": "fallout4",
       "nexus_id": 4598,
       "url": "https://www.nexusmods.com/fallout4/mods/4598",
-      "requires": []
+      "requires": [],
+      "last_updated": "2026-08-18"
     },
     {
       "id": "weapon-debris-fix",
@@ -76,7 +81,8 @@
       "requires": [
         "f4se",
         "address-library-f4"
-      ]
+      ],
+      "last_updated": "2026-09-19"
     },
     {
       "id": "high-fps-physics",
@@ -90,7 +96,8 @@
       "requires": [
         "f4se",
         "address-library-f4"
-      ]
+      ],
+      "last_updated": "2026-09-08"
     },
     {
       "id": "mcm",
@@ -103,7 +110,8 @@
       "url": "https://www.nexusmods.com/fallout4/mods/21497",
       "requires": [
         "f4se"
-      ]
+      ],
+      "last_updated": "2026-09-01"
     },
     {
       "id": "hudframework",
@@ -116,7 +124,8 @@
       "url": "https://www.nexusmods.com/fallout4/mods/20309",
       "requires": [
         "f4se"
-      ]
+      ],
+      "last_updated": "2026-09-04"
     },
     {
       "id": "def-ui",
@@ -127,20 +136,22 @@
       "nexus_domain": "fallout4",
       "nexus_id": 10654,
       "url": "https://www.nexusmods.com/fallout4/mods/10654",
-      "requires": []
+      "requires": [],
+      "last_updated": "2024-05-09"
     },
     {
       "id": "xdi",
       "name": "Extended Dialogue Interface",
       "category": "Interface",
-      "summary": "Shows the full dialogue lines instead of one-word prompts.",
+      "summary": "Removes the four-option dialogue limit so mods can add more player responses.",
       "source": "nexus",
       "nexus_domain": "fallout4",
       "nexus_id": 27216,
       "url": "https://www.nexusmods.com/fallout4/mods/27216",
       "requires": [
         "f4se"
-      ]
+      ],
+      "last_updated": "2026-09-01"
     },
     {
       "id": "looksmenu",
@@ -153,7 +164,8 @@
       "url": "https://www.nexusmods.com/fallout4/mods/12631",
       "requires": [
         "f4se"
-      ]
+      ],
+      "last_updated": "2026-09-01"
     },
     {
       "id": "place-everywhere",
@@ -166,7 +178,8 @@
       "url": "https://www.nexusmods.com/fallout4/mods/9424",
       "requires": [
         "f4se"
-      ]
+      ],
+      "last_updated": "2026-08-22"
     },
     {
       "id": "workshop-framework",
@@ -179,7 +192,8 @@
       "url": "https://www.nexusmods.com/fallout4/mods/35004",
       "requires": [
         "f4se"
-      ]
+      ],
+      "last_updated": "2026-10-02"
     }
   ]
 }

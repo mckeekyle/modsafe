@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T01:31:16Z",
+  "generated_at": "2026-10-16T05:30:02Z",
   "game": {
     "slug": "skyrim-se",
     "name": "Skyrim Special Edition",
@@ -10,7 +10,8 @@
       "title": "The Elder Scrolls V: Skyrim Anniversary Edition - Update 1.7.99 (Updated Aug 27)",
       "published_at": "2026-08-20T14:55:37Z",
       "published_unix": 1787237737,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1841579228665884"
+      "url": "https://store.steampowered.com/news/app/489830/view/1841579228665884",
+      "runtime_note": "SKSE64's official page lists game runtime 1.7.104 as current (the announcement title says 1.7.99; Bethesda often ships silent hotfixes)."
     }
   },
   "verdict": "Likely safe",
@@ -54,7 +55,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Likely OK",
-      "reason": "Latest release is newer than patch 1.7.99, but notes do not explicitly mention that version.",
+      "reason": "Latest release is newer than patch 1.7.99, but notes do not explicitly mention that version. (Note: the author labels this build a beta/pre-release in its tag.)",
       "breakage_reports": [],
       "official": null,
       "release_tag": "7.0.21-beta5",
@@ -133,7 +134,8 @@
       "title": "The Elder Scrolls V: Skyrim Anniversary Edition - Update 1.7.99 (Updated Aug 27)",
       "published_at": "2026-08-20T14:55:37Z",
       "published_unix": 1787237737,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1841579228665884",
+      "url": "https://store.steampowered.com/news/app/489830/view/1841579228665884",
+      "runtime_note": "SKSE64's official page lists game runtime 1.7.104 as current (the announcement title says 1.7.99; Bethesda often ships silent hotfixes).",
       "frameworks": [
         {
           "id": "skse64",
@@ -179,7 +181,7 @@
       "title": "The Elder Scrolls V: Skyrim Anniversary Edition - Update 1.6.640",
       "published_at": "2022-09-20T18:20:48Z",
       "published_unix": 1663698048,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6258337460562640347",
+      "url": "https://store.steampowered.com/news/app/489830/view/6258337460562640347",
       "frameworks": [
         {
           "id": "skse64",
@@ -225,7 +227,7 @@
       "title": "The Elder Scrolls V: Skyrim Anniversary Edition - Update 1.6.629",
       "published_at": "2022-09-15T11:09:05Z",
       "published_unix": 1663240145,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6258337460543332485",
+      "url": "https://store.steampowered.com/news/app/489830/view/6258337460543332485",
       "frameworks": [
         {
           "id": "skse64",
@@ -271,7 +273,7 @@
       "title": "The Elder Scrolls V: Skyrim Anniversary Edition - Update 1.6.353",
       "published_at": "2022-01-06T15:04:10Z",
       "published_unix": 1641481450,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/4224939386876509763",
+      "url": "https://store.steampowered.com/news/app/489830/view/4224939386876509763",
       "frameworks": [
         {
           "id": "skse64",
@@ -317,7 +319,7 @@
       "title": "The Elder Scrolls V: Skyrim Anniversary Edition - Update 1.6.342",
       "published_at": "2021-12-13T15:36:09Z",
       "published_unix": 1639409769,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/4224936849665461638",
+      "url": "https://store.steampowered.com/news/app/489830/view/4224936849665461638",
       "frameworks": [
         {
           "id": "skse64",
@@ -363,7 +365,7 @@
       "title": "The Elder Scrolls V: Skyrim Anniversary Edition - Update 1.6.323",
       "published_at": "2021-11-22T15:45:53Z",
       "published_unix": 1637595953,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/4227186657155872732",
+      "url": "https://store.steampowered.com/news/app/489830/view/4227186657155872732",
       "frameworks": [
         {
           "id": "skse64",
@@ -409,7 +411,7 @@
       "title": "The Elder Scrolls V: Skyrim Anniversary Edition - Update 1.6",
       "published_at": "2021-11-11T05:52:52Z",
       "published_unix": 1636609972,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/4971405952699782913",
+      "url": "https://store.steampowered.com/news/app/489830/view/4971405952699782913",
       "frameworks": [
         {
           "id": "skse64",
@@ -455,7 +457,7 @@
       "title": "Skyrim Special Edition 1.5.16 Update",
       "published_at": "2017-11-07T17:05:45Z",
       "published_unix": 1510074345,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/2140760316608552508",
+      "url": "https://store.steampowered.com/news/app/489830/view/2140760316608552508",
       "frameworks": [
         {
           "id": "skse64",
@@ -501,7 +503,7 @@
       "title": "Skyrim Special Edition 1.4 Update",
       "published_at": "2017-01-31T18:20:19Z",
       "published_unix": 1485886819,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/75834708006877434",
+      "url": "https://store.steampowered.com/news/app/489830/view/75834708006877434",
       "frameworks": [
         {
           "id": "skse64",
@@ -547,7 +549,7 @@
       "title": "Skyrim Special Edition 1.3 Update",
       "published_at": "2016-11-21T19:25:05Z",
       "published_unix": 1479756305,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/127619582134189706",
+      "url": "https://store.steampowered.com/news/app/489830/view/127619582134189706",
       "frameworks": [
         {
           "id": "skse64",
@@ -593,7 +595,7 @@
       "title": "Skyrim 1.2 Update - Live on Steam",
       "published_at": "2016-11-11T18:21:58Z",
       "published_unix": 1478888518,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/136626237878499466",
+      "url": "https://store.steampowered.com/news/app/489830/view/136626237878499466",
       "frameworks": [
         {
           "id": "skse64",
@@ -639,7 +641,7 @@
       "title": "Skyrim Special Edition 1.1 Update Live on Steam",
       "published_at": "2016-11-07T20:07:03Z",
       "published_unix": 1478549223,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/182787402055808230",
+      "url": "https://store.steampowered.com/news/app/489830/view/182787402055808230",
       "frameworks": [
         {
           "id": "skse64",
@@ -683,61 +685,61 @@
   "news": [
     {
       "title": "The Elder Scrolls V: Skyrim Anniversary Edition - Update 1.7.99 (Updated Aug 27)",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1841579228665884",
+      "url": "https://store.steampowered.com/news/app/489830/view/1841579228665884",
       "published_at": "2026-08-20T14:55:37Z",
       "is_patch": true
     },
     {
       "title": "New realms, new companions, and new powers, all in these Skyrim Creations.",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1836506165550216",
+      "url": "https://store.steampowered.com/news/app/489830/view/1836506165550216",
       "published_at": "2026-06-25T16:55:24Z",
       "is_patch": false
     },
     {
       "title": "Adventure awaits in these Skyrim Creations!",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1826362059922471",
+      "url": "https://store.steampowered.com/news/app/489830/view/1826362059922471",
       "published_at": "2026-03-05T20:42:14Z",
       "is_patch": false
     },
     {
       "title": "Find your next Skyrim adventure in these mini DLC-sized Creations!",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1815034432906499",
+      "url": "https://store.steampowered.com/news/app/489830/view/1815034432906499",
       "published_at": "2025-10-31T14:38:02Z",
       "is_patch": false
     },
     {
       "title": "The Elder Scrolls V: Skyrim Anniversary Edition - Update 1.6.640",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6258337460562640347",
+      "url": "https://store.steampowered.com/news/app/489830/view/6258337460562640347",
       "published_at": "2022-09-20T18:20:48Z",
       "is_patch": true
     },
     {
       "title": "The Elder Scrolls V: Skyrim Anniversary Edition - Update 1.6.629",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6258337460543332485",
+      "url": "https://store.steampowered.com/news/app/489830/view/6258337460543332485",
       "published_at": "2022-09-15T11:09:05Z",
       "is_patch": true
     },
     {
       "title": "The Elder Scrolls V: Skyrim Anniversary Edition - Update 1.6.353",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/4224939386876509763",
+      "url": "https://store.steampowered.com/news/app/489830/view/4224939386876509763",
       "published_at": "2022-01-06T15:04:10Z",
       "is_patch": true
     },
     {
       "title": "The Elder Scrolls V: Skyrim Anniversary Edition - Update 1.6.342",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/4224936849665461638",
+      "url": "https://store.steampowered.com/news/app/489830/view/4224936849665461638",
       "published_at": "2021-12-13T15:36:09Z",
       "is_patch": true
     },
     {
       "title": "The Elder Scrolls V: Skyrim Anniversary Edition - Update 1.6.323",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/4227186657155872732",
+      "url": "https://store.steampowered.com/news/app/489830/view/4227186657155872732",
       "published_at": "2021-11-22T15:45:53Z",
       "is_patch": true
     },
     {
       "title": "The Elder Scrolls V: Skyrim Anniversary Edition - Update 1.6",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/4971405952699782913",
+      "url": "https://store.steampowered.com/news/app/489830/view/4971405952699782913",
       "published_at": "2021-11-11T05:52:52Z",
       "is_patch": true
     }

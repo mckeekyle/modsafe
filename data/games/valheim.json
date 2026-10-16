@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T01:31:47Z",
+  "generated_at": "2026-10-16T05:30:34Z",
   "game": {
     "slug": "valheim",
     "name": "Valheim",
@@ -10,7 +10,7 @@
       "title": "Patch 1.0.20",
       "published_at": "2026-10-15T08:58:17Z",
       "published_unix": 1792054697,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1846651706676865"
+      "url": "https://store.steampowered.com/news/app/892970/view/1846651706676865"
     }
   },
   "verdict": "Just patched, wait",
@@ -68,7 +68,7 @@
       "title": "Patch 1.0.20",
       "published_at": "2026-10-15T08:58:17Z",
       "published_unix": 1792054697,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1846651706676865",
+      "url": "https://store.steampowered.com/news/app/892970/view/1846651706676865",
       "frameworks": [
         {
           "id": "bepinexpack-valheim",
@@ -96,7 +96,7 @@
       "title": "Patch 1.0.17",
       "published_at": "2026-10-06T12:11:50Z",
       "published_unix": 1791288710,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1845383656396226",
+      "url": "https://store.steampowered.com/news/app/892970/view/1845383656396226",
       "frameworks": [
         {
           "id": "bepinexpack-valheim",
@@ -124,7 +124,7 @@
       "title": "Patch 1.0.16",
       "published_at": "2026-09-25T12:18:42Z",
       "published_unix": 1790338722,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844751498224366",
+      "url": "https://store.steampowered.com/news/app/892970/view/1844751498224366",
       "frameworks": [
         {
           "id": "bepinexpack-valheim",
@@ -152,7 +152,7 @@
       "title": "Patch 1.0.15",
       "published_at": "2026-09-18T12:43:25Z",
       "published_unix": 1789735405,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844115010494664",
+      "url": "https://store.steampowered.com/news/app/892970/view/1844115010494664",
       "frameworks": [
         {
           "id": "bepinexpack-valheim",
@@ -180,7 +180,7 @@
       "title": "Patch 1.0.14",
       "published_at": "2026-09-17T11:12:10Z",
       "published_unix": 1789643530,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844115010491701",
+      "url": "https://store.steampowered.com/news/app/892970/view/1844115010491701",
       "frameworks": [
         {
           "id": "bepinexpack-valheim",
@@ -208,7 +208,7 @@
       "title": "Hotfix 1.0.10 & 1.0.12",
       "published_at": "2026-09-11T13:09:02Z",
       "published_unix": 1789132142,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1843481262695240",
+      "url": "https://store.steampowered.com/news/app/892970/view/1843481262695240",
       "frameworks": [
         {
           "id": "bepinexpack-valheim",
@@ -236,7 +236,7 @@
       "title": "Patch 0.221.12",
       "published_at": "2026-02-19T08:09:28Z",
       "published_unix": 1771488568,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1825093633184197",
+      "url": "https://store.steampowered.com/news/app/892970/view/1825093633184197",
       "frameworks": [
         {
           "id": "bepinexpack-valheim",
@@ -264,7 +264,7 @@
       "title": "Patch 0.221.10 \u2013 Five Years of Valheim!",
       "published_at": "2026-02-02T09:01:19Z",
       "published_unix": 1770022879,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1823191198610897",
+      "url": "https://store.steampowered.com/news/app/892970/view/1823191198610897",
       "frameworks": [
         {
           "id": "bepinexpack-valheim",
@@ -292,7 +292,7 @@
       "title": "Patch 0.221.4 \u2013 Call To Arms",
       "published_at": "2025-09-09T11:02:14Z",
       "published_unix": 1757415734,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1809869180193981",
+      "url": "https://store.steampowered.com/news/app/892970/view/1809869180193981",
       "frameworks": [
         {
           "id": "bepinexpack-valheim",
@@ -320,7 +320,7 @@
       "title": "Patch 0.220.5",
       "published_at": "2025-04-01T07:06:14Z",
       "published_unix": 1743491174,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1795283637972351",
+      "url": "https://store.steampowered.com/news/app/892970/view/1795283637972351",
       "frameworks": [
         {
           "id": "bepinexpack-valheim",
@@ -348,7 +348,7 @@
       "title": "Patch 0.220.4",
       "published_at": "2025-03-19T08:30:26Z",
       "published_unix": 1742373026,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1794102528262393",
+      "url": "https://store.steampowered.com/news/app/892970/view/1794102528262393",
       "frameworks": [
         {
           "id": "bepinexpack-valheim",
@@ -376,7 +376,7 @@
       "title": "Patch 0.220.3",
       "published_at": "2025-03-04T09:16:50Z",
       "published_unix": 1741079810,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1792751526166512",
+      "url": "https://store.steampowered.com/news/app/892970/view/1792751526166512",
       "frameworks": [
         {
           "id": "bepinexpack-valheim",
@@ -402,61 +402,61 @@
   "news": [
     {
       "title": "Patch 1.0.20",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1846651706676865",
+      "url": "https://store.steampowered.com/news/app/892970/view/1846651706676865",
       "published_at": "2026-10-15T08:58:17Z",
       "is_patch": true
     },
     {
       "title": "Patch 1.0.17",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1845383656396226",
+      "url": "https://store.steampowered.com/news/app/892970/view/1845383656396226",
       "published_at": "2026-10-06T12:11:50Z",
       "is_patch": true
     },
     {
       "title": "Word from the Devs: What a Month!",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1845383656377310",
+      "url": "https://store.steampowered.com/news/app/892970/view/1845383656377310",
       "published_at": "2026-09-30T11:58:31Z",
       "is_patch": false
     },
     {
       "title": "Patch 1.0.16",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844751498224366",
+      "url": "https://store.steampowered.com/news/app/892970/view/1844751498224366",
       "published_at": "2026-09-25T12:18:42Z",
       "is_patch": true
     },
     {
       "title": "Patch 1.0.15",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844115010494664",
+      "url": "https://store.steampowered.com/news/app/892970/view/1844115010494664",
       "published_at": "2026-09-18T12:43:25Z",
       "is_patch": true
     },
     {
       "title": "Patch 1.0.14",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844115010491701",
+      "url": "https://store.steampowered.com/news/app/892970/view/1844115010491701",
       "published_at": "2026-09-17T11:12:10Z",
       "is_patch": true
     },
     {
       "title": "Hotfix 1.0.10 & 1.0.12",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1843481262695240",
+      "url": "https://store.steampowered.com/news/app/892970/view/1843481262695240",
       "published_at": "2026-09-11T13:09:02Z",
       "is_patch": true
     },
     {
       "title": "Valheim 1.0 Has Arrived!",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1843481262688942",
+      "url": "https://store.steampowered.com/news/app/892970/view/1843481262688942",
       "published_at": "2026-09-09T12:55:35Z",
       "is_patch": false
     },
     {
       "title": "Word from the Devs: Almost there\u2026",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1841579228664600",
+      "url": "https://store.steampowered.com/news/app/892970/view/1841579228664600",
       "published_at": "2026-08-20T07:03:31Z",
       "is_patch": false
     },
     {
       "title": "Word From the Devs: See You Soon!",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1836506165545761",
+      "url": "https://store.steampowered.com/news/app/892970/view/1836506165545761",
       "published_at": "2026-06-24T12:13:07Z",
       "is_patch": false
     }

@@ -23,7 +23,8 @@
         "fabric-loader"
       ],
       "modrinth_slug": "fabric-api",
-      "framework_id": "fabric-api"
+      "framework_id": "fabric-api",
+      "last_updated": "2026-10-14"
     },
     {
       "id": "sodium",
@@ -36,20 +37,22 @@
         "fabric-loader"
       ],
       "modrinth_slug": "sodium",
-      "framework_id": "sodium"
+      "framework_id": "sodium",
+      "last_updated": "2026-10-15"
     },
     {
       "id": "lithium",
       "name": "Lithium",
       "category": "Performance",
-      "summary": "Optimises game logic (mobs, blocks, chunks) without changing gameplay.",
+      "summary": "Optimizes game logic (mobs, blocks, chunks) without changing gameplay.",
       "source": "modrinth",
       "url": "https://modrinth.com/mod/lithium",
       "requires": [
         "fabric-loader"
       ],
       "modrinth_slug": "lithium",
-      "framework_id": "lithium"
+      "framework_id": "lithium",
+      "last_updated": "2026-09-28"
     },
     {
       "id": "iris",
@@ -63,7 +66,8 @@
         "sodium"
       ],
       "modrinth_slug": "iris",
-      "framework_id": "iris"
+      "framework_id": "iris",
+      "last_updated": "2026-09-30"
     },
     {
       "id": "ferrite-core",
@@ -75,7 +79,8 @@
       "requires": [
         "fabric-loader"
       ],
-      "modrinth_slug": "ferrite-core"
+      "modrinth_slug": "ferrite-core",
+      "last_updated": "2026-03-24"
     },
     {
       "id": "entityculling",
@@ -88,7 +93,8 @@
         "fabric-loader",
         "fabric-api"
       ],
-      "modrinth_slug": "entityculling"
+      "modrinth_slug": "entityculling",
+      "last_updated": "2026-10-08"
     },
     {
       "id": "dynamic-fps",
@@ -101,7 +107,8 @@
         "fabric-loader",
         "fabric-api"
       ],
-      "modrinth_slug": "dynamic-fps"
+      "modrinth_slug": "dynamic-fps",
+      "last_updated": "2026-09-16"
     },
     {
       "id": "modmenu",
@@ -114,7 +121,11 @@
         "fabric-loader",
         "fabric-api"
       ],
-      "modrinth_slug": "modmenu"
+      "modrinth_slug": "modmenu",
+      "also_requires": [
+        "Text Placeholder API"
+      ],
+      "last_updated": "2026-10-12"
     },
     {
       "id": "cloth-config",
@@ -126,7 +137,8 @@
       "requires": [
         "fabric-loader"
       ],
-      "modrinth_slug": "cloth-config"
+      "modrinth_slug": "cloth-config",
+      "last_updated": "2026-09-23"
     },
     {
       "id": "xaeros-minimap",
@@ -139,7 +151,8 @@
         "fabric-loader",
         "fabric-api"
       ],
-      "modrinth_slug": "xaeros-minimap"
+      "modrinth_slug": "xaeros-minimap",
+      "last_updated": "2026-10-05"
     },
     {
       "id": "xaeros-world-map",
@@ -152,7 +165,8 @@
         "fabric-loader",
         "fabric-api"
       ],
-      "modrinth_slug": "xaeros-world-map"
+      "modrinth_slug": "xaeros-world-map",
+      "last_updated": "2026-10-05"
     },
     {
       "id": "appleskin",
@@ -165,7 +179,8 @@
         "fabric-loader",
         "fabric-api"
       ],
-      "modrinth_slug": "appleskin"
+      "modrinth_slug": "appleskin",
+      "last_updated": "2026-09-17"
     },
     {
       "id": "jade",
@@ -178,7 +193,8 @@
         "fabric-loader",
         "fabric-api"
       ],
-      "modrinth_slug": "jade"
+      "modrinth_slug": "jade",
+      "last_updated": "2026-10-13"
     }
   ]
 }

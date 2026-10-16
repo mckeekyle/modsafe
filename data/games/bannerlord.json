@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T01:32:08Z",
+  "generated_at": "2026-10-16T05:30:54Z",
   "game": {
     "slug": "bannerlord",
     "name": "Mount & Blade II: Bannerlord",
@@ -10,7 +10,7 @@
       "title": "War Sails Modding Kit Release & Patch WS v1.2.8 / BL v1.4.8",
       "published_at": "2026-08-10T12:09:06Z",
       "published_unix": 1786363746,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840310314351373"
+      "url": "https://store.steampowered.com/news/app/261550/view/1840310314351373"
     }
   },
   "verdict": "Likely safe",
@@ -49,7 +49,7 @@
       "sensitive": false,
       "status": "Not affected by patches",
       "base_status": "Likely OK",
-      "reason": "Generic .NET runtime patching library, not tied to a Bannerlord build. Latest: Latest release is newer than patch BL v1.4.8, but notes do not explicitly mention that version.",
+      "reason": "Generic .NET runtime patching library, not tied to a Bannerlord build. Latest release: v2.4.3 (2026-10-11).",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v2.4.3",
@@ -68,7 +68,7 @@
       "title": "War Sails Modding Kit Release & Patch WS v1.2.8 / BL v1.4.8",
       "published_at": "2026-08-10T12:09:06Z",
       "published_unix": 1786363746,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840310314351373",
+      "url": "https://store.steampowered.com/news/app/261550/view/1840310314351373",
       "frameworks": [
         {
           "id": "blse",
@@ -96,7 +96,7 @@
       "title": "Patch Notes - WS v1.2.7 / BL v1.4.7",
       "published_at": "2026-07-08T13:22:27Z",
       "published_unix": 1783516947,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1836506165580665",
+      "url": "https://store.steampowered.com/news/app/261550/view/1836506165580665",
       "frameworks": [
         {
           "id": "blse",
@@ -124,7 +124,7 @@
       "title": "Patch Notes - WS v1.2.6 / BL v1.4.6",
       "published_at": "2026-06-11T10:03:09Z",
       "published_unix": 1781172189,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1835236783559860",
+      "url": "https://store.steampowered.com/news/app/261550/view/1835236783559860",
       "frameworks": [
         {
           "id": "blse",
@@ -152,7 +152,7 @@
       "title": "Patch Notes - WS v1.2.5 / BL v1.4.5",
       "published_at": "2026-05-21T14:27:02Z",
       "published_unix": 1779373622,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1833334318569123",
+      "url": "https://store.steampowered.com/news/app/261550/view/1833334318569123",
       "frameworks": [
         {
           "id": "blse",
@@ -180,7 +180,7 @@
       "title": "Patch Notes - WS v1.1.2 / BL v1.3.14",
       "published_at": "2026-02-03T09:34:39Z",
       "published_unix": 1770111279,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1823191198616261",
+      "url": "https://store.steampowered.com/news/app/261550/view/1823191198616261",
       "frameworks": [
         {
           "id": "blse",
@@ -208,7 +208,7 @@
       "title": "Patch Notes - WS v1.1.1 / BL v1.3.13",
       "published_at": "2025-12-24T14:57:37Z",
       "published_unix": 1766588257,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1819386365106738",
+      "url": "https://store.steampowered.com/news/app/261550/view/1819386365106738",
       "frameworks": [
         {
           "id": "blse",
@@ -236,7 +236,7 @@
       "title": "Patch Notes - WS v1.0.7 / BL v1.3.11",
       "published_at": "2025-12-16T14:39:53Z",
       "published_unix": 1765895993,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1818752592136045",
+      "url": "https://store.steampowered.com/news/app/261550/view/1818752592136045",
       "frameworks": [
         {
           "id": "blse",
@@ -264,7 +264,7 @@
       "title": "Patch Notes - WS v1.0.6 / BL v1.3.10",
       "published_at": "2025-12-08T10:31:12Z",
       "published_unix": 1765189872,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1818118366182217",
+      "url": "https://store.steampowered.com/news/app/261550/view/1818118366182217",
       "frameworks": [
         {
           "id": "blse",
@@ -292,7 +292,7 @@
       "title": "Patch Notes - WS v1.0.5 / BL v1.3.9",
       "published_at": "2025-12-02T10:44:41Z",
       "published_unix": 1764672281,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1817483467047988",
+      "url": "https://store.steampowered.com/news/app/261550/view/1817483467047988",
       "frameworks": [
         {
           "id": "blse",
@@ -320,7 +320,7 @@
       "title": "Patch Notes - WS v1.0.4 / BL v1.3.8",
       "published_at": "2025-11-29T17:46:39Z",
       "published_unix": 1764438399,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1817483467041742",
+      "url": "https://store.steampowered.com/news/app/261550/view/1817483467041742",
       "frameworks": [
         {
           "id": "blse",
@@ -348,7 +348,7 @@
       "title": "Patch Notes - WS v1.0.3 / BL v1.3.7",
       "published_at": "2025-11-28T18:06:58Z",
       "published_unix": 1764353218,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1817483467040157",
+      "url": "https://store.steampowered.com/news/app/261550/view/1817483467040157",
       "frameworks": [
         {
           "id": "blse",
@@ -376,7 +376,7 @@
       "title": "Patch Notes - WS v1.0.2 / BL v1.3.6",
       "published_at": "2025-11-27T17:01:17Z",
       "published_unix": 1764262877,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1817483467037253",
+      "url": "https://store.steampowered.com/news/app/261550/view/1817483467037253",
       "frameworks": [
         {
           "id": "blse",
@@ -402,61 +402,61 @@
   "news": [
     {
       "title": "Beta Patch Notes - WS v1.3.0 / BL v1.5.0",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1841579228662390",
+      "url": "https://store.steampowered.com/news/app/261550/view/1841579228662390",
       "published_at": "2026-08-19T12:05:05Z",
       "is_patch": false
     },
     {
       "title": "War Sails Modding Competition",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840944183780314",
+      "url": "https://store.steampowered.com/news/app/261550/view/1840944183780314",
       "published_at": "2026-08-14T17:03:00Z",
       "is_patch": false
     },
     {
       "title": "War Sails Modding Kit Release & Patch WS v1.2.8 / BL v1.4.8",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840310314351373",
+      "url": "https://store.steampowered.com/news/app/261550/view/1840310314351373",
       "published_at": "2026-08-10T12:09:06Z",
       "is_patch": true
     },
     {
       "title": "Patch Notes - WS v1.2.7 / BL v1.4.7",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1836506165580665",
+      "url": "https://store.steampowered.com/news/app/261550/view/1836506165580665",
       "published_at": "2026-07-08T13:22:27Z",
       "is_patch": true
     },
     {
       "title": "Community Tales #18",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1836506165556277",
+      "url": "https://store.steampowered.com/news/app/261550/view/1836506165556277",
       "published_at": "2026-06-27T11:13:39Z",
       "is_patch": false
     },
     {
       "title": "Mount & Blade Summer Sale!",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1836506165551490",
+      "url": "https://store.steampowered.com/news/app/261550/view/1836506165551490",
       "published_at": "2026-06-25T19:01:15Z",
       "is_patch": false
     },
     {
       "title": "Patch Notes - WS v1.2.6 / BL v1.4.6",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1835236783559860",
+      "url": "https://store.steampowered.com/news/app/261550/view/1835236783559860",
       "published_at": "2026-06-11T10:03:09Z",
       "is_patch": true
     },
     {
       "title": "Patch Notes - WS v1.2.5 / BL v1.4.5",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1833334318569123",
+      "url": "https://store.steampowered.com/news/app/261550/view/1833334318569123",
       "published_at": "2026-05-21T14:27:02Z",
       "is_patch": true
     },
     {
       "title": "Beta WS v1.2.1 / BL v1.4.1 - Seaborne Village Raids",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1830797770230332",
+      "url": "https://store.steampowered.com/news/app/261550/view/1830797770230332",
       "published_at": "2026-04-22T10:50:57Z",
       "is_patch": false
     },
     {
       "title": "Mount & Blade Medieval Fest Sale!",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1830163047266745",
+      "url": "https://store.steampowered.com/news/app/261550/view/1830163047266745",
       "published_at": "2026-04-20T17:13:44Z",
       "is_patch": false
     }

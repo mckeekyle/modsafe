@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T01:32:39Z",
+  "generated_at": "2026-10-16T05:31:26Z",
   "game": {
     "slug": "msfs-2020",
     "name": "Microsoft Flight Simulator (2020)",
@@ -10,7 +10,7 @@
       "title": "Release Notes - Sim Update 16 [1.39.9.0] Now Available",
       "published_at": "2025-08-05T15:15:08Z",
       "published_unix": 1754406908,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1806698490847382"
+      "url": "https://store.steampowered.com/news/app/1250410/view/1806698490847382"
     }
   },
   "verdict": "Likely safe",
@@ -104,7 +104,7 @@
       "title": "Release Notes - Sim Update 16 [1.39.9.0] Now Available",
       "published_at": "2025-08-05T15:15:08Z",
       "published_unix": 1754406908,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1806698490847382",
+      "url": "https://store.steampowered.com/news/app/1250410/view/1806698490847382",
       "frameworks": [
         {
           "id": "fbw-a32nx",
@@ -141,7 +141,7 @@
       "title": "Release Notes - Sim Update 15 [1.37.18.0] Available Now!",
       "published_at": "2024-05-23T15:10:51Z",
       "published_unix": 1716477051,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5741605105607555452",
+      "url": "https://store.steampowered.com/news/app/1250410/view/5741605105607555452",
       "frameworks": [
         {
           "id": "fbw-a32nx",
@@ -178,7 +178,7 @@
       "title": "Release Notes - Sim Update 14 [1.35.21.0] Available Now",
       "published_at": "2023-12-05T16:08:06Z",
       "published_unix": 1701792486,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5395937983679734929",
+      "url": "https://store.steampowered.com/news/app/1250410/view/5395937983679734929",
       "frameworks": [
         {
           "id": "fbw-a32nx",
@@ -215,7 +215,7 @@
       "title": "Release Notes - Sim Update 13 [1.34.16.0] Available Now!",
       "published_at": "2023-09-28T15:15:17Z",
       "published_unix": 1695914117,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5220291886487372006",
+      "url": "https://store.steampowered.com/news/app/1250410/view/5220291886487372006",
       "frameworks": [
         {
           "id": "fbw-a32nx",
@@ -250,61 +250,61 @@
   "news": [
     {
       "title": "World Update 21: Australia",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1831432155580455",
+      "url": "https://store.steampowered.com/news/app/1250410/view/1831432155580455",
       "published_at": "2026-05-05T15:31:49Z",
       "is_patch": false
     },
     {
       "title": "City Update 13: California Now Available",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1823191198600355",
+      "url": "https://store.steampowered.com/news/app/1250410/view/1823191198600355",
       "published_at": "2026-01-28T16:53:00Z",
       "is_patch": false
     },
     {
       "title": "Top-Rated Aircraft Sale",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1813041031382783",
+      "url": "https://store.steampowered.com/news/app/1250410/view/1813041031382783",
       "published_at": "2025-10-14T20:37:47Z",
       "is_patch": false
     },
     {
       "title": "World Update 20: Japan Now Available",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1811772772240981",
+      "url": "https://store.steampowered.com/news/app/1250410/view/1811772772240981",
       "published_at": "2025-09-25T10:43:58Z",
       "is_patch": false
     },
     {
       "title": "Release Notes - Sim Update 16 [1.39.9.0] Now Available",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1806698490847382",
+      "url": "https://store.steampowered.com/news/app/1250410/view/1806698490847382",
       "published_at": "2025-08-05T15:15:08Z",
       "is_patch": true
     },
     {
       "title": "Microsoft Flight Simulator Releases City Update 11: Northeastern United States 2",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1803527891543259",
+      "url": "https://store.steampowered.com/news/app/1250410/view/1803527891543259",
       "published_at": "2025-06-27T13:14:46Z",
       "is_patch": false
     },
     {
       "title": "Sim Update 16 Beta [1.39.0.0] Available Now!",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1799817379609105",
+      "url": "https://store.steampowered.com/news/app/1250410/view/1799817379609105",
       "published_at": "2025-05-19T22:11:42Z",
       "is_patch": false
     },
     {
       "title": "Microsoft Flight Simulator Releases City Update 10: United States I",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1797185861802281",
+      "url": "https://store.steampowered.com/news/app/1250410/view/1797185861802281",
       "published_at": "2025-04-22T15:31:33Z",
       "is_patch": false
     },
     {
       "title": "Aircraft & Avionics Update 3 Now Available",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6339469370200551818",
+      "url": "https://store.steampowered.com/news/app/1250410/view/6339469370200551818",
       "published_at": "2024-10-01T15:20:26Z",
       "is_patch": false
     },
     {
       "title": "World Update XVIII: Germany, Austria, and Switzerland",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5875595438688609399",
+      "url": "https://store.steampowered.com/news/app/1250410/view/5875595438688609399",
       "published_at": "2024-08-22T15:57:59Z",
       "is_patch": false
     }

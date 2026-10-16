@@ -574,6 +574,20 @@ def patch_age_days(patch_published_at: str, now: Optional[datetime] = None) -> f
     return (now - dt).total_seconds() / 86400
 
 
+CONFIRM_LABEL_RE = re.compile(r"(?i)\b(bug|confirmed|regression|crash|broken|critical)\b")
+
+
+def confirmed_breakage(reports: list[dict]) -> list[dict]:
+    """A lone, unlabeled issue from one user is a lead, not evidence. Treat reports as confirmed when a
+    maintainer labeled one as a bug/regression, others +1'd it, or several independent reports exist."""
+    if not reports:
+        return []
+    if len(reports) >= 2:
+        return reports
+    return [r for r in reports if any(CONFIRM_LABEL_RE.search(l) for l in r.get("labels", []))
+            or r.get("thumbs_up", 0) >= 2]
+
+
 def user_verdict(
     *,
     base_status: Optional[str],

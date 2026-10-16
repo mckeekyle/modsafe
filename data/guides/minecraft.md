@@ -23,5 +23,5 @@ Minecraft Java mods are built for one **mod loader** (Fabric, Forge or NeoForge)
 ## Rolling back
 
 - Disable a mod in the launcher (or remove its .jar from the profile's mods folder).
-- To go back to an older game version, create a profile with that version. Your worlds are copied, not converted, if you use separate profiles.
+- To go back to an older game version, create a separate profile with that version and copy a backup of your world into it. Opening a world in a newer version upgrades it.
 - Back up your world folder before opening it on a newer version. Worlds upgraded to a newer version can't safely go back.

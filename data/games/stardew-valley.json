@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T01:31:23Z",
+  "generated_at": "2026-10-16T05:30:10Z",
   "game": {
     "slug": "stardew-valley",
     "name": "Stardew Valley",
@@ -10,7 +10,7 @@
       "title": "Stardew Valley 1.6.15 Patch now available",
       "published_at": "2024-12-20T18:14:21Z",
       "published_unix": 1734718461,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1786573930663336"
+      "url": "https://store.steampowered.com/news/app/413150/view/1786573930663336"
     }
   },
   "verdict": "Safe",
@@ -48,7 +48,7 @@
       "title": "Stardew Valley 1.6.15 Patch now available",
       "published_at": "2024-12-20T18:14:21Z",
       "published_unix": 1734718461,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1786573930663336",
+      "url": "https://store.steampowered.com/news/app/413150/view/1786573930663336",
       "frameworks": [
         {
           "id": "smapi",
@@ -67,7 +67,7 @@
       "title": "1.6.14 Update",
       "published_at": "2024-11-12T08:07:20Z",
       "published_unix": 1731398840,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6148070194801749418",
+      "url": "https://store.steampowered.com/news/app/413150/view/6148070194801749418",
       "frameworks": [
         {
           "id": "smapi",
@@ -86,7 +86,7 @@
       "title": "Minor update 1.6.13",
       "published_at": "2024-11-08T07:04:25Z",
       "published_unix": 1731049465,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6148070194801619948",
+      "url": "https://store.steampowered.com/news/app/413150/view/6148070194801619948",
       "frameworks": [
         {
           "id": "smapi",
@@ -105,7 +105,7 @@
       "title": "1.6.12 Update",
       "published_at": "2024-11-07T08:25:48Z",
       "published_unix": 1730967948,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6148070194801588759",
+      "url": "https://store.steampowered.com/news/app/413150/view/6148070194801588759",
       "frameworks": [
         {
           "id": "smapi",
@@ -124,7 +124,7 @@
       "title": "Update 1.6.11",
       "published_at": "2024-11-06T06:46:34Z",
       "published_unix": 1730875594,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6148070194801553515",
+      "url": "https://store.steampowered.com/news/app/413150/view/6148070194801553515",
       "frameworks": [
         {
           "id": "smapi",
@@ -143,7 +143,7 @@
       "title": "1.6.10 Bug Fix Patch",
       "published_at": "2024-11-05T00:04:17Z",
       "published_unix": 1730765057,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6146943657174044314",
+      "url": "https://store.steampowered.com/news/app/413150/view/6146943657174044314",
       "frameworks": [
         {
           "id": "smapi",
@@ -162,7 +162,7 @@
       "title": "1.6.9 Update Now Available",
       "published_at": "2024-11-04T17:57:56Z",
       "published_unix": 1730743076,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6146943657174036265",
+      "url": "https://store.steampowered.com/news/app/413150/view/6146943657174036265",
       "frameworks": [
         {
           "id": "smapi",
@@ -181,7 +181,7 @@
       "title": "Stardew Valley 1.6.6 Patch Notes",
       "published_at": "2024-04-26T19:39:05Z",
       "published_unix": 1714160345,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5759616966669183785",
+      "url": "https://store.steampowered.com/news/app/413150/view/5759616966669183785",
       "frameworks": [
         {
           "id": "smapi",
@@ -200,7 +200,7 @@
       "title": "1.6.5 patch notes",
       "published_at": "2024-04-19T17:29:01Z",
       "published_unix": 1713547741,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5762994032395159679",
+      "url": "https://store.steampowered.com/news/app/413150/view/5762994032395159679",
       "frameworks": [
         {
           "id": "smapi",
@@ -219,7 +219,7 @@
       "title": "1.6.4 hotfix 1",
       "published_at": "2024-04-19T08:39:32Z",
       "published_unix": 1713515972,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5762994032393818369",
+      "url": "https://store.steampowered.com/news/app/413150/view/5762994032393818369",
       "frameworks": [
         {
           "id": "smapi",
@@ -238,7 +238,7 @@
       "title": "Stardew Valley 1.6.3 Patch",
       "published_at": "2024-03-27T20:53:54Z",
       "published_unix": 1711572834,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5749481331434481650",
+      "url": "https://store.steampowered.com/news/app/413150/view/5749481331434481650",
       "frameworks": [
         {
           "id": "smapi",
@@ -257,7 +257,7 @@
       "title": "Patch 1.6.2",
       "published_at": "2024-03-21T04:24:01Z",
       "published_unix": 1710995041,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5686430301716627452",
+      "url": "https://store.steampowered.com/news/app/413150/view/5686430301716627452",
       "frameworks": [
         {
           "id": "smapi",
@@ -274,61 +274,61 @@
   "news": [
     {
       "title": "Stardew Valley 10-year Anniversary",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1825727806709248",
+      "url": "https://store.steampowered.com/news/app/413150/view/1825727806709248",
       "published_at": "2026-02-26T23:40:00Z",
       "is_patch": false
     },
     {
       "title": "Stardew Valley Merchandise by Fangamer -- Special Promotion",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1816849002015096",
+      "url": "https://store.steampowered.com/news/app/413150/view/1816849002015096",
       "published_at": "2025-11-21T17:58:09Z",
       "is_patch": false
     },
     {
       "title": "Stardew Valley 1.6.15 Patch now available",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1786573930663336",
+      "url": "https://store.steampowered.com/news/app/413150/view/1786573930663336",
       "published_at": "2024-12-20T18:14:21Z",
       "is_patch": true
     },
     {
       "title": "Stardew Valley up for \"Labor of Love\" Steam Award",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1786573930637526",
+      "url": "https://store.steampowered.com/news/app/413150/view/1786573930637526",
       "published_at": "2024-12-20T00:42:25Z",
       "is_patch": false
     },
     {
       "title": "Stardew Valley up for \"Labor of Love\" Steam Award Nomination",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1784506358991087",
+      "url": "https://store.steampowered.com/news/app/413150/view/1784506358991087",
       "published_at": "2024-11-27T21:35:42Z",
       "is_patch": false
     },
     {
       "title": "Stardew Valley x Fangamer Merch Holiday Sale",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1783238125358744",
+      "url": "https://store.steampowered.com/news/app/413150/view/1783238125358744",
       "published_at": "2024-11-19T01:16:31Z",
       "is_patch": false
     },
     {
       "title": "1.6.14 Update",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6148070194801749418",
+      "url": "https://store.steampowered.com/news/app/413150/view/6148070194801749418",
       "published_at": "2024-11-12T08:07:20Z",
       "is_patch": true
     },
     {
       "title": "Minor update 1.6.13",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6148070194801619948",
+      "url": "https://store.steampowered.com/news/app/413150/view/6148070194801619948",
       "published_at": "2024-11-08T07:04:25Z",
       "is_patch": true
     },
     {
       "title": "1.6.12 Update",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6148070194801588759",
+      "url": "https://store.steampowered.com/news/app/413150/view/6148070194801588759",
       "published_at": "2024-11-07T08:25:48Z",
       "is_patch": true
     },
     {
       "title": "Update 1.6.11",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6148070194801553515",
+      "url": "https://store.steampowered.com/news/app/413150/view/6148070194801553515",
       "published_at": "2024-11-06T06:46:34Z",
       "is_patch": true
     }

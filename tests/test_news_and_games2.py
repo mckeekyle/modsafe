@@ -174,3 +174,37 @@ class TestMSFS(unittest.TestCase):
             self.assertEqual([x["tag_name"] for x in update.releases_github({"repo": "x/y", "tag_prefix": "v2024."})], ["v2024.1.0"])
         finally:
             update.http_get_json = orig_j
+
+
+class TestMinecraftBuildRuns(unittest.TestCase):
+    def test_build_minecraft_with_fixtures(self):
+        """Regression: a NameError in build_minecraft silently kept stale data for hours."""
+        import update
+        from games import GAMES_BY_SLUG
+        fx = {
+            update.MC_MANIFEST: {"latest": {"release": "26.3", "snapshot": "x"},
+                                 "versions": [{"id": "26.3", "type": "release", "releaseTime": "2026-09-15T11:23:02+00:00"}]},
+            update.FABRIC_GAME: [{"version": "26.3", "stable": True}],
+            update.FABRIC_LOADER: [{"version": "0.19.5", "stable": True}],
+            update.FORGE_PROMOS: {"promos": {"26.3-latest": "66.0.12"}},
+            update.NEOFORGE_VERSIONS: {"versions": ["26.3.0.84"]},
+        }
+        orig = update.http_get_json
+        update.http_get_json = lambda url, *a, **k: fx.get(url, [{"version_number": "1.0", "game_versions": ["26.3"],
+                                                                   "version_type": "release", "date_published": "2026-09-20T00:00:00Z"}])
+        try:
+            out = update.build_game(GAMES_BY_SLUG["minecraft"])
+        finally:
+            update.http_get_json = orig
+        self.assertEqual(out["game"]["latest_patch"]["label"], "26.3")
+        self.assertTrue(all(f["status"] for f in out["frameworks"]))
+
+
+class TestConfirmedBreakage(unittest.TestCase):
+    def test_single_unlabeled_report_is_not_confirmed(self):
+        from status_logic import confirmed_breakage
+        one = [{"title": "crash after 1.17", "labels": [], "thumbs_up": 0}]
+        self.assertEqual(confirmed_breakage(one), [])
+        self.assertEqual(len(confirmed_breakage([{**one[0], "labels": ["bug"]}])), 1)
+        self.assertEqual(len(confirmed_breakage([{**one[0], "thumbs_up": 3}])), 1)
+        self.assertEqual(len(confirmed_breakage(one * 2)), 2)

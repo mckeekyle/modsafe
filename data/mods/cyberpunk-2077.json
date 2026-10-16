@@ -21,7 +21,8 @@
       "nexus_id": 107,
       "url": "https://www.nexusmods.com/cyberpunk2077/mods/107",
       "requires": [],
-      "framework_id": "cet"
+      "framework_id": "cet",
+      "last_updated": "2025-09-30"
     },
     {
       "id": "red4ext",
@@ -33,7 +34,8 @@
       "nexus_id": 2380,
       "url": "https://www.nexusmods.com/cyberpunk2077/mods/2380",
       "requires": [],
-      "framework_id": "red4ext"
+      "framework_id": "red4ext",
+      "last_updated": "2026-03-09"
     },
     {
       "id": "redscript",
@@ -45,7 +47,8 @@
       "nexus_id": 1511,
       "url": "https://www.nexusmods.com/cyberpunk2077/mods/1511",
       "requires": [],
-      "framework_id": "redscript"
+      "framework_id": "redscript",
+      "last_updated": "2025-09-05"
     },
     {
       "id": "archive-xl",
@@ -59,7 +62,8 @@
       "requires": [
         "red4ext"
       ],
-      "framework_id": "archive-xl"
+      "framework_id": "archive-xl",
+      "last_updated": "2026-10-07"
     },
     {
       "id": "tweak-xl",
@@ -73,7 +77,8 @@
       "requires": [
         "red4ext"
       ],
-      "framework_id": "tweak-xl"
+      "framework_id": "tweak-xl",
+      "last_updated": "2026-07-30"
     },
     {
       "id": "codeware",
@@ -85,10 +90,10 @@
       "nexus_id": 7780,
       "url": "https://www.nexusmods.com/cyberpunk2077/mods/7780",
       "requires": [
-        "red4ext",
-        "redscript"
+        "red4ext"
       ],
-      "framework_id": "codeware"
+      "framework_id": "codeware",
+      "last_updated": "2026-09-20"
     },
     {
       "id": "native-settings-ui",
@@ -101,7 +106,8 @@
       "url": "https://www.nexusmods.com/cyberpunk2077/mods/3518",
       "requires": [
         "cet"
-      ]
+      ],
+      "last_updated": "2024-01-06"
     },
     {
       "id": "mod-settings",
@@ -114,8 +120,10 @@
       "url": "https://www.nexusmods.com/cyberpunk2077/mods/4885",
       "requires": [
         "red4ext",
-        "redscript"
-      ]
+        "redscript",
+        "archive-xl"
+      ],
+      "last_updated": "2025-07-19"
     },
     {
       "id": "virtual-atelier",
@@ -127,11 +135,16 @@
       "nexus_id": 2987,
       "url": "https://www.nexusmods.com/cyberpunk2077/mods/2987",
       "requires": [
-        "cet",
+        "red4ext",
         "redscript",
         "archive-xl",
-        "tweak-xl"
-      ]
+        "codeware",
+        "mod-settings"
+      ],
+      "also_requires": [
+        "Browser Extension"
+      ],
+      "last_updated": "2026-08-18"
     },
     {
       "id": "equipment-ex",
@@ -148,7 +161,8 @@
         "archive-xl",
         "tweak-xl",
         "codeware"
-      ]
+      ],
+      "last_updated": "2026-05-16"
     },
     {
       "id": "limited-hud",
@@ -160,9 +174,15 @@
       "nexus_id": 2592,
       "url": "https://www.nexusmods.com/cyberpunk2077/mods/2592",
       "requires": [
-        "cet",
-        "redscript"
-      ]
+        "red4ext",
+        "redscript",
+        "archive-xl",
+        "mod-settings"
+      ],
+      "also_requires": [
+        "Input Loader"
+      ],
+      "last_updated": "2026-07-26"
     },
     {
       "id": "amm",
@@ -176,9 +196,12 @@
       "requires": [
         "cet",
         "archive-xl",
-        "tweak-xl",
         "codeware"
-      ]
+      ],
+      "also_requires": [
+        "Appearance Runtime Plugin"
+      ],
+      "last_updated": "2026-10-15"
     },
     {
       "id": "no-intro-videos",
@@ -189,7 +212,10 @@
       "nexus_domain": "cyberpunk2077",
       "nexus_id": 533,
       "url": "https://www.nexusmods.com/cyberpunk2077/mods/533",
-      "requires": []
+      "requires": [
+        "redscript"
+      ],
+      "last_updated": "2025-10-14"
     }
   ]
 }

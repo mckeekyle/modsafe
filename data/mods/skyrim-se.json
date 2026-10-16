@@ -22,7 +22,8 @@
       "url": "https://www.nexusmods.com/skyrimspecialedition/mods/30379",
       "requires": [],
       "framework_id": "skse64",
-      "note": "Must match your exact game build. Install via the mod manager, then always launch through skse64_loader.exe."
+      "note": "Must match your exact game build. Install via the mod manager, then always launch through skse64_loader.exe.",
+      "last_updated": "2026-08-27"
     },
     {
       "id": "address-library",
@@ -36,13 +37,14 @@
       "requires": [
         "skse64"
       ],
-      "framework_id": "address-library"
+      "framework_id": "address-library",
+      "last_updated": "2026-08-27"
     },
     {
       "id": "engine-fixes",
       "name": "SSE Engine Fixes",
       "category": "Fixes",
-      "summary": "Patches dozens of engine bugs and crash sources; part 2 (preloader DLLs) goes in the game folder manually.",
+      "summary": "Fixes dozens of engine bugs and crash sources. Follow its install notes: some versions ship a part 2 for the game folder.",
       "source": "nexus",
       "nexus_domain": "skyrimspecialedition",
       "nexus_id": 17230,
@@ -51,7 +53,11 @@
         "skse64",
         "address-library"
       ],
-      "framework_id": "engine-fixes"
+      "framework_id": "engine-fixes",
+      "also_requires": [
+        "Microsoft Visual C++ Redistributable 2022"
+      ],
+      "last_updated": "2026-08-24"
     },
     {
       "id": "ussep",
@@ -62,7 +68,8 @@
       "nexus_domain": "skyrimspecialedition",
       "nexus_id": 266,
       "url": "https://www.nexusmods.com/skyrimspecialedition/mods/266",
-      "requires": []
+      "requires": [],
+      "last_updated": "2026-09-05"
     },
     {
       "id": "po3-tweaks",
@@ -76,7 +83,8 @@
       "requires": [
         "skse64",
         "address-library"
-      ]
+      ],
+      "last_updated": "2026-08-25"
     },
     {
       "id": "display-tweaks",
@@ -90,7 +98,11 @@
       "requires": [
         "skse64",
         "address-library"
-      ]
+      ],
+      "also_requires": [
+        "Microsoft Visual C++ Redistributable 2022"
+      ],
+      "last_updated": "2026-08-29"
     },
     {
       "id": "skyui",
@@ -103,7 +115,8 @@
       "url": "https://www.nexusmods.com/skyrimspecialedition/mods/12604",
       "requires": [
         "skse64"
-      ]
+      ],
+      "last_updated": "2026-05-05"
     },
     {
       "id": "mcm-helper",
@@ -118,7 +131,8 @@
         "skse64",
         "address-library",
         "skyui"
-      ]
+      ],
+      "last_updated": "2026-08-26"
     },
     {
       "id": "better-dialogue",
@@ -129,7 +143,8 @@
       "nexus_domain": "skyrimspecialedition",
       "nexus_id": 1429,
       "url": "https://www.nexusmods.com/skyrimspecialedition/mods/1429",
-      "requires": []
+      "requires": [],
+      "last_updated": "2016-11-26"
     },
     {
       "id": "better-messagebox",
@@ -140,7 +155,8 @@
       "nexus_domain": "skyrimspecialedition",
       "nexus_id": 1428,
       "url": "https://www.nexusmods.com/skyrimspecialedition/mods/1428",
-      "requires": []
+      "requires": [],
+      "last_updated": "2016-11-26"
     },
     {
       "id": "racemenu",
@@ -152,9 +168,9 @@
       "nexus_id": 19080,
       "url": "https://www.nexusmods.com/skyrimspecialedition/mods/19080",
       "requires": [
-        "skse64",
-        "address-library"
-      ]
+        "skse64"
+      ],
+      "last_updated": "2026-04-20"
     },
     {
       "id": "aqwm",
@@ -165,7 +181,8 @@
       "nexus_domain": "skyrimspecialedition",
       "nexus_id": 5804,
       "url": "https://www.nexusmods.com/skyrimspecialedition/mods/5804",
-      "requires": []
+      "requires": [],
+      "last_updated": "2016-12-11"
     },
     {
       "id": "smim",
@@ -176,7 +193,8 @@
       "nexus_domain": "skyrimspecialedition",
       "nexus_id": 659,
       "url": "https://www.nexusmods.com/skyrimspecialedition/mods/659",
-      "requires": []
+      "requires": [],
+      "last_updated": "2025-02-16"
     }
   ]
 }

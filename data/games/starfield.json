@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T01:31:37Z",
+  "generated_at": "2026-10-16T05:30:24Z",
   "game": {
     "slug": "starfield",
     "name": "Starfield",
@@ -10,7 +10,7 @@
       "title": "Starfield Update 1.16.244 \u2013 June 11, 2026",
       "published_at": "2026-06-11T15:15:06Z",
       "published_unix": 1781190906,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1835236783560763"
+      "url": "https://store.steampowered.com/news/app/1716740/view/1835236783560763"
     }
   },
   "verdict": "Safe",
@@ -65,7 +65,7 @@
       "title": "Starfield Update 1.16.244 \u2013 June 11, 2026",
       "published_at": "2026-06-11T15:15:06Z",
       "published_unix": 1781190906,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1835236783560763",
+      "url": "https://store.steampowered.com/news/app/1716740/view/1835236783560763",
       "frameworks": [
         {
           "id": "sfse",
@@ -84,7 +84,7 @@
       "title": "Starfield Update 1.16.242 \u2013 May 14, 2026",
       "published_at": "2026-05-22T16:51:29Z",
       "published_unix": 1779468689,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1833334318572332",
+      "url": "https://store.steampowered.com/news/app/1716740/view/1833334318572332",
       "frameworks": [
         {
           "id": "sfse",
@@ -103,7 +103,7 @@
       "title": "Starfield Update 1.16.236 \u2013 April 7, 2026",
       "published_at": "2026-04-07T15:28:10Z",
       "published_unix": 1775575690,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1828894815567746",
+      "url": "https://store.steampowered.com/news/app/1716740/view/1828894815567746",
       "frameworks": [
         {
           "id": "sfse",
@@ -122,7 +122,7 @@
       "title": "Starfield Update 1.15.222 - August 5, 2025",
       "published_at": "2025-07-22T15:54:51Z",
       "published_unix": 1753199691,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1805431065501987",
+      "url": "https://store.steampowered.com/news/app/1716740/view/1805431065501987",
       "frameworks": [
         {
           "id": "sfse",
@@ -141,7 +141,7 @@
       "title": "Starfield Update 1.15.216 \u2013 May 22, 2025",
       "published_at": "2025-05-06T15:26:41Z",
       "published_unix": 1746545201,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1798454487767416",
+      "url": "https://store.steampowered.com/news/app/1716740/view/1798454487767416",
       "frameworks": [
         {
           "id": "sfse",
@@ -160,7 +160,7 @@
       "title": "Starfield Update 1.14.74 \u2013 November 19, 2024",
       "published_at": "2024-11-05T17:10:05Z",
       "published_unix": 1730826605,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6146943657174067793",
+      "url": "https://store.steampowered.com/news/app/1716740/view/6146943657174067793",
       "frameworks": [
         {
           "id": "sfse",
@@ -179,7 +179,7 @@
       "title": "Starfield Update 1.14.70 \u2013 September 30, 2024",
       "published_at": "2024-09-18T14:46:02Z",
       "published_unix": 1726670762,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6341720536499253210",
+      "url": "https://store.steampowered.com/news/app/1716740/view/6341720536499253210",
       "frameworks": [
         {
           "id": "sfse",
@@ -198,7 +198,7 @@
       "title": "Starfield Update 1.12.30 - June 9, 2024",
       "published_at": "2024-06-09T22:00:32Z",
       "published_unix": 1717970432,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5746109972561139047",
+      "url": "https://store.steampowered.com/news/app/1716740/view/5746109972561139047",
       "frameworks": [
         {
           "id": "sfse",
@@ -217,7 +217,7 @@
       "title": "Starfield Update 1.11.36 - May 15, 2024",
       "published_at": "2024-05-01T15:09:58Z",
       "published_unix": 1714576198,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5766372999940258228",
+      "url": "https://store.steampowered.com/news/app/1716740/view/5766372999940258228",
       "frameworks": [
         {
           "id": "sfse",
@@ -236,7 +236,7 @@
       "title": "Starfield Update 1.10.31 - March 19, 2024",
       "published_at": "2024-03-06T16:39:34Z",
       "published_unix": 1709743174,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5679673637649039127",
+      "url": "https://store.steampowered.com/news/app/1716740/view/5679673637649039127",
       "frameworks": [
         {
           "id": "sfse",
@@ -255,7 +255,7 @@
       "title": "Starfield Update 1.9.67 Notes \u2013 February 20, 2024",
       "published_at": "2024-02-07T16:15:33Z",
       "published_unix": 1707322533,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5589599109262035510",
+      "url": "https://store.steampowered.com/news/app/1716740/view/5589599109262035510",
       "frameworks": [
         {
           "id": "sfse",
@@ -274,7 +274,7 @@
       "title": "Starfield Update 1.9.51 Notes \u2013 January 30, 2024",
       "published_at": "2024-01-18T16:14:34Z",
       "published_unix": 1705594474,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5510784213098362871",
+      "url": "https://store.steampowered.com/news/app/1716740/view/5510784213098362871",
       "frameworks": [
         {
           "id": "sfse",
@@ -291,61 +291,61 @@
   "news": [
     {
       "title": "New worlds to explore with Starfield Creations!",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1835236783563685",
+      "url": "https://store.steampowered.com/news/app/1716740/view/1835236783563685",
       "published_at": "2026-06-12T14:43:46Z",
       "is_patch": false
     },
     {
       "title": "Starfield Update 1.16.244 \u2013 June 11, 2026",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1835236783560763",
+      "url": "https://store.steampowered.com/news/app/1716740/view/1835236783560763",
       "published_at": "2026-06-11T15:15:06Z",
       "is_patch": true
     },
     {
       "title": "Starfield Update 1.16.242 \u2013 May 14, 2026",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1833334318572332",
+      "url": "https://store.steampowered.com/news/app/1716740/view/1833334318572332",
       "published_at": "2026-05-22T16:51:29Z",
       "is_patch": true
     },
     {
       "title": "Starfield Update 1.16.236 \u2013 April 7, 2026",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1828894815567746",
+      "url": "https://store.steampowered.com/news/app/1716740/view/1828894815567746",
       "published_at": "2026-04-07T15:28:10Z",
       "is_patch": true
     },
     {
       "title": "Everything in Starfield\u2019s Free Lanes Update & Terran Armada DLC",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1828894815567715",
+      "url": "https://store.steampowered.com/news/app/1716740/view/1828894815567715",
       "published_at": "2026-04-07T15:20:21Z",
       "is_patch": false
     },
     {
       "title": "Starfield\u2019s Terran Armada DLC Animated Anthology Episode",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1828894815565751",
+      "url": "https://store.steampowered.com/news/app/1716740/view/1828894815565751",
       "published_at": "2026-04-06T17:44:32Z",
       "is_patch": false
     },
     {
       "title": "Starfield Colony War Action Figures Coming Soon!",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1828894815557713",
+      "url": "https://store.steampowered.com/news/app/1716740/view/1828894815557713",
       "published_at": "2026-04-02T15:09:54Z",
       "is_patch": false
     },
     {
       "title": "Everything Coming in Starfield\u2019s Free Lanes Update & Terran Armada DLC",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1826992588604218",
+      "url": "https://store.steampowered.com/news/app/1716740/view/1826992588604218",
       "published_at": "2026-03-17T15:26:52Z",
       "is_patch": false
     },
     {
       "title": "Complete Starfield Trackers Alliance Bounty Series Available Now",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1826992588604183",
+      "url": "https://store.steampowered.com/news/app/1716740/view/1826992588604183",
       "published_at": "2026-03-17T15:21:18Z",
       "is_patch": false
     },
     {
       "title": "Starfield Featured Creations \u2013 Halloween Edition",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1814309641413898",
+      "url": "https://store.steampowered.com/news/app/1716740/view/1814309641413898",
       "published_at": "2025-10-22T15:25:04Z",
       "is_patch": false
     }

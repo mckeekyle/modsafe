@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T01:31:22Z",
+  "generated_at": "2026-10-16T05:30:08Z",
   "game": {
     "slug": "baldurs-gate-3",
     "name": "Baldur's Gate 3",
@@ -10,7 +10,7 @@
       "title": "Hotfix #36 Now Live!",
       "published_at": "2026-03-26T14:40:05Z",
       "published_unix": 1774536005,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1827626365770693"
+      "url": "https://store.steampowered.com/news/app/1086940/view/1827626365770693"
     }
   },
   "verdict": "Likely safe",
@@ -49,7 +49,7 @@
       "sensitive": false,
       "status": "Not affected by patches",
       "base_status": "Unknown / check",
-      "reason": "A load-order/mod manager that edits files outside the game binary; game patches don't break it. Latest: Latest release predates patch Hotfix #36; compatibility is unverified \u2014 check the project page.",
+      "reason": "A load-order/mod manager that edits files outside the game binary; game patches don't break it. Latest release: 1.0.12.9 (2025-05-18).",
       "breakage_reports": [],
       "official": null,
       "release_tag": "1.0.12.9",
@@ -68,7 +68,7 @@
       "title": "Hotfix #36 Now Live!",
       "published_at": "2026-03-26T14:40:05Z",
       "published_unix": 1774536005,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1827626365770693",
+      "url": "https://store.steampowered.com/news/app/1086940/view/1827626365770693",
       "frameworks": [
         {
           "id": "bg3se",
@@ -96,7 +96,7 @@
       "title": "Hotfix #35 Now Live!",
       "published_at": "2025-11-20T13:24:05Z",
       "published_unix": 1763645045,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1816849002010720",
+      "url": "https://store.steampowered.com/news/app/1086940/view/1816849002010720",
       "frameworks": [
         {
           "id": "bg3se",
@@ -124,7 +124,7 @@
       "title": "Hotfix #34 Now Live!",
       "published_at": "2025-09-23T15:06:20Z",
       "published_unix": 1758639980,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1811138915557937",
+      "url": "https://store.steampowered.com/news/app/1086940/view/1811138915557937",
       "frameworks": [
         {
           "id": "bg3se",
@@ -152,7 +152,7 @@
       "title": "Room Temperature Fix #33 Now Live!",
       "published_at": "2025-07-31T13:29:16Z",
       "published_unix": 1753968556,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1806698490682773",
+      "url": "https://store.steampowered.com/news/app/1086940/view/1806698490682773",
       "frameworks": [
         {
           "id": "bg3se",
@@ -180,7 +180,7 @@
       "title": "Hotfix #31 Now Live!",
       "published_at": "2025-05-14T11:03:14Z",
       "published_unix": 1747220594,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1799722702491181",
+      "url": "https://store.steampowered.com/news/app/1086940/view/1799722702491181",
       "frameworks": [
         {
           "id": "bg3se",
@@ -208,7 +208,7 @@
       "title": "Hotfix #30 Now Live!",
       "published_at": "2025-04-30T15:30:04Z",
       "published_unix": 1746027004,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1798454487574630",
+      "url": "https://store.steampowered.com/news/app/1086940/view/1798454487574630",
       "frameworks": [
         {
           "id": "bg3se",
@@ -236,7 +236,7 @@
       "title": "The Final Patch: New Subclasses, Photo Mode, and Cross-Play",
       "published_at": "2025-04-15T13:15:34Z",
       "published_unix": 1744722934,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1796631172407499",
+      "url": "https://store.steampowered.com/news/app/1086940/view/1796631172407499",
       "frameworks": [
         {
           "id": "bg3se",
@@ -264,7 +264,7 @@
       "title": "Hotfix #28 Now Live!",
       "published_at": "2024-10-16T11:35:44Z",
       "published_unix": 1729078544,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6212244583171984368",
+      "url": "https://store.steampowered.com/news/app/1086940/view/6212244583171984368",
       "frameworks": [
         {
           "id": "bg3se",
@@ -292,7 +292,7 @@
       "title": "Hotfix #27 Now Live!",
       "published_at": "2024-10-01T16:18:18Z",
       "published_unix": 1727799498,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6339469370200698392",
+      "url": "https://store.steampowered.com/news/app/1086940/view/6339469370200698392",
       "frameworks": [
         {
           "id": "bg3se",
@@ -320,7 +320,7 @@
       "title": "Hotfix #26 Now Live!",
       "published_at": "2024-09-19T14:33:03Z",
       "published_unix": 1726756383,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6341720536502865104",
+      "url": "https://store.steampowered.com/news/app/1086940/view/6341720536502865104",
       "frameworks": [
         {
           "id": "bg3se",
@@ -348,7 +348,7 @@
       "title": "Patch #7 Now Live!",
       "published_at": "2024-09-05T13:38:37Z",
       "published_unix": 1725543517,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6242640076596793610",
+      "url": "https://store.steampowered.com/news/app/1086940/view/6242640076596793610",
       "frameworks": [
         {
           "id": "bg3se",
@@ -376,7 +376,7 @@
       "title": "Hotfix #25 Now Live!",
       "published_at": "2024-04-10T13:55:13Z",
       "published_unix": 1712757313,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5762993398269377189",
+      "url": "https://store.steampowered.com/news/app/1086940/view/5762993398269377189",
       "frameworks": [
         {
           "id": "bg3se",
@@ -402,61 +402,61 @@
   "news": [
     {
       "title": "Hotfix #36 Now Live!",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1827626365770693",
+      "url": "https://store.steampowered.com/news/app/1086940/view/1827626365770693",
       "published_at": "2026-03-26T14:40:05Z",
       "is_patch": true
     },
     {
       "title": "Community Update #36 A Very Moddy Christmas",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1817483467045820",
+      "url": "https://store.steampowered.com/news/app/1086940/view/1817483467045820",
       "published_at": "2025-12-01T16:12:32Z",
       "is_patch": false
     },
     {
       "title": "Hotfix #35 Now Live!",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1816849002010720",
+      "url": "https://store.steampowered.com/news/app/1086940/view/1816849002010720",
       "published_at": "2025-11-20T13:24:05Z",
       "is_patch": true
     },
     {
       "title": "Hotfix #34 Now Live!",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1811138915557937",
+      "url": "https://store.steampowered.com/news/app/1086940/view/1811138915557937",
       "published_at": "2025-09-23T15:06:20Z",
       "is_patch": true
     },
     {
       "title": "Community Update #35 Baldur's Gate 3 Turns Two",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1806698490814073",
+      "url": "https://store.steampowered.com/news/app/1086940/view/1806698490814073",
       "published_at": "2025-08-04T14:59:31Z",
       "is_patch": false
     },
     {
       "title": "Room Temperature Fix #33 Now Live!",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1806698490682773",
+      "url": "https://store.steampowered.com/news/app/1086940/view/1806698490682773",
       "published_at": "2025-07-31T13:29:16Z",
       "is_patch": true
     },
     {
       "title": "Community Update #34 - Connecting With Cross-Play & Hotfix #32",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1799817379628890",
+      "url": "https://store.steampowered.com/news/app/1086940/view/1799817379628890",
       "published_at": "2025-05-20T13:07:57Z",
       "is_patch": false
     },
     {
       "title": "Hotfix #31 Now Live!",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1799722702491181",
+      "url": "https://store.steampowered.com/news/app/1086940/view/1799722702491181",
       "published_at": "2025-05-14T11:03:14Z",
       "is_patch": true
     },
     {
       "title": "Hotfix #30 Now Live!",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1798454487574630",
+      "url": "https://store.steampowered.com/news/app/1086940/view/1798454487574630",
       "published_at": "2025-04-30T15:30:04Z",
       "is_patch": true
     },
     {
       "title": "The Final Patch: New Subclasses, Photo Mode, and Cross-Play",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1796631172407499",
+      "url": "https://store.steampowered.com/news/app/1086940/view/1796631172407499",
       "published_at": "2025-04-15T13:15:34Z",
       "is_patch": true
     }

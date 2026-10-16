@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T01:31:54Z",
+  "generated_at": "2026-10-16T05:30:40Z",
   "game": {
     "slug": "terraria",
     "name": "Terraria",
@@ -10,7 +10,7 @@
       "title": "Terraria 1.4.5.7 - Out Now for PC! (Console/Mobile Soon)",
       "published_at": "2026-08-19T20:45:37Z",
       "published_unix": 1787172337,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1841579228663704"
+      "url": "https://store.steampowered.com/news/app/105600/view/1841579228663704"
     }
   },
   "verdict": "Likely safe",
@@ -46,7 +46,7 @@
       "title": "Terraria 1.4.5.7 - Out Now for PC! (Console/Mobile Soon)",
       "published_at": "2026-08-19T20:45:37Z",
       "published_unix": 1787172337,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1841579228663704",
+      "url": "https://store.steampowered.com/news/app/105600/view/1841579228663704",
       "frameworks": [
         {
           "id": "tmodloader",
@@ -65,7 +65,7 @@
       "title": "Terraria 1.4.5: Bigger & Boulder - Available Now!",
       "published_at": "2026-01-27T15:16:37Z",
       "published_unix": 1769526997,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1822556746169234",
+      "url": "https://store.steampowered.com/news/app/105600/view/1822556746169234",
       "frameworks": [
         {
           "id": "tmodloader",
@@ -82,61 +82,61 @@
   "news": [
     {
       "title": "Terraria State of the Game - September 2026",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844751498222763",
+      "url": "https://store.steampowered.com/news/app/105600/view/1844751498222763",
       "published_at": "2026-09-24T21:47:01Z",
       "is_patch": false
     },
     {
       "title": "Terraria State of the Game - August 2026",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1842212951308398",
+      "url": "https://store.steampowered.com/news/app/105600/view/1842212951308398",
       "published_at": "2026-08-30T20:05:25Z",
       "is_patch": false
     },
     {
       "title": "Terraria 1.4.5.7 - Out Now for PC! (Console/Mobile Soon)",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1841579228663704",
+      "url": "https://store.steampowered.com/news/app/105600/view/1841579228663704",
       "published_at": "2026-08-19T20:45:37Z",
       "is_patch": true
     },
     {
       "title": "Terraria State of the Game - July 2026",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1839676055886308",
+      "url": "https://store.steampowered.com/news/app/105600/view/1839676055886308",
       "published_at": "2026-07-30T20:08:49Z",
       "is_patch": false
     },
     {
       "title": "Terraria State of the Game - June 2026",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1836506165552129",
+      "url": "https://store.steampowered.com/news/app/105600/view/1836506165552129",
       "published_at": "2026-06-25T23:31:37Z",
       "is_patch": false
     },
     {
       "title": "Terraria: Design Works - Preorder yours today!",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1835871199305203",
+      "url": "https://store.steampowered.com/news/app/105600/view/1835871199305203",
       "published_at": "2026-06-18T18:39:17Z",
       "is_patch": false
     },
     {
       "title": "Terraria 15th Anniversary Collector's Edition - Preorders are now open!",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1835236783558078",
+      "url": "https://store.steampowered.com/news/app/105600/view/1835236783558078",
       "published_at": "2026-06-10T16:13:50Z",
       "is_patch": false
     },
     {
       "title": "Terraria State of the Game - May 2026",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1833968530889388",
+      "url": "https://store.steampowered.com/news/app/105600/view/1833968530889388",
       "published_at": "2026-05-28T20:36:37Z",
       "is_patch": false
     },
     {
       "title": "Celebrating 15 Years of Terraria!",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1832700592794921",
+      "url": "https://store.steampowered.com/news/app/105600/view/1832700592794921",
       "published_at": "2026-05-16T19:02:27Z",
       "is_patch": false
     },
     {
       "title": "Terraria State of the Game - April 2026",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1831432155570207",
+      "url": "https://store.steampowered.com/news/app/105600/view/1831432155570207",
       "published_at": "2026-05-01T03:11:06Z",
       "is_patch": false
     }

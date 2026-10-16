@@ -5,7 +5,7 @@
     "name": "me3 (mod loader)",
     "url": "https://github.com/garyttierney/me3"
   },
-  "intro": "Offline mods for Elden Ring, loaded with me3. Never use mods online in normal matchmaking: Easy Anti-Cheat can flag you. Seamless Co-op uses its own separate servers.",
+  "intro": "Offline mods for Elden Ring, loaded with me3. Never use mods online in normal matchmaking: Easy Anti-Cheat can flag you. Seamless Co-op uses its own separate servers. Mod pages don't list a formal requirement for the loader; their install notes say to use Mod Engine 2 or me3.",
   "mods": [
     {
       "id": "seamless-coop",
@@ -18,7 +18,8 @@
       "url": "https://www.nexusmods.com/eldenring/mods/510",
       "requires": [],
       "framework_id": "seamless-coop",
-      "note": "Uses its own launcher and save files; don't mix with normal online play."
+      "note": "Uses its own launcher and save files; don't mix with normal online play.",
+      "last_updated": "2026-09-02"
     },
     {
       "id": "me3",
@@ -32,14 +33,14 @@
       "note": "Mods packaged for Mod Engine 2 also load with me3; follow each mod's install notes."
     },
     {
-      "id": "skip-intro",
-      "name": "Skip intro logos",
-      "category": "Quality of life",
-      "summary": "Removes the startup logos and white flash so you reach the menu faster.",
+      "id": "boss-arena",
+      "name": "Boss Arena",
+      "category": "Gameplay",
+      "summary": "Adds a boss-selection menu at Roundtable Hold so you can refight any base-game or DLC boss.",
       "source": "nexus",
       "nexus_domain": "eldenring",
-      "nexus_id": 421,
-      "url": "https://www.nexusmods.com/eldenring/mods/421",
+      "nexus_id": 5645,
+      "url": "https://www.nexusmods.com/eldenring/mods/5645",
       "requires": [
         "me3"
       ]
@@ -48,14 +49,15 @@
       "id": "map-for-goblins",
       "name": "Map for Goblins",
       "category": "Interface",
-      "summary": "Marks items, bosses and points of interest on the in-game map.",
+      "summary": "Marks loot and collectible items on the in-game map.",
       "source": "nexus",
       "nexus_domain": "eldenring",
       "nexus_id": 3091,
       "url": "https://www.nexusmods.com/eldenring/mods/3091",
       "requires": [
         "me3"
-      ]
+      ],
+      "last_updated": "2026-08-30"
     },
     {
       "id": "transmogrify-armor",
@@ -68,7 +70,8 @@
       "url": "https://www.nexusmods.com/eldenring/mods/3596",
       "requires": [
         "me3"
-      ]
+      ],
+      "last_updated": "2026-09-04"
     },
     {
       "id": "glorious-merchant",
@@ -81,7 +84,8 @@
       "url": "https://www.nexusmods.com/eldenring/mods/5192",
       "requires": [
         "me3"
-      ]
+      ],
+      "last_updated": "2026-09-17"
     },
     {
       "id": "randomizer",
@@ -94,7 +98,8 @@
       "url": "https://www.nexusmods.com/eldenring/mods/428",
       "requires": [
         "me3"
-      ]
+      ],
+      "last_updated": "2026-09-09"
     },
     {
       "id": "clevers-moveset",
@@ -107,7 +112,8 @@
       "url": "https://www.nexusmods.com/eldenring/mods/1928",
       "requires": [
         "me3"
-      ]
+      ],
+      "last_updated": "2026-08-29"
     },
     {
       "id": "reforged",
@@ -120,7 +126,8 @@
       "url": "https://www.nexusmods.com/eldenring/mods/541",
       "requires": [
         "me3"
-      ]
+      ],
+      "last_updated": "2026-10-16"
     },
     {
       "id": "convergence",
@@ -133,7 +140,8 @@
       "url": "https://www.nexusmods.com/eldenring/mods/3419",
       "requires": [
         "me3"
-      ]
+      ],
+      "last_updated": "2026-10-09"
     }
   ]
 }

@@ -25,6 +25,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from games import GAMES  # noqa: E402
 from status_logic import (  # noqa: E402
+    confirmed_breakage,
     STATUS_UNKNOWN,
     STATUS_UPDATED,
     V_MANUAL,
@@ -227,7 +228,9 @@ def breakage_reports(repo: str, since_iso: str, patch_version: str | None, patch
         cdt = parse_iso(i["created_at"])
         if patch_dt and cdt and cdt > patch_dt + timedelta(days=BREAKAGE_WINDOW_DAYS):
             continue
-        out.append({"title": i["title"], "url": i["html_url"], "created_at": i["created_at"]})
+        out.append({"title": i["title"], "url": i["html_url"], "created_at": i["created_at"],
+                    "labels": [lb.get("name", "") for lb in i.get("labels", [])], "comments": i.get("comments", 0),
+                    "thumbs_up": (i.get("reactions") or {}).get("+1", 0)})
     return out
 
 
@@ -244,6 +247,9 @@ def manual_entry(fw: dict) -> dict:
 
 def build_steam_game(game: dict) -> dict:
     news = http_get_json(STEAM_NEWS.format(appid=game["steam_appid"])).get("appnews", {}).get("newsitems", [])
+    for n in news:  # canonical store URL (the API's akamaihd links bounce through a slow http redirect)
+        if n.get("gid"):
+            n["url"] = f"https://store.steampowered.com/news/app/{game['steam_appid']}/view/{n['gid']}"
     rule = game["patch_rule"]
     patches = list_patches_generic(news, rule, limit=12)
     if not patches:
@@ -292,24 +298,31 @@ def build_steam_game(game: dict) -> dict:
         reason = v["reason"]
         age = patch_age_days(latest["published_at"])
         sensitive = not fw.get("agnostic")
-        official = official_support(fw, rel, patch_dt) if sensitive and v["status"] != STATUS_UPDATED else None
+        official = official_support(fw, rel, patch_dt) if sensitive else None
         reports: list[dict] = []
         issues_repo = fw.get("issues_repo") or (fw.get("repo") if fw["source"] != "thunderstore" else None)
         if sensitive and v["status"] != STATUS_UPDATED and not (official and official["supports_current"]) and issues_repo:
             rdt = parse_iso(rel.get("published_at"))
             since = max([d for d in (patch_dt, rdt) if d]).isoformat()
             reports = breakage_reports(issues_repo, since, latest.get("version"), patch_dt)
-        label = user_verdict(base_status=v["status"], age_days=age, sensitive=sensitive, breakage=reports,
+        confirmed = confirmed_breakage(reports)
+        label = user_verdict(base_status=v["status"], age_days=age, sensitive=sensitive, breakage=confirmed,
                              official_support=bool(official and official["supports_current"]))
         if not sensitive:
-            reason = fw.get("agnostic_note", "Version-agnostic tool.") + " Latest: " + reason
+            reason = (fw.get("agnostic_note", "Version-agnostic tool.") +
+                      f" Latest release: {rel.get('tag_name')} ({(rel.get('published_at') or '')[:10]}).")
         elif official and official["supports_current"]:
             reason = (f"Official page ({official['page']}) lists build {official['build']} for runtime "
                       f"{official['runtime']}, matching the latest tag (Bethesda often ships updates to a beta branch first). ") + reason
+        elif confirmed:
+            reason += f" {len(confirmed)} open issue(s) report breakage since the patch/latest release."
         elif reports:
-            reason += f" {len(reports)} open issue(s) report breakage since the patch/latest release."
+            reason += (f" One unconfirmed user report of breakage is open ({reports[0]['title']!r}); not yet confirmed by the"
+                       " maintainers or other users, so it isn't counted as breakage.")
         elif v["status"] != STATUS_UPDATED and label == "Likely safe" and v["status"] == STATUS_UNKNOWN:
             reason += f" No open breakage reports {int(age)} days after the patch." if issues_repo else f" Patch is {int(age)} days old; no breakage signal available."
+        if __import__("re").search(r"(?i)beta|alpha|\brc\d*\b|-pre", rel.get("tag_name") or ""):
+            reason += " (Note: the author labels this build a beta/pre-release in its tag.)"
         if fw["source"] == "github_tags":
             reason += " (Date is the tagged commit on GitHub; builds are published on the official site.)"
         if rel.get("deprecated"):
@@ -319,6 +332,13 @@ def build_steam_game(game: dict) -> dict:
                     "release_name": rel.get("name"), "release_published_at": rel.get("published_at"),
                     "release_url": rel.get("html_url") or fw["url"], "mentions_patch": v["mentions_patch"],
                     "newer_than_patch": v["newer_than_patch"], "mention_releases": lineage})
+
+    for f in fws:
+        off = f.get("official") or {}
+        if off.get("runtime") and latest.get("version") and off["runtime"] != latest["version"]:
+            latest["runtime_note"] = (f"{f['short']}'s official page lists game runtime {off['runtime']} as current "
+                                      f"(the announcement title says {latest['version']}; Bethesda often ships silent hotfixes).")
+            break
 
     history = []
     for p in patches:
@@ -418,19 +438,7 @@ def build_minecraft(game: dict) -> dict:
         history.append({**p, "frameworks": row})
     news_out = [{"title": f"Minecraft Java Edition {v['id']} released", "is_patch": True,
                  "url": patch_of(v)["url"], "published_at": patch_of(v)["published_at"]} for v in releases[:5]]
-    channels = []
-    for ch in game.get("channels", []):
-        hit = next((n for n in news if __import__("re").search(ch["include"], n.get("title", ""), __import__("re").I)), None)
-        if hit:
-            channels.append({"name": ch["name"], "title": hit["title"], "url": hit.get("url", ""),
-                             "published_at": datetime.fromtimestamp(int(hit["date"]), tz=timezone.utc).isoformat().replace("+00:00", "Z")})
-    pre = [r for r in rels_by.get(game["frameworks"][0]["id"], []) if r.get("prerelease")]
-    stable = pick_latest_stable_release(rels_by.get(game["frameworks"][0]["id"], []) or [])
-    pre = [r for r in pre if stable and (parse_iso(r.get("published_at")) or patch_dt) > parse_iso(stable.get("published_at"))]
-    if channels and pre:
-        channels.append({"name": f"{game['frameworks'][0]['short']} pre-release", "title": pre[0].get("tag_name"),
-                         "url": pre[0].get("html_url"), "published_at": pre[0].get("published_at")})
-    return {"latest_patch": latest, "frameworks": fws, "history": history, "news": news_out, "channels": channels,
+    return {"latest_patch": latest, "frameworks": fws, "history": history, "news": news_out,
             "latest_snapshot": man["latest"].get("snapshot"),
             "sources": {"mojang_manifest": MC_MANIFEST, "fabric_meta": FABRIC_GAME, "forge_promotions": FORGE_PROMOS,
                         "neoforge_maven": NEOFORGE_VERSIONS, "modrinth": "https://api.modrinth.com/v2"}}

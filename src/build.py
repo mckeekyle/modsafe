@@ -28,7 +28,7 @@ SITE_URL = os.environ.get("SITE_URL", "https://modsafe.app").rstrip("/")
 SITE_NAME = "ModSafe — Mod Compatibility After Game Patches"
 SITE_DESC = (
     "Is it safe to update? Live status of core mod frameworks and loaders (script extenders, BepInEx, SMAPI, "
-    "tModLoader, Fabric/Forge and more) after each official patch, for " + str(len(GAMES)) + " heavily modded PC games."
+    "tModLoader, Fabric/Forge and more) after each official patch, for " + str(sum(1 for g in GAMES if g.get("genre") != "Platform")) + " heavily modded PC games plus Steam Deck."
 )
 
 
@@ -487,7 +487,7 @@ def footer() -> str:
     return f"""<footer class="footer"><div class="footer-in">
 <div>{brand()}
 <p>Know if your mods survived the patch before you hit update.</p>
-<p>Not affiliated with any game developer, publisher, Nexus Mods, Thunderstore, Modrinth or Mojang. Game art © its respective owners. Data from public APIs (Steam, GitHub, Thunderstore, Mojang, Fabric, Forge, NeoForge, Modrinth).</p></div>
+<p>Not affiliated with any game developer, publisher, Nexus Mods, Thunderstore, Modrinth or Mojang. Game art © its respective owners. Data from public sources (Steam, GitHub, Thunderstore, Mojang, Fabric, Forge, NeoForge, Modrinth, the Decky plugin store, silverlock.org, fsuipc.com) plus a hand-checked GTA V record. Dates are UTC.</p></div>
 <div><nav aria-label="Footer">{game_links} <a href="/faq/">FAQ</a> <a href="/newsletter/">Alerts</a></nav>
 <p class="dev">For developers &amp; AI: <a href="/games.json">Data (JSON)</a> · <a href="/llms.txt">llms.txt</a></p></div>
 </div></footer>"""
@@ -639,6 +639,23 @@ def faq_article(item: dict, tag: str = "h3", idx: int | None = None) -> str:
     return f'<article class="faq-item"{ident}><{tag}>{esc(item["q"])}</{tag}>{body}</article>'
 
 
+SOURCE_NAMES = {"github": "GitHub releases", "github_tags": "GitHub tags", "thunderstore": "the Thunderstore API",
+                "decky_store": "the Decky plugin store API", "fsuipc": "fsuipc.com", "mc_fabric": "Fabric meta",
+                "mc_forge": "Forge promotions", "mc_neoforge": "NeoForge maven", "mc_modrinth": "the Modrinth API",
+                "manual_shv": "a hand-checked Script Hook V record", "manual": None}
+
+
+def fw_sources(game: dict) -> str:
+    names = []
+    for fw in game["frameworks"]:
+        n = SOURCE_NAMES.get(fw["source"], fw["source"])
+        if n and n not in names:
+            names.append(n)
+        if fw.get("official_page") and "the official silverlock.org pages" not in names:
+            names.append("the official silverlock.org pages")
+    return (", ".join(names[:-1]) + " and " + names[-1]) if len(names) > 1 else (names[0] if names else "manual checks")
+
+
 def game_faq(game: dict, data: dict) -> list[dict]:
     p = data["game"]["latest_patch"]
     tracked = [f["name"] for f in data["frameworks"] if f.get("tracked")]
@@ -654,7 +671,7 @@ def game_faq(game: dict, data: dict) -> list[dict]:
          "a": "Automatically: " + ", ".join(tracked) + "." + (f" Linked for manual checks (no public release API): {', '.join(manual)}." if manual else "")},
         {"q": "What do the status labels mean?", "a": STATUS_EXPLAINER},
         {"q": "Where does the data come from?",
-         "a": f"Game patches come from {src}. Framework data comes from public release APIs (GitHub, Thunderstore, Fabric/Forge/NeoForge meta, Modrinth). ModSafe does not scrape Nexus Mods or SteamDB."},
+         "a": f"Game patches come from {src}. Framework data comes from {fw_sources(game)}. ModSafe does not scrape Nexus Mods or SteamDB."},
     ]
     if game["slug"] == "gta-v":
         items.append({"q": "Can I use mods in GTA Online?",
@@ -665,6 +682,18 @@ def game_faq(game: dict, data: dict) -> list[dict]:
         items.append({"q": "How do I check individual Stardew mods?",
                       "a": "Use the official SMAPI mod compatibility list at smapi.io/mods, which tracks compatible, broken and obsolete mods."})
     return items
+
+
+def stale_banner(data: dict) -> str:
+    """Honesty guard: if the last successful refresh is old (fetch failures keep previous data), say so."""
+    try:
+        age_h = (datetime.now(timezone.utc) - datetime.fromisoformat(data["generated_at"].replace("Z", "+00:00"))).total_seconds() / 3600
+    except Exception:  # noqa: BLE001
+        return ""
+    if age_h < 36:
+        return ""
+    return (f'<p class="note" role="note"><strong>⚠ Data last refreshed {esc(fmt_date(data["generated_at"]))} UTC.</strong> '
+            "Recent automatic checks failed, so this may be out of date. Verify on the project pages.</p>")
 
 
 def framework_cards(data: dict) -> str:
@@ -710,6 +739,7 @@ def build_game_page(game: dict, data: dict) -> str:
 {f'<p class="note" role="note"><strong>⚠ {esc(game["note"])}</strong></p>' if game.get("note") else ''}
 </div>
 </section>
+{stale_banner(data)}
 <nav class="tabs" aria-label="On this page"><a href="#status">Status</a><a href="#fw-heading">Frameworks</a>{'<a href="#history">Patch history</a>' if data.get("history") else ''}{'<a href="#mods">Essential ' + (mods_mod.load_mods(slug) or {}).get("noun", "mods") + '</a>' if mods_mod.load_mods(slug) else ''}<a href="#news">News</a><a href="#faq-heading">FAQ</a></nav>
 <div class="vgrid" id="status">
 <section class="panel" aria-labelledby="verdict-heading">
@@ -720,6 +750,7 @@ def build_game_page(game: dict, data: dict) -> str:
 <dl class="patch-meta">
 <dt>{"Latest Stable" if data.get("channels") else "Latest patch"}</dt><dd><strong>{esc(p['label'])}</strong></dd>
 <dt>Released</dt><dd>{esc(fmt_date(p.get('published_at')))}</dd>
+{f"<dt>Current runtime</dt><dd>{esc(p['runtime_note'])}</dd>" if p.get('runtime_note') else ""}
 <dt>Source</dt><dd><a href="{esc(p.get('url', ''))}">{esc(p.get('title', ''))}</a></dd>
 {snap}
 {f"<dt>Builds</dt><dd>" + ", ".join(f"{esc(k.title())} <code>{esc(v)}</code>" for k, v in p["builds"].items()) + "</dd>" if p.get("builds") else ""}
@@ -791,9 +822,9 @@ def mod_cards(game: dict, data: dict, mods: dict, limit: int | None = None) -> s
 <div class="mod-top"><span class="mod-n">{n}</span><div><h3>{esc(m['name'])}</h3><p class="mod-cat">{esc(m['category'])}</p></div></div>
 <p>{esc(m['summary'])}</p>
 {f'<p class="mod-note">{esc(m["note"])}</p>' if m.get('note') else ''}
-<p class="mod-req">{('Requires: ' + req) if req else 'No requirements'}</p>
+<p class="mod-req">{('Requires: ' + req) if req else 'No requirements listed by the author'}{('. Also needs: ' + ', '.join(esc(a) for a in m['also_requires'])) if m.get('also_requires') else ''}</p>
 <div class="mod-foot">{badge(st)}<a class="dl" href="{esc(m['url'])}" rel="noopener external">Get it on {esc(host_label(m['url']))} ↗</a></div>
-<p class="mod-why muted">{esc(why)}</p>
+<p class="mod-why muted">{esc(why)}{(" Last updated on its download page: " + esc(m["last_updated"]) + ".") if m.get("last_updated") else ""}</p>
 </article>""")
     return "".join(out)
 
@@ -971,7 +1002,9 @@ def build_home(games_data: list[tuple[dict, dict]]) -> str:
     itemlist = {"@context": "https://schema.org", "@type": "ItemList", "name": "Games tracked by ModSafe",
                 "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": g["name"], "url": f"{SITE_URL}/{g['slug']}/"}
                                     for i, (g, _) in enumerate(games_data)]}
-    n_fw = sum(len(d["frameworks"]) for _, d in games_data)
+    n_fw = sum(1 for _, d in games_data for f in d["frameworks"] if f.get("tracked", True))
+    n_games = sum(1 for g, _ in games_data if g.get("genre") != "Platform")
+    n_plat = len(games_data) - n_games
     n_ok = sum(1 for _, d in games_data if d["verdict"] in ("Safe", "Likely safe"))
     body = f"""
 <section class="home-hero" style="--hero:url('/img/cyberpunk-2077-hero.webp')">
@@ -980,7 +1013,7 @@ def build_home(games_data: list[tuple[dict, dict]]) -> str:
 <p class="lede">A new update drops, and script extenders and mod loaders break first. ModSafe watches every game's core frameworks so you know whether to hit update or hold the line.</p>
 <div class="legend"><span class="badge ok">{icon("Safe")}Safe</span><span class="badge likely">{icon("Likely safe")}Likely safe</span><span class="badge wait">{icon("Just patched, wait")}Just patched, wait</span><span class="badge broken">{icon("Breakage reported")}Breakage reported</span></div>
 <div class="hero-actions"><a class="btn" href="#games">🎮 Pick your game</a> <a class="btn ghost" href="/newsletter/">🔔 Get patch alerts</a></div>
-<div class="stats"><div><strong>{len(games_data)}</strong>games tracked</div><div><strong>{n_fw}</strong>frameworks watched</div><div><strong>{n_ok}/{len(games_data)}</strong>safe or likely safe now</div></div>
+<div class="stats"><div><strong>{n_games}</strong>games{f" + {n_plat} platform" if n_plat else ""}</div><div><strong>{n_fw}</strong>frameworks auto-tracked</div><div><strong>{n_ok}/{len(games_data)}</strong>safe or likely safe now</div></div>
 </section>
 <div class="sec-head" id="games"><h2>Choose your game</h2><a href="/games/">All games →</a></div>
 <p class="muted">Every game has its own page with the verdict, each framework, patch history, news and FAQ. Tap a card.</p>
@@ -994,7 +1027,7 @@ def build_home(games_data: list[tuple[dict, dict]]) -> str:
 <section class="panel"><h2>How we call it</h2>{legend_html()}
 <p style="margin-top:var(--s4)"><a href="/faq/">Read the FAQ →</a></p></section>
 """
-    return page_shell(f"ModSafe — Is it safe to update? Mod compatibility for {len(GAMES)} games", SITE_DESC, "/", "home", body + FILTER_JS, extra_jsonld=[itemlist])
+    return page_shell(f"ModSafe — Is it safe to update? Mod compatibility for {sum(1 for g in GAMES if g.get('genre') != 'Platform')} PC games & Steam Deck", SITE_DESC, "/", "home", body + FILTER_JS, extra_jsonld=[itemlist])
 
 
 def build_games_index(games_data) -> str:
@@ -1031,9 +1064,9 @@ GENERAL_FAQ = [
      "a": "Vanilla patches are safe, but mods built on script extenders or loaders (SKSE, F4SE, RED4ext, BG3SE, SMAPI, BepInEx, Fabric/Forge) often break until those frameworks update. Check your game's page here first, or hold the update."},
     {"q": "What do the status labels mean?", "a": STATUS_EXPLAINER},
     {"q": "Why are some frameworks marked “Check manually”?",
-     "a": "Some core mods (for example Address Library and Buffout 4) are only distributed on Nexus Mods. Nexus' API terms forbid scraping, so ModSafe links them instead of guessing, and leaves them out of the verdict."},
+     "a": "Some core mods (for example Address Library and Buffout 4) are only distributed on Nexus Mods, and some tools (like Navigraph) have no public release feed. ModSafe doesn't scrape Nexus Mods, so these are linked for you to check instead of guessed at, and they're left out of the verdict."},
     {"q": "Where does the data come from?",
-     "a": "Steam Web API news (official announcements), Mojang's version manifest, GitHub releases/tags, the Thunderstore package API, Fabric meta, Forge promotions, NeoForge Maven and the Modrinth API. Refreshed every few hours."},
+     "a": "Steam Web API news (official announcements), Mojang's version manifest, GitHub releases/tags and issues, the Thunderstore package API, Fabric meta, Forge promotions, NeoForge Maven, the Modrinth API, the Decky plugin store API, the official silverlock.org script extender pages and fsuipc.com. GTA V uses a hand-checked record (dates shown on its page). Refreshed automatically every 6 hours."},
     {"q": "Which games are covered?", "a": ", ".join(g["name"] for g in GAMES) + "."},
 ]
 

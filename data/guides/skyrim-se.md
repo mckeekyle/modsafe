@@ -7,7 +7,7 @@ Skyrim mods are safest with a mod manager that keeps your game folder clean. We 
 1. **Start clean.** Launch the game once from Steam so it creates its settings files, then quit. Don't install mods into a game folder that already has leftovers from old attempts.
 2. **Install a mod manager.** Download Mod Organizer 2 or Vortex from the links on this page and point it at your Skyrim Special Edition install.
 3. **Install SKSE64.** Get the build that matches your game version from the official SKSE site or its Nexus page. Put the loader and DLLs in the game folder (next to SkyrimSE.exe) and add the scripts through your manager. From now on, start the game with skse64_loader.exe (MO2 and Vortex add a button for it).
-4. **Add the foundation.** Install Address Library, SSE Engine Fixes (both parts), USSEP and powerofthree's Tweaks, in the order shown in our Essential mods list.
+4. **Add the foundation.** Install Address Library, SSE Engine Fixes (following its install notes), USSEP and powerofthree's Tweaks, in the order shown in our Essential mods list.
 5. **Add interface mods.** SkyUI, then MCM Helper, then the dialogue and message box fixes.
 6. **Test before going further.** Start a new game or load a save and play for a few minutes. If it crashes, the last mod you added is the first suspect.
 7. **Add the rest a few at a time.** Visual and gameplay mods go last. Let your manager sort plugins (LOOT is built into both) and read each mod page's requirements.
@@ -17,7 +17,7 @@ Skyrim mods are safest with a mod manager that keeps your game folder clean. We 
 
 - **Game version mismatch.** SKSE, Address Library and Engine Fixes must match your exact game build; a "version mismatch" pop-up means one is outdated.
 - **Launching from Steam.** Starting SkyrimSE.exe instead of the SKSE loader silently disables every SKSE plugin.
-- **Mixing Anniversary and Special Edition files.** Use files for your build (1.5.97 vs 1.6.x); mod pages usually list both.
+- **Mixing Anniversary and Special Edition files.** Use files for your build (1.5.97 "SE" vs 1.6/1.7 "AE"); mod pages usually list both.
 - **Too many plugins.** Regular plugins are capped at 254; prefer ESL-flagged (light) versions when offered.
 - **Removing mods mid-save.** Uninstalling script-heavy mods from an ongoing save can corrupt it. Test on a new save.
 

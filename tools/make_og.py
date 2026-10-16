@@ -71,7 +71,7 @@ def render(bg: Image.Image | None, title: str, sub: str, path: Path):
 def main():
     hero = ROOT / "static/img/cyberpunk-2077-hero.webp"
     render(Image.open(hero) if hero.exists() else None, "Did your mods survive the patch?",
-           f"Mod framework status for {len(GAMES)} PC games", OUT / "default.png")
+           f"Mod framework status for {sum(1 for g in GAMES if g.get('genre') != 'Platform')} PC games + Steam Deck", OUT / "default.png")
     for g in GAMES:
         f = ROOT / f"static/img/{g['slug']}-hero.webp"
         bg = Image.open(f) if f.exists() else None

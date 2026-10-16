@@ -43,7 +43,8 @@
       "url": "https://www.nexusmods.com/baldursgate3/mods/1333",
       "requires": [
         "bg3se"
-      ]
+      ],
+      "last_updated": "2026-09-13"
     },
     {
       "id": "bg3-mcm",
@@ -56,7 +57,8 @@
       "url": "https://www.nexusmods.com/baldursgate3/mods/9162",
       "requires": [
         "bg3se"
-      ]
+      ],
+      "last_updated": "2026-09-06"
     },
     {
       "id": "compat-framework",
@@ -68,45 +70,38 @@
       "nexus_id": 1933,
       "url": "https://www.nexusmods.com/baldursgate3/mods/1933",
       "requires": [
-        "bg3se"
-      ]
-    },
-    {
-      "id": "impui",
-      "name": "ImpUI (ImprovedUI)",
-      "category": "Interface",
-      "summary": "UI library that lets mods add classes, races and options to menus.",
-      "source": "nexus",
-      "nexus_domain": "baldursgate3",
-      "nexus_id": 366,
-      "url": "https://www.nexusmods.com/baldursgate3/mods/366",
-      "requires": []
+        "bg3se",
+        "community-library"
+      ],
+      "last_updated": "2026-04-14"
     },
     {
       "id": "party-limit-begone",
       "name": "Party Limit Begone",
       "category": "Gameplay",
-      "summary": "Raise the party size above four.",
+      "summary": "Raises the party limit (up to 16) and the multiplayer limit (up to 8 players).",
       "source": "nexus",
       "nexus_domain": "baldursgate3",
       "nexus_id": 327,
       "url": "https://www.nexusmods.com/baldursgate3/mods/327",
       "requires": [
         "bg3se"
-      ]
+      ],
+      "last_updated": "2026-03-28"
     },
     {
       "id": "tutorial-chest",
       "name": "Tutorial Chest Summoning",
       "category": "Gameplay",
-      "summary": "Summon a chest of handy starter items from your spellbook.",
+      "summary": "Gives you a spell to summon the tutorial supply chest, handy for reaching mod-added items.",
       "source": "nexus",
       "nexus_domain": "baldursgate3",
       "nexus_id": 457,
       "url": "https://www.nexusmods.com/baldursgate3/mods/457",
       "requires": [
         "bg3se"
-      ]
+      ],
+      "last_updated": "2026-09-04"
     },
     {
       "id": "5e-spells",
@@ -117,7 +112,11 @@
       "nexus_domain": "baldursgate3",
       "nexus_id": 125,
       "url": "https://www.nexusmods.com/baldursgate3/mods/125",
-      "requires": []
+      "requires": [
+        "bg3se",
+        "bg3-mcm"
+      ],
+      "last_updated": "2026-05-24"
     },
     {
       "id": "unlock-level-curve",
@@ -128,7 +127,10 @@
       "nexus_domain": "baldursgate3",
       "nexus_id": 377,
       "url": "https://www.nexusmods.com/baldursgate3/mods/377",
-      "requires": []
+      "requires": [
+        "5e-spells"
+      ],
+      "last_updated": "2026-07-11"
     },
     {
       "id": "wasd",
@@ -139,7 +141,11 @@
       "nexus_domain": "baldursgate3",
       "nexus_id": 781,
       "url": "https://www.nexusmods.com/baldursgate3/mods/781",
-      "requires": []
+      "requires": [],
+      "also_requires": [
+        "Native Mod Loader"
+      ],
+      "last_updated": "2026-06-16"
     },
     {
       "id": "tavs-hair-salon",
@@ -150,7 +156,8 @@
       "nexus_domain": "baldursgate3",
       "nexus_id": 213,
       "url": "https://www.nexusmods.com/baldursgate3/mods/213",
-      "requires": []
+      "requires": [],
+      "last_updated": "2024-10-30"
     }
   ]
 }

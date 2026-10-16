@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T01:32:16Z",
+  "generated_at": "2026-10-16T05:31:03Z",
   "game": {
     "slug": "steam-deck",
     "name": "Steam Deck (SteamOS)",
@@ -10,7 +10,7 @@
       "title": "SteamOS 3.8.28",
       "published_at": "2026-09-25T00:28:44Z",
       "published_unix": 1790296124,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844751498222971"
+      "url": "https://store.steampowered.com/news/app/1675200/view/1844751498222971"
     }
   },
   "verdict": "Likely safe",
@@ -49,7 +49,7 @@
       "sensitive": false,
       "status": "Not affected by patches",
       "base_status": "Likely OK",
-      "reason": "Plugin runs inside Decky Loader; it follows Steam client UI changes, not SteamOS builds, and updates via the Decky store. Latest: Latest release is newer than patch SteamOS 3.8.28, but notes do not explicitly mention that version.",
+      "reason": "Plugin runs inside Decky Loader; it follows Steam client UI changes, not SteamOS builds, and updates via the Decky store. Latest release: 1.8.1 (2026-10-07).",
       "breakage_reports": [],
       "official": null,
       "release_tag": "1.8.1",
@@ -71,7 +71,7 @@
       "sensitive": false,
       "status": "Not affected by patches",
       "base_status": "Unknown / check",
-      "reason": "Plugin runs inside Decky Loader; themes can drift with Steam client UI changes, not SteamOS builds. Latest: Latest release predates patch SteamOS 3.8.28; compatibility is unverified \u2014 check the project page.",
+      "reason": "Plugin runs inside Decky Loader; themes can drift with Steam client UI changes, not SteamOS builds. Latest release: 2.1.2 (2024-07-06).",
       "breakage_reports": [],
       "official": null,
       "release_tag": "2.1.2",
@@ -93,7 +93,7 @@
       "sensitive": false,
       "status": "Not affected by patches",
       "base_status": "Likely OK",
-      "reason": "Plugin runs inside Decky Loader; it follows Steam client UI changes, not SteamOS builds. Latest: Latest release is newer than patch SteamOS 3.8.28, but notes do not explicitly mention that version.",
+      "reason": "Plugin runs inside Decky Loader; it follows Steam client UI changes, not SteamOS builds. Latest release: 1.3.4 (2026-10-14).",
       "breakage_reports": [],
       "official": null,
       "release_tag": "1.3.4",
@@ -115,7 +115,7 @@
       "sensitive": false,
       "status": "Not affected by patches",
       "base_status": "Unknown / check",
-      "reason": "Plugin runs inside Decky Loader; hardware-level settings rarely depend on the SteamOS point release. Latest: Latest release predates patch SteamOS 3.8.28; compatibility is unverified \u2014 check the project page.",
+      "reason": "Plugin runs inside Decky Loader; hardware-level settings rarely depend on the SteamOS point release. Latest release: 2.0.3 (2024-06-18).",
       "breakage_reports": [],
       "official": null,
       "release_tag": "2.0.3",
@@ -134,7 +134,7 @@
       "title": "SteamOS 3.8.28",
       "published_at": "2026-09-25T00:28:44Z",
       "published_unix": 1790296124,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844751498222971",
+      "url": "https://store.steampowered.com/news/app/1675200/view/1844751498222971",
       "frameworks": [
         {
           "id": "decky-loader",
@@ -189,7 +189,7 @@
       "title": "SteamOS 3.8.16",
       "published_at": "2026-07-17T01:04:09Z",
       "published_unix": 1784250249,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1838407329258215",
+      "url": "https://store.steampowered.com/news/app/1675200/view/1838407329258215",
       "frameworks": [
         {
           "id": "decky-loader",
@@ -244,7 +244,7 @@
       "title": "SteamOS 3.8.15",
       "published_at": "2026-07-15T23:46:06Z",
       "published_unix": 1784159166,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1838407329255328",
+      "url": "https://store.steampowered.com/news/app/1675200/view/1838407329255328",
       "frameworks": [
         {
           "id": "decky-loader",
@@ -299,7 +299,7 @@
       "title": "SteamOS 3.8.14",
       "published_at": "2026-07-04T00:31:10Z",
       "published_unix": 1783125070,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1836506165571693",
+      "url": "https://store.steampowered.com/news/app/1675200/view/1836506165571693",
       "frameworks": [
         {
           "id": "decky-loader",
@@ -354,7 +354,7 @@
       "title": "SteamOS 3.8.13",
       "published_at": "2026-07-02T00:14:12Z",
       "published_unix": 1782951252,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1836506165566687",
+      "url": "https://store.steampowered.com/news/app/1675200/view/1836506165566687",
       "frameworks": [
         {
           "id": "decky-loader",
@@ -409,7 +409,7 @@
       "title": "SteamOS 3.8.12",
       "published_at": "2026-06-29T23:54:07Z",
       "published_unix": 1782777247,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1836506165561231",
+      "url": "https://store.steampowered.com/news/app/1675200/view/1836506165561231",
       "frameworks": [
         {
           "id": "decky-loader",
@@ -464,7 +464,7 @@
       "title": "SteamOS 3.8.11",
       "published_at": "2026-06-20T22:42:00Z",
       "published_unix": 1781995320,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1835871199310130",
+      "url": "https://store.steampowered.com/news/app/1675200/view/1835871199310130",
       "frameworks": [
         {
           "id": "decky-loader",
@@ -519,7 +519,7 @@
       "title": "SteamOS 3.8",
       "published_at": "2026-06-18T00:07:43Z",
       "published_unix": 1781741263,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1835871199302299",
+      "url": "https://store.steampowered.com/news/app/1675200/view/1835871199302299",
       "frameworks": [
         {
           "id": "decky-loader",
@@ -574,7 +574,7 @@
       "title": "SteamOS 3.7.25",
       "published_at": "2026-05-20T23:47:30Z",
       "published_unix": 1779320850,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1833334318567551",
+      "url": "https://store.steampowered.com/news/app/1675200/view/1833334318567551",
       "frameworks": [
         {
           "id": "decky-loader",
@@ -627,61 +627,61 @@
   "news": [
     {
       "title": "SteamOS 3.9.2 Beta",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844751498226130",
+      "url": "https://store.steampowered.com/news/app/1675200/view/1844751498226130",
       "published_at": "2026-09-25T23:16:19Z",
       "is_patch": false
     },
     {
       "title": "SteamOS 3.8.28",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844751498222971",
+      "url": "https://store.steampowered.com/news/app/1675200/view/1844751498222971",
       "published_at": "2026-09-25T00:28:44Z",
       "is_patch": true
     },
     {
       "title": "SteamOS 3.8.28 Beta",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844751498216977",
+      "url": "https://store.steampowered.com/news/app/1675200/view/1844751498216977",
       "published_at": "2026-09-23T00:21:31Z",
       "is_patch": false
     },
     {
       "title": "SteamOS 3.9.1 Preview",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1843481262703165",
+      "url": "https://store.steampowered.com/news/app/1675200/view/1843481262703165",
       "published_at": "2026-09-14T23:24:24Z",
       "is_patch": false
     },
     {
       "title": "SteamOS 3.8.27 Beta",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1843481262703043",
+      "url": "https://store.steampowered.com/news/app/1675200/view/1843481262703043",
       "published_at": "2026-09-14T21:51:09Z",
       "is_patch": false
     },
     {
       "title": "SteamOS 3.9.0 Preview",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1842212951304733",
+      "url": "https://store.steampowered.com/news/app/1675200/view/1842212951304733",
       "published_at": "2026-08-29T02:02:08Z",
       "is_patch": false
     },
     {
       "title": "SteamOS 3.8.26 Beta",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1842212951301750",
+      "url": "https://store.steampowered.com/news/app/1675200/view/1842212951301750",
       "published_at": "2026-08-28T01:44:12Z",
       "is_patch": false
     },
     {
       "title": "SteamOS 3.8.25 Beta",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840310314346837",
+      "url": "https://store.steampowered.com/news/app/1675200/view/1840310314346837",
       "published_at": "2026-08-08T04:52:36Z",
       "is_patch": false
     },
     {
       "title": "SteamOS 3.8.24 Beta",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1838407329260735",
+      "url": "https://store.steampowered.com/news/app/1675200/view/1838407329260735",
       "published_at": "2026-07-17T21:15:59Z",
       "is_patch": false
     },
     {
       "title": "SteamOS 3.8.16",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1838407329258215",
+      "url": "https://store.steampowered.com/news/app/1675200/view/1838407329258215",
       "published_at": "2026-07-17T01:04:09Z",
       "is_patch": true
     }
@@ -690,13 +690,13 @@
     {
       "name": "Beta",
       "title": "SteamOS 3.9.2 Beta",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844751498226130",
+      "url": "https://store.steampowered.com/news/app/1675200/view/1844751498226130",
       "published_at": "2026-09-25T23:16:19Z"
     },
     {
       "name": "Preview",
       "title": "SteamOS 3.9.1 Preview",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1843481262703165",
+      "url": "https://store.steampowered.com/news/app/1675200/view/1843481262703165",
       "published_at": "2026-09-14T23:24:24Z"
     }
   ],

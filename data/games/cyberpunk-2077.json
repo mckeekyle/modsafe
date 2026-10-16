@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T01:31:03Z",
+  "generated_at": "2026-10-16T05:29:49Z",
   "game": {
     "slug": "cyberpunk-2077",
     "name": "Cyberpunk 2077",
@@ -10,7 +10,7 @@
       "title": "Patch 2.31",
       "published_at": "2025-09-11T10:09:03Z",
       "published_unix": 1757585343,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1810503566412448"
+      "url": "https://store.steampowered.com/news/app/1091500/view/1810503566412448"
     }
   },
   "verdict": "Likely safe",
@@ -164,7 +164,7 @@
       "title": "Patch 2.31",
       "published_at": "2025-09-11T10:09:03Z",
       "published_unix": 1757585343,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1810503566412448",
+      "url": "https://store.steampowered.com/news/app/1091500/view/1810503566412448",
       "frameworks": [
         {
           "id": "cet",
@@ -228,7 +228,7 @@
       "title": "Update 2.3 Patch Notes",
       "published_at": "2025-07-16T16:12:38Z",
       "published_unix": 1752682358,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1805431065307946",
+      "url": "https://store.steampowered.com/news/app/1091500/view/1805431065307946",
       "frameworks": [
         {
           "id": "cet",
@@ -292,7 +292,7 @@
       "title": "Patch 2.21",
       "published_at": "2025-01-23T11:05:43Z",
       "published_unix": 1737630343,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1789580505302900",
+      "url": "https://store.steampowered.com/news/app/1091500/view/1789580505302900",
       "frameworks": [
         {
           "id": "cet",
@@ -356,7 +356,7 @@
       "title": "Update 2.2 is live!",
       "published_at": "2024-12-10T17:01:18Z",
       "published_unix": 1733850078,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1785321795772422",
+      "url": "https://store.steampowered.com/news/app/1091500/view/1785321795772422",
       "frameworks": [
         {
           "id": "cet",
@@ -420,7 +420,7 @@
       "title": "Patch 2.13",
       "published_at": "2024-09-12T12:02:11Z",
       "published_unix": 1726142531,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6250522009512966180",
+      "url": "https://store.steampowered.com/news/app/1091500/view/6250522009512966180",
       "frameworks": [
         {
           "id": "cet",
@@ -484,7 +484,7 @@
       "title": "Patch 2.12",
       "published_at": "2024-02-29T11:01:35Z",
       "published_unix": 1709204495,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5688680204369809360",
+      "url": "https://store.steampowered.com/news/app/1091500/view/5688680204369809360",
       "frameworks": [
         {
           "id": "cet",
@@ -548,7 +548,7 @@
       "title": "Patch 2.11",
       "published_at": "2024-01-31T11:08:08Z",
       "published_unix": 1706699288,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5582843074936820948",
+      "url": "https://store.steampowered.com/news/app/1091500/view/5582843074936820948",
       "frameworks": [
         {
           "id": "cet",
@@ -612,7 +612,7 @@
       "title": "Update 2.1",
       "published_at": "2023-12-05T11:10:40Z",
       "published_unix": 1701774640,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5395937983678981152",
+      "url": "https://store.steampowered.com/news/app/1091500/view/5395937983678981152",
       "frameworks": [
         {
           "id": "cet",
@@ -676,7 +676,7 @@
       "title": "Patch 2.02",
       "published_at": "2023-10-26T10:10:55Z",
       "published_unix": 1698315055,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5229301621575632760",
+      "url": "https://store.steampowered.com/news/app/1091500/view/5229301621575632760",
       "frameworks": [
         {
           "id": "cet",
@@ -740,7 +740,7 @@
       "title": "Patch 2.01",
       "published_at": "2023-10-05T10:04:20Z",
       "published_unix": 1696500260,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5220292521180179133",
+      "url": "https://store.steampowered.com/news/app/1091500/view/5220292521180179133",
       "frameworks": [
         {
           "id": "cet",
@@ -804,7 +804,7 @@
       "title": "Update 2.0",
       "published_at": "2023-09-21T15:02:39Z",
       "published_unix": 1695308559,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5219165352624021366",
+      "url": "https://store.steampowered.com/news/app/1091500/view/5219165352624021366",
       "frameworks": [
         {
           "id": "cet",
@@ -868,7 +868,7 @@
       "title": "Patch 1.63 \u2014 list of changes",
       "published_at": "2023-06-20T12:07:40Z",
       "published_unix": 1687262860,
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/5896948309857475131",
+      "url": "https://store.steampowered.com/news/app/1091500/view/5896948309857475131",
       "frameworks": [
         {
           "id": "cet",
@@ -930,61 +930,61 @@
   "news": [
     {
       "title": "It\u2019s All About You! \u2014 A Crew to Remember",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1835236783557599",
+      "url": "https://store.steampowered.com/news/app/1091500/view/1835236783557599",
       "published_at": "2026-06-10T13:44:13Z",
       "is_patch": false
     },
     {
       "title": "It\u2019s All About You! \u2014 Never Fade Away",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1819386365089430",
+      "url": "https://store.steampowered.com/news/app/1091500/view/1819386365089430",
       "published_at": "2025-12-18T11:44:06Z",
       "is_patch": false
     },
     {
       "title": "5th Anniversary Trailer \u2014 City of Legends",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1818752592121364",
+      "url": "https://store.steampowered.com/news/app/1091500/view/1818752592121364",
       "published_at": "2025-12-10T17:07:25Z",
       "is_patch": false
     },
     {
       "title": "Patch 2.31",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1810503566412448",
+      "url": "https://store.steampowered.com/news/app/1091500/view/1810503566412448",
       "published_at": "2025-09-11T10:09:03Z",
       "is_patch": true
     },
     {
       "title": "It\u2019s All About You! \u2014 Edgerunners duos: To the Moon Together",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1808601382440513",
+      "url": "https://store.steampowered.com/news/app/1091500/view/1808601382440513",
       "published_at": "2025-08-21T10:20:44Z",
       "is_patch": false
     },
     {
       "title": "Update 2.3 Patch Notes",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1805431065307946",
+      "url": "https://store.steampowered.com/news/app/1091500/view/1805431065307946",
       "published_at": "2025-07-16T16:12:38Z",
       "is_patch": true
     },
     {
       "title": "Patch 2.21",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1789580505302900",
+      "url": "https://store.steampowered.com/news/app/1091500/view/1789580505302900",
       "published_at": "2025-01-23T11:05:43Z",
       "is_patch": true
     },
     {
       "title": "Take Your Shot in Photo Mode Challenge 3.0",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1785774543496368",
+      "url": "https://store.steampowered.com/news/app/1091500/view/1785774543496368",
       "published_at": "2024-12-11T16:15:19Z",
       "is_patch": false
     },
     {
       "title": "Update 2.2 is live!",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1785321795772422",
+      "url": "https://store.steampowered.com/news/app/1091500/view/1785321795772422",
       "published_at": "2024-12-10T17:01:18Z",
       "is_patch": true
     },
     {
       "title": "REDstreams \u2014 Update 2.2 is coming!",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1785321795740007",
+      "url": "https://store.steampowered.com/news/app/1091500/view/1785321795740007",
       "published_at": "2024-12-09T17:14:47Z",
       "is_patch": false
     }
