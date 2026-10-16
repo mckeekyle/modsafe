@@ -16,6 +16,7 @@ HOST = "modsafe.app"
 SITE = f"https://{HOST}"
 KEY = build.INDEXNOW_KEY
 ENDPOINT = "https://api.indexnow.org/indexnow"
+UA = "ModSafe-IndexNow/1.0 (+https://modsafe.app)"
 
 
 def all_urls():
@@ -50,7 +51,7 @@ def wait_for_key(timeout=600):
     end = time.time() + timeout
     while time.time() < end:
         try:
-            with urllib.request.urlopen(urllib.request.Request(url, headers={"Cache-Control": "no-cache"}), timeout=15) as r:
+            with urllib.request.urlopen(urllib.request.Request(url, headers={"Cache-Control": "no-cache", "User-Agent": UA}), timeout=15) as r:
                 if r.read().decode().strip() == KEY:
                     return True
         except Exception:
@@ -62,7 +63,7 @@ def wait_for_key(timeout=600):
 def submit(urls):
     body = json.dumps({"host": HOST, "key": KEY, "keyLocation": f"{SITE}/{KEY}.txt", "urlList": urls[:10000]}).encode()
     req = urllib.request.Request(ENDPOINT, data=body, method="POST",
-                                 headers={"Content-Type": "application/json; charset=utf-8"})
+                                 headers={"Content-Type": "application/json; charset=utf-8", "User-Agent": UA})
     try:
         with urllib.request.urlopen(req, timeout=30) as r:
             return r.status, r.read().decode()[:300]
