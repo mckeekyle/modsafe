@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T12:32:55Z",
+  "generated_at": "2026-10-16T14:44:18Z",
   "game": {
     "slug": "bannerlord",
     "name": "Mount & Blade II: Bannerlord",
@@ -13,7 +13,7 @@
       "url": "https://store.steampowered.com/news/app/261550/view/1840310314351373"
     }
   },
-  "verdict": "Likely safe",
+  "verdict": "Safe",
   "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
   "frameworks": [
     {
@@ -25,18 +25,22 @@
       "repo": "BUTR/Bannerlord.BLSE",
       "tracked": true,
       "sensitive": true,
-      "status": "Likely safe",
-      "base_status": "Likely OK",
-      "reason": "Latest release is newer than patch BL v1.4.8, but notes do not explicitly mention that version.",
+      "status": "Safe",
+      "base_status": "Updated for latest patch",
+      "reason": "Latest release notes mention patch BL v1.4.8 and the release is on/after the patch date.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v1.7.4",
       "release_name": "Release 1.7.4",
       "release_published_at": "2026-10-13T20:57:11Z",
       "release_url": "https://github.com/BUTR/Bannerlord.BLSE/releases/tag/v1.7.4",
-      "mentions_patch": false,
+      "mentions_patch": true,
       "newer_than_patch": true,
-      "mention_releases": []
+      "mention_releases": [
+        "v1.7.4",
+        "v1.7.3",
+        "v1.7.0"
+      ]
     },
     {
       "id": "harmony-bl",
@@ -74,10 +78,10 @@
           "id": "blse",
           "short": "BLSE",
           "name": "Bannerlord Software Extender (BLSE)",
-          "status": "Likely safe",
-          "release_tag": "v1.7.0",
-          "release_published_at": "2026-08-23T17:09:17Z",
-          "mentions_patch": false
+          "status": "Safe",
+          "release_tag": "v1.7.4",
+          "release_published_at": "2026-10-13T20:57:11Z",
+          "mentions_patch": true
         },
         {
           "id": "harmony-bl",
@@ -102,10 +106,10 @@
           "id": "blse",
           "short": "BLSE",
           "name": "Bannerlord Software Extender (BLSE)",
-          "status": "Likely safe",
-          "release_tag": "v1.7.0",
-          "release_published_at": "2026-08-23T17:09:17Z",
-          "mentions_patch": false
+          "status": "Safe",
+          "release_tag": "v1.7.4",
+          "release_published_at": "2026-10-13T20:57:11Z",
+          "mentions_patch": true
         },
         {
           "id": "harmony-bl",
@@ -130,10 +134,10 @@
           "id": "blse",
           "short": "BLSE",
           "name": "Bannerlord Software Extender (BLSE)",
-          "status": "Likely safe",
-          "release_tag": "v1.7.0",
-          "release_published_at": "2026-08-23T17:09:17Z",
-          "mentions_patch": false
+          "status": "Safe",
+          "release_tag": "v1.7.4",
+          "release_published_at": "2026-10-13T20:57:11Z",
+          "mentions_patch": true
         },
         {
           "id": "harmony-bl",
@@ -158,10 +162,10 @@
           "id": "blse",
           "short": "BLSE",
           "name": "Bannerlord Software Extender (BLSE)",
-          "status": "Likely safe",
-          "release_tag": "v1.7.0",
-          "release_published_at": "2026-08-23T17:09:17Z",
-          "mentions_patch": false
+          "status": "Safe",
+          "release_tag": "v1.7.4",
+          "release_published_at": "2026-10-13T20:57:11Z",
+          "mentions_patch": true
         },
         {
           "id": "harmony-bl",
@@ -186,10 +190,10 @@
           "id": "blse",
           "short": "BLSE",
           "name": "Bannerlord Software Extender (BLSE)",
-          "status": "Likely safe",
-          "release_tag": "v1.6.3",
-          "release_published_at": "2026-04-25T17:32:00Z",
-          "mentions_patch": false
+          "status": "Safe",
+          "release_tag": "v1.7.4",
+          "release_published_at": "2026-10-13T20:57:11Z",
+          "mentions_patch": true
         },
         {
           "id": "harmony-bl",
@@ -214,10 +218,10 @@
           "id": "blse",
           "short": "BLSE",
           "name": "Bannerlord Software Extender (BLSE)",
-          "status": "Likely safe",
-          "release_tag": "v1.6.0",
-          "release_published_at": "2026-01-27T12:08:48Z",
-          "mentions_patch": false
+          "status": "Safe",
+          "release_tag": "v1.7.4",
+          "release_published_at": "2026-10-13T20:57:11Z",
+          "mentions_patch": true
         },
         {
           "id": "harmony-bl",
@@ -242,10 +246,10 @@
           "id": "blse",
           "short": "BLSE",
           "name": "Bannerlord Software Extender (BLSE)",
-          "status": "Likely safe",
-          "release_tag": "v1.6.0",
-          "release_published_at": "2026-01-27T12:08:48Z",
-          "mentions_patch": false
+          "status": "Safe",
+          "release_tag": "v1.7.4",
+          "release_published_at": "2026-10-13T20:57:11Z",
+          "mentions_patch": true
         },
         {
           "id": "harmony-bl",
@@ -270,10 +274,10 @@
           "id": "blse",
           "short": "BLSE",
           "name": "Bannerlord Software Extender (BLSE)",
-          "status": "Likely safe",
-          "release_tag": "v1.5.12",
-          "release_published_at": "2025-12-09T22:00:05Z",
-          "mentions_patch": false
+          "status": "Safe",
+          "release_tag": "v1.7.4",
+          "release_published_at": "2026-10-13T20:57:11Z",
+          "mentions_patch": true
         },
         {
           "id": "harmony-bl",
@@ -298,10 +302,10 @@
           "id": "blse",
           "short": "BLSE",
           "name": "Bannerlord Software Extender (BLSE)",
-          "status": "Likely safe",
-          "release_tag": "v1.5.9",
-          "release_published_at": "2025-12-05T17:33:29Z",
-          "mentions_patch": false
+          "status": "Safe",
+          "release_tag": "v1.7.4",
+          "release_published_at": "2026-10-13T20:57:11Z",
+          "mentions_patch": true
         },
         {
           "id": "harmony-bl",
@@ -326,10 +330,10 @@
           "id": "blse",
           "short": "BLSE",
           "name": "Bannerlord Software Extender (BLSE)",
-          "status": "Likely safe",
-          "release_tag": "v1.5.9",
-          "release_published_at": "2025-12-05T17:33:29Z",
-          "mentions_patch": false
+          "status": "Safe",
+          "release_tag": "v1.7.4",
+          "release_published_at": "2026-10-13T20:57:11Z",
+          "mentions_patch": true
         },
         {
           "id": "harmony-bl",
@@ -354,10 +358,10 @@
           "id": "blse",
           "short": "BLSE",
           "name": "Bannerlord Software Extender (BLSE)",
-          "status": "Likely safe",
-          "release_tag": "v1.5.9",
-          "release_published_at": "2025-12-05T17:33:29Z",
-          "mentions_patch": false
+          "status": "Safe",
+          "release_tag": "v1.7.4",
+          "release_published_at": "2026-10-13T20:57:11Z",
+          "mentions_patch": true
         },
         {
           "id": "harmony-bl",
@@ -382,10 +386,10 @@
           "id": "blse",
           "short": "BLSE",
           "name": "Bannerlord Software Extender (BLSE)",
-          "status": "Likely safe",
-          "release_tag": "v1.5.9",
-          "release_published_at": "2025-12-05T17:33:29Z",
-          "mentions_patch": false
+          "status": "Safe",
+          "release_tag": "v1.7.4",
+          "release_published_at": "2026-10-13T20:57:11Z",
+          "mentions_patch": true
         },
         {
           "id": "harmony-bl",

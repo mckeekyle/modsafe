@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T12:33:27Z",
+  "generated_at": "2026-10-16T14:44:48Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,44 @@
     }
   ],
   "items": [
+    {
+      "title": "The pleasures of Double Fine's Thank You Bus Driver are not in the destination, nor the journey, but in slapping my disobedient passengers",
+      "url": "https://www.rockpapershotgun.com/the-pleasures-of-double-fines-thank-you-bus-driver-are-not-in-the-destination-nor-the-journey-but-in-slapping-my-disobedient-passengers",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-16T14:38:59Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Fortnite is coming to Linux so we may soon be able to play it and other games like Apex Legends on Steam Deck and Steam Machine",
+      "url": "https://www.eurogamer.net/fortnite-linux-easy-anti-cheat-big-development",
+      "source": "Eurogamer",
+      "published_at": "2026-10-16T13:46:23Z",
+      "games": [
+        "steam-deck"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Wardogs devs rush to fix XP exploit allowing players to quickly unlock tanks and stomp competition on Season 2's first day",
+      "url": "https://www.eurogamer.net/wardogs-driver-xp-exploit-season-2-tanks",
+      "source": "Eurogamer",
+      "published_at": "2026-10-16T13:41:05Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Modern Warfare 4 release times and early access explained",
+      "url": "https://www.pcgamer.com/games/call-of-duty/modern-warfare-4-release-date-launch-times-early-access/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-16T12:44:53Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Ubisoft were working on a second Assassin's Creed game set in Qin Dynasty China, if this allegedly leaked footage is to be believed",
       "url": "https://www.rockpapershotgun.com/ubisoft-were-working-on-a-second-assassins-creed-game-set-in-qin-dynasty-china-if-this-allegedly-leaked-footage-is-to-be-believed",
@@ -433,8 +471,8 @@
       "highlight": false
     },
     {
-      "title": "A co-op survival game where trolls aren't just there to be killed? 'We don't talk about them as enemies, but rather as neighbors'",
-      "url": "https://www.pcgamer.com/games/survival-crafting/a-co-op-survival-game-where-trolls-arent-just-there-to-be-killed-we-dont-talk-about-them-as-enemies-but-rather-as-neighbors/",
+      "title": "Asus ROG Xbox Ally X20 review",
+      "url": "https://www.pcgamer.com/hardware/handheld-gaming-pcs/asus-rog-xbox-ally-x20-review/",
       "source": "PC Gamer",
       "published_at": "2026-10-15T13:00:00Z",
       "games": [],
@@ -451,8 +489,8 @@
       "highlight": false
     },
     {
-      "title": "Asus ROG Xbox Ally X20 review",
-      "url": "https://www.pcgamer.com/hardware/handheld-gaming-pcs/asus-rog-xbox-ally-x20-review/",
+      "title": "A co-op survival game where trolls aren't just there to be killed? 'We don't talk about them as enemies, but rather as neighbors'",
+      "url": "https://www.pcgamer.com/games/survival-crafting/a-co-op-survival-game-where-trolls-arent-just-there-to-be-killed-we-dont-talk-about-them-as-enemies-but-rather-as-neighbors/",
       "source": "PC Gamer",
       "published_at": "2026-10-15T13:00:00Z",
       "games": [],
@@ -527,42 +565,6 @@
       "url": "https://www.pcgamer.com/games/rpg/disco-elysium-splinter-studios-red-rooster-is-going-to-be-a-an-incendiary-physics-driven-rpg-where-you-play-an-inmate-an-opiate-fuelled-mathematician-and-a-bus-driver-with-nunchucks/",
       "source": "PC Gamer",
       "published_at": "2026-10-15T11:14:46Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Valve is toying with a Steam Frame OLED and some Reddit users are already wondering whether to wait an excruciatingly long time for it even though it may never happen",
-      "url": "https://www.pcgamer.com/hardware/vr-hardware/valve-is-toying-with-a-steam-frame-oled-and-some-reddit-users-are-already-wondering-whether-to-wait-an-excruciatingly-long-time-for-it-even-though-it-may-never-happen/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-15T11:06:28Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "League of Legends Classic will become a thing of the past in January 2027, though it may one day be resurrected as a limited-time event",
-      "url": "https://www.rockpapershotgun.com/league-of-legends-classic-will-become-a-thing-of-the-past-in-january-2027-though-it-may-one-day-be-resurrected-as-a-limited-time-event",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-15T11:01:24Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "How in the world are Intel GPUs still improving so much? The latest driver update claims up to a 31% fps improvement in Resident Evil Requiem",
-      "url": "https://www.pcgamer.com/hardware/graphics-cards/how-in-the-world-are-intel-gpus-still-improving-so-much-the-latest-driver-update-claims-up-to-a-31-percent-fps-improvement-in-resident-evil-requiem/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-15T10:40:22Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Big Walk devs House House announce support for BDS Microsoft boycott, say the co-op puzzler isn't coming to Xbox",
-      "url": "https://www.rockpapershotgun.com/big-walk-devs-house-house-announce-support-for-bds-microsoft-boycott-say-the-co-op-puzzler-isnt-coming-to-xbox",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-15T10:27:34Z",
       "games": [],
       "kind": "news",
       "highlight": false

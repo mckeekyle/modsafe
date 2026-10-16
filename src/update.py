@@ -256,7 +256,7 @@ def build_steam_game(game: dict) -> dict:
         raise RuntimeError(f"No patch announcements found in Steam news for {game['name']}")
     latest = patches[0]
     patch_dt = parse_iso(latest["published_at"])
-    mfn = make_mention_fn(latest["version"], rule.get("mention"))
+    mfn = make_mention_fn(latest["version"], rule.get("mention"), rule.get("series_depth"))
 
     fws, rels_by = [], {}
     for fw in game["frameworks"]:
@@ -342,7 +342,7 @@ def build_steam_game(game: dict) -> dict:
 
     history = []
     for p in patches:
-        pm = make_mention_fn(p["version"], rule.get("mention"))
+        pm = make_mention_fn(p["version"], rule.get("mention"), rule.get("series_depth"))
         row = []
         for fw in game["frameworks"]:
             if fw["source"] == "manual" or fw["id"] not in rels_by:

@@ -293,6 +293,9 @@ GAMES = [
             "version": r"(\d+\.\d+(?:\.\d+)?)",
             "require_version": True,
             "label": "{v}",
+            # RimWorld mods declare compatibility per major.minor (About.xml supportedVersions), so an explicit
+            # "RimWorld 1.6" release covers 1.6.x builds.
+            "series_depth": 2,
         },
         "frameworks": [
             {"id": "harmony", "name": "Harmony", "short": "Harmony", "source": "github",

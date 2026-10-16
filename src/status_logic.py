@@ -437,14 +437,39 @@ def detect_patch(title: str, rule: dict[str, Any]) -> Optional[dict[str, Any]]:
     return {"version": version}
 
 
-def make_mention_fn(version: Optional[str], template: Optional[str]):
+def notes_cover_version(notes: str, version: Optional[str], series_depth: Optional[int] = None) -> bool:
+    """
+    True when notes explicitly declare a version range that contains `version`:
+      - wildcard ranges such as "v1.4.x" / "1.x" (any game), e.g. BLSE "For v1.0.x/.../v1.4.x" covers 1.4.8;
+      - for games whose mod compatibility is declared per release series (series_depth, e.g. RimWorld's
+        About.xml supportedVersions use major.minor), an explicit "RimWorld 1.6" / "update to 1.6" covers
+        build 1.6.4850. Bare numbers without that context never count.
+    """
+    if not notes or not version or not re.fullmatch(r"\d+(?:\.\d+)+", version):
+        return False
+    parts = version.split(".")
+    for i in range(1, len(parts)):
+        pre = r"\.".join(map(re.escape, parts[:i]))
+        if re.search(rf"(?<![\w.])v?{pre}\.[x*](?![\w.])", notes, re.I):
+            return True
+    if series_depth and len(parts) > series_depth:
+        series = r"\.".join(map(re.escape, parts[:series_depth]))
+        ctx = r"(?:rimworld|update(?:d)?\s+(?:to|for)|support(?:s|ed)?(?:\s+for)?|compatible\s+with|for)"
+        if re.search(rf"(?i)\b{ctx}\s+v?{series}(?![\w.]|\.\d)", notes):
+            return True
+    return False
+
+
+def make_mention_fn(version: Optional[str], template: Optional[str], series_depth: Optional[int] = None):
     """Build a notes->bool matcher for a patch version (None => never matches)."""
     if not version:
         return lambda _notes: False
     if template:
         rx = re.compile(template.format(v=re.escape(version)), re.I)
-        return lambda notes: bool(rx.search(notes or ""))
-    return lambda notes: notes_mention_patch(notes or "", version)
+        base = lambda notes: bool(rx.search(notes or ""))
+    else:
+        base = lambda notes: notes_mention_patch(notes or "", version)
+    return lambda notes: base(notes) or notes_cover_version(notes or "", version, series_depth)
 
 
 def list_patches_generic(news_items: list[dict[str, Any]], rule: dict[str, Any], limit: int = 15) -> list[dict[str, Any]]:
