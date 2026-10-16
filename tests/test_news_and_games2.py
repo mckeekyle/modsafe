@@ -91,7 +91,10 @@ class TestPolish(unittest.TestCase):
         self.assertIn('og:image:width" content="1200"', html)
         self.assertIn('/og/default.png', build.page_shell("t", "d", "/faq/", "faq", "x"))
         root = Path(__file__).resolve().parents[1]
-        from PIL import Image  # noqa: F401  (dev-only dependency; skip if missing)
+        try:
+            from PIL import Image  # dev-only dependency; CI runners don't have it
+        except ImportError:
+            return
         for slug in ("default", "skyrim-se", "minecraft"):
             self.assertEqual(Image.open(root / "static/og" / f"{slug}.png").size, (1200, 630))
 
