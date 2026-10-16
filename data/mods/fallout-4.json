@@ -1,0 +1,185 @@
+{
+  "game": "fallout-4",
+  "verified_at": "2026-10-15",
+  "manager": {
+    "name": "Mod Organizer 2",
+    "url": "https://github.com/ModOrganizer2/modorganizer",
+    "alt": {
+      "name": "Vortex",
+      "url": "https://github.com/Nexus-Mods/Vortex"
+    }
+  },
+  "intro": "A stable, crash-resistant Fallout 4 base. Script extender and crash fixes first, then interface, then gameplay. Each mod's page lists its full requirements.",
+  "mods": [
+    {
+      "id": "f4se",
+      "name": "Fallout 4 Script Extender (F4SE)",
+      "category": "Framework",
+      "summary": "Lets DLL plugins hook the game; most of this list needs it.",
+      "source": "nexus",
+      "nexus_domain": "fallout4",
+      "nexus_id": 42147,
+      "url": "https://www.nexusmods.com/fallout4/mods/42147",
+      "requires": [],
+      "framework_id": "f4se",
+      "note": "Must match your game build (Next-Gen vs Old-Gen). Launch through f4se_loader.exe."
+    },
+    {
+      "id": "address-library-f4",
+      "name": "Address Library for F4SE Plugins",
+      "category": "Framework",
+      "summary": "Lookup table that keeps F4SE plugins working across minor game updates.",
+      "source": "nexus",
+      "nexus_domain": "fallout4",
+      "nexus_id": 47327,
+      "url": "https://www.nexusmods.com/fallout4/mods/47327",
+      "requires": [
+        "f4se"
+      ],
+      "framework_id": "address-library-f4"
+    },
+    {
+      "id": "buffout4",
+      "name": "Buffout 4 NG",
+      "category": "Fixes",
+      "summary": "Crash fixes plus readable crash logs that point to the mod at fault.",
+      "source": "nexus",
+      "nexus_domain": "fallout4",
+      "nexus_id": 64880,
+      "url": "https://www.nexusmods.com/fallout4/mods/64880",
+      "requires": [
+        "f4se",
+        "address-library-f4"
+      ],
+      "framework_id": "buffout4"
+    },
+    {
+      "id": "ufo4p",
+      "name": "Unofficial Fallout 4 Patch (UFO4P)",
+      "category": "Fixes",
+      "summary": "Community fix-pack for thousands of quest, item and world bugs.",
+      "source": "nexus",
+      "nexus_domain": "fallout4",
+      "nexus_id": 4598,
+      "url": "https://www.nexusmods.com/fallout4/mods/4598",
+      "requires": []
+    },
+    {
+      "id": "weapon-debris-fix",
+      "name": "Weapon Debris Crash Fix",
+      "category": "Fixes",
+      "summary": "Stops the well-known NVIDIA weapon debris crash.",
+      "source": "nexus",
+      "nexus_domain": "fallout4",
+      "nexus_id": 48078,
+      "url": "https://www.nexusmods.com/fallout4/mods/48078",
+      "requires": [
+        "f4se",
+        "address-library-f4"
+      ]
+    },
+    {
+      "id": "high-fps-physics",
+      "name": "High FPS Physics Fix",
+      "category": "Performance",
+      "summary": "Fixes physics, loading and stutter issues above 60 FPS.",
+      "source": "nexus",
+      "nexus_domain": "fallout4",
+      "nexus_id": 44798,
+      "url": "https://www.nexusmods.com/fallout4/mods/44798",
+      "requires": [
+        "f4se",
+        "address-library-f4"
+      ]
+    },
+    {
+      "id": "mcm",
+      "name": "Mod Configuration Menu",
+      "category": "Interface",
+      "summary": "In-game settings menu that many mods use for their options.",
+      "source": "nexus",
+      "nexus_domain": "fallout4",
+      "nexus_id": 21497,
+      "url": "https://www.nexusmods.com/fallout4/mods/21497",
+      "requires": [
+        "f4se"
+      ]
+    },
+    {
+      "id": "hudframework",
+      "name": "HUDFramework",
+      "category": "Interface",
+      "summary": "Shared HUD library required by many interface and survival mods.",
+      "source": "nexus",
+      "nexus_domain": "fallout4",
+      "nexus_id": 20309,
+      "url": "https://www.nexusmods.com/fallout4/mods/20309",
+      "requires": [
+        "f4se"
+      ]
+    },
+    {
+      "id": "def-ui",
+      "name": "DEF_UI",
+      "category": "Interface",
+      "summary": "Cleaner, denser inventory, barter and HUD menus with sorting tags.",
+      "source": "nexus",
+      "nexus_domain": "fallout4",
+      "nexus_id": 10654,
+      "url": "https://www.nexusmods.com/fallout4/mods/10654",
+      "requires": []
+    },
+    {
+      "id": "xdi",
+      "name": "Extended Dialogue Interface",
+      "category": "Interface",
+      "summary": "Shows the full dialogue lines instead of one-word prompts.",
+      "source": "nexus",
+      "nexus_domain": "fallout4",
+      "nexus_id": 27216,
+      "url": "https://www.nexusmods.com/fallout4/mods/27216",
+      "requires": [
+        "f4se"
+      ]
+    },
+    {
+      "id": "looksmenu",
+      "name": "LooksMenu",
+      "category": "Character",
+      "summary": "Expanded character editor with sliders and presets.",
+      "source": "nexus",
+      "nexus_domain": "fallout4",
+      "nexus_id": 12631,
+      "url": "https://www.nexusmods.com/fallout4/mods/12631",
+      "requires": [
+        "f4se"
+      ]
+    },
+    {
+      "id": "place-everywhere",
+      "name": "Place Everywhere",
+      "category": "Settlements",
+      "summary": "Build anywhere and fine-tune object placement in workshop mode.",
+      "source": "nexus",
+      "nexus_domain": "fallout4",
+      "nexus_id": 9424,
+      "url": "https://www.nexusmods.com/fallout4/mods/9424",
+      "requires": [
+        "f4se"
+      ]
+    },
+    {
+      "id": "workshop-framework",
+      "name": "Workshop Framework",
+      "category": "Settlements",
+      "summary": "Backbone for settlement mods like Sim Settlements 2.",
+      "source": "nexus",
+      "nexus_domain": "fallout4",
+      "nexus_id": 35004,
+      "url": "https://www.nexusmods.com/fallout4/mods/35004",
+      "requires": [
+        "f4se"
+      ]
+    }
+  ]
+}

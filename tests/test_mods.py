@@ -71,3 +71,10 @@ class TestPages(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestAgnosticReq(unittest.TestCase):
+    def test_agnostic_loader_does_not_vouch(self):
+        d = {"frameworks": [{"id": "bep", "short": "BepInEx", "status": "Not affected by patches"}]}
+        self.assertEqual(mods.compat({"requires": ["bep"]}, d)[0], "Check manually")
+        self.assertEqual(mods.compat({"framework_id": "bep", "requires": []}, d)[0], "Not affected by patches")

@@ -39,6 +39,21 @@ def main():
                 n = nx.get((m["nexus_domain"], m["nexus_id"]))
                 ok = bool(n and n["status"] == "published")
                 info = f"{n['name']} (updated {n['updatedAt'][:10]})" if n else "not found"
+            elif m["source"] == "modrinth":
+                try:
+                    pj = json.load(urllib.request.urlopen(urllib.request.Request(
+                        f"https://api.modrinth.com/v2/project/{m['modrinth_slug']}", headers={"User-Agent": UA["User-Agent"]}), timeout=30))
+                    ok, info = pj.get("status") == "approved", f"{pj['title']} (updated {pj['updated'][:10]})"
+                except Exception as e:  # noqa: BLE001
+                    ok, info = False, str(e)
+            elif m["source"] == "thunderstore":
+                try:
+                    pj = json.load(urllib.request.urlopen(urllib.request.Request(
+                        f"https://thunderstore.io/api/experimental/package/{m['thunderstore_package']}/", headers={"User-Agent": UA["User-Agent"]}), timeout=30))
+                    ok = not pj.get("is_deprecated")
+                    info = f"{pj['full_name']} {pj['latest']['version_number']} ({pj['latest']['date_created'][:10]})"
+                except Exception as e:  # noqa: BLE001
+                    ok, info = False, str(e)
             else:
                 ok, info = http_ok(m["url"]), ""
             bad += not ok

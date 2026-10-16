@@ -1,0 +1,139 @@
+{
+  "game": "elden-ring",
+  "verified_at": "2026-10-15",
+  "manager": {
+    "name": "me3 (mod loader)",
+    "url": "https://github.com/garyttierney/me3"
+  },
+  "intro": "Offline mods for Elden Ring, loaded with me3. Never use mods online in normal matchmaking: Easy Anti-Cheat can flag you. Seamless Co-op uses its own separate servers.",
+  "mods": [
+    {
+      "id": "seamless-coop",
+      "name": "Seamless Co-op",
+      "category": "Multiplayer",
+      "summary": "Play the whole game with friends without the usual co-op limits, on separate servers.",
+      "source": "nexus",
+      "nexus_domain": "eldenring",
+      "nexus_id": 510,
+      "url": "https://www.nexusmods.com/eldenring/mods/510",
+      "requires": [],
+      "framework_id": "seamless-coop",
+      "note": "Uses its own launcher and save files; don't mix with normal online play."
+    },
+    {
+      "id": "me3",
+      "name": "me3 (mod loader)",
+      "category": "Framework",
+      "summary": "Loads file and DLL mods without touching your game files; successor to Mod Engine 2.",
+      "source": "github",
+      "url": "https://github.com/garyttierney/me3",
+      "requires": [],
+      "framework_id": "me3",
+      "note": "Mods packaged for Mod Engine 2 also load with me3; follow each mod's install notes."
+    },
+    {
+      "id": "skip-intro",
+      "name": "Skip intro logos",
+      "category": "Quality of life",
+      "summary": "Removes the startup logos and white flash so you reach the menu faster.",
+      "source": "nexus",
+      "nexus_domain": "eldenring",
+      "nexus_id": 421,
+      "url": "https://www.nexusmods.com/eldenring/mods/421",
+      "requires": [
+        "me3"
+      ]
+    },
+    {
+      "id": "map-for-goblins",
+      "name": "Map for Goblins",
+      "category": "Interface",
+      "summary": "Marks items, bosses and points of interest on the in-game map.",
+      "source": "nexus",
+      "nexus_domain": "eldenring",
+      "nexus_id": 3091,
+      "url": "https://www.nexusmods.com/eldenring/mods/3091",
+      "requires": [
+        "me3"
+      ]
+    },
+    {
+      "id": "transmogrify-armor",
+      "name": "Transmogrify Armor",
+      "category": "Gameplay",
+      "summary": "Change your armor's look while keeping its stats.",
+      "source": "nexus",
+      "nexus_domain": "eldenring",
+      "nexus_id": 3596,
+      "url": "https://www.nexusmods.com/eldenring/mods/3596",
+      "requires": [
+        "me3"
+      ]
+    },
+    {
+      "id": "glorious-merchant",
+      "name": "Glorious Merchant",
+      "category": "Gameplay",
+      "summary": "A merchant who sells nearly every item, for testing builds.",
+      "source": "nexus",
+      "nexus_domain": "eldenring",
+      "nexus_id": 5192,
+      "url": "https://www.nexusmods.com/eldenring/mods/5192",
+      "requires": [
+        "me3"
+      ]
+    },
+    {
+      "id": "randomizer",
+      "name": "Item and Enemy Randomizer",
+      "category": "Gameplay",
+      "summary": "Shuffles items and enemies for a fresh playthrough.",
+      "source": "nexus",
+      "nexus_domain": "eldenring",
+      "nexus_id": 428,
+      "url": "https://www.nexusmods.com/eldenring/mods/428",
+      "requires": [
+        "me3"
+      ]
+    },
+    {
+      "id": "clevers-moveset",
+      "name": "Clever's Moveset Modpack",
+      "category": "Gameplay",
+      "summary": "New weapon movesets and combat options.",
+      "source": "nexus",
+      "nexus_domain": "eldenring",
+      "nexus_id": 1928,
+      "url": "https://www.nexusmods.com/eldenring/mods/1928",
+      "requires": [
+        "me3"
+      ]
+    },
+    {
+      "id": "reforged",
+      "name": "ELDEN RING Reforged (ERR)",
+      "category": "Overhaul",
+      "summary": "Rebalance and expansion of the whole game; start a new character.",
+      "source": "nexus",
+      "nexus_domain": "eldenring",
+      "nexus_id": 541,
+      "url": "https://www.nexusmods.com/eldenring/mods/541",
+      "requires": [
+        "me3"
+      ]
+    },
+    {
+      "id": "convergence",
+      "name": "The Convergence",
+      "category": "Overhaul",
+      "summary": "Total overhaul with new classes, spells and bosses; start a new character.",
+      "source": "nexus",
+      "nexus_domain": "eldenring",
+      "nexus_id": 3419,
+      "url": "https://www.nexusmods.com/eldenring/mods/3419",
+      "requires": [
+        "me3"
+      ]
+    }
+  ]
+}

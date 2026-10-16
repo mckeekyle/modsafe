@@ -1,0 +1,184 @@
+{
+  "game": "minecraft",
+  "verified_at": "2026-10-15",
+  "manager": {
+    "name": "Modrinth App",
+    "url": "https://modrinth.com/app",
+    "alt": {
+      "name": "Prism Launcher",
+      "url": "https://prismlauncher.org/"
+    }
+  },
+  "intro": "A Fabric-based performance and quality-of-life pack for Minecraft: Java Edition. Each mod must have a build for your exact Minecraft version.",
+  "compat_list": "https://modrinth.com/mods",
+  "mods": [
+    {
+      "id": "fabric-api",
+      "name": "Fabric API",
+      "category": "Framework",
+      "summary": "Core library almost every Fabric mod requires.",
+      "source": "modrinth",
+      "url": "https://modrinth.com/mod/fabric-api",
+      "requires": [
+        "fabric-loader"
+      ],
+      "modrinth_slug": "fabric-api",
+      "framework_id": "fabric-api"
+    },
+    {
+      "id": "sodium",
+      "name": "Sodium",
+      "category": "Performance",
+      "summary": "Modern rendering engine that greatly boosts frame rates.",
+      "source": "modrinth",
+      "url": "https://modrinth.com/mod/sodium",
+      "requires": [
+        "fabric-loader"
+      ],
+      "modrinth_slug": "sodium",
+      "framework_id": "sodium"
+    },
+    {
+      "id": "lithium",
+      "name": "Lithium",
+      "category": "Performance",
+      "summary": "Optimises game logic (mobs, blocks, chunks) without changing gameplay.",
+      "source": "modrinth",
+      "url": "https://modrinth.com/mod/lithium",
+      "requires": [
+        "fabric-loader"
+      ],
+      "modrinth_slug": "lithium",
+      "framework_id": "lithium"
+    },
+    {
+      "id": "iris",
+      "name": "Iris Shaders",
+      "category": "Visuals",
+      "summary": "Shader pack support that works alongside Sodium.",
+      "source": "modrinth",
+      "url": "https://modrinth.com/mod/iris",
+      "requires": [
+        "fabric-loader",
+        "sodium"
+      ],
+      "modrinth_slug": "iris",
+      "framework_id": "iris"
+    },
+    {
+      "id": "ferrite-core",
+      "name": "FerriteCore",
+      "category": "Performance",
+      "summary": "Cuts memory use, especially in larger modpacks.",
+      "source": "modrinth",
+      "url": "https://modrinth.com/mod/ferrite-core",
+      "requires": [
+        "fabric-loader"
+      ],
+      "modrinth_slug": "ferrite-core"
+    },
+    {
+      "id": "entityculling",
+      "name": "Entity Culling",
+      "category": "Performance",
+      "summary": "Skips rendering mobs and block entities you can't see.",
+      "source": "modrinth",
+      "url": "https://modrinth.com/mod/entityculling",
+      "requires": [
+        "fabric-loader",
+        "fabric-api"
+      ],
+      "modrinth_slug": "entityculling"
+    },
+    {
+      "id": "dynamic-fps",
+      "name": "Dynamic FPS",
+      "category": "Performance",
+      "summary": "Lowers frame rate when the game is in the background to save power.",
+      "source": "modrinth",
+      "url": "https://modrinth.com/mod/dynamic-fps",
+      "requires": [
+        "fabric-loader",
+        "fabric-api"
+      ],
+      "modrinth_slug": "dynamic-fps"
+    },
+    {
+      "id": "modmenu",
+      "name": "Mod Menu",
+      "category": "Interface",
+      "summary": "Lists installed mods and opens their settings screens.",
+      "source": "modrinth",
+      "url": "https://modrinth.com/mod/modmenu",
+      "requires": [
+        "fabric-loader",
+        "fabric-api"
+      ],
+      "modrinth_slug": "modmenu"
+    },
+    {
+      "id": "cloth-config",
+      "name": "Cloth Config API",
+      "category": "Framework",
+      "summary": "Settings-screen library many mods use.",
+      "source": "modrinth",
+      "url": "https://modrinth.com/mod/cloth-config",
+      "requires": [
+        "fabric-loader"
+      ],
+      "modrinth_slug": "cloth-config"
+    },
+    {
+      "id": "xaeros-minimap",
+      "name": "Xaero's Minimap",
+      "category": "Interface",
+      "summary": "Configurable minimap with waypoints.",
+      "source": "modrinth",
+      "url": "https://modrinth.com/mod/xaeros-minimap",
+      "requires": [
+        "fabric-loader",
+        "fabric-api"
+      ],
+      "modrinth_slug": "xaeros-minimap"
+    },
+    {
+      "id": "xaeros-world-map",
+      "name": "Xaero's World Map",
+      "category": "Interface",
+      "summary": "Full-screen world map that pairs with Xaero's Minimap.",
+      "source": "modrinth",
+      "url": "https://modrinth.com/mod/xaeros-world-map",
+      "requires": [
+        "fabric-loader",
+        "fabric-api"
+      ],
+      "modrinth_slug": "xaeros-world-map"
+    },
+    {
+      "id": "appleskin",
+      "name": "AppleSkin",
+      "category": "Interface",
+      "summary": "Shows hunger and saturation values of food.",
+      "source": "modrinth",
+      "url": "https://modrinth.com/mod/appleskin",
+      "requires": [
+        "fabric-loader",
+        "fabric-api"
+      ],
+      "modrinth_slug": "appleskin"
+    },
+    {
+      "id": "jade",
+      "name": "Jade",
+      "category": "Interface",
+      "summary": "Tooltip naming the block or mob you're looking at.",
+      "source": "modrinth",
+      "url": "https://modrinth.com/mod/jade",
+      "requires": [
+        "fabric-loader",
+        "fabric-api"
+      ],
+      "modrinth_slug": "jade"
+    }
+  ]
+}

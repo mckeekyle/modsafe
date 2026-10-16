@@ -1,0 +1,175 @@
+{
+  "game": "starfield",
+  "verified_at": "2026-10-15",
+  "manager": {
+    "name": "Mod Organizer 2",
+    "url": "https://github.com/ModOrganizer2/modorganizer",
+    "alt": {
+      "name": "Vortex",
+      "url": "https://github.com/Nexus-Mods/Vortex"
+    }
+  },
+  "intro": "Script extender plugins first, then interface mods, then gameplay. In-game Creations can coexist, but check each mod's page for conflicts.",
+  "mods": [
+    {
+      "id": "sfse",
+      "name": "Starfield Script Extender (SFSE)",
+      "category": "Framework",
+      "summary": "Lets DLL plugins hook the game; needed by most mods here.",
+      "source": "nexus",
+      "nexus_domain": "starfield",
+      "nexus_id": 106,
+      "url": "https://www.nexusmods.com/starfield/mods/106",
+      "requires": [],
+      "framework_id": "sfse",
+      "note": "Must match your game version; launch with sfse_loader.exe."
+    },
+    {
+      "id": "address-library-sf",
+      "name": "Address Library for SFSE Plugins",
+      "category": "Framework",
+      "summary": "Keeps SFSE plugins working across game updates.",
+      "source": "nexus",
+      "nexus_domain": "starfield",
+      "nexus_id": 3256,
+      "url": "https://www.nexusmods.com/starfield/mods/3256",
+      "requires": [
+        "sfse"
+      ],
+      "framework_id": "address-library-sf"
+    },
+    {
+      "id": "sf-engine-fixes",
+      "name": "Starfield Engine Fixes",
+      "category": "Fixes",
+      "summary": "Engine bug and crash fixes as an SFSE plugin.",
+      "source": "nexus",
+      "nexus_domain": "starfield",
+      "nexus_id": 10457,
+      "url": "https://www.nexusmods.com/starfield/mods/10457",
+      "requires": [
+        "sfse",
+        "address-library-sf"
+      ]
+    },
+    {
+      "id": "baka-achievements",
+      "name": "Baka Achievement Enabler",
+      "category": "Quality of life",
+      "summary": "Keeps achievements working with mods installed.",
+      "source": "nexus",
+      "nexus_domain": "starfield",
+      "nexus_id": 658,
+      "url": "https://www.nexusmods.com/starfield/mods/658",
+      "requires": [
+        "sfse",
+        "address-library-sf"
+      ]
+    },
+    {
+      "id": "undelayed-menus",
+      "name": "Undelayed Menus",
+      "category": "Quality of life",
+      "summary": "Removes the artificial delay when opening menus.",
+      "source": "nexus",
+      "nexus_domain": "starfield",
+      "nexus_id": 404,
+      "url": "https://www.nexusmods.com/starfield/mods/404",
+      "requires": [
+        "sfse",
+        "address-library-sf"
+      ]
+    },
+    {
+      "id": "console-command-runner",
+      "name": "Console Command Runner",
+      "category": "Tools",
+      "summary": "Runs console commands automatically on load, for tweaks without typing.",
+      "source": "nexus",
+      "nexus_domain": "starfield",
+      "nexus_id": 7318,
+      "url": "https://www.nexusmods.com/starfield/mods/7318",
+      "requires": [
+        "sfse",
+        "address-library-sf"
+      ]
+    },
+    {
+      "id": "starui-inventory",
+      "name": "StarUI Inventory",
+      "category": "Interface",
+      "summary": "PC-friendly inventory with a compact list, sorting and filters.",
+      "source": "nexus",
+      "nexus_domain": "starfield",
+      "nexus_id": 773,
+      "url": "https://www.nexusmods.com/starfield/mods/773",
+      "requires": []
+    },
+    {
+      "id": "starui-hud",
+      "name": "StarUI HUD",
+      "category": "Interface",
+      "summary": "Configurable HUD with extra info and cleaner layout.",
+      "source": "nexus",
+      "nexus_domain": "starfield",
+      "nexus_id": 3444,
+      "url": "https://www.nexusmods.com/starfield/mods/3444",
+      "requires": []
+    },
+    {
+      "id": "starui-workbench",
+      "name": "StarUI Workbench",
+      "category": "Interface",
+      "summary": "Better crafting and research menus in the StarUI style.",
+      "source": "nexus",
+      "nexus_domain": "starfield",
+      "nexus_id": 4966,
+      "url": "https://www.nexusmods.com/starfield/mods/4966",
+      "requires": []
+    },
+    {
+      "id": "compact-mission-menu",
+      "name": "Compact Mission Menu",
+      "category": "Interface",
+      "summary": "Denser, easier-to-scan mission list.",
+      "source": "nexus",
+      "nexus_domain": "starfield",
+      "nexus_id": 682,
+      "url": "https://www.nexusmods.com/starfield/mods/682",
+      "requires": []
+    },
+    {
+      "id": "neutral-luts",
+      "name": "Neutral LUTs",
+      "category": "Visuals",
+      "summary": "Removes the heavy colour filters for a clearer image.",
+      "source": "nexus",
+      "nexus_domain": "starfield",
+      "nexus_id": 323,
+      "url": "https://www.nexusmods.com/starfield/mods/323",
+      "requires": []
+    },
+    {
+      "id": "easy-digipick",
+      "name": "Easy Digipick",
+      "category": "Gameplay",
+      "summary": "Simplifies the lockpicking minigame.",
+      "source": "nexus",
+      "nexus_domain": "starfield",
+      "nexus_id": 451,
+      "url": "https://www.nexusmods.com/starfield/mods/451",
+      "requires": []
+    },
+    {
+      "id": "improved-combat-ai",
+      "name": "Improved Combat AI",
+      "category": "Gameplay",
+      "summary": "Smarter enemy tactics and more challenging fights.",
+      "source": "nexus",
+      "nexus_domain": "starfield",
+      "nexus_id": 1392,
+      "url": "https://www.nexusmods.com/starfield/mods/1392",
+      "requires": []
+    }
+  ]
+}

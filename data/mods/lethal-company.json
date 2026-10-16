@@ -1,0 +1,177 @@
+{
+  "game": "lethal-company",
+  "verified_at": "2026-10-15",
+  "manager": {
+    "name": "r2modman",
+    "url": "https://thunderstore.io/c/lethal-company/p/ebkr/r2modman/",
+    "alt": {
+      "name": "Thunderstore Mod Manager",
+      "url": "https://www.overwolf.com/app/thunderstore-thunderstore_mod_manager"
+    }
+  },
+  "intro": "Popular Thunderstore mods. Everyone in the lobby needs the same gameplay mods: share an r2modman profile code with your friends.",
+  "mods": [
+    {
+      "id": "bepinexpack",
+      "name": "BepInExPack",
+      "category": "Framework",
+      "summary": "Mod loader every Lethal Company mod runs on.",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/lethal-company/p/BepInEx/BepInExPack/",
+      "requires": [],
+      "thunderstore_package": "BepInEx/BepInExPack",
+      "framework_id": "bepinexpack"
+    },
+    {
+      "id": "lethallib",
+      "name": "LethalLib",
+      "category": "Framework",
+      "summary": "Library for adding items, enemies and moons; many content mods need it.",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/lethal-company/p/Evaisa/LethalLib/",
+      "requires": [
+        "bepinexpack"
+      ],
+      "thunderstore_package": "Evaisa/LethalLib",
+      "framework_id": "lethallib"
+    },
+    {
+      "id": "lethallevelloader",
+      "name": "LethalLevelLoader",
+      "category": "Framework",
+      "summary": "Loads custom moons and interiors.",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/lethal-company/p/IAmBatby/LethalLevelLoader/",
+      "requires": [
+        "bepinexpack"
+      ],
+      "thunderstore_package": "IAmBatby/LethalLevelLoader",
+      "framework_id": "lethallevelloader"
+    },
+    {
+      "id": "morecompany",
+      "name": "MoreCompany",
+      "category": "Multiplayer",
+      "summary": "Raises the lobby size above four players.",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/lethal-company/p/notnotnotswipez/MoreCompany/",
+      "requires": [
+        "bepinexpack"
+      ],
+      "thunderstore_package": "notnotnotswipez/MoreCompany",
+      "framework_id": "morecompany"
+    },
+    {
+      "id": "lethalcompany_inpututils",
+      "name": "LethalCompany InputUtils",
+      "category": "Framework",
+      "summary": "Lets mods add rebindable controls.",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/lethal-company/p/Rune580/LethalCompany_InputUtils/",
+      "requires": [
+        "bepinexpack"
+      ],
+      "thunderstore_package": "Rune580/LethalCompany_InputUtils"
+    },
+    {
+      "id": "lethalconfig",
+      "name": "LethalConfig",
+      "category": "Interface",
+      "summary": "In-game settings menu for supporting mods.",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/lethal-company/p/AinaVT/LethalConfig/",
+      "requires": [
+        "bepinexpack"
+      ],
+      "thunderstore_package": "AinaVT/LethalConfig"
+    },
+    {
+      "id": "reserveditemslotcore",
+      "name": "ReservedItemSlotCore",
+      "category": "Gameplay",
+      "summary": "Dedicated inventory slots for tools, used by the Reserved* mods.",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/lethal-company/p/FlipMods/ReservedItemSlotCore/",
+      "requires": [
+        "bepinexpack"
+      ],
+      "thunderstore_package": "FlipMods/ReservedItemSlotCore"
+    },
+    {
+      "id": "reservedflashlightslot",
+      "name": "ReservedFlashlightSlot",
+      "category": "Gameplay",
+      "summary": "A dedicated flashlight slot so it doesn't eat inventory space.",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/lethal-company/p/FlipMods/ReservedFlashlightSlot/",
+      "requires": [
+        "bepinexpack",
+        "reserveditemslotcore"
+      ],
+      "thunderstore_package": "FlipMods/ReservedFlashlightSlot"
+    },
+    {
+      "id": "toomanyemotes",
+      "name": "TooManyEmotes",
+      "category": "Fun",
+      "summary": "Hundreds of extra emotes.",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/lethal-company/p/FlipMods/TooManyEmotes/",
+      "requires": [
+        "bepinexpack",
+        "lethalcompany_inpututils"
+      ],
+      "thunderstore_package": "FlipMods/TooManyEmotes"
+    },
+    {
+      "id": "more_suits",
+      "name": "More Suits",
+      "category": "Cosmetics",
+      "summary": "Extra suits on the ship rack.",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/lethal-company/p/x753/More_Suits/",
+      "requires": [
+        "bepinexpack"
+      ],
+      "thunderstore_package": "x753/More_Suits"
+    },
+    {
+      "id": "mimics",
+      "name": "Mimics",
+      "category": "Gameplay",
+      "summary": "Adds fake fire exits that bite.",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/lethal-company/p/x753/Mimics/",
+      "requires": [
+        "bepinexpack"
+      ],
+      "thunderstore_package": "x753/Mimics"
+    },
+    {
+      "id": "coroner",
+      "name": "Coroner",
+      "category": "Interface",
+      "summary": "Shows how each crewmate died on the end-of-round screen.",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/lethal-company/p/EliteMasterEric/Coroner/",
+      "requires": [
+        "bepinexpack"
+      ],
+      "thunderstore_package": "EliteMasterEric/Coroner"
+    },
+    {
+      "id": "lategame_upgrades",
+      "name": "Lategame Upgrades",
+      "category": "Gameplay",
+      "summary": "Buyable ship and player upgrades for longer runs.",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/lethal-company/p/malco/Lategame_Upgrades/",
+      "requires": [
+        "bepinexpack",
+        "lethallib",
+        "lethalcompany_inpututils"
+      ],
+      "thunderstore_package": "malco/Lategame_Upgrades"
+    }
+  ]
+}

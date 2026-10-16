@@ -16,7 +16,7 @@ GUIDES_DIR = ROOT / "data" / "guides"
 ALLOWED_HOSTS = ("www.nexusmods.com", "nexusmods.com", "github.com", "thunderstore.io", "modrinth.com", "flightsim.to",
                  "smapi.io", "skse.silverlock.org", "fsuipc.com", "www.fsuipc.com", "navigraph.com", "www.navigraph.com",
                  "flybywiresim.com", "docs.flybywiresim.com", "www.flightsimulator.com", "flightsimulator.com", "volanta.app", "fslivetrafficliveries.com",
-                 "vpilot.rosscarlson.dev", "headwindsim.net", "www.mobiflight.com")
+                 "vpilot.rosscarlson.dev", "headwindsim.net", "www.mobiflight.com", "mod.io", "prismlauncher.org", "www.overwolf.com")
 # Severity order for the "worst required framework" compat badge.
 RANK = ["Breakage reported", "Not ported yet", "Just patched, wait", "No data", "Check manually", "Likely safe", "Safe",
         "Not affected by patches"]
@@ -85,7 +85,9 @@ def compat(mod: dict, game_data: dict) -> tuple[str, str]:
     if mod.get("framework_id") in fws:
         f = fws[mod["framework_id"]]
         return f["status"], f"Tracked framework: {f['status']} for the latest patch."
-    req = [fws[r] for r in mod.get("requires", []) if r in fws and fws[r].get("tracked", True)]
+    # Version-agnostic loaders (e.g. BepInExPack) say nothing about whether the mod itself survived a patch.
+    req = [fws[r] for r in mod.get("requires", []) if r in fws and fws[r].get("tracked", True)
+           and fws[r]["status"] != "Not affected by patches"]
     if not req:
         return "Check manually", "Doesn't depend on a tracked framework; check its page after big patches."
     worst = min(req, key=lambda f: RANK.index(f["status"]) if f["status"] in RANK else 0)

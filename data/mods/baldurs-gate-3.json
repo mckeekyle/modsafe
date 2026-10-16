@@ -1,0 +1,156 @@
+{
+  "game": "baldurs-gate-3",
+  "verified_at": "2026-10-15",
+  "manager": {
+    "name": "BG3 Mod Manager",
+    "url": "https://github.com/LaughingLeader/BG3ModManager",
+    "alt": {
+      "name": "In-game mod manager (mod.io)",
+      "url": "https://mod.io/g/baldursgate3"
+    }
+  },
+  "intro": "Popular, well-maintained BG3 mods. Many need Norbyte's Script Extender. Each mod's page lists its full requirements; install those too.",
+  "mods": [
+    {
+      "id": "bg3se",
+      "name": "Script Extender (BG3SE)",
+      "category": "Framework",
+      "summary": "Adds Lua scripting to the game; needed by many gameplay and utility mods.",
+      "source": "github",
+      "url": "https://github.com/Norbyte/bg3se",
+      "requires": [],
+      "framework_id": "bg3se",
+      "note": "BG3 Mod Manager can install and update it for you."
+    },
+    {
+      "id": "bg3mm",
+      "name": "BG3 Mod Manager",
+      "category": "Tools",
+      "summary": "Sets load order, exports it to the game and installs the Script Extender.",
+      "source": "github",
+      "url": "https://github.com/LaughingLeader/BG3ModManager",
+      "requires": [],
+      "framework_id": "bg3mm"
+    },
+    {
+      "id": "community-library",
+      "name": "Community Library",
+      "category": "Framework",
+      "summary": "Shared code and assets that many content mods depend on.",
+      "source": "nexus",
+      "nexus_domain": "baldursgate3",
+      "nexus_id": 1333,
+      "url": "https://www.nexusmods.com/baldursgate3/mods/1333",
+      "requires": [
+        "bg3se"
+      ]
+    },
+    {
+      "id": "bg3-mcm",
+      "name": "Mod Configuration Menu (MCM)",
+      "category": "Interface",
+      "summary": "One in-game settings menu for every mod that supports it.",
+      "source": "nexus",
+      "nexus_domain": "baldursgate3",
+      "nexus_id": 9162,
+      "url": "https://www.nexusmods.com/baldursgate3/mods/9162",
+      "requires": [
+        "bg3se"
+      ]
+    },
+    {
+      "id": "compat-framework",
+      "name": "Compatibility Framework",
+      "category": "Framework",
+      "summary": "Lets class, race and subclass mods coexist without overwriting each other.",
+      "source": "nexus",
+      "nexus_domain": "baldursgate3",
+      "nexus_id": 1933,
+      "url": "https://www.nexusmods.com/baldursgate3/mods/1933",
+      "requires": [
+        "bg3se"
+      ]
+    },
+    {
+      "id": "impui",
+      "name": "ImpUI (ImprovedUI)",
+      "category": "Interface",
+      "summary": "UI library that lets mods add classes, races and options to menus.",
+      "source": "nexus",
+      "nexus_domain": "baldursgate3",
+      "nexus_id": 366,
+      "url": "https://www.nexusmods.com/baldursgate3/mods/366",
+      "requires": []
+    },
+    {
+      "id": "party-limit-begone",
+      "name": "Party Limit Begone",
+      "category": "Gameplay",
+      "summary": "Raise the party size above four.",
+      "source": "nexus",
+      "nexus_domain": "baldursgate3",
+      "nexus_id": 327,
+      "url": "https://www.nexusmods.com/baldursgate3/mods/327",
+      "requires": [
+        "bg3se"
+      ]
+    },
+    {
+      "id": "tutorial-chest",
+      "name": "Tutorial Chest Summoning",
+      "category": "Gameplay",
+      "summary": "Summon a chest of handy starter items from your spellbook.",
+      "source": "nexus",
+      "nexus_domain": "baldursgate3",
+      "nexus_id": 457,
+      "url": "https://www.nexusmods.com/baldursgate3/mods/457",
+      "requires": [
+        "bg3se"
+      ]
+    },
+    {
+      "id": "5e-spells",
+      "name": "5e Spells",
+      "category": "Gameplay",
+      "summary": "Adds tabletop 5th Edition spells that Larian left out.",
+      "source": "nexus",
+      "nexus_domain": "baldursgate3",
+      "nexus_id": 125,
+      "url": "https://www.nexusmods.com/baldursgate3/mods/125",
+      "requires": []
+    },
+    {
+      "id": "unlock-level-curve",
+      "name": "UnlockLevelCurve (Level 13-20)",
+      "category": "Gameplay",
+      "summary": "Raises the level cap to 20 with matching XP curve.",
+      "source": "nexus",
+      "nexus_domain": "baldursgate3",
+      "nexus_id": 377,
+      "url": "https://www.nexusmods.com/baldursgate3/mods/377",
+      "requires": []
+    },
+    {
+      "id": "wasd",
+      "name": "WASD Character Movement",
+      "category": "Quality of life",
+      "summary": "Move your character directly with the keyboard.",
+      "source": "nexus",
+      "nexus_domain": "baldursgate3",
+      "nexus_id": 781,
+      "url": "https://www.nexusmods.com/baldursgate3/mods/781",
+      "requires": []
+    },
+    {
+      "id": "tavs-hair-salon",
+      "name": "Tav's Hair Salon",
+      "category": "Character",
+      "summary": "Large set of extra hairstyles for character creation.",
+      "source": "nexus",
+      "nexus_domain": "baldursgate3",
+      "nexus_id": 213,
+      "url": "https://www.nexusmods.com/baldursgate3/mods/213",
+      "requires": []
+    }
+  ]
+}
