@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T23:58:07Z",
+  "generated_at": "2026-10-16T01:32:41Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,24 @@
     }
   ],
   "items": [
+    {
+      "title": "US lawmaker calls videogame purchases rentals disguised as sales: 'When you pay for a game, you should own it'",
+      "url": "https://www.pcgamer.com/gaming-industry/us-lawmaker-calls-videogame-purchases-rentals-disguised-as-sales-when-you-pay-for-a-game-you-should-own-it/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-16T00:08:45Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Steam achievements are getting a huge overhaul, with separate sets for DLC and season passes, and an easy way to compare with friends",
+      "url": "https://www.pcgamer.com/software/platforms/steam-achievements-are-getting-a-huge-overhaul-with-separate-sets-for-dlc-and-season-passes-and-an-easy-way-to-compare-with-friends/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-15T23:58:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Welp, all of you RuneScape folks who hate Reignited have gotten your wish, as the controversial MMO rejig has been cancelled",
       "url": "https://www.rockpapershotgun.com/welp-all-of-you-runescape-folks-who-hate-reignited-have-gotten-your-wish-as-the-controversial-mmo-rejig-has-been-cancelled",
@@ -316,15 +334,6 @@
       "highlight": false
     },
     {
-      "title": "Asus ROG Xbox Ally X20 review",
-      "url": "https://www.pcgamer.com/hardware/handheld-gaming-pcs/asus-rog-xbox-ally-x20-review/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-15T13:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
       "title": "A co-op survival game where trolls aren't just there to be killed? 'We don't talk about them as enemies, but rather as neighbors'",
       "url": "https://www.pcgamer.com/games/survival-crafting/a-co-op-survival-game-where-trolls-arent-just-there-to-be-killed-we-dont-talk-about-them-as-enemies-but-rather-as-neighbors/",
       "source": "PC Gamer",
@@ -336,6 +345,15 @@
     {
       "title": "Xbox Ally X 20 vs Xbox Ally X: A wickedly bright OLED screen and frosty temps make for a begrudgingly attractive upgrade for the Asus handheld",
       "url": "https://www.pcgamer.com/hardware/handheld-gaming-pcs/xbox-ally-x-20-vs-xbox-ally-x-a-wickedly-bright-oled-screen-and-frosty-temps-make-for-a-begrudgingly-attractive-upgrade-for-the-asus-handheld/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-15T13:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Asus ROG Xbox Ally X20 review",
+      "url": "https://www.pcgamer.com/hardware/handheld-gaming-pcs/asus-rog-xbox-ally-x20-review/",
       "source": "PC Gamer",
       "published_at": "2026-10-15T13:00:00Z",
       "games": [],
@@ -547,24 +565,6 @@
       "url": "https://www.pcgamer.com/games/rts/legendary-composer-frank-klepacki-says-the-rts-genre-isnt-dead-but-he-would-like-to-see-devs-get-a-little-more-creative-with-it/",
       "source": "PC Gamer",
       "published_at": "2026-10-14T21:44:35Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Zero Escape and The Hundred Line co-creator's new studio \"might literally crash into a million pieces\" after the cancellation of its next game",
-      "url": "https://www.eurogamer.net/zero-escape-hundred-line-new-studio-crash-game-cancellation",
-      "source": "Eurogamer",
-      "published_at": "2026-10-14T19:14:52Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "GTA 6 leaker threatens Take-Two with a 'dead man's switch'",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-leaker-threatens-take-two-with-a-dead-mans-switch/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-14T18:36:16Z",
       "games": [],
       "kind": "news",
       "highlight": false
