@@ -37,6 +37,9 @@ from status_logic import (  # noqa: E402
     parse_silverlock,
     manual_hook_verdict,
     merge_silent_patches,
+    parse_steam_public_build,
+    detect_unannounced_update,
+    apply_unannounced,
     same_release_line,
     patch_age_days,
     user_verdict,
@@ -236,6 +239,25 @@ def breakage_reports(repo: str, since_iso: str, patch_version: str | None, patch
     return out
 
 
+STEAMCMD_INFO = "https://api.steamcmd.net/v1/info/{appid}"
+
+
+def unannounced_event(game: dict, patches: list[dict], latest: dict) -> Optional[dict]:
+    """Steam public-branch build change with no matching patch post. On fetch failure, reuse the committed event
+    for the same patch so a flaky source can't flip verdicts."""
+    try:
+        build = parse_steam_public_build(http_get_json(STEAMCMD_INFO.format(appid=game["steam_appid"]), retries=2),
+                                         game["steam_appid"])
+    except Exception as e:  # noqa: BLE001
+        print(f"  WARNING: steamcmd build info failed ({e}); reusing committed value", file=sys.stderr)
+        try:
+            prev = json.loads((DATA_DIR / f"{game['slug']}.json").read_text(encoding="utf-8"))["game"]["latest_patch"]
+        except Exception:  # noqa: BLE001
+            return None
+        return prev.get("unannounced_update") if prev.get("label") == latest.get("label") else None
+    return detect_unannounced_update(build, patches)
+
+
 def silent_patches_for(slug: str) -> list[dict]:
     try:
         d = json.loads((ROOT / "data" / "manual" / "silent-patches.json").read_text(encoding="utf-8"))
@@ -268,6 +290,9 @@ def build_steam_game(game: dict) -> dict:
     latest = patches[0]
     patch_dt = parse_iso(latest["published_at"])
     mfn = make_mention_fn(latest["version"], rule.get("mention"), rule.get("series_depth"))
+    unannounced = unannounced_event(game, patches, latest)
+    if unannounced:
+        latest["unannounced_update"] = unannounced
 
     fws, rels_by = [], {}
     for fw in game["frameworks"]:
@@ -340,6 +365,8 @@ def build_steam_game(game: dict) -> dict:
                        " maintainers or other users, so it isn't counted as breakage.")
         elif v["status"] != STATUS_UPDATED and label == "Likely safe" and v["status"] == STATUS_UNKNOWN:
             reason += f" No open breakage reports {int(age)} days after the patch." if issues_repo else f" Patch is {int(age)} days old; no breakage signal available."
+        label, reason = apply_unannounced(label, reason, sensitive=sensitive,
+                                          release_published_at=rel.get("published_at"), event=unannounced)
         if __import__("re").search(r"(?i)beta|alpha|\brc\d*\b|-pre", rel.get("tag_name") or ""):
             reason += " (Note: the author labels this build a beta/pre-release in its tag.)"
         if fw["source"] == "github_tags":

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T18:27:18Z",
+  "generated_at": "2026-10-16T19:48:36Z",
   "game": {
     "slug": "elden-ring",
     "name": "Elden Ring",
@@ -10,7 +10,14 @@
       "title": "Patch Notes Version 1.17",
       "published_at": "2026-08-27T14:00:22Z",
       "published_unix": 1787839222,
-      "url": "https://store.steampowered.com/news/app/1245620/view/1842212951300120"
+      "url": "https://store.steampowered.com/news/app/1245620/view/1842212951300120",
+      "unannounced_update": {
+        "version": null,
+        "label": "Unannounced update 2026-09-08",
+        "published_at": "2026-09-08T07:02:18Z",
+        "buildid": "25080141",
+        "source": "Steam public branch (api.steamcmd.net / PICS)"
+      }
     }
   },
   "verdict": "Likely safe",
@@ -27,7 +34,7 @@
       "sensitive": true,
       "status": "Safe",
       "base_status": "Updated for latest patch",
-      "reason": "Latest release notes mention patch 1.17 and the release is on/after the patch date.",
+      "reason": "Latest release notes mention patch 1.17 and the release is on/after the patch date. Note: Steam's public build changed on 2026-09-08 (build 25080141) without an announcement; this status reflects the last announced patch, so recheck if you hit problems.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v2.0.1",
@@ -51,7 +58,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch 1.17; compatibility is unverified \u2014 check the project page. One unconfirmed user report of breakage is open ('Elden Ring 1.17.0.0 crashes in me3_mod_host.dll 0.13.0 during system allocator hook'); not yet confirmed by the maintainers or other users, so it isn't counted as breakage.",
+      "reason": "Latest release predates patch 1.17; compatibility is unverified \u2014 check the project page. One unconfirmed user report of breakage is open ('Elden Ring 1.17.0.0 crashes in me3_mod_host.dll 0.13.0 during system allocator hook'); not yet confirmed by the maintainers or other users, so it isn't counted as breakage. Note: Steam's public build changed on 2026-09-08 (build 25080141) without an announcement; this status reflects the last announced patch, so recheck if you hit problems.",
       "breakage_reports": [
         {
           "title": "Elden Ring 1.17.0.0 crashes in me3_mod_host.dll 0.13.0 during system allocator hook",
@@ -80,6 +87,13 @@
       "published_at": "2026-08-27T14:00:22Z",
       "published_unix": 1787839222,
       "url": "https://store.steampowered.com/news/app/1245620/view/1842212951300120",
+      "unannounced_update": {
+        "version": null,
+        "label": "Unannounced update 2026-09-08",
+        "published_at": "2026-09-08T07:02:18Z",
+        "buildid": "25080141",
+        "source": "Steam public branch (api.steamcmd.net / PICS)"
+      },
       "frameworks": [
         {
           "id": "seamless-coop",

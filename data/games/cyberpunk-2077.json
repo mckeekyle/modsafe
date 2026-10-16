@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T18:26:40Z",
+  "generated_at": "2026-10-16T19:47:32Z",
   "game": {
     "slug": "cyberpunk-2077",
     "name": "Cyberpunk 2077",
@@ -10,7 +10,14 @@
       "title": "Patch 2.31",
       "published_at": "2025-09-11T10:09:03Z",
       "published_unix": 1757585343,
-      "url": "https://store.steampowered.com/news/app/1091500/view/1810503566412448"
+      "url": "https://store.steampowered.com/news/app/1091500/view/1810503566412448",
+      "unannounced_update": {
+        "version": null,
+        "label": "Unannounced update 2025-10-14",
+        "published_at": "2025-10-14T10:03:52Z",
+        "buildid": "20383525",
+        "source": "Steam public branch (api.steamcmd.net / PICS)"
+      }
     }
   },
   "verdict": "Likely safe",
@@ -27,7 +34,7 @@
       "sensitive": true,
       "status": "Safe",
       "base_status": "Updated for latest patch",
-      "reason": "Latest release is on/after patch Patch 2.31; an earlier post-patch release (v1.37.0) explicitly mentioned that version.",
+      "reason": "Latest release is on/after patch Patch 2.31; an earlier post-patch release (v1.37.0) explicitly mentioned that version. Note: Steam's public build changed on 2025-10-14 (build 20383525) without an announcement; this status reflects the last announced patch, so recheck if you hit problems.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v1.37.1",
@@ -75,7 +82,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch Patch 2.31; compatibility is unverified \u2014 check the project page. No open breakage reports 400 days after the patch.",
+      "reason": "Latest release predates patch Patch 2.31; compatibility is unverified \u2014 check the project page. No open breakage reports 400 days after the patch. Note: Steam's public build changed on 2025-10-14 (build 20383525) without an announcement; this status reflects the last announced patch, so recheck if you hit problems.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v0.5.31",
@@ -165,6 +172,13 @@
       "published_at": "2025-09-11T10:09:03Z",
       "published_unix": 1757585343,
       "url": "https://store.steampowered.com/news/app/1091500/view/1810503566412448",
+      "unannounced_update": {
+        "version": null,
+        "label": "Unannounced update 2025-10-14",
+        "published_at": "2025-10-14T10:03:52Z",
+        "buildid": "20383525",
+        "source": "Steam public branch (api.steamcmd.net / PICS)"
+      },
       "frameworks": [
         {
           "id": "cet",

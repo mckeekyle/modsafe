@@ -719,3 +719,61 @@ def same_release_line(tag: Optional[str], latest_tag: Optional[str]) -> bool:
         return int(m.group(1)) if m else None
     a, b = major(tag), major(latest_tag)
     return a is None or b is None or a == b
+
+
+UNANNOUNCED_DEDUPE_DAYS = 2
+
+
+def parse_steam_public_build(info: dict, appid) -> Optional[dict[str, Any]]:
+    """Public-branch build from api.steamcmd.net/v1/info/<appid> (Steam PICS). None if absent/malformed."""
+    try:
+        if info.get("status") != "success":
+            return None
+        b = info["data"][str(appid)]["depots"]["branches"]["public"]
+        ts = int(b["timeupdated"])
+    except (KeyError, TypeError, ValueError):
+        return None
+    if ts <= 0:
+        return None
+    return {"buildid": str(b.get("buildid") or ""), "timeupdated": ts,
+            "published_at": datetime.fromtimestamp(ts, tz=timezone.utc).isoformat().replace("+00:00", "Z")}
+
+
+def detect_unannounced_update(build: Optional[dict], patches: list[dict[str, Any]],
+                              dedupe_days: float = UNANNOUNCED_DEDUPE_DAYS) -> Optional[dict[str, Any]]:
+    """
+    A Steam public build newer than the latest tracked patch, with no tracked patch (news or sourced silent patch)
+    within `dedupe_days` of it, is an 'unannounced update'. It never carries a version number.
+    """
+    if not build or not patches:
+        return None
+    bdt = datetime.fromtimestamp(build["timeupdated"], tz=timezone.utc)
+    latest = max(parse_iso(p.get("published_at")) or datetime.fromtimestamp(0, tz=timezone.utc) for p in patches)
+    if (bdt - latest).total_seconds() <= dedupe_days * 86400:
+        return None
+    for p in patches:
+        pdt = parse_iso(p.get("published_at"))
+        if pdt and abs((bdt - pdt).total_seconds()) <= dedupe_days * 86400:
+            return None
+    return {"version": None, "label": f"Unannounced update {bdt:%Y-%m-%d}", "published_at": build["published_at"],
+            "buildid": build.get("buildid"), "source": "Steam public branch (api.steamcmd.net / PICS)"}
+
+
+def apply_unannounced(label: str, reason: str, *, sensitive: bool, release_published_at: Optional[str],
+                      event: Optional[dict], now: Optional[datetime] = None) -> tuple[str, str]:
+    """
+    Conservative handling: a fresh unannounced build (< FRESH_PATCH_DAYS) puts patch-sensitive tools without a
+    newer release on 'Just patched, wait'; an older one keeps the verdict (no breakage signal) but flags a recheck.
+    """
+    if not event or not sensitive or label in (V_BROKEN, V_NOT_PORTED, V_NODATA, V_AGNOSTIC, V_MANUAL):
+        return label, reason
+    edt = parse_iso(event["published_at"])
+    rdt = parse_iso(release_published_at)
+    if not edt or (rdt and rdt >= edt):
+        return label, reason
+    day = edt.strftime("%Y-%m-%d")
+    if patch_age_days(event["published_at"], now) < FRESH_PATCH_DAYS:
+        return V_WAIT, reason + (f" Steam's public build changed on {day} (build {event.get('buildid')}) with no "
+                                 "announcement, and this tool hasn't released since; wait for confirmation.")
+    return label, reason + (f" Note: Steam's public build changed on {day} (build {event.get('buildid')}) without an "
+                            "announcement; this status reflects the last announced patch, so recheck if you hit problems.")

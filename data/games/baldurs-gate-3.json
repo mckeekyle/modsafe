@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T18:27:00Z",
+  "generated_at": "2026-10-16T19:48:03Z",
   "game": {
     "slug": "baldurs-gate-3",
     "name": "Baldur's Gate 3",
@@ -10,7 +10,14 @@
       "title": "Hotfix #36 Now Live!",
       "published_at": "2026-03-26T14:40:05Z",
       "published_unix": 1774536005,
-      "url": "https://store.steampowered.com/news/app/1086940/view/1827626365770693"
+      "url": "https://store.steampowered.com/news/app/1086940/view/1827626365770693",
+      "unannounced_update": {
+        "version": null,
+        "label": "Unannounced update 2026-09-29",
+        "published_at": "2026-09-29T14:55:18Z",
+        "buildid": "25605617",
+        "source": "Steam public branch (api.steamcmd.net / PICS)"
+      }
     }
   },
   "verdict": "Likely safe",
@@ -69,6 +76,13 @@
       "published_at": "2026-03-26T14:40:05Z",
       "published_unix": 1774536005,
       "url": "https://store.steampowered.com/news/app/1086940/view/1827626365770693",
+      "unannounced_update": {
+        "version": null,
+        "label": "Unannounced update 2026-09-29",
+        "published_at": "2026-09-29T14:55:18Z",
+        "buildid": "25605617",
+        "source": "Steam public branch (api.steamcmd.net / PICS)"
+      },
       "frameworks": [
         {
           "id": "bg3se",

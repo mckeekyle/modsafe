@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T18:28:30Z",
+  "generated_at": "2026-10-16T19:56:08Z",
   "game": {
     "slug": "msfs-2020",
     "name": "Microsoft Flight Simulator (2020)",
@@ -10,7 +10,14 @@
       "title": "Release Notes - Sim Update 16 [1.39.9.0] Now Available",
       "published_at": "2025-08-05T15:15:08Z",
       "published_unix": 1754406908,
-      "url": "https://store.steampowered.com/news/app/1250410/view/1806698490847382"
+      "url": "https://store.steampowered.com/news/app/1250410/view/1806698490847382",
+      "unannounced_update": {
+        "version": null,
+        "label": "Unannounced update 2026-03-02",
+        "published_at": "2026-03-02T18:00:47Z",
+        "buildid": "21580682",
+        "source": "Steam public branch (api.steamcmd.net / PICS)"
+      }
     }
   },
   "verdict": "Likely safe",
@@ -105,6 +112,13 @@
       "published_at": "2025-08-05T15:15:08Z",
       "published_unix": 1754406908,
       "url": "https://store.steampowered.com/news/app/1250410/view/1806698490847382",
+      "unannounced_update": {
+        "version": null,
+        "label": "Unannounced update 2026-03-02",
+        "published_at": "2026-03-02T18:00:47Z",
+        "buildid": "21580682",
+        "source": "Steam public branch (api.steamcmd.net / PICS)"
+      },
       "frameworks": [
         {
           "id": "fbw-a32nx",

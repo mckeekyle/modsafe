@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T18:28:30Z",
+  "generated_at": "2026-10-16T19:56:10Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,26 @@
     }
   ],
   "items": [
+    {
+      "title": "'We f**ked up': 1 day into Wardogs Season 2, the Blue team bribery bonus is being dropped",
+      "url": "https://www.pcgamer.com/games/fps/we-f-ked-up-1-day-into-wardogs-season-2-the-blue-team-bribery-bonus-is-being-dropped/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-16T19:42:52Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "SteamOS 3.9.3 Beta",
+      "url": "https://store.steampowered.com/news/app/1675200/view/1846651706682826",
+      "source": "Steam \u00b7 Steam Deck",
+      "published_at": "2026-10-16T19:02:10Z",
+      "games": [
+        "steam-deck"
+      ],
+      "kind": "announcement",
+      "highlight": false
+    },
     {
       "title": "Nonolith traps you in a living maze and challenges you to find hidden terrain magic using good old copy-paste",
       "url": "https://www.rockpapershotgun.com/nonolith-traps-you-in-a-living-maze-and-challenges-you-to-find-hidden-terrain-magic-using-good-old-copy-paste",
@@ -549,24 +569,6 @@
       "url": "https://www.pcgamer.com/hardware/gaming-laptops/nvidias-rtx-spark-makes-for-an-impressive-arm-based-gaming-laptop-but-not-one-id-recommend-you-buy-just-for-pc-gaming/",
       "source": "PC Gamer",
       "published_at": "2026-10-15T13:35:06Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Grand Theft Auto 6 launch trailer suddenly drops, showing a saucy shower scene, a tense police chase, and high-flying heists",
-      "url": "https://www.eurogamer.net/grand-theft-auto-6-launch-trailer",
-      "source": "Eurogamer",
-      "published_at": "2026-10-15T13:24:51Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Epic said its game launcher was faster than Steam on the same day Steam got a speed boost\u2014so I've put both to the test",
-      "url": "https://www.pcgamer.com/hardware/epic-said-its-game-launcher-was-faster-than-steam-on-the-same-day-steam-got-a-speed-boost-so-ive-put-both-to-the-test/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-15T13:10:51Z",
       "games": [],
       "kind": "news",
       "highlight": false

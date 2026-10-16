@@ -754,6 +754,7 @@ def build_game_page(game: dict, data: dict) -> str:
 <dt>{"Latest Stable" if data.get("channels") else "Latest patch"}</dt><dd><strong>{esc(p['label'])}</strong></dd>
 <dt>Released</dt><dd>{esc(fmt_date(p.get('published_at')))}</dd>
 {f"<dt>Current runtime</dt><dd>{esc(p['runtime_note'])}</dd>" if p.get('runtime_note') else ""}
+{f"<dt>Unannounced update</dt><dd>Steam's public build changed on {esc(fmt_date(p['unannounced_update']['published_at']))} (build <code>{esc(p['unannounced_update'].get('buildid') or '?')}</code>) with no patch announcement. Version unknown.</dd>" if p.get('unannounced_update') else ""}
 <dt>Source</dt><dd><a href="{esc(p.get('url', ''))}">{esc(p.get('title', ''))}</a></dd>
 {snap}
 {f"<dt>Builds</dt><dd>" + ", ".join(f"{esc(k.title())} <code>{esc(v)}</code>" for k, v in p["builds"].items()) + "</dd>" if p.get("builds") else ""}

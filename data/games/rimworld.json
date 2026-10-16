@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T18:27:33Z",
+  "generated_at": "2026-10-16T19:48:55Z",
   "game": {
     "slug": "rimworld",
     "name": "RimWorld",
@@ -10,7 +10,14 @@
       "title": "Update 1.6.4850 released",
       "published_at": "2026-06-08T19:12:10Z",
       "published_unix": 1780945930,
-      "url": "https://store.steampowered.com/news/app/294100/view/1834602721199984"
+      "url": "https://store.steampowered.com/news/app/294100/view/1834602721199984",
+      "unannounced_update": {
+        "version": null,
+        "label": "Unannounced update 2026-06-30",
+        "published_at": "2026-06-30T17:12:35Z",
+        "buildid": "23969874",
+        "source": "Steam public branch (api.steamcmd.net / PICS)"
+      }
     }
   },
   "verdict": "Safe",
@@ -49,7 +56,7 @@
       "sensitive": true,
       "status": "Safe",
       "base_status": "Updated for latest patch",
-      "reason": "Release notes mention patch 1.6.4850, even though the release timestamp is before the patch announcement.",
+      "reason": "Release notes mention patch 1.6.4850, even though the release timestamp is before the patch announcement. Note: Steam's public build changed on 2026-06-30 (build 23969874) without an announcement; this status reflects the last announced patch, so recheck if you hit problems.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v12.0.0",
@@ -69,6 +76,13 @@
       "published_at": "2026-06-08T19:12:10Z",
       "published_unix": 1780945930,
       "url": "https://store.steampowered.com/news/app/294100/view/1834602721199984",
+      "unannounced_update": {
+        "version": null,
+        "label": "Unannounced update 2026-06-30",
+        "published_at": "2026-06-30T17:12:35Z",
+        "buildid": "23969874",
+        "source": "Steam public branch (api.steamcmd.net / PICS)"
+      },
       "frameworks": [
         {
           "id": "harmony",

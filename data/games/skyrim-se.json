@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T18:26:53Z",
+  "generated_at": "2026-10-16T19:47:49Z",
   "game": {
     "slug": "skyrim-se",
     "name": "Skyrim Special Edition",
@@ -11,6 +11,13 @@
       "published_at": "2026-08-20T14:55:37Z",
       "published_unix": 1787237737,
       "url": "https://store.steampowered.com/news/app/489830/view/1841579228665884",
+      "unannounced_update": {
+        "version": null,
+        "label": "Unannounced update 2026-08-27",
+        "published_at": "2026-08-27T14:00:09Z",
+        "buildid": "24914197",
+        "source": "Steam public branch (api.steamcmd.net / PICS)"
+      },
       "runtime_note": "SKSE64's official page lists game runtime 1.7.104 as current (the announcement title says 1.7.99; Bethesda often ships silent hotfixes)."
     }
   },
@@ -55,7 +62,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Likely OK",
-      "reason": "Latest release is newer than patch 1.7.99, but notes do not explicitly mention that version. (Note: the author labels this build a beta/pre-release in its tag.)",
+      "reason": "Latest release is newer than patch 1.7.99, but notes do not explicitly mention that version. Note: Steam's public build changed on 2026-08-27 (build 24914197) without an announcement; this status reflects the last announced patch, so recheck if you hit problems. (Note: the author labels this build a beta/pre-release in its tag.)",
       "breakage_reports": [],
       "official": null,
       "release_tag": "7.0.21-beta5",
@@ -99,7 +106,7 @@
       "sensitive": true,
       "status": "Safe",
       "base_status": "Updated for latest patch",
-      "reason": "Latest release notes mention patch 1.7.99 and the release is on/after the patch date.",
+      "reason": "Latest release notes mention patch 1.7.99 and the release is on/after the patch date. Note: Steam's public build changed on 2026-08-27 (build 24914197) without an announcement; this status reflects the last announced patch, so recheck if you hit problems.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v1.25.0",
@@ -135,6 +142,13 @@
       "published_at": "2026-08-20T14:55:37Z",
       "published_unix": 1787237737,
       "url": "https://store.steampowered.com/news/app/489830/view/1841579228665884",
+      "unannounced_update": {
+        "version": null,
+        "label": "Unannounced update 2026-08-27",
+        "published_at": "2026-08-27T14:00:09Z",
+        "buildid": "24914197",
+        "source": "Steam public branch (api.steamcmd.net / PICS)"
+      },
       "runtime_note": "SKSE64's official page lists game runtime 1.7.104 as current (the announcement title says 1.7.99; Bethesda often ships silent hotfixes).",
       "frameworks": [
         {
