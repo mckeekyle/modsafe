@@ -44,5 +44,23 @@ class TestVersionCoverage(unittest.TestCase):
         assert v["status"] == STATUS_LIKELY
 
 
+class TestFetchFallback(unittest.TestCase):
+    def test_reuses_previous_entry_only_for_same_patch(self):
+        import json, tempfile
+        import update
+        with tempfile.TemporaryDirectory() as d:
+            old = update.DATA_DIR
+            update.DATA_DIR = Path(d)
+            try:
+                lp = {"label": "BL v1.4.8", "published_at": "2026-08-10T12:09:06Z"}
+                (Path(d) / "g.json").write_text(json.dumps({"game": {"latest_patch": lp}, "frameworks": [
+                    {"id": "a", "status": "Safe"}, {"id": "b", "status": "No data", "error": "x"}]}))
+                self.assertEqual(update.previous_framework("g", "a", lp)["status"], "Safe")
+                self.assertIsNone(update.previous_framework("g", "b", lp))
+                self.assertIsNone(update.previous_framework("g", "a", {**lp, "label": "BL v1.4.9"}))
+            finally:
+                update.DATA_DIR = old
+
+
 if __name__ == '__main__':
     unittest.main()

@@ -270,6 +270,12 @@ def build_steam_game(game: dict) -> dict:
             rels = SOURCES[fw["source"]](fw)
             time.sleep(0.5)
         except Exception as e:  # noqa: BLE001
+            prev = previous_framework(game["slug"], fw["id"], latest)
+            if prev:
+                # Transient fetch failure (e.g. unauthenticated GitHub rate limit during a Pages build): keep the last
+                # good evaluation for the same patch rather than downgrading the item to "No data".
+                fws.append(prev)
+                continue
             fws.append({**base, "status": V_NODATA, "base_status": None, "reason": f"Fetch failed: {e}", "release_tag": None,
                         "release_published_at": None, "release_url": fw["url"], "error": str(e)})
             continue
@@ -500,6 +506,21 @@ def build_game(game: dict) -> dict:
         "disclaimer": DISCLAIMER,
         **body,
     }
+
+
+def previous_framework(slug: str, fw_id: str, latest: dict) -> Optional[dict]:
+    """Last good committed entry for this framework, only if it was evaluated against the same latest patch."""
+    try:
+        prev = json.loads((DATA_DIR / f"{slug}.json").read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001
+        return None
+    pp = (prev.get("game") or {}).get("latest_patch") or {}
+    if pp.get("label") != latest.get("label") or pp.get("published_at") != latest.get("published_at"):
+        return None
+    for f in prev.get("frameworks") or []:
+        if f.get("id") == fw_id and not f.get("error") and f.get("status") != V_NODATA:
+            return f
+    return None
 
 
 def main(argv: list[str]) -> int:
