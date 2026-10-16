@@ -22,6 +22,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install test deps
+        run: python3 -m pip install --quiet Pillow
+
       - name: Unit tests
         run: python3 -m unittest discover -s tests -v
 

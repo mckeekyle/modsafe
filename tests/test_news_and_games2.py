@@ -92,11 +92,12 @@ class TestPolish(unittest.TestCase):
         self.assertIn('/og/default.png', build.page_shell("t", "d", "/faq/", "faq", "x"))
         root = Path(__file__).resolve().parents[1]
         try:
-            from PIL import Image  # dev-only dependency; CI runners don't have it
+            from PIL import Image
         except ImportError:
-            return
+            self.skipTest("Pillow not installed")
         for slug in ("default", "skyrim-se", "minecraft"):
-            self.assertEqual(Image.open(root / "static/og" / f"{slug}.png").size, (1200, 630))
+            with Image.open(root / "static/og" / f"{slug}.png") as im:
+                self.assertEqual(im.size, (1200, 630))
 
     def test_around_pc_prefers_relevant(self):
         import build
