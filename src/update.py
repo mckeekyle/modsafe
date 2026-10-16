@@ -37,6 +37,8 @@ from status_logic import (  # noqa: E402
     parse_silverlock,
     manual_hook_verdict,
     merge_silent_patches,
+    parse_atlan_config,
+    atlan_verdict,
     parse_steam_public_build,
     detect_unannounced_update,
     apply_unannounced,
@@ -173,7 +175,7 @@ def releases_decky_store(fw: dict) -> list[dict]:
              "html_url": fw["url"], "prerelease": False, "draft": False} for v in p.get("versions", [])[:10]]
 
 
-SOURCES = {"fsuipc": releases_fsuipc, "decky_store": releases_decky_store, "github": releases_github, "github_tags": releases_github_tags, "thunderstore": releases_thunderstore}
+SOURCES = {"github_asset": lambda fw: releases_github_asset(fw), "fsuipc": releases_fsuipc, "decky_store": releases_decky_store, "github": releases_github, "github_tags": releases_github_tags, "thunderstore": releases_thunderstore}
 
 
 def http_get_text(url: str, timeout: int = 30) -> str:
@@ -533,10 +535,83 @@ DISCLAIMER = ("Statuses are inferred from public release data (Steam news, GitHu
               "NeoForge/Modrinth APIs). They are not guarantees — verify on each project's page before updating.")
 
 
+def steam_news_out(game: dict) -> list[dict]:
+    try:
+        items = http_get_json(STEAM_NEWS.format(appid=game["steam_appid"])).get("appnews", {}).get("newsitems", [])
+    except Exception as e:  # noqa: BLE001
+        print(f"  steam news failed for {game['slug']}: {e}", file=sys.stderr)
+        return []
+    out = []
+    for n in items[:10]:
+        url = f"https://store.steampowered.com/news/app/{game['steam_appid']}/view/{n['gid']}" if n.get("gid") else n.get("url", "")
+        out.append({"title": n.get("title", ""), "url": url, "is_patch": False,
+                    "published_at": datetime.fromtimestamp(int(n["date"]), tz=timezone.utc).isoformat().replace("+00:00", "Z")})
+    return out
+
+
+def releases_github_asset(fw: dict) -> list[dict]:
+    """A rolling GitHub release whose asset is re-uploaded in place: date it by the asset's updated_at."""
+    r = http_get_json(f"https://api.github.com/repos/{fw['repo']}/releases/tags/{fw['tag']}", headers=gh_headers())
+    assets = [a for a in r.get("assets", []) if a.get("updated_at")]
+    if not assets:
+        raise RuntimeError(f"No assets on {fw['repo']}@{fw['tag']}")
+    a = max(assets, key=lambda a: a["updated_at"])
+    return [{"tag_name": a["name"], "name": r.get("name") or fw["tag"], "body": r.get("body") or "",
+             "published_at": a["updated_at"], "html_url": r.get("html_url") or fw["url"], "prerelease": False, "draft": False}]
+
+
+def build_atlan_game(game: dict) -> dict:
+    """DOOM: The Dark Ages: Steam public build (PICS via api.steamcmd.net) vs Atlan patcher supported-build entries."""
+    prev = {}
+    try:
+        prev = json.loads((DATA_DIR / f"{game['slug']}.json").read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001
+        pass
+    build = parse_steam_public_build(http_get_json(STEAMCMD_INFO.format(appid=game["steam_appid"]), retries=2),
+                                     game["steam_appid"])
+    if not build:
+        raise RuntimeError("No public build in Steam PICS data")
+    latest = {"version": None, "label": f"Steam build {build['buildid']}", "title": f"Steam public build {build['buildid']}",
+              "published_at": build["published_at"], "buildid": build["buildid"],
+              "url": STEAMCMD_INFO.format(appid=game["steam_appid"]),
+              "notes": "Steam doesn't publish version numbers for this game; the build id and its update time come from Steam's public branch."}
+    fws = []
+    for fw in game["frameworks"]:
+        base = {"id": fw["id"], "name": fw["name"], "short": fw["short"], "url": fw["url"], "source": fw["source"],
+                "repo": fw.get("repo"), "tracked": True, "sensitive": True}
+        prev_fw = next((f for f in prev.get("frameworks", []) if f.get("id") == fw["id"]), None)
+        try:
+            entries = parse_atlan_config(http_get_text(fw["config_url"]))
+            if not entries:
+                raise RuntimeError("no dated darkage_steam entries")
+            v = atlan_verdict(newest_entry=entries[0], build_published_at=build["published_at"])
+        except Exception as e:  # noqa: BLE001
+            print(f"  WARNING: Atlan config fetch failed ({e}); keeping last good result", file=sys.stderr)
+            if prev_fw and prev_fw.get("supported_entries"):
+                entries = prev_fw["supported_entries"]
+                v = atlan_verdict(newest_entry=entries[0], build_published_at=build["published_at"])
+                v["reason"] += " (Config temporarily unreachable; using the last good copy.)"
+            else:
+                fws.append({**base, "status": V_NODATA, "reason": f"Fetch failed: {e}", "error": str(e),
+                            "release_tag": None, "release_published_at": None, "release_url": fw["url"]})
+                continue
+        try:
+            rel = SOURCES[fw["release_source"]](fw)[0]
+        except Exception as e:  # noqa: BLE001
+            rel = {"tag_name": (prev_fw or {}).get("release_tag"), "published_at": (prev_fw or {}).get("release_published_at"),
+                   "html_url": (prev_fw or {}).get("release_url") or fw["url"]}
+            print(f"  WARNING: {fw['id']} release fetch failed ({e})", file=sys.stderr)
+        fws.append({**base, **v, "base_status": None, "supported_entries": entries[:6], "config_url": fw["config_url"],
+                    "release_tag": rel.get("tag_name"), "release_published_at": rel.get("published_at"),
+                    "release_url": rel.get("html_url") or fw["url"], "mentions_patch": False, "newer_than_patch": False})
+    return {"latest_patch": latest, "frameworks": fws, "history": [], "news": steam_news_out(game),
+            "sources": {"steam_build": latest["url"], "atlan_config": game["frameworks"][0]["config_url"]}}
+
+
 def build_game(game: dict) -> dict:
     kind = game.get("kind")
     body = (build_minecraft(game) if kind == "minecraft" else build_manual_game(game) if kind == "manual"
-            else build_steam_game(game))
+            else build_atlan_game(game) if kind == "atlan" else build_steam_game(game))
     tracked = [f["status"] for f in body["frameworks"] if f.get("tracked") and f.get("sensitive", True)]
     return {
         "generated_at": now_iso(),

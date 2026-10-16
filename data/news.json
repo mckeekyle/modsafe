@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T19:56:10Z",
+  "generated_at": "2026-10-16T22:11:11Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,26 @@
     }
   ],
   "items": [
+    {
+      "title": "The Cyberpunk 2077 movie won't be 'a film adaptation of the game,' CD Projekt chief says",
+      "url": "https://www.pcgamer.com/movies-tv/the-cyberpunk-2077-movie-wont-be-a-film-adaptation-of-the-game-cd-projekt-chief-says/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-16T22:02:23Z",
+      "games": [
+        "cyberpunk-2077"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "I haven't wanted to 100% a game in a long time, but\u2026",
+      "url": "https://www.pcgamer.com/games/sim/i-havent-wanted-to-100-percent-a-game-in-a-long-time-but/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-16T20:07:29Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "'We f**ked up': 1 day into Wardogs Season 2, the Blue team bribery bonus is being dropped",
       "url": "https://www.pcgamer.com/games/fps/we-f-ked-up-1-day-into-wardogs-season-2-the-blue-team-bribery-bonus-is-being-dropped/",
@@ -551,24 +571,6 @@
       "url": "https://www.pcgamer.com/hardware/controllers/razer-wolverine-v4-pro-review/",
       "source": "PC Gamer",
       "published_at": "2026-10-15T13:43:35Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The Grand Theft Auto 6 launch trailer is here",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/grand-theft-auto-6-launch-trailer/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-15T13:43:12Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Nvidia's RTX Spark makes for an impressive Arm-based gaming laptop but not one I'd recommend you buy just for PC gaming",
-      "url": "https://www.pcgamer.com/hardware/gaming-laptops/nvidias-rtx-spark-makes-for-an-impressive-arm-based-gaming-laptop-but-not-one-id-recommend-you-buy-just-for-pc-gaming/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-15T13:35:06Z",
       "games": [],
       "kind": "news",
       "highlight": false

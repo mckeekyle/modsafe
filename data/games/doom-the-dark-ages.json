@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-10-16T22:11:10Z",
+  "game": {
+    "slug": "doom-the-dark-ages",
+    "name": "DOOM: The Dark Ages",
+    "steam_appid": 3017860,
+    "latest_patch": {
+      "version": null,
+      "label": "Steam build 25755602",
+      "title": "Steam public build 25755602",
+      "published_at": "2026-10-07T15:16:04Z",
+      "buildid": "25755602",
+      "url": "https://api.steamcmd.net/v1/info/3017860",
+      "notes": "Steam doesn't publish version numbers for this game; the build id and its update time come from Steam's public branch."
+    }
+  },
+  "verdict": "Safe",
+  "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
+  "frameworks": [
+    {
+      "id": "atlan-mod-loader",
+      "name": "Atlan Mod Loader",
+      "short": "Atlan",
+      "url": "https://github.com/FlavorfulGecko5/EntityAtlan/releases/tag/ModLoader",
+      "source": "atlan",
+      "repo": "FlavorfulGecko5/EntityAtlan",
+      "tracked": true,
+      "sensitive": true,
+      "status": "Safe",
+      "reason": "The Atlan patcher's supported-build list has an entry dated 2026-10-07, on/after the current Steam build (2026-10-07).",
+      "base_status": null,
+      "supported_entries": [
+        "2026-10-07",
+        "2026-09-14",
+        "2026-07-29",
+        "2026-07-09"
+      ],
+      "config_url": "https://dcealopez.es/AtlanPatcher.txt",
+      "release_tag": "AtlanModLoader_v_9_0.zip",
+      "release_published_at": "2026-10-07T19:38:57Z",
+      "release_url": "https://github.com/FlavorfulGecko5/EntityAtlan/releases/tag/ModLoader",
+      "mentions_patch": false,
+      "newer_than_patch": false
+    }
+  ],
+  "history": [],
+  "news": [
+    {
+      "title": "Update 4 Hotfix 2",
+      "url": "https://store.steampowered.com/news/app/3017860/view/1839676055882825",
+      "is_patch": false,
+      "published_at": "2026-07-29T15:16:57Z"
+    },
+    {
+      "title": "Update 4 Hotfix 1",
+      "url": "https://store.steampowered.com/news/app/3017860/view/1837955055366369",
+      "is_patch": false,
+      "published_at": "2026-07-14T14:58:17Z"
+    },
+    {
+      "title": "Revelations Update 4 Release Notes",
+      "url": "https://store.steampowered.com/news/app/3017860/view/1836506165578668",
+      "is_patch": false,
+      "published_at": "2026-07-07T17:51:06Z"
+    },
+    {
+      "title": "id Software Anniversary Sale!",
+      "url": "https://store.steampowered.com/news/app/3017860/view/1823825466497185",
+      "is_patch": false,
+      "published_at": "2026-02-05T16:31:01Z"
+    },
+    {
+      "title": "Steam Awards Finalist | DOOM: The Dark Ages",
+      "url": "https://store.steampowered.com/news/app/3017860/view/1819386365091177",
+      "is_patch": false,
+      "published_at": "2025-12-18T18:00:38Z"
+    },
+    {
+      "title": "Update 3",
+      "url": "https://store.steampowered.com/news/app/3017860/view/1816307528974375",
+      "is_patch": false,
+      "published_at": "2025-11-18T17:46:57Z"
+    },
+    {
+      "title": "Update 2.2",
+      "url": "https://store.steampowered.com/news/app/3017860/view/1813674388913861",
+      "is_patch": false,
+      "published_at": "2025-10-15T19:33:58Z"
+    },
+    {
+      "title": "Update 2.1 Hotfix 1",
+      "url": "https://store.steampowered.com/news/app/3017860/view/1809869180037869",
+      "is_patch": false,
+      "published_at": "2025-09-04T15:55:53Z"
+    },
+    {
+      "title": "Update 2.1",
+      "url": "https://store.steampowered.com/news/app/3017860/view/1808061939478162",
+      "is_patch": false,
+      "published_at": "2025-08-18T19:33:39Z"
+    },
+    {
+      "title": "Update 2",
+      "url": "https://store.steampowered.com/news/app/3017860/view/1807332909579934",
+      "is_patch": false,
+      "published_at": "2025-08-07T19:14:56Z"
+    }
+  ],
+  "sources": {
+    "steam_build": "https://api.steamcmd.net/v1/info/3017860",
+    "atlan_config": "https://dcealopez.es/AtlanPatcher.txt"
+  }
+}

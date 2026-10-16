@@ -456,6 +456,28 @@ GAMES = [
         "wiki": "https://docs.flightsimulator.com/",
         "blurb": "MSFS 2020 still gets occasional Sim Updates; add-ons built for 2020 need their 2020 builds.",
     },
+    {
+        "slug": "doom-the-dark-ages",
+        "name": "DOOM: The Dark Ages",
+        "short": "DOOM TDA",
+        "developer": "id Software",
+        "genre": "Shooter",
+        "steam_appid": 3017860,
+        # No version numbers in Steam news: the patch is Steam's public build (api.steamcmd.net / PICS), and the
+        # verdict compares its date with the dated entries in the Atlan patcher's supported-build config.
+        "kind": "atlan",
+        "platform_note": "Steam only.",
+        "frameworks": [
+            {"id": "atlan-mod-loader", "name": "Atlan Mod Loader", "short": "Atlan", "source": "atlan",
+             "release_source": "github_asset", "repo": "FlavorfulGecko5/EntityAtlan", "tag": "ModLoader",
+             "config_url": "https://dcealopez.es/AtlanPatcher.txt",
+             "url": "https://github.com/FlavorfulGecko5/EntityAtlan/releases/tag/ModLoader"},
+        ],
+        "wiki": "https://wiki.eternalmods.com/books/dark-ages-modding/page/installing-mods-doom-the-dark-ages",
+        "note": ("Steam only. Even when the loader supports the current build, individual mods can still break after "
+                 "an update. If the game crashes on startup, delete modloader_cache.bin and rerun the mod loader."),
+        "blurb": "Each DOOM: The Dark Ages update needs a new supported-build entry for the Atlan patcher; mods themselves can still break after updates.",
+    },
 ]
 
 GAMES_BY_SLUG = {g["slug"]: g for g in GAMES}

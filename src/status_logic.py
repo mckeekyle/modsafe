@@ -777,3 +777,35 @@ def apply_unannounced(label: str, reason: str, *, sensitive: bool, release_publi
                                  "announcement, and this tool hasn't released since; wait for confirmation.")
     return label, reason + (f" Note: Steam's public build changed on {day} (build {event.get('buildid')}) without an "
                             "announcement; this status reflects the last announced patch, so recheck if you hit problems.")
+
+
+ATLAN_ENTRY_RE = re.compile(r'"(darkage)_steam_(\d{2})(\d{2})(\d{4})"')
+
+
+def parse_atlan_config(text: str) -> list[str]:
+    """Dated DOOM: The Dark Ages Steam entries in AtlanPatcher.txt ('darkage_steam_MMDDYYYY'), newest first, ISO dates.
+    Invalid dates are ignored; '_patched' variants map to the same date."""
+    out = set()
+    for _, mm, dd, yyyy in ATLAN_ENTRY_RE.findall(text or "") + [
+            (a, b, c, d) for a, b, c, d in re.findall(r'"(darkage)_steam_(\d{2})(\d{2})(\d{4})_patched"', text or "")]:
+        try:
+            out.add(datetime(int(yyyy), int(mm), int(dd)).strftime("%Y-%m-%d"))
+        except ValueError:
+            continue
+    return sorted(out, reverse=True)
+
+
+def atlan_verdict(*, newest_entry: Optional[str], build_published_at: str, now: Optional[datetime] = None) -> dict[str, str]:
+    """Safe when the newest supported-build entry is dated on/after the Steam public build's date (UTC day);
+    Just patched, wait when Steam has a newer build with no entry yet."""
+    bdt = parse_iso(build_published_at)
+    if not newest_entry or not bdt:
+        return {"status": V_NODATA, "reason": "No dated Dark Ages entry found in the Atlan patcher config."}
+    bday = bdt.strftime("%Y-%m-%d")
+    if newest_entry >= bday:
+        return {"status": V_SAFE, "reason": f"The Atlan patcher's supported-build list has an entry dated {newest_entry}, "
+                                            f"on/after the current Steam build ({bday})."}
+    age = patch_age_days(build_published_at, now)
+    return {"status": V_WAIT, "reason": f"Steam build updated {bday}; the Atlan patcher's newest supported build is "
+                                        f"dated {newest_entry}. Wait for an updated config (it is fetched automatically)."
+                                        + (f" The build is {int(age)} days old." if age >= FRESH_PATCH_DAYS else "")}

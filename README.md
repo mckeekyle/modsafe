@@ -26,6 +26,7 @@ Static site that tracks whether each game's core mod frameworks/loaders have cau
 | RimWorld | `/rimworld/` | Steam (294100) | HugsLib; Harmony (agnostic) |
 | Bannerlord | `/bannerlord/` | Steam (261550) | BLSE; Harmony (agnostic) |
 | Minecraft Java | `/minecraft/` | Mojang version manifest | Fabric Loader (meta), Fabric API/Sodium/Iris/Lithium (Modrinth), Forge (promotions), NeoForge (Maven) |
+| DOOM: The Dark Ages (Steam only) | `/doom-the-dark-ages/` | Steam public build via api.steamcmd.net (3017860) | Atlan Mod Loader (GitHub `ModLoader` release, dated by asset `updated_at`); Safe when [AtlanPatcher.txt](https://dcealopez.es/AtlanPatcher.txt) has a `darkage_steam_MMDDYYYY` entry on/after the Steam build date |
 
 Games are configured in `src/games.py`. "Manual" items (Nexus-only) are linked but excluded from the verdict; ModSafe never scrapes Nexus or SteamDB.
 A game's verdict is the weakest status among its auto-tracked frameworks.
