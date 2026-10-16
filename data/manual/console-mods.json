@@ -1,0 +1,132 @@
+{
+  "_comment": "Hand-maintained. Official sources only: official console mod systems, no modified-console content. Refresh per /workspace/modsafe-ops-log.md.",
+  "games": {
+    "skyrim-se": {
+      "platforms": [
+        "Xbox",
+        "PS5",
+        "PS4"
+      ],
+      "system": "Bethesda Creations (in-game Creations menu)",
+      "update": {
+        "label": "Update 1.7.99",
+        "date": "2026-08-20",
+        "url": "https://elderscrolls.bethesda.net/en-ZA/news/skyrim-update-august-20"
+      },
+      "answer": "No",
+      "summary": "The official notes don't say installed Creations are cleared or disabled. The update raised console storage (15 GB on Xbox and PS5, about 16 GB on PS4) and fixed Anniversary Edition Creations not auto-downloading on PS5.",
+      "limits": [
+        "PlayStation: custom assets (meshes, textures, audio) have only been allowed since this update. Many older Creations are still script-only or Xbox-only.",
+        "Shader mods and mods that need SKSE or other script extenders don't exist on console.",
+        "PS4: practical limit on large Creations because of storage partitioning (Bethesda).",
+        "Creations block achievements/trophies unless marked Achievement-Friendly (Verified Creators only, needs a new game)."
+      ],
+      "sources": [
+        [
+          "Bethesda: Skyrim Update – August 20, 2026",
+          "https://elderscrolls.bethesda.net/en-ZA/news/skyrim-update-august-20"
+        ],
+        [
+          "Bethesda Support: PS4 Creation storage",
+          "https://help.bethesda.net/app/answers/detail/a_id/49337"
+        ]
+      ],
+      "last_verified": "2026-10-16"
+    },
+    "fallout-4": {
+      "platforms": [
+        "Xbox",
+        "PS5",
+        "PS4"
+      ],
+      "system": "Bethesda Creations (in-game Creations menu)",
+      "update": {
+        "label": "PlayStation & Creation Kit update",
+        "date": "2026-10-15",
+        "url": "https://help.bethesda.net/app/answers/detail/a_id/72995"
+      },
+      "answer": "No",
+      "summary": "The Oct 15 update fixes PlayStation crashes with Creations that add NPCs or looping audio. Some PlayStation Creations that use precombines can hit an infinite loading screen until their author re-uploads them. Earlier: the May 27, 2026 storage update cleared installed Creations on Xbox (re-download via a saved load order); PS5 kept them.",
+      "limits": [
+        "PlayStation: custom assets (.nif, .dds, audio and more) allowed since the Aug 18, 2026 update; looping audio from Creations is only partially supported.",
+        "No F4SE or other script-extender mods on console.",
+        "Save your load order in the Creations menu before a big update, so you can restore it if Creations get cleared."
+      ],
+      "sources": [
+        [
+          "Bethesda Support: Fallout 4 patch notes",
+          "https://help.bethesda.net/app/answers/detail/a_id/72995"
+        ],
+        [
+          "Bethesda: Fallout 4 Update – August 18th",
+          "https://fallout.bethesda.net/en-EU/news/fallout-4-update-august-18th"
+        ]
+      ],
+      "last_verified": "2026-10-16"
+    },
+    "starfield": {
+      "platforms": [
+        "Xbox",
+        "PS5"
+      ],
+      "system": "Bethesda Creations (in-game Creations menu)",
+      "update": {
+        "label": "Update 1.16.244",
+        "date": "2026-06-11",
+        "url": "https://bethesda.net/en-US/game/starfield/news/starfield-update-1-16-244-june-2026"
+      },
+      "answer": "No",
+      "summary": "The official notes for 1.16.244 don't mention Creations being cleared or disabled. Creations arrived on PS5 with the game's PS5 launch (update 1.16.236, Apr 7, 2026).",
+      "limits": [
+        "PS5: a Creation is only there if its author chose PlayStation when uploading it, so some Xbox Creations are missing.",
+        "No SFSE or other script-extender mods on console.",
+        "Creations generally block achievements/trophies unless flagged achievement-friendly."
+      ],
+      "sources": [
+        [
+          "Bethesda: Starfield Update 1.16.244",
+          "https://bethesda.net/en-US/game/starfield/news/starfield-update-1-16-244-june-2026"
+        ],
+        [
+          "Bethesda: Starfield 1.16.236 (Apr 7, 2026)",
+          "https://bethesda.net/en-US/news/starfield-free-lanes-update-notes"
+        ]
+      ],
+      "last_verified": "2026-10-16"
+    },
+    "baldurs-gate-3": {
+      "platforms": [
+        "Xbox",
+        "PS5"
+      ],
+      "system": "In-game Mod Manager (mod.io, mods curated by Larian)",
+      "update": {
+        "label": "Hotfix #36",
+        "date": "2026-03-26",
+        "url": "https://baldursgate3.game/news?categories=1%2C2"
+      },
+      "answer": "No",
+      "summary": "Hotfix #36 fixed crashes and performance problems; it isn't reported to have disabled console mods. Larian adds console mods in tested batches; the most recent batch we found (19 mods) was covered on Sep 16, 2026. Mods that use the Script Extender, shaders or .exe/.dll files aren't allowed on console.",
+      "limits": [
+        "Curated only: Larian tests each mod before it appears on console.",
+        "On console, a save asks for every mod it was made with. You can add mods to a save but not remove them, so a mod pulled from mod.io can lock you out of old saves (as happened in Aug 2026).",
+        "Larian caps the number of installed console mods (Hotfix #29, Nov 2024)."
+      ],
+      "sources": [
+        [
+          "Larian: BG3 news (patches & hotfixes)",
+          "https://baldursgate3.game/news?categories=1%2C2"
+        ],
+        [
+          "Larian forums: how console mods are curated",
+          "https://forums.larian.com/ubbthreads.php?Number=952343&ubb=showthreaded"
+        ],
+        [
+          "mod.io: console platforms",
+          "https://docs.mod.io/platforms/console"
+        ]
+      ],
+      "last_verified": "2026-10-16"
+    }
+  }
+}

@@ -263,6 +263,9 @@ section { margin: 0 0 1.75rem; }
 .game-hero h1 { font-size: clamp(1.9rem, 5vw, 3.4rem); margin: 0 0 .9rem; text-transform: uppercase; text-shadow: 0 4px 30px rgba(0,0,0,.6); max-width: 22ch; }
 .game-hero .lede { color: #d5def0; max-width: 62ch; margin: .9rem 0 0; }
 .micro { font-family: var(--head); font-weight: 600; font-size: 1.1rem; margin-left: .6rem; color: #e9f0ff; }
+.plats { display: flex; gap: .4rem; }
+.plat { padding: .15rem .55rem; border-radius: 6px; font-size: .78rem; font-weight: 700; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.2); }
+.console-mods h3 strong { color: #6ee7a0; }
 .note { margin: 1rem 0 0; padding: .8rem 1rem; border-radius: 10px; background: rgba(255,77,94,.16); border: 1px solid rgba(255,77,94,.65); color: #ffe3e6; max-width: 70ch; }
 
 /* verdict grid */
@@ -740,7 +743,7 @@ def build_game_page(game: dict, data: dict) -> str:
 </div>
 </section>
 {stale_banner(data)}
-<nav class="tabs" aria-label="On this page"><a href="#status">Status</a><a href="#fw-heading">Frameworks</a>{'<a href="#history">Patch history</a>' if data.get("history") else ''}{'<a href="#mods">Essential ' + (mods_mod.load_mods(slug) or {}).get("noun", "mods") + '</a>' if mods_mod.load_mods(slug) else ''}<a href="#news">News</a><a href="#faq-heading">FAQ</a></nav>
+<nav class="tabs" aria-label="On this page"><a href="#status">Status</a><a href="#fw-heading">Frameworks</a>{'<a href="#history">Patch history</a>' if data.get("history") else ''}{'<a href="#mods">Essential ' + (mods_mod.load_mods(slug) or {}).get("noun", "mods") + '</a>' if mods_mod.load_mods(slug) else ''}{'<a href="#console">Console mods</a>' if slug in (CONSOLE_MODS if CONSOLE_MODS is not None else load_console_mods()) else ''}<a href="#news">News</a><a href="#faq-heading">FAQ</a></nav>
 <div class="vgrid" id="status">
 <section class="panel" aria-labelledby="verdict-heading">
 <h2 id="verdict-heading">Verdict for {esc(p['label'])}</h2>
@@ -766,6 +769,7 @@ def build_game_page(game: dict, data: dict) -> str:
 <p class="disclaimer">{esc(data.get('disclaimer', ''))} Items marked “Check manually” are not counted in the verdict.</p>
 {f'<div class="sec-head" id="history"><h2>Patch history</h2><a href="/{slug}/history/">Full history →</a></div><section class="hist-list">{history_cards(data, 4)}</section>' if data.get("history") else ""}
 {mods_teaser(game, data)}
+{console_mods_section(slug)}
 <div class="sec-head" id="news"><h2>{esc(game['short'])} news</h2><a href="/news/">All news →</a></div>
 <section class="panel">{news_list(game_news(slug, data), 8)}</section>
 {newsletter()}
@@ -827,6 +831,35 @@ def mod_cards(game: dict, data: dict, mods: dict, limit: int | None = None) -> s
 <p class="mod-why muted">{esc(why)}{(" Last updated on its download page: " + esc(m["last_updated"]) + ".") if m.get("last_updated") else ""}</p>
 </article>""")
     return "".join(out)
+
+
+def load_console_mods() -> dict:
+    p = ROOT / "data" / "manual" / "console-mods.json"
+    return json.loads(p.read_text()).get("games", {}) if p.exists() else {}
+
+
+CONSOLE_MODS = None
+
+
+def console_mods_section(slug: str) -> str:
+    global CONSOLE_MODS
+    if CONSOLE_MODS is None:
+        CONSOLE_MODS = load_console_mods()
+    c = CONSOLE_MODS.get(slug)
+    if not c:
+        return ""
+    badges = "".join(f'<span class="plat">{esc(x)}</span>' for x in c["platforms"])
+    u = c["update"]
+    lims = "".join(f"<li>{esc(x)}</li>" for x in c["limits"])
+    srcs = " · ".join(f'<a href="{esc(url)}">{esc(n)}</a>' for n, url in c["sources"])
+    return f"""<div class="sec-head" id="console"><h2>Console mods</h2><span class="plats">{badges}</span></div>
+<section class="panel console-mods" aria-labelledby="console-q">
+<h3 id="console-q">Did the latest patch disable console mods? <strong>{esc(c['answer'])}</strong></h3>
+<p class="muted">{esc(c['system'])}. Latest console-relevant update: <a href="{esc(u['url'])}">{esc(u['label'])}</a> ({esc(fmt_date(u['date']))}).</p>
+<p>{esc(c['summary'])}</p>
+<h4>Platform limits</h4><ul>{lims}</ul>
+<p class="muted">Hand-maintained from official patch notes and studio announcements · <strong>Last manually verified {esc(c['last_verified'])}</strong> · Sources: {srcs}</p>
+</section>"""
 
 
 def mods_teaser(game: dict, data: dict) -> str:
@@ -1114,6 +1147,9 @@ def build_llms_txt(games_data) -> str:
         if (mm := mods_mod.load_mods(game["slug"])):
             lines.append(f"- Essential mods: {SITE_URL}/{game['slug']}/mods/ (JSON: {SITE_URL}/{game['slug']}/mods.json): "
                          + "; ".join(f"{m['name']} {m['url']}" for m in mm["mods"]))
+        if (cm := load_console_mods().get(game["slug"])):
+            lines.append(f"- Console mods ({'/'.join(cm['platforms'])}, {cm['system']}): latest patch disabled console mods? {cm['answer']}. "
+                         f"{cm['update']['label']} ({cm['update']['date']}) {cm['update']['url']}; hand-maintained, last verified {cm['last_verified']}")
         if mods_mod.load_guide(game["slug"]):
             lines.append(f"- Install guide: {SITE_URL}/{game['slug']}/install/")
         for fw in data["frameworks"]:
