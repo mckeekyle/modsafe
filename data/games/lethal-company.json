@@ -1,16 +1,22 @@
 {
-  "generated_at": "2026-10-16T14:43:54Z",
+  "generated_at": "2026-10-16T15:17:12Z",
   "game": {
     "slug": "lethal-company",
     "name": "Lethal Company",
     "steam_appid": 1966720,
     "latest_patch": {
-      "version": "80",
-      "label": "v80",
-      "title": "Version 80 - The Blooming Update",
-      "published_at": "2026-04-05T08:27:11Z",
-      "published_unix": 1775377631,
-      "url": "https://store.steampowered.com/news/app/1966720/view/1828894815563326"
+      "version": "81",
+      "label": "v81",
+      "title": "Version 81 (hotfix, announced on Zeekerss' Discord, not on Steam)",
+      "published_at": "2026-04-17T01:11:45Z",
+      "published_unix": 1776388305,
+      "url": "https://lethal.miraheze.org/wiki/Version_81",
+      "silent": true,
+      "sources": [
+        "https://steamcommunity.com/app/1966720/discussions/0/802343728582946328/",
+        "https://lethal.miraheze.org/wiki/Version_81",
+        "https://api.steamcmd.net/v1/info/1966720 (public build 22825947, updated 2026-04-17T01:11:45Z)"
+      ]
     }
   },
   "verdict": "Likely safe",
@@ -47,20 +53,18 @@
       "repo": "EvaisaDev/LethalLib",
       "tracked": true,
       "sensitive": true,
-      "status": "Safe",
-      "base_status": "Updated for latest patch",
-      "reason": "Release notes mention patch v80, even though the release timestamp is before the patch announcement.",
+      "status": "Likely safe",
+      "base_status": "Unknown / check",
+      "reason": "Latest release predates patch v81; compatibility is unverified \u2014 check the project page. No open breakage reports 182 days after the patch.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v1.2.0",
       "release_name": "LethalLib-1.2.0",
       "release_published_at": "2026-04-01T20:00:18Z",
       "release_url": "https://github.com/EvaisaDev/LethalLib/releases/tag/v1.2.0",
-      "mentions_patch": true,
+      "mentions_patch": false,
       "newer_than_patch": false,
-      "mention_releases": [
-        "v1.2.0"
-      ]
+      "mention_releases": []
     },
     {
       "id": "lethallevelloader",
@@ -71,18 +75,20 @@
       "repo": "IAmBatby/LethalLevelLoader",
       "tracked": true,
       "sensitive": true,
-      "status": "Likely safe",
-      "base_status": "Likely OK",
-      "reason": "Latest release is newer than patch v80, but notes do not explicitly mention that version.",
+      "status": "Safe",
+      "base_status": "Updated for latest patch",
+      "reason": "Latest release notes mention patch v81 and the release is on/after the patch date.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "1.7.13",
       "release_name": "IAmBatby-LethalLevelLoader 1.7.13",
       "release_published_at": "2026-09-18T10:52:51Z",
       "release_url": "https://thunderstore.io/c/lethal-company/p/IAmBatby/LethalLevelLoader/",
-      "mentions_patch": false,
+      "mentions_patch": true,
       "newer_than_patch": true,
-      "mention_releases": []
+      "mention_releases": [
+        "1.7.13"
+      ]
     },
     {
       "id": "morecompany",
@@ -95,7 +101,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Likely OK",
-      "reason": "Latest release is newer than patch v80, but notes do not explicitly mention that version.",
+      "reason": "Latest release is newer than patch v81, but notes do not explicitly mention that version.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "1.14.0",
@@ -108,6 +114,58 @@
     }
   ],
   "history": [
+    {
+      "version": "81",
+      "label": "v81",
+      "title": "Version 81 (hotfix, announced on Zeekerss' Discord, not on Steam)",
+      "published_at": "2026-04-17T01:11:45Z",
+      "published_unix": 1776388305,
+      "url": "https://lethal.miraheze.org/wiki/Version_81",
+      "silent": true,
+      "sources": [
+        "https://steamcommunity.com/app/1966720/discussions/0/802343728582946328/",
+        "https://lethal.miraheze.org/wiki/Version_81",
+        "https://api.steamcmd.net/v1/info/1966720 (public build 22825947, updated 2026-04-17T01:11:45Z)"
+      ],
+      "frameworks": [
+        {
+          "id": "bepinexpack",
+          "short": "BepInEx",
+          "name": "BepInExPack",
+          "status": "Not affected by patches",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        },
+        {
+          "id": "lethallib",
+          "short": "LethalLib",
+          "name": "LethalLib",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        },
+        {
+          "id": "lethallevelloader",
+          "short": "LLL",
+          "name": "LethalLevelLoader",
+          "status": "Safe",
+          "release_tag": "1.7.13",
+          "release_published_at": "2026-09-18T10:52:51Z",
+          "mentions_patch": true
+        },
+        {
+          "id": "morecompany",
+          "short": "MoreCompany",
+          "name": "MoreCompany",
+          "status": "Likely safe",
+          "release_tag": "1.14.0",
+          "release_published_at": "2026-04-25T01:28:40Z",
+          "mentions_patch": false
+        }
+      ]
+    },
     {
       "version": "80",
       "label": "v80",

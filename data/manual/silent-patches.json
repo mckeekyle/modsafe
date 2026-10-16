@@ -1,0 +1,35 @@
+{
+  "_comment": "Hand-maintained. Game updates shipped without their own Steam announcement (so the Steam-news patch detector can't see them). Each entry needs primary sources; published_at = when the build went live on Steam's public branch (api.steamcmd.net depots.branches.public.timeupdated).",
+  "last_verified": "2026-10-16",
+  "verified_by": "ModSafe ops (manual check)",
+  "patches": {
+    "lethal-company": [
+      {
+        "version": "81",
+        "label": "v81",
+        "title": "Version 81 (hotfix, announced on Zeekerss' Discord, not on Steam)",
+        "published_at": "2026-04-17T01:11:45Z",
+        "url": "https://lethal.miraheze.org/wiki/Version_81",
+        "sources": [
+          "https://steamcommunity.com/app/1966720/discussions/0/802343728582946328/",
+          "https://lethal.miraheze.org/wiki/Version_81",
+          "https://api.steamcmd.net/v1/info/1966720 (public build 22825947, updated 2026-04-17T01:11:45Z)"
+        ]
+      }
+    ],
+    "terraria": [
+      {
+        "version": "1.4.5.8",
+        "label": "1.4.5.8",
+        "title": "Terraria 1.4.5.8 hotfix (no standalone announcement)",
+        "published_at": "2026-08-23T18:47:09Z",
+        "url": "https://store.steampowered.com/news/app/105600/view/1844751498222763",
+        "sources": [
+          "https://store.steampowered.com/news/app/105600/view/1844751498222763 (State of the Game, Sep 2026: 'lingering fixes that remain from 1.4.5.8'; tModLoader team: 'the 1.4.5.8 hotfix changes')",
+          "https://github.com/tModLoader/tModLoader/releases/tag/v0.11.8.11 ('launch with Terraria 1.4.5.8 installed')",
+          "https://api.steamcmd.net/v1/info/105600 (public build 24893155, updated 2026-08-23T18:47:09Z)"
+        ]
+      }
+    ]
+  }
+}

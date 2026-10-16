@@ -1,16 +1,22 @@
 {
-  "generated_at": "2026-10-16T14:44:14Z",
+  "generated_at": "2026-10-16T15:17:18Z",
   "game": {
     "slug": "terraria",
     "name": "Terraria",
     "steam_appid": 105600,
     "latest_patch": {
-      "version": "1.4.5.7",
-      "label": "1.4.5.7",
-      "title": "Terraria 1.4.5.7 - Out Now for PC! (Console/Mobile Soon)",
-      "published_at": "2026-08-19T20:45:37Z",
-      "published_unix": 1787172337,
-      "url": "https://store.steampowered.com/news/app/105600/view/1841579228663704"
+      "version": "1.4.5.8",
+      "label": "1.4.5.8",
+      "title": "Terraria 1.4.5.8 hotfix (no standalone announcement)",
+      "published_at": "2026-08-23T18:47:09Z",
+      "published_unix": 1787510829,
+      "url": "https://store.steampowered.com/news/app/105600/view/1844751498222763",
+      "silent": true,
+      "sources": [
+        "https://store.steampowered.com/news/app/105600/view/1844751498222763 (State of the Game, Sep 2026: 'lingering fixes that remain from 1.4.5.8'; tModLoader team: 'the 1.4.5.8 hotfix changes')",
+        "https://github.com/tModLoader/tModLoader/releases/tag/v0.11.8.11 ('launch with Terraria 1.4.5.8 installed')",
+        "https://api.steamcmd.net/v1/info/105600 (public build 24893155, updated 2026-08-23T18:47:09Z)"
+      ]
     }
   },
   "verdict": "Likely safe",
@@ -27,7 +33,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Likely OK",
-      "reason": "Latest release is newer than patch 1.4.5.7, but notes do not explicitly mention that version.",
+      "reason": "Latest release is newer than patch 1.4.5.8, but notes do not explicitly mention that version.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v2026.08.3.0",
@@ -40,6 +46,31 @@
     }
   ],
   "history": [
+    {
+      "version": "1.4.5.8",
+      "label": "1.4.5.8",
+      "title": "Terraria 1.4.5.8 hotfix (no standalone announcement)",
+      "published_at": "2026-08-23T18:47:09Z",
+      "published_unix": 1787510829,
+      "url": "https://store.steampowered.com/news/app/105600/view/1844751498222763",
+      "silent": true,
+      "sources": [
+        "https://store.steampowered.com/news/app/105600/view/1844751498222763 (State of the Game, Sep 2026: 'lingering fixes that remain from 1.4.5.8'; tModLoader team: 'the 1.4.5.8 hotfix changes')",
+        "https://github.com/tModLoader/tModLoader/releases/tag/v0.11.8.11 ('launch with Terraria 1.4.5.8 installed')",
+        "https://api.steamcmd.net/v1/info/105600 (public build 24893155, updated 2026-08-23T18:47:09Z)"
+      ],
+      "frameworks": [
+        {
+          "id": "tmodloader",
+          "short": "tModLoader",
+          "name": "tModLoader",
+          "status": "Safe",
+          "release_tag": "v0.11.8.11",
+          "release_published_at": "2026-08-27T23:29:48Z",
+          "mentions_patch": true
+        }
+      ]
+    },
     {
       "version": "1.4.5.7",
       "label": "1.4.5.7",
@@ -84,7 +115,7 @@
       "title": "Terraria State of the Game - September 2026",
       "url": "https://store.steampowered.com/news/app/105600/view/1844751498222763",
       "published_at": "2026-09-24T21:47:01Z",
-      "is_patch": false
+      "is_patch": true
     },
     {
       "title": "Terraria State of the Game - August 2026",

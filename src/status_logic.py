@@ -691,3 +691,31 @@ def manual_hook_verdict(*, supported: list[str], current: list[str], patch_age: 
     if patch_age < FRESH_PATCH_DAYS:
         return {"status": V_WAIT, "reason": "No build yet for " + ", ".join(missing) + "; the update is under a week old."}
     return {"status": V_NOT_PORTED, "reason": "No build yet for " + ", ".join(missing) + "."}
+
+
+def merge_silent_patches(patches: list[dict[str, Any]], silent: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """
+    Add hand-maintained, sourced updates that shipped without a Steam announcement (hotfixes posted on Discord,
+    or mentioned only in later dev posts). Only entries with a valid date are inserted, a label
+    already present is never duplicated, and the result stays newest-first.
+    """
+    have = {p["label"] for p in patches}
+    out = list(patches)
+    for sp in silent or []:
+        dt = parse_iso(sp.get("published_at"))
+        if not dt or sp.get("label") in have:
+            continue
+        out.append({"version": sp.get("version"), "label": sp["label"], "title": sp.get("title") or sp["label"],
+                    "published_at": dt.isoformat().replace("+00:00", "Z"), "published_unix": int(dt.timestamp()),
+                    "url": sp.get("url") or "", "silent": True, "sources": sp.get("sources", [])})
+    out.sort(key=lambda c: c["published_unix"], reverse=True)
+    return out
+
+
+def same_release_line(tag: Optional[str], latest_tag: Optional[str]) -> bool:
+    """True unless both tags have numeric versions with different major numbers (a separate maintenance branch)."""
+    def major(t):
+        m = re.search(r"(\d+)(?:\.\d+)", t or "")
+        return int(m.group(1)) if m else None
+    a, b = major(tag), major(latest_tag)
+    return a is None or b is None or a == b

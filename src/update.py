@@ -36,6 +36,8 @@ from status_logic import (  # noqa: E402
     is_breakage_title,
     parse_silverlock,
     manual_hook_verdict,
+    merge_silent_patches,
+    same_release_line,
     patch_age_days,
     user_verdict,
     list_patches_generic,
@@ -234,6 +236,14 @@ def breakage_reports(repo: str, since_iso: str, patch_version: str | None, patch
     return out
 
 
+def silent_patches_for(slug: str) -> list[dict]:
+    try:
+        d = json.loads((ROOT / "data" / "manual" / "silent-patches.json").read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        return []
+    return (d.get("patches") or {}).get(slug, [])
+
+
 def manual_entry(fw: dict) -> dict:
     return {
         "id": fw["id"], "name": fw["name"], "short": fw["short"], "url": fw["url"],
@@ -252,6 +262,7 @@ def build_steam_game(game: dict) -> dict:
             n["url"] = f"https://store.steampowered.com/news/app/{game['steam_appid']}/view/{n['gid']}"
     rule = game["patch_rule"]
     patches = list_patches_generic(news, rule, limit=12)
+    patches = merge_silent_patches(patches, silent_patches_for(game["slug"]))
     if not patches:
         raise RuntimeError(f"No patch announcements found in Steam news for {game['name']}")
     latest = patches[0]
@@ -290,6 +301,8 @@ def build_steam_game(game: dict) -> dict:
             rdt = parse_iso(r.get("published_at"))
             notes = f"{r.get('tag_name') or ''}\n{r.get('name') or ''}\n{r.get('body') or ''}"
             # Authors often ship "updated for the upcoming X" a few days before the announcement.
+            if not same_release_line(r.get("tag_name"), rel.get("tag_name")):
+                continue  # e.g. tModLoader's 1.3-legacy v0.11.x branch says nothing about the current v2026.x line
             if rdt and patch_dt and rdt >= patch_dt - PRE_PATCH_WINDOW and mfn(notes) and r.get("tag_name") not in lineage:
                 lineage.append(r.get("tag_name"))
         v = determine_with_lineage(
@@ -523,7 +536,24 @@ def previous_framework(slug: str, fw_id: str, latest: dict) -> Optional[dict]:
     return None
 
 
+def should_skip_refetch(env=os.environ) -> Optional[str]:
+    """Pages builds (CF_PAGES) and token-less runs must not refetch: unauthenticated GitHub calls hit rate limits
+    and would publish 'No data'. They use the data/games/*.json the scheduled Actions workflow commits."""
+    if env.get("MODSAFE_FORCE_UPDATE") == "1":
+        return None
+    if env.get("CF_PAGES"):
+        return "running on Cloudflare Pages (CF_PAGES set)"
+    if not (env.get("GITHUB_TOKEN") or env.get("GH_TOKEN")):
+        return "no GITHUB_TOKEN/GH_TOKEN set"
+    return None
+
+
 def main(argv: list[str]) -> int:
+    skip = should_skip_refetch()
+    if skip:
+        print(f"update: skipping refetch ({skip}); using committed data/games/*.json. "
+              "Set GITHUB_TOKEN (or MODSAFE_FORCE_UPDATE=1) to refresh.")
+        return 0
     only = set(argv)
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     failures = []
