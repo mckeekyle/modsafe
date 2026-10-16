@@ -34,3 +34,15 @@ class ConsoleMods(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class IndexNow(unittest.TestCase):
+    def test_key_and_robots(self):
+        k = build.INDEXNOW_KEY
+        self.assertRegex(k, r"^[0-9a-f]{32}$")
+        self.assertIn("Sitemap: https://modsafe.app/sitemap.xml", build.build_robots().replace(build.SITE_URL, "https://modsafe.app"))
+        sys.path.insert(0, str(ROOT / "tools"))
+        import indexnow
+        urls = indexnow.all_urls()
+        self.assertTrue(all(u.startswith("https://modsafe.app/") for u in urls))
+        self.assertIn("https://modsafe.app/", urls)

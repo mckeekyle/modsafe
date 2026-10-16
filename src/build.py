@@ -1161,6 +1161,9 @@ def build_llms_txt(games_data) -> str:
     return "\n".join(lines)
 
 
+INDEXNOW_KEY = "1ee54d1d3f66ad12c8299573e61fc9ac"  # public IndexNow key; must match tools/indexnow.py
+
+
 def build_robots() -> str:
     return f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n"
 
@@ -1271,6 +1274,7 @@ def main() -> int:
     write(DIST / "games.json", json.dumps(games_index(games_data), indent=2) + "\n")
     write(DIST / "llms.txt", build_llms_txt(games_data))
     write(DIST / "robots.txt", build_robots())
+    write(DIST / f"{INDEXNOW_KEY}.txt", INDEXNOW_KEY)
     write(DIST / "sitemap.xml", build_sitemap())
     write(DIST / "_redirects", REDIRECTS)
     write(DIST / "_headers", HEADERS)

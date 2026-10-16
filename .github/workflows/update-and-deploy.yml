@@ -39,7 +39,9 @@ jobs:
         run: ./build
 
       - name: Commit data/games/*.json (Cloudflare Pages rebuilds on push)
+        id: commit
         run: |
+          echo "base=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/games data/news.json
@@ -48,6 +50,7 @@ jobs:
           else
             git commit -m "chore: refresh modsafe status $(date -u +%Y-%m-%dT%H:%MZ)"
             git push
+            echo "pushed=1" >> "$GITHUB_OUTPUT"
           fi
 
       # Optional: create a Deploy Hook in Cloudflare Pages and store URL as
@@ -62,3 +65,12 @@ jobs:
           else
             echo "No CLOUDFLARE_PAGES_DEPLOY_HOOK secret; relying on git push."
           fi
+
+      # IndexNow: after Cloudflare deploys (script waits for the key file), submit
+      # pages whose data changed in this run. No account or secret needed.
+      - name: Submit changed URLs to IndexNow
+        if: steps.commit.outputs.pushed == '1'
+        continue-on-error: true
+        run: |
+          sleep 90
+          python3 tools/indexnow.py --changed "${{ steps.commit.outputs.base }}" HEAD
