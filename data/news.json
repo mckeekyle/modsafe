@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T22:11:11Z",
+  "generated_at": "2026-10-17T00:31:52Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,15 @@
     }
   ],
   "items": [
+    {
+      "title": "Tech founder criticized for vibe coding game about shooting 'zombies' in San Francisco's poorest neighborhood",
+      "url": "https://www.pcgamer.com/software/ai/tech-founder-vibe-codes-game-about-shooting-zombies-in-san-franciscos-poorest-neighborhood/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-16T23:53:11Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "The Cyberpunk 2077 movie won't be 'a film adaptation of the game,' CD Projekt chief says",
       "url": "https://www.pcgamer.com/movies-tv/the-cyberpunk-2077-movie-wont-be-a-film-adaptation-of-the-game-cd-projekt-chief-says/",
@@ -562,15 +571,6 @@
       "url": "https://www.eurogamer.net/fire-emblem-fortunes-weave-expansion-pass",
       "source": "Eurogamer",
       "published_at": "2026-10-15T13:48:43Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Razer Wolverine V4 Pro wireless gaming controller review",
-      "url": "https://www.pcgamer.com/hardware/controllers/razer-wolverine-v4-pro-review/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-15T13:43:35Z",
       "games": [],
       "kind": "news",
       "highlight": false
