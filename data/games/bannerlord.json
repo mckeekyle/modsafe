@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T12:25:39Z",
+  "generated_at": "2026-10-17T18:22:15Z",
   "game": {
     "slug": "bannerlord",
     "name": "Mount & Blade II: Bannerlord",
@@ -30,13 +30,14 @@
       "reason": "Latest release notes mention patch BL v1.4.8 and the release is on/after the patch date.",
       "breakage_reports": [],
       "official": null,
-      "release_tag": "v1.7.4",
-      "release_name": "Release 1.7.4",
-      "release_published_at": "2026-10-13T20:57:11Z",
-      "release_url": "https://github.com/BUTR/Bannerlord.BLSE/releases/tag/v1.7.4",
+      "release_tag": "v1.7.5",
+      "release_name": "Release 1.7.5",
+      "release_published_at": "2026-10-17T13:17:30Z",
+      "release_url": "https://github.com/BUTR/Bannerlord.BLSE/releases/tag/v1.7.5",
       "mentions_patch": true,
       "newer_than_patch": true,
       "mention_releases": [
+        "v1.7.5",
         "v1.7.4",
         "v1.7.3",
         "v1.7.0"
@@ -79,8 +80,8 @@
           "short": "BLSE",
           "name": "Bannerlord Software Extender (BLSE)",
           "status": "Safe",
-          "release_tag": "v1.7.4",
-          "release_published_at": "2026-10-13T20:57:11Z",
+          "release_tag": "v1.7.5",
+          "release_published_at": "2026-10-17T13:17:30Z",
           "mentions_patch": true
         },
         {
@@ -107,8 +108,8 @@
           "short": "BLSE",
           "name": "Bannerlord Software Extender (BLSE)",
           "status": "Safe",
-          "release_tag": "v1.7.4",
-          "release_published_at": "2026-10-13T20:57:11Z",
+          "release_tag": "v1.7.5",
+          "release_published_at": "2026-10-17T13:17:30Z",
           "mentions_patch": true
         },
         {
@@ -135,8 +136,8 @@
           "short": "BLSE",
           "name": "Bannerlord Software Extender (BLSE)",
           "status": "Safe",
-          "release_tag": "v1.7.4",
-          "release_published_at": "2026-10-13T20:57:11Z",
+          "release_tag": "v1.7.5",
+          "release_published_at": "2026-10-17T13:17:30Z",
           "mentions_patch": true
         },
         {
@@ -163,8 +164,8 @@
           "short": "BLSE",
           "name": "Bannerlord Software Extender (BLSE)",
           "status": "Safe",
-          "release_tag": "v1.7.4",
-          "release_published_at": "2026-10-13T20:57:11Z",
+          "release_tag": "v1.7.5",
+          "release_published_at": "2026-10-17T13:17:30Z",
           "mentions_patch": true
         },
         {
@@ -191,8 +192,8 @@
           "short": "BLSE",
           "name": "Bannerlord Software Extender (BLSE)",
           "status": "Safe",
-          "release_tag": "v1.7.4",
-          "release_published_at": "2026-10-13T20:57:11Z",
+          "release_tag": "v1.7.5",
+          "release_published_at": "2026-10-17T13:17:30Z",
           "mentions_patch": true
         },
         {
@@ -219,8 +220,8 @@
           "short": "BLSE",
           "name": "Bannerlord Software Extender (BLSE)",
           "status": "Safe",
-          "release_tag": "v1.7.4",
-          "release_published_at": "2026-10-13T20:57:11Z",
+          "release_tag": "v1.7.5",
+          "release_published_at": "2026-10-17T13:17:30Z",
           "mentions_patch": true
         },
         {
@@ -247,8 +248,8 @@
           "short": "BLSE",
           "name": "Bannerlord Software Extender (BLSE)",
           "status": "Safe",
-          "release_tag": "v1.7.4",
-          "release_published_at": "2026-10-13T20:57:11Z",
+          "release_tag": "v1.7.5",
+          "release_published_at": "2026-10-17T13:17:30Z",
           "mentions_patch": true
         },
         {
@@ -275,8 +276,8 @@
           "short": "BLSE",
           "name": "Bannerlord Software Extender (BLSE)",
           "status": "Safe",
-          "release_tag": "v1.7.4",
-          "release_published_at": "2026-10-13T20:57:11Z",
+          "release_tag": "v1.7.5",
+          "release_published_at": "2026-10-17T13:17:30Z",
           "mentions_patch": true
         },
         {
@@ -303,8 +304,8 @@
           "short": "BLSE",
           "name": "Bannerlord Software Extender (BLSE)",
           "status": "Safe",
-          "release_tag": "v1.7.4",
-          "release_published_at": "2026-10-13T20:57:11Z",
+          "release_tag": "v1.7.5",
+          "release_published_at": "2026-10-17T13:17:30Z",
           "mentions_patch": true
         },
         {
@@ -331,8 +332,8 @@
           "short": "BLSE",
           "name": "Bannerlord Software Extender (BLSE)",
           "status": "Safe",
-          "release_tag": "v1.7.4",
-          "release_published_at": "2026-10-13T20:57:11Z",
+          "release_tag": "v1.7.5",
+          "release_published_at": "2026-10-17T13:17:30Z",
           "mentions_patch": true
         },
         {
@@ -359,8 +360,8 @@
           "short": "BLSE",
           "name": "Bannerlord Software Extender (BLSE)",
           "status": "Safe",
-          "release_tag": "v1.7.4",
-          "release_published_at": "2026-10-13T20:57:11Z",
+          "release_tag": "v1.7.5",
+          "release_published_at": "2026-10-17T13:17:30Z",
           "mentions_patch": true
         },
         {
@@ -387,8 +388,8 @@
           "short": "BLSE",
           "name": "Bannerlord Software Extender (BLSE)",
           "status": "Safe",
-          "release_tag": "v1.7.4",
-          "release_published_at": "2026-10-13T20:57:11Z",
+          "release_tag": "v1.7.5",
+          "release_published_at": "2026-10-17T13:17:30Z",
           "mentions_patch": true
         },
         {

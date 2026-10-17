@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T12:26:12Z",
+  "generated_at": "2026-10-17T18:29:22Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,105 @@
     }
   ],
   "items": [
+    {
+      "title": "To help America, I used Crusader Kings 3 to figure out how to remove a doddering, senile lunatic from power",
+      "url": "https://www.pcgamer.com/games/strategy/to-help-america-i-used-crusader-kings-3-to-figure-out-how-to-remove-a-doddering-senile-lunatic-from-power/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-17T18:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Sega pulls Total War: Shogun 2 - Complete Edition from sale amid AI accusations, admitting it has \"fallen short\"",
+      "url": "https://www.eurogamer.net/total-war-shogun-2-complete-edition-pulled-from-sale",
+      "source": "Eurogamer",
+      "published_at": "2026-10-17T17:28:08Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "As too much of the industry embrace their own death through genAI, Konami say it's real people that are most important for making good games",
+      "url": "https://www.rockpapershotgun.com/as-too-much-of-the-industry-embrace-their-own-death-through-genai-konami-say-its-real-people-that-are-most-important-for-making-good-games",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-17T17:04:18Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Surprising no-one, Wizards of the Coast 'doesn't intend to voluntarily recognize' union efforts for the second time this year",
+      "url": "https://www.pcgamer.com/gaming-industry/surprising-no-one-wizards-of-the-coast-doesnt-intend-to-voluntarily-recognize-union-efforts-for-the-second-time-this-year/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-17T17:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Discussion time: Do you think zone chats in MMOs are forces for good, or evil?",
+      "url": "https://www.pcgamer.com/games/world-of-warcraft/discussion-time-do-you-think-zone-chats-in-mmos-are-forces-for-good-or-evil/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-17T17:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "This game about grinding mute lumps of shapeless flesh has made me realise I've been hornswoggled by capitalism",
+      "url": "https://www.pcgamer.com/games/horror/this-game-about-grinding-mute-lumps-of-shapeless-flesh-has-made-me-realise-ive-been-hornswoggled-by-capitalism/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-17T16:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Oh dear, half a year after launching Samson, Swedish developer Liquid Swords have filed for bankruptcy",
+      "url": "https://www.rockpapershotgun.com/oh-dear-half-a-year-after-launching-samson-swedish-developer-liquid-swords-have-filed-for-bankruptcy",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-17T15:58:54Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Ghostwire: Tokyo joins GOG Preservation Program, which means you don't have to deal with Bethesda.NET anymore",
+      "url": "https://www.pcgamer.com/games/action/ghostwire-tokyo-joins-gog-preservation-program-which-means-you-dont-have-to-deal-with-bethesda-net-anymore/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-17T15:45:38Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The Blood of Dawnwalker's first major update will add directional animal petting and a new story mode that's easier than the previous story mode",
+      "url": "https://www.pcgamer.com/games/rpg/the-blood-of-dawnwalkers-first-major-update-will-add-directional-animal-petting-and-a-new-story-mode-thats-easier-than-the-previous-story-mode/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-17T13:53:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Steam's Achievement Sets beta aims to stop new content breaking your completion status",
+      "url": "https://www.eurogamer.net/steam-achievement-sets-beta",
+      "source": "Eurogamer",
+      "published_at": "2026-10-17T13:12:01Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Gameplay footage emerges of reportedly cancelled Assassin's Creed game Destiny",
+      "url": "https://www.eurogamer.net/assassins-creed-destiny-cancelled-gameplay-footage-timi-tencent",
+      "source": "Eurogamer",
+      "published_at": "2026-10-17T12:39:42Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Developer cancels public demo of its upcoming horror drinking game, fearing it will be instantly cloned by AI vibe coders: 'We sincerely apologise for the short notice'",
       "url": "https://www.pcgamer.com/gaming-industry/game-development/developer-cancels-public-demo-of-its-upcoming-horror-drinking-game-fearing-it-will-be-instantly-cloned-by-ai-vibe-coders-we-sincerely-apologise-for-the-short-notice/",
@@ -468,107 +567,6 @@
       "url": "https://www.rockpapershotgun.com/urine-trouble-pee-v-pee-a-multiplayer-game-about-hiding-from-the-cops-while-you-take-a-whizz-on-public-property-takes-the-trophy-for-punniest-title-of-the-year",
       "source": "Rock Paper Shotgun",
       "published_at": "2026-10-15T18:59:01Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Control Resonant sells 1 million copies in 3 weeks to become Remedy's fastest-selling game ever",
-      "url": "https://www.pcgamer.com/games/action/control-resonant-sells-1-million-copies-in-3-weeks-to-become-remedys-fastest-selling-game-ever/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-15T18:15:22Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "After almost three years of early access, Enshrouded has hit 1.0 with a complete story, bigger map, and way too much more to mention",
-      "url": "https://www.rockpapershotgun.com/after-almost-three-years-of-early-access-enshrouded-has-hit-10-with-a-complete-story-bigger-map-and-way-too-much-more-to-mention",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-15T17:01:56Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "GTA 5 finally measures up to the actual best GTA game now I've added a jetpack",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-5-finally-measures-up-to-the-actual-best-gta-game-now-ive-added-a-jetpack/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-15T17:00:00Z",
-      "games": [
-        "gta-v"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Come on Razer what are you doing? This Pokemon-themed mouse is most definitely not the one",
-      "url": "https://www.pcgamer.com/hardware/gaming-mice/come-on-razer-what-are-you-doing-this-pokemon-themed-mouse-is-most-definitely-not-the-one/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-15T16:30:05Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Monumentally expansive roguelike Caves of Qud is getting even bigger in December with an early access expansion that lets you play as messed up dogs and trees",
-      "url": "https://www.rockpapershotgun.com/monumentally-expansive-roguelike-caves-of-qud-is-getting-even-bigger-in-december-with-an-early-access-expansion-that-lets-you-play-as-messed-up-dogs-and-trees",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-15T16:30:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The AI bubble may not have burst yet, but $1 trillion worth of air appears to have escaped",
-      "url": "https://www.pcgamer.com/software/ai/the-ai-bubble-may-not-have-burst-yet-but-usd1-trillion-worth-of-air-appears-to-have-escaped/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-15T16:26:16Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "GTA 6 squeaks into eligibility for The Game Awards 2026 by the smallest of margins - but can it break Clair Obscur: Expedition 33's record number of wins?",
-      "url": "https://www.eurogamer.net/gta-6-the-game-awards-eligibility-geoff-keighley",
-      "source": "Eurogamer",
-      "published_at": "2026-10-15T16:10:34Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The Shogun 2 remaster is so bad, Sega is removing it from sale and bringing back the original",
-      "url": "https://www.pcgamer.com/games/strategy/the-shogun-2-remaster-is-so-bad-sega-is-removing-it-from-sale-and-bringing-back-the-original/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-15T15:50:41Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "4X strategy sequel Humankind 2 gets its first extended in-game footage, rich in era-spanning, culture-shaping, history-rewriting action",
-      "url": "https://www.rockpapershotgun.com/4x-strategy-sequel-humankind-2-gets-its-first-extended-in-game-footage-rich-in-era-spanning-culture-shaping-history-rewriting-action",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-15T15:45:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "79% of you think Razer's new gaming mouse feature counts as cheating",
-      "url": "https://www.pcgamer.com/hardware/gaming-mice/79-percent-of-you-think-razers-new-gaming-mouse-feature-counts-as-cheating/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-15T15:42:42Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "It's taken its sweet time, but Intel's response to AMD's X3D chips is starting to look tasty",
-      "url": "https://www.pcgamer.com/hardware/processors/its-taken-its-sweet-time-but-intels-response-to-amds-x3d-chips-is-starting-to-look-tasty/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-15T15:34:33Z",
       "games": [],
       "kind": "news",
       "highlight": false
