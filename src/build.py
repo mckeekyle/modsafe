@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import html
 import json
+import re
 import os
 import sys
 from datetime import datetime, timezone
@@ -540,6 +541,21 @@ def page_shell(title, description, path, active, body, extra_jsonld=None) -> str
 </html>
 """
     )
+
+
+ASSET_REF_RE = re.compile(r"(?:https?://modsafe\.app)?(/(?:img|og)/[A-Za-z0-9._/-]+\.(?:png|jpe?g|webp|svg|gif|ico))")
+
+
+def missing_asset_refs(dist: Path) -> list[tuple[str, str]]:
+    """(reference, file) for every /img/ or /og/ image referenced by a generated page/feed that doesn't exist in dist."""
+    out = []
+    for f in sorted(dist.rglob("*")):
+        if f.suffix not in (".html", ".css", ".xml", ".json", ".txt", ".webmanifest") or not f.is_file():
+            continue
+        for ref in sorted(set(ASSET_REF_RE.findall(f.read_text(encoding="utf-8", errors="replace")))):
+            if not (dist / ref.lstrip("/")).is_file():
+                out.append((ref, str(f.relative_to(dist))))
+    return out
 
 
 def game_img(slug: str, kind: str = "cap") -> str:
@@ -1279,6 +1295,10 @@ def main() -> int:
     write(DIST / "sitemap.xml", build_sitemap())
     write(DIST / "_redirects", REDIRECTS)
     write(DIST / "_headers", HEADERS)
+    missing = missing_asset_refs(DIST)
+    if missing:
+        raise SystemExit("Build check failed: referenced images missing from dist/:\n  " +
+                         "\n  ".join(f"{ref}  (in {page})" for ref, page in missing))
     print("Done.")
     return 0
 
