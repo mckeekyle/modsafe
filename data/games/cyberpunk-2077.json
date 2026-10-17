@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T06:27:11Z",
+  "generated_at": "2026-10-17T12:24:41Z",
   "game": {
     "slug": "cyberpunk-2077",
     "name": "Cyberpunk 2077",
@@ -82,7 +82,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch Patch 2.31; compatibility is unverified \u2014 check the project page. No open breakage reports 400 days after the patch. Note: Steam's public build changed on 2025-10-14 (build 20383525) without an announcement; this status reflects the last announced patch, so recheck if you hit problems.",
+      "reason": "Latest release predates patch Patch 2.31; compatibility is unverified \u2014 check the project page. No open breakage reports 401 days after the patch. Note: Steam's public build changed on 2025-10-14 (build 20383525) without an announcement; this status reflects the last announced patch, so recheck if you hit problems.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v0.5.31",
