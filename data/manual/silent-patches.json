@@ -1,6 +1,6 @@
 {
   "_comment": "Hand-maintained. Game updates shipped without their own Steam announcement (so the Steam-news patch detector can't see them). Each entry needs primary sources; published_at = when the build went live on Steam's public branch (api.steamcmd.net depots.branches.public.timeupdated).",
-  "last_verified": "2026-10-16",
+  "last_verified": "2026-10-18",
   "verified_by": "ModSafe ops (manual check)",
   "patches": {
     "lethal-company": [
@@ -28,6 +28,61 @@
           "https://store.steampowered.com/news/app/105600/view/1844751498222763 (State of the Game, Sep 2026: 'lingering fixes that remain from 1.4.5.8'; tModLoader team: 'the 1.4.5.8 hotfix changes')",
           "https://github.com/tModLoader/tModLoader/releases/tag/v0.11.8.11 ('launch with Terraria 1.4.5.8 installed')",
           "https://api.steamcmd.net/v1/info/105600 (public build 24893155, updated 2026-08-23T18:47:09Z)"
+        ]
+      }
+    ],
+    "elden-ring": [
+      {
+        "version": "1.17.1",
+        "label": "1.17.1",
+        "title": "Patch 1.17.1 (hotfix announced on FromSoftware's official site and @ELDENRING, not on Steam)",
+        "published_at": "2026-09-08T07:02:18Z",
+        "url": "https://www.eldenring.jp/newsdetail/news_detail_260908_1.html",
+        "sources": [
+          "https://www.eldenring.jp/newsdetail/news_detail_260908_1.html (official, 2026-09-08: App Ver. 1.17.1 / Regulation Ver. 1.17.1, PS4/PS5/Xbox/Steam)",
+          "https://x.com/ELDENRING/status/2097236393856524780 ('Patch 1.17.1 has been released', 2026-09-08T08:11Z)",
+          "https://api.steamcmd.net/v1/info/1245620 (public build 25080141, updated 2026-09-08T07:02:18Z)"
+        ]
+      }
+    ],
+    "baldurs-gate-3": [
+      {
+        "version": "4.1.1.7631656",
+        "label": "Update 4.1.1.7631656",
+        "title": "Small update, game version 4.1.1.7631656 (announced by Larian on X and its forums, not on Steam)",
+        "published_at": "2026-09-29T14:55:18Z",
+        "url": "https://x.com/larianstudios/status/2104950573405704200",
+        "sources": [
+          "https://x.com/larianstudios/status/2104950573405704200 (2026-09-29T15:04Z: GOG Mac launcher crash fix, PS5 map-marker fix, beards; 'Game Version: 4.1.1.7631656')",
+          "https://bg3.wiki/wiki/Patch_notes (2026-09-29, 4.1.1.7631656, Larian Forum, 'Not given number')",
+          "https://api.steamcmd.net/v1/info/1086940 (public build 25605617, updated 2026-09-29T14:55:18Z)"
+        ]
+      }
+    ],
+    "msfs-2020": [
+      {
+        "version": "16.1",
+        "label": "Sim Update 16.1",
+        "title": "Release Notes - Microsoft Flight Simulator (2020) Sim Update 16.1 [1.39.12.0] (official forums; no Steam post)",
+        "published_at": "2026-03-02T18:00:47Z",
+        "url": "https://forums.flightsimulator.com/t/release-notes-microsoft-flight-simulator-2020-sim-update-16-1-1-39-12-0/758903",
+        "sources": [
+          "https://forums.flightsimulator.com/t/release-notes-microsoft-flight-simulator-2020-sim-update-16-1-1-39-12-0/758903 (release date March 2, 2026; stability fixes incl. a SimConnect crash fix)",
+          "https://api.steamcmd.net/v1/info/1250410 (public build 21580682, updated 2026-03-02T18:00:47Z)"
+        ]
+      }
+    ],
+    "rimworld": [
+      {
+        "version": "1.6.4871",
+        "label": "1.6.4871",
+        "title": "RimWorld 1.6.4871 (posted on Ludeon's Discord build channel, no Steam announcement)",
+        "published_at": "2026-06-30T17:12:35Z",
+        "url": "https://steamcommunity.com/app/294100/discussions/0/572668324079519232/",
+        "sources": [
+          "https://steamcommunity.com/app/294100/discussions/0/572668324079519232/ (moderator-marked answer quoting the developer Discord: 'Version 1.6.4871 is up now on the unstable branch… Updated translations. Updated creative content rewards.')",
+          "https://steamcommunity.com/app/294100/discussions/0/572668858640587805/ ('1.6.4850 patch but my game is 1.6.4871')",
+          "https://api.steamcmd.net/v1/info/294100 (public build 23969874, updated 2026-06-30T17:12:35Z)"
         ]
       }
     ]

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T19:04:54Z",
+  "generated_at": "2026-10-18T20:21:13Z",
   "game": {
     "slug": "gta-v",
     "name": "Grand Theft Auto V",
@@ -8,20 +8,28 @@
       "label": "Title Update 1.73",
       "version": "1.73",
       "published_at": "2026-07-14T09:00:00Z",
-      "title": "GTA Online: The Kortz Center Heist (Title Update 1.73)",
-      "url": "https://www.rockstargames.com/newswire",
+      "title": "GTAV Title Update 1.73 Notes (Rockstar Support; PC Enhanced-only update Sep 15, 2026)",
+      "url": "https://support.rockstargames.com/articles/4vRqEDvjUs9h7nqRUgc8YO/gtav-title-update-1-73-notes-ps5-ps4-xbox-series-x-or-s-xbox-one-pc-enhanced-legacy",
       "builds": {
         "legacy": "1.0.3889.0",
-        "enhanced": "1.0.1158.13"
+        "enhanced": "1.0.1158.16"
+      },
+      "build_dates": {
+        "legacy": "2026-07-14",
+        "enhanced": "2026-09-15"
       },
       "sources": [
+        "https://support.rockstargames.com/articles/4vRqEDvjUs9h7nqRUgc8YO/gtav-title-update-1-73-notes-ps5-ps4-xbox-series-x-or-s-xbox-one-pc-enhanced-legacy ([September 15, 2026] - PC (Enhanced): General fixes)",
+        "https://api.steamcmd.net/v1/info/3240220 (Enhanced public build 25261616, updated 2026-09-15T09:00:30Z); https://api.steamcmd.net/v1/info/271590 (Legacy public build 24129523, updated 2026-07-14T09:01:57Z)",
+        "https://w.atwiki.jp/lspdfrinfo/pages/16.html (as of 2026-10-14: Enhanced latest v1158.16, Script Hook V supports up to 1158.13; Legacy v3889.0 supported)",
+        "https://www.reddit.com/r/RAGEPluginHook/comments/1wjb502/unsupported_game_patch/ (Enhanced 'unsupported game patch', 2026-09-18)",
         "https://gta.wiki/w/Grand_Theft_Auto_V/Title_Update_Notes/Update-2026-07-14",
         "https://www.reddit.com/r/lspdfr/comments/1uwf499/gta_v_update_july_2026/"
       ],
-      "notes": "Later 1.73 'additional updates' (Jul 16 \u2013 Oct 1, Enhanced-only on Sep 15) are listed as event/bug-fix updates; no newer executable build was found as of last_verified (re-checked 2026-10-18: latest listed item is the Oct 1 Halloween event week; Script Hook V still v3889.0 / 1158.13)."
+      "notes": "Title Update 1.73 shipped Jul 14 (Legacy 1.0.3889.0, Enhanced 1.0.1158.13). On Sep 15, 2026 Rockstar pushed a PC Enhanced-only update ('General fixes') that moved Enhanced to 1.0.1158.16; Legacy is unchanged. Script Hook V (dev-c.com, checked by hand 2026-10-18) still lists only 1.0.3889.0 / 1.0.1158.13, so it does not support current Enhanced. Corrected in the 2026-10-18 audit; earlier checks had treated the Sep 15 item as an event update."
     }
   },
-  "verdict": "Safe",
+  "verdict": "Not ported yet",
   "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
   "frameworks": [
     {
@@ -33,8 +41,8 @@
       "tracked": true,
       "sensitive": true,
       "release_url": "http://www.dev-c.com/gtav/scripthookv/",
-      "status": "Safe",
-      "reason": "Supports the current game build(s): 1.0.3889.0, 1.0.1158.13. (Manually verified 2026-10-18.)",
+      "status": "Not ported yet",
+      "reason": "Supports Legacy 1.0.3889.0. No build yet for Enhanced 1.0.1158.16. (Manually verified 2026-10-18.)",
       "release_tag": "v3889.0 / 1158.13",
       "release_published_at": "2026-07-15T00:00:00Z",
       "manual_data": true
@@ -121,6 +129,10 @@
   "sources": {
     "manual": "data/manual/gta-v.json",
     "patch_sources": [
+      "https://support.rockstargames.com/articles/4vRqEDvjUs9h7nqRUgc8YO/gtav-title-update-1-73-notes-ps5-ps4-xbox-series-x-or-s-xbox-one-pc-enhanced-legacy ([September 15, 2026] - PC (Enhanced): General fixes)",
+      "https://api.steamcmd.net/v1/info/3240220 (Enhanced public build 25261616, updated 2026-09-15T09:00:30Z); https://api.steamcmd.net/v1/info/271590 (Legacy public build 24129523, updated 2026-07-14T09:01:57Z)",
+      "https://w.atwiki.jp/lspdfrinfo/pages/16.html (as of 2026-10-14: Enhanced latest v1158.16, Script Hook V supports up to 1158.13; Legacy v3889.0 supported)",
+      "https://www.reddit.com/r/RAGEPluginHook/comments/1wjb502/unsupported_game_patch/ (Enhanced 'unsupported game patch', 2026-09-18)",
       "https://gta.wiki/w/Grand_Theft_Auto_V/Title_Update_Notes/Update-2026-07-14",
       "https://www.reddit.com/r/lspdfr/comments/1uwf499/gta_v_update_july_2026/"
     ]

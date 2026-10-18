@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T19:05:29Z",
+  "generated_at": "2026-10-18T20:21:52Z",
   "game": {
     "slug": "bannerlord",
     "name": "Mount & Blade II: Bannerlord",
@@ -27,7 +27,7 @@
       "sensitive": true,
       "status": "Safe",
       "base_status": "Updated for latest patch",
-      "reason": "Latest release notes mention patch BL v1.4.8 and the release is on/after the patch date.",
+      "reason": "Latest release notes declare support for a version series/range that includes BL v1.4.8, and the release is on/after the patch date.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v1.7.5",

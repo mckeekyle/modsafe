@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T19:05:00Z",
+  "generated_at": "2026-10-18T20:28:43Z",
   "game": {
     "slug": "starfield",
     "name": "Starfield",
@@ -27,7 +27,7 @@
       "sensitive": true,
       "status": "Safe",
       "base_status": "Unknown / check",
-      "reason": "Official page (https://sfse.silverlock.org/) lists build 0.2.21 for runtime 1.16.244, matching the latest tag (Bethesda often ships updates to a beta branch first). Latest release predates patch 1.16.244; compatibility is unverified \u2014 check the project page. (Date is the tagged commit on GitHub; builds are published on the official site.)",
+      "reason": "Official page (https://sfse.silverlock.org/) lists build 0.2.21 for runtime 1.16.244, matching the latest tag (Bethesda often ships updates to a beta branch first). (Date is the tagged commit on GitHub; builds are published on the official site.)",
       "breakage_reports": [],
       "official": {
         "runtime": "1.16.244",

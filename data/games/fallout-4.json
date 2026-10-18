@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T19:04:30Z",
+  "generated_at": "2026-10-18T20:28:36Z",
   "game": {
     "slug": "fallout-4",
     "name": "Fallout 4",
@@ -27,7 +27,7 @@
       "sensitive": true,
       "status": "Safe",
       "base_status": "Unknown / check",
-      "reason": "Official page (https://f4se.silverlock.org/) lists build 0.7.9 for runtime 1.11.240, matching the latest tag (Bethesda often ships updates to a beta branch first). Latest release predates patch Update 2026-08-18; compatibility is unverified \u2014 check the project page. (Date is the tagged commit on GitHub; builds are published on the official site.)",
+      "reason": "Official page (https://f4se.silverlock.org/) lists build 0.7.9 for runtime 1.11.240, matching the latest tag (Bethesda often ships updates to a beta branch first). (Date is the tagged commit on GitHub; builds are published on the official site.)",
       "breakage_reports": [],
       "official": {
         "runtime": "1.11.240",

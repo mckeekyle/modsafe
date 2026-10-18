@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T19:04:22Z",
+  "generated_at": "2026-10-18T20:28:59Z",
   "game": {
     "slug": "skyrim-se",
     "name": "Skyrim Special Edition",
@@ -35,7 +35,7 @@
       "sensitive": true,
       "status": "Safe",
       "base_status": "Likely OK",
-      "reason": "Official page (https://skse.silverlock.org/) lists build 2.3.1 for runtime 1.7.104, matching the latest tag (Bethesda often ships updates to a beta branch first). Latest release is newer than patch 1.7.99, but notes do not explicitly mention that version. (Date is the tagged commit on GitHub; builds are published on the official site.)",
+      "reason": "Official page (https://skse.silverlock.org/) lists build 2.3.1 for runtime 1.7.104, matching the latest tag (Bethesda often ships updates to a beta branch first). (Date is the tagged commit on GitHub; builds are published on the official site.)",
       "breakage_reports": [],
       "official": {
         "runtime": "1.7.104",

@@ -1,23 +1,22 @@
 {
-  "generated_at": "2026-10-18T19:04:36Z",
+  "generated_at": "2026-10-18T20:20:54Z",
   "game": {
     "slug": "baldurs-gate-3",
     "name": "Baldur's Gate 3",
     "steam_appid": 1086940,
     "latest_patch": {
-      "version": "Hotfix #36",
-      "label": "Hotfix #36",
-      "title": "Hotfix #36 Now Live!",
-      "published_at": "2026-03-26T14:40:05Z",
-      "published_unix": 1774536005,
-      "url": "https://store.steampowered.com/news/app/1086940/view/1827626365770693",
-      "unannounced_update": {
-        "version": null,
-        "label": "Unannounced update 2026-09-29",
-        "published_at": "2026-09-29T14:55:18Z",
-        "buildid": "25605617",
-        "source": "Steam public branch (api.steamcmd.net / PICS)"
-      }
+      "version": "4.1.1.7631656",
+      "label": "Update 4.1.1.7631656",
+      "title": "Small update, game version 4.1.1.7631656 (announced by Larian on X and its forums, not on Steam)",
+      "published_at": "2026-09-29T14:55:18Z",
+      "published_unix": 1790693718,
+      "url": "https://x.com/larianstudios/status/2104950573405704200",
+      "silent": true,
+      "sources": [
+        "https://x.com/larianstudios/status/2104950573405704200 (2026-09-29T15:04Z: GOG Mac launcher crash fix, PS5 map-marker fix, beards; 'Game Version: 4.1.1.7631656')",
+        "https://bg3.wiki/wiki/Patch_notes (2026-09-29, 4.1.1.7631656, Larian Forum, 'Not given number')",
+        "https://api.steamcmd.net/v1/info/1086940 (public build 25605617, updated 2026-09-29T14:55:18Z)"
+      ]
     }
   },
   "verdict": "Likely safe",
@@ -34,7 +33,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Likely OK",
-      "reason": "Latest release is newer than patch Hotfix #36, but notes do not explicitly mention that version.",
+      "reason": "Latest release is newer than patch Update 4.1.1.7631656, but notes do not explicitly mention that version.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v33",
@@ -70,19 +69,46 @@
   ],
   "history": [
     {
+      "version": "4.1.1.7631656",
+      "label": "Update 4.1.1.7631656",
+      "title": "Small update, game version 4.1.1.7631656 (announced by Larian on X and its forums, not on Steam)",
+      "published_at": "2026-09-29T14:55:18Z",
+      "published_unix": 1790693718,
+      "url": "https://x.com/larianstudios/status/2104950573405704200",
+      "silent": true,
+      "sources": [
+        "https://x.com/larianstudios/status/2104950573405704200 (2026-09-29T15:04Z: GOG Mac launcher crash fix, PS5 map-marker fix, beards; 'Game Version: 4.1.1.7631656')",
+        "https://bg3.wiki/wiki/Patch_notes (2026-09-29, 4.1.1.7631656, Larian Forum, 'Not given number')",
+        "https://api.steamcmd.net/v1/info/1086940 (public build 25605617, updated 2026-09-29T14:55:18Z)"
+      ],
+      "frameworks": [
+        {
+          "id": "bg3se",
+          "short": "BG3SE",
+          "name": "BG3 Script Extender",
+          "status": "Likely safe",
+          "release_tag": "v33",
+          "release_published_at": "2026-10-12T21:35:28Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "bg3mm",
+          "short": "BG3MM",
+          "name": "BG3 Mod Manager",
+          "status": "Not affected by patches",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
       "version": "Hotfix #36",
       "label": "Hotfix #36",
       "title": "Hotfix #36 Now Live!",
       "published_at": "2026-03-26T14:40:05Z",
       "published_unix": 1774536005,
       "url": "https://store.steampowered.com/news/app/1086940/view/1827626365770693",
-      "unannounced_update": {
-        "version": null,
-        "label": "Unannounced update 2026-09-29",
-        "published_at": "2026-09-29T14:55:18Z",
-        "buildid": "25605617",
-        "source": "Steam public branch (api.steamcmd.net / PICS)"
-      },
       "frameworks": [
         {
           "id": "bg3se",

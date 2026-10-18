@@ -101,18 +101,22 @@
       ],
       "system": "In-game Mod Manager (mod.io, mods curated by Larian)",
       "update": {
-        "label": "Hotfix #36",
-        "date": "2026-03-26",
-        "url": "https://baldursgate3.game/news?categories=1%2C2"
+        "label": "Update 4.1.1.7631656",
+        "date": "2026-09-29",
+        "url": "https://x.com/larianstudios/status/2104950573405704200"
       },
       "answer": "No",
-      "summary": "Hotfix #36 fixed crashes and performance problems; it isn't reported to have disabled console mods. Larian adds console mods in tested batches; the most recent batch we found (19 mods) was covered on Sep 16, 2026. Mods that use the Script Extender, shaders or .exe/.dll files aren't allowed on console.",
+      "summary": "The Sep 29, 2026 small update (4.1.1.7631656) fixed PS5 players being booted when creating map markers, a GOG Mac launcher crash and patchy beards; it isn't reported to have disabled console mods. Larian adds console mods in tested batches; the most recent batch we found (19 mods) was covered on Sep 16, 2026. Mods that use the Script Extender, shaders or .exe/.dll files aren't allowed on console.",
       "limits": [
         "Curated only: Larian tests each mod before it appears on console.",
         "On console, a save asks for every mod it was made with. You can add mods to a save but not remove them, so a mod pulled from mod.io can lock you out of old saves (as happened in Aug 2026).",
         "Larian caps the number of installed console mods (Hotfix #29, Nov 2024)."
       ],
       "sources": [
+        [
+          "Larian on X: 4.1.1.7631656 update (Sep 29, 2026)",
+          "https://x.com/larianstudios/status/2104950573405704200"
+        ],
         [
           "Larian: BG3 news (patches & hotfixes)",
           "https://baldursgate3.game/news?categories=1%2C2"

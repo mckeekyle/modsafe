@@ -1,23 +1,22 @@
 {
-  "generated_at": "2026-10-18T19:05:07Z",
+  "generated_at": "2026-10-18T20:21:26Z",
   "game": {
     "slug": "elden-ring",
     "name": "Elden Ring",
     "steam_appid": 1245620,
     "latest_patch": {
-      "version": "1.17",
-      "label": "1.17",
-      "title": "Patch Notes Version 1.17",
-      "published_at": "2026-08-27T14:00:22Z",
-      "published_unix": 1787839222,
-      "url": "https://store.steampowered.com/news/app/1245620/view/1842212951300120",
-      "unannounced_update": {
-        "version": null,
-        "label": "Unannounced update 2026-09-08",
-        "published_at": "2026-09-08T07:02:18Z",
-        "buildid": "25080141",
-        "source": "Steam public branch (api.steamcmd.net / PICS)"
-      }
+      "version": "1.17.1",
+      "label": "1.17.1",
+      "title": "Patch 1.17.1 (hotfix announced on FromSoftware's official site and @ELDENRING, not on Steam)",
+      "published_at": "2026-09-08T07:02:18Z",
+      "published_unix": 1788850938,
+      "url": "https://www.eldenring.jp/newsdetail/news_detail_260908_1.html",
+      "silent": true,
+      "sources": [
+        "https://www.eldenring.jp/newsdetail/news_detail_260908_1.html (official, 2026-09-08: App Ver. 1.17.1 / Regulation Ver. 1.17.1, PS4/PS5/Xbox/Steam)",
+        "https://x.com/ELDENRING/status/2097236393856524780 ('Patch 1.17.1 has been released', 2026-09-08T08:11Z)",
+        "https://api.steamcmd.net/v1/info/1245620 (public build 25080141, updated 2026-09-08T07:02:18Z)"
+      ]
     }
   },
   "verdict": "Likely safe",
@@ -27,25 +26,23 @@
       "id": "seamless-coop",
       "name": "Seamless Co-op",
       "short": "Seamless Co-op",
-      "url": "https://github.com/LukeYui/EldenRingSeamlessCoopRelease",
+      "url": "https://github.com/yuiamoroll/EldenRingSeamlessCoopRelease",
       "source": "github",
-      "repo": "LukeYui/EldenRingSeamlessCoopRelease",
+      "repo": "yuiamoroll/EldenRingSeamlessCoopRelease",
       "tracked": true,
       "sensitive": true,
-      "status": "Safe",
-      "base_status": "Updated for latest patch",
-      "reason": "Latest release notes mention patch 1.17 and the release is on/after the patch date. Note: Steam's public build changed on 2026-09-08 (build 25080141) without an announcement; this status reflects the last announced patch, so recheck if you hit problems.",
+      "status": "Likely safe",
+      "base_status": "Unknown / check",
+      "reason": "Latest release predates patch 1.17.1; compatibility is unverified \u2014 check the project page. Patch is 40 days old; no breakage signal available.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v2.0.1",
       "release_name": "BETA v2.0.1",
       "release_published_at": "2026-09-03T19:40:04Z",
       "release_url": "https://github.com/yuiamoroll/EldenRingSeamlessCoopRelease/releases/tag/v2.0.1",
-      "mentions_patch": true,
-      "newer_than_patch": true,
-      "mention_releases": [
-        "v2.0.1"
-      ]
+      "mentions_patch": false,
+      "newer_than_patch": false,
+      "mention_releases": []
     },
     {
       "id": "me3",
@@ -58,17 +55,8 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch 1.17; compatibility is unverified \u2014 check the project page. One unconfirmed user report of breakage is open ('Elden Ring 1.17.0.0 crashes in me3_mod_host.dll 0.13.0 during system allocator hook'); not yet confirmed by the maintainers or other users, so it isn't counted as breakage. Note: Steam's public build changed on 2026-09-08 (build 25080141) without an announcement; this status reflects the last announced patch, so recheck if you hit problems.",
-      "breakage_reports": [
-        {
-          "title": "Elden Ring 1.17.0.0 crashes in me3_mod_host.dll 0.13.0 during system allocator hook",
-          "url": "https://github.com/garyttierney/me3/issues/877",
-          "created_at": "2026-09-05T01:42:48Z",
-          "labels": [],
-          "comments": 1,
-          "thumbs_up": 0
-        }
-      ],
+      "reason": "Latest release predates patch 1.17.1; compatibility is unverified \u2014 check the project page. No open breakage reports 40 days after the patch.",
+      "breakage_reports": [],
       "official": null,
       "release_tag": "v0.13.0",
       "release_name": "v0.13.0",
@@ -81,19 +69,46 @@
   ],
   "history": [
     {
+      "version": "1.17.1",
+      "label": "1.17.1",
+      "title": "Patch 1.17.1 (hotfix announced on FromSoftware's official site and @ELDENRING, not on Steam)",
+      "published_at": "2026-09-08T07:02:18Z",
+      "published_unix": 1788850938,
+      "url": "https://www.eldenring.jp/newsdetail/news_detail_260908_1.html",
+      "silent": true,
+      "sources": [
+        "https://www.eldenring.jp/newsdetail/news_detail_260908_1.html (official, 2026-09-08: App Ver. 1.17.1 / Regulation Ver. 1.17.1, PS4/PS5/Xbox/Steam)",
+        "https://x.com/ELDENRING/status/2097236393856524780 ('Patch 1.17.1 has been released', 2026-09-08T08:11Z)",
+        "https://api.steamcmd.net/v1/info/1245620 (public build 25080141, updated 2026-09-08T07:02:18Z)"
+      ],
+      "frameworks": [
+        {
+          "id": "seamless-coop",
+          "short": "Seamless Co-op",
+          "name": "Seamless Co-op",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        },
+        {
+          "id": "me3",
+          "short": "me3",
+          "name": "Mod Engine 3 (me3)",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
       "version": "1.17",
       "label": "1.17",
       "title": "Patch Notes Version 1.17",
       "published_at": "2026-08-27T14:00:22Z",
       "published_unix": 1787839222,
       "url": "https://store.steampowered.com/news/app/1245620/view/1842212951300120",
-      "unannounced_update": {
-        "version": null,
-        "label": "Unannounced update 2026-09-08",
-        "published_at": "2026-09-08T07:02:18Z",
-        "buildid": "25080141",
-        "source": "Steam public branch (api.steamcmd.net / PICS)"
-      },
       "frameworks": [
         {
           "id": "seamless-coop",

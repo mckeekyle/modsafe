@@ -1,23 +1,21 @@
 {
-  "generated_at": "2026-10-18T19:06:02Z",
+  "generated_at": "2026-10-18T20:22:26Z",
   "game": {
     "slug": "msfs-2020",
     "name": "Microsoft Flight Simulator (2020)",
     "steam_appid": 1250410,
     "latest_patch": {
-      "version": "16",
-      "label": "Sim Update 16",
-      "title": "Release Notes - Sim Update 16 [1.39.9.0] Now Available",
-      "published_at": "2025-08-05T15:15:08Z",
-      "published_unix": 1754406908,
-      "url": "https://store.steampowered.com/news/app/1250410/view/1806698490847382",
-      "unannounced_update": {
-        "version": null,
-        "label": "Unannounced update 2026-03-02",
-        "published_at": "2026-03-02T18:00:47Z",
-        "buildid": "21580682",
-        "source": "Steam public branch (api.steamcmd.net / PICS)"
-      }
+      "version": "16.1",
+      "label": "Sim Update 16.1",
+      "title": "Release Notes - Microsoft Flight Simulator (2020) Sim Update 16.1 [1.39.12.0] (official forums; no Steam post)",
+      "published_at": "2026-03-02T18:00:47Z",
+      "published_unix": 1772474447,
+      "url": "https://forums.flightsimulator.com/t/release-notes-microsoft-flight-simulator-2020-sim-update-16-1-1-39-12-0/758903",
+      "silent": true,
+      "sources": [
+        "https://forums.flightsimulator.com/t/release-notes-microsoft-flight-simulator-2020-sim-update-16-1-1-39-12-0/758903 (release date March 2, 2026; stability fixes incl. a SimConnect crash fix)",
+        "https://api.steamcmd.net/v1/info/1250410 (public build 21580682, updated 2026-03-02T18:00:47Z)"
+      ]
     }
   },
   "verdict": "Likely safe",
@@ -34,7 +32,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Likely OK",
-      "reason": "Latest release is newer than patch Sim Update 16, but notes do not explicitly mention that version.",
+      "reason": "Latest release is newer than patch Sim Update 16.1, but notes do not explicitly mention that version.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v2020.15.0",
@@ -56,7 +54,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Likely OK",
-      "reason": "Latest release is newer than patch Sim Update 16, but notes do not explicitly mention that version.",
+      "reason": "Latest release is newer than patch Sim Update 16.1, but notes do not explicitly mention that version.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "7.5.9",
@@ -78,7 +76,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Likely OK",
-      "reason": "Latest release is newer than patch Sim Update 16, but notes do not explicitly mention that version.",
+      "reason": "Latest release is newer than patch Sim Update 16.1, but notes do not explicitly mention that version.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "11.3.1",
@@ -106,19 +104,54 @@
   ],
   "history": [
     {
+      "version": "16.1",
+      "label": "Sim Update 16.1",
+      "title": "Release Notes - Microsoft Flight Simulator (2020) Sim Update 16.1 [1.39.12.0] (official forums; no Steam post)",
+      "published_at": "2026-03-02T18:00:47Z",
+      "published_unix": 1772474447,
+      "url": "https://forums.flightsimulator.com/t/release-notes-microsoft-flight-simulator-2020-sim-update-16-1-1-39-12-0/758903",
+      "silent": true,
+      "sources": [
+        "https://forums.flightsimulator.com/t/release-notes-microsoft-flight-simulator-2020-sim-update-16-1-1-39-12-0/758903 (release date March 2, 2026; stability fixes incl. a SimConnect crash fix)",
+        "https://api.steamcmd.net/v1/info/1250410 (public build 21580682, updated 2026-03-02T18:00:47Z)"
+      ],
+      "frameworks": [
+        {
+          "id": "fbw-a32nx",
+          "short": "FBW A32NX",
+          "name": "FlyByWire A32NX (freeware)",
+          "status": "Likely safe",
+          "release_tag": "v2020.15.0",
+          "release_published_at": "2026-08-22T18:23:00Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "fsuipc7",
+          "short": "FSUIPC7",
+          "name": "FSUIPC7",
+          "status": "Likely safe",
+          "release_tag": "7.5.9",
+          "release_published_at": "2026-09-29T12:00:00Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "mobiflight",
+          "short": "MobiFlight",
+          "name": "MobiFlight Connector (SimConnect/WASM)",
+          "status": "Likely safe",
+          "release_tag": "11.0.0",
+          "release_published_at": "2026-03-16T14:50:54Z",
+          "mentions_patch": false
+        }
+      ]
+    },
+    {
       "version": "16",
       "label": "Sim Update 16",
       "title": "Release Notes - Sim Update 16 [1.39.9.0] Now Available",
       "published_at": "2025-08-05T15:15:08Z",
       "published_unix": 1754406908,
       "url": "https://store.steampowered.com/news/app/1250410/view/1806698490847382",
-      "unannounced_update": {
-        "version": null,
-        "label": "Unannounced update 2026-03-02",
-        "published_at": "2026-03-02T18:00:47Z",
-        "buildid": "21580682",
-        "source": "Steam public branch (api.steamcmd.net / PICS)"
-      },
       "frameworks": [
         {
           "id": "fbw-a32nx",
