@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T12:26:05Z",
+  "generated_at": "2026-10-18T18:23:17Z",
   "game": {
     "slug": "steam-deck",
     "name": "Steam Deck (SteamOS)",
@@ -30,10 +30,10 @@
       "reason": "Latest release is newer than patch SteamOS 3.8.28, but notes do not explicitly mention that version.",
       "breakage_reports": [],
       "official": null,
-      "release_tag": "v3.2.10",
-      "release_name": "Release v3.2.10",
-      "release_published_at": "2026-10-04T21:22:37Z",
-      "release_url": "https://github.com/SteamDeckHomebrew/decky-loader/releases/tag/v3.2.10",
+      "release_tag": "v3.3.0",
+      "release_name": "Release v3.3.0",
+      "release_published_at": "2026-10-18T15:49:53Z",
+      "release_url": "https://github.com/SteamDeckHomebrew/decky-loader/releases/tag/v3.3.0",
       "mentions_patch": false,
       "newer_than_patch": true,
       "mention_releases": []
@@ -698,12 +698,6 @@
       "title": "SteamOS 3.9.1 Preview",
       "url": "https://store.steampowered.com/news/app/1675200/view/1843481262703165",
       "published_at": "2026-09-14T23:24:24Z"
-    },
-    {
-      "name": "Decky pre-release",
-      "title": "v3.3.0-pre1",
-      "url": "https://github.com/SteamDeckHomebrew/decky-loader/releases/tag/v3.3.0-pre1",
-      "published_at": "2026-10-18T01:21:08Z"
     }
   ],
   "sources": {
