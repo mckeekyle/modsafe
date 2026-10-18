@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T18:29:22Z",
+  "generated_at": "2026-10-18T00:31:08Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,71 @@
     }
   ],
   "items": [
+    {
+      "title": "Metal band Genitorturers allegedly claims a Vampire: The Masquerade - Bloodlines remake is coming, getting a dozen crusty nerds way too worked up",
+      "url": "https://www.pcgamer.com/games/rpg/metal-band-genitorturers-allegedly-claims-a-vampire-the-masquerade-bloodlines-remake-is-coming-getting-a-dozen-crusty-nerds-way-too-worked-up/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-17T21:52:34Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Rain98 is a blue-hued, pre-Y2K, Serial Experiments Lain inspired visual novel about time travelling to the past to end the world",
+      "url": "https://www.rockpapershotgun.com/rain98-is-a-blue-hued-pre-y2k-serial-experiments-lain-inspired-visual-novel-about-time-travelling-to-the-past-to-end-the-world",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-17T21:50:37Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Black & White 3 doesn't sound like it's ever going to happen, but good ole overpromising Peter Molyneux may have let slip about a remaster of the original",
+      "url": "https://www.rockpapershotgun.com/black-white-3-doesnt-sound-like-its-ever-going-to-happen-but-good-ole-overpromising-peter-molyneux-may-have-let-slip-about-a-remaster-of-the-original",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-17T20:29:12Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Qualcomm wins $2 legal decision against fellow tech giant Arm, and that's not a typo",
+      "url": "https://www.pcgamer.com/gaming-industry/qualcomm-wins-usd2-legal-decision-against-fellow-tech-giant-arm-and-thats-not-a-typo/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-17T19:30:53Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "RimWorld meets Moebius-esque roguelite colony sim Trailblazers: Into The March welcomes you aboard its hulking landships with a chonky-sounding demo",
+      "url": "https://www.rockpapershotgun.com/rimworld-meets-moebius-esque-roguelite-colony-sim-trailblazers-into-the-march-welcomes-you-aboard-its-hulking-landships-with-a-chonky-sounding-demo",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-17T19:07:41Z",
+      "games": [
+        "rimworld"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "'I am overwhelmed and overstimulated': The actor behind Star Wars: Galactic Racer\u2019s Biddy Blas is scribbing doon all your enthusiasm",
+      "url": "https://www.pcgamer.com/games/racing/i-am-overwhelmed-and-overstimulated-the-actor-behind-star-wars-galactic-racers-biddy-blas-is-scribbing-doon-all-your-enthusiasm/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-17T18:34:02Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Vampire: The Masquerade - Bloodlines remaster rumoured, with leaker insisting it's not a remake",
+      "url": "https://www.eurogamer.net/vampire-the-masquerade-bloodlines-remaster-rumour",
+      "source": "Eurogamer",
+      "published_at": "2026-10-17T18:28:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "To help America, I used Crusader Kings 3 to figure out how to remove a doddering, senile lunatic from power",
       "url": "https://www.pcgamer.com/games/strategy/to-help-america-i-used-crusader-kings-3-to-figure-out-how-to-remove-a-doddering-senile-lunatic-from-power/",
@@ -49,8 +114,8 @@
       "highlight": false
     },
     {
-      "title": "Surprising no-one, Wizards of the Coast 'doesn't intend to voluntarily recognize' union efforts for the second time this year",
-      "url": "https://www.pcgamer.com/gaming-industry/surprising-no-one-wizards-of-the-coast-doesnt-intend-to-voluntarily-recognize-union-efforts-for-the-second-time-this-year/",
+      "title": "Discussion time: Do you think zone chats in MMOs are forces for good, or evil?",
+      "url": "https://www.pcgamer.com/games/world-of-warcraft/discussion-time-do-you-think-zone-chats-in-mmos-are-forces-for-good-or-evil/",
       "source": "PC Gamer",
       "published_at": "2026-10-17T17:00:00Z",
       "games": [],
@@ -58,8 +123,8 @@
       "highlight": false
     },
     {
-      "title": "Discussion time: Do you think zone chats in MMOs are forces for good, or evil?",
-      "url": "https://www.pcgamer.com/games/world-of-warcraft/discussion-time-do-you-think-zone-chats-in-mmos-are-forces-for-good-or-evil/",
+      "title": "Surprising no-one, Wizards of the Coast 'doesn't intend to voluntarily recognize' union efforts for the second time this year",
+      "url": "https://www.pcgamer.com/gaming-industry/surprising-no-one-wizards-of-the-coast-doesnt-intend-to-voluntarily-recognize-union-efforts-for-the-second-time-this-year/",
       "source": "PC Gamer",
       "published_at": "2026-10-17T17:00:00Z",
       "games": [],
@@ -502,71 +567,6 @@
       "url": "https://www.pcgamer.com/software/platforms/steam-achievements-are-getting-a-huge-overhaul-with-separate-sets-for-dlc-and-season-passes-and-an-easy-way-to-compare-with-friends/",
       "source": "PC Gamer",
       "published_at": "2026-10-15T23:58:30Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Welp, all of you RuneScape folks who hate Reignited have gotten your wish, as the controversial MMO rejig has been cancelled",
-      "url": "https://www.rockpapershotgun.com/welp-all-of-you-runescape-folks-who-hate-reignited-have-gotten-your-wish-as-the-controversial-mmo-rejig-has-been-cancelled",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-15T21:51:05Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Less than 2 weeks after announcing RuneScape Reignited, Jagex is scrapping the whole thing",
-      "url": "https://www.pcgamer.com/games/mmo/less-than-2-weeks-after-announcing-runescape-reignited-jagex-is-scrapping-the-whole-thing/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-15T21:09:54Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Valheim vs Enshrouded vs RuneScape: Dragonwilds: Let's settle this",
-      "url": "https://www.pcgamer.com/games/survival-crafting/valheim-vs-runescape-dragonwilds-vs-enshrouded/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-15T20:54:41Z",
-      "games": [
-        "valheim"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Street Fighter review roundup: sorry, folks, but it sounds like a mess",
-      "url": "https://www.pcgamer.com/movies-tv/street-fighter-review-roundup-sorry-folks-but-it-sounds-like-a-mess/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-15T20:51:45Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Ahead of Call of Duty: Modern Warfare 4's launch next week, unionised Activision testers have voted to authorise a strike",
-      "url": "https://www.rockpapershotgun.com/ahead-of-call-of-duty-modern-warfare-4s-launch-next-week-unionised-activision-testers-have-voted-to-authorise-a-strike",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-15T20:27:22Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "World of Warcraft: Forever devs say gear upgrades will stay relevant 'for a long, long time': 'It's very much our intention to try wherever we can to not invalidate old content'",
-      "url": "https://www.pcgamer.com/games/world-of-warcraft/world-of-warcraft-forever-devs-say-gear-upgrades-will-stay-relevant-for-a-long-long-time-its-very-much-our-intention-to-try-wherever-we-can-to-not-invalidate-old-content/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-15T19:14:30Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Urine Trouble: PEE V PEE, a multiplayer game about hiding from the cops while you take a whizz on public property, takes the trophy for punniest title of the year",
-      "url": "https://www.rockpapershotgun.com/urine-trouble-pee-v-pee-a-multiplayer-game-about-hiding-from-the-cops-while-you-take-a-whizz-on-public-property-takes-the-trophy-for-punniest-title-of-the-year",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-15T18:59:01Z",
       "games": [],
       "kind": "news",
       "highlight": false

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T18:28:57Z",
+  "generated_at": "2026-10-18T00:30:42Z",
   "game": {
     "slug": "steam-deck",
     "name": "Steam Deck (SteamOS)",
@@ -144,6 +144,42 @@
           "release_tag": "v3.2.10",
           "release_published_at": "2026-10-04T21:22:37Z",
           "mentions_patch": false
+        },
+        {
+          "id": "decky-steamgriddb",
+          "short": "SteamGridDB",
+          "name": "SteamGridDB (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": "1.8.1",
+          "release_published_at": "2026-10-07T19:45:20Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "decky-cssloader",
+          "short": "CSS Loader",
+          "name": "CSS Loader (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        },
+        {
+          "id": "decky-protondb",
+          "short": "ProtonDB Badges",
+          "name": "ProtonDB Badges (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": "1.3.4",
+          "release_published_at": "2026-10-14T08:00:23Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "decky-powertools",
+          "short": "PowerTools",
+          "name": "PowerTools (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
         }
       ]
     },
@@ -162,6 +198,42 @@
           "status": "Likely safe",
           "release_tag": "v3.2.8",
           "release_published_at": "2026-09-02T22:46:56Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "decky-steamgriddb",
+          "short": "SteamGridDB",
+          "name": "SteamGridDB (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": "1.8.1",
+          "release_published_at": "2026-10-07T19:45:20Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "decky-cssloader",
+          "short": "CSS Loader",
+          "name": "CSS Loader (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        },
+        {
+          "id": "decky-protondb",
+          "short": "ProtonDB Badges",
+          "name": "ProtonDB Badges (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": "1.3.4",
+          "release_published_at": "2026-10-14T08:00:23Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "decky-powertools",
+          "short": "PowerTools",
+          "name": "PowerTools (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": null,
+          "release_published_at": null,
           "mentions_patch": false
         }
       ]
@@ -182,6 +254,42 @@
           "release_tag": "v3.2.8",
           "release_published_at": "2026-09-02T22:46:56Z",
           "mentions_patch": false
+        },
+        {
+          "id": "decky-steamgriddb",
+          "short": "SteamGridDB",
+          "name": "SteamGridDB (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": "1.8.1",
+          "release_published_at": "2026-10-07T19:45:20Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "decky-cssloader",
+          "short": "CSS Loader",
+          "name": "CSS Loader (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        },
+        {
+          "id": "decky-protondb",
+          "short": "ProtonDB Badges",
+          "name": "ProtonDB Badges (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": "1.3.4",
+          "release_published_at": "2026-10-14T08:00:23Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "decky-powertools",
+          "short": "PowerTools",
+          "name": "PowerTools (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
         }
       ]
     },
@@ -200,6 +308,42 @@
           "status": "Likely safe",
           "release_tag": "v3.2.8",
           "release_published_at": "2026-09-02T22:46:56Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "decky-steamgriddb",
+          "short": "SteamGridDB",
+          "name": "SteamGridDB (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": "1.8.1",
+          "release_published_at": "2026-10-07T19:45:20Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "decky-cssloader",
+          "short": "CSS Loader",
+          "name": "CSS Loader (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        },
+        {
+          "id": "decky-protondb",
+          "short": "ProtonDB Badges",
+          "name": "ProtonDB Badges (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": "1.3.4",
+          "release_published_at": "2026-10-14T08:00:23Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "decky-powertools",
+          "short": "PowerTools",
+          "name": "PowerTools (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": null,
+          "release_published_at": null,
           "mentions_patch": false
         }
       ]
@@ -220,6 +364,42 @@
           "release_tag": "v3.2.8",
           "release_published_at": "2026-09-02T22:46:56Z",
           "mentions_patch": false
+        },
+        {
+          "id": "decky-steamgriddb",
+          "short": "SteamGridDB",
+          "name": "SteamGridDB (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": "1.8.1",
+          "release_published_at": "2026-10-07T19:45:20Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "decky-cssloader",
+          "short": "CSS Loader",
+          "name": "CSS Loader (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        },
+        {
+          "id": "decky-protondb",
+          "short": "ProtonDB Badges",
+          "name": "ProtonDB Badges (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": "1.3.4",
+          "release_published_at": "2026-10-14T08:00:23Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "decky-powertools",
+          "short": "PowerTools",
+          "name": "PowerTools (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
         }
       ]
     },
@@ -238,6 +418,42 @@
           "status": "Likely safe",
           "release_tag": "v3.2.8",
           "release_published_at": "2026-09-02T22:46:56Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "decky-steamgriddb",
+          "short": "SteamGridDB",
+          "name": "SteamGridDB (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": "1.8.1",
+          "release_published_at": "2026-10-07T19:45:20Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "decky-cssloader",
+          "short": "CSS Loader",
+          "name": "CSS Loader (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        },
+        {
+          "id": "decky-protondb",
+          "short": "ProtonDB Badges",
+          "name": "ProtonDB Badges (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": "1.3.4",
+          "release_published_at": "2026-10-14T08:00:23Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "decky-powertools",
+          "short": "PowerTools",
+          "name": "PowerTools (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": null,
+          "release_published_at": null,
           "mentions_patch": false
         }
       ]
@@ -258,6 +474,42 @@
           "release_tag": "v3.2.6",
           "release_published_at": "2026-06-24T18:26:57Z",
           "mentions_patch": false
+        },
+        {
+          "id": "decky-steamgriddb",
+          "short": "SteamGridDB",
+          "name": "SteamGridDB (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": "1.8.1",
+          "release_published_at": "2026-10-07T19:45:20Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "decky-cssloader",
+          "short": "CSS Loader",
+          "name": "CSS Loader (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        },
+        {
+          "id": "decky-protondb",
+          "short": "ProtonDB Badges",
+          "name": "ProtonDB Badges (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": "1.3.4",
+          "release_published_at": "2026-10-14T08:00:23Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "decky-powertools",
+          "short": "PowerTools",
+          "name": "PowerTools (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
         }
       ]
     },
@@ -277,6 +529,42 @@
           "release_tag": "v3.2.6",
           "release_published_at": "2026-06-24T18:26:57Z",
           "mentions_patch": false
+        },
+        {
+          "id": "decky-steamgriddb",
+          "short": "SteamGridDB",
+          "name": "SteamGridDB (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": "1.8.1",
+          "release_published_at": "2026-10-07T19:45:20Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "decky-cssloader",
+          "short": "CSS Loader",
+          "name": "CSS Loader (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        },
+        {
+          "id": "decky-protondb",
+          "short": "ProtonDB Badges",
+          "name": "ProtonDB Badges (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": "1.3.4",
+          "release_published_at": "2026-10-14T08:00:23Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "decky-powertools",
+          "short": "PowerTools",
+          "name": "PowerTools (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
         }
       ]
     },
@@ -295,6 +583,42 @@
           "status": "Likely safe",
           "release_tag": "v3.2.4",
           "release_published_at": "2026-05-28T19:24:05Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "decky-steamgriddb",
+          "short": "SteamGridDB",
+          "name": "SteamGridDB (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": "1.8.1",
+          "release_published_at": "2026-10-07T19:45:20Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "decky-cssloader",
+          "short": "CSS Loader",
+          "name": "CSS Loader (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        },
+        {
+          "id": "decky-protondb",
+          "short": "ProtonDB Badges",
+          "name": "ProtonDB Badges (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": "1.3.4",
+          "release_published_at": "2026-10-14T08:00:23Z",
+          "mentions_patch": false
+        },
+        {
+          "id": "decky-powertools",
+          "short": "PowerTools",
+          "name": "PowerTools (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": null,
+          "release_published_at": null,
           "mentions_patch": false
         }
       ]
