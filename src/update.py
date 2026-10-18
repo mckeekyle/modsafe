@@ -36,6 +36,8 @@ from status_logic import (  # noqa: E402
     is_breakage_title,
     parse_silverlock,
     manual_hook_verdict,
+    manual_build_drift,
+    V_WAIT,
     merge_silent_patches,
     parse_atlan_config,
     atlan_verdict,
@@ -214,7 +216,7 @@ from datetime import timedelta as _td  # noqa: E402
 PRE_PATCH_WINDOW = _td(days=7)
 
 
-def breakage_reports(repo: str, since_iso: str, patch_version: str | None, patch_dt=None) -> list[dict]:
+def breakage_reports(repo: str, since_iso: str, patch_version: str | None, patch_dt=None) -> list[dict] | None:
     """Open GitHub issues filed since `since_iso` (and within BREAKAGE_WINDOW_DAYS of the patch, when
     patch-caused breakage actually surfaces) whose titles report update-related breakage."""
     wait = 6.5 - (time.time() - _last_search[0])  # search API: 10 req/min unauthenticated
@@ -226,7 +228,7 @@ def breakage_reports(repo: str, since_iso: str, patch_version: str | None, patch
         res = http_get_json(f"https://api.github.com/search/issues?q={q}&per_page=50", gh_headers())
     except Exception as e:  # noqa: BLE001
         print(f"  issue search failed for {repo}: {e}", file=sys.stderr)
-        return []
+        return None  # unknown: callers must not claim "no breakage reports"
     from datetime import timedelta
     out = []
     for i in res.get("items", []):
@@ -239,6 +241,13 @@ def breakage_reports(repo: str, since_iso: str, patch_version: str | None, patch
                     "labels": [lb.get("name", "") for lb in i.get("labels", [])], "comments": i.get("comments", 0),
                     "thumbs_up": (i.get("reactions") or {}).get("+1", 0)})
     return out
+
+
+def quiet_period_note(age: float, issues_repo: str | None, searched: bool) -> str:
+    """Only claim "no breakage reports" when an issue tracker exists and the search actually succeeded."""
+    if issues_repo and searched:
+        return f" No open breakage reports {int(age)} days after the patch."
+    return f" Patch is {int(age)} days old; no breakage signal available."
 
 
 STEAMCMD_INFO = "https://api.steamcmd.net/v1/info/{appid}"
@@ -346,11 +355,15 @@ def build_steam_game(game: dict) -> dict:
         sensitive = not fw.get("agnostic")
         official = official_support(fw, rel, patch_dt) if sensitive else None
         reports: list[dict] = []
-        issues_repo = fw.get("issues_repo") or (fw.get("repo") if fw["source"] != "thunderstore" else None)
+        issues_repo = None if fw.get("no_issue_tracker") else (
+            fw.get("issues_repo") or (fw.get("repo") if fw["source"] != "thunderstore" else None))
+        searched = False
         if sensitive and v["status"] != STATUS_UPDATED and not (official and official["supports_current"]) and issues_repo:
             rdt = parse_iso(rel.get("published_at"))
             since = max([d for d in (patch_dt, rdt) if d]).isoformat()
-            reports = breakage_reports(issues_repo, since, latest.get("version"), patch_dt)
+            found = breakage_reports(issues_repo, since, latest.get("version"), patch_dt)
+            searched = found is not None
+            reports = found or []
         confirmed = confirmed_breakage(reports)
         label = user_verdict(base_status=v["status"], age_days=age, sensitive=sensitive, breakage=confirmed,
                              official_support=bool(official and official["supports_current"]))
@@ -358,15 +371,17 @@ def build_steam_game(game: dict) -> dict:
             reason = (fw.get("agnostic_note", "Version-agnostic tool.") +
                       f" Latest release: {rel.get('tag_name')} ({(rel.get('published_at') or '')[:10]}).")
         elif official and official["supports_current"]:
+            # The maintainer's page is the evidence; the timestamp-based sentence ("predates the patch;
+            # compatibility is unverified") would contradict it, so it is dropped.
             reason = (f"Official page ({official['page']}) lists build {official['build']} for runtime "
-                      f"{official['runtime']}, matching the latest tag (Bethesda often ships updates to a beta branch first). ") + reason
+                      f"{official['runtime']}, matching the latest tag (Bethesda often ships updates to a beta branch first).")
         elif confirmed:
             reason += f" {len(confirmed)} open issue(s) report breakage since the patch/latest release."
         elif reports:
             reason += (f" One unconfirmed user report of breakage is open ({reports[0]['title']!r}); not yet confirmed by the"
                        " maintainers or other users, so it isn't counted as breakage.")
         elif v["status"] != STATUS_UPDATED and label == "Likely safe" and v["status"] == STATUS_UNKNOWN:
-            reason += f" No open breakage reports {int(age)} days after the patch." if issues_repo else f" Patch is {int(age)} days old; no breakage signal available."
+            reason += quiet_period_note(age, issues_repo, searched)
         label, reason = apply_unannounced(label, reason, sensitive=sensitive,
                                           release_published_at=rel.get("published_at"), event=unannounced)
         if __import__("re").search(r"(?i)beta|alpha|\brc\d*\b|-pre", rel.get("tag_name") or ""):
@@ -492,21 +507,59 @@ def build_minecraft(game: dict) -> dict:
                         "neoforge_maven": NEOFORGE_VERSIONS, "modrinth": "https://api.modrinth.com/v2"}}
 
 
+def manual_steam_drift(game: dict, recorded: Optional[dict]) -> list[dict]:
+    """Compare each edition's Steam public build (PICS) with the buildid recorded in the manual file.
+    Never touches dev-c.com. On a failed lookup, reuse the committed drift for that edition so a flaky source
+    can't flip the verdict either way."""
+    if not recorded:
+        return []
+    public = {}
+    prev = {}
+    try:
+        prev_lp = json.loads((DATA_DIR / f"{game['slug']}.json").read_text(encoding="utf-8"))["game"]["latest_patch"]
+        pu = prev_lp.get("unannounced_update") or {}
+        if pu.get("edition"):
+            prev[pu["edition"]] = pu
+    except Exception:  # noqa: BLE001
+        pass
+    for ed, appid in (game.get("steam_appids") or {}).items():
+        try:
+            public[ed] = parse_steam_public_build(http_get_json(STEAMCMD_INFO.format(appid=appid), retries=2), appid)
+        except Exception as e:  # noqa: BLE001
+            print(f"  WARNING: steamcmd build info failed for {ed} ({e}); reusing committed value", file=sys.stderr)
+            pu = prev.get(ed)
+            public[ed] = {"buildid": pu["buildid"], "published_at": pu["published_at"]} if pu else None
+    return manual_build_drift(recorded, public)
+
+
 def build_manual_game(game: dict) -> dict:
     """Hand-maintained game (GTA V): patch + hook data from data/manual/*.json; never fetches dev-c.com."""
     man = json.loads((ROOT / game["manual_file"]).read_text(encoding="utf-8"))
     lp = man["latest_patch"]
-    latest = {k: lp.get(k) for k in ("label", "version", "published_at", "title", "url", "builds", "sources", "notes")}
+    latest = {k: lp.get(k) for k in ("label", "version", "published_at", "title", "url", "builds", "build_dates",
+                                      "sources", "notes")}
     verified_age = patch_age_days(man["last_verified"] + "T00:00:00Z")
     age = patch_age_days(lp["published_at"])
+    build_ages = {ed: patch_age_days(d + "T00:00:00Z") for ed, d in (lp.get("build_dates") or {}).items()}
+    drift = manual_steam_drift(game, lp.get("steam_builds"))
+    if drift:
+        d0 = max(drift, key=lambda d: d["published_at"])
+        latest["unannounced_update"] = {"version": None, "label": f"Unrecorded {d0['edition']} build {d0['published_at'][:10]}",
+                                        "published_at": d0["published_at"], "buildid": d0["buildid"], "edition": d0["edition"],
+                                        "source": "Steam public branch (api.steamcmd.net / PICS)"}
     fws = []
     for fw in game["frameworks"]:
         base = {"id": fw["id"], "name": fw["name"], "short": fw["short"], "url": fw["url"], "source": fw["source"],
                 "tracked": True, "sensitive": not fw.get("agnostic"), "release_url": fw["url"]}
         if fw["source"] == "manual_shv":
             shv = man["script_hook_v"]
-            v = manual_hook_verdict(supported=shv["supported_builds"], current=list(lp["builds"].values()),
-                                    patch_age=age, verified_age=verified_age)
+            v = manual_hook_verdict(supported=shv["supported_builds"], current=dict(lp["builds"]),
+                                    patch_age=age, verified_age=verified_age, build_ages=build_ages)
+            for d in drift:
+                # Steam shipped a build the manual record doesn't know about: never claim support for it.
+                v = {"status": V_WAIT, "reason": v["reason"] + (
+                    f" Steam's public {d['edition'].title()} build changed on {d['published_at'][:10]} (build {d['buildid']}) "
+                    "after the last manual check; Script Hook V support for it is unconfirmed, so hold that update.")}
             fws.append({**base, **v, "release_tag": shv["version"], "release_published_at": shv["released"] + "T00:00:00Z",
                         "reason": v["reason"] + f" (Manually verified {man['last_verified']}.)", "manual_data": True})
             continue

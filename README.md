@@ -13,20 +13,19 @@ Static site that tracks whether each game's core mod frameworks/loaders have cau
 | Stardew Valley | `/stardew-valley/` | Steam news (413150) | SMAPI (+ link to smapi.io/mods) |
 | Lethal Company | `/lethal-company/` | Steam news (1966720) | BepInExPack, LethalLib, LethalLevelLoader, MoreCompany (Thunderstore API) |
 | GTA V (single-player) | `/gta-v/` | Hand-maintained `data/manual/gta-v.json` (Legacy 271590 + Enhanced 3240220 builds) | Script Hook V (manual, never fetched from dev-c.com), Ultimate ASI Loader (GitHub, version-agnostic) |
-| Starfield | `/starfield/` | Steam news (1716740) | SFSE (GitHub tags); Address Library (Nexus, manual) |
-| Elden Ring | `/elden-ring/` | Steam news (1245620) | Seamless Co-op, Mod Engine 3 (me3) |
+| Starfield | `/starfield/` | Steam news (1716740) | SFSE (GitHub tags + sfse.silverlock.org); Address Library (Nexus, manual) |
+| Elden Ring | `/elden-ring/` | Steam news (1245620) | Seamless Co-op (`yuiamoroll/EldenRingSeamlessCoopRelease`, GitHub releases; issues disabled, so no breakage search), Mod Engine 3 (me3) |
 | Valheim | `/valheim/` | Steam news (892970) | BepInExPack Valheim (Thunderstore), Jötunn (GitHub) |
 | Terraria | `/terraria/` | Steam news (105600) | tModLoader (GitHub) |
-| RimWorld | `/rimworld/` | Steam news (294100) | Harmony (agnostic), HugsLib (GitHub) |
-| Mount & Blade II: Bannerlord | `/bannerlord/` | Steam news (261550) | BLSE, Harmony (agnostic) |
-| Starfield | `/starfield/` | Steam (1716740) | SFSE (tags + sfse.silverlock.org); Address Library (manual) |
-| Elden Ring | `/elden-ring/` | Steam (1245620) | Seamless Co-op, me3 (GitHub releases) |
-| Valheim | `/valheim/` | Steam (892970) | BepInExPack_Valheim (Thunderstore), Jötunn (GitHub) |
-| Terraria | `/terraria/` | Steam (105600) | tModLoader (GitHub) |
-| RimWorld | `/rimworld/` | Steam (294100) | HugsLib; Harmony (agnostic) |
-| Bannerlord | `/bannerlord/` | Steam (261550) | BLSE; Harmony (agnostic) |
+| RimWorld | `/rimworld/` | Steam news (294100) | HugsLib (GitHub); Harmony (agnostic) |
+| Mount & Blade II: Bannerlord | `/bannerlord/` | Steam news (261550) | BLSE (GitHub); Harmony (agnostic) |
 | Minecraft Java | `/minecraft/` | Mojang version manifest | Fabric Loader (meta), Fabric API/Sodium/Iris/Lithium (Modrinth), Forge (promotions), NeoForge (Maven) |
+| Steam Deck (SteamOS) | `/steam-deck/` | Steam news (1675200, stable-channel `SteamOS x.y.z` posts only) | Decky Loader (GitHub); SteamGridDB, CSS Loader, ProtonDB Badges, PowerTools (Decky store API, agnostic) |
+| MSFS 2024 | `/msfs-2024/` | Steam news (2537590) | FlyByWire A32NX, MobiFlight (GitHub releases), FSUIPC7 (fsuipc.com); Navigraph (manual) |
+| MSFS 2020 | `/msfs-2020/` | Steam news (1250410) | FlyByWire A32NX, MobiFlight (GitHub releases), FSUIPC7 (fsuipc.com); Navigraph (manual) |
 | DOOM: The Dark Ages (Steam only) | `/doom-the-dark-ages/` | Steam public build via api.steamcmd.net (3017860) | Atlan Mod Loader (GitHub `ModLoader` release, dated by asset `updated_at`); Safe when [AtlanPatcher.txt](https://dcealopez.es/AtlanPatcher.txt) has a `darkage_steam_MMDDYYYY` entry on/after the Steam build date |
+
+Steam-news games are also checked against the Steam public-branch build (api.steamcmd.net); a build change with no matching post is flagged as an unannounced update. Hotfixes announced only off Steam (developer sites, X, forums) are recorded by hand with sources in `data/manual/silent-patches.json`. For GTA V, a Steam build that differs from the recorded `steam_builds` forces "Just patched, wait" until the manual record is re-checked.
 
 Games are configured in `src/games.py`. "Manual" items (Nexus-only) are linked but excluded from the verdict; ModSafe never scrapes Nexus or SteamDB.
 A game's verdict is the weakest status among its auto-tracked frameworks.
@@ -39,7 +38,7 @@ Statuses are evidence-based and deliberately cautious:
 | **Likely safe** | Release dated after the patch without naming it, or patch >7 days old with no open breakage issues (issues filed within 30 days of the patch whose titles mention crash/broken + update/patch/version) |
 | **Just patched, wait** | Patch <7 days old and no post-patch release |
 | **Breakage reported** | Open GitHub issues report breakage after the patch |
-| **Not ported yet** | Minecraft: no build for that version |
+| **Not ported yet** | No build for the current game version (Minecraft loaders; Script Hook V for an edition it does not list) |
 | **Not affected by patches** | Version-agnostic tool (BG3 Mod Manager, BepInExPack); excluded from verdict |
 | **Check manually** | Nexus-only (Address Library, Buffout 4); excluded from verdict |
 
@@ -155,7 +154,7 @@ After build, `dist/` includes:
 | **Domain `modsafe.app`** | Bought (Cloudflare) — set as `SITE_URL` |
 | **Cloudflare account + Pages project** | Connect GitHub `mckeekyle` repo and custom domain |
 | **GitHub repo under `mckeekyle`** | Push this code; enable Actions |
-| **Newsletter provider** | Form is a placeholder (Buttondown / Mailchimp / ConvertKit) |
+| **Newsletter provider** | beehiiv (ModSafe Patch Alerts), embedded on every page |
 | **Sponsor contact** | Placeholder `sponsors@modsafe.app` |
 
 No paid APIs required. Steam news and GitHub releases are public.

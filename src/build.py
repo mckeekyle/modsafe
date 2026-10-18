@@ -491,7 +491,7 @@ def footer() -> str:
     return f"""<footer class="footer"><div class="footer-in">
 <div>{brand()}
 <p>Know if your mods survived the patch before you hit update.</p>
-<p>Not affiliated with any game developer, publisher, Nexus Mods, Thunderstore, Modrinth or Mojang. Game art © its respective owners. Data from public sources (Steam, GitHub, Thunderstore, Mojang, Fabric, Forge, NeoForge, Modrinth, the Decky plugin store, silverlock.org, fsuipc.com) plus a hand-checked GTA V record. Dates are UTC.</p></div>
+<p>Not affiliated with any game developer, publisher, Nexus Mods, Thunderstore, Modrinth or Mojang. Game art © its respective owners. Data from public sources (Steam, api.steamcmd.net, GitHub, Thunderstore, Mojang, Fabric, Forge, NeoForge, Modrinth, the Decky plugin store, silverlock.org, fsuipc.com, the Atlan patcher list) plus hand-checked records (GTA V, console mods, off-Steam hotfixes). Dates are UTC.</p></div>
 <div><nav aria-label="Footer">{game_links} <a href="/faq/">FAQ</a> <a href="/newsletter/">Alerts</a></nav>
 <p class="dev">For developers &amp; AI: <a href="/games.json">Data (JSON)</a> · <a href="/llms.txt">llms.txt</a></p></div>
 </div></footer>"""
@@ -608,6 +608,11 @@ def verdict_sentence(game: dict, data: dict) -> str:
         msg = f"{p} is under a week old and {', '.join(worst)} {'has' if len(worst) == 1 else 'have'} not updated yet. Hold the update a few days."
     elif v == "Breakage reported":
         msg = f"Open issues report breakage after {p} for {', '.join(worst)}. Hold the update or check the linked reports."
+    elif v == "Not ported yet" and game.get("kind") == "manual":
+        # Hand-maintained hooks (Script Hook V) can lag on one edition only: say which, from the framework reason.
+        why = " ".join(f"{f['name']}: {re.sub(r' [(]Manually verified [^)]*[)][.]?$', '', f.get('reason', ''))}"
+                       for f in fws if f["status"] == v)
+        msg = f"{why} Stay on your current version if you depend on it."
     elif v == "Not ported yet":
         msg = f"{', '.join(worst)} {'has' if len(worst) == 1 else 'have'} no build for {p} yet. Stay on your current version if you depend on them."
     else:
@@ -632,7 +637,7 @@ STATUS_EXPLAINER = (
     "build for that game version). Likely safe: a release is dated after the patch but doesn't name it, or the patch is "
     "over a week old with no breakage reports on the project's issue tracker. Just patched, wait: the patch is under 7 "
     "days old and the framework hasn't updated. Breakage reported: open issues report the framework broke after the "
-    "patch. Not ported yet (Minecraft): no build exists for that version. Not affected by patches: version-agnostic "
+    "patch. Not ported yet: no build exists for the current game version yet (Minecraft loaders, Script Hook V). Not affected by patches: version-agnostic "
     "tools such as mod managers or generic loaders; they don't count toward the verdict."
 )
 
@@ -642,7 +647,7 @@ LEGEND = [
     ("Likely safe", "Released after the patch without naming it, or the patch is over a week old with no breakage reports."),
     ("Just patched, wait", "The patch is under 7 days old and the framework hasn't updated yet."),
     ("Breakage reported", "Open issues on the project's tracker say it broke after the patch."),
-    ("Not ported yet", "Minecraft: no build exists for that version yet."),
+    ("Not ported yet", "No build exists for the current game version yet (Minecraft loaders, Script Hook V)."),
     ("Not affected by patches", "Version-agnostic tools (mod managers, generic loaders). Not counted in the verdict."),
     ("Check manually", "Tools without a public release feed (e.g. Nexus-only). Not counted in the verdict."),
 ]
@@ -661,7 +666,8 @@ def faq_article(item: dict, tag: str = "h3", idx: int | None = None) -> str:
 SOURCE_NAMES = {"github": "GitHub releases", "github_tags": "GitHub tags", "thunderstore": "the Thunderstore API",
                 "decky_store": "the Decky plugin store API", "fsuipc": "fsuipc.com", "mc_fabric": "Fabric meta",
                 "mc_forge": "Forge promotions", "mc_neoforge": "NeoForge maven", "mc_modrinth": "the Modrinth API",
-                "manual_shv": "a hand-checked Script Hook V record", "manual": None}
+                "manual_shv": "a hand-checked Script Hook V record",
+                "atlan": "the Atlan patcher's supported-build list and the mod loader's GitHub release", "manual": None}
 
 
 def fw_sources(game: dict) -> str:
@@ -677,17 +683,24 @@ def fw_sources(game: dict) -> str:
 
 def game_faq(game: dict, data: dict) -> list[dict]:
     p = data["game"]["latest_patch"]
-    tracked = [f["name"] for f in data["frameworks"] if f.get("tracked")]
+    by_hand = {f["name"] for f in game["frameworks"] if f.get("source") == "manual_shv"}
+    tracked = [f["name"] for f in data["frameworks"] if f.get("tracked") and f["name"] not in by_hand]
+    hand = [f["name"] for f in data["frameworks"] if f.get("tracked") and f["name"] in by_hand]
     manual = [f["name"] for f in data["frameworks"] if not f.get("tracked")]
     src = ("the Mojang version manifest" if game.get("kind") == "minecraft"
-           else "a hand-maintained record checked by ModSafe (Rockstar title updates and the Script Hook V page)" if game.get("kind") == "manual"
-           else f"official Steam announcements (app {game.get('steam_appid')})")
+           else ("a hand-maintained record checked by ModSafe (Rockstar title update notes and the Script Hook V page), "
+                 "cross-checked against each edition's Steam public build (api.steamcmd.net)") if game.get("kind") == "manual"
+           else (f"Steam's public build record (Steam PICS via api.steamcmd.net, app {game.get('steam_appid')}), "
+                 "because this game's updates often ship without a Steam post") if game.get("kind") == "atlan"
+           else f"official Steam announcements (app {game.get('steam_appid')}, stable-channel SteamOS posts)" if game.get("kind_label") == "platform"
+           else (f"official Steam announcements (app {game.get('steam_appid')}), checked against Steam's public build "
+                 "(api.steamcmd.net); updates announced only off Steam are added by hand with cited sources"))
     items = [
         {"q": f"Is it safe to update {game['name']} with mods?",
          "a": f"Current verdict: {data['verdict']}. {verdict_sentence(game, data)} Latest patch tracked: {p['label']} ({fmt_date(p.get('published_at'))})."},
         {"q": f"Why do {game['name']} mods break after a patch?", "a": game["blurb"]},
         {"q": f"Which {game['name']} frameworks does ModSafe track?",
-         "a": "Automatically: " + ", ".join(tracked) + "." + (f" Linked for manual checks (no public release API): {', '.join(manual)}." if manual else "")},
+         "a": (f"Checked by hand: {', '.join(hand)}. " if hand else "") + "Automatically: " + ", ".join(tracked) + "." + (f" Linked for manual checks (no public release API): {', '.join(manual)}." if manual else "")},
         {"q": "What do the status labels mean?", "a": STATUS_EXPLAINER},
         {"q": "Where does the data come from?",
          "a": f"Game patches come from {src}. Framework data comes from {fw_sources(game)}. ModSafe does not scrape Nexus Mods or SteamDB."},
@@ -770,10 +783,10 @@ def build_game_page(game: dict, data: dict) -> str:
 <dt>{"Latest Stable" if data.get("channels") else "Latest patch"}</dt><dd><strong>{esc(p['label'])}</strong></dd>
 <dt>Released</dt><dd>{esc(fmt_date(p.get('published_at')))}</dd>
 {f"<dt>Current runtime</dt><dd>{esc(p['runtime_note'])}</dd>" if p.get('runtime_note') else ""}
-{f"<dt>Unannounced update</dt><dd>Steam's public build changed on {esc(fmt_date(p['unannounced_update']['published_at']))} (build <code>{esc(p['unannounced_update'].get('buildid') or '?')}</code>) with no patch announcement. Version unknown.</dd>" if p.get('unannounced_update') else ""}
+{f"<dt>Unannounced update</dt><dd>Steam's public {esc(p['unannounced_update']['edition'].title() + ' ') if p['unannounced_update'].get('edition') else ''}build changed on {esc(fmt_date(p['unannounced_update']['published_at']))} (build <code>{esc(p['unannounced_update'].get('buildid') or '?')}</code>) {'after the last manual check' if p['unannounced_update'].get('edition') else 'with no patch announcement'}. Version unknown.</dd>" if p.get('unannounced_update') else ""}
 <dt>Source</dt><dd><a href="{esc(p.get('url', ''))}">{esc(p.get('title', ''))}</a></dd>
 {snap}
-{f"<dt>Builds</dt><dd>" + ", ".join(f"{esc(k.title())} <code>{esc(v)}</code>" for k, v in p["builds"].items()) + "</dd>" if p.get("builds") else ""}
+{f"<dt>Builds</dt><dd>" + ", ".join(f"{esc(k.title())} <code>{esc(v)}</code>" + (f" <span class='muted'>(since {esc((p.get('build_dates') or {})[k])})</span>" if (p.get('build_dates') or {}).get(k) else "") for k, v in p["builds"].items()) + "</dd>" if p.get("builds") else ""}
 {f"<dt>Last manually verified</dt><dd><strong>{esc(data['last_verified'])}</strong> <span class='muted'>(hand-maintained data)</span></dd>" if data.get("last_verified") else ""}
 {"".join(f"<dt>{esc(c['name'])}</dt><dd><a href='{esc(c['url'])}'>{esc(c['title'])}</a> <span class='muted'>· {esc(fmt_date(c['published_at']))} · not counted in the verdict</span></dd>" for c in data.get("channels", []))}
 <dt>Data refreshed</dt><dd>{esc(fmt_date(data.get('generated_at')))} <span class="muted">(UTC)</span></dd>
@@ -1116,7 +1129,7 @@ GENERAL_FAQ = [
     {"q": "Why are some frameworks marked “Check manually”?",
      "a": "Some core mods (for example Address Library and Buffout 4) are only distributed on Nexus Mods, and some tools (like Navigraph) have no public release feed. ModSafe doesn't scrape Nexus Mods, so these are linked for you to check instead of guessed at, and they're left out of the verdict."},
     {"q": "Where does the data come from?",
-     "a": "Steam Web API news (official announcements), Mojang's version manifest, GitHub releases/tags and issues, the Thunderstore package API, Fabric meta, Forge promotions, NeoForge Maven, the Modrinth API, the Decky plugin store API, the official silverlock.org script extender pages and fsuipc.com. GTA V uses a hand-checked record (dates shown on its page). Refreshed automatically every 6 hours."},
+     "a": "Steam Web API news (official announcements), Mojang's version manifest, GitHub releases/tags and issues, the Thunderstore package API, Fabric meta, Forge promotions, NeoForge Maven, the Modrinth API, the Decky plugin store API, the official silverlock.org script extender pages, fsuipc.com, Steam public-build info (api.steamcmd.net) and the Atlan patcher's build list. GTA V, console mods and hotfixes announced only off Steam use hand-checked records with cited sources (dates shown on each page). Refreshed automatically every 6 hours."},
     {"q": "Which games are covered?", "a": ", ".join(g["name"] for g in GAMES) + "."},
 ]
 

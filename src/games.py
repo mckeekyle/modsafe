@@ -12,6 +12,7 @@ Flags:
                        and excluded from the verdict. Everything else is patch-sensitive.
   official_page     -> maintainer page listing the supported runtime (silverlock.org) used as support evidence
   issues_repo       -> GitHub repo searched for post-patch breakage reports (defaults to repo)
+  no_issue_tracker  -> True when the repo has GitHub issues disabled (never claim 'no breakage reports')
 """
 
 from status_logic import FRAMEWORKS as CP_FRAMEWORKS
@@ -228,13 +229,14 @@ GAMES = [
         },
         "frameworks": [
             {"id": "seamless-coop", "name": "Seamless Co-op", "short": "Seamless Co-op", "source": "github",
-             "repo": "LukeYui/EldenRingSeamlessCoopRelease", "url": "https://github.com/LukeYui/EldenRingSeamlessCoopRelease"},
+             "repo": "yuiamoroll/EldenRingSeamlessCoopRelease", "url": "https://github.com/yuiamoroll/EldenRingSeamlessCoopRelease",
+             "no_issue_tracker": True},  # repo renamed from LukeYui/…; GitHub issues are disabled
             {"id": "me3", "name": "Mod Engine 3 (me3)", "short": "me3", "source": "github",
              "repo": "garyttierney/me3", "url": "https://github.com/garyttierney/me3"},
         ],
         "note": "Only use mods offline or with Seamless Co-op. Playing modded online with official matchmaking can get you soft-banned.",
         "wiki": "https://github.com/garyttierney/me3",
-        "blurb": "Elden Ring patches regularly break Seamless Co-op (it must match the game version) and DLL mods loaded through Mod Engine.",
+        "blurb": "Elden Ring patches regularly break Seamless Co-op (each release targets specific game versions, and all players need the same one) and DLL mods loaded through Mod Engine or me3.",
     },
     {
         "slug": "valheim",

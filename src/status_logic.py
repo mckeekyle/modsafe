@@ -235,17 +235,24 @@ def determine_framework_status(
     if release_dt and patch_dt:
         newer_than_patch = release_dt >= patch_dt
 
+    # A match through a declared range/series ("v1.4.x", "Update to RimWorld 1.6") never names the exact build.
+    nums = re.findall(r"\d+(?:\.\d+)*", patch_version)
+    via_range = bool(mentions and nums and nums[-1] not in combined_notes)
     if mentions and newer_than_patch:
         status = STATUS_UPDATED
         reason = (
+            f"Latest release notes declare support for a version series/range that includes {patch_version}, "
+            f"and the release is on/after the patch date." if via_range else
             f"Latest release notes mention patch {patch_version} "
             f"and the release is on/after the patch date."
         )
     elif mentions and not newer_than_patch:
-        # Unusual: notes mention patch but dated earlier (scheduled/wrong clock) —
-        # still treat as updated if explicit mention exists.
+        # Notes cover the patch but are dated earlier (series support, scheduled release or wrong clock) —
+        # still treat as updated if explicit support exists.
         status = STATUS_UPDATED
         reason = (
+            f"Release notes declare support for a version series/range that includes {patch_version}, "
+            f"even though the release predates this build." if via_range else
             f"Release notes mention patch {patch_version}, "
             f"even though the release timestamp is before the patch announcement."
         )
@@ -696,16 +703,40 @@ def parse_silverlock(text: str) -> Optional[dict[str, str]]:
 MANUAL_STALE_DAYS = 14
 
 
-def manual_hook_verdict(*, supported: list[str], current: list[str], patch_age: float, verified_age: float) -> dict[str, str]:
-    """Verdict for a hand-maintained 'supported builds' record (e.g. Script Hook V)."""
-    missing = [b for b in current if b not in supported]
+def manual_hook_verdict(*, supported: list[str], current, patch_age: float, verified_age: float,
+                        build_ages: Optional[dict[str, float]] = None) -> dict[str, str]:
+    """Verdict for a hand-maintained 'supported builds' record (e.g. Script Hook V).
+
+    `current` is a list of builds or a dict edition -> build (e.g. {"legacy": ..., "enhanced": ...}); with a dict the
+    reason names each edition, so one edition lagging (GTA V Enhanced) is not hidden behind the other. `build_ages`
+    (edition -> days since that build went live) decides "wait" vs "not ported" per missing build."""
+    named = isinstance(current, dict)
+    items = list(current.items()) if named else [(None, b) for b in current]
+    def lbl(ed, b):
+        return f"{ed.title()} {b}" if ed else b
+    missing = [(ed, b) for ed, b in items if b not in supported]
     if not missing:
         if verified_age > MANUAL_STALE_DAYS:
             return {"status": V_LIKELY, "reason": f"Supported builds matched the game when last checked, but that was {int(verified_age)} days ago."}
-        return {"status": V_SAFE, "reason": "Supports the current game build(s): " + ", ".join(current) + "."}
-    if patch_age < FRESH_PATCH_DAYS:
-        return {"status": V_WAIT, "reason": "No build yet for " + ", ".join(missing) + "; the update is under a week old."}
-    return {"status": V_NOT_PORTED, "reason": "No build yet for " + ", ".join(missing) + "."}
+        return {"status": V_SAFE, "reason": "Supports the current game build(s): " + ", ".join(lbl(e, b) for e, b in items) + "."}
+    ok = [(ed, b) for ed, b in items if b in supported]
+    prefix = ("Supports " + ", ".join(lbl(e, b) for e, b in ok) + ". ") if ok else ""
+    ages = [(build_ages or {}).get(ed, patch_age) if ed else patch_age for ed, _ in missing]
+    if min(ages) < FRESH_PATCH_DAYS:
+        return {"status": V_WAIT, "reason": prefix + "No build yet for " + ", ".join(lbl(e, b) for e, b in missing) + "; the update is under a week old."}
+    return {"status": V_NOT_PORTED, "reason": prefix + "No build yet for " + ", ".join(lbl(e, b) for e, b in missing) + "."}
+
+
+def manual_build_drift(recorded: Optional[dict[str, str]], public: dict[str, Optional[dict]]) -> list[dict[str, Any]]:
+    """Editions whose Steam public build (PICS) differs from the buildid recorded at the last manual check.
+    Unknown/failed lookups and editions with no recorded buildid are ignored (never invent a change)."""
+    out = []
+    for ed, b in (public or {}).items():
+        rec = (recorded or {}).get(ed)
+        if not b or not rec or not b.get("buildid") or str(b["buildid"]) == str(rec):
+            continue
+        out.append({"edition": ed, "buildid": str(b["buildid"]), "recorded": str(rec), "published_at": b["published_at"]})
+    return out
 
 
 def merge_silent_patches(patches: list[dict[str, Any]], silent: list[dict[str, Any]]) -> list[dict[str, Any]]:
