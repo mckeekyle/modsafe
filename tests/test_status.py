@@ -131,6 +131,18 @@ class TestPickRelease(unittest.TestCase):
         latest = pick_latest_stable_release(releases)
         self.assertEqual(latest["tag_name"], "v1.9.0")
 
+    def test_skips_test_build_marked_stable(self):
+        releases = [
+            {"tag_name": "11.3.1.1-sign01", "name": "Test Release for validating Code Signing", "prerelease": False, "draft": False, "published_at": "2026-10-18T07:40:42Z", "body": ""},
+            {"tag_name": "11.3.1", "name": "11.3.1 (Hotfix)", "prerelease": False, "draft": False, "published_at": "2026-10-06T10:51:23Z", "body": ""},
+        ]
+        self.assertEqual(pick_latest_stable_release(releases)["tag_name"], "11.3.1")
+
+    def test_normal_tags_not_flagged(self):
+        from status_logic import is_effectively_prerelease
+        for tag, name in [("v2.0.0", "Release v2.0.0"), ("26.3.0.92", ""), ("1.21.10-0.17.3", "Fabric"), ("v3.3.0", "Release v3.3.0"), ("11.3.1", "11.3.1 (Hotfix)")]:
+            self.assertFalse(is_effectively_prerelease({"tag_name": tag, "name": name, "prerelease": False}), tag)
+
 
 class TestHistoryHelper(unittest.TestCase):
     def test_history_prefers_mention(self):

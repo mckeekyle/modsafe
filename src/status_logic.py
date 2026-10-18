@@ -179,9 +179,24 @@ def notes_mention_patch(notes: str, patch_version: str) -> bool:
     return True
 
 
+_TEST_TAG_RE = re.compile(r"[-_.+](?:test|testing|sign|nightly|ci)\d*$", re.I)
+_TEST_NAME_RE = re.compile(r"\btest(?:ing)?\s+(?:release|build)\b|\bfor\s+(?:testing|validat\w*)\b|\bdo not use\b", re.I)
+
+
+def is_effectively_prerelease(r: dict[str, Any]) -> bool:
+    """True for GitHub prereleases and for "stable" releases that are really
+    test/CI builds (e.g. MobiFlight's "Test Release for validating Code
+    Signing", tag 11.3.1.1-sign01), which must not count as post-patch support."""
+    if r.get("prerelease"):
+        return True
+    tag = (r.get("tag_name") or "").strip()
+    name = (r.get("name") or "").strip()
+    return bool(_TEST_TAG_RE.search(tag) or _TEST_NAME_RE.search(name))
+
+
 def pick_latest_stable_release(releases: list[dict[str, Any]]) -> Optional[dict[str, Any]]:
     """Prefer the newest non-prerelease; fall back to newest including prereleases."""
-    stables = [r for r in releases if not r.get("prerelease") and not r.get("draft")]
+    stables = [r for r in releases if not is_effectively_prerelease(r) and not r.get("draft")]
     pool = stables if stables else [r for r in releases if not r.get("draft")]
     if not pool:
         return None
@@ -283,7 +298,7 @@ def status_for_patch_history(
         if hit:
             mentioned.append(r)
         rdt = parse_iso(pub)
-        if patch_dt and rdt and rdt >= patch_dt and not r.get("prerelease"):
+        if patch_dt and rdt and rdt >= patch_dt and not is_effectively_prerelease(r):
             after.append(r)
 
     if mentioned:

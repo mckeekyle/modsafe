@@ -1,6 +1,6 @@
 {
   "_comment": "Hand-maintained. Builds never fetch dev-c.com. Refresh per /workspace/modsafe-ops-log.md (GTA V step), then bump last_verified.",
-  "last_verified": "2026-10-17",
+  "last_verified": "2026-10-18",
   "verified_by": "ModSafe ops (manual check)",
   "latest_patch": {
     "label": "Title Update 1.73",
@@ -13,7 +13,7 @@
       "https://gta.wiki/w/Grand_Theft_Auto_V/Title_Update_Notes/Update-2026-07-14",
       "https://www.reddit.com/r/lspdfr/comments/1uwf499/gta_v_update_july_2026/"
     ],
-    "notes": "Later 1.73 'additional updates' (Jul 16 – Oct 1, Enhanced-only on Sep 15) are listed as event/bug-fix updates; no newer executable build was found as of last_verified (re-checked 2026-10-17: latest listed item is the Oct 1 Halloween event week; Script Hook V still v3889.0 / 1158.13)."
+    "notes": "Later 1.73 'additional updates' (Jul 16 – Oct 1, Enhanced-only on Sep 15) are listed as event/bug-fix updates; no newer executable build was found as of last_verified (re-checked 2026-10-18: latest listed item is the Oct 1 Halloween event week; Script Hook V still v3889.0 / 1158.13)."
   },
   "script_hook_v": {
     "version": "v3889.0 / 1158.13",

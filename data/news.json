@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T18:23:42Z",
+  "generated_at": "2026-10-18T19:06:05Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,24 @@
     }
   ],
   "items": [
+    {
+      "title": "Dark Souls 2 dataminer shows off massive prototype coliseum level from early development",
+      "url": "https://www.pcgamer.com/games/dark-souls/dark-souls-2-dataminer-shows-off-massive-prototype-coliseum-level-from-early-development/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-18T18:48:42Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Leaked AI safety bill from Anthropic only requires government intervention if 50+ injuries or $1 billion are at risk",
+      "url": "https://www.pcgamer.com/software/ai/leaked-ai-safety-bill-from-anthropic-only-lets-government-act-if-50-deaths-or-usd1-billion-are-on-the-line/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-18T18:44:11Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Battlefield 6 devs to fix \"Secuty\" skin typo, but five-pistol outfit was intentional",
       "url": "https://www.eurogamer.net/battlefield-6-secuty-typo-five-pistol-skin-devs-respond",
@@ -231,8 +249,8 @@
       "highlight": false
     },
     {
-      "title": "Surprising no-one, Wizards of the Coast 'doesn't intend to voluntarily recognize' union efforts for the second time this year",
-      "url": "https://www.pcgamer.com/gaming-industry/surprising-no-one-wizards-of-the-coast-doesnt-intend-to-voluntarily-recognize-union-efforts-for-the-second-time-this-year/",
+      "title": "Discussion time: Do you think zone chats in MMOs are forces for good, or evil?",
+      "url": "https://www.pcgamer.com/games/world-of-warcraft/discussion-time-do-you-think-zone-chats-in-mmos-are-forces-for-good-or-evil/",
       "source": "PC Gamer",
       "published_at": "2026-10-17T17:00:00Z",
       "games": [],
@@ -240,8 +258,8 @@
       "highlight": false
     },
     {
-      "title": "Discussion time: Do you think zone chats in MMOs are forces for good, or evil?",
-      "url": "https://www.pcgamer.com/games/world-of-warcraft/discussion-time-do-you-think-zone-chats-in-mmos-are-forces-for-good-or-evil/",
+      "title": "Surprising no-one, Wizards of the Coast 'doesn't intend to voluntarily recognize' union efforts for the second time this year",
+      "url": "https://www.pcgamer.com/gaming-industry/surprising-no-one-wizards-of-the-coast-doesnt-intend-to-voluntarily-recognize-union-efforts-for-the-second-time-this-year/",
       "source": "PC Gamer",
       "published_at": "2026-10-17T17:00:00Z",
       "games": [],
@@ -550,24 +568,6 @@
       "games": [
         "steam-deck"
       ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Wardogs devs rush to fix XP exploit allowing players to quickly unlock tanks and stomp competition on Season 2's first day",
-      "url": "https://www.eurogamer.net/wardogs-driver-xp-exploit-season-2-tanks",
-      "source": "Eurogamer",
-      "published_at": "2026-10-16T13:41:05Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Modern Warfare 4 release times and early access explained",
-      "url": "https://www.pcgamer.com/games/call-of-duty/modern-warfare-4-release-date-launch-times-early-access/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-16T12:44:53Z",
-      "games": [],
       "kind": "news",
       "highlight": false
     }
