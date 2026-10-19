@@ -155,7 +155,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 code { font-family: var(--mono); font-size: .88em; color: #cfe3ff; }
 .skip { position: absolute; left: -9999px; }
 .skip:focus { left: 1rem; top: 1rem; z-index: 100; background: var(--focus); color: #000; padding: .5rem 1rem; }
-.muted, .disclaimer, .nl-note { color: var(--muted); }
+.muted, .disclaimer { color: var(--muted); }
 .disclaimer { font-size: .9rem; }
 
 /* header */
@@ -169,8 +169,6 @@ code { font-family: var(--mono); font-size: .88em; color: #cfe3ff; }
 .nav a { color: var(--muted); text-decoration: none; font-weight: 600; padding: .45rem .8rem; border-radius: 999px; transition: .15s; }
 .nav a:hover { color: var(--text); background: rgba(255,255,255,.06); }
 .nav a[aria-current="page"] { color: #031018; background: var(--neon); box-shadow: 0 0 18px rgba(0,240,255,.45); }
-.nav a.cta { border: 1px solid var(--neon2); color: #ffd1dd; }
-.nav a.cta:hover { background: rgba(255,42,109,.18); }
 
 main { max-width: 1200px; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
 section { margin: 0 0 1.75rem; }
@@ -245,12 +243,9 @@ section { margin: 0 0 1.75rem; }
 .stretched::after { content: ""; position: absolute; inset: 0; z-index: 3; }
 
 /* panels */
-.panel, .newsletter, .faq-item, .hist-card { background: linear-gradient(180deg, var(--panel2), var(--panel)); border: 1px solid var(--line);
+.panel, .faq-item, .hist-card { background: linear-gradient(180deg, var(--panel2), var(--panel)); border: 1px solid var(--line);
   border-radius: var(--r); padding: clamp(1.1rem, 2.5vw, 1.6rem); }
-.newsletter { position: relative; overflow: hidden; border-color: rgba(255,42,109,.45);
   background: radial-gradient(600px 200px at 100% 0%, rgba(255,42,109,.22), transparent 70%), radial-gradient(500px 200px at 0% 100%, rgba(0,240,255,.15), transparent 70%), var(--panel); }
-.newsletter h2 { text-transform: uppercase; }
-.newsletter h2::before { content: "🔔 "; }
 
 /* game hero */
 .crumbs { color: var(--dim); font-size: .88rem; margin: 0 0 .7rem; }
@@ -381,10 +376,10 @@ main > .crumbs + * { margin-top: var(--s3); }
 main > .tabs { margin-top: var(--s4); }
 main > .tabs + * { margin-top: var(--s5); }
 main > .disclaimer { margin-top: var(--s4); }
-.panel, .newsletter, .faq-item, .hist-card { padding: var(--s5); }
-.panel > :first-child, .newsletter > :first-child, .faq-item > :first-child, .hist-card > :first-child { margin-top: 0; }
-.panel > :last-child, .newsletter > :last-child, .faq-item > :last-child, .hist-card > :last-child { margin-bottom: 0; }
-.panel h2, .newsletter h2 { margin-bottom: var(--s3); }
+.panel, .faq-item, .hist-card { padding: var(--s5); }
+.panel > :first-child, .faq-item > :first-child, .hist-card > :first-child { margin-top: 0; }
+.panel > :last-child, .faq-item > :last-child, .hist-card > :last-child { margin-bottom: 0; }
+.panel h2 { margin-bottom: var(--s3); }
 .game-grid { gap: var(--s5); }
 .fw-grid { gap: var(--s4); }
 .faq-list, .hist-list { gap: var(--s3); }
@@ -406,13 +401,8 @@ main > .disclaimer { margin-top: var(--s4); }
 .patch-meta dt { font-size: .78rem; color: var(--muted); }
 .news li { padding: var(--s3) var(--s2); }
 .news li.hl { padding-left: var(--s3); }
-.newsletter .nl-note { margin-top: var(--s3); font-size: .88rem; }
-.newsletter iframe, .newsletter [data-beehiiv-form] { display: block; max-width: 100%; margin: var(--s3) 0 0; }
 .legend-dl { display: grid; grid-template-columns: max-content 1fr; gap: var(--s3) var(--s4); margin: 0; align-items: baseline; }
 .legend-dl dd { margin: 0; color: #c8d3e8; }
-.benefits { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--s3); grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
-.benefits li { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: var(--s4); }
-.benefits strong { display: block; font-family: var(--head); font-size: 1.05rem; margin-bottom: var(--s1); }
 .footer-in { padding: var(--s7) var(--s5) var(--s7); gap: var(--s6); }
 .footer p { margin: 0 0 var(--s3); }
 .footer nav { gap: var(--s2) var(--s4); }
@@ -448,7 +438,7 @@ html, body { overflow-x: hidden; }
   .game-grid { gap: var(--s4); }
 }
 @media (max-width: 560px) {
-  .panel, .newsletter, .faq-item, .hist-card { padding: var(--s4); }
+  .panel, .faq-item, .hist-card { padding: var(--s4); }
   .legend-dl { grid-template-columns: 1fr; gap: var(--s1); }
   .legend-dl dd { margin-bottom: var(--s3); }
   .home-hero, .game-hero { padding: var(--s5) var(--s4); }
@@ -459,9 +449,6 @@ html, body { overflow-x: hidden; }
 """
 
 
-NEWSLETTER_FORM_ID = "f428d642-3e93-4ca7-969a-8882ba5d2129"
-NEWSLETTER_URL = "https://modsafes-newsletter.beehiiv.com/subscribe"
-NEWSLETTER_COPY = "Get patch-day alerts: know if your mods survived before you update."
 
 
 def games_menu(active: str) -> str:
@@ -472,12 +459,11 @@ def games_menu(active: str) -> str:
 
 
 def nav(active: str) -> str:
-    links = [("/news/", "news", "News"), ("/faq/", "faq", "FAQ"), ("/newsletter/", "newsletter", "🔔 Alerts")]
+    links = [("/news/", "news", "News"), ("/faq/", "faq", "FAQ")]
     items = [games_menu(active)]
     for href, key, label in links:
         aria = ' aria-current="page"' if key == active else ""
-        cls = ' class="cta"' if key == "newsletter" and key != active else ""
-        items.append(f'<a href="{href}"{aria}{cls}>{esc(label)}</a>')
+        items.append(f'<a href="{href}"{aria}>{esc(label)}</a>')
     return f'<nav class="nav" aria-label="Primary">{" ".join(items)}</nav>'
 
 
@@ -492,7 +478,7 @@ def footer() -> str:
 <div>{brand()}
 <p>Know if your mods survived the patch before you hit update.</p>
 <p>Not affiliated with any game developer, publisher, Nexus Mods, Thunderstore, Modrinth or Mojang. Game art © its respective owners. Data from public sources (Steam, api.steamcmd.net, GitHub, Thunderstore, Mojang, Fabric, Forge, NeoForge, Modrinth, the Decky plugin store, silverlock.org, fsuipc.com, the Atlan patcher list) plus hand-checked records (GTA V, console mods, off-Steam hotfixes). Dates are UTC.</p></div>
-<div><nav aria-label="Footer">{game_links} <a href="/faq/">FAQ</a> <a href="/newsletter/">Alerts</a></nav>
+<div><nav aria-label="Footer">{game_links} <a href="/news/">News</a> <a href="/faq/">FAQ</a></nav>
 <p class="dev">For developers &amp; AI: <a href="/games.json">Data (JSON)</a> · <a href="/llms.txt">llms.txt</a></p></div>
 </div></footer>"""
 
@@ -504,15 +490,6 @@ def sponsor_slot() -> str:
 <p class="sponsor-label">Sponsor slot</p>
 <p>Your modding tool or host here. <a href="mailto:sponsors@modsafe.app">Contact</a> (placeholder).</p>
 </aside>"""
-
-
-def newsletter(heading_level: str = "h2", heading: bool = True) -> str:
-    head = f'<{heading_level} id="nl-heading">Patch-day alerts</{heading_level}>\n<p>{esc(NEWSLETTER_COPY)}</p>' if heading else '<h2 id="nl-heading" class="sr">Subscribe</h2>'
-    return f"""<section class="newsletter" aria-labelledby="nl-heading">
-{head}
-<script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="{NEWSLETTER_FORM_ID}"></script>
-<p class="nl-note">Form not loading? <a href="{NEWSLETTER_URL}">Subscribe on beehiiv →</a></p>
-</section>"""
 
 
 def cf_beacon() -> str:
@@ -535,7 +512,6 @@ def page_shell(title, description, path, active, body, extra_jsonld=None) -> str
 {body}
 </main>
 {footer()}
-<script type="text/javascript" async src="https://subscribe-forms.beehiiv.com/attribution.js"></script>
 {cf_beacon()}{MENU_JS}
 </body>
 </html>
@@ -802,7 +778,6 @@ def build_game_page(game: dict, data: dict) -> str:
 {console_mods_section(slug)}
 <div class="sec-head" id="news"><h2>{esc(game['short'])} news</h2><a href="/news/">All news →</a></div>
 <section class="panel">{news_list(game_news(slug, data), 8)}</section>
-{newsletter()}
 <div class="sec-head"><h2 id="faq-heading">{esc(game['short'])} modding FAQ</h2></div>
 <section class="faq-list" aria-labelledby="faq-heading">
 {faq_html}
@@ -1075,7 +1050,7 @@ def build_home(games_data: list[tuple[dict, dict]]) -> str:
 <h1>Did your mods <em>survive</em> the patch?</h1>
 <p class="lede">A new update drops, and script extenders and mod loaders break first. ModSafe watches every game's core frameworks so you know whether to hit update or hold the line.</p>
 <div class="legend"><span class="badge ok">{icon("Safe")}Safe</span><span class="badge likely">{icon("Likely safe")}Likely safe</span><span class="badge wait">{icon("Just patched, wait")}Just patched, wait</span><span class="badge broken">{icon("Breakage reported")}Breakage reported</span></div>
-<div class="hero-actions"><a class="btn" href="#games">🎮 Pick your game</a> <a class="btn ghost" href="/newsletter/">🔔 Get patch alerts</a></div>
+<div class="hero-actions"><a class="btn" href="#games">🎮 Pick your game</a> <a class="btn ghost" href="/faq/">❓ How it works</a></div>
 <div class="stats"><div><strong>{n_games}</strong>games{f" + {n_plat} platform" if n_plat else ""}</div><div><strong>{n_fw}</strong>frameworks auto-tracked</div><div><strong>{n_ok}/{len(games_data)}</strong>safe or likely safe now</div></div>
 </section>
 <div class="sec-head" id="games"><h2>Choose your game</h2><a href="/games/">All games →</a></div>
@@ -1086,7 +1061,6 @@ def build_home(games_data: list[tuple[dict, dict]]) -> str:
 </section>
 <div class="sec-head"><h2>Latest gaming news</h2><a href="/news/">All news →</a></div>
 <section class="panel">{news_list(news.get("items", []), 8)}</section>
-{newsletter()}
 <section class="panel"><h2>How we call it</h2>{legend_html()}
 <p style="margin-top:var(--s4)"><a href="/faq/">Read the FAQ →</a></p></section>
 """
@@ -1138,23 +1112,9 @@ def build_faq() -> str:
     arts = "".join(faq_article(it, "h2", i) for i, it in enumerate(GENERAL_FAQ))
     body = f"""<section class="page-hero"><h1>FAQ</h1><p class="lede">Updating modded games after a patch.</p></section>
 <section class="faq-list">{arts}</section>
-{newsletter()}
 <section class="panel"><p>Game-specific FAQs: {' · '.join(f'<a href="/{g["slug"]}/#faq-heading">{esc(g["name"])}</a>' for g in GAMES)}</p></section>"""
     return page_shell(f"FAQ — {SITE_NAME}", "Is it safe to update a modded game? How ModSafe decides — FAQ.", "/faq/", "faq", body,
                       extra_jsonld=[faq_ld(GENERAL_FAQ)])
-
-
-def build_newsletter_page() -> str:
-    body = f"""<p class="crumbs"><a href="/">Home</a> › Alerts</p>
-<section class="page-hero"><h1>Patch-day alerts</h1><p class="lede">{esc(NEWSLETTER_COPY)}</p></section>
-<ul class="benefits">
-<li><strong>⚡ Patch drops</strong>A heads-up when a tracked game patches, with which frameworks are already updated.</li>
-<li><strong>✔ All clear</strong>When the script extenders and loaders you rely on catch up.</li>
-<li><strong>🔕 Low noise</strong>Only patch-day news. No spam; unsubscribe any time.</li>
-</ul>
-{newsletter(heading=False)}"""
-    return page_shell(f"Patch-day alerts — {SITE_NAME}", NEWSLETTER_COPY, "/newsletter/", "newsletter", body,
-                      extra_jsonld=[breadcrumb_ld([("Home", "/"), ("Alerts", "/newsletter/")])])
 
 
 OG_SVG = """<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
@@ -1186,7 +1146,7 @@ def build_llms_txt(games_data) -> str:
             tr = "" if fw.get("tracked", True) else " [not auto-tracked]"
             lines.append(f"  - {fw['name']}: {fw['status']}{tr}; release {fw.get('release_tag')} {fw.get('release_published_at') or ''}; {fw.get('reason')}")
         lines.append("")
-    lines += ["## Pages", f"- FAQ: {SITE_URL}/faq/", f"- Alerts: {SITE_URL}/newsletter/", "",
+    lines += ["## Pages", f"- FAQ: {SITE_URL}/faq/", "",
               "Statuses are inferred from public release data; not official developer guidance.", ""]
     return "\n".join(lines)
 
@@ -1199,7 +1159,7 @@ def build_robots() -> str:
 
 
 def sitemap_urls() -> list[str]:
-    urls = ["/", "/games/", "/news/", "/faq/", "/newsletter/"]
+    urls = ["/", "/games/", "/news/", "/faq/"]
     for g in GAMES:
         urls += [f"/{g['slug']}/", f"/{g['slug']}/history/"]
         if mods_mod.load_mods(g["slug"]):
@@ -1223,6 +1183,9 @@ REDIRECTS = """# Legacy Cyberpunk-only URLs (pre multi-game)
 /skyrim /skyrim-se/ 301
 /bg3 /baldurs-gate-3/ 301
 /stardew /stardew-valley/ 301
+# Discontinued pages
+/newsletter / 301
+/newsletter/ / 301
 """
 
 
@@ -1296,7 +1259,6 @@ def main() -> int:
     write(DIST / "games" / "index.html", build_games_index(games_data))
     write(DIST / "news" / "index.html", build_news_page())
     write(DIST / "faq" / "index.html", build_faq())
-    write(DIST / "newsletter" / "index.html", build_newsletter_page())
     import shutil
     shutil.copytree(STATIC, DIST, dirs_exist_ok=True)
     write(DIST / "styles.css", CSS)

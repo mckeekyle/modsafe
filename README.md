@@ -154,7 +154,6 @@ After build, `dist/` includes:
 | **Domain `modsafe.app`** | Bought (Cloudflare) — set as `SITE_URL` |
 | **Cloudflare account + Pages project** | Connect GitHub `mckeekyle` repo and custom domain |
 | **GitHub repo under `mckeekyle`** | Push this code; enable Actions |
-| **Newsletter provider** | beehiiv (ModSafe Patch Alerts), embedded on every page |
 | **Sponsor contact** | Placeholder `sponsors@modsafe.app` |
 
 No paid APIs required. Steam news and GitHub releases are public.
