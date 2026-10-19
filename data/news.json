@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T00:31:22Z",
+  "generated_at": "2026-10-19T06:38:01Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,15 @@
     }
   ],
   "items": [
+    {
+      "title": "Steam Week in Review: Steam Next Fest has over 8,000 demos, as worthless vibe coded slop levels up",
+      "url": "https://www.pcgamer.com/gaming-industry/steam-week-in-review-steam-next-fest-has-over-8-000-demos-as-worthless-vibe-coded-slop-levels-up/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-19T03:00:45Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "23 devs teamed up to make a free game of 'innovative yet questionable volume sliders,' and it feels like browser-based WarioWare",
       "url": "https://www.pcgamer.com/games/23-devs-teamed-up-to-make-a-free-game-of-innovative-yet-questionable-volume-sliders-and-it-feels-like-browser-based-warioware/",
@@ -556,15 +565,6 @@
       "url": "https://www.eurogamer.net/galaxies-showcase-2026-games-roundup",
       "source": "Eurogamer",
       "published_at": "2026-10-16T15:04:58Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The pleasures of Double Fine's Thank You Bus Driver are not in the destination, nor the journey, but in slapping my disobedient passengers",
-      "url": "https://www.rockpapershotgun.com/the-pleasures-of-double-fines-thank-you-bus-driver-are-not-in-the-destination-nor-the-journey-but-in-slapping-my-disobedient-passengers",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-16T14:38:59Z",
       "games": [],
       "kind": "news",
       "highlight": false
