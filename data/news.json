@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T20:22:31Z",
+  "generated_at": "2026-10-19T00:31:22Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,15 @@
     }
   ],
   "items": [
+    {
+      "title": "23 devs teamed up to make a free game of 'innovative yet questionable volume sliders,' and it feels like browser-based WarioWare",
+      "url": "https://www.pcgamer.com/games/23-devs-teamed-up-to-make-a-free-game-of-innovative-yet-questionable-volume-sliders-and-it-feels-like-browser-based-warioware/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-18T22:36:22Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Dark Souls 2 dataminer shows off massive prototype coliseum level from early development",
       "url": "https://www.pcgamer.com/games/dark-souls/dark-souls-2-dataminer-shows-off-massive-prototype-coliseum-level-from-early-development/",
@@ -249,8 +258,8 @@
       "highlight": false
     },
     {
-      "title": "Surprising no-one, Wizards of the Coast 'doesn't intend to voluntarily recognize' union efforts for the second time this year",
-      "url": "https://www.pcgamer.com/gaming-industry/surprising-no-one-wizards-of-the-coast-doesnt-intend-to-voluntarily-recognize-union-efforts-for-the-second-time-this-year/",
+      "title": "Discussion time: Do you think zone chats in MMOs are forces for good, or evil?",
+      "url": "https://www.pcgamer.com/games/world-of-warcraft/discussion-time-do-you-think-zone-chats-in-mmos-are-forces-for-good-or-evil/",
       "source": "PC Gamer",
       "published_at": "2026-10-17T17:00:00Z",
       "games": [],
@@ -258,8 +267,8 @@
       "highlight": false
     },
     {
-      "title": "Discussion time: Do you think zone chats in MMOs are forces for good, or evil?",
-      "url": "https://www.pcgamer.com/games/world-of-warcraft/discussion-time-do-you-think-zone-chats-in-mmos-are-forces-for-good-or-evil/",
+      "title": "Surprising no-one, Wizards of the Coast 'doesn't intend to voluntarily recognize' union efforts for the second time this year",
+      "url": "https://www.pcgamer.com/gaming-industry/surprising-no-one-wizards-of-the-coast-doesnt-intend-to-voluntarily-recognize-union-efforts-for-the-second-time-this-year/",
       "source": "PC Gamer",
       "published_at": "2026-10-17T17:00:00Z",
       "games": [],
@@ -557,17 +566,6 @@
       "source": "Rock Paper Shotgun",
       "published_at": "2026-10-16T14:38:59Z",
       "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Fortnite is coming to Linux so we may soon be able to play it and other games like Apex Legends on Steam Deck and Steam Machine",
-      "url": "https://www.eurogamer.net/fortnite-linux-easy-anti-cheat-big-development",
-      "source": "Eurogamer",
-      "published_at": "2026-10-16T13:46:23Z",
-      "games": [
-        "steam-deck"
-      ],
       "kind": "news",
       "highlight": false
     }
