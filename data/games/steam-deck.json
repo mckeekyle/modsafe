@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T18:29:20Z",
+  "generated_at": "2026-10-20T00:34:07Z",
   "game": {
     "slug": "steam-deck",
     "name": "Steam Deck (SteamOS)",
@@ -70,16 +70,16 @@
       "tracked": true,
       "sensitive": false,
       "status": "Not affected by patches",
-      "base_status": "Unknown / check",
-      "reason": "Plugin runs inside Decky Loader; themes can drift with Steam client UI changes, not SteamOS builds. Latest release: 2.1.2 (2024-07-06).",
+      "base_status": "Likely OK",
+      "reason": "Plugin runs inside Decky Loader; themes can drift with Steam client UI changes, not SteamOS builds. Latest release: 2.1.3 (2026-10-19).",
       "breakage_reports": [],
       "official": null,
-      "release_tag": "2.1.2",
-      "release_name": "CSS Loader 2.1.2",
-      "release_published_at": "2024-07-06T11:37:37Z",
+      "release_tag": "2.1.3",
+      "release_name": "CSS Loader 2.1.3",
+      "release_published_at": "2026-10-19T23:43:49Z",
       "release_url": "https://github.com/DeckThemes/SDH-CssLoader",
       "mentions_patch": false,
-      "newer_than_patch": false,
+      "newer_than_patch": true,
       "mention_releases": []
     },
     {
@@ -159,8 +159,8 @@
           "short": "CSS Loader",
           "name": "CSS Loader (Decky plugin)",
           "status": "Not affected by patches",
-          "release_tag": null,
-          "release_published_at": null,
+          "release_tag": "2.1.3",
+          "release_published_at": "2026-10-19T23:43:49Z",
           "mentions_patch": false
         },
         {
@@ -214,8 +214,8 @@
           "short": "CSS Loader",
           "name": "CSS Loader (Decky plugin)",
           "status": "Not affected by patches",
-          "release_tag": null,
-          "release_published_at": null,
+          "release_tag": "2.1.3",
+          "release_published_at": "2026-10-19T23:43:49Z",
           "mentions_patch": false
         },
         {
@@ -269,8 +269,8 @@
           "short": "CSS Loader",
           "name": "CSS Loader (Decky plugin)",
           "status": "Not affected by patches",
-          "release_tag": null,
-          "release_published_at": null,
+          "release_tag": "2.1.3",
+          "release_published_at": "2026-10-19T23:43:49Z",
           "mentions_patch": false
         },
         {
@@ -324,8 +324,8 @@
           "short": "CSS Loader",
           "name": "CSS Loader (Decky plugin)",
           "status": "Not affected by patches",
-          "release_tag": null,
-          "release_published_at": null,
+          "release_tag": "2.1.3",
+          "release_published_at": "2026-10-19T23:43:49Z",
           "mentions_patch": false
         },
         {
@@ -379,8 +379,8 @@
           "short": "CSS Loader",
           "name": "CSS Loader (Decky plugin)",
           "status": "Not affected by patches",
-          "release_tag": null,
-          "release_published_at": null,
+          "release_tag": "2.1.3",
+          "release_published_at": "2026-10-19T23:43:49Z",
           "mentions_patch": false
         },
         {
@@ -434,8 +434,8 @@
           "short": "CSS Loader",
           "name": "CSS Loader (Decky plugin)",
           "status": "Not affected by patches",
-          "release_tag": null,
-          "release_published_at": null,
+          "release_tag": "2.1.3",
+          "release_published_at": "2026-10-19T23:43:49Z",
           "mentions_patch": false
         },
         {
@@ -489,8 +489,8 @@
           "short": "CSS Loader",
           "name": "CSS Loader (Decky plugin)",
           "status": "Not affected by patches",
-          "release_tag": null,
-          "release_published_at": null,
+          "release_tag": "2.1.3",
+          "release_published_at": "2026-10-19T23:43:49Z",
           "mentions_patch": false
         },
         {
@@ -544,8 +544,8 @@
           "short": "CSS Loader",
           "name": "CSS Loader (Decky plugin)",
           "status": "Not affected by patches",
-          "release_tag": null,
-          "release_published_at": null,
+          "release_tag": "2.1.3",
+          "release_published_at": "2026-10-19T23:43:49Z",
           "mentions_patch": false
         },
         {
@@ -599,8 +599,8 @@
           "short": "CSS Loader",
           "name": "CSS Loader (Decky plugin)",
           "status": "Not affected by patches",
-          "release_tag": null,
-          "release_published_at": null,
+          "release_tag": "2.1.3",
+          "release_published_at": "2026-10-19T23:43:49Z",
           "mentions_patch": false
         },
         {
