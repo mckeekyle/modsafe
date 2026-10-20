@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T12:33:57Z",
+  "generated_at": "2026-10-20T18:31:05Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,210 @@
     }
   ],
   "items": [
+    {
+      "title": "Helldivers 2 studio warns mods may break as it switches to new anti-cheat, and the negative reviews are dropping on Steam like Hellbombs",
+      "url": "https://www.pcgamer.com/games/third-person-shooter/helldivers-2-studio-warns-mods-may-break-as-it-switches-to-new-anti-cheat-and-the-negative-reviews-are-dropping-on-steam-like-hellbombs/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-20T18:19:34Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "I played 20 cozy game demos in Steam Next Fest and these 5 made it onto my wishlist",
+      "url": "https://www.pcgamer.com/games/life-sim/i-played-20-cozy-game-demos-in-steam-next-fest-and-these-5-made-it-onto-my-wishlist/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-20T18:14:42Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "I know you probably don't have mushroom in your backlog, but fungus looter shooter Mycopunk is now out in 1.0 and looks like the opposite of a shiitake time",
+      "url": "https://www.rockpapershotgun.com/i-know-you-probably-dont-have-mushroom-in-your-backlog-but-fungus-looter-shooter-mycopunk-is-now-out-in-10-and-looks-like-the-opposite-of-a-shiitake-time",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-20T17:34:58Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Overwatch's director discusses why King's Row is so iconic, but admits that 'every single map in the game gets a vote'",
+      "url": "https://www.pcgamer.com/games/fps/overwatchs-director-discusses-why-kings-row-is-so-iconic-but-admits-that-every-single-map-in-the-game-gets-a-vote/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-20T16:44:14Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Asus ProArt P16 (H7607) RTX Spark laptop review",
+      "url": "https://www.pcgamer.com/hardware/gaming-laptops/asus-proart-p16-rtx-spark-review/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-20T16:08:45Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Steady yourself, Mortal Shell 2's Rotten Autumn update comes packed with 15 new dungeons, a photo mode, an alternative soundtrack, and a neat pumpkin helmet",
+      "url": "https://www.rockpapershotgun.com/steady-yourself-mortal-shell-2s-rotten-autumn-update-comes-packed-with-15-new-dungeons-a-photo-mode-an-alternative-soundtrack-and-a-neat-pumpkin-helmet",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-20T16:03:25Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "DLSS Swapper now lets you update all your upscalers in multiple games at once, adds Nvidia's new Frame Generation Preset C",
+      "url": "https://www.pcgamer.com/hardware/graphics-cards/dlss-swapper-now-lets-you-update-all-your-upscalers-in-multiple-games-at-once-adds-nvidias-new-frame-generation-preset-c/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-20T16:01:15Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Ex-Call of Duty designer \"who survived the crunch\" in order to launch Black Ops 1 & 2 calls out executives \"raking it in\" from sales of remasters",
+      "url": "https://www.eurogamer.net/call-of-duty-black-ops-1-2-re-release-controversy",
+      "source": "Eurogamer",
+      "published_at": "2026-10-20T15:45:04Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The demo for city-flattening fighting game Godzilla: Destroy All Monsters Melee Remastered is a roaring good time, no nostalgia required",
+      "url": "https://www.rockpapershotgun.com/the-demo-for-city-flattening-fighting-game-godzilla-destroy-all-monsters-melee-remastered-is-a-roaring-good-time-no-nostalgia-required",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-20T15:30:13Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "I have neither the budget nor the inclination for a crystal encrusted RTX 5090, but Galax is releasing one anyway",
+      "url": "https://www.pcgamer.com/hardware/graphics-cards/i-have-neither-the-budget-nor-the-inclination-for-a-crystal-encrusted-rtx-5090-but-galax-is-releasing-one-anyway/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-20T15:25:03Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Fallout Day Celebrations 2026: Fallout Shelter and Fallout 4 News",
+      "url": "https://store.steampowered.com/news/app/377160/view/1846651706695689",
+      "source": "Steam \u00b7 Fallout 4",
+      "published_at": "2026-10-20T15:17:01Z",
+      "games": [
+        "fallout-4"
+      ],
+      "kind": "announcement",
+      "highlight": false
+    },
+    {
+      "title": "\"It doesn\u2019t have to always be triple-A\": Galactic Racer and Zero Company\u2019s success has Lucasfilms wanting more smaller-scale Star Wars games",
+      "url": "https://www.rockpapershotgun.com/it-doesnt-have-to-always-be-triple-a-galactic-racer-and-zero-companys-success-has-lucasfilms-wanting-more-smaller-scale-star-wars-games",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-20T15:00:36Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Of course a new Edgerunners series means a new Cyberpunk 2077 patch",
+      "url": "https://www.pcgamer.com/games/rpg/of-course-a-new-edgerunners-series-means-a-new-cyberpunk-2077-patch/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-20T14:46:51Z",
+      "games": [
+        "cyberpunk-2077"
+      ],
+      "kind": "news",
+      "highlight": true
+    },
+    {
+      "title": "I accidentally severed my finger with a butter knife as I panicked in a messed-up game of Five Finger Fillet",
+      "url": "https://www.pcgamer.com/games/roguelike/i-accidentally-severed-my-finger-with-a-butter-knife-as-i-panicked-in-a-messed-up-game-of-five-finger-fillet/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-20T14:46:45Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Microsoft won't like this open source project to get Game Pass working on SteamOS and Linux, but I think it's pretty neat",
+      "url": "https://www.pcgamer.com/software/microsoft-wont-like-this-open-source-project-to-get-game-pass-working-on-steamos-and-linux-but-i-think-its-pretty-neat/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-20T14:45:35Z",
+      "games": [
+        "steam-deck"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Games with loot boxes and other \"paid random items\" re-rated PEGI 16 as new rules come into force, hopefully cutting down on kids gambling somewhat",
+      "url": "https://www.rockpapershotgun.com/games-with-loot-boxes-and-other-paid-random-items-re-rated-pegi-16-as-new-rules-come-into-force-hopefully-cutting-down-on-kids-gambling-somewhat",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-20T14:45:11Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "I'm not sure if the Steam Frame hits any corners in this bouncing screensaver, but maybe if I watch long enough the headset will come down in price",
+      "url": "https://www.pcgamer.com/hardware/vr-hardware/im-not-sure-if-the-steam-frame-hits-any-corners-in-this-bouncing-screensaver-but-maybe-if-i-watch-long-enough-the-headset-will-come-down-in-price/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-20T13:43:57Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Helldivers 2 swaps over to Easy anti-cheat, with developers admitting Gameguard \"wasn't as effective as it could have been\"",
+      "url": "https://www.eurogamer.net/helldivers-2-easy-anti-cheat-switch-game-guard",
+      "source": "Eurogamer",
+      "published_at": "2026-10-20T13:13:19Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Nintendo Switch Sports Resort review",
+      "url": "https://www.eurogamer.net/nintendo-switch-sports-resort-review",
+      "source": "Eurogamer",
+      "published_at": "2026-10-20T13:03:25Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Final Fantasy Resonance review",
+      "url": "https://www.eurogamer.net/final-fantasy-resonance-review",
+      "source": "Eurogamer",
+      "published_at": "2026-10-20T13:00:39Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "People who've finished Call of Duty: Modern Warfare 4 on the new YOLO, single-life difficulty share experiences and tips for doing so",
+      "url": "https://www.eurogamer.net/call-of-duty-modern-warfare-4-finish-yolo-campaign-difficulty",
+      "source": "Eurogamer",
+      "published_at": "2026-10-20T12:57:42Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Amnesia: The Dark Descent's co-founder explained the 'the dynamic of Steam' to Red Barrels after Outlast's sales slowed down",
+      "url": "https://www.pcgamer.com/games/horror/amnesia-the-dark-descents-co-founder-explained-the-the-dynamic-of-steam-to-red-barrels-after-outlasts-sales-slowed-down/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-20T12:44:51Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "The latest game event to fall afoul of US visa rules is a live concert for horse girl racer Umamusume: Pretty Derby",
       "url": "https://www.rockpapershotgun.com/the-latest-game-event-to-fall-afoul-of-us-visa-rules-is-a-live-concert-for-horse-girl-racer-umamusume-pretty-derby",
@@ -367,204 +571,6 @@
       "url": "https://www.eurogamer.net/star-wars-zero-company-review",
       "source": "Eurogamer",
       "published_at": "2026-10-19T13:05:47Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "This week in PC games: build a better zombie in Stupid Never Dies, glue together houses in Cutout Village, and settle brave new worlds in Star Trek: Outposts Unknown",
-      "url": "https://www.rockpapershotgun.com/this-week-in-pc-games-build-a-better-zombie-in-stupid-never-dies-glue-together-houses-in-cutout-village-and-settle-brave-new-worlds-in-star-trek-outposts-unknown",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-19T12:59:48Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Witcher 3 Switch 2 patch rolls out today with a number of changes, including alterations to resolution and \"visual clarity\"",
-      "url": "https://www.eurogamer.net/witcher-3-switch-2-patch-update-resolution-brightness",
-      "source": "Eurogamer",
-      "published_at": "2026-10-19T12:13:14Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "PS5-exclusive Demon's Souls Remake not only runs on PC now, it's running at twice the fps cap on an RTX 5070 with frame gen",
-      "url": "https://www.pcgamer.com/hardware/ps5-exclusive-demons-souls-remake-not-only-runs-on-pc-now-its-running-at-twice-the-fps-cap-on-an-rtx-5070-with-frame-gen/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-19T12:01:04Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "No publishers wanted Outlast because they'd 'rather invest $50,000 in 10 mobile games' so Red Barrels relied on public investment programs and their own savings instead",
-      "url": "https://www.pcgamer.com/games/horror/no-publisher-wanted-outlast-because-theyd-rather-invest-usd50-000-in-10-mobile-games-so-red-barrels-relied-on-public-investment-programs-and-their-own-savings-instead/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-19T11:34:55Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Life has once again found a way in Athanasia, an \"immersive\" dinosaur FPS that feels like comfort food for Dino Crisis and System Shock players alike",
-      "url": "https://www.rockpapershotgun.com/life-has-once-again-found-a-way-in-athanasia-an-immersive-dinosaur-fps-that-feels-like-comfort-food-for-dino-crisis-and-system-shock-players-alike",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-19T11:17:27Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "RTX 5090 not dead, says Nvidia\u2014but it's mysteriously vanished from the company's official marketplace",
-      "url": "https://www.pcgamer.com/hardware/graphics-cards/rtx-5090-not-dead-says-nvidia-but-its-mysteriously-vanished-from-the-companys-official-marketplace/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-19T11:12:36Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The next Call of Duty will introduce a new sub-series to the franchise",
-      "url": "https://www.eurogamer.net/call-of-duty-next-game-new-sub-franchise",
-      "source": "Eurogamer",
-      "published_at": "2026-10-19T11:00:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Dune: Awakening studio faces layoffs as it restructures following console release",
-      "url": "https://www.eurogamer.net/funcom-dune-awakening-layoffs-restructuring",
-      "source": "Eurogamer",
-      "published_at": "2026-10-19T10:47:29Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Steam Next Fest 2026 has more than double the number of demos than last year, but how much of it is generative 'AI slop'?",
-      "url": "https://www.eurogamer.net/steam-next-fest-2026-over-double",
-      "source": "Eurogamer",
-      "published_at": "2026-10-19T10:43:26Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Vampire: The Masquerade - Bloodlines remaster or remake rumours begin to flow, reportedly in part thanks to a metal band from the original's score",
-      "url": "https://www.rockpapershotgun.com/vampire-the-masquerade-bloodlines-remaster-or-remake-rumours-begin-to-flow-reportedly-in-part-thanks-to-a-metal-band-from-the-originals-score",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-19T10:41:01Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Man moved to tears by RTX 5090 on his wedding day - $9000+ price tag brings a tear to my eye too",
-      "url": "https://www.pcgamer.com/hardware/graphics-cards/man-moved-to-tears-by-rtx-5090-on-his-wedding-day-usd9000-price-tag-brings-a-tear-to-my-eye-too/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-19T10:29:15Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Players on Steam so far seem delighted with Modern Warfare 4's campaign, making it one of the most well-received Call of Dutys in recent history",
-      "url": "https://www.eurogamer.net/call-of-duty-modern-warfare-4-campaign-steam-review-rating",
-      "source": "Eurogamer",
-      "published_at": "2026-10-19T08:36:43Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Steam Week in Review: Steam Next Fest has over 8,000 demos, as worthless vibe coded slop levels up",
-      "url": "https://www.pcgamer.com/gaming-industry/steam-week-in-review-steam-next-fest-has-over-8-000-demos-as-worthless-vibe-coded-slop-levels-up/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-19T03:00:45Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "23 devs teamed up to make a free game of 'innovative yet questionable volume sliders,' and it feels like browser-based WarioWare",
-      "url": "https://www.pcgamer.com/games/23-devs-teamed-up-to-make-a-free-game-of-innovative-yet-questionable-volume-sliders-and-it-feels-like-browser-based-warioware/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-18T22:36:22Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Dark Souls 2 dataminer shows off massive prototype coliseum level from early development",
-      "url": "https://www.pcgamer.com/games/dark-souls/dark-souls-2-dataminer-shows-off-massive-prototype-coliseum-level-from-early-development/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-18T18:48:42Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Leaked AI safety bill from Anthropic only requires government intervention if 50+ injuries or $1 billion are at risk",
-      "url": "https://www.pcgamer.com/software/ai/leaked-ai-safety-bill-from-anthropic-only-lets-government-act-if-50-deaths-or-usd1-billion-are-on-the-line/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-18T18:44:11Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Battlefield 6 devs to fix \"Secuty\" skin typo, but five-pistol outfit was intentional",
-      "url": "https://www.eurogamer.net/battlefield-6-secuty-typo-five-pistol-skin-devs-respond",
-      "source": "Eurogamer",
-      "published_at": "2026-10-18T17:37:38Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The Outlast Trials' initial playtests went poorly: Designer says 6-year development took 'a f**king long time' and 'a s**t-ton of prototypes'",
-      "url": "https://www.pcgamer.com/games/horror/the-outlast-trials-initial-playtests-went-poorly-designer-says-6-year-development-took-a-f-king-long-time-and-a-s-t-ton-of-prototypes/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-18T17:18:53Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The PS6's memory and storage alone reportedly cost more than $680",
-      "url": "https://www.eurogamer.net/ps6-ram-nand-costs-over-680-keplerl2",
-      "source": "Eurogamer",
-      "published_at": "2026-10-18T17:10:29Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "No soundtrack does it like Hades 2",
-      "url": "https://www.pcgamer.com/games/roguelike/no-soundtrack-does-it-like-hades-2/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-18T17:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Frozen Trail finally puts the 'raid' in Arc Raiders",
-      "url": "https://www.pcgamer.com/games/third-person-shooter/frozen-trail-finally-puts-the-raid-in-arc-raiders/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-18T16:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Liquid Swords founder confirms that the Samson studio has closed",
-      "url": "https://www.eurogamer.net/liquid-swords-samson-developer-bankrupt",
-      "source": "Eurogamer",
-      "published_at": "2026-10-18T15:21:13Z",
       "games": [],
       "kind": "news",
       "highlight": false
