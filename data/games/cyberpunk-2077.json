@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T06:31:25Z",
+  "generated_at": "2026-10-20T12:32:25Z",
   "game": {
     "slug": "cyberpunk-2077",
     "name": "Cyberpunk 2077",
@@ -82,7 +82,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch Patch 2.31; compatibility is unverified \u2014 check the project page. No open breakage reports 403 days after the patch. Note: Steam's public build changed on 2025-10-14 (build 20383525) without an announcement; this status reflects the last announced patch, so recheck if you hit problems.",
+      "reason": "Latest release predates patch Patch 2.31; compatibility is unverified \u2014 check the project page. No open breakage reports 404 days after the patch. Note: Steam's public build changed on 2025-10-14 (build 20383525) without an announcement; this status reflects the last announced patch, so recheck if you hit problems.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v0.5.31",
@@ -107,10 +107,10 @@
       "reason": "Latest release is on/after patch Patch 2.31; an earlier post-patch release (v1.26.0) explicitly mentioned that version.",
       "breakage_reports": [],
       "official": null,
-      "release_tag": "v1.27.4",
-      "release_name": "ArchiveXL 1.27.4",
-      "release_published_at": "2026-10-05T06:51:36Z",
-      "release_url": "https://github.com/psiberx/cp2077-archive-xl/releases/tag/v1.27.4",
+      "release_tag": "v1.27.5",
+      "release_name": "ArchiveXL 1.27.5",
+      "release_published_at": "2026-10-19T17:23:14Z",
+      "release_url": "https://github.com/psiberx/cp2077-archive-xl/releases/tag/v1.27.5",
       "mentions_patch": true,
       "newer_than_patch": true,
       "mention_releases": [
@@ -131,10 +131,10 @@
       "reason": "Latest release is newer than patch Patch 2.31, but notes do not explicitly mention that version.",
       "breakage_reports": [],
       "official": null,
-      "release_tag": "v1.11.4",
-      "release_name": "TweakXL 1.11.4",
-      "release_published_at": "2026-07-28T18:01:57Z",
-      "release_url": "https://github.com/psiberx/cp2077-tweak-xl/releases/tag/v1.11.4",
+      "release_tag": "v1.11.5",
+      "release_name": "TweakXL 1.11.5",
+      "release_published_at": "2026-10-19T17:24:02Z",
+      "release_url": "https://github.com/psiberx/cp2077-tweak-xl/releases/tag/v1.11.5",
       "mentions_patch": false,
       "newer_than_patch": true,
       "mention_releases": []
@@ -153,10 +153,10 @@
       "reason": "Latest release is on/after patch Patch 2.31; an earlier post-patch release (v1.18.0) explicitly mentioned that version.",
       "breakage_reports": [],
       "official": null,
-      "release_tag": "v1.20.5",
-      "release_name": "Codeware 1.20.5",
-      "release_published_at": "2026-09-20T07:44:34Z",
-      "release_url": "https://github.com/psiberx/cp2077-codeware/releases/tag/v1.20.5",
+      "release_tag": "v1.20.6",
+      "release_name": "Codeware 1.20.6",
+      "release_published_at": "2026-10-19T17:28:03Z",
+      "release_url": "https://github.com/psiberx/cp2077-codeware/releases/tag/v1.20.6",
       "mentions_patch": true,
       "newer_than_patch": true,
       "mention_releases": [
@@ -943,6 +943,12 @@
   ],
   "news": [
     {
+      "title": "REDstreams \u2014 Cyberpunk 2077: Edgerunners 2 Update (2.5) is coming!",
+      "url": "https://store.steampowered.com/news/app/1091500/view/1846651706694551",
+      "published_at": "2026-10-20T10:00:33Z",
+      "is_patch": false
+    },
+    {
       "title": "It\u2019s All About You! \u2014 A Crew to Remember",
       "url": "https://store.steampowered.com/news/app/1091500/view/1835236783557599",
       "published_at": "2026-06-10T13:44:13Z",
@@ -995,12 +1001,6 @@
       "url": "https://store.steampowered.com/news/app/1091500/view/1785321795772422",
       "published_at": "2024-12-10T17:01:18Z",
       "is_patch": true
-    },
-    {
-      "title": "REDstreams \u2014 Update 2.2 is coming!",
-      "url": "https://store.steampowered.com/news/app/1091500/view/1785321795740007",
-      "published_at": "2024-12-09T17:14:47Z",
-      "is_patch": false
     }
   ],
   "channels": [],

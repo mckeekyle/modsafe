@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T06:32:08Z",
+  "generated_at": "2026-10-20T12:33:05Z",
   "game": {
     "slug": "elden-ring",
     "name": "Elden Ring",
@@ -16,10 +16,17 @@
         "https://www.eldenring.jp/newsdetail/news_detail_260908_1.html (official, 2026-09-08: App Ver. 1.17.1 / Regulation Ver. 1.17.1, PS4/PS5/Xbox/Steam)",
         "https://x.com/ELDENRING/status/2097236393856524780 ('Patch 1.17.1 has been released', 2026-09-08T08:11Z)",
         "https://api.steamcmd.net/v1/info/1245620 (public build 25080141, updated 2026-09-08T07:02:18Z)"
-      ]
+      ],
+      "unannounced_update": {
+        "version": null,
+        "label": "Unannounced update 2026-10-20",
+        "published_at": "2026-10-20T07:00:45Z",
+        "buildid": "25827938",
+        "source": "Steam public branch (api.steamcmd.net / PICS)"
+      }
     }
   },
-  "verdict": "Likely safe",
+  "verdict": "Just patched, wait",
   "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
   "frameworks": [
     {
@@ -31,9 +38,9 @@
       "repo": "yuiamoroll/EldenRingSeamlessCoopRelease",
       "tracked": true,
       "sensitive": true,
-      "status": "Likely safe",
+      "status": "Just patched, wait",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch 1.17.1; compatibility is unverified \u2014 check the project page. Patch is 41 days old; no breakage signal available.",
+      "reason": "Latest release predates patch 1.17.1; compatibility is unverified \u2014 check the project page. Patch is 42 days old; no breakage signal available. Steam's public build changed on 2026-10-20 (build 25827938) with no announcement, and this tool hasn't released since; wait for confirmation.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v2.0.1",
@@ -53,9 +60,9 @@
       "repo": "garyttierney/me3",
       "tracked": true,
       "sensitive": true,
-      "status": "Likely safe",
+      "status": "Just patched, wait",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch 1.17.1; compatibility is unverified \u2014 check the project page. No open breakage reports 41 days after the patch.",
+      "reason": "Latest release predates patch 1.17.1; compatibility is unverified \u2014 check the project page. No open breakage reports 42 days after the patch. Steam's public build changed on 2026-10-20 (build 25827938) with no announcement, and this tool hasn't released since; wait for confirmation.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v0.13.0",
@@ -81,6 +88,13 @@
         "https://x.com/ELDENRING/status/2097236393856524780 ('Patch 1.17.1 has been released', 2026-09-08T08:11Z)",
         "https://api.steamcmd.net/v1/info/1245620 (public build 25080141, updated 2026-09-08T07:02:18Z)"
       ],
+      "unannounced_update": {
+        "version": null,
+        "label": "Unannounced update 2026-10-20",
+        "published_at": "2026-10-20T07:00:45Z",
+        "buildid": "25827938",
+        "source": "Steam public branch (api.steamcmd.net / PICS)"
+      },
       "frameworks": [
         {
           "id": "seamless-coop",
