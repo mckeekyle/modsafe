@@ -26,9 +26,9 @@ GAMES = [
         "developer": "CD PROJEKT RED",
         "steam_appid": 1091500,
         "patch_rule": {
-            "include": r"\b(patch|update)\s+\d+\.\d+",
-            "exclude": r"\b(coming|revealed|tomorrow|development update|insight|beta|sneak peek)\b",
-            "version": r"(?:patch|update)\s+(\d+\.\d+(?:\.\d+)?)",
+            "include": r"\b(patch|update)\s+\(?v?\d+\.\d+",
+            "exclude": r"\b(coming|incoming|revealed|tomorrow|development update|insight|beta|sneak peek|redstreams)\b",
+            "version": r"(?:patch|update)\s+\(?v?(\d+\.\d+(?:\.\d+)?)",
             "require_version": True,
             "label": "Patch {v}",
         },

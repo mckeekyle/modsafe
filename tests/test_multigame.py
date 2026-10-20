@@ -38,6 +38,10 @@ class TestPatchRules(unittest.TestCase):
     def test_cyberpunk(self):
         self.check("cyberpunk-2077", "Patch 2.31", "2.31")
         self.check("cyberpunk-2077", "Update 2.0 date revealed!", None)
+        # 2.5 is branded "Edgerunners 2 Update (2.5)"; teasers must stay excluded.
+        self.check("cyberpunk-2077", "Cyberpunk 2077: Edgerunners 2 Update (2.5) is now live!", "2.5")
+        self.check("cyberpunk-2077", "Edgerunners 2 Update (2.5) - Patch Notes", "2.5")
+        self.check("cyberpunk-2077", "REDstreams — Cyberpunk 2077: Edgerunners 2 Update (2.5) is coming!", None)
 
     def test_skyrim(self):
         self.check("skyrim-se", "The Elder Scrolls V: Skyrim Anniversary Edition - Update 1.7.99 (Updated Aug 27)", "1.7.99")

@@ -31,7 +31,7 @@
           "https://help.bethesda.net/app/answers/detail/a_id/49337"
         ]
       ],
-      "last_verified": "2026-10-19"
+      "last_verified": "2026-10-20"
     },
     "fallout-4": {
       "platforms": [
@@ -62,7 +62,7 @@
           "https://fallout.bethesda.net/en-EU/news/fallout-4-update-august-18th"
         ]
       ],
-      "last_verified": "2026-10-19"
+      "last_verified": "2026-10-20"
     },
     "starfield": {
       "platforms": [
@@ -92,7 +92,7 @@
           "https://bethesda.net/en-US/news/starfield-free-lanes-update-notes"
         ]
       ],
-      "last_verified": "2026-10-19"
+      "last_verified": "2026-10-20"
     },
     "baldurs-gate-3": {
       "platforms": [
@@ -130,7 +130,7 @@
           "https://docs.mod.io/platforms/console"
         ]
       ],
-      "last_verified": "2026-10-19"
+      "last_verified": "2026-10-20"
     }
   }
 }

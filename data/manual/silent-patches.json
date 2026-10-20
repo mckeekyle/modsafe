@@ -1,6 +1,6 @@
 {
   "_comment": "Hand-maintained. Game updates shipped without their own Steam announcement (so the Steam-news patch detector can't see them). Each entry needs primary sources; published_at = when the build went live on Steam's public branch (api.steamcmd.net depots.branches.public.timeupdated).",
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-20",
   "verified_by": "ModSafe ops (manual check)",
   "patches": {
     "lethal-company": [
@@ -32,6 +32,19 @@
       }
     ],
     "elden-ring": [
+      {
+        "version": "1.17.2",
+        "label": "1.17.2",
+        "title": "Patch 1.17.2 (bug-fix update announced on FromSoftware's official site, Bandai Namco and @ELDENRING, not on Steam)",
+        "published_at": "2026-10-20T07:00:45Z",
+        "url": "https://www.eldenring.jp/newsdetail/news_detail_261020_1.html",
+        "sources": [
+          "https://www.eldenring.jp/newsdetail/news_detail_261020_1.html (official: App Ver. 1.17.2 / Regulation Ver. 1.17.3, bug fixes, required for online play)",
+          "https://en.bandainamcoent.eu/elden-ring/news/elden-ring-patch-notes-version-1172 (Bandai Namco Europe, 2026-10-20: PS4/PS5/Xbox/Steam, no new content)",
+          "https://x.com/ELDENRING/status/2112484094240006647 ('Patch 1.17.2 has been released', 2026-10-20T10:00Z)",
+          "https://api.steamcmd.net/v1/info/1245620 (public build 25827938, updated 2026-10-20T07:00:45Z)"
+        ]
+      },
       {
         "version": "1.17.1",
         "label": "1.17.1",
