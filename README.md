@@ -27,6 +27,8 @@ Static site that tracks whether each game's core mod frameworks/loaders have cau
 
 Steam-news games are also checked against the Steam public-branch build (api.steamcmd.net); a build change with no matching post is flagged as an unannounced update. Hotfixes announced only off Steam (developer sites, X, forums) are recorded by hand with sources in `data/manual/silent-patches.json`. For GTA V, a Steam build that differs from the recorded `steam_builds` forces "Just patched, wait" until the manual record is re-checked.
 
+Officially announced upcoming patches go in `data/manual/upcoming-patches.json` (date, version, official source URL). They show an "Update incoming" notice on the game page and home card until the patch is detected (version match or a tracked patch dated on/after the date) or `expire_days` (default 3) after the date.
+
 Games are configured in `src/games.py`. "Manual" items (Nexus-only) are linked but excluded from the verdict; ModSafe never scrapes Nexus or SteamDB.
 A game's verdict is the weakest status among its auto-tracked frameworks.
 

@@ -1,0 +1,19 @@
+{
+  "_comment": "Hand-maintained, officially announced upcoming patches. Each entry needs an official source (developer site, official social account or a Steam news post). The notice disappears automatically once the patch is detected (version match or a tracked patch dated on/after `date`) or `expire_days` after `date`.",
+  "patches": {
+    "cyberpunk-2077": [
+      {
+        "version": "2.5",
+        "label": "Patch 2.5",
+        "name": "Edgerunners 2 Update (2.5)",
+        "date": "2026-10-22",
+        "expire_days": 3,
+        "frameworks": ["CET", "RED4ext", "redscript", "ArchiveXL", "TweakXL", "Codeware"],
+        "stores": "Steam/GOG/Epic",
+        "source": "https://store.steampowered.com/news/app/1091500/view/1846651706694551",
+        "source_title": "REDstreams — Cyberpunk 2077: Edgerunners 2 Update (2.5) is coming! (CD PROJEKT RED, Steam)",
+        "verified": "2026-10-20"
+      }
+    ]
+  }
+}

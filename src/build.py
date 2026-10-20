@@ -262,6 +262,14 @@ section { margin: 0 0 1.75rem; }
 .plats { display: flex; gap: .4rem; }
 .plat { padding: .15rem .55rem; border-radius: 6px; font-size: .78rem; font-weight: 700; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.2); }
 .console-mods h3 strong { color: #6ee7a0; }
+.upcoming { margin: var(--s4) 0; padding: var(--s4) var(--s5); border-radius: 14px; border: 2px solid #ffb020;
+  background: linear-gradient(135deg, rgba(255,176,32,.22), rgba(255,42,109,.14)); color: #fff4dc; box-shadow: 0 0 24px rgba(255,176,32,.18); }
+.upcoming p { margin: .35rem 0 0; max-width: 80ch; }
+.upcoming .up-title { margin: 0; font-family: var(--head); font-size: 1.25rem; text-transform: uppercase; color: #ffd27a; }
+.upcoming .up-src { font-size: .88rem; color: #f3dcb0; }
+.upcoming a { color: #ffe2a6; }
+.card-upcoming { margin: .3rem 0; padding: .3rem .55rem; border-radius: 8px; border: 1px solid #ffb020; background: rgba(255,176,32,.16);
+  color: #ffd27a; font-size: .82rem; font-weight: 700; }
 .note { margin: 1rem 0 0; padding: .8rem 1rem; border-radius: 10px; background: rgba(255,77,94,.16); border: 1px solid rgba(255,77,94,.65); color: #ffe3e6; max-width: 70ch; }
 
 /* verdict grid */
@@ -747,6 +755,7 @@ def build_game_page(game: dict, data: dict) -> str:
 {f'<p class="note" role="note"><strong>⚠ {esc(game["note"])}</strong></p>' if game.get("note") else ''}
 </div>
 </section>
+{upcoming_notice(active_upcoming(slug, data))}
 {stale_banner(data)}
 <nav class="tabs" aria-label="On this page"><a href="#status">Status</a><a href="#fw-heading">Frameworks</a>{'<a href="#history">Patch history</a>' if data.get("history") else ''}{'<a href="#mods">Essential ' + (mods_mod.load_mods(slug) or {}).get("noun", "mods") + '</a>' if mods_mod.load_mods(slug) else ''}{'<a href="#console">Console mods</a>' if slug in (CONSOLE_MODS if CONSOLE_MODS is not None else load_console_mods()) else ''}<a href="#news">News</a><a href="#faq-heading">FAQ</a></nav>
 <div class="vgrid" id="status">
@@ -943,23 +952,87 @@ def build_game_history(game: dict, data: dict) -> str:
                       extra_jsonld=[breadcrumb_ld([("Games", "/"), (game["name"], f"/{slug}/"), ("History", f"/{slug}/history/")])])
 
 
+UPCOMING_FILE = ROOT / "data" / "manual" / "upcoming-patches.json"
+
+
+def load_upcoming() -> dict:
+    try:
+        return json.loads(UPCOMING_FILE.read_text(encoding="utf-8")).get("patches", {})
+    except FileNotFoundError:
+        return {}
+
+
+def active_upcoming(slug: str, data: dict, today=None, upcoming: dict | None = None) -> dict | None:
+    """The officially announced upcoming patch for a game, unless it has already been detected (version match, or a
+    tracked patch dated on/after the announced date) or expired (`expire_days`, default 3, after the date)."""
+    from datetime import date, timedelta
+    today = today or datetime.now(timezone.utc).date()
+    lp = (data.get("game") or {}).get("latest_patch") or {}
+    lp_day = (lp.get("published_at") or "")[:10]
+    for e in (upcoming if upcoming is not None else load_upcoming()).get(slug, []):
+        try:
+            d = date.fromisoformat(e["date"])
+        except (KeyError, ValueError):
+            continue
+        if not e.get("source"):
+            continue
+        if today > d + timedelta(days=int(e.get("expire_days", 3))):
+            continue
+        if (e.get("version") and lp.get("version") == e["version"]) or (lp_day and lp_day >= e["date"]):
+            continue
+        return e
+    return None
+
+
+def upcoming_hide_after(e: dict) -> str:
+    from datetime import date, timedelta
+    return (date.fromisoformat(e["date"]) + timedelta(days=int(e.get("expire_days", 3)) + 1)).isoformat()
+
+
+UPCOMING_JS = ("<script>(function(){var n=Date.now();[].forEach.call(document.querySelectorAll('[data-hide-after]'),"
+               "function(x){var d=Date.parse(x.getAttribute('data-hide-after')+'T00:00:00Z');if(d&&n>=d)x.hidden=true;});})();</script>")
+
+
+def upcoming_date_text(e: dict) -> str:
+    from datetime import date
+    d = date.fromisoformat(e["date"])
+    return f"{d.strftime('%b')} {d.day}"
+
+
+def upcoming_notice(e: dict | None) -> str:
+    if not e:
+        return ""
+    fws = ", ".join(e.get("frameworks", []))
+    stores = e.get("stores") or "your launcher"
+    return (f'<aside class="upcoming" role="note" aria-label="Update incoming" data-hide-after="{esc(upcoming_hide_after(e))}">'
+            f'<p class="up-title">⚡ Update incoming: {esc(e.get("label") or e.get("name"))} arrives {esc(upcoming_date_text(e))}</p>'
+            f'<p>Script frameworks{f" ({esc(fws)})" if fws else ""} usually break on big patches. '
+            f'<strong>Turn off auto-update in {esc(stores)} and back up your mods folder.</strong> '
+            f'This page will update when frameworks catch up.</p>'
+            f'<p class="up-src">Official source: <a href="{esc(e["source"])}" rel="noopener external">{esc(e.get("source_title") or e["source"])}</a></p>'
+            f'</aside>{UPCOMING_JS}')
+
+
 def game_cards(games_data, compact: bool = False) -> str:
     cards = []
     for i, (game, data) in enumerate(games_data):
         p = data["game"]["latest_patch"]
         chips = "" if compact else "".join(f'<span class="chip">{esc(f["short"])}</span>' for f in data["frameworks"])
         cls = status_class(data["verdict"])
+        up = active_upcoming(game["slug"], data)
+        up_html = (f'<p class="card-upcoming" data-hide-after="{esc(upcoming_hide_after(up))}">⚡ {esc(up.get("label") or up.get("name"))} arrives {esc(upcoming_date_text(up))}: '
+                   f'turn off auto-update</p>') if up else ""
         cards.append(f"""<article class="game-card v-{cls}" data-name="{esc(game['name'].lower())} {esc(game['short'].lower())}" data-status="{cls}" data-genre="{esc(game.get('genre', ''))}">
 <div class="card-art"><img src="{game_img(game['slug'])}" width="616" height="353" {'loading="lazy" ' if i > 2 else ''}decoding="async" alt="{esc(game['name'])} cover art">{badge(data['verdict'])}</div>
 <div class="card-body">
 <h3><a href="/{game['slug']}/" class="stretched">{esc(game['name'])}</a></h3>
-<p class="card-meta"><span>{patch_label_html(p['label'])}</span><span>{esc(fmt_date(p.get('published_at')))}</span></p>
+{up_html}<p class="card-meta"><span>{patch_label_html(p['label'])}</span><span>{esc(fmt_date(p.get('published_at')))}</span></p>
 <p class="updated">Checked <time class="ago" datetime="{esc(data.get('generated_at', ''))}">{esc(fmt_date(data.get('generated_at')))}</time></p>
 {f'<div class="chips">{chips}</div>' if chips else ''}
 <p class="view">View status →</p>
 </div>
 </article>""")
-    return "".join(cards)
+    return "".join(cards) + (UPCOMING_JS if any("card-upcoming" in c for c in cards) else "")
 
 
 AGO_JS = """<script>
