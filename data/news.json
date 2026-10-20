@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T00:34:33Z",
+  "generated_at": "2026-10-20T06:32:59Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,15 @@
     }
   ],
   "items": [
+    {
+      "title": "The best Enshrouded base locations for picturesque vistas or strategic strongholds",
+      "url": "https://www.pcgamer.com/games/survival-crafting/enshrouded-base-locations/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-20T05:36:16Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Moonlighter studio won't host a public playtest of its next game due to rampant AI-led cloning: 'We know we're not the only developers feeling this way'",
       "url": "https://www.pcgamer.com/gaming-industry/moonlighter-studio-wont-host-a-public-playtest-of-its-next-game-due-to-rampant-ai-led-cloning-we-know-were-not-the-only-developers-feeling-this-way/",
@@ -550,15 +559,6 @@
       "url": "https://www.eurogamer.net/total-war-shogun-2-complete-edition-pulled-from-sale",
       "source": "Eurogamer",
       "published_at": "2026-10-17T17:28:08Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "As too much of the industry embrace their own death through genAI, Konami say it's real people that are most important for making good games",
-      "url": "https://www.rockpapershotgun.com/as-too-much-of-the-industry-embrace-their-own-death-through-genai-konami-say-its-real-people-that-are-most-important-for-making-good-games",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-17T17:04:18Z",
       "games": [],
       "kind": "news",
       "highlight": false
