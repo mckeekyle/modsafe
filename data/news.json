@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T06:33:50Z",
+  "generated_at": "2026-10-21T12:34:37Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,186 @@
     }
   ],
   "items": [
+    {
+      "title": "\"I want room to make a wrong turn\": Following Samson dev's bankruptcy, its founder is considering how AI might factor into new studio plans",
+      "url": "https://www.rockpapershotgun.com/i-want-room-to-make-a-wrong-turn-following-samson-devs-bankruptcy-its-founder-is-considering-how-ai-might-factor-into-new-studio-plans",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-21T12:30:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Warhammer 40K fans have some very specific questions about the Blood Ravens' origins, so I put them to Dawn of War 4's director",
+      "url": "https://www.eurogamer.net/dawn-of-war-4-blood-ravens-space-marine-origins-questions",
+      "source": "Eurogamer",
+      "published_at": "2026-10-21T12:22:55Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Dawn of War 4 clearly loves the Warhammer 40K strategy games that came before, but it misses that they loved to reinvent themselves",
+      "url": "https://www.rockpapershotgun.com/dawn-of-war-4-clearly-loves-the-warhammer-40k-strategy-games-that-came-before-but-it-misses-that-they-loved-to-reinvent-themselves",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-21T12:12:24Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "I've played 2 of Dawn of War 4's campaigns, and they're everything I hoped they'd be",
+      "url": "https://www.pcgamer.com/games/rts/ive-played-2-of-dawn-of-war-4s-campaigns-and-theyre-everything-i-hoped-theyd-be/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-21T12:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "\"AI is a technofascist, anti-human and anti-art project\", says creator of lefty tech satire Future? No Thanks!, before explaining why he used it anyway",
+      "url": "https://www.rockpapershotgun.com/ai-is-a-technofascist-anti-human-and-anti-art-project-says-creator-of-lefty-tech-satire-future-no-thanks-before-explaining-why-he-used-it-anyway",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-21T11:42:31Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Even Call of Duty has a parry now and it's kind of brilliant - but do we need it in every game?",
+      "url": "https://www.eurogamer.net/call-of-duty-modern-warfare-4-parry-melee-best-moments",
+      "source": "Eurogamer",
+      "published_at": "2026-10-21T11:22:21Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "80% of Samsung's data center memory is already sold for 2027, meaning yet another double-digit price increase for RAM expected and more likely to come",
+      "url": "https://www.pcgamer.com/hardware/memory/80-percent-of-samsungs-data-center-memory-is-already-sold-for-2027-meaning-yet-another-double-digit-price-increase-for-ram-expected-and-more-likely-to-come/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-21T11:14:24Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "110 million votes later Nurse Harrow has finally made it into Deadlock, with special thanks to a particularly dedicated player who 'cast exactly 1,000 votes for her'",
+      "url": "https://www.pcgamer.com/games/moba/110-million-votes-later-nurse-harrow-has-finally-made-it-into-deadlock-with-special-thanks-to-a-particularly-dedicated-player-who-cast-exactly-1-000-votes-for-her/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-21T11:14:04Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Here's our second wave of Xbox Game Pass games for October 2026",
+      "url": "https://www.eurogamer.net/xbox-game-pass-list-october-2026",
+      "source": "Eurogamer",
+      "published_at": "2026-10-21T11:11:19Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Subnautica 2 adding its \"scariest\" region ever in next major update, the developers say",
+      "url": "https://www.eurogamer.net/subnautica-2-scariest-region-ever-made-update",
+      "source": "Eurogamer",
+      "published_at": "2026-10-21T11:08:04Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Football Manager 27 will be free to play for five days before its full release, in \"industry first\" for a game of its kind",
+      "url": "https://www.eurogamer.net/football-manager-27-free-to-play-five-days",
+      "source": "Eurogamer",
+      "published_at": "2026-10-21T11:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Xbox reportedly planning three more rounds of layoffs, with the first wave coming as early as this month",
+      "url": "https://www.eurogamer.net/xbox-layoffs-october-november-january-report",
+      "source": "Eurogamer",
+      "published_at": "2026-10-21T10:47:21Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "'We expect mass attacks to start within 15 minutes of the release': Web admins braced for emergency PHP updates to plug leaked high-severity holes",
+      "url": "https://www.pcgamer.com/software/security/we-expect-mass-attacks-to-start-within-15-minutes-of-the-release-web-admins-braced-for-emergency-php-updates-to-plug-leaked-high-severity-holes/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-21T10:39:05Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Further Xbox layoff rounds reportedly planned for this month, November, and January, while a Game Pass overhaul is in the works",
+      "url": "https://www.rockpapershotgun.com/further-xbox-layoff-rounds-reportedly-planned-for-this-month-november-and-january-while-a-game-pass-overhaul-is-in-the-works",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-21T10:34:44Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Chinese repair centre has received 7 melted 12+4-pin Nvidia GPUs in just the past two days alone",
+      "url": "https://www.pcgamer.com/hardware/graphics-cards/chinese-repair-centre-has-received-7-melted-12-4-pin-nvidia-gpus-in-just-the-past-two-days-alone/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-21T10:00:07Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Here's another gizmo to prevent your graphics card from melting - wouldn't it be nice if 12+4-pin connectors weren't a cause for concern at all?",
+      "url": "https://www.pcgamer.com/hardware/graphics-cards/heres-another-gizmo-to-prevent-your-graphics-card-from-melting-wouldnt-it-be-nice-if-12-4-pin-connectors-werent-a-cause-for-concern-at-all/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-21T09:59:41Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Resident Evil: Requiem made more money from PlayStation discs than on Xbox in total, reportedly, as Sony's march to a discless future continues",
+      "url": "https://www.eurogamer.net/playstation-physical-disc-sales-statistics-alinea",
+      "source": "Eurogamer",
+      "published_at": "2026-10-21T09:21:49Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Xbox's next-gen console to reportedly cost up to $1,800, with a Helix handheld coming in 2027 and a full release in holiday 2028",
+      "url": "https://www.eurogamer.net/microsoft-next-gen-xbox-helix-date-price",
+      "source": "Eurogamer",
+      "published_at": "2026-10-21T08:40:37Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "MSI Claw 8 EX AI+ review - superlative playing power with familiar Windows handheld caveats",
+      "url": "https://www.rockpapershotgun.com/msi-claw-8-ex-ai-plus-review",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-21T08:40:01Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Subnautica 2's next major update adds \"the scariest region we've ever done\", together with frog mechs and a very welcome tweak for dashing",
+      "url": "https://www.rockpapershotgun.com/subnautica-2s-next-major-update-adds-the-scariest-region-weve-ever-done-together-with-frog-mechs-and-a-very-welcome-tweak-for-dashing",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-21T08:07:06Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "In this age of pervasive slop maybe we should be grateful for Shrek 2 Remastered",
       "url": "https://www.pcgamer.com/games/action/in-this-age-of-pervasive-slop-maybe-we-should-be-grateful-for-shrek-2-remastered/",
@@ -385,192 +565,6 @@
       "url": "https://www.pcgamer.com/games/survival-crafting/subnautica-2-is-heading-for-early-access-2-0-which-brings-one-of-our-scariest-regions-weve-ever-done/",
       "source": "PC Gamer",
       "published_at": "2026-10-20T10:32:58Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Penguin Colony is not messing around with its statement on the Palestinian genocide, banning sale in Israel and calling out the games industry in-game",
-      "url": "https://www.rockpapershotgun.com/penguin-colony-is-not-messing-around-with-its-statement-on-the-palestinian-genocide-banning-sale-in-israel-and-calling-out-the-games-industry-in-game",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-20T10:27:07Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "TP-Link says it will start making Wi-Fi 8 routers in the US, dodging government soft ban in one easy step",
-      "url": "https://www.pcgamer.com/hardware/networking/chinese-company-tp-link-says-it-will-start-making-wi-fi-8-routers-in-the-us-dodging-government-soft-ban-in-one-easy-step/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-20T10:13:24Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "REDstreams \u2014 Cyberpunk 2077: Edgerunners 2 Update (2.5) is coming!",
-      "url": "https://store.steampowered.com/news/app/1091500/view/1846651706694551",
-      "source": "Steam \u00b7 Cyberpunk",
-      "published_at": "2026-10-20T10:00:33Z",
-      "games": [
-        "cyberpunk-2077"
-      ],
-      "kind": "announcement",
-      "highlight": false
-    },
-    {
-      "title": "Intel bringing faster upscaler to Valve's Proton - XMX accelerated XeSS could come to SteamOS in boost to future Intel-powered handheld gaming PCs",
-      "url": "https://www.pcgamer.com/hardware/handheld-gaming-pcs/intel-bringing-faster-upscaler-to-valves-proton-xmx-accelerated-xess-could-come-to-steamos-in-boost-to-future-intel-powered-handheld-gaming-pcs/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-20T09:57:43Z",
-      "games": [
-        "steam-deck"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "New Steam Deck plugin means you can customise your Steam Achievement pop-ups to match Xbox, PlayStation, Nintendo, or anything your heart desires",
-      "url": "https://www.pcgamer.com/hardware/handheld-gaming-pcs/new-steam-deck-plugin-means-you-can-customise-your-steam-achievement-pop-ups-to-match-xbox-playstation-nintendo-or-anything-your-heart-desires/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-20T09:38:16Z",
-      "games": [
-        "steam-deck"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Helldivers 2's GameGuard cheat policing \"wasn't as effective as it could have been\", cue a switch to Easy Anti-Cheat as part of a crackdown on cheat mods",
-      "url": "https://www.rockpapershotgun.com/helldivers-2s-gameguard-cheat-policing-wasnt-as-effective-as-it-could-have-been-cue-a-switch-to-easy-anti-cheat-as-part-of-a-crackdown-on-cheat-mods",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-20T09:32:27Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Umamusume: Pretty Derby Los Angeles concert cancelled last minute due to US visa issues, despite exploring \"every possible option\"",
-      "url": "https://www.eurogamer.net/umamusume-pretty-derby-la-concert-cancelled-visa-issues",
-      "source": "Eurogamer",
-      "published_at": "2026-10-20T09:00:11Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "\"This act is intended to demonstrate solidarity with Palestine\" - Umurangi Generation studio blocks new game Penguin Colony from being sold in Israel",
-      "url": "https://www.eurogamer.net/umurangi-generation-studio-blocks-penguin-colony-sale-in-isreal-pro-palestine",
-      "source": "Eurogamer",
-      "published_at": "2026-10-20T08:49:14Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The best Enshrouded base locations for picturesque vistas or strategic strongholds",
-      "url": "https://www.pcgamer.com/games/survival-crafting/enshrouded-base-locations/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-20T05:36:16Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Moonlighter studio won't host a public playtest of its next game due to rampant AI-led cloning: 'We know we're not the only developers feeling this way'",
-      "url": "https://www.pcgamer.com/gaming-industry/moonlighter-studio-wont-host-a-public-playtest-of-its-next-game-due-to-rampant-ai-led-cloning-we-know-were-not-the-only-developers-feeling-this-way/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-19T23:33:09Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Star Wars Zero Company adds new difficulty options that can bring it closer to XCOM",
-      "url": "https://www.pcgamer.com/games/strategy/star-wars-zero-company-adds-new-difficulty-options-that-can-bring-it-closer-to-xcom/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-19T21:47:17Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Lucasfilm wants to do more Star Wars games like Zero Company and Galactic Racer: 'We\u2019ve tried to be more flexible about who we\u2019re willing to take pitches from'",
-      "url": "https://www.pcgamer.com/gaming-industry/lucasfilm-wants-to-do-more-star-wars-games-like-zero-company-and-galactic-racer-weve-tried-to-be-more-flexible-about-who-were-willing-to-take-pitches-from/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-19T21:46:23Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Xbox biz guy deletes his X account less than 24 hours after saying game devs who don't embrace AI 'should not be in the business of being a business'",
-      "url": "https://www.pcgamer.com/software/ai/xbox-biz-guy-deletes-his-x-account-less-than-24-hours-after-saying-game-devs-who-dont-embrace-ai-should-not-be-in-the-business-of-being-a-business/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-19T20:44:12Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Moonlighter dev delays Steam playtest for its \"Tower Defensevania\" ReVamp over concerns that AI copycats might clone it before launch",
-      "url": "https://www.eurogamer.net/moonlighter-dev-steam-playtest-revamp-ai-copycats",
-      "source": "Eurogamer",
-      "published_at": "2026-10-19T19:54:06Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Final Fantasy 7 Revelation's Hard Mode is available from the start this time, so you won't need to replay the mammoth RPG to get to the good stuff",
-      "url": "https://www.eurogamer.net/final-fantasy-7-revelation-hard-mode-start-replay-rpg",
-      "source": "Eurogamer",
-      "published_at": "2026-10-19T18:27:17Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Arc Raiders player numbers hit a six-month high following the release of the extraction shooter's huge Frozen Trails update",
-      "url": "https://www.eurogamer.net/arc-raiders-frozen-trails-player-numbers-six-month-high",
-      "source": "Eurogamer",
-      "published_at": "2026-10-19T17:22:27Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "\"Too big a risk\": Moonlighter devs delay new game's demo for fear of genAI cloning, calling on platforms to \"keep strengthening protections for original work\"",
-      "url": "https://www.rockpapershotgun.com/too-big-a-risk-moonlighter-devs-delay-new-games-demo-for-fear-of-genai-cloning-calling-on-platforms-to-keep-strengthening-protections-for-original-work",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-19T17:02:28Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "I have added completely realistic Uber driving to Grand Theft Auto 5",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/i-have-added-completely-realistic-uber-driving-to-grand-theft-auto-5/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-19T17:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "\"I was a real anglophile\": A Canadian's obsession with Viz magazine is why Grand Theft Auto: London's streets are covered in dogs' eggs",
-      "url": "https://www.rockpapershotgun.com/i-was-a-real-anglophile-a-canadians-obsession-with-viz-magazine-is-why-grand-theft-auto-londons-streets-are-covered-in-dogs-eggs",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-19T16:30:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "You can make this DIY controller in six hours and for less than 12 bucks\u2014but would you want to?",
-      "url": "https://www.pcgamer.com/hardware/controllers/you-can-make-this-diy-controller-in-six-hours-and-for-less-than-12-bucks-but-would-you-want-to/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-19T16:15:13Z",
       "games": [],
       "kind": "news",
       "highlight": false
