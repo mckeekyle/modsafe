@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T00:32:44Z",
+  "generated_at": "2026-10-21T06:33:50Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,15 @@
     }
   ],
   "items": [
+    {
+      "title": "In this age of pervasive slop maybe we should be grateful for Shrek 2 Remastered",
+      "url": "https://www.pcgamer.com/games/action/in-this-age-of-pervasive-slop-maybe-we-should-be-grateful-for-shrek-2-remastered/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-21T02:08:18Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "EA Sports FC 27 gets a PEGI 16 rating in Europe because of loot boxes",
       "url": "https://www.pcgamer.com/gaming-industry/ea-sports-fc-27-gets-a-pegi-16-rating-in-europe-because-of-loot-boxes/",
@@ -562,15 +571,6 @@
       "url": "https://www.pcgamer.com/hardware/controllers/you-can-make-this-diy-controller-in-six-hours-and-for-less-than-12-bucks-but-would-you-want-to/",
       "source": "PC Gamer",
       "published_at": "2026-10-19T16:15:13Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "PlayStation founder Ken Kutaragi says discs became \"metaphor for 'owning' games\", and that upset at their discontinuation is a \"mentality issue\"",
-      "url": "https://www.eurogamer.net/ken-kutaragi-playstation-discs",
-      "source": "Eurogamer",
-      "published_at": "2026-10-19T16:07:22Z",
       "games": [],
       "kind": "news",
       "highlight": false
