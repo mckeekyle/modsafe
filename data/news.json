@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:34:37Z",
+  "generated_at": "2026-10-21T18:30:09Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,214 @@
     }
   ],
   "items": [
+    {
+      "title": "BioWare is closing down and Mass Effect 5 is cancelled, months after Saudi Arabia's $55bn EA buyout",
+      "url": "https://www.eurogamer.net/bioware-closing-down-mass-effect-5-cancelled",
+      "source": "Eurogamer",
+      "published_at": "2026-10-21T17:55:57Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "RIP BioWare: EA has shut down the legendary RPG developer",
+      "url": "https://www.pcgamer.com/gaming-industry/rip-bioware-ea-has-shut-down-the-legendary-rpg-developer/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-21T17:16:53Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "First-person Soulslike Valor Mortis is already making a profit after seven days, despite launching against some stiff competition",
+      "url": "https://www.eurogamer.net/soulslike-valor-mortis-making-profit-seven-days",
+      "source": "Eurogamer",
+      "published_at": "2026-10-21T16:43:42Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Nearly $1 million worth of PSA-graded Pok\u00e9mon and other TCG have been stolen right outside PSA's headquarters",
+      "url": "https://www.pcgamer.com/gaming-industry/nearly-usd1-million-worth-of-psa-graded-pokemon-and-other-tcg-have-been-stolen-right-outside-psas-headquarters/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-21T16:41:42Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "GOG taken offline for maintenance in wake of PHP security emergency",
+      "url": "https://www.pcgamer.com/software/security/gog-taken-offline-for-maintenance-in-wake-of-php-security-emergency/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-21T16:20:08Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Pick your storyteller!",
+      "url": "https://store.steampowered.com/news/app/294100/view/1847286114029498",
+      "source": "Steam \u00b7 RimWorld",
+      "published_at": "2026-10-21T16:19:21Z",
+      "games": [
+        "rimworld"
+      ],
+      "kind": "announcement",
+      "highlight": false
+    },
+    {
+      "title": "US government leaks the best GTA 6 promo yet: Pi\u00dfwasser is real",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/us-government-leaks-the-best-gta-6-promo-yet-pisswasser-is-real/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-21T16:12:33Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Black Friday gaming mouse deals",
+      "url": "https://www.pcgamer.com/hardware/gaming-mice/black-friday-gaming-mouse-deals/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-21T16:11:02Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Cyberpunk 2077's Edgerunners 2 update adds two new quests, handgun dual wielding and the ability to pimp your mantis blades",
+      "url": "https://www.rockpapershotgun.com/cyberpunk-2077s-edgerunners-2-update-adds-two-new-quests-handgun-dual-wielding-and-the-ability-to-pimp-your-mantis-blades",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-21T16:09:58Z",
+      "games": [
+        "cyberpunk-2077"
+      ],
+      "kind": "news",
+      "highlight": true
+    },
+    {
+      "title": "CD Projekt Red details new Cyberpunk 2077 update - adding dual-wielding, cross-platform mods, Edgerunners story quests, and more",
+      "url": "https://www.eurogamer.net/cyberpunk-2077-update-edgerunners-2-mod-support",
+      "source": "Eurogamer",
+      "published_at": "2026-10-21T16:03:54Z",
+      "games": [
+        "cyberpunk-2077"
+      ],
+      "kind": "news",
+      "highlight": true
+    },
+    {
+      "title": "Beyond Good & Evil 2 reportedly still in development 18 years after being announced, now a \"solo-first\" adventure",
+      "url": "https://www.eurogamer.net/beyond-good-and-evil-bge2-report-ubisoft",
+      "source": "Eurogamer",
+      "published_at": "2026-10-21T16:01:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Don't get hit with the BIOS update hammer for COD MW4 like my colleagues - here's how to ensure you can play multiplayer and DMZ",
+      "url": "https://www.pcgamer.com/games/call-of-duty/dont-get-hit-with-the-bios-update-hammer-for-cod-mw4-like-my-colleagues-heres-how-to-ensure-you-can-play-multiplayer-and-dmz/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-21T15:55:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "World of Warcraft: Forever's beta has been extended, as community members mourn the loss of their hunter pets",
+      "url": "https://www.eurogamer.net/world-of-warcraft-forever-beta-extended",
+      "source": "Eurogamer",
+      "published_at": "2026-10-21T15:46:24Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Check out what's coming to Cyberpunk 2077 in the Edgerunners 2 Update!",
+      "url": "https://store.steampowered.com/news/app/1091500/view/1847286114029307",
+      "source": "Steam \u00b7 Cyberpunk",
+      "published_at": "2026-10-21T15:45:15Z",
+      "games": [
+        "cyberpunk-2077"
+      ],
+      "kind": "announcement",
+      "highlight": false
+    },
+    {
+      "title": "AMD has shipped FSR 4.1 early for RX 6000 graphics cards, and it's coming to Ryzen APUs, Vulkan, and Xbox too",
+      "url": "https://www.pcgamer.com/hardware/graphics-cards/amd-has-shipped-fsr-4-1-early-for-rx-6000-graphics-cards-and-its-coming-to-ryzen-apus-vulkan-and-xbox-too/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-21T15:35:07Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "A puzzle game where you must avoid the doing the most awkward of things: facing someone while riding an elevator",
+      "url": "https://www.rockpapershotgun.com/a-puzzle-game-where-you-must-avoid-the-doing-the-most-awkward-of-things-facing-someone-while-riding-an-elevator",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-21T15:29:11Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Fallout Day Celebrations 2026: Join Fallout Events!",
+      "url": "https://store.steampowered.com/news/app/377160/view/1847286114029217",
+      "source": "Steam \u00b7 Fallout 4",
+      "published_at": "2026-10-21T15:18:28Z",
+      "games": [
+        "fallout-4"
+      ],
+      "kind": "announcement",
+      "highlight": false
+    },
+    {
+      "title": "'You've taken us free cash flow negative as a company, so congratulations': Amazon has plenty of Nvidia GPUs, but not enough energy to power its AI boom",
+      "url": "https://www.pcgamer.com/software/ai/youve-taken-us-free-cash-flow-negative-as-a-company-so-congratulations-amazon-has-plenty-of-nvidia-gpus-but-not-enough-energy-to-power-its-ai-boom/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-21T15:09:46Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "I keep embarrassing myself in front of the nature gods in handpainted 2D roguelike Talaka, whose colourful, combative demo is out now",
+      "url": "https://www.rockpapershotgun.com/i-keep-embarrassing-myself-in-front-of-the-nature-gods-in-handpainted-2d-roguelike-talaka-whose-colourful-combative-demo-is-out-now",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-21T14:45:36Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Xbox follows in PlayStation's footsteps, introducing AMD FSR 4.1, targeting better graphics and performance on Series X/S",
+      "url": "https://www.eurogamer.net/xbox-series-x-s-amd-fsr-4-1-upscaling",
+      "source": "Eurogamer",
+      "published_at": "2026-10-21T14:13:43Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "After a few hours with Yakuza studio's soulful Stranger Than Heaven, I'm smitten, but I suspect it'll be a divisive game",
+      "url": "https://www.eurogamer.net/stranger-than-heaven-preview",
+      "source": "Eurogamer",
+      "published_at": "2026-10-21T14:00:41Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "COD: Modern Warfare 4 DMZ players are spawning in the middle of a road and being flattened before they can do anything",
+      "url": "https://www.eurogamer.net/call-of-duty-modern-warfare-4-dmz-spawn-runover",
+      "source": "Eurogamer",
+      "published_at": "2026-10-21T13:21:37Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "\"I want room to make a wrong turn\": Following Samson dev's bankruptcy, its founder is considering how AI might factor into new studio plans",
       "url": "https://www.rockpapershotgun.com/i-want-room-to-make-a-wrong-turn-following-samson-devs-bankruptcy-its-founder-is-considering-how-ai-might-factor-into-new-studio-plans",
@@ -359,212 +567,6 @@
       "url": "https://www.eurogamer.net/call-of-duty-black-ops-1-2-re-release-controversy",
       "source": "Eurogamer",
       "published_at": "2026-10-20T15:45:04Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The demo for city-flattening fighting game Godzilla: Destroy All Monsters Melee Remastered is a roaring good time, no nostalgia required",
-      "url": "https://www.rockpapershotgun.com/the-demo-for-city-flattening-fighting-game-godzilla-destroy-all-monsters-melee-remastered-is-a-roaring-good-time-no-nostalgia-required",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-20T15:30:13Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "I have neither the budget nor the inclination for a crystal encrusted RTX 5090, but Galax is releasing one anyway",
-      "url": "https://www.pcgamer.com/hardware/graphics-cards/i-have-neither-the-budget-nor-the-inclination-for-a-crystal-encrusted-rtx-5090-but-galax-is-releasing-one-anyway/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-20T15:25:03Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Fallout Day Celebrations 2026: Fallout Shelter and Fallout 4 News",
-      "url": "https://store.steampowered.com/news/app/377160/view/1846651706695689",
-      "source": "Steam \u00b7 Fallout 4",
-      "published_at": "2026-10-20T15:17:01Z",
-      "games": [
-        "fallout-4"
-      ],
-      "kind": "announcement",
-      "highlight": false
-    },
-    {
-      "title": "\"It doesn\u2019t have to always be triple-A\": Galactic Racer and Zero Company\u2019s success has Lucasfilms wanting more smaller-scale Star Wars games",
-      "url": "https://www.rockpapershotgun.com/it-doesnt-have-to-always-be-triple-a-galactic-racer-and-zero-companys-success-has-lucasfilms-wanting-more-smaller-scale-star-wars-games",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-20T15:00:36Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Of course a new Edgerunners series means a new Cyberpunk 2077 patch",
-      "url": "https://www.pcgamer.com/games/rpg/of-course-a-new-edgerunners-series-means-a-new-cyberpunk-2077-patch/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-20T14:46:51Z",
-      "games": [
-        "cyberpunk-2077"
-      ],
-      "kind": "news",
-      "highlight": true
-    },
-    {
-      "title": "I accidentally severed my finger with a butter knife as I panicked in a messed-up game of Five Finger Fillet",
-      "url": "https://www.pcgamer.com/games/roguelike/i-accidentally-severed-my-finger-with-a-butter-knife-as-i-panicked-in-a-messed-up-game-of-five-finger-fillet/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-20T14:46:45Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Microsoft won't like this open source project to get Game Pass working on SteamOS and Linux, but I think it's pretty neat",
-      "url": "https://www.pcgamer.com/software/microsoft-wont-like-this-open-source-project-to-get-game-pass-working-on-steamos-and-linux-but-i-think-its-pretty-neat/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-20T14:45:35Z",
-      "games": [
-        "steam-deck"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Games with loot boxes and other \"paid random items\" re-rated PEGI 16 as new rules come into force, hopefully cutting down on kids gambling somewhat",
-      "url": "https://www.rockpapershotgun.com/games-with-loot-boxes-and-other-paid-random-items-re-rated-pegi-16-as-new-rules-come-into-force-hopefully-cutting-down-on-kids-gambling-somewhat",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-20T14:45:11Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "I'm not sure if the Steam Frame hits any corners in this bouncing screensaver, but maybe if I watch long enough the headset will come down in price",
-      "url": "https://www.pcgamer.com/hardware/vr-hardware/im-not-sure-if-the-steam-frame-hits-any-corners-in-this-bouncing-screensaver-but-maybe-if-i-watch-long-enough-the-headset-will-come-down-in-price/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-20T13:43:57Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Helldivers 2 swaps over to Easy anti-cheat, with developers admitting Gameguard \"wasn't as effective as it could have been\"",
-      "url": "https://www.eurogamer.net/helldivers-2-easy-anti-cheat-switch-game-guard",
-      "source": "Eurogamer",
-      "published_at": "2026-10-20T13:13:19Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Nintendo Switch Sports Resort review",
-      "url": "https://www.eurogamer.net/nintendo-switch-sports-resort-review",
-      "source": "Eurogamer",
-      "published_at": "2026-10-20T13:03:25Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Final Fantasy Resonance review",
-      "url": "https://www.eurogamer.net/final-fantasy-resonance-review",
-      "source": "Eurogamer",
-      "published_at": "2026-10-20T13:00:39Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "People who've finished Call of Duty: Modern Warfare 4 on the new YOLO, single-life difficulty share experiences and tips for doing so",
-      "url": "https://www.eurogamer.net/call-of-duty-modern-warfare-4-finish-yolo-campaign-difficulty",
-      "source": "Eurogamer",
-      "published_at": "2026-10-20T12:57:42Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Amnesia: The Dark Descent's co-founder explained the 'the dynamic of Steam' to Red Barrels after Outlast's sales slowed down",
-      "url": "https://www.pcgamer.com/games/horror/amnesia-the-dark-descents-co-founder-explained-the-the-dynamic-of-steam-to-red-barrels-after-outlasts-sales-slowed-down/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-20T12:44:51Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The latest game event to fall afoul of US visa rules is a live concert for horse girl racer Umamusume: Pretty Derby",
-      "url": "https://www.rockpapershotgun.com/the-latest-game-event-to-fall-afoul-of-us-visa-rules-is-a-live-concert-for-horse-girl-racer-umamusume-pretty-derby",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-20T12:05:06Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "European age-ratings body PEGI begins raising age-limit of loot box games, like EA Sports FC, to 16",
-      "url": "https://www.eurogamer.net/pegi-age-ratings-16-loot-boxes-digital-only",
-      "source": "Eurogamer",
-      "published_at": "2026-10-20T11:43:36Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Cyberpunk 2077 getting a substantial update to coincide with Edgerunners' Netflix Season 2 release",
-      "url": "https://www.eurogamer.net/cyberpunk-2077-25-update-free-egerunners-2-release",
-      "source": "Eurogamer",
-      "published_at": "2026-10-20T11:29:50Z",
-      "games": [
-        "cyberpunk-2077"
-      ],
-      "kind": "news",
-      "highlight": true
-    },
-    {
-      "title": "GTA 6 is so detailed no single Rockstar employee knows it all - which is how we got shrinking horse testicles in Red Dead Redemption 2",
-      "url": "https://www.eurogamer.net/red-dead-redemption-2-horse-testicles-staff-autonomy-gta-6",
-      "source": "Eurogamer",
-      "published_at": "2026-10-20T11:20:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "This sound library catalogues 100 different keyboard switches, is dangerous for my wallet, and also has\u2026 live service game mechanics?",
-      "url": "https://www.pcgamer.com/hardware/gaming-keyboards/this-sound-library-catalogues-100-different-keyboard-switches-is-dangerous-for-my-wallet-and-also-has-live-service-game-mechanics/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-20T11:07:14Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Abiotic Factor's second year of updates confirmed to include official mod support and a DLC taking science to the tropics",
-      "url": "https://www.rockpapershotgun.com/abiotic-factors-second-year-of-updates-confirmed-to-include-official-mod-support-and-a-dlc-taking-science-to-the-tropics",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-20T11:00:28Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Bungie plans to share first details about surprise 'unvaulting' of Destiny 2 content soon",
-      "url": "https://www.eurogamer.net/destiny-2-unvaulting-bungie-date-details",
-      "source": "Eurogamer",
-      "published_at": "2026-10-20T10:54:59Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Subnautica 2 is heading for 'Early access 2.0,' which brings 'one of our scariest regions we've ever done'",
-      "url": "https://www.pcgamer.com/games/survival-crafting/subnautica-2-is-heading-for-early-access-2-0-which-brings-one-of-our-scariest-regions-weve-ever-done/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-20T10:32:58Z",
       "games": [],
       "kind": "news",
       "highlight": false

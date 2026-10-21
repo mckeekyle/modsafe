@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:33:57Z",
+  "generated_at": "2026-10-21T18:29:35Z",
   "game": {
     "slug": "rimworld",
     "name": "RimWorld",
@@ -441,6 +441,12 @@
   ],
   "news": [
     {
+      "title": "Pick your storyteller!",
+      "url": "https://store.steampowered.com/news/app/294100/view/1847286114029498",
+      "published_at": "2026-10-21T16:19:21Z",
+      "is_patch": false
+    },
+    {
       "title": "Announcing the Waylith Engine and Update 1.7",
       "url": "https://store.steampowered.com/news/app/294100/view/1846018067941786",
       "published_at": "2026-10-12T17:17:45Z",
@@ -493,12 +499,6 @@
       "url": "https://store.steampowered.com/news/app/294100/view/1815034432907541",
       "published_at": "2025-10-31T15:30:18Z",
       "is_patch": true
-    },
-    {
-      "title": "Bring home a thrumbo and boomalope!",
-      "url": "https://store.steampowered.com/news/app/294100/view/1813041031254610",
-      "published_at": "2025-10-10T22:45:49Z",
-      "is_patch": false
     }
   ],
   "channels": [],

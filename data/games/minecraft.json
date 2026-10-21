@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:34:02Z",
+  "generated_at": "2026-10-21T18:29:39Z",
   "game": {
     "slug": "minecraft",
     "name": "Minecraft: Java Edition",
@@ -12,7 +12,7 @@
       "url": "https://www.minecraft.net/en-us/article/minecraft-java-edition-26-3"
     }
   },
-  "verdict": "Likely safe",
+  "verdict": "Safe",
   "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
   "frameworks": [
     {
@@ -54,11 +54,11 @@
       "tracked": true,
       "sensitive": true,
       "release_url": "https://files.minecraftforge.net/",
-      "status": "Likely safe",
-      "reason": "Forge has only beta/latest (not recommended/stable) builds for Minecraft 26.3.",
-      "release_tag": "66.0.13",
+      "status": "Safe",
+      "reason": "Forge publishes a stable build for Minecraft 26.3.",
+      "release_tag": "66.1.0",
       "release_published_at": null,
-      "base_status": "Likely OK"
+      "base_status": "Updated for latest patch"
     },
     {
       "id": "neoforge",
@@ -151,9 +151,9 @@
           "id": "forge",
           "short": "Forge",
           "name": "Minecraft Forge",
-          "status": "Likely safe",
-          "reason": "Forge has only beta/latest (not recommended/stable) builds for Minecraft 26.3.",
-          "release_tag": "66.0.13",
+          "status": "Safe",
+          "reason": "Forge publishes a stable build for Minecraft 26.3.",
+          "release_tag": "66.1.0",
           "release_published_at": null
         },
         {
@@ -225,7 +225,7 @@
           "name": "Minecraft Forge",
           "status": "Safe",
           "reason": "Forge publishes a stable build for Minecraft 26.2.",
-          "release_tag": "65.1.0",
+          "release_tag": "65.1.5",
           "release_published_at": null
         },
         {
@@ -297,7 +297,7 @@
           "name": "Minecraft Forge",
           "status": "Safe",
           "reason": "Forge publishes a stable build for Minecraft 26.1.2.",
-          "release_tag": "64.1.0",
+          "release_tag": "64.1.5",
           "release_published_at": null
         },
         {
@@ -513,7 +513,7 @@
           "name": "Minecraft Forge",
           "status": "Safe",
           "reason": "Forge publishes a stable build for Minecraft 1.21.11.",
-          "release_tag": "61.2.0",
+          "release_tag": "61.2.4",
           "release_published_at": null
         },
         {
@@ -585,7 +585,7 @@
           "name": "Minecraft Forge",
           "status": "Safe",
           "reason": "Forge publishes a stable build for Minecraft 1.21.10.",
-          "release_tag": "60.1.0",
+          "release_tag": "60.1.18",
           "release_published_at": null
         },
         {

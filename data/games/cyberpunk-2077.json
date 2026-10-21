@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:32:58Z",
+  "generated_at": "2026-10-21T18:28:40Z",
   "game": {
     "slug": "cyberpunk-2077",
     "name": "Cyberpunk 2077",
@@ -943,6 +943,12 @@
   ],
   "news": [
     {
+      "title": "Check out what's coming to Cyberpunk 2077 in the Edgerunners 2 Update!",
+      "url": "https://store.steampowered.com/news/app/1091500/view/1847286114029307",
+      "published_at": "2026-10-21T15:45:15Z",
+      "is_patch": false
+    },
+    {
       "title": "REDstreams \u2014 Cyberpunk 2077: Edgerunners 2 Update (2.5) is coming!",
       "url": "https://store.steampowered.com/news/app/1091500/view/1846651706694551",
       "published_at": "2026-10-20T10:00:33Z",
@@ -995,12 +1001,6 @@
       "url": "https://store.steampowered.com/news/app/1091500/view/1785774543496368",
       "published_at": "2024-12-11T16:15:19Z",
       "is_patch": false
-    },
-    {
-      "title": "Update 2.2 is live!",
-      "url": "https://store.steampowered.com/news/app/1091500/view/1785321795772422",
-      "published_at": "2024-12-10T17:01:18Z",
-      "is_patch": true
     }
   ],
   "channels": [],
