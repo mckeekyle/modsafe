@@ -1200,6 +1200,7 @@ OG_SVG = """<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" vi
 
 def build_llms_txt(games_data) -> str:
     lines = [f"# {SITE_NAME}", "", f"> {SITE_DESC}", "", f"Site: {SITE_URL}/", f"Index JSON: {SITE_URL}/games.json",
+             f"Stable API (v1, CORS-enabled, all games + per-mod verdicts): {SITE_URL}/api/v1/status.json",
              f"Legacy Cyberpunk JSON: {SITE_URL}/status.json", "",
              "Status meanings: " + STATUS_EXPLAINER, ""]
     for game, data in games_data:
@@ -1239,7 +1240,7 @@ def sitemap_urls() -> list[str]:
             urls.append(f"/{g['slug']}/mods/")
         if mods_mod.load_guide(g["slug"]):
             urls.append(f"/{g['slug']}/install/")
-    return urls + ["/games.json", "/llms.txt"]
+    return urls + ["/games.json", "/api/v1/status.json", "/llms.txt"]
 
 
 def build_sitemap() -> str:
@@ -1272,6 +1273,74 @@ def games_index(games_data) -> dict:
                       for g, d in games_data]}
 
 
+# ---- Public API v1 (/api/v1/status.json) -------------------------------------------------------------------------
+# Stable, versioned contract for third-party clients (e.g. the ModSafe Decky Loader plugin). Additive changes only;
+# a breaking change ships as /api/v2/. Served with Access-Control-Allow-Origin: * (see HEADERS).
+API_VERSION = 1
+VERDICT_IDS = {
+    "Safe": "safe",
+    "Likely safe": "likely-safe",
+    "Just patched, wait": "wait",
+    "Breakage reported": "broken",
+    "Not ported yet": "not-ported",
+    "No data": "no-data",
+    "Not affected by patches": "not-affected",
+    "Check manually": "manual",
+}
+# Lower = worse; lets clients sort or pick a badge colour without hard-coding labels.
+VERDICT_SEVERITY = {"broken": 0, "not-ported": 1, "wait": 2, "no-data": 3, "manual": 4, "likely-safe": 5,
+                    "not-affected": 6, "safe": 7}
+
+
+def verdict_id(label: str | None) -> str:
+    if not label:
+        return "no-data"
+    return VERDICT_IDS.get(label) or (re.sub(r"[^a-z0-9]+", "-", label.lower()).strip("-") or "no-data")
+
+
+def api_v1_status(games_data, today=None, upcoming: dict | None = None) -> dict:
+    up_all = upcoming if upcoming is not None else load_upcoming()
+    games = []
+    for g, d in games_data:
+        lp = (d.get("game") or {}).get("latest_patch") or {}
+        appids = sorted({int(a) for a in ([g.get("steam_appid")] + list((g.get("steam_appids") or {}).values())) if a})
+        vid = verdict_id(d.get("verdict"))
+        up = active_upcoming(g["slug"], d, today=today, upcoming=up_all)
+        mods = []
+        for fw in d.get("frameworks", []):
+            mid = verdict_id(fw.get("status"))
+            mods.append({
+                "id": fw.get("id"), "name": fw.get("name"), "short": fw.get("short") or fw.get("name"),
+                "verdict": mid, "verdict_label": fw.get("status"), "severity": VERDICT_SEVERITY.get(mid),
+                "tracked": fw.get("tracked", True), "counts_toward_verdict": bool(fw.get("tracked", True)) and mid not in ("not-affected", "manual"),
+                "reason": fw.get("reason"), "release": fw.get("release_tag"),
+                "release_published_at": fw.get("release_published_at"), "release_url": fw.get("release_url"),
+                "url": fw.get("url"),
+            })
+        games.append({
+            "id": g["slug"], "name": g["name"], "short_name": g.get("short") or g["name"],
+            "kind": "platform" if g.get("genre") == "Platform" else "game",
+            "steam_appid": g.get("steam_appid"), "steam_appids": appids,
+            "current_patch": {k: lp.get(k) for k in ("label", "version", "published_at", "url")},
+            "verdict": vid, "verdict_label": d.get("verdict"), "severity": VERDICT_SEVERITY.get(vid),
+            "updated_at": d.get("generated_at"),
+            "upcoming_patch": ({k: up.get(k) for k in ("label", "version", "date", "source")} if up else None),
+            "page_url": f"{SITE_URL}/{g['slug']}/", "json_url": f"{SITE_URL}/{g['slug']}/status.json",
+            "mods": mods,
+        })
+    updated = [x["updated_at"] for x in games if x["updated_at"]]
+    return {
+        "api_version": API_VERSION,
+        "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
+        "data_updated_at": max(updated) if updated else None,
+        "site": SITE_URL + "/",
+        "docs": f"{SITE_URL}/llms.txt",
+        "disclaimer": "Statuses are inferred from public release data; they are not guarantees. Verify on each project's page before updating.",
+        "verdicts": [{"id": v, "label": k, "severity": VERDICT_SEVERITY[v]} for k, v in VERDICT_IDS.items()],
+        "games": games,
+    }
+
+
 MENU_JS = "<script>(function(){var d=document.querySelector('.games-menu');if(!d)return;document.addEventListener('click',function(e){if(d.open&&!d.contains(e.target))d.open=false;});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&d.open){d.open=false;d.querySelector('summary').focus();}});})();</script>"
 CSS_VER = __import__("hashlib").sha256(CSS.encode()).hexdigest()[:10]
 HEADERS = """/*
@@ -1288,6 +1357,10 @@ HEADERS = """/*
   Cache-Control: public, max-age=604800
 /og/*
   Cache-Control: public, max-age=86400
+/api/*
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET, HEAD, OPTIONS
+  Cache-Control: public, max-age=300
 """
 
 
@@ -1337,6 +1410,7 @@ def main() -> int:
     write(DIST / "styles.css", CSS)
     write(DIST / "og-default.svg", OG_SVG)
     write(DIST / "games.json", json.dumps(games_index(games_data), indent=2) + "\n")
+    write(DIST / "api" / "v1" / "status.json", json.dumps(api_v1_status(games_data), indent=2, ensure_ascii=False) + "\n")
     write(DIST / "llms.txt", build_llms_txt(games_data))
     write(DIST / "robots.txt", build_robots())
     write(DIST / f"{INDEXNOW_KEY}.txt", INDEXNOW_KEY)
