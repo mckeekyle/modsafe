@@ -129,8 +129,10 @@ class TestBadges(unittest.TestCase):
         for g in GAMES:
             sn = badges.embed_snippets(g, build.SITE_URL)
             url = f"{build.SITE_URL}/badge/{g['slug']}.svg"
-            for k in ("markdown", "html", "bbcode"):
+            for k in ("markdown", "html"):
                 self.assertIn(url, sn[k])
+            self.assertIn("raster.shields.io/endpoint?url=", sn["bbcode"])
+            self.assertIn(f"badge%2F{g['slug']}.json", sn["bbcode"])
 
 
 class TestPagesAndHeaders(unittest.TestCase):

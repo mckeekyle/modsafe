@@ -68,6 +68,11 @@ def game_badge(game: dict, data: dict, status_cls: str) -> str:
     return render_badge(label, v, status_cls, f"ModSafe: {label} — mod status {v}")
 
 
+def png_badge_url(slug: str, site_url: str) -> str:
+    from urllib.parse import quote
+    return "https://raster.shields.io/endpoint?url=" + quote(f"{site_url}/badge/{slug}.json", safe="")
+
+
 def embed_snippets(game: dict, site_url: str) -> dict:
     slug, name = game["slug"], game["name"]
     img, page = f"{site_url}/badge/{slug}.svg", f"{site_url}/{slug}/"
@@ -75,5 +80,6 @@ def embed_snippets(game: dict, site_url: str) -> dict:
     return {
         "markdown": f"[![{alt}]({img})]({page})",
         "html": f'<a href="{page}"><img src="{img}" alt="{alt}"></a>',
-        "bbcode": f"[url={page}][img]{img}[/img][/url]",
+        # Forum/Nexus BBCode often won't display SVG, so use a PNG rendered by shields.io from our endpoint JSON.
+        "bbcode": f"[url={page}][img]{png_badge_url(slug, site_url)}[/img][/url]",
     }

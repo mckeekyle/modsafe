@@ -100,7 +100,8 @@ Every game has a live SVG badge at `/badge/<slug>.svg` (cached 15 min) and a
 <a href="https://modsafe.app/cyberpunk-2077/"><img src="https://modsafe.app/badge/cyberpunk-2077.svg" alt="ModSafe: Cyberpunk 2077 mod status"></a>
 ```
 
-Each game page has copy-ready Markdown, HTML and BBCode snippets under **Follow & embed**.
+Each game page has copy-ready Markdown, HTML and BBCode snippets under **Follow & embed**. The BBCode one uses a PNG from
+`https://raster.shields.io/endpoint?url=<our badge JSON>` because Nexus and forums often will not display SVG.
 
 ## Tests
 

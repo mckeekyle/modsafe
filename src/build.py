@@ -774,7 +774,7 @@ def follow_section(game: dict, data: dict) -> str:
 {snippet_row(f"md-{slug}", "Markdown", sn['markdown'])}
 {snippet_row(f"html-{slug}", "HTML", sn['html'])}
 {snippet_row(f"bb-{slug}", "BBCode", sn['bbcode'])}
-<p class="fine">BBCode is for Nexus-style descriptions; preview first, since some sites don't display SVG images.</p>
+<p class="fine">BBCode is for Nexus and forum descriptions and uses a PNG copy rendered by shields.io, since many sites won't display SVG. Preview before publishing.</p>
 </div>
 </section>"""
 
