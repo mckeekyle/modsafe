@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T12:34:30Z",
+  "generated_at": "2026-10-22T19:10:22Z",
   "game": {
     "slug": "cyberpunk-2077",
     "name": "Cyberpunk 2077",
@@ -13,7 +13,7 @@
       "url": "https://store.steampowered.com/news/app/1091500/view/1847286114032016"
     }
   },
-  "verdict": "Just patched, wait",
+  "verdict": "Breakage reported",
   "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
   "frameworks": [
     {
@@ -25,18 +25,20 @@
       "repo": "maximegmd/CyberEngineTweaks",
       "tracked": true,
       "sensitive": true,
-      "status": "Just patched, wait",
-      "base_status": "Unknown / check",
-      "reason": "Latest release predates patch Patch 2.5; compatibility is unverified \u2014 check the project page.",
+      "status": "Safe",
+      "base_status": "Updated for latest patch",
+      "reason": "Latest release notes mention patch Patch 2.5 and the release is on/after the patch date.",
       "breakage_reports": [],
       "official": null,
-      "release_tag": "v1.37.1",
-      "release_name": "v1.37.1",
-      "release_published_at": "2025-09-28T10:49:01Z",
-      "release_url": "https://github.com/maximegmd/CyberEngineTweaks/releases/tag/v1.37.1",
-      "mentions_patch": false,
-      "newer_than_patch": false,
-      "mention_releases": []
+      "release_tag": "v1.38.0",
+      "release_name": "Game version 2.5",
+      "release_published_at": "2026-10-22T12:57:17Z",
+      "release_url": "https://github.com/maximegmd/CyberEngineTweaks/releases/tag/v1.38.0",
+      "mentions_patch": true,
+      "newer_than_patch": true,
+      "mention_releases": [
+        "v1.38.0"
+      ]
     },
     {
       "id": "red4ext",
@@ -47,10 +49,21 @@
       "repo": "WopsS/RED4ext",
       "tracked": true,
       "sensitive": true,
-      "status": "Just patched, wait",
+      "status": "Breakage reported",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch Patch 2.5; compatibility is unverified \u2014 check the project page.",
-      "breakage_reports": [],
+      "reason": "Latest release predates patch Patch 2.5; compatibility is unverified \u2014 check the project page. 1 open issue(s) report breakage since the patch/latest release.",
+      "breakage_reports": [
+        {
+          "title": "All RED4Ext plugins broken in CP2077 2.5 \"Edgerunners II\" update",
+          "url": "https://github.com/wopss/RED4ext/issues/153",
+          "created_at": "2026-10-22T12:58:27Z",
+          "labels": [
+            "bug"
+          ],
+          "comments": 2,
+          "thumbs_up": 0
+        }
+      ],
       "official": null,
       "release_tag": "v1.30.0",
       "release_name": "v1.30.0",
@@ -69,18 +82,20 @@
       "repo": "jac3km4/redscript",
       "tracked": true,
       "sensitive": true,
-      "status": "Just patched, wait",
-      "base_status": "Unknown / check",
-      "reason": "Latest release predates patch Patch 2.5; compatibility is unverified \u2014 check the project page.",
+      "status": "Safe",
+      "base_status": "Updated for latest patch",
+      "reason": "Latest release notes mention patch Patch 2.5 and the release is on/after the patch date.",
       "breakage_reports": [],
       "official": null,
-      "release_tag": "v0.5.31",
-      "release_name": "v0.5.31",
-      "release_published_at": "2025-08-28T20:47:17Z",
-      "release_url": "https://github.com/jac3km4/redscript/releases/tag/v0.5.31",
-      "mentions_patch": false,
-      "newer_than_patch": false,
-      "mention_releases": []
+      "release_tag": "v0.5.32",
+      "release_name": "v0.5.32",
+      "release_published_at": "2026-10-22T18:25:41Z",
+      "release_url": "https://github.com/jac3km4/redscript/releases/tag/v0.5.32",
+      "mentions_patch": true,
+      "newer_than_patch": true,
+      "mention_releases": [
+        "v0.5.32"
+      ]
     },
     {
       "id": "archive-xl",
@@ -93,8 +108,17 @@
       "sensitive": true,
       "status": "Just patched, wait",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch Patch 2.5; compatibility is unverified \u2014 check the project page.",
-      "breakage_reports": [],
+      "reason": "Latest release predates patch Patch 2.5; compatibility is unverified \u2014 check the project page. One unconfirmed user report of breakage is open ('Causes the 2.5 update to silently crash'); not yet confirmed by the maintainers or other users, so it isn't counted as breakage.",
+      "breakage_reports": [
+        {
+          "title": "Causes the 2.5 update to silently crash",
+          "url": "https://github.com/psiberx/cp2077-archive-xl/issues/30",
+          "created_at": "2026-10-22T13:01:30Z",
+          "labels": [],
+          "comments": 6,
+          "thumbs_up": 0
+        }
+      ],
       "official": null,
       "release_tag": "v1.27.5",
       "release_name": "ArchiveXL 1.27.5",
@@ -162,10 +186,10 @@
           "id": "cet",
           "short": "CET",
           "name": "Cyber Engine Tweaks",
-          "status": "No post-patch release",
-          "release_tag": null,
-          "release_published_at": null,
-          "mentions_patch": false
+          "status": "Safe",
+          "release_tag": "v1.38.0",
+          "release_published_at": "2026-10-22T12:57:17Z",
+          "mentions_patch": true
         },
         {
           "id": "red4ext",
@@ -180,10 +204,10 @@
           "id": "redscript",
           "short": "redscript",
           "name": "redscript",
-          "status": "No post-patch release",
-          "release_tag": null,
-          "release_published_at": null,
-          "mentions_patch": false
+          "status": "Safe",
+          "release_tag": "v0.5.32",
+          "release_published_at": "2026-10-22T18:25:41Z",
+          "mentions_patch": true
         },
         {
           "id": "archive-xl",
@@ -244,9 +268,9 @@
           "id": "redscript",
           "short": "redscript",
           "name": "redscript",
-          "status": "No post-patch release",
-          "release_tag": null,
-          "release_published_at": null,
+          "status": "Likely safe",
+          "release_tag": "v0.5.32",
+          "release_published_at": "2026-10-22T18:25:41Z",
           "mentions_patch": false
         },
         {
@@ -419,8 +443,8 @@
           "short": "CET",
           "name": "Cyber Engine Tweaks",
           "status": "Safe",
-          "release_tag": "v1.34.1",
-          "release_published_at": "2024-12-13T01:28:19Z",
+          "release_tag": "v1.38.0",
+          "release_published_at": "2026-10-22T12:57:17Z",
           "mentions_patch": true
         },
         {
@@ -565,8 +589,8 @@
           "short": "redscript",
           "name": "redscript",
           "status": "Likely safe",
-          "release_tag": "v0.5.24",
-          "release_published_at": "2024-05-30T22:17:15Z",
+          "release_tag": "v0.5.25",
+          "release_published_at": "2024-06-16T13:23:21Z",
           "mentions_patch": false
         },
         {
@@ -629,8 +653,8 @@
           "short": "redscript",
           "name": "redscript",
           "status": "Likely safe",
-          "release_tag": "v0.5.24",
-          "release_published_at": "2024-05-30T22:17:15Z",
+          "release_tag": "v0.5.25",
+          "release_published_at": "2024-06-16T13:23:21Z",
           "mentions_patch": false
         },
         {
@@ -693,8 +717,8 @@
           "short": "redscript",
           "name": "redscript",
           "status": "Likely safe",
-          "release_tag": "v0.5.24",
-          "release_published_at": "2024-05-30T22:17:15Z",
+          "release_tag": "v0.5.25",
+          "release_published_at": "2024-06-16T13:23:21Z",
           "mentions_patch": false
         },
         {
@@ -757,8 +781,8 @@
           "short": "redscript",
           "name": "redscript",
           "status": "Likely safe",
-          "release_tag": "v0.5.24",
-          "release_published_at": "2024-05-30T22:17:15Z",
+          "release_tag": "v0.5.25",
+          "release_published_at": "2024-06-16T13:23:21Z",
           "mentions_patch": false
         },
         {
@@ -821,8 +845,8 @@
           "short": "redscript",
           "name": "redscript",
           "status": "Likely safe",
-          "release_tag": "v0.5.24",
-          "release_published_at": "2024-05-30T22:17:15Z",
+          "release_tag": "v0.5.25",
+          "release_published_at": "2024-06-16T13:23:21Z",
           "mentions_patch": false
         },
         {
@@ -885,8 +909,8 @@
           "short": "redscript",
           "name": "redscript",
           "status": "Likely safe",
-          "release_tag": "v0.5.24",
-          "release_published_at": "2024-05-30T22:17:15Z",
+          "release_tag": "v0.5.25",
+          "release_published_at": "2024-06-16T13:23:21Z",
           "mentions_patch": false
         },
         {
