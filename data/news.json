@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T19:11:54Z",
+  "generated_at": "2026-10-22T20:17:49Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,37 @@
     }
   ],
   "items": [
+    {
+      "title": "How to dual wield in Cyberpunk 2077",
+      "url": "https://www.pcgamer.com/games/rpg/how-to-dual-wield-in-cyberpunk-2077/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-22T19:35:48Z",
+      "games": [
+        "cyberpunk-2077"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "How to get King's outfit in Cyberpunk 2077",
+      "url": "https://www.pcgamer.com/games/rpg/cyberpunk-2077-king-outfit-clampdown-edgerunners/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-22T19:32:18Z",
+      "games": [
+        "cyberpunk-2077"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Future Capcom games will have Onimusha to thank for RE Engine's gnarly dismemberments",
+      "url": "https://www.pcgamer.com/games/action/future-capcom-games-will-have-onimusha-to-thank-for-re-engines-gnarly-dismemberments/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-22T19:18:23Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "'No other studio in the world did it better' than BioWare at its peak, says former Dragon Age lead writer David Gaider",
       "url": "https://www.pcgamer.com/games/dragon-age/no-other-studio-in-the-world-did-it-better-than-bioware-at-its-peak-says-former-dragon-age-lead-writer-david-gaider/",
@@ -538,33 +569,6 @@
       "url": "https://www.pcgamer.com/gaming-industry/with-bioware-dead-ea-lays-out-its-next-chapter-and-its-pretty-much-as-predicted-guns-and-football-are-fine-and-everything-else-is-under-the-microscope/",
       "source": "PC Gamer",
       "published_at": "2026-10-21T18:41:11Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "BioWare is closing down and Mass Effect 5 is cancelled, months after Saudi Arabia's $55bn EA buyout",
-      "url": "https://www.eurogamer.net/bioware-closing-down-mass-effect-5-cancelled",
-      "source": "Eurogamer",
-      "published_at": "2026-10-21T17:55:57Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "RIP BioWare: EA has shut down the legendary RPG developer",
-      "url": "https://www.pcgamer.com/gaming-industry/rip-bioware-ea-has-shut-down-the-legendary-rpg-developer/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-21T17:16:53Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "First-person Soulslike Valor Mortis is already making a profit after seven days, despite launching against some stiff competition",
-      "url": "https://www.eurogamer.net/soulslike-valor-mortis-making-profit-seven-days",
-      "source": "Eurogamer",
-      "published_at": "2026-10-21T16:43:42Z",
       "games": [],
       "kind": "news",
       "highlight": false
