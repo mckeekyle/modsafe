@@ -1331,7 +1331,7 @@ def build_404(games_data) -> str:
 {game_cards(picks, compact=True)}
 </section>
 """
-    return page_shell(f"Page not found (404) — {SITE_NAME}", "This page doesn't exist on ModSafe.", "/404.html", "",
+    return page_shell("Page not found (404) — ModSafe", "This page doesn't exist on ModSafe.", "/404.html", "",
                       body, noindex=True)
 
 
