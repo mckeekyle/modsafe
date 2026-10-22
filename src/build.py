@@ -62,7 +62,8 @@ def status_class(status: str) -> str:
     return STATUS_CLASSES.get(status, "unknown")
 
 
-def base_head(title: str, description: str, path: str, extra_jsonld: list | None = None, og: str | None = None) -> str:
+def base_head(title: str, description: str, path: str, extra_jsonld: list | None = None, og: str | None = None,
+              noindex: bool = False) -> str:
     canon = f"{SITE_URL}{path}"
     seg = path.strip("/").split("/")[0]
     alt_json = f"{SITE_URL}/{seg}/status.json" if any(g["slug"] == seg for g in GAMES) else f"{SITE_URL}/games.json"
@@ -98,6 +99,11 @@ def base_head(title: str, description: str, path: str, extra_jsonld: list | None
         f'<script type="application/ld+json">{json.dumps(b, ensure_ascii=False)}</script>'
         for b in jsonld
     )
+    canon_link = f'<link rel="canonical" href="{esc(canon)}">\n'
+    robots = "index,follow"
+    if noindex:
+        # Error pages: no canonical, no structured data, never indexed.
+        canon_link, blocks, robots = "", "", "noindex,follow"
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -105,11 +111,10 @@ def base_head(title: str, description: str, path: str, extra_jsonld: list | None
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(description)}">
-<link rel="canonical" href="{esc(canon)}">
-<link rel="alternate" type="application/json" href="{esc(alt_json)}">
+{canon_link}<link rel="alternate" type="application/json" href="{esc(alt_json)}">
 <link rel="alternate" type="text/plain" title="llms.txt" href="{esc(SITE_URL)}/llms.txt">
 {feed_links}
-<meta name="robots" content="index,follow">
+<meta name="robots" content="{robots}">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="{esc(SITE_NAME)}">
 <meta property="og:title" content="{esc(title)}">
@@ -223,6 +228,7 @@ section { margin: 0 0 1.75rem; }
   padding: .25rem .6rem; border: 1px solid rgba(255,42,109,.5); border-radius: 6px; background: rgba(255,42,109,.08); }
 .legend { display: flex; flex-wrap: wrap; gap: .45rem; margin: 1rem 0 1.4rem; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: .7rem; }
+.nf-hero .hero-actions { margin-top: var(--s5); }
 .stats { display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 1.6rem; color: var(--muted); font-size: .92rem; }
 .stats strong { display: block; font-family: var(--head); font-size: 1.6rem; color: var(--text); line-height: 1.1; }
 
@@ -551,9 +557,9 @@ def cf_beacon() -> str:
     return f"<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js\" data-cf-beacon='{esc(cfg)}'></script>\n"
 
 
-def page_shell(title, description, path, active, body, extra_jsonld=None, og=None) -> str:
+def page_shell(title, description, path, active, body, extra_jsonld=None, og=None, noindex=False) -> str:
     return (
-        base_head(title, description, path, extra_jsonld, og)
+        base_head(title, description, path, extra_jsonld, og, noindex=noindex)
         + f"""<body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="header"><div class="header-in">
@@ -1305,6 +1311,30 @@ def build_guides_index() -> str:
                       extra_jsonld=[breadcrumb_ld([("Home", "/"), ("Guides", "/guides/")])], og=guides_mod.GUIDES_OG)
 
 
+NOT_FOUND_HERO = "elden-ring"
+NOT_FOUND_PICKS = ("cyberpunk-2077", "skyrim-se", "baldurs-gate-3", "fallout-4", "stardew-valley", "minecraft")
+
+
+def build_404(games_data) -> str:
+    """Top-level 404.html: Cloudflare Pages serves it with a real 404 status for unknown paths
+    (instead of the SPA fallback to the home page). Served at any depth, so every URL is root-absolute."""
+    picks = [(g, d) for g, d in games_data if g["slug"] in NOT_FOUND_PICKS]
+    body = f"""
+<section class="home-hero nf-hero" style="--hero:url('{game_img(NOT_FOUND_HERO, "hero")}')">
+<p class="eyebrow">Error 404 · Respawn point</p>
+<h1>You <em>died</em>. Well, this page did.</h1>
+<p class="lede">This URL isn't on the map. It may have been moved, renamed or never existed. Your save is fine: pick a checkpoint below.</p>
+<div class="hero-actions"><a class="btn" href="/">🏠 Home</a> <a class="btn ghost" href="/games/">🎮 All games</a> <a class="btn ghost" href="/guides/">📖 Guides</a> <a class="btn ghost" href="/faq/">❓ FAQ</a></div>
+</section>
+<div class="sec-head"><h2>Popular checkpoints</h2><a href="/games/">All games →</a></div>
+<section class="game-grid" aria-label="Popular games">
+{game_cards(picks, compact=True)}
+</section>
+"""
+    return page_shell(f"Page not found (404) — {SITE_NAME}", "This page doesn't exist on ModSafe.", "/404.html", "",
+                      body, noindex=True)
+
+
 OG_SVG = """<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
 <rect width="1200" height="630" fill="#0a0e17"/>
 <text x="80" y="280" fill="#00f0ff" font-family="system-ui,sans-serif" font-size="64" font-weight="700">ModSafe</text>
@@ -1551,6 +1581,7 @@ def main() -> int:
     write(DIST / "faq" / "index.html", build_faq())
     write(DIST / "guides" / "index.html", build_guides_index())
     write(DIST / "guides" / "stop-steam-auto-updates" / "index.html", build_steam_updates_guide())
+    write(DIST / "404.html", build_404(games_data))
     import shutil
     shutil.copytree(STATIC, DIST, dirs_exist_ok=True)
     write(DIST / "styles.css", CSS)
