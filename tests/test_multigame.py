@@ -150,6 +150,8 @@ class TestBuild(unittest.TestCase):
                      "frameworks": fws, "history": [{"label": "P1", "title": "T", "published_at": "2026-01-01T00:00:00Z",
                                                      "url": "https://x", "frameworks": []}]}
                 (data_dir / f"{g['slug']}.json").write_text(json.dumps(d))
+            saved = (build.DATA_DIR, build.DIST, build.ROOT)
+            self.addCleanup(lambda: setattr(build, "DATA_DIR", saved[0]) or setattr(build, "DIST", saved[1]) or setattr(build, "ROOT", saved[2]))
             build.DATA_DIR, build.DIST, build.ROOT = data_dir, root / "dist", root
             self.assertEqual(build.main(), 0)
             dist = root / "dist"

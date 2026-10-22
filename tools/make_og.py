@@ -76,6 +76,12 @@ def main():
         f = ROOT / f"static/img/{g['slug']}-hero.webp"
         bg = Image.open(f) if f.exists() else None
         render(bg, f"Is it safe to update {g['name']}?", "Live mod framework status after every patch", OUT / f"{g['slug']}.png")
+    deck = ROOT / "static/img/steam-deck-hero.webp"
+    render(Image.open(deck) if deck.exists() else None, "Stop Steam auto-updating your game",
+           "What still works in 2026: settings, offline, rollbacks", OUT / "guide-stop-steam-auto-updates.png")
+    sky = ROOT / "static/img/fallout-4-hero.webp"
+    render(Image.open(sky) if sky.exists() else None, "Modding guides",
+           "Hold updates, roll back patches, install mods", OUT / "guides.png")
 
 
 if __name__ == "__main__":

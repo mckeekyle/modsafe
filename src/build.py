@@ -18,6 +18,7 @@ from games import GAMES  # noqa: E402
 import mods as mods_mod  # noqa: E402
 import feeds  # noqa: E402
 import badges  # noqa: E402
+import guides as guides_mod  # noqa: E402
 GAMES_SLUGS = {g["slug"] for g in GAMES}
 NEWS_FILE = ROOT / "data" / "news.json"
 DIST = ROOT / "dist"
@@ -61,11 +62,13 @@ def status_class(status: str) -> str:
     return STATUS_CLASSES.get(status, "unknown")
 
 
-def base_head(title: str, description: str, path: str, extra_jsonld: list | None = None) -> str:
+def base_head(title: str, description: str, path: str, extra_jsonld: list | None = None, og: str | None = None) -> str:
     canon = f"{SITE_URL}{path}"
     seg = path.strip("/").split("/")[0]
     alt_json = f"{SITE_URL}/{seg}/status.json" if any(g["slug"] == seg for g in GAMES) else f"{SITE_URL}/games.json"
     og_name = f"{seg}.png" if (STATIC / "og" / f"{seg}.png").exists() and seg in GAMES_SLUGS else "default.png"
+    if og and (STATIC / "og" / og).exists():
+        og_name = og
     og_image = f"{SITE_URL}/og/{og_name}"
     jsonld = [
         {
@@ -226,6 +229,7 @@ section { margin: 0 0 1.75rem; }
 /* section headings */
 .sec-head { display: flex; align-items: end; justify-content: space-between; gap: 1rem; margin: 2.2rem 0 1rem; }
 .sec-head h2 { font-size: clamp(1.4rem, 3vw, 1.9rem); margin: 0; text-transform: uppercase; }
+.sec-head > a { white-space: nowrap; }
 .sec-head h2::before { content: ""; display: inline-block; width: 10px; height: 1.1em; margin-right: .6rem; vertical-align: -3px; border-radius: 3px;
   background: linear-gradient(var(--neon), var(--neon2)); box-shadow: 0 0 14px rgba(0,240,255,.6); }
 
@@ -476,6 +480,24 @@ html, body { overflow-x: hidden; }
   .filters select { flex: 1 1 45%; }
   .footer nav a.more { display: none; }
 }
+.guide h3 { margin: var(--s5) 0 var(--s2); font-size: 1.15rem; }
+.guide-hero h1 { max-width: 24ch; }
+.guide-hero .note { margin-top: var(--s4); }
+.table-wrap { overflow-x: auto; margin: var(--s3) 0; }
+.guide table { width: 100%; border-collapse: collapse; font-size: .95rem; line-height: 1.5; }
+.guide th, .guide td { text-align: left; vertical-align: top; padding: .55rem .7rem; border-bottom: 1px solid var(--line); }
+.guide th { font-family: var(--head); color: var(--muted); text-transform: uppercase; font-size: .8rem; letter-spacing: .06em; }
+.guide td:first-child { white-space: nowrap; font-weight: 600; }
+.guide pre { margin: var(--s3) 0; padding: .8rem 1rem; border-radius: 10px; background: #05070c; border: 1px solid var(--line); overflow-x: auto; white-space: pre; }
+.guide code { overflow-wrap: anywhere; }
+.guide pre code { overflow-wrap: normal; }
+.guide .links { margin: var(--s3) 0; }
+.guide .badge-preview { vertical-align: middle; }
+.guide-grid { display: grid; gap: var(--s4); grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); margin-top: var(--s4); }
+.guide-card h2 { font-size: 1.15rem; margin: 0 0 var(--s2); }
+.guide-card h2 a { text-decoration: none; }
+.guide-card p { margin: 0; color: var(--muted); }
+@media (max-width: 560px) { .guide td:first-child { white-space: normal; } }
 """
 
 
@@ -489,7 +511,7 @@ def games_menu(active: str) -> str:
 
 
 def nav(active: str) -> str:
-    links = [("/news/", "news", "News"), ("/faq/", "faq", "FAQ")]
+    links = [("/news/", "news", "News"), ("/guides/", "guides", "Guides"), ("/faq/", "faq", "FAQ")]
     items = [games_menu(active)]
     for href, key, label in links:
         aria = ' aria-current="page"' if key == active else ""
@@ -508,7 +530,7 @@ def footer() -> str:
 <div>{brand()}
 <p>Know if your mods survived the patch before you hit update.</p>
 <p>Not affiliated with any game developer, publisher, Nexus Mods, Thunderstore, Modrinth or Mojang. Game art © its respective owners. Data from public sources (Steam, api.steamcmd.net, GitHub, Thunderstore, Mojang, Fabric, Forge, NeoForge, Modrinth, the Decky plugin store, silverlock.org, fsuipc.com, the Atlan patcher list) plus hand-checked records (GTA V, console mods, off-Steam hotfixes). Dates are UTC.</p></div>
-<div><nav aria-label="Footer">{game_links} <a href="/news/">News</a> <a href="/faq/">FAQ</a></nav>
+<div><nav aria-label="Footer">{game_links} <a href="/news/">News</a> <a href="/guides/">Guides</a> <a href="/faq/">FAQ</a></nav>
 <p class="dev">For developers &amp; AI: <a href="/games.json">Data (JSON)</a> · <a href="/llms.txt">llms.txt</a> · <a href="/feed.xml">Atom feed</a></p></div>
 </div></footer>"""
 
@@ -529,9 +551,9 @@ def cf_beacon() -> str:
     return f"<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js\" data-cf-beacon='{esc(cfg)}'></script>\n"
 
 
-def page_shell(title, description, path, active, body, extra_jsonld=None) -> str:
+def page_shell(title, description, path, active, body, extra_jsonld=None, og=None) -> str:
     return (
-        base_head(title, description, path, extra_jsonld)
+        base_head(title, description, path, extra_jsonld, og)
         + f"""<body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="header"><div class="header-in">
@@ -719,6 +741,8 @@ def game_faq(game: dict, data: dict) -> list[dict]:
     if game["slug"] == "stardew-valley":
         items.append({"q": "How do I check individual Stardew mods?",
                       "a": "Use the official SMAPI mod compatibility list at smapi.io/mods, which tracks compatible, broken and obsolete mods."})
+    if (steam_item := guides_mod.game_faq_item(game)):
+        items.append(steam_item)
     return items
 
 
@@ -844,7 +868,7 @@ def build_game_page(game: dict, data: dict) -> str:
 <section class="faq-list" aria-labelledby="faq-heading">
 {faq_html}
 </section>
-<section class="links">{f'<a href="/{slug}/history/">📜 Full patch history</a>' if data.get("history") else ''} <a href="{esc(game['wiki'])}">🛠 Modding resources</a> <a href="/">🎮 All games</a></section>
+<section class="links">{f'<a href="/{slug}/history/">📜 Full patch history</a>' if data.get("history") else ''} <a href="{esc(game['wiki'])}">🛠 Modding resources</a>{f' <a href="{guides_mod.STEAM_GUIDE_PATH}">🛑 Stop Steam auto-updates</a>' if game.get("steam_appid") else ''} <a href="/">🎮 All games</a></section>
 """
     return page_shell(
         f"Is it safe to update {game['name']}? Mod status for {p['label']} — ModSafe",
@@ -1061,6 +1085,7 @@ def upcoming_notice(e: dict | None) -> str:
             f'<p class="up-title">⚡ Update incoming: {esc(e.get("label") or e.get("name"))} arrives {esc(upcoming_date_text(e))}</p>'
             f'<p>Script frameworks{f" ({esc(fws)})" if fws else ""} usually break on big patches. '
             f'<strong>Turn off auto-update in {esc(stores)} and back up your mods folder.</strong> '
+            + (f'<a href="{guides_mod.STEAM_GUIDE_PATH}">How to stop Steam updating it →</a> ' if "steam" in stores.lower() else '') +
             f'This page will update when frameworks catch up.</p>'
             f'<p class="up-src">Official source: <a href="{esc(e["source"])}" rel="noopener external">{esc(e.get("source_title") or e["source"])}</a></p>'
             f'</aside>{UPCOMING_JS}')
@@ -1225,6 +1250,10 @@ function a(){{[].forEach.call(document.querySelectorAll('.around'),function(x){{
 GENERAL_FAQ = [
     {"q": "Is it safe to update my game with mods installed?",
      "a": "Vanilla patches are safe, but mods built on script extenders or loaders (SKSE, F4SE, RED4ext, BG3SE, SMAPI, BepInEx, Fabric/Forge) often break until those frameworks update. Check your game's page here first, or hold the update."},
+    {"q": "How do I stop Steam from auto-updating a modded game?",
+     "a": "Steam has no 'never update' option. Set the game's Properties > Updates to 'Wait until I launch the game', then launch through "
+          "your script extender or mod manager, or play in Offline Mode. Some games keep older versions under Game Versions & Betas. "
+          "Full guide with Steam Deck steps, rollbacks and backups: modsafe.app/guides/stop-steam-auto-updates/"},
     {"q": "What do the status labels mean?", "a": STATUS_EXPLAINER},
     {"q": "Why are some frameworks marked “Check manually”?",
      "a": "Some core mods (for example Address Library and Buffout 4) are only distributed on Nexus Mods, and some tools (like Navigraph) have no public release feed. ModSafe doesn't scrape Nexus Mods, so these are linked for you to check instead of guessed at, and they're left out of the verdict."},
@@ -1247,9 +1276,33 @@ def build_faq() -> str:
     arts = "".join(faq_article(it, "h2", i) for i, it in enumerate(GENERAL_FAQ))
     body = f"""<section class="page-hero"><h1>FAQ</h1><p class="lede">Updating modded games after a patch.</p></section>
 <section class="faq-list">{arts}</section>
-<section class="panel"><p>Game-specific FAQs: {' · '.join(f'<a href="/{g["slug"]}/#faq-heading">{esc(g["name"])}</a>' for g in GAMES)}</p></section>"""
+<section class="panel"><p>Guide: <a href="{guides_mod.STEAM_GUIDE_PATH}">How to stop Steam auto-updating a game (and roll back)</a> · <a href="/guides/">All guides</a></p>
+<p>Game-specific FAQs: {' · '.join(f'<a href="/{g["slug"]}/#faq-heading">{esc(g["name"])}</a>' for g in GAMES)}</p></section>"""
     return page_shell(f"FAQ — {SITE_NAME}", "Is it safe to update a modded game? How ModSafe decides — FAQ.", "/faq/", "faq", body,
                       extra_jsonld=[faq_ld(GENERAL_FAQ)])
+
+
+def build_steam_updates_guide() -> str:
+    faq = guides_mod.STEAM_GUIDE_FAQ
+    body = guides_mod.steam_guide_body("".join(faq_article(it, "h3") for it in faq))
+    path = guides_mod.STEAM_GUIDE_PATH
+    b = guides_mod.load_branches()
+    article = {"@context": "https://schema.org", "@type": "TechArticle", "headline": guides_mod.STEAM_GUIDE_TITLE,
+               "description": guides_mod.STEAM_GUIDE_DESC, "url": f"{SITE_URL}{path}", "dateModified": b["verified"],
+               "image": f"{SITE_URL}/og/{guides_mod.STEAM_GUIDE_OG}", "author": {"@type": "Organization", "name": SITE_NAME},
+               "publisher": {"@type": "Organization", "name": SITE_NAME, "logo": {"@type": "ImageObject", "url": f"{SITE_URL}/img/logo.png"}}}
+    return page_shell(f"{guides_mod.STEAM_GUIDE_TITLE} — ModSafe", guides_mod.STEAM_GUIDE_DESC, path, "guides", body,
+                      extra_jsonld=[article, faq_ld(faq), breadcrumb_ld([("Home", "/"), ("Guides", "/guides/"),
+                                                                         ("Stop Steam auto-updates", path)])],
+                      og=guides_mod.STEAM_GUIDE_OG)
+
+
+def build_guides_index() -> str:
+    installs = [g for g in GAMES if mods_mod.load_guide(g["slug"])]
+    return page_shell("Modding guides: hold Steam updates, roll back, install mods — ModSafe",
+                      "Guides for modded PC games: stop Steam auto-updating a game, roll back a patch, and install mods step by step.",
+                      "/guides/", "guides", guides_mod.guides_index_body(installs),
+                      extra_jsonld=[breadcrumb_ld([("Home", "/"), ("Guides", "/guides/")])], og=guides_mod.GUIDES_OG)
 
 
 OG_SVG = """<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
@@ -1285,7 +1338,9 @@ def build_llms_txt(games_data) -> str:
             tr = "" if fw.get("tracked", True) else " [not auto-tracked]"
             lines.append(f"  - {fw['name']}: {fw['status']}{tr}; release {fw.get('release_tag')} {fw.get('release_published_at') or ''}; {fw.get('reason')}")
         lines.append("")
-    lines += ["## Pages", f"- FAQ: {SITE_URL}/faq/", "",
+    lines += ["## Pages", f"- FAQ: {SITE_URL}/faq/", f"- Guides: {SITE_URL}/guides/",
+              f"- Guide: How to stop Steam auto-updating a game (Wait until I launch, Offline Mode, Steam Deck, Game Versions & Betas, "
+              f"download_depot/DepotDownloader rollback, backups): {SITE_URL}{guides_mod.STEAM_GUIDE_PATH}", "",
               "Statuses are inferred from public release data; not official developer guidance.", ""]
     return "\n".join(lines)
 
@@ -1298,7 +1353,7 @@ def build_robots() -> str:
 
 
 def sitemap_urls() -> list[str]:
-    urls = ["/", "/games/", "/news/", "/faq/"]
+    urls = ["/", "/games/", "/news/", "/faq/", "/guides/", guides_mod.STEAM_GUIDE_PATH]
     for g in GAMES:
         urls += [f"/{g['slug']}/", f"/{g['slug']}/history/"]
         if mods_mod.load_mods(g["slug"]):
@@ -1494,6 +1549,8 @@ def main() -> int:
     write(DIST / "games" / "index.html", build_games_index(games_data))
     write(DIST / "news" / "index.html", build_news_page())
     write(DIST / "faq" / "index.html", build_faq())
+    write(DIST / "guides" / "index.html", build_guides_index())
+    write(DIST / "guides" / "stop-steam-auto-updates" / "index.html", build_steam_updates_guide())
     import shutil
     shutil.copytree(STATIC, DIST, dirs_exist_ok=True)
     write(DIST / "styles.css", CSS)
