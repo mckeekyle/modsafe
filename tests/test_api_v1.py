@@ -59,8 +59,9 @@ class TestApiV1(unittest.TestCase):
 
     def test_upcoming_included(self):
         g, d = next((g, d) for g, d in self.games_data if g["slug"] == "cyberpunk-2077")
-        up = {"cyberpunk-2077": [{"version": "99.0", "label": "Patch 99.0", "date": "2026-10-22", "source": "https://example.com/p"}]}
-        a = build.api_v1_status([(g, d)], today=date(2026, 10, 21), upcoming=up)
+        up = {"cyberpunk-2077": [{"version": "99.0", "label": "Patch 99.0", "date": "2099-01-02", "source": "https://example.com/p"}]}
+        # Far-future date so live data (a real patch on/after the date) never hides the fixture entry.
+        a = build.api_v1_status([(g, d)], today=date(2099, 1, 1), upcoming=up)
         self.assertEqual(a["games"][0]["upcoming_patch"]["label"], "Patch 99.0")
 
     def test_cors_headers(self):
