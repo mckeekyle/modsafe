@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T06:33:52Z",
+  "generated_at": "2026-10-22T12:35:18Z",
   "game": {
     "slug": "valheim",
     "name": "Valheim",
@@ -13,7 +13,7 @@
       "url": "https://store.steampowered.com/news/app/892970/view/1846651706676865"
     }
   },
-  "verdict": "Just patched, wait",
+  "verdict": "Likely safe",
   "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
   "frameworks": [
     {
@@ -25,9 +25,9 @@
       "repo": "denikson/BepInExPack_Valheim",
       "tracked": true,
       "sensitive": true,
-      "status": "Just patched, wait",
+      "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch 1.0.20; compatibility is unverified \u2014 check the project page.",
+      "reason": "Latest release predates patch 1.0.20; compatibility is unverified \u2014 check the project page. Patch is 7 days old; no breakage signal available.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "5.4.2351",
@@ -47,9 +47,9 @@
       "repo": "Valheim-Modding/Jotunn",
       "tracked": true,
       "sensitive": true,
-      "status": "Just patched, wait",
+      "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch 1.0.20; compatibility is unverified \u2014 check the project page.",
+      "reason": "Latest release predates patch 1.0.20; compatibility is unverified \u2014 check the project page. No open breakage reports 7 days after the patch.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v2.30.2",

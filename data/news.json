@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T06:34:36Z",
+  "generated_at": "2026-10-22T12:36:09Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,172 @@
     }
   ],
   "items": [
+    {
+      "title": "Redditor's mother-in-law finds missing Steam Deck on train, returns it to its rightful owner in a soap box nine months later",
+      "url": "https://www.pcgamer.com/hardware/handheld-gaming-pcs/redditors-mother-in-law-finds-missing-steam-deck-on-train-returns-it-to-its-rightful-owner-in-a-soap-box-nine-months-later/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-22T12:18:18Z",
+      "games": [
+        "steam-deck"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "As Final Fantasy 14's doors remain closed, surviving players are stepping in to keep everyone's crops alive",
+      "url": "https://www.pcgamer.com/games/final-fantasy/as-final-fantasy-14s-doors-remain-closed-surviving-players-are-stepping-in-to-keep-everyones-crops-alive/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-22T12:04:49Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Resident Evil makers Capcom reveal data breach has affected over 11 million Capcom ID accounts, warn against potential phishing emails",
+      "url": "https://www.rockpapershotgun.com/resident-evil-makers-capcom-reveal-data-breach-has-affected-over-11-million-capcom-id-accounts-warn-against-potential-phishing-emails",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-22T12:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Following shock BioWare closure, scope of EA job cuts becomes clear as layoffs hit Respawn, Maxis, Full Circle, EA Motive, and more",
+      "url": "https://www.eurogamer.net/ea-cuts-massive-ripple-effect-motive-full-circle-respawn",
+      "source": "Eurogamer",
+      "published_at": "2026-10-22T11:43:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "\"We made a very difficult decision\": Australian indie showcase Freeplay reject antisemitism claims after delisting a Jewish sponsor who was allegedly accused of being a \"zionist\"",
+      "url": "https://www.rockpapershotgun.com/we-made-a-very-difficult-decision-australian-indie-showcase-freeplay-reject-antisemitism-claims-after-delisting-a-jewish-sponsor-who-was-allegedly-accused-of-being-a-zionist",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-22T11:30:06Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "How to clear a compound in Modern Warfare 4 DMZ",
+      "url": "https://www.pcgamer.com/games/call-of-duty/dmz-clear-a-compound-no-one-left/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-22T11:10:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The iconic Windows fish screensaver was inspired by a dentist's office, which makes a lot of sense when you think about it",
+      "url": "https://www.pcgamer.com/hardware/the-iconic-windows-fish-screensaver-was-inspired-by-a-dentists-office-which-makes-a-lot-of-sense-when-you-think-about-it/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-22T10:58:33Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Mass Effect's Amazon series is reportedly continuing after BioWare shutdown, which'll make an uncomfortable gravestone for the studio's work",
+      "url": "https://www.pcgamer.com/movies-tv/mass-effects-amazon-series-is-reportedly-continuing-after-bioware-shutdown-whichll-make-an-uncomfortable-gravestone-for-the-studios-work/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-22T10:52:44Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Star Wars: The Old Republic lead writer calls out BioWare for snubbing the MMO",
+      "url": "https://www.pcgamer.com/games/mmo/star-wars-the-old-republic-lead-writer-calls-out-bioware-for-snubbing-the-mmo/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-22T10:51:53Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "While EA shuts down BioWare, developers of The Sims, Skate, and Battlefield say they've also lost their jobs",
+      "url": "https://www.rockpapershotgun.com/while-ea-shuts-down-bioware-developers-of-the-sims-skate-and-battlefield-say-theyve-also-lost-their-jobs",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-22T10:30:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "How to get electronic sensors in Modern Warfare 4 DMZ",
+      "url": "https://www.pcgamer.com/games/call-of-duty/dmz-electronic-sensors-location/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-22T10:26:58Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Cyberpunk 2077's Edgerunners 2 Update (2.5) is out now!",
+      "url": "https://store.steampowered.com/news/app/1091500/view/1847286114032016",
+      "source": "Steam \u00b7 Cyberpunk",
+      "published_at": "2026-10-22T10:06:54Z",
+      "games": [
+        "cyberpunk-2077"
+      ],
+      "kind": "patch",
+      "highlight": true
+    },
+    {
+      "title": "Best Black Friday controller deals",
+      "url": "https://www.pcgamer.com/hardware/controllers/black-friday-controller-deals/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-22T10:04:38Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Mass Effect 5 was aiming to offer a \"level of autonomy and choice\" that could vault it into orbit with Larian and CD Projekt's top RPGs, former dev says post-cancellation",
+      "url": "https://www.rockpapershotgun.com/mass-effect-5-was-aiming-to-offer-a-level-of-autonomy-and-choice-that-could-vault-it-into-orbit-with-larian-and-cd-projekts-top-rpgs-former-dev-says-post-cancellation",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-22T09:49:44Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Xbox cloud gaming prices revealed, with 50 hours of ad-free game-time priced $11.99",
+      "url": "https://www.eurogamer.net/xbox-cloud-gaming-prices-revealed",
+      "source": "Eurogamer",
+      "published_at": "2026-10-22T09:10:43Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Cooler Master HAF II 500 review",
+      "url": "https://www.pcgamer.com/hardware/pc-cases/cooler-master-haf-ii-500-review/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-22T08:48:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Star Wars: Battlefront 3 reportedly being co-developed by Battlefield studio DICE and Apex Legends studio Respawn",
+      "url": "https://www.eurogamer.net/star-wars-battlefront-3-developer-respawn-dice-report",
+      "source": "Eurogamer",
+      "published_at": "2026-10-22T08:40:15Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "EA is shutting down RPG veteran Bioware \"to align talent and investments where we see the greatest opportunities for players and long-term growth\"",
+      "url": "https://www.rockpapershotgun.com/development-on-the-next-mass-effect-is-ending-ea-is-shutting-down-rpg-veteran-bioware-to-align-talent-and-investments-where-we-see-the-greatest-opportunities-for-players-and-long-term-growth",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-22T06:56:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "SteamOS 3.9.4 Beta",
       "url": "https://store.steampowered.com/news/app/1675200/view/1847286114031077",
@@ -266,7 +432,7 @@
       "highlight": false
     },
     {
-      "title": "A puzzle game where you must avoid the doing the most awkward of things: facing someone while riding an elevator",
+      "title": "A puzzle game where you must avoid doing the most awkward of things: facing someone while riding an elevator",
       "url": "https://www.rockpapershotgun.com/a-puzzle-game-where-you-must-avoid-the-doing-the-most-awkward-of-things-facing-someone-while-riding-an-elevator",
       "source": "Rock Paper Shotgun",
       "published_at": "2026-10-21T15:29:11Z",
@@ -407,168 +573,6 @@
       "url": "https://www.eurogamer.net/xbox-game-pass-list-october-2026",
       "source": "Eurogamer",
       "published_at": "2026-10-21T11:11:19Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Subnautica 2 adding its \"scariest\" region ever in next major update, the developers say",
-      "url": "https://www.eurogamer.net/subnautica-2-scariest-region-ever-made-update",
-      "source": "Eurogamer",
-      "published_at": "2026-10-21T11:08:04Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Football Manager 27 will be free to play for five days before its full release, in \"industry first\" for a game of its kind",
-      "url": "https://www.eurogamer.net/football-manager-27-free-to-play-five-days",
-      "source": "Eurogamer",
-      "published_at": "2026-10-21T11:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Xbox reportedly planning three more rounds of layoffs, with the first wave coming as early as this month",
-      "url": "https://www.eurogamer.net/xbox-layoffs-october-november-january-report",
-      "source": "Eurogamer",
-      "published_at": "2026-10-21T10:47:21Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "'We expect mass attacks to start within 15 minutes of the release': Web admins braced for emergency PHP updates to plug leaked high-severity holes",
-      "url": "https://www.pcgamer.com/software/security/we-expect-mass-attacks-to-start-within-15-minutes-of-the-release-web-admins-braced-for-emergency-php-updates-to-plug-leaked-high-severity-holes/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-21T10:39:05Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Further Xbox layoff rounds reportedly planned for this month, November, and January, while a Game Pass overhaul is in the works",
-      "url": "https://www.rockpapershotgun.com/further-xbox-layoff-rounds-reportedly-planned-for-this-month-november-and-january-while-a-game-pass-overhaul-is-in-the-works",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-21T10:34:44Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Chinese repair centre has received 7 melted 12+4-pin Nvidia GPUs in just the past two days alone",
-      "url": "https://www.pcgamer.com/hardware/graphics-cards/chinese-repair-centre-has-received-7-melted-12-4-pin-nvidia-gpus-in-just-the-past-two-days-alone/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-21T10:00:07Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Here's another gizmo to prevent your graphics card from melting - wouldn't it be nice if 12+4-pin connectors weren't a cause for concern at all?",
-      "url": "https://www.pcgamer.com/hardware/graphics-cards/heres-another-gizmo-to-prevent-your-graphics-card-from-melting-wouldnt-it-be-nice-if-12-4-pin-connectors-werent-a-cause-for-concern-at-all/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-21T09:59:41Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Resident Evil: Requiem made more money from PlayStation discs than on Xbox in total, reportedly, as Sony's march to a discless future continues",
-      "url": "https://www.eurogamer.net/playstation-physical-disc-sales-statistics-alinea",
-      "source": "Eurogamer",
-      "published_at": "2026-10-21T09:21:49Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Xbox's next-gen console to reportedly cost up to $1,800, with a Helix handheld coming in 2027 and a full release in holiday 2028",
-      "url": "https://www.eurogamer.net/microsoft-next-gen-xbox-helix-date-price",
-      "source": "Eurogamer",
-      "published_at": "2026-10-21T08:40:37Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "MSI Claw 8 EX AI+ review - superlative playing power with familiar Windows handheld caveats",
-      "url": "https://www.rockpapershotgun.com/msi-claw-8-ex-ai-plus-review",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-21T08:40:01Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Subnautica 2's next major update adds \"the scariest region we've ever done\", together with frog mechs and a very welcome tweak for dashing",
-      "url": "https://www.rockpapershotgun.com/subnautica-2s-next-major-update-adds-the-scariest-region-weve-ever-done-together-with-frog-mechs-and-a-very-welcome-tweak-for-dashing",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-21T08:07:06Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "In this age of pervasive slop maybe we should be grateful for Shrek 2 Remastered",
-      "url": "https://www.pcgamer.com/games/action/in-this-age-of-pervasive-slop-maybe-we-should-be-grateful-for-shrek-2-remastered/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-21T02:08:18Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "EA Sports FC 27 gets a PEGI 16 rating in Europe because of loot boxes",
-      "url": "https://www.pcgamer.com/gaming-industry/ea-sports-fc-27-gets-a-pegi-16-rating-in-europe-because-of-loot-boxes/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-20T21:56:37Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Reel out garbage from a flooded planet and make number go up as satisfyingly as you can in the incremental fishing game Selkie's Salvage&Co.",
-      "url": "https://www.rockpapershotgun.com/reel-out-garbage-from-a-flooded-planet-and-make-number-go-up-as-satisfyingly-as-you-can-in-the-incremental-fishing-game-selkies-salvageco",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-20T21:52:27Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "'If you can\u2019t show your game to the world without fearing it\u2019ll be cloned, something\u2019s broken' says Moonlighter studio on its canceled demo",
-      "url": "https://www.pcgamer.com/gaming-industry/if-you-cant-show-your-game-to-the-world-without-fearing-itll-be-cloned-somethings-broken-says-moonlighter-studio-on-its-canceled-demo/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-20T21:34:35Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "My favorite indie roguelike action RPG is tempting me to come back with a transformative new update inspired by Diablo seasons",
-      "url": "https://www.pcgamer.com/games/rpg/my-favorite-indie-roguelike-action-rpg-is-tempting-me-to-come-back-with-a-transformative-new-update-inspired-by-diablo-seasons/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-20T20:59:12Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The studio behind Life is Strange, Jusant, and Lost Records: Bloom & Rage is desperately struggling to stay afloat",
-      "url": "https://www.pcgamer.com/gaming-industry/the-studio-behind-life-is-strange-jusant-and-lost-records-bloom-and-rage-is-desperately-struggling-to-stay-afloat/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-20T20:43:59Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "After talking to Capcom, I'm a lot more optimistic about Onimusha 3 getting a remaster",
-      "url": "https://www.pcgamer.com/games/action/after-talking-to-capcom-im-a-lot-more-optimistic-about-onimusha-3-getting-a-remaster/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-20T20:34:43Z",
       "games": [],
       "kind": "news",
       "highlight": false
