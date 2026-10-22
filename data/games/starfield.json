@@ -353,5 +353,22 @@
   "channels": [],
   "sources": {
     "steam_news": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1716740&count=100"
-  }
+  },
+  "verdict_log": [
+    {
+      "at": "2026-10-20T00:33:37Z",
+      "patch": "1.16.244",
+      "patch_key": "1.16.244",
+      "patch_published_at": "2026-06-11T15:15:06Z",
+      "patch_url": "https://store.steampowered.com/news/app/1716740/view/1835236783560763",
+      "verdict": "Safe",
+      "frameworks": [
+        {
+          "short": "SFSE",
+          "status": "Safe",
+          "release_tag": "v0.2.21"
+        }
+      ]
+    }
+  ]
 }

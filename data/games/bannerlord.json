@@ -469,5 +469,22 @@
   "channels": [],
   "sources": {
     "steam_news": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=261550&count=100"
-  }
+  },
+  "verdict_log": [
+    {
+      "at": "2026-10-20T00:34:00Z",
+      "patch": "BL v1.4.8",
+      "patch_key": "1.4.8",
+      "patch_published_at": "2026-08-10T12:09:06Z",
+      "patch_url": "https://store.steampowered.com/news/app/261550/view/1840310314351373",
+      "verdict": "Safe",
+      "frameworks": [
+        {
+          "short": "BLSE",
+          "status": "Safe",
+          "release_tag": "v1.7.5"
+        }
+      ]
+    }
+  ]
 }

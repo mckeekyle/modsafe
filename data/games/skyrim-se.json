@@ -761,5 +761,37 @@
   "channels": [],
   "sources": {
     "steam_news": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=489830&count=100"
-  }
+  },
+  "verdict_log": [
+    {
+      "at": "2026-10-20T00:33:13Z",
+      "patch": "1.7.99",
+      "patch_key": "1.7.99",
+      "patch_published_at": "2026-08-20T14:55:37Z",
+      "patch_url": "https://store.steampowered.com/news/app/489830/view/1841579228665884",
+      "verdict": "Likely safe",
+      "frameworks": [
+        {
+          "short": "SKSE64",
+          "status": "Safe",
+          "release_tag": "v2.3.1"
+        },
+        {
+          "short": "Engine Fixes",
+          "status": "Likely safe",
+          "release_tag": "7.0.21-beta5"
+        },
+        {
+          "short": "PapyrusExt",
+          "status": "Likely safe",
+          "release_tag": "v6.5.2"
+        },
+        {
+          "short": "CrashLogger",
+          "status": "Safe",
+          "release_tag": "v1.25.0"
+        }
+      ]
+    }
+  ]
 }

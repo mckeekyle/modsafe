@@ -504,5 +504,22 @@
   "channels": [],
   "sources": {
     "steam_news": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=294100&count=100"
-  }
+  },
+  "verdict_log": [
+    {
+      "at": "2026-10-20T00:33:57Z",
+      "patch": "1.6.4871",
+      "patch_key": "1.6.4871",
+      "patch_published_at": "2026-06-30T17:12:35Z",
+      "patch_url": "https://steamcommunity.com/app/294100/discussions/0/572668324079519232/",
+      "verdict": "Safe",
+      "frameworks": [
+        {
+          "short": "HugsLib",
+          "status": "Safe",
+          "release_tag": "v12.0.0"
+        }
+      ]
+    }
+  ]
 }

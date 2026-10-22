@@ -784,5 +784,32 @@
   "channels": [],
   "sources": {
     "steam_news": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1966720&count=100"
-  }
+  },
+  "verdict_log": [
+    {
+      "at": "2026-10-20T00:33:32Z",
+      "patch": "v81",
+      "patch_key": "81",
+      "patch_published_at": "2026-04-17T01:11:45Z",
+      "patch_url": "https://lethal.miraheze.org/wiki/Version_81",
+      "verdict": "Likely safe",
+      "frameworks": [
+        {
+          "short": "LethalLib",
+          "status": "Likely safe",
+          "release_tag": "v1.2.0"
+        },
+        {
+          "short": "LLL",
+          "status": "Safe",
+          "release_tag": "1.7.13"
+        },
+        {
+          "short": "MoreCompany",
+          "status": "Likely safe",
+          "release_tag": "1.14.0"
+        }
+      ]
+    }
+  ]
 }

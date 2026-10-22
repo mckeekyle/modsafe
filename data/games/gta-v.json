@@ -136,5 +136,22 @@
       "https://gta.wiki/w/Grand_Theft_Auto_V/Title_Update_Notes/Update-2026-07-14",
       "https://www.reddit.com/r/lspdfr/comments/1uwf499/gta_v_update_july_2026/"
     ]
-  }
+  },
+  "verdict_log": [
+    {
+      "at": "2026-10-20T00:33:34Z",
+      "patch": "Title Update 1.73",
+      "patch_key": "1.73",
+      "patch_published_at": "2026-07-14T09:00:00Z",
+      "patch_url": "https://support.rockstargames.com/articles/4vRqEDvjUs9h7nqRUgc8YO/gtav-title-update-1-73-notes-ps5-ps4-xbox-series-x-or-s-xbox-one-pc-enhanced-legacy",
+      "verdict": "Not ported yet",
+      "frameworks": [
+        {
+          "short": "ScriptHookV",
+          "status": "Not ported yet",
+          "release_tag": "v3889.0 / 1158.13"
+        }
+      ]
+    }
+  ]
 }

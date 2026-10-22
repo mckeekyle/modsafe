@@ -359,5 +359,32 @@
   "channels": [],
   "sources": {
     "steam_news": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1250410&count=100"
-  }
+  },
+  "verdict_log": [
+    {
+      "at": "2026-10-20T00:34:31Z",
+      "patch": "Sim Update 16.1",
+      "patch_key": "16.1",
+      "patch_published_at": "2026-03-02T18:00:47Z",
+      "patch_url": "https://forums.flightsimulator.com/t/release-notes-microsoft-flight-simulator-2020-sim-update-16-1-1-39-12-0/758903",
+      "verdict": "Likely safe",
+      "frameworks": [
+        {
+          "short": "FBW A32NX",
+          "status": "Likely safe",
+          "release_tag": "v2020.15.0"
+        },
+        {
+          "short": "FSUIPC7",
+          "status": "Likely safe",
+          "release_tag": "7.5.9"
+        },
+        {
+          "short": "MobiFlight",
+          "status": "Likely safe",
+          "release_tag": "11.3.1"
+        }
+      ]
+    }
+  ]
 }

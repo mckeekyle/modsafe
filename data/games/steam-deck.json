@@ -647,5 +647,22 @@
   ],
   "sources": {
     "steam_news": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1675200&count=100"
-  }
+  },
+  "verdict_log": [
+    {
+      "at": "2026-10-20T00:34:07Z",
+      "patch": "SteamOS 3.8.28",
+      "patch_key": "3.8.28",
+      "patch_published_at": "2026-09-25T00:28:44Z",
+      "patch_url": "https://store.steampowered.com/news/app/1675200/view/1844751498222971",
+      "verdict": "Likely safe",
+      "frameworks": [
+        {
+          "short": "Decky",
+          "status": "Likely safe",
+          "release_tag": "v3.3.0"
+        }
+      ]
+    }
+  ]
 }

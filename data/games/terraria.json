@@ -175,5 +175,22 @@
   "channels": [],
   "sources": {
     "steam_news": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=105600&count=100"
-  }
+  },
+  "verdict_log": [
+    {
+      "at": "2026-10-20T00:33:54Z",
+      "patch": "1.4.5.8",
+      "patch_key": "1.4.5.8",
+      "patch_published_at": "2026-08-23T18:47:09Z",
+      "patch_url": "https://store.steampowered.com/news/app/105600/view/1844751498222763",
+      "verdict": "Likely safe",
+      "frameworks": [
+        {
+          "short": "tModLoader",
+          "status": "Likely safe",
+          "release_tag": "v2026.08.3.0"
+        }
+      ]
+    }
+  ]
 }

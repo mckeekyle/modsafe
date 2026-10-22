@@ -504,5 +504,22 @@
   "channels": [],
   "sources": {
     "steam_news": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1086940&count=100"
-  }
+  },
+  "verdict_log": [
+    {
+      "at": "2026-10-20T00:33:20Z",
+      "patch": "Update 4.1.1.7631656",
+      "patch_key": "4.1.1.7631656",
+      "patch_published_at": "2026-09-29T14:55:18Z",
+      "patch_url": "https://x.com/larianstudios/status/2104950573405704200",
+      "verdict": "Likely safe",
+      "frameworks": [
+        {
+          "short": "BG3SE",
+          "status": "Likely safe",
+          "release_tag": "v33"
+        }
+      ]
+    }
+  ]
 }

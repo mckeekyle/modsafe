@@ -336,5 +336,22 @@
   "channels": [],
   "sources": {
     "steam_news": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=413150&count=100"
-  }
+  },
+  "verdict_log": [
+    {
+      "at": "2026-10-20T00:33:22Z",
+      "patch": "1.6.15",
+      "patch_key": "1.6.15",
+      "patch_published_at": "2024-12-20T18:14:21Z",
+      "patch_url": "https://store.steampowered.com/news/app/413150/view/1786573930663336",
+      "verdict": "Safe",
+      "frameworks": [
+        {
+          "short": "SMAPI",
+          "status": "Safe",
+          "release_tag": "4.5.2"
+        }
+      ]
+    }
+  ]
 }

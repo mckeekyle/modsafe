@@ -464,5 +464,47 @@
   "channels": [],
   "sources": {
     "steam_news": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=892970&count=100"
-  }
+  },
+  "verdict_log": [
+    {
+      "at": "2026-10-20T00:33:47Z",
+      "patch": "1.0.20",
+      "patch_key": "1.0.20",
+      "patch_published_at": "2026-10-15T08:58:17Z",
+      "patch_url": "https://store.steampowered.com/news/app/892970/view/1846651706676865",
+      "verdict": "Just patched, wait",
+      "frameworks": [
+        {
+          "short": "BepInEx",
+          "status": "Just patched, wait",
+          "release_tag": "5.4.2351"
+        },
+        {
+          "short": "J\u00f6tunn",
+          "status": "Just patched, wait",
+          "release_tag": "v2.30.2"
+        }
+      ]
+    },
+    {
+      "at": "2026-10-22T12:35:18Z",
+      "patch": "1.0.20",
+      "patch_key": "1.0.20",
+      "patch_published_at": "2026-10-15T08:58:17Z",
+      "patch_url": "https://store.steampowered.com/news/app/892970/view/1846651706676865",
+      "verdict": "Likely safe",
+      "frameworks": [
+        {
+          "short": "BepInEx",
+          "status": "Likely safe",
+          "release_tag": "5.4.2351"
+        },
+        {
+          "short": "J\u00f6tunn",
+          "status": "Likely safe",
+          "release_tag": "v2.30.2"
+        }
+      ]
+    }
+  ]
 }

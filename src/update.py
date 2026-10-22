@@ -24,6 +24,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from games import GAMES  # noqa: E402
+import feeds  # noqa: E402
 from status_logic import (  # noqa: E402
     confirmed_breakage,
     STATUS_UNKNOWN,
@@ -691,6 +692,14 @@ def previous_framework(slug: str, fw_id: str, latest: dict) -> Optional[dict]:
     return None
 
 
+def previous_verdict_log(path: Path) -> list:
+    """verdict_log from the previously committed data file (feeds /feed.xml); [] if missing or unreadable."""
+    try:
+        return json.loads(path.read_text(encoding="utf-8")).get("verdict_log") or []
+    except (OSError, ValueError):
+        return []
+
+
 def should_skip_refetch(env=os.environ) -> Optional[str]:
     """Pages builds (CF_PAGES) and token-less runs must not refetch: unauthenticated GitHub calls hit rate limits
     and would publish 'No data'. They use the data/games/*.json the scheduled Actions workflow commits."""
@@ -723,6 +732,7 @@ def main(argv: list[str]) -> int:
             failures.append(game["slug"])
             print(f"  ERROR: {e}; keeping previous data" if path.exists() else f"  ERROR: {e}", file=sys.stderr)
             continue
+        payload["verdict_log"] = feeds.append_verdict_log(previous_verdict_log(path), payload)
         path.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
         lp = payload["game"]["latest_patch"]
         print(f"  patch {lp['label']} ({lp['published_at'][:10]}) → {payload['verdict']}")

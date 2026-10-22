@@ -423,5 +423,57 @@
   "channels": [],
   "sources": {
     "steam_news": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=2537590&count=100"
-  }
+  },
+  "verdict_log": [
+    {
+      "at": "2026-10-20T00:34:18Z",
+      "patch": "Sim Update 7",
+      "patch_key": "7",
+      "patch_published_at": "2026-10-13T22:44:53Z",
+      "patch_url": "https://store.steampowered.com/news/app/2537590/view/1846651706672616",
+      "verdict": "Just patched, wait",
+      "frameworks": [
+        {
+          "short": "FBW A32NX",
+          "status": "Just patched, wait",
+          "release_tag": "v2024.1.0"
+        },
+        {
+          "short": "FSUIPC7",
+          "status": "Just patched, wait",
+          "release_tag": "7.5.9"
+        },
+        {
+          "short": "MobiFlight",
+          "status": "Just patched, wait",
+          "release_tag": "11.3.1"
+        }
+      ]
+    },
+    {
+      "at": "2026-10-21T00:32:29Z",
+      "patch": "Sim Update 7",
+      "patch_key": "7",
+      "patch_published_at": "2026-10-13T22:44:53Z",
+      "patch_url": "https://store.steampowered.com/news/app/2537590/view/1846651706672616",
+      "verdict": "Likely safe",
+      "frameworks": [
+        {
+          "short": "FBW A32NX",
+          "status": "Likely safe",
+          "release_tag": "v2024.1.0"
+        },
+        {
+          "short": "FSUIPC7",
+          "status": "Likely safe",
+          "release_tag": "7.5.9"
+        },
+        {
+          "short": "MobiFlight",
+          "status": "Likely safe",
+          "release_tag": "11.3.1"
+        }
+      ]
+    }
+  ]
 }

@@ -109,5 +109,22 @@
   "sources": {
     "steam_build": "https://api.steamcmd.net/v1/info/3017860",
     "atlan_config": "https://dcealopez.es/AtlanPatcher.txt"
-  }
+  },
+  "verdict_log": [
+    {
+      "at": "2026-10-20T00:34:32Z",
+      "patch": "Steam build 25755602",
+      "patch_key": "steam-build-25755602",
+      "patch_published_at": "2026-10-07T15:16:04Z",
+      "patch_url": "https://api.steamcmd.net/v1/info/3017860",
+      "verdict": "Safe",
+      "frameworks": [
+        {
+          "short": "Atlan",
+          "status": "Safe",
+          "release_tag": "AtlanModLoader_v_9_0.zip"
+        }
+      ]
+    }
+  ]
 }

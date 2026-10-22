@@ -540,5 +540,67 @@
   "channels": [],
   "sources": {
     "steam_news": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1245620&count=100"
-  }
+  },
+  "verdict_log": [
+    {
+      "at": "2026-10-20T00:33:41Z",
+      "patch": "1.17.1",
+      "patch_key": "1.17.1",
+      "patch_published_at": "2026-09-08T07:02:18Z",
+      "patch_url": "https://www.eldenring.jp/newsdetail/news_detail_260908_1.html",
+      "verdict": "Likely safe",
+      "frameworks": [
+        {
+          "short": "Seamless Co-op",
+          "status": "Likely safe",
+          "release_tag": "v2.0.1"
+        },
+        {
+          "short": "me3",
+          "status": "Likely safe",
+          "release_tag": "v0.13.0"
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T12:33:05Z",
+      "patch": "1.17.1",
+      "patch_key": "1.17.1",
+      "patch_published_at": "2026-09-08T07:02:18Z",
+      "patch_url": "https://www.eldenring.jp/newsdetail/news_detail_260908_1.html",
+      "verdict": "Just patched, wait",
+      "frameworks": [
+        {
+          "short": "Seamless Co-op",
+          "status": "Just patched, wait",
+          "release_tag": "v2.0.1"
+        },
+        {
+          "short": "me3",
+          "status": "Just patched, wait",
+          "release_tag": "v0.13.0"
+        }
+      ]
+    },
+    {
+      "at": "2026-10-20T19:06:21Z",
+      "patch": "1.17.2",
+      "patch_key": "1.17.2",
+      "patch_published_at": "2026-10-20T07:00:45Z",
+      "patch_url": "https://www.eldenring.jp/newsdetail/news_detail_261020_1.html",
+      "verdict": "Just patched, wait",
+      "frameworks": [
+        {
+          "short": "Seamless Co-op",
+          "status": "Just patched, wait",
+          "release_tag": "v2.0.1"
+        },
+        {
+          "short": "me3",
+          "status": "Just patched, wait",
+          "release_tag": "v0.13.0"
+        }
+      ]
+    }
+  ]
 }

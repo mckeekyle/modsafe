@@ -738,5 +738,97 @@
     "forge_promotions": "https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json",
     "neoforge_maven": "https://maven.neoforged.net/api/maven/versions/releases/net/neoforged/neoforge",
     "modrinth": "https://api.modrinth.com/v2"
-  }
+  },
+  "verdict_log": [
+    {
+      "at": "2026-10-20T00:34:02Z",
+      "patch": "26.3",
+      "patch_key": "26.3",
+      "patch_published_at": "2026-09-15T11:23:02Z",
+      "patch_url": "https://www.minecraft.net/en-us/article/minecraft-java-edition-26-3",
+      "verdict": "Likely safe",
+      "frameworks": [
+        {
+          "short": "Fabric",
+          "status": "Safe",
+          "release_tag": "0.19.5"
+        },
+        {
+          "short": "Fabric API",
+          "status": "Safe",
+          "release_tag": "0.164.0+26.3"
+        },
+        {
+          "short": "Forge",
+          "status": "Likely safe",
+          "release_tag": "66.0.13"
+        },
+        {
+          "short": "NeoForge",
+          "status": "Safe",
+          "release_tag": "26.3.0.94"
+        },
+        {
+          "short": "Sodium",
+          "status": "Safe",
+          "release_tag": "mc26.3-0.9.2-fabric"
+        },
+        {
+          "short": "Iris",
+          "status": "Safe",
+          "release_tag": "1.11.7+26.3-fabric"
+        },
+        {
+          "short": "Lithium",
+          "status": "Safe",
+          "release_tag": "mc26.3-0.26.2-fabric"
+        }
+      ]
+    },
+    {
+      "at": "2026-10-21T18:29:39Z",
+      "patch": "26.3",
+      "patch_key": "26.3",
+      "patch_published_at": "2026-09-15T11:23:02Z",
+      "patch_url": "https://www.minecraft.net/en-us/article/minecraft-java-edition-26-3",
+      "verdict": "Safe",
+      "frameworks": [
+        {
+          "short": "Fabric",
+          "status": "Safe",
+          "release_tag": "0.19.5"
+        },
+        {
+          "short": "Fabric API",
+          "status": "Safe",
+          "release_tag": "0.164.0+26.3"
+        },
+        {
+          "short": "Forge",
+          "status": "Safe",
+          "release_tag": "66.1.0"
+        },
+        {
+          "short": "NeoForge",
+          "status": "Safe",
+          "release_tag": "26.3.0.95"
+        },
+        {
+          "short": "Sodium",
+          "status": "Safe",
+          "release_tag": "mc26.3-0.9.2-fabric"
+        },
+        {
+          "short": "Iris",
+          "status": "Safe",
+          "release_tag": "1.11.7+26.3-fabric"
+        },
+        {
+          "short": "Lithium",
+          "status": "Safe",
+          "release_tag": "mc26.3-0.26.2-fabric"
+        }
+      ]
+    }
+  ]
 }
