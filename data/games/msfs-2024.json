@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T18:29:54Z",
+  "generated_at": "2026-10-22T00:32:56Z",
   "game": {
     "slug": "msfs-2024",
     "name": "Microsoft Flight Simulator 2024",
@@ -27,7 +27,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch Sim Update 7; compatibility is unverified \u2014 check the project page. No open breakage reports 7 days after the patch.",
+      "reason": "Latest release predates patch Sim Update 7; compatibility is unverified \u2014 check the project page. No open breakage reports 8 days after the patch.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v2024.1.0",
@@ -49,7 +49,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch Sim Update 7; compatibility is unverified \u2014 check the project page. Patch is 7 days old; no breakage signal available.",
+      "reason": "Latest release predates patch Sim Update 7; compatibility is unverified \u2014 check the project page. Patch is 8 days old; no breakage signal available.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "7.5.9",
@@ -71,7 +71,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch Sim Update 7; compatibility is unverified \u2014 check the project page. No open breakage reports 7 days after the patch.",
+      "reason": "Latest release predates patch Sim Update 7; compatibility is unverified \u2014 check the project page. No open breakage reports 8 days after the patch.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "11.3.1",
