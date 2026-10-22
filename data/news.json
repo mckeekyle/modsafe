@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T00:33:11Z",
+  "generated_at": "2026-10-22T06:34:36Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,35 @@
     }
   ],
   "items": [
+    {
+      "title": "SteamOS 3.9.4 Beta",
+      "url": "https://store.steampowered.com/news/app/1675200/view/1847286114031077",
+      "source": "Steam \u00b7 Steam Deck",
+      "published_at": "2026-10-22T03:41:55Z",
+      "games": [
+        "steam-deck"
+      ],
+      "kind": "announcement",
+      "highlight": false
+    },
+    {
+      "title": "The next Mass Effect would have had 'a level of autonomy and choice that no other game has been able to match', according to BioWare veteran",
+      "url": "https://www.pcgamer.com/games/mass-effect/the-next-mass-effect-would-have-had-a-level-of-autonomy-and-choice-that-no-other-game-has-been-able-to-match-according-to-bioware-veteran/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-22T01:14:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Can you identify the horror game by its horrors?",
+      "url": "https://www.pcgamer.com/games/can-you-identify-the-horror-game-by-its-horrors/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-22T01:09:04Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Holy crap, they're making Serious Sam: The Third Encounter",
       "url": "https://www.pcgamer.com/games/fps/holy-crap-theyre-making-serious-sam-the-third-encounter/",
@@ -540,33 +569,6 @@
       "url": "https://www.pcgamer.com/games/action/after-talking-to-capcom-im-a-lot-more-optimistic-about-onimusha-3-getting-a-remaster/",
       "source": "PC Gamer",
       "published_at": "2026-10-20T20:34:43Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "I have seen the future of sports games and it is called just volleyball",
-      "url": "https://www.rockpapershotgun.com/i-have-seen-the-future-of-sports-games-and-it-is-called-just-volleyball",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-20T20:32:47Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Dig through an infested planet with your giant drill-city and try not to die while you do it in the roguelite city-builder CitaDrill",
-      "url": "https://www.rockpapershotgun.com/dig-through-an-infested-planet-with-your-giant-drill-city-and-try-not-to-die-while-you-do-it-in-the-roguelite-city-builder-citadrill",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-20T19:15:42Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Founder of bankrupt Samson studio mulls how to use AI for his next attempt: 'Cutting corners in game development has a habit of coming back to bite you in the ass'",
-      "url": "https://www.pcgamer.com/gaming-industry/founder-of-bankrupt-samson-studio-mulls-how-to-use-ai-for-his-next-attempt-cutting-corners-in-game-development-has-a-habit-of-coming-back-to-bite-you-in-the-ass/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-20T18:43:15Z",
       "games": [],
       "kind": "news",
       "highlight": false
