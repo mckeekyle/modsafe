@@ -16,6 +16,8 @@ DATA_DIR = ROOT / "data" / "games"
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from games import GAMES  # noqa: E402
 import mods as mods_mod  # noqa: E402
+import feeds  # noqa: E402
+import badges  # noqa: E402
 GAMES_SLUGS = {g["slug"] for g in GAMES}
 NEWS_FILE = ROOT / "data" / "news.json"
 DIST = ROOT / "dist"
@@ -84,6 +86,11 @@ def base_head(title: str, description: str, path: str, extra_jsonld: list | None
     ]
     if extra_jsonld:
         jsonld.extend(extra_jsonld)
+    feed_links = f'<link rel="alternate" type="application/atom+xml" title="ModSafe: all games" href="{esc(SITE_URL)}/feed.xml">'
+    gname = next((g["name"] for g in GAMES if g["slug"] == seg), None)
+    if gname:
+        feed_links = (f'<link rel="alternate" type="application/atom+xml" title="ModSafe: {esc(gname)}" '
+                      f'href="{esc(SITE_URL)}/{esc(seg)}/feed.xml">\n' + feed_links)
     blocks = "\n".join(
         f'<script type="application/ld+json">{json.dumps(b, ensure_ascii=False)}</script>'
         for b in jsonld
@@ -98,6 +105,7 @@ def base_head(title: str, description: str, path: str, extra_jsonld: list | None
 <link rel="canonical" href="{esc(canon)}">
 <link rel="alternate" type="application/json" href="{esc(alt_json)}">
 <link rel="alternate" type="text/plain" title="llms.txt" href="{esc(SITE_URL)}/llms.txt">
+{feed_links}
 <meta name="robots" content="index,follow">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="{esc(SITE_NAME)}">
@@ -437,6 +445,20 @@ html, body { overflow-x: hidden; }
   background: var(--panel); cursor: pointer; font-weight: 600; }
 .toggle input { accent-color: var(--neon); width: 18px; height: 18px; }
 .footer .all-games { color: var(--neon); font-weight: 700; }
+/* follow (RSS/Atom) + embeddable badge */
+.follow-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--s4); }
+.follow-grid .panel h3 { margin: 0 0 var(--s2); font-family: var(--head); text-transform: uppercase; font-size: 1.05rem; letter-spacing: .03em; }
+.follow-grid .panel p { margin: 0 0 var(--s3); color: #c8d3e8; font-size: .92rem; }
+.snip { display: flex; gap: var(--s2); align-items: stretch; margin: 0 0 var(--s2); }
+.snip label { flex: none; width: 4.6rem; align-self: center; font-size: .75rem; text-transform: uppercase; letter-spacing: .06em; color: var(--dim); }
+.snip input { flex: 1; min-width: 0; padding: .45rem .6rem; border-radius: 8px; border: 1px solid var(--line); background: var(--bg2); color: #cfe3ff;
+  font-family: var(--mono); font-size: .8rem; }
+.snip input:focus { outline: 2px solid var(--neon); outline-offset: 1px; }
+.copy { flex: none; padding: .4rem .75rem; border-radius: 8px; border: 1px solid rgba(0,240,255,.5); background: rgba(0,240,255,.08); color: var(--neon);
+  font-weight: 700; font-size: .8rem; cursor: pointer; font-family: var(--head); }
+.copy:hover { background: rgba(0,240,255,.18); }
+.badge-preview { display: block; margin: 0 0 var(--s3); max-width: 100%; height: auto; }
+.follow-grid .fine { font-size: .8rem !important; color: var(--dim) !important; margin: var(--s2) 0 0 !important; }
 [hidden] { display: none !important; }
 @media (max-width: 820px) {
   main { padding: var(--s4) var(--s4) var(--s7); }
@@ -487,7 +509,7 @@ def footer() -> str:
 <p>Know if your mods survived the patch before you hit update.</p>
 <p>Not affiliated with any game developer, publisher, Nexus Mods, Thunderstore, Modrinth or Mojang. Game art © its respective owners. Data from public sources (Steam, api.steamcmd.net, GitHub, Thunderstore, Mojang, Fabric, Forge, NeoForge, Modrinth, the Decky plugin store, silverlock.org, fsuipc.com, the Atlan patcher list) plus hand-checked records (GTA V, console mods, off-Steam hotfixes). Dates are UTC.</p></div>
 <div><nav aria-label="Footer">{game_links} <a href="/news/">News</a> <a href="/faq/">FAQ</a></nav>
-<p class="dev">For developers &amp; AI: <a href="/games.json">Data (JSON)</a> · <a href="/llms.txt">llms.txt</a></p></div>
+<p class="dev">For developers &amp; AI: <a href="/games.json">Data (JSON)</a> · <a href="/llms.txt">llms.txt</a> · <a href="/feed.xml">Atom feed</a></p></div>
 </div></footer>"""
 
 
@@ -520,7 +542,7 @@ def page_shell(title, description, path, active, body, extra_jsonld=None) -> str
 {body}
 </main>
 {footer()}
-{cf_beacon()}{MENU_JS}
+{cf_beacon()}{MENU_JS}{COPY_JS if 'class="copy"' in body else ''}
 </body>
 </html>
 """
@@ -727,6 +749,36 @@ def framework_cards(data: dict) -> str:
     return "".join(out)
 
 
+def snippet_row(fid: str, label: str, value: str) -> str:
+    return (f'<div class="snip"><label for="{fid}">{esc(label)}</label>'
+            f'<input id="{fid}" type="text" readonly value="{esc(value)}" spellcheck="false">'
+            f'<button type="button" class="copy" data-for="{fid}">Copy</button></div>')
+
+
+def follow_section(game: dict, data: dict) -> str:
+    slug = game["slug"]
+    sn = badges.embed_snippets(game, SITE_URL)
+    return f"""<div class="sec-head" id="follow"><h2>Follow &amp; embed</h2></div>
+<section class="follow-grid" aria-label="Follow and embed">
+<div class="panel">
+<h3>📡 Follow via RSS / Discord</h3>
+<p>Get a post when a new {esc(game['name'])} patch lands or the verdict changes. Paste this Atom feed into any feed reader
+(Feedly, Inoreader, NetNewsWire, Thunderbird) or a Discord RSS bot such as MonitoRSS. No account needed.</p>
+{snippet_row(f"feed-{slug}", "Feed", f"{SITE_URL}/{slug}/feed.xml")}
+<p class="fine">Every game in one feed: <a href="/feed.xml">{esc(SITE_URL.split('//')[-1])}/feed.xml</a></p>
+</div>
+<div class="panel">
+<h3>🏷 Embed this badge</h3>
+<p>Show live {esc(game['name'])} mod status in your mod's README or description. Updates automatically.</p>
+<a href="/{slug}/"><img class="badge-preview" src="/badge/{slug}.svg" alt="ModSafe: {esc(game['name'])} mod status badge" height="20" loading="lazy"></a>
+{snippet_row(f"md-{slug}", "Markdown", sn['markdown'])}
+{snippet_row(f"html-{slug}", "HTML", sn['html'])}
+{snippet_row(f"bb-{slug}", "BBCode", sn['bbcode'])}
+<p class="fine">BBCode is for Nexus-style descriptions; preview first, since some sites don't display SVG images.</p>
+</div>
+</section>"""
+
+
 def build_game_page(game: dict, data: dict) -> str:
     p = data["game"]["latest_patch"]
     slug = game["slug"]
@@ -757,7 +809,7 @@ def build_game_page(game: dict, data: dict) -> str:
 </section>
 {upcoming_notice(active_upcoming(slug, data))}
 {stale_banner(data)}
-<nav class="tabs" aria-label="On this page"><a href="#status">Status</a><a href="#fw-heading">Frameworks</a>{'<a href="#history">Patch history</a>' if data.get("history") else ''}{'<a href="#mods">Essential ' + (mods_mod.load_mods(slug) or {}).get("noun", "mods") + '</a>' if mods_mod.load_mods(slug) else ''}{'<a href="#console">Console mods</a>' if slug in (CONSOLE_MODS if CONSOLE_MODS is not None else load_console_mods()) else ''}<a href="#news">News</a><a href="#faq-heading">FAQ</a></nav>
+<nav class="tabs" aria-label="On this page"><a href="#status">Status</a><a href="#fw-heading">Frameworks</a>{'<a href="#history">Patch history</a>' if data.get("history") else ''}{'<a href="#mods">Essential ' + (mods_mod.load_mods(slug) or {}).get("noun", "mods") + '</a>' if mods_mod.load_mods(slug) else ''}{'<a href="#console">Console mods</a>' if slug in (CONSOLE_MODS if CONSOLE_MODS is not None else load_console_mods()) else ''}<a href="#news">News</a><a href="#follow">Follow</a><a href="#faq-heading">FAQ</a></nav>
 <div class="vgrid" id="status">
 <section class="panel" aria-labelledby="verdict-heading">
 <h2 id="verdict-heading">Verdict for {esc(p['label'])}</h2>
@@ -787,6 +839,7 @@ def build_game_page(game: dict, data: dict) -> str:
 {console_mods_section(slug)}
 <div class="sec-head" id="news"><h2>{esc(game['short'])} news</h2><a href="/news/">All news →</a></div>
 <section class="panel">{news_list(game_news(slug, data), 8)}</section>
+{follow_section(game, data)}
 <div class="sec-head"><h2 id="faq-heading">{esc(game['short'])} modding FAQ</h2></div>
 <section class="faq-list" aria-labelledby="faq-heading">
 {faq_html}
@@ -1178,6 +1231,15 @@ GENERAL_FAQ = [
     {"q": "Where does the data come from?",
      "a": "Steam Web API news (official announcements), Mojang's version manifest, GitHub releases/tags and issues, the Thunderstore package API, Fabric meta, Forge promotions, NeoForge Maven, the Modrinth API, the Decky plugin store API, the official silverlock.org script extender pages, fsuipc.com, Steam public-build info (api.steamcmd.net) and the Atlan patcher's build list. GTA V, console mods and hotfixes announced only off Steam use hand-checked records with cited sources (dates shown on each page). Refreshed automatically every 6 hours."},
     {"q": "Which games are covered?", "a": ", ".join(g["name"] for g in GAMES) + "."},
+    {"q": "Can I get notified when a verdict changes?",
+     "a": "Yes, with RSS/Atom feeds: no account and no email. modsafe.app/feed.xml covers every game, and each game has its own feed "
+          "(for example modsafe.app/cyberpunk-2077/feed.xml). A new entry appears when a new patch is detected, the verdict changes, or a "
+          "patch-sensitive framework changes status. Add a feed to any feed reader, or to a Discord server with an RSS bot such as MonitoRSS. "
+          "The link is in the Follow section of every game page."},
+    {"q": "Can I show a game's mod status on my mod page or README?",
+     "a": "Yes. Every game has a live SVG status badge at modsafe.app/badge/<game>.svg (for example modsafe.app/badge/skyrim-se.svg) showing "
+          "the current patch and verdict in ModSafe's colours. Copy the Markdown, HTML or BBCode snippet from the Follow & embed section of the game page. "
+          "A shields.io endpoint (modsafe.app/badge/<game>.json) is also available if you prefer shields.io styling."},
 ]
 
 
@@ -1201,11 +1263,14 @@ OG_SVG = """<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" vi
 def build_llms_txt(games_data) -> str:
     lines = [f"# {SITE_NAME}", "", f"> {SITE_DESC}", "", f"Site: {SITE_URL}/", f"Index JSON: {SITE_URL}/games.json",
              f"Stable API (v1, CORS-enabled, all games + per-mod verdicts): {SITE_URL}/api/v1/status.json",
-             f"Legacy Cyberpunk JSON: {SITE_URL}/status.json", "",
+             f"Legacy Cyberpunk JSON: {SITE_URL}/status.json",
+             f"Atom feed of new patches and verdict changes (all games): {SITE_URL}/feed.xml (per game: {SITE_URL}/<slug>/feed.xml)",
+             f"Status badges (SVG, per game): {SITE_URL}/badge/<slug>.svg (shields.io endpoint JSON: {SITE_URL}/badge/<slug>.json)", "",
              "Status meanings: " + STATUS_EXPLAINER, ""]
     for game, data in games_data:
         p = data["game"]["latest_patch"]
         lines += [f"## {game['name']}", f"- Page: {SITE_URL}/{game['slug']}/", f"- JSON: {SITE_URL}/{game['slug']}/status.json",
+                  f"- Feed (Atom): {SITE_URL}/{game['slug']}/feed.xml", f"- Badge: {SITE_URL}/badge/{game['slug']}.svg",
                   f"- Latest patch: {p['label']} ({p.get('published_at')}) {p.get('url')}", f"- Verdict: {data['verdict']}",
                   f"- Generated (UTC): {data.get('generated_at')}"]
         if (mm := mods_mod.load_mods(game["slug"])):
@@ -1342,6 +1407,10 @@ def api_v1_status(games_data, today=None, upcoming: dict | None = None) -> dict:
 
 
 MENU_JS = "<script>(function(){var d=document.querySelector('.games-menu');if(!d)return;document.addEventListener('click',function(e){if(d.open&&!d.contains(e.target))d.open=false;});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&d.open){d.open=false;d.querySelector('summary').focus();}});})();</script>"
+COPY_JS = ("<script>document.addEventListener('click',function(e){var b=e.target.closest('.copy');if(!b)return;"
+           "var i=document.getElementById(b.dataset.for);if(!i)return;i.select();var done=function(){var t=b.textContent;b.textContent='Copied';"
+           "setTimeout(function(){b.textContent=t;},1500);};if(navigator.clipboard){navigator.clipboard.writeText(i.value).then(done,function(){document.execCommand('copy');done();});}"
+           "else{document.execCommand('copy');done();}});</script>")
 CSS_VER = __import__("hashlib").sha256(CSS.encode()).hexdigest()[:10]
 HEADERS = """/*
   X-Content-Type-Options: nosniff
@@ -1361,7 +1430,24 @@ HEADERS = """/*
   Access-Control-Allow-Origin: *
   Access-Control-Allow-Methods: GET, HEAD, OPTIONS
   Cache-Control: public, max-age=300
+/feed.xml
+  Content-Type: application/atom+xml; charset=utf-8
+  Cache-Control: public, max-age=600
+/:slug/feed.xml
+  Content-Type: application/atom+xml; charset=utf-8
+  Cache-Control: public, max-age=600
+/badge/*
+  Cache-Control: public, max-age=900
+/badge/*.svg
+  Content-Type: image/svg+xml; charset=utf-8
 """
+
+
+def shields_endpoint(game: dict, data: dict) -> dict:
+    """https://shields.io/badges/endpoint-badge schema, for people who prefer shields.io styling."""
+    return {"schemaVersion": 1, "label": badges.badge_label(game, data), "message": data.get("verdict") or "No data",
+            "color": badges.COLORS.get(status_class(data.get("verdict") or ""), badges.COLORS["unknown"]).lstrip("#"),
+            "labelColor": badges.LEFT_BG.lstrip("#"), "cacheSeconds": 900}
 
 
 def write(path: Path, content: str) -> None:
@@ -1392,6 +1478,9 @@ def main() -> int:
         write(DIST / g["slug"] / "index.html", build_game_page(g, d))
         write(DIST / g["slug"] / "history" / "index.html", build_game_history(g, d))
         write(DIST / g["slug"] / "status.json", json.dumps(d, indent=2) + "\n")
+        write(DIST / g["slug"] / "feed.xml", feeds.game_feed(g, d, SITE_URL))
+        write(DIST / "badge" / f"{g['slug']}.svg", badges.game_badge(g, d, status_class(d["verdict"])))
+        write(DIST / "badge" / f"{g['slug']}.json", json.dumps(shields_endpoint(g, d), indent=2, ensure_ascii=False) + "\n")
         if (m := mods_mod.load_mods(g["slug"])):
             write(DIST / g["slug"] / "mods" / "index.html", build_mods_page(g, d, m))
             write(DIST / g["slug"] / "mods.json", json.dumps(m, indent=2, ensure_ascii=False) + "\n")
@@ -1411,6 +1500,7 @@ def main() -> int:
     write(DIST / "og-default.svg", OG_SVG)
     write(DIST / "games.json", json.dumps(games_index(games_data), indent=2) + "\n")
     write(DIST / "api" / "v1" / "status.json", json.dumps(api_v1_status(games_data), indent=2, ensure_ascii=False) + "\n")
+    write(DIST / "feed.xml", feeds.site_feed(games_data, SITE_URL))
     write(DIST / "llms.txt", build_llms_txt(games_data))
     write(DIST / "robots.txt", build_robots())
     write(DIST / f"{INDEXNOW_KEY}.txt", INDEXNOW_KEY)

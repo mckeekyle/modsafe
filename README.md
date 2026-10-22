@@ -77,6 +77,31 @@ export GITHUB_TOKEN=ghp_...   # or GH_TOKEN
 
 `src/news.py` (run by `./update`) writes `data/news.json`: headline, source, date and link only, from Steam announcements of tracked games + PC Gamer, Rock Paper Shotgun and Eurogamer RSS. Items older than 21 days are dropped; patches for tracked games are highlighted. Shown on `/` and `/news/`, and per game.
 
+## Atom feeds (patches & verdict changes)
+
+- `/feed.xml`: every game; `/<slug>/feed.xml`: one game (Atom 1.0, `application/atom+xml` via `_headers`).
+- Entries come from `verdict_log` in `data/games/<slug>.json`. `src/update.py` appends an event (via `src/feeds.py`) only when the
+  patch, the verdict, or a tracked/patch-sensitive framework status changes; "No data" is skipped so outages don't flap.
+  The log is trimmed to 40 events per game.
+- Entry ids are stable tag URIs: `tag:modsafe.app,2026:<slug>/<patch>/<verdict>/<YYYYMMDDTHHMMZ>`, so readers and Discord RSS
+  bots (e.g. MonitoRSS) never re-post an old entry.
+- `tools/backfill_verdict_log.py [--since=YYYY-MM-DD] [--dry-run]` rebuilds the log from git history of the data files.
+
+## Status badges
+
+Every game has a live SVG badge at `/badge/<slug>.svg` (cached 15 min) and a
+[shields.io endpoint](https://shields.io/badges/endpoint-badge) JSON at `/badge/<slug>.json`. Embed in a mod README:
+
+```markdown
+[![ModSafe: Cyberpunk 2077 mod status](https://modsafe.app/badge/cyberpunk-2077.svg)](https://modsafe.app/cyberpunk-2077/)
+```
+
+```html
+<a href="https://modsafe.app/cyberpunk-2077/"><img src="https://modsafe.app/badge/cyberpunk-2077.svg" alt="ModSafe: Cyberpunk 2077 mod status"></a>
+```
+
+Each game page has copy-ready Markdown, HTML and BBCode snippets under **Follow & embed**.
+
 ## Tests
 
 ```bash
