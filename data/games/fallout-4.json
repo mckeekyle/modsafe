@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T12:29:25Z",
+  "generated_at": "2026-10-23T18:28:15Z",
   "game": {
     "slug": "fallout-4",
     "name": "Fallout 4",
@@ -304,6 +304,12 @@
   ],
   "news": [
     {
+      "title": "Happy Fallout Day!",
+      "url": "https://store.steampowered.com/news/app/377160/view/1847286114037070",
+      "published_at": "2026-10-23T16:11:18Z",
+      "is_patch": false
+    },
+    {
       "title": "Fallout Day Celebrations 2026: Join Fallout Events!",
       "url": "https://store.steampowered.com/news/app/377160/view/1847286114029217",
       "published_at": "2026-10-21T15:18:28Z",
@@ -355,12 +361,6 @@
       "title": "Fallout 4 - November Patch Now Available",
       "url": "https://store.steampowered.com/news/app/377160/view/1816849002015332",
       "published_at": "2025-11-21T19:13:41Z",
-      "is_patch": true
-    },
-    {
-      "title": "Fallout 4 - November 17th Hotfix",
-      "url": "https://store.steampowered.com/news/app/377160/view/1816307528971099",
-      "published_at": "2025-11-17T16:25:09Z",
       "is_patch": true
     }
   ],

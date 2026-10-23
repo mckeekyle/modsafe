@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T12:30:40Z",
+  "generated_at": "2026-10-23T18:29:31Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,217 @@
     }
   ],
   "items": [
+    {
+      "title": "As devastating Xbox \"reset\" continues, Dishonored studio Arkane Lyon reportedly only has until November to find a new buyer before it's closed",
+      "url": "https://www.eurogamer.net/xbox-layoffs-marvels-blade-arkane-lyon-closure",
+      "source": "Eurogamer",
+      "published_at": "2026-10-23T18:09:03Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "'I'm forever grateful to BioWare': 16 game developers share the moment a BioWare game inspired them to join the industry",
+      "url": "https://www.pcgamer.com/gaming-industry/im-forever-grateful-to-bioware-16-game-developers-share-the-moment-a-bioware-game-inspired-them-to-join-the-industry/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-23T17:56:29Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Factorio's final major update has rolled off the assembly line, adding \"the things we wanted to do for 2.0 but didn't have time for\"",
+      "url": "https://www.rockpapershotgun.com/factorios-final-major-update-has-rolled-off-the-assembly-line-adding-the-things-we-wanted-to-do-for-20-but-didnt-have-time-for",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-23T17:30:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Future? No Thanks! dev removes AI-generated voices from game and offers refunds to players who feel \"betrayed\"",
+      "url": "https://www.rockpapershotgun.com/future-no-thanks-dev-removes-ai-generated-voices-from-game-and-offers-refunds-to-players-who-feel-betrayed",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-23T17:26:32Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Mass Effect crossover items have seemingly been removed from Battlefield 6 following EA's sudden closure of BioWare",
+      "url": "https://www.eurogamer.net/mass-effect-battlefield-6-crossover-bioware-closure",
+      "source": "Eurogamer",
+      "published_at": "2026-10-23T17:19:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Abyssal Lapidary is making the social media rounds and I can confirm cutting gemstones is just as satisfying as it looks",
+      "url": "https://www.pcgamer.com/games/sim/abyssal-lapidary-is-making-the-social-media-rounds-and-i-can-confirm-cutting-gemstones-is-just-as-satisfying-as-it-looks/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-23T16:47:44Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Sim Update 7.1 Release Notes [1.9.21.0] - Available Now",
+      "url": "https://store.steampowered.com/news/app/2537590/view/1847286114037158",
+      "source": "Steam \u00b7 MSFS 2024",
+      "published_at": "2026-10-23T16:40:37Z",
+      "games": [
+        "msfs-2024"
+      ],
+      "kind": "patch",
+      "highlight": true
+    },
+    {
+      "title": "BioWare staff \"should be given the first opportunity and the federal support\" to buy the studio and keep it running, says Canadian political party leader",
+      "url": "https://www.rockpapershotgun.com/bioware-staff-should-be-given-the-first-opportunity-and-the-federal-support-to-buy-the-studio-and-keep-it-running-says-canadian-political-party-leader",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-23T16:30:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Upcoming Mass Effect-like Exodus himbo-fies protagonist after fans complain about his face",
+      "url": "https://www.pcgamer.com/games/rpg/upcoming-mass-effect-like-exodus-himbo-fies-protagonist-after-fans-complain-about-his-face/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-23T16:27:52Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Call of Duty: Modern Warfare 4 actually runs pretty smoothly with Activision's 'recommended' RTX 3060 Ti graphics card, and here are the settings I use to get the best performance from it",
+      "url": "https://www.pcgamer.com/games/call-of-duty/call-of-duty-modern-warfare-4-actually-runs-pretty-smoothly-with-activisions-recommended-rtx-3060-ti-graphics-card-and-here-are-the-settings-i-use-to-get-the-best-performance-from-it/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-23T16:13:25Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Happy Fallout Day!",
+      "url": "https://store.steampowered.com/news/app/377160/view/1847286114037070",
+      "source": "Steam \u00b7 Fallout 4",
+      "published_at": "2026-10-23T16:11:18Z",
+      "games": [
+        "fallout-4"
+      ],
+      "kind": "announcement",
+      "highlight": false
+    },
+    {
+      "title": "AMD says the re-release of the Ryzen 7 5800X3D was 'like a final gift to our loyal [AM4] users' and it was CEO Dr. Lisa Su who first came up with the idea",
+      "url": "https://www.pcgamer.com/hardware/processors/amd-says-the-re-release-of-the-ryzen-7-5800x3d-was-like-a-final-gift-to-our-loyal-am4-users-and-it-was-ceo-dr-lisa-su-who-first-came-up-with-the-idea/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-23T16:11:07Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "AMD says its working on FSR's frame pacing issues, but there's still conspicuously no mention of Multi Frame Generation",
+      "url": "https://www.pcgamer.com/hardware/graphics-cards/amd-says-its-working-on-fsrs-frame-pacing-issues-but-theres-still-conspicuously-no-mention-of-multi-frame-generation/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-23T16:04:04Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "\"This was not a Creative Assembly developed game\": Total War boss points the finger at external partner for Shogun 2 Complete Edition disaster",
+      "url": "https://www.rockpapershotgun.com/this-was-not-a-creative-assembly-developed-game-total-war-boss-points-the-finger-at-external-partner-for-shogun-2-complete-edition-disaster",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-23T16:01:24Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Woim is the earth-guzzling, self-bisecting sokoban pick-me-up I needed after a week of games industry disasters",
+      "url": "https://www.rockpapershotgun.com/woim-is-the-earth-guzzling-self-bisecting-sokoban-pick-me-up-i-needed-after-a-week-of-games-industry-disasters",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-23T15:09:45Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "In a rare instance of good news, Philips has announced the world's first 36-inch, 260 Hz gaming monitor. So that's nice",
+      "url": "https://www.pcgamer.com/hardware/gaming-monitors/in-a-rare-instance-of-good-news-philips-has-announced-the-worlds-first-36-inch-260-hz-gaming-monitor-so-thats-nice/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-23T14:55:41Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "\"Why the f**k would they add a perk like that?\" - Modern Warfare 4 DMZ players are up in arms over the ability to self-revive",
+      "url": "https://www.eurogamer.net/modern-warfare-4-dmz-playing-possum-perk-broke",
+      "source": "Eurogamer",
+      "published_at": "2026-10-23T14:55:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Arkane survival negotiations reportedly seeing \"several forms of takeover\" considered ahead of November deadline, as Marvel's Blade production nears end",
+      "url": "https://www.rockpapershotgun.com/arkane-survival-negotiations-reportedly-seeing-several-forms-of-takeover-considered-ahead-of-november-deadline-as-marvels-blade-production-nears-end",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-23T14:43:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "LG UltraGear Evo 52G930B Evo gaming monitor review",
+      "url": "https://www.pcgamer.com/hardware/gaming-monitors/lg-ultragear-evo-52g930b-review/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-23T14:31:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Graphics card wholesale prices are on the rise once again in China, so it's time to brace yourself for even more GPU pricing pain",
+      "url": "https://www.pcgamer.com/hardware/graphics-cards/graphics-card-wholesale-prices-are-on-the-rise-once-again-in-china-so-its-time-to-brace-yourself-for-even-more-gpu-pricing-pain/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-23T13:36:34Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Vote now: The Mammoth Tank and Priest go head-to-head to determine the best RTS unit of all time",
+      "url": "https://www.pcgamer.com/games/rts/vote-now-the-mammoth-tank-and-priest-go-head-to-head-to-determine-the-best-rts-unit-of-all-time/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-23T13:16:54Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Half-Life 3 is back in the news again as Valve developer accidentally sort-of references it in public, reigniting hope once more",
+      "url": "https://www.eurogamer.net/half-life-3-developer-references-codename-public",
+      "source": "Eurogamer",
+      "published_at": "2026-10-23T12:43:22Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Phantom Blade Zero isn't even out yet, but it could be 'one of the year's breakout hits' as it shifts half a million copies on Steam alone",
+      "url": "https://www.eurogamer.net/phantom-blade-zero-hit-not-out",
+      "source": "Eurogamer",
+      "published_at": "2026-10-23T12:33:45Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Helldivers 3 \"only makes sense\" if it\u2019s so unlike Helldivers 2 \"that both games can exist side by side\", says Arrowhead boss, discussing their new prototype game",
       "url": "https://www.rockpapershotgun.com/helldivers-3-only-makes-sense-if-its-so-unlike-helldivers-2-that-both-games-can-exist-side-by-side-says-arrowhead-boss-discussing-their-new-prototype-game",
@@ -363,219 +574,6 @@
       "games": [],
       "kind": "news",
       "highlight": false
-    },
-    {
-      "title": "Only $70 separates RTX 5050, RTX 5060, and RTX 5060 Ti AND the RTX 5060 Ti 16 GB is now the same price as the RTX 5070 in what I can only describe as pure carnage",
-      "url": "https://www.pcgamer.com/hardware/graphics-cards/only-usd70-separates-rtx-5050-rtx-5060-and-rtx-5060-ti-and-the-rtx-5060-ti-16-gb-is-now-the-same-price-as-the-rtx-5070-in-what-i-can-only-describe-as-pure-carnage/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-22T14:50:38Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Game industry legend Warren Spector blows up over BioWare's closure: 'it's utter bulls**t'",
-      "url": "https://www.pcgamer.com/gaming-industry/game-industry-legend-warren-spector-blows-up-over-biowares-closure-its-utter-bulls-t/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-22T14:38:38Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Where to find the Sotoyama region Treasure Hunt in Forza Horizon 6",
-      "url": "https://www.pcgamer.com/games/racing/forza-horizon-6-sotoyama-treasure-hunt-location/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-22T14:35:54Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "No more waiting on shaders to compile as Nvidia's latest driver adds advanced shader delivery: users report lower RAM usage in Call of Duty: Modern Warfare 4 and Gears of War: E-Day",
-      "url": "https://www.pcgamer.com/hardware/graphics-cards/no-more-waiting-on-shaders-to-compile-as-nvidias-latest-driver-adds-advanced-shader-delivery-users-report-lower-ram-usage-in-call-of-duty-modern-warfare-4-and-gears-of-war-e-day/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-22T14:17:48Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Final Fantasy 14, Umamusume: Pretty Derby, and more impacted as PHP vulnerability outages hit games around the globe",
-      "url": "https://www.eurogamer.net/video-games-down-php-vulnerability",
-      "source": "Eurogamer",
-      "published_at": "2026-10-22T14:11:14Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "'What we were cooking was really cool': An award-winning science fiction author was working on Mass Effect 5's story",
-      "url": "https://www.pcgamer.com/gaming-industry/what-we-were-cooking-was-really-cool-an-award-winning-science-fiction-author-was-working-on-mass-effect-5s-story/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-22T13:54:53Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "BioWare's cancelled Mass Effect game would've learned from Baldur's Gate 3 and The Witcher to deliver \"a level of autonomy and choice that no other game has\"",
-      "url": "https://www.eurogamer.net/cancelled-mass-effect-bioware-unprecedented-levels-of-autonomy",
-      "source": "Eurogamer",
-      "published_at": "2026-10-22T13:35:34Z",
-      "games": [
-        "baldurs-gate-3"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "\"It just seemed arbitrary, and not very smart\": EA was never a responsible owner for Bioware, but the developer never seemed to learn from their mistakes",
-      "url": "https://www.rockpapershotgun.com/it-just-seemed-arbitrary-and-not-very-smart-ea-was-never-a-responsible-owner-for-bioware-but-the-developer-never-seemed-to-learn-from-their-mistakes",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-22T13:33:16Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Over '30 million rounds of PvE were played' over the last week in Arc Raiders but Embark still needs 'a bit of time to understand what the data is telling us'",
-      "url": "https://www.pcgamer.com/games/third-person-shooter/over-30-million-rounds-of-pve-were-played-over-the-last-week-in-arc-raiders-but-embark-still-needs-a-bit-of-time-to-understand-what-the-data-is-telling-us/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-22T13:26:25Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Despite its mixed reception, Marvel's Wolverine was September's top-selling new game in the US, making Sony launch revenues it hasn't seen since Helldivers 2",
-      "url": "https://www.eurogamer.net/marvels-wolverine-top-seling-september-us-circana",
-      "source": "Eurogamer",
-      "published_at": "2026-10-22T13:22:52Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Games industry mourns sudden BioWare closure - \"Anyone who participated in this travesty should be ashamed\"",
-      "url": "https://www.eurogamer.net/video-game-industry-reacts-to-bioware-closure",
-      "source": "Eurogamer",
-      "published_at": "2026-10-22T12:56:13Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Redditor's mother-in-law finds missing Steam Deck on train, returns it to its rightful owner in a soap box nine months later",
-      "url": "https://www.pcgamer.com/hardware/handheld-gaming-pcs/redditors-mother-in-law-finds-missing-steam-deck-on-train-returns-it-to-its-rightful-owner-in-a-soap-box-nine-months-later/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-22T12:18:18Z",
-      "games": [
-        "steam-deck"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "As Final Fantasy 14's doors remain closed, surviving players are stepping in to keep everyone's crops alive",
-      "url": "https://www.pcgamer.com/games/final-fantasy/as-final-fantasy-14s-doors-remain-closed-surviving-players-are-stepping-in-to-keep-everyones-crops-alive/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-22T12:04:49Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Resident Evil makers Capcom reveal data breach has affected over 11 million Capcom ID accounts, warn against potential phishing emails",
-      "url": "https://www.rockpapershotgun.com/resident-evil-makers-capcom-reveal-data-breach-has-affected-over-11-million-capcom-id-accounts-warn-against-potential-phishing-emails",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-22T12:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Following shock BioWare closure, scope of EA job cuts becomes clear as layoffs hit Respawn, Maxis, Full Circle, EA Motive, and more",
-      "url": "https://www.eurogamer.net/ea-cuts-massive-ripple-effect-motive-full-circle-respawn",
-      "source": "Eurogamer",
-      "published_at": "2026-10-22T11:43:30Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "\"We made a very difficult decision\": Australian indie showcase Freeplay reject antisemitism claims after delisting a Jewish sponsor who was allegedly accused of being a \"zionist\"",
-      "url": "https://www.rockpapershotgun.com/we-made-a-very-difficult-decision-australian-indie-showcase-freeplay-reject-antisemitism-claims-after-delisting-a-jewish-sponsor-who-was-allegedly-accused-of-being-a-zionist",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-22T11:30:06Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "How to clear a compound in Modern Warfare 4 DMZ",
-      "url": "https://www.pcgamer.com/games/call-of-duty/dmz-clear-a-compound-no-one-left/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-22T11:10:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The iconic Windows fish screensaver was inspired by a dentist's office, which makes a lot of sense when you think about it",
-      "url": "https://www.pcgamer.com/hardware/the-iconic-windows-fish-screensaver-was-inspired-by-a-dentists-office-which-makes-a-lot-of-sense-when-you-think-about-it/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-22T10:58:33Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Mass Effect's Amazon series is reportedly continuing after BioWare shutdown, which'll make an uncomfortable gravestone for the studio's work",
-      "url": "https://www.pcgamer.com/movies-tv/mass-effects-amazon-series-is-reportedly-continuing-after-bioware-shutdown-whichll-make-an-uncomfortable-gravestone-for-the-studios-work/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-22T10:52:44Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Star Wars: The Old Republic lead writer calls out BioWare for snubbing the MMO",
-      "url": "https://www.pcgamer.com/games/mmo/star-wars-the-old-republic-lead-writer-calls-out-bioware-for-snubbing-the-mmo/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-22T10:51:53Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "While EA shuts down BioWare, developers of The Sims, Skate, and Battlefield say they've also lost their jobs",
-      "url": "https://www.rockpapershotgun.com/while-ea-shuts-down-bioware-developers-of-the-sims-skate-and-battlefield-say-theyve-also-lost-their-jobs",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-22T10:30:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "How to get electronic sensors in Modern Warfare 4 DMZ",
-      "url": "https://www.pcgamer.com/games/call-of-duty/dmz-electronic-sensors-location/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-22T10:26:58Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Cyberpunk 2077's Edgerunners 2 Update (2.5) is out now!",
-      "url": "https://store.steampowered.com/news/app/1091500/view/1847286114032016",
-      "source": "Steam \u00b7 Cyberpunk",
-      "published_at": "2026-10-22T10:06:54Z",
-      "games": [
-        "cyberpunk-2077"
-      ],
-      "kind": "patch",
-      "highlight": true
     }
   ]
 }
