@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T06:34:13Z",
+  "generated_at": "2026-10-23T12:30:40Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,100 @@
     }
   ],
   "items": [
+    {
+      "title": "Helldivers 3 \"only makes sense\" if it\u2019s so unlike Helldivers 2 \"that both games can exist side by side\", says Arrowhead boss, discussing their new prototype game",
+      "url": "https://www.rockpapershotgun.com/helldivers-3-only-makes-sense-if-its-so-unlike-helldivers-2-that-both-games-can-exist-side-by-side-says-arrowhead-boss-discussing-their-new-prototype-game",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-23T12:20:39Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "All Genshin Impact 7.2 livestream codes",
+      "url": "https://www.pcgamer.com/games/rpg/genshin-impact-codes-7-2-livestream/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-23T12:04:33Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Half-Life 3 speculation reignited by Valve dev mentioning three sweet little rumored codenamey letters amid technical chat about video game noises",
+      "url": "https://www.rockpapershotgun.com/half-life-3-speculation-reignited-by-valve-dev-mentioning-three-sweet-little-rumored-codenamey-letters-amid-technical-chat-about-video-game-noises",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-23T11:27:06Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "\"What if Larian had shut down after Divine Divinity?\": Star Trek Online exec scorns publishers who close teams like BioWare in favour of \"AAA veteran\" start-ups and AI \"magic beans\"",
+      "url": "https://www.rockpapershotgun.com/what-if-larian-had-shut-down-after-divine-divinity-star-trek-online-exec-scorns-publishers-who-close-teams-like-bioware-in-favour-of-aaa-veteran-start-ups-and-ai-magic-beans",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-23T10:51:01Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Stolen RTX 5090 from Brazilian airport forklift heist reportedly turns up on second hand market for $6,400, but the rest remain AWOL",
+      "url": "https://www.pcgamer.com/hardware/graphics-cards/stolen-rtx-5090-from-brazilian-airport-forklift-heist-reportedly-turns-up-on-second-hand-market-for-usd6-400-but-the-rest-remain-awol/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-23T10:42:31Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "I've tested every graphics setting in Call of Duty: Modern Warfare 4\u2014tweak these four options for the best performance",
+      "url": "https://www.pcgamer.com/games/call-of-duty/ive-tested-every-graphics-setting-in-call-of-duty-modern-warfare-4-tweak-these-four-options-for-the-best-performance/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-23T10:29:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Asus ROG Rapture GT-BN98 router review",
+      "url": "https://www.pcgamer.com/hardware/networking/asus-rog-rapture-gt-bn98-review/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-23T09:53:57Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Cyberpunk 2077's new dual wielding has already been modded to include shotguns and rifles, provided you're down to get \"janky and wildly overpowered\"",
+      "url": "https://www.rockpapershotgun.com/cyberpunk-2077s-new-dual-wielding-has-already-been-modded-to-include-shotguns-and-rifles-provided-youre-down-to-get-janky-and-wildly-overpowered",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-23T09:30:58Z",
+      "games": [
+        "cyberpunk-2077"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "A public outing of severe and unfixed Linux kernel vulnerabilities should have you thinking of updating your SteamOS or other distros to beta branches",
+      "url": "https://www.pcgamer.com/hardware/a-public-outing-of-severe-and-unfixed-linux-kernel-vulnerabilities-should-have-you-thinking-of-updating-your-steamos-or-other-distros-to-beta-branches/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-23T09:26:40Z",
+      "games": [
+        "steam-deck"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Flashy internal trailer for now-cancelled Mass Effect Universe appears online, following EA's closure of BioWare",
+      "url": "https://www.eurogamer.net/mass-effect-universe-trailer-leak-real",
+      "source": "Eurogamer",
+      "published_at": "2026-10-23T09:11:49Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "My GOTY is $7 and has 253 Steam reviews",
       "url": "https://www.pcgamer.com/games/racing/my-goty-is-usd7-and-has-253-steam-reviews/",
@@ -482,98 +576,6 @@
       ],
       "kind": "patch",
       "highlight": true
-    },
-    {
-      "title": "Best Black Friday controller deals",
-      "url": "https://www.pcgamer.com/hardware/controllers/black-friday-controller-deals/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-22T10:04:38Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Mass Effect 5 was aiming to offer a \"level of autonomy and choice\" that could vault it into orbit with Larian and CD Projekt's top RPGs, former dev says post-cancellation",
-      "url": "https://www.rockpapershotgun.com/mass-effect-5-was-aiming-to-offer-a-level-of-autonomy-and-choice-that-could-vault-it-into-orbit-with-larian-and-cd-projekts-top-rpgs-former-dev-says-post-cancellation",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-22T09:49:44Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Xbox cloud gaming prices revealed, with 50 hours of ad-free game-time priced $11.99",
-      "url": "https://www.eurogamer.net/xbox-cloud-gaming-prices-revealed",
-      "source": "Eurogamer",
-      "published_at": "2026-10-22T09:10:43Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Cooler Master HAF II 500 review",
-      "url": "https://www.pcgamer.com/hardware/pc-cases/cooler-master-haf-ii-500-review/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-22T08:48:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Star Wars: Battlefront 3 reportedly being co-developed by Battlefield studio DICE and Apex Legends studio Respawn",
-      "url": "https://www.eurogamer.net/star-wars-battlefront-3-developer-respawn-dice-report",
-      "source": "Eurogamer",
-      "published_at": "2026-10-22T08:40:15Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "EA is shutting down RPG veteran Bioware \"to align talent and investments where we see the greatest opportunities for players and long-term growth\"",
-      "url": "https://www.rockpapershotgun.com/development-on-the-next-mass-effect-is-ending-ea-is-shutting-down-rpg-veteran-bioware-to-align-talent-and-investments-where-we-see-the-greatest-opportunities-for-players-and-long-term-growth",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-22T06:56:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "SteamOS 3.9.4 Beta",
-      "url": "https://store.steampowered.com/news/app/1675200/view/1847286114031077",
-      "source": "Steam \u00b7 Steam Deck",
-      "published_at": "2026-10-22T03:41:55Z",
-      "games": [
-        "steam-deck"
-      ],
-      "kind": "announcement",
-      "highlight": false
-    },
-    {
-      "title": "The next Mass Effect would have had 'a level of autonomy and choice that no other game has been able to match', according to BioWare veteran",
-      "url": "https://www.pcgamer.com/games/mass-effect/the-next-mass-effect-would-have-had-a-level-of-autonomy-and-choice-that-no-other-game-has-been-able-to-match-according-to-bioware-veteran/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-22T01:14:40Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Can you identify the horror game by its horrors?",
-      "url": "https://www.pcgamer.com/games/can-you-identify-the-horror-game-by-its-horrors/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-22T01:09:04Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Holy crap, they're making Serious Sam: The Third Encounter",
-      "url": "https://www.pcgamer.com/games/fps/holy-crap-theyre-making-serious-sam-the-third-encounter/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-22T00:12:03Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
     }
   ]
 }

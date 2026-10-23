@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T06:33:42Z",
+  "generated_at": "2026-10-23T12:30:10Z",
   "game": {
     "slug": "minecraft",
     "name": "Minecraft: Java Edition",
@@ -26,7 +26,7 @@
       "release_url": "https://fabricmc.net/",
       "status": "Safe",
       "reason": "Fabric (intermediary mappings) publishes a stable build for Minecraft 26.3.",
-      "release_tag": "0.19.5",
+      "release_tag": "0.20.1",
       "release_published_at": null,
       "base_status": "Updated for latest patch"
     },
@@ -41,8 +41,8 @@
       "release_url": "https://modrinth.com/mod/fabric-api",
       "status": "Safe",
       "reason": "Fabric API publishes a stable build for Minecraft 26.3.",
-      "release_tag": "0.164.0+26.3",
-      "release_published_at": "2026-10-19T10:10:38.206621Z",
+      "release_tag": "0.165.0+26.3",
+      "release_published_at": "2026-10-23T08:35:46.648085Z",
       "base_status": "Updated for latest patch"
     },
     {
@@ -135,7 +135,7 @@
           "name": "Fabric Loader",
           "status": "Safe",
           "reason": "Fabric (intermediary mappings) publishes a stable build for Minecraft 26.3.",
-          "release_tag": "0.19.5",
+          "release_tag": "0.20.1",
           "release_published_at": null
         },
         {
@@ -144,8 +144,8 @@
           "name": "Fabric API",
           "status": "Safe",
           "reason": "Fabric API publishes a stable build for Minecraft 26.3.",
-          "release_tag": "0.164.0+26.3",
-          "release_published_at": "2026-10-19T10:10:38.206621Z"
+          "release_tag": "0.165.0+26.3",
+          "release_published_at": "2026-10-23T08:35:46.648085Z"
         },
         {
           "id": "forge",
@@ -207,7 +207,7 @@
           "name": "Fabric Loader",
           "status": "Safe",
           "reason": "Fabric (intermediary mappings) publishes a stable build for Minecraft 26.2.",
-          "release_tag": "0.19.5",
+          "release_tag": "0.20.1",
           "release_published_at": null
         },
         {
@@ -279,7 +279,7 @@
           "name": "Fabric Loader",
           "status": "Safe",
           "reason": "Fabric (intermediary mappings) publishes a stable build for Minecraft 26.1.2.",
-          "release_tag": "0.19.5",
+          "release_tag": "0.20.1",
           "release_published_at": null
         },
         {
@@ -351,7 +351,7 @@
           "name": "Fabric Loader",
           "status": "Safe",
           "reason": "Fabric (intermediary mappings) publishes a stable build for Minecraft 26.1.1.",
-          "release_tag": "0.19.5",
+          "release_tag": "0.20.1",
           "release_published_at": null
         },
         {
@@ -423,7 +423,7 @@
           "name": "Fabric Loader",
           "status": "Safe",
           "reason": "Fabric (intermediary mappings) publishes a stable build for Minecraft 26.1.",
-          "release_tag": "0.19.5",
+          "release_tag": "0.20.1",
           "release_published_at": null
         },
         {
@@ -495,7 +495,7 @@
           "name": "Fabric Loader",
           "status": "Safe",
           "reason": "Fabric (intermediary mappings) publishes a stable build for Minecraft 1.21.11.",
-          "release_tag": "0.19.5",
+          "release_tag": "0.20.1",
           "release_published_at": null
         },
         {
@@ -567,7 +567,7 @@
           "name": "Fabric Loader",
           "status": "Safe",
           "reason": "Fabric (intermediary mappings) publishes a stable build for Minecraft 1.21.10.",
-          "release_tag": "0.19.5",
+          "release_tag": "0.20.1",
           "release_published_at": null
         },
         {
@@ -639,7 +639,7 @@
           "name": "Fabric Loader",
           "status": "Safe",
           "reason": "Fabric (intermediary mappings) publishes a stable build for Minecraft 1.21.9.",
-          "release_tag": "0.19.5",
+          "release_tag": "0.20.1",
           "release_published_at": null
         },
         {
