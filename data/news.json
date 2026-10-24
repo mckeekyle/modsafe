@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T06:29:11Z",
+  "generated_at": "2026-10-24T12:28:24Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,42 @@
     }
   ],
   "items": [
+    {
+      "title": "After 14 years of development, Factorio's final major update is out now",
+      "url": "https://www.pcgamer.com/games/survival-crafting/after-14-years-of-development-factorios-final-major-update-is-out-now/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-24T12:10:44Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Star Wars Galaxies' Restoration project just received another massive update, including a huge visual upgrade and an overhaul to the Wookiees' home planet",
+      "url": "https://www.pcgamer.com/games/mmo/star-wars-galaxies-just-got-another-massive-update-thanks-to-its-community-restoration-project-including-a-huge-visual-upgrade-and-a-refurb-to-the-wookiees-home-planet/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-24T11:09:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "What are we all playing this weekend?",
+      "url": "https://www.rockpapershotgun.com/what-are-we-all-playing-this-weekend-405",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-24T07:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "What we've been playing - \"Shoving Moon Flesh into an alien grandma's mouth\"",
+      "url": "https://www.eurogamer.net/what-weve-been-playing-warframe-over-the-hill-switch-sports-resort",
+      "source": "Eurogamer",
+      "published_at": "2026-10-24T07:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Why private equity acquisitions like the one that just claimed BioWare are so dreaded",
       "url": "https://www.pcgamer.com/gaming-industry/why-private-equity-acquisitions-like-the-one-that-just-claimed-bioware-are-so-dreaded/",
@@ -541,42 +577,6 @@
       "url": "https://www.rockpapershotgun.com/an-internal-mass-effect-5-trailer-has-reportedly-leaked-offering-you-a-glimpse-at-the-sequel-youll-never-get-to-play",
       "source": "Rock Paper Shotgun",
       "published_at": "2026-10-22T17:45:41Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Splash Damage acquired this studio just 3 months after laying off a bunch of people\u2014now it's laying them off, too",
-      "url": "https://www.pcgamer.com/gaming-industry/splash-damage-acquired-this-studio-just-3-months-after-laying-off-a-bunch-of-people-now-its-laying-them-off-too/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-22T17:34:04Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Dispatch celebrates its first anniversary with commentary and storyboard modes for every single episode, if you've got the deluxe edition anyway",
-      "url": "https://www.rockpapershotgun.com/dispatch-celebrates-its-first-anniversary-with-commentary-and-storyboard-modes-for-every-single-episode-if-youve-got-the-deluxe-edition-anyway",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-22T17:08:54Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Smash Bros. director Masahiro Sakurai thinks gen-AI will cause a surge of unoriginal games, but says human creativity can't be replicated",
-      "url": "https://www.eurogamer.net/smash-bros-masahiro-sakurai-generative-ai-unoriginal-games",
-      "source": "Eurogamer",
-      "published_at": "2026-10-22T17:00:49Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Someone leaked a Mass Effect 5 trailer and now I feel even worse, because it looks really good",
-      "url": "https://www.pcgamer.com/games/mass-effect/someone-leaked-a-mass-effect-5-trailer-and-now-i-feel-even-worse-because-it-looks-really-good/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-22T16:56:08Z",
       "games": [],
       "kind": "news",
       "highlight": false
