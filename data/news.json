@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T12:28:24Z",
+  "generated_at": "2026-10-24T18:24:33Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,168 @@
     }
   ],
   "items": [
+    {
+      "title": "Penguin Colony review: A daringly weird horror game whose atmosphere and surprises overcome its rough edges",
+      "url": "https://www.pcgamer.com/games/horror/penguin-colony-review/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-24T18:10:01Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Stalker 2's next update has already leaked",
+      "url": "https://www.eurogamer.net/stalker-2-update-2-1-zone-lookout-playstation-asia-leak",
+      "source": "Eurogamer",
+      "published_at": "2026-10-24T18:08:22Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "BioWare's incredible legacy will continue as long as there are RPGs",
+      "url": "https://www.pcgamer.com/games/rpg/biowares-incredible-legacy-will-continue-as-long-as-there-are-rpgs/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-24T18:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "FBI investigating theft of more than 6000 PSA-graded trading cards, including almost 3000 Pok\u00e9mon cards",
+      "url": "https://www.eurogamer.net/fbi-investigates-psa-graded-card-theft-pokemon",
+      "source": "Eurogamer",
+      "published_at": "2026-10-24T17:17:53Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Paralives' first major update slips to next year, but when it comes you can expect some pretty meaty improvements for all of its main features",
+      "url": "https://www.rockpapershotgun.com/paralives-first-major-update-slips-to-next-year-but-when-it-comes-you-can-expect-some-pretty-meaty-improvements-for-all-of-its-main-features",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-24T17:03:55Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Now it's over, WoW: Forever's beta has left me with just one fear\u2014its endgame",
+      "url": "https://www.pcgamer.com/games/world-of-warcraft/now-its-over-wow-forevers-beta-has-left-me-with-just-one-fear-its-endgame/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-24T17:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "New Blood CEO confirms it: the worst way to sell immersive sims like Gloomwood and Fallen Aces is to call them immersive sims",
+      "url": "https://www.pcgamer.com/games/sim/new-blood-ceo-confirms-it-the-worst-way-to-sell-immersive-sims-like-gloomwood-and-fallen-aces-is-to-call-them-immersive-sims/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-24T16:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "I've got egg on my face because Steam's Personal Calendar feature has apparently been a test this whole time and is only now actually a fully fledged component",
+      "url": "https://www.rockpapershotgun.com/ive-got-egg-on-my-face-because-steams-personal-calendar-feature-has-apparently-been-a-test-this-whole-time-and-is-only-now-actually-a-fully-fledged-component",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-24T15:57:33Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The mouse P.I. for hire from Mouse: P.I. For Hire joins the meat boy from Super Meat Boy 3D in gaming's latest indie crossover",
+      "url": "https://www.pcgamer.com/games/action/the-mouse-p-i-for-hire-from-mouse-p-i-for-hire-joins-the-meat-boy-from-super-meat-boy-3d-in-gamings-latest-indie-crossover/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-24T15:46:15Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Japan Actors Union pushes for heavy restrictions on AI copying dead actors",
+      "url": "https://www.pcgamer.com/software/ai/japan-actors-union-pushes-for-heavy-restrictions-on-ai-copying-dead-actors/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-24T15:33:23Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Are we in the cozy gaming gold rush era? 'Cozy' has grown over 250% on Steam and 200% in my inbox since 2024",
+      "url": "https://www.pcgamer.com/games/life-sim/are-we-in-the-cozy-gaming-gold-rush-era-cozy-has-grown-over-250-percent-on-steam-and-200-percent-in-my-inbox-since-2024/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-24T15:10:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The best feature in the original Alan Wake is an absence: the man has no reticle",
+      "url": "https://www.pcgamer.com/games/horror/the-best-feature-in-the-original-alan-wake-is-an-absence-the-man-has-no-reticle/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-24T15:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "'I drank from the chalice of blood': indie dev scrubs his game of AI-generated voice lines, having previously described the technology as 'anti-human and anti-art'",
+      "url": "https://www.pcgamer.com/gaming-industry/game-development/i-drank-from-the-chalice-of-blood-indie-dev-scrubs-his-game-of-ai-generated-voice-lines-having-previously-described-the-technology-as-anti-human-and-anti-art/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-24T14:30:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Mass Effect Universe \"looked incredible\" says creator who claims he advised BioWare",
+      "url": "https://www.eurogamer.net/mass-effect-universe-details-dantics-claims",
+      "source": "Eurogamer",
+      "published_at": "2026-10-24T14:26:27Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Award-winning sci-fi author NK Jemisin joins BioWare's mourners and scorns a broken industry for killing geese that 'laid the golden eggs'",
+      "url": "https://www.pcgamer.com/gaming-industry/award-winning-sci-fi-author-nk-jemisin-joins-biowares-mourners-and-scorns-a-broken-industry-for-killing-geese-that-laid-the-golden-eggs/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-24T14:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Mass Effect 3 ending discourse ignored the RPG's scale, ambition, and exuberance, including that of its oddly great co-op",
+      "url": "https://www.rockpapershotgun.com/mass-effect-3-ending-discourse-ignored-the-rpgs-scale-ambition-and-exuberance-including-that-of-its-oddly-great-co-op",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-24T14:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Prime Video's Fallout reality competition Fallout Shelter: The Experiment premieres in January",
+      "url": "https://www.eurogamer.net/fallout-shelter-the-experiment-prime-video-release-date",
+      "source": "Eurogamer",
+      "published_at": "2026-10-24T13:30:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Xbox's first chief operating officer Helen Chiang leaves Microsoft just three months into the job",
+      "url": "https://www.eurogamer.net/xbox-coo-helen-chiang-leaves-microsoft",
+      "source": "Eurogamer",
+      "published_at": "2026-10-24T12:57:17Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "After 14 years of development, Factorio's final major update is out now",
       "url": "https://www.pcgamer.com/games/survival-crafting/after-14-years-of-development-factorios-final-major-update-is-out-now/",
@@ -405,178 +567,6 @@
       "url": "https://www.rockpapershotgun.com/what-if-larian-had-shut-down-after-divine-divinity-star-trek-online-exec-scorns-publishers-who-close-teams-like-bioware-in-favour-of-aaa-veteran-start-ups-and-ai-magic-beans",
       "source": "Rock Paper Shotgun",
       "published_at": "2026-10-23T10:51:01Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Stolen RTX 5090 from Brazilian airport forklift heist reportedly turns up on second hand market for $6,400, but the rest remain AWOL",
-      "url": "https://www.pcgamer.com/hardware/graphics-cards/stolen-rtx-5090-from-brazilian-airport-forklift-heist-reportedly-turns-up-on-second-hand-market-for-usd6-400-but-the-rest-remain-awol/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-23T10:42:31Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "I've tested every graphics setting in Call of Duty: Modern Warfare 4\u2014tweak these four options for the best performance",
-      "url": "https://www.pcgamer.com/games/call-of-duty/ive-tested-every-graphics-setting-in-call-of-duty-modern-warfare-4-tweak-these-four-options-for-the-best-performance/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-23T10:29:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Asus ROG Rapture GT-BN98 router review",
-      "url": "https://www.pcgamer.com/hardware/networking/asus-rog-rapture-gt-bn98-review/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-23T09:53:57Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Cyberpunk 2077's new dual wielding has already been modded to include shotguns and rifles, provided you're down to get \"janky and wildly overpowered\"",
-      "url": "https://www.rockpapershotgun.com/cyberpunk-2077s-new-dual-wielding-has-already-been-modded-to-include-shotguns-and-rifles-provided-youre-down-to-get-janky-and-wildly-overpowered",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-23T09:30:58Z",
-      "games": [
-        "cyberpunk-2077"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "A public outing of severe and unfixed Linux kernel vulnerabilities should have you thinking of updating your SteamOS or other distros to beta branches",
-      "url": "https://www.pcgamer.com/hardware/a-public-outing-of-severe-and-unfixed-linux-kernel-vulnerabilities-should-have-you-thinking-of-updating-your-steamos-or-other-distros-to-beta-branches/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-23T09:26:40Z",
-      "games": [
-        "steam-deck"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Flashy internal trailer for now-cancelled Mass Effect Universe appears online, following EA's closure of BioWare",
-      "url": "https://www.eurogamer.net/mass-effect-universe-trailer-leak-real",
-      "source": "Eurogamer",
-      "published_at": "2026-10-23T09:11:49Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "My GOTY is $7 and has 253 Steam reviews",
-      "url": "https://www.pcgamer.com/games/racing/my-goty-is-usd7-and-has-253-steam-reviews/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-22T22:29:10Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "A new Fallout 4 mod adds an entire town, but more importantly, it lets you join a gang",
-      "url": "https://www.pcgamer.com/games/fallout/a-new-fallout-4-mod-adds-an-entire-town-but-more-importantly-it-lets-you-join-a-gang/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-22T22:22:04Z",
-      "games": [
-        "fallout-4"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "A Line Held Tight is a charcoal visual novel about a miner's strike in the 32nd century and choosing your relationships wisely",
-      "url": "https://www.rockpapershotgun.com/a-line-held-tight-is-a-charcoal-visual-novel-about-a-miners-strike-in-the-32nd-century-and-choosing-your-relationships-wisely",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-22T21:50:40Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Epic announces game jam where you have to use AI, then walks back the requirement",
-      "url": "https://www.pcgamer.com/software/ai/epic-announces-game-jam-where-you-have-to-use-ai/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-22T21:39:30Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Canadian politician calls on government to help BioWare employees buy the studio and run it themselves",
-      "url": "https://www.pcgamer.com/games/mass-effect/canadian-politician-calls-on-government-to-help-bioware-employees-buy-the-studio-and-run-it-themselves/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-22T21:26:29Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Robot smashing catharsis game Virtue and a Sledgehammer is out next week, but there's an experimental visual novella prologue you can play right now",
-      "url": "https://www.rockpapershotgun.com/robot-smashing-catharsis-game-virtue-and-a-sledgehammer-is-out-next-week-but-theres-an-experimental-visual-novella-prologue-you-can-play-right-now",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-22T20:36:04Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Half-Life 3 re-re-re-confirmed: A Valve dev just said 'HLX' out loud",
-      "url": "https://www.pcgamer.com/games/fps/half-life-3-re-re-re-confirmed-a-valve-dev-just-said-hlx-out-loud/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-22T20:16:39Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "How to dual wield in Cyberpunk 2077",
-      "url": "https://www.pcgamer.com/games/rpg/how-to-dual-wield-in-cyberpunk-2077/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-22T19:35:48Z",
-      "games": [
-        "cyberpunk-2077"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "How to get King's outfit in Cyberpunk 2077",
-      "url": "https://www.pcgamer.com/games/rpg/cyberpunk-2077-king-outfit-clampdown-edgerunners/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-22T19:32:18Z",
-      "games": [
-        "cyberpunk-2077"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Future Capcom games will have Onimusha to thank for RE Engine's gnarly dismemberments",
-      "url": "https://www.pcgamer.com/games/action/future-capcom-games-will-have-onimusha-to-thank-for-re-engines-gnarly-dismemberments/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-22T19:18:23Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "'No other studio in the world did it better' than BioWare at its peak, says former Dragon Age lead writer David Gaider",
-      "url": "https://www.pcgamer.com/games/dragon-age/no-other-studio-in-the-world-did-it-better-than-bioware-at-its-peak-says-former-dragon-age-lead-writer-david-gaider/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-22T17:57:26Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "An internal Mass Effect 5 trailer has reportedly leaked, offering you a glimpse at the sequel you'll never get to play",
-      "url": "https://www.rockpapershotgun.com/an-internal-mass-effect-5-trailer-has-reportedly-leaked-offering-you-a-glimpse-at-the-sequel-youll-never-get-to-play",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-22T17:45:41Z",
       "games": [],
       "kind": "news",
       "highlight": false

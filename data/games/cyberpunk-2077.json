@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T12:26:52Z",
+  "generated_at": "2026-10-24T18:22:55Z",
   "game": {
     "slug": "cyberpunk-2077",
     "name": "Cyberpunk 2077",
@@ -13,7 +13,7 @@
       "url": "https://store.steampowered.com/news/app/1091500/view/1847286114032016"
     }
   },
-  "verdict": "Breakage reported",
+  "verdict": "Just patched, wait",
   "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
   "frameworks": [
     {
@@ -49,29 +49,20 @@
       "repo": "WopsS/RED4ext",
       "tracked": true,
       "sensitive": true,
-      "status": "Breakage reported",
-      "base_status": "Unknown / check",
-      "reason": "Latest release predates patch Patch 2.5; compatibility is unverified \u2014 check the project page. 1 open issue(s) report breakage since the patch/latest release.",
-      "breakage_reports": [
-        {
-          "title": "All RED4Ext plugins broken in CP2077 2.5 \"Edgerunners II\" update",
-          "url": "https://github.com/wopss/RED4ext/issues/153",
-          "created_at": "2026-10-22T12:58:27Z",
-          "labels": [
-            "bug"
-          ],
-          "comments": 40,
-          "thumbs_up": 8
-        }
-      ],
+      "status": "Safe",
+      "base_status": "Updated for latest patch",
+      "reason": "Latest release notes mention patch Patch 2.5 and the release is on/after the patch date.",
+      "breakage_reports": [],
       "official": null,
-      "release_tag": "v1.30.0",
-      "release_name": "v1.30.0",
-      "release_published_at": "2026-03-09T18:53:07Z",
-      "release_url": "https://github.com/wopss/RED4ext/releases/tag/v1.30.0",
-      "mentions_patch": false,
-      "newer_than_patch": false,
-      "mention_releases": []
+      "release_tag": "v1.31.0",
+      "release_name": "v1.31.0",
+      "release_published_at": "2026-10-24T17:23:07Z",
+      "release_url": "https://github.com/wopss/RED4ext/releases/tag/v1.31.0",
+      "mentions_patch": true,
+      "newer_than_patch": true,
+      "mention_releases": [
+        "v1.31.0"
+      ]
     },
     {
       "id": "redscript",
@@ -195,10 +186,10 @@
           "id": "red4ext",
           "short": "RED4ext",
           "name": "RED4ext",
-          "status": "No post-patch release",
-          "release_tag": null,
-          "release_published_at": null,
-          "mentions_patch": false
+          "status": "Safe",
+          "release_tag": "v1.31.0",
+          "release_published_at": "2026-10-24T17:23:07Z",
+          "mentions_patch": true
         },
         {
           "id": "redscript",
@@ -1107,6 +1098,46 @@
           "short": "RED4ext",
           "status": "Breakage reported",
           "release_tag": "v1.30.0"
+        },
+        {
+          "short": "redscript",
+          "status": "Safe",
+          "release_tag": "v0.5.32"
+        },
+        {
+          "short": "ArchiveXL",
+          "status": "Just patched, wait",
+          "release_tag": "v1.27.5"
+        },
+        {
+          "short": "TweakXL",
+          "status": "Just patched, wait",
+          "release_tag": "v1.11.5"
+        },
+        {
+          "short": "Codeware",
+          "status": "Just patched, wait",
+          "release_tag": "v1.20.6"
+        }
+      ]
+    },
+    {
+      "at": "2026-10-24T18:22:55Z",
+      "patch": "Patch 2.5",
+      "patch_key": "2.5",
+      "patch_published_at": "2026-10-22T10:06:54Z",
+      "patch_url": "https://store.steampowered.com/news/app/1091500/view/1847286114032016",
+      "verdict": "Just patched, wait",
+      "frameworks": [
+        {
+          "short": "CET",
+          "status": "Safe",
+          "release_tag": "v1.38.0"
+        },
+        {
+          "short": "RED4ext",
+          "status": "Safe",
+          "release_tag": "v1.31.0"
         },
         {
           "short": "redscript",
