@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T00:36:37Z",
+  "generated_at": "2026-10-24T06:27:40Z",
   "game": {
     "slug": "cyberpunk-2077",
     "name": "Cyberpunk 2077",
@@ -60,7 +60,7 @@
           "labels": [
             "bug"
           ],
-          "comments": 35,
+          "comments": 36,
           "thumbs_up": 7
         }
       ],
