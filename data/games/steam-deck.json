@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-10-23T18:29:06Z",
+  "generated_at": "2026-10-24T00:37:43Z",
   "game": {
     "slug": "steam-deck",
     "name": "Steam Deck (SteamOS)",
     "steam_appid": 1675200,
     "latest_patch": {
-      "version": "3.8.28",
-      "label": "SteamOS 3.8.28",
-      "title": "SteamOS 3.8.28",
-      "published_at": "2026-09-25T00:28:44Z",
-      "published_unix": 1790296124,
-      "url": "https://store.steampowered.com/news/app/1675200/view/1844751498222971"
+      "version": "3.9",
+      "label": "SteamOS 3.9",
+      "title": "SteamOS 3.9",
+      "published_at": "2026-10-23T22:04:26Z",
+      "published_unix": 1792793066,
+      "url": "https://store.steampowered.com/news/app/1675200/view/1847286114038096"
     }
   },
-  "verdict": "Likely safe",
+  "verdict": "Just patched, wait",
   "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
   "frameworks": [
     {
@@ -25,9 +25,9 @@
       "repo": "SteamDeckHomebrew/decky-loader",
       "tracked": true,
       "sensitive": true,
-      "status": "Likely safe",
-      "base_status": "Likely OK",
-      "reason": "Latest release is newer than patch SteamOS 3.8.28, but notes do not explicitly mention that version.",
+      "status": "Just patched, wait",
+      "base_status": "Unknown / check",
+      "reason": "Latest release predates patch SteamOS 3.9; compatibility is unverified \u2014 check the project page.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v3.3.0",
@@ -35,7 +35,7 @@
       "release_published_at": "2026-10-18T15:49:53Z",
       "release_url": "https://github.com/SteamDeckHomebrew/decky-loader/releases/tag/v3.3.0",
       "mentions_patch": false,
-      "newer_than_patch": true,
+      "newer_than_patch": false,
       "mention_releases": []
     },
     {
@@ -48,7 +48,7 @@
       "tracked": true,
       "sensitive": false,
       "status": "Not affected by patches",
-      "base_status": "Likely OK",
+      "base_status": "Unknown / check",
       "reason": "Plugin runs inside Decky Loader; it follows Steam client UI changes, not SteamOS builds, and updates via the Decky store. Latest release: 1.8.1 (2026-10-07).",
       "breakage_reports": [],
       "official": null,
@@ -57,7 +57,7 @@
       "release_published_at": "2026-10-07T19:45:20Z",
       "release_url": "https://github.com/SteamGridDB/decky-steamgriddb",
       "mentions_patch": false,
-      "newer_than_patch": true,
+      "newer_than_patch": false,
       "mention_releases": []
     },
     {
@@ -70,7 +70,7 @@
       "tracked": true,
       "sensitive": false,
       "status": "Not affected by patches",
-      "base_status": "Likely OK",
+      "base_status": "Unknown / check",
       "reason": "Plugin runs inside Decky Loader; themes can drift with Steam client UI changes, not SteamOS builds. Latest release: 2.1.3 (2026-10-19).",
       "breakage_reports": [],
       "official": null,
@@ -79,7 +79,7 @@
       "release_published_at": "2026-10-19T23:43:49Z",
       "release_url": "https://github.com/DeckThemes/SDH-CssLoader",
       "mentions_patch": false,
-      "newer_than_patch": true,
+      "newer_than_patch": false,
       "mention_releases": []
     },
     {
@@ -92,7 +92,7 @@
       "tracked": true,
       "sensitive": false,
       "status": "Not affected by patches",
-      "base_status": "Likely OK",
+      "base_status": "Unknown / check",
       "reason": "Plugin runs inside Decky Loader; it follows Steam client UI changes, not SteamOS builds. Latest release: 1.3.4 (2026-10-14).",
       "breakage_reports": [],
       "official": null,
@@ -101,7 +101,7 @@
       "release_published_at": "2026-10-14T08:00:23Z",
       "release_url": "https://github.com/OMGDuke/protondb-decky",
       "mentions_patch": false,
-      "newer_than_patch": true,
+      "newer_than_patch": false,
       "mention_releases": []
     },
     {
@@ -128,6 +128,61 @@
     }
   ],
   "history": [
+    {
+      "version": "3.9",
+      "label": "SteamOS 3.9",
+      "title": "SteamOS 3.9",
+      "published_at": "2026-10-23T22:04:26Z",
+      "published_unix": 1792793066,
+      "url": "https://store.steampowered.com/news/app/1675200/view/1847286114038096",
+      "frameworks": [
+        {
+          "id": "decky-loader",
+          "short": "Decky",
+          "name": "Decky Loader",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        },
+        {
+          "id": "decky-steamgriddb",
+          "short": "SteamGridDB",
+          "name": "SteamGridDB (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        },
+        {
+          "id": "decky-cssloader",
+          "short": "CSS Loader",
+          "name": "CSS Loader (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        },
+        {
+          "id": "decky-protondb",
+          "short": "ProtonDB Badges",
+          "name": "ProtonDB Badges (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        },
+        {
+          "id": "decky-powertools",
+          "short": "PowerTools",
+          "name": "PowerTools (Decky plugin)",
+          "status": "Not affected by patches",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false
+        }
+      ]
+    },
     {
       "version": "3.8.28",
       "label": "SteamOS 3.8.28",
@@ -571,6 +626,18 @@
   ],
   "news": [
     {
+      "title": "SteamOS 3.9",
+      "url": "https://store.steampowered.com/news/app/1675200/view/1847286114038096",
+      "published_at": "2026-10-23T22:04:26Z",
+      "is_patch": true
+    },
+    {
+      "title": "SteamOS 3.9.5 Beta",
+      "url": "https://store.steampowered.com/news/app/1675200/view/1847286114038094",
+      "published_at": "2026-10-23T22:04:14Z",
+      "is_patch": false
+    },
+    {
       "title": "SteamOS 3.9.4 Beta",
       "url": "https://store.steampowered.com/news/app/1675200/view/1847286114031077",
       "published_at": "2026-10-22T03:41:55Z",
@@ -617,26 +684,14 @@
       "url": "https://store.steampowered.com/news/app/1675200/view/1842212951304733",
       "published_at": "2026-08-29T02:02:08Z",
       "is_patch": false
-    },
-    {
-      "title": "SteamOS 3.8.26 Beta",
-      "url": "https://store.steampowered.com/news/app/1675200/view/1842212951301750",
-      "published_at": "2026-08-28T01:44:12Z",
-      "is_patch": false
-    },
-    {
-      "title": "SteamOS 3.8.25 Beta",
-      "url": "https://store.steampowered.com/news/app/1675200/view/1840310314346837",
-      "published_at": "2026-08-08T04:52:36Z",
-      "is_patch": false
     }
   ],
   "channels": [
     {
       "name": "Beta",
-      "title": "SteamOS 3.9.4 Beta",
-      "url": "https://store.steampowered.com/news/app/1675200/view/1847286114031077",
-      "published_at": "2026-10-22T03:41:55Z"
+      "title": "SteamOS 3.9.5 Beta",
+      "url": "https://store.steampowered.com/news/app/1675200/view/1847286114038094",
+      "published_at": "2026-10-23T22:04:14Z"
     },
     {
       "name": "Preview",
@@ -660,6 +715,21 @@
         {
           "short": "Decky",
           "status": "Likely safe",
+          "release_tag": "v3.3.0"
+        }
+      ]
+    },
+    {
+      "at": "2026-10-24T00:37:43Z",
+      "patch": "SteamOS 3.9",
+      "patch_key": "3.9",
+      "patch_published_at": "2026-10-23T22:04:26Z",
+      "patch_url": "https://store.steampowered.com/news/app/1675200/view/1847286114038096",
+      "verdict": "Just patched, wait",
+      "frameworks": [
+        {
+          "short": "Decky",
+          "status": "Just patched, wait",
           "release_tag": "v3.3.0"
         }
       ]
