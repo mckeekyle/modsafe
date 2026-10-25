@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T12:27:48Z",
+  "generated_at": "2026-10-25T18:24:59Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,98 @@
     }
   ],
   "items": [
+    {
+      "title": "Call of Duty movie will explore the \"cost of war\", says director",
+      "url": "https://www.eurogamer.net/call-of-duty-movie-cost-of-war",
+      "source": "Eurogamer",
+      "published_at": "2026-10-25T18:12:35Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Riot resurrected 3 of its biggest League of Legends pop groups, but only one emerged victorious",
+      "url": "https://www.pcgamer.com/games/moba/riot-resurrected-3-of-its-biggest-league-of-legends-pop-groups-but-only-one-emerged-victorious/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-25T18:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Overwatch devs took one look at Jetpack Cat and Bastion's combo and went 'oh, that's a little scary'",
+      "url": "https://www.pcgamer.com/games/fps/overwatch-devs-took-one-look-at-jetpack-cat-and-bastions-combo-and-went-oh-thats-a-little-scary/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-25T17:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Dark Souls 2 Seamless Co-op is the chillest way to play FromSoft's most frustrating game",
+      "url": "https://www.pcgamer.com/games/dark-souls/dark-souls-2-seamless-co-op-is-the-chillest-way-to-play-fromsofts-most-frustrating-game/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-25T16:56:24Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Elden Ring movie has a budget of nearly $200 million",
+      "url": "https://www.eurogamer.net/elden-ring-movie-a24-budget-200-million",
+      "source": "Eurogamer",
+      "published_at": "2026-10-25T16:37:14Z",
+      "games": [
+        "elden-ring"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Jordan Thomas, director of BioShock 2, played Path of Exile for over 7,000 hours while working on co-op horror game The Blackout Club: 'I was essentially awake all the time'",
+      "url": "https://www.pcgamer.com/gaming-industry/jordan-thomas-director-of-bioshock-2-played-path-of-exile-for-over-7-000-hours-while-working-on-co-op-horror-game-the-blackout-club-i-was-essentially-awake-all-the-time/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-25T16:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "'This is the bit where the comet hits the earth and the dinosaurs die:' Tim Sweeney revisits scathing 26-year-old eulogy for beloved studio Looking Glass",
+      "url": "https://www.pcgamer.com/gaming-industry/this-is-the-bit-where-the-comet-hits-the-earth-and-the-dinosaurs-die-tim-sweeney-revisits-scathing-26-year-old-eulogy-for-beloved-studio-looking-glass/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-25T15:26:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "This third-person mod for Deus Ex turns the classic immersive sim into Max Payne, introducing dual-wielding and shoot-dodging",
+      "url": "https://www.pcgamer.com/games/sim/this-third-person-mod-for-deus-ex-turns-the-classic-immersive-sim-into-max-payne-introducing-dual-wielding-and-shoot-dodging/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-25T14:41:17Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "An officially licensed Knightmare game, based on the British TV show, is coming next year",
+      "url": "https://www.eurogamer.net/knightmare-game-free-pc-original-cast",
+      "source": "Eurogamer",
+      "published_at": "2026-10-25T14:32:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Civilization 7's game changing update was 'personally challenging' for its creative director, as being able to play as a single faction 'wasn't part of the original vision'",
+      "url": "https://www.pcgamer.com/games/strategy/civilization-7s-game-changing-update-was-personally-challenging-for-its-creative-director-as-being-able-to-play-as-a-single-civ-wasnt-part-of-the-original-vision/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-25T13:20:37Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Mass Effect 5 would have let players generate alternate timelines based on their choices in previous games, according to the series' technical director",
       "url": "https://www.pcgamer.com/games/mass-effect/mass-effect-5-would-have-let-players-generate-alternate-timelines-based-on-their-choices-in-previous-games-according-to-the-series-technical-director/",
@@ -477,98 +569,6 @@
       "url": "https://www.pcgamer.com/games/call-of-duty/call-of-duty-modern-warfare-4-actually-runs-pretty-smoothly-with-activisions-recommended-rtx-3060-ti-graphics-card-and-here-are-the-settings-i-use-to-get-the-best-performance-from-it/",
       "source": "PC Gamer",
       "published_at": "2026-10-23T16:13:25Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Happy Fallout Day!",
-      "url": "https://store.steampowered.com/news/app/377160/view/1847286114037070",
-      "source": "Steam \u00b7 Fallout 4",
-      "published_at": "2026-10-23T16:11:18Z",
-      "games": [
-        "fallout-4"
-      ],
-      "kind": "announcement",
-      "highlight": false
-    },
-    {
-      "title": "AMD says the re-release of the Ryzen 7 5800X3D was 'like a final gift to our loyal [AM4] users' and it was CEO Dr. Lisa Su who first came up with the idea",
-      "url": "https://www.pcgamer.com/hardware/processors/amd-says-the-re-release-of-the-ryzen-7-5800x3d-was-like-a-final-gift-to-our-loyal-am4-users-and-it-was-ceo-dr-lisa-su-who-first-came-up-with-the-idea/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-23T16:11:07Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "AMD says its working on FSR's frame pacing issues, but there's still conspicuously no mention of Multi Frame Generation",
-      "url": "https://www.pcgamer.com/hardware/graphics-cards/amd-says-its-working-on-fsrs-frame-pacing-issues-but-theres-still-conspicuously-no-mention-of-multi-frame-generation/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-23T16:04:04Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "\"This was not a Creative Assembly developed game\": Total War boss points the finger at external partner for Shogun 2 Complete Edition disaster",
-      "url": "https://www.rockpapershotgun.com/this-was-not-a-creative-assembly-developed-game-total-war-boss-points-the-finger-at-external-partner-for-shogun-2-complete-edition-disaster",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-23T16:01:24Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Woim is the earth-guzzling, self-bisecting sokoban pick-me-up I needed after a week of games industry disasters",
-      "url": "https://www.rockpapershotgun.com/woim-is-the-earth-guzzling-self-bisecting-sokoban-pick-me-up-i-needed-after-a-week-of-games-industry-disasters",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-23T15:09:45Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "In a rare instance of good news, Philips has announced the world's first 36-inch, 260 Hz gaming monitor. So that's nice",
-      "url": "https://www.pcgamer.com/hardware/gaming-monitors/in-a-rare-instance-of-good-news-philips-has-announced-the-worlds-first-36-inch-260-hz-gaming-monitor-so-thats-nice/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-23T14:55:41Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "\"Why the f**k would they add a perk like that?\" - Modern Warfare 4 DMZ players are up in arms over the ability to self-revive",
-      "url": "https://www.eurogamer.net/modern-warfare-4-dmz-playing-possum-perk-broke",
-      "source": "Eurogamer",
-      "published_at": "2026-10-23T14:55:40Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Arkane survival negotiations reportedly seeing \"several forms of takeover\" considered ahead of November deadline, as Marvel's Blade production nears end",
-      "url": "https://www.rockpapershotgun.com/arkane-survival-negotiations-reportedly-seeing-several-forms-of-takeover-considered-ahead-of-november-deadline-as-marvels-blade-production-nears-end",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-23T14:43:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "LG UltraGear Evo 52G930B Evo gaming monitor review",
-      "url": "https://www.pcgamer.com/hardware/gaming-monitors/lg-ultragear-evo-52g930b-review/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-23T14:31:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Graphics card wholesale prices are on the rise once again in China, so it's time to brace yourself for even more GPU pricing pain",
-      "url": "https://www.pcgamer.com/hardware/graphics-cards/graphics-card-wholesale-prices-are-on-the-rise-once-again-in-china-so-its-time-to-brace-yourself-for-even-more-gpu-pricing-pain/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-23T13:36:34Z",
       "games": [],
       "kind": "news",
       "highlight": false
