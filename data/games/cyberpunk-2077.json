@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T19:16:08Z",
+  "generated_at": "2026-10-25T00:26:48Z",
   "game": {
     "slug": "cyberpunk-2077",
     "name": "Cyberpunk 2077",
@@ -107,7 +107,7 @@
           "created_at": "2026-10-22T13:01:30Z",
           "labels": [],
           "comments": 9,
-          "thumbs_up": 0
+          "thumbs_up": 1
         }
       ],
       "official": null,
@@ -461,8 +461,8 @@
           "short": "ArchiveXL",
           "name": "ArchiveXL",
           "status": "Likely safe",
-          "release_tag": "v1.19.2",
-          "release_published_at": "2025-01-05T16:09:32Z",
+          "release_tag": "v1.19.3",
+          "release_published_at": "2025-01-05T17:07:40Z",
           "mentions_patch": false
         },
         {
@@ -525,8 +525,8 @@
           "short": "ArchiveXL",
           "name": "ArchiveXL",
           "status": "Likely safe",
-          "release_tag": "v1.19.2",
-          "release_published_at": "2025-01-05T16:09:32Z",
+          "release_tag": "v1.19.3",
+          "release_published_at": "2025-01-05T17:07:40Z",
           "mentions_patch": false
         },
         {
@@ -589,8 +589,8 @@
           "short": "ArchiveXL",
           "name": "ArchiveXL",
           "status": "Likely safe",
-          "release_tag": "v1.19.2",
-          "release_published_at": "2025-01-05T16:09:32Z",
+          "release_tag": "v1.19.3",
+          "release_published_at": "2025-01-05T17:07:40Z",
           "mentions_patch": false
         },
         {
@@ -607,8 +607,8 @@
           "short": "Codeware",
           "name": "Codeware",
           "status": "Likely safe",
-          "release_tag": "v1.11.1",
-          "release_published_at": "2024-07-11T12:37:42Z",
+          "release_tag": "v1.11.2",
+          "release_published_at": "2024-07-12T10:24:57Z",
           "mentions_patch": false
         }
       ]
@@ -653,8 +653,8 @@
           "short": "ArchiveXL",
           "name": "ArchiveXL",
           "status": "Likely safe",
-          "release_tag": "v1.19.2",
-          "release_published_at": "2025-01-05T16:09:32Z",
+          "release_tag": "v1.19.3",
+          "release_published_at": "2025-01-05T17:07:40Z",
           "mentions_patch": false
         },
         {
@@ -671,8 +671,8 @@
           "short": "Codeware",
           "name": "Codeware",
           "status": "Likely safe",
-          "release_tag": "v1.11.1",
-          "release_published_at": "2024-07-11T12:37:42Z",
+          "release_tag": "v1.11.2",
+          "release_published_at": "2024-07-12T10:24:57Z",
           "mentions_patch": false
         }
       ]
@@ -717,26 +717,26 @@
           "short": "ArchiveXL",
           "name": "ArchiveXL",
           "status": "Likely safe",
-          "release_tag": "v1.19.2",
-          "release_published_at": "2025-01-05T16:09:32Z",
+          "release_tag": "v1.19.3",
+          "release_published_at": "2025-01-05T17:07:40Z",
           "mentions_patch": false
         },
         {
           "id": "tweak-xl",
           "short": "TweakXL",
           "name": "TweakXL",
-          "status": "Safe",
-          "release_tag": "v1.6.0",
-          "release_published_at": "2023-12-06T15:09:23Z",
-          "mentions_patch": true
+          "status": "Likely safe",
+          "release_tag": "v1.6.1",
+          "release_published_at": "2023-12-28T18:45:40Z",
+          "mentions_patch": false
         },
         {
           "id": "codeware",
           "short": "Codeware",
           "name": "Codeware",
           "status": "Likely safe",
-          "release_tag": "v1.11.1",
-          "release_published_at": "2024-07-11T12:37:42Z",
+          "release_tag": "v1.11.2",
+          "release_published_at": "2024-07-12T10:24:57Z",
           "mentions_patch": false
         }
       ]
@@ -781,8 +781,8 @@
           "short": "ArchiveXL",
           "name": "ArchiveXL",
           "status": "Likely safe",
-          "release_tag": "v1.19.2",
-          "release_published_at": "2025-01-05T16:09:32Z",
+          "release_tag": "v1.19.3",
+          "release_published_at": "2025-01-05T17:07:40Z",
           "mentions_patch": false
         },
         {
@@ -790,8 +790,8 @@
           "short": "TweakXL",
           "name": "TweakXL",
           "status": "Likely safe",
-          "release_tag": "v1.6.0",
-          "release_published_at": "2023-12-06T15:09:23Z",
+          "release_tag": "v1.6.1",
+          "release_published_at": "2023-12-28T18:45:40Z",
           "mentions_patch": false
         },
         {
@@ -799,8 +799,8 @@
           "short": "Codeware",
           "name": "Codeware",
           "status": "Likely safe",
-          "release_tag": "v1.11.1",
-          "release_published_at": "2024-07-11T12:37:42Z",
+          "release_tag": "v1.11.2",
+          "release_published_at": "2024-07-12T10:24:57Z",
           "mentions_patch": false
         }
       ]
@@ -845,8 +845,8 @@
           "short": "ArchiveXL",
           "name": "ArchiveXL",
           "status": "Likely safe",
-          "release_tag": "v1.19.2",
-          "release_published_at": "2025-01-05T16:09:32Z",
+          "release_tag": "v1.19.3",
+          "release_published_at": "2025-01-05T17:07:40Z",
           "mentions_patch": false
         },
         {
@@ -854,8 +854,8 @@
           "short": "TweakXL",
           "name": "TweakXL",
           "status": "Likely safe",
-          "release_tag": "v1.6.0",
-          "release_published_at": "2023-12-06T15:09:23Z",
+          "release_tag": "v1.6.1",
+          "release_published_at": "2023-12-28T18:45:40Z",
           "mentions_patch": false
         },
         {
@@ -863,8 +863,8 @@
           "short": "Codeware",
           "name": "Codeware",
           "status": "Likely safe",
-          "release_tag": "v1.11.1",
-          "release_published_at": "2024-07-11T12:37:42Z",
+          "release_tag": "v1.11.2",
+          "release_published_at": "2024-07-12T10:24:57Z",
           "mentions_patch": false
         }
       ]
@@ -909,8 +909,8 @@
           "short": "ArchiveXL",
           "name": "ArchiveXL",
           "status": "Likely safe",
-          "release_tag": "v1.19.2",
-          "release_published_at": "2025-01-05T16:09:32Z",
+          "release_tag": "v1.19.3",
+          "release_published_at": "2025-01-05T17:07:40Z",
           "mentions_patch": false
         },
         {
@@ -918,8 +918,8 @@
           "short": "TweakXL",
           "name": "TweakXL",
           "status": "Likely safe",
-          "release_tag": "v1.6.0",
-          "release_published_at": "2023-12-06T15:09:23Z",
+          "release_tag": "v1.6.1",
+          "release_published_at": "2023-12-28T18:45:40Z",
           "mentions_patch": false
         },
         {
@@ -927,8 +927,8 @@
           "short": "Codeware",
           "name": "Codeware",
           "status": "Likely safe",
-          "release_tag": "v1.11.1",
-          "release_published_at": "2024-07-11T12:37:42Z",
+          "release_tag": "v1.11.2",
+          "release_published_at": "2024-07-12T10:24:57Z",
           "mentions_patch": false
         }
       ]
