@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T00:27:02Z",
+  "generated_at": "2026-10-25T06:29:14Z",
   "game": {
     "slug": "skyrim-se",
     "name": "Skyrim Special Edition",
@@ -109,10 +109,10 @@
       "reason": "Latest release is on/after patch 1.7.99; an earlier post-patch release (v1.25.0) explicitly mentioned that version.",
       "breakage_reports": [],
       "official": null,
-      "release_tag": "v1.26.0",
-      "release_name": "v1.26.0",
-      "release_published_at": "2026-10-24T09:33:43Z",
-      "release_url": "https://github.com/alandtse/CrashLoggerSSE/releases/tag/v1.26.0",
+      "release_tag": "v1.27.0",
+      "release_name": "v1.27.0",
+      "release_published_at": "2026-10-25T06:16:12Z",
+      "release_url": "https://github.com/alandtse/CrashLoggerSSE/releases/tag/v1.27.0",
       "mentions_patch": true,
       "newer_than_patch": true,
       "mention_releases": [
@@ -229,8 +229,8 @@
           "short": "CrashLogger",
           "name": "Crash Logger SSE AE VR",
           "status": "Likely safe",
-          "release_tag": "v1.6.0",
-          "release_published_at": "2022-12-11T06:28:23Z",
+          "release_tag": "v1.7.0",
+          "release_published_at": "2023-01-13T07:41:48Z",
           "mentions_patch": false
         }
       ]
@@ -275,8 +275,8 @@
           "short": "CrashLogger",
           "name": "Crash Logger SSE AE VR",
           "status": "Likely safe",
-          "release_tag": "v1.6.0",
-          "release_published_at": "2022-12-11T06:28:23Z",
+          "release_tag": "v1.7.0",
+          "release_published_at": "2023-01-13T07:41:48Z",
           "mentions_patch": false
         }
       ]
@@ -321,8 +321,8 @@
           "short": "CrashLogger",
           "name": "Crash Logger SSE AE VR",
           "status": "Likely safe",
-          "release_tag": "v1.6.0",
-          "release_published_at": "2022-12-11T06:28:23Z",
+          "release_tag": "v1.7.0",
+          "release_published_at": "2023-01-13T07:41:48Z",
           "mentions_patch": false
         }
       ]
@@ -367,8 +367,8 @@
           "short": "CrashLogger",
           "name": "Crash Logger SSE AE VR",
           "status": "Likely safe",
-          "release_tag": "v1.6.0",
-          "release_published_at": "2022-12-11T06:28:23Z",
+          "release_tag": "v1.7.0",
+          "release_published_at": "2023-01-13T07:41:48Z",
           "mentions_patch": false
         }
       ]
@@ -413,8 +413,8 @@
           "short": "CrashLogger",
           "name": "Crash Logger SSE AE VR",
           "status": "Likely safe",
-          "release_tag": "v1.6.0",
-          "release_published_at": "2022-12-11T06:28:23Z",
+          "release_tag": "v1.7.0",
+          "release_published_at": "2023-01-13T07:41:48Z",
           "mentions_patch": false
         }
       ]
@@ -505,8 +505,8 @@
           "short": "CrashLogger",
           "name": "Crash Logger SSE AE VR",
           "status": "Likely safe",
-          "release_tag": "v1.6.0",
-          "release_published_at": "2022-12-11T06:28:23Z",
+          "release_tag": "v1.7.0",
+          "release_published_at": "2023-01-13T07:41:48Z",
           "mentions_patch": false
         }
       ]
@@ -551,8 +551,8 @@
           "short": "CrashLogger",
           "name": "Crash Logger SSE AE VR",
           "status": "Likely safe",
-          "release_tag": "v1.6.0",
-          "release_published_at": "2022-12-11T06:28:23Z",
+          "release_tag": "v1.7.0",
+          "release_published_at": "2023-01-13T07:41:48Z",
           "mentions_patch": false
         }
       ]
@@ -597,8 +597,8 @@
           "short": "CrashLogger",
           "name": "Crash Logger SSE AE VR",
           "status": "Likely safe",
-          "release_tag": "v1.6.0",
-          "release_published_at": "2022-12-11T06:28:23Z",
+          "release_tag": "v1.7.0",
+          "release_published_at": "2023-01-13T07:41:48Z",
           "mentions_patch": false
         }
       ]
@@ -643,8 +643,8 @@
           "short": "CrashLogger",
           "name": "Crash Logger SSE AE VR",
           "status": "Likely safe",
-          "release_tag": "v1.6.0",
-          "release_published_at": "2022-12-11T06:28:23Z",
+          "release_tag": "v1.7.0",
+          "release_published_at": "2023-01-13T07:41:48Z",
           "mentions_patch": false
         }
       ]
@@ -689,8 +689,8 @@
           "short": "CrashLogger",
           "name": "Crash Logger SSE AE VR",
           "status": "Likely safe",
-          "release_tag": "v1.6.0",
-          "release_published_at": "2022-12-11T06:28:23Z",
+          "release_tag": "v1.7.0",
+          "release_published_at": "2023-01-13T07:41:48Z",
           "mentions_patch": false
         }
       ]
