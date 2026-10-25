@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T06:29:00Z",
+  "generated_at": "2026-10-25T12:26:17Z",
   "game": {
     "slug": "cyberpunk-2077",
     "name": "Cyberpunk 2077",
@@ -13,7 +13,7 @@
       "url": "https://store.steampowered.com/news/app/1091500/view/1847286114032016"
     }
   },
-  "verdict": "Just patched, wait",
+  "verdict": "Safe",
   "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
   "frameworks": [
     {
@@ -97,27 +97,20 @@
       "repo": "psiberx/cp2077-archive-xl",
       "tracked": true,
       "sensitive": true,
-      "status": "Just patched, wait",
-      "base_status": "Unknown / check",
-      "reason": "Latest release predates patch Patch 2.5; compatibility is unverified \u2014 check the project page. One unconfirmed user report of breakage is open ('Causes the 2.5 update to silently crash'); not yet confirmed by the maintainers or other users, so it isn't counted as breakage.",
-      "breakage_reports": [
-        {
-          "title": "Causes the 2.5 update to silently crash",
-          "url": "https://github.com/psiberx/cp2077-archive-xl/issues/30",
-          "created_at": "2026-10-22T13:01:30Z",
-          "labels": [],
-          "comments": 9,
-          "thumbs_up": 1
-        }
-      ],
+      "status": "Safe",
+      "base_status": "Updated for latest patch",
+      "reason": "Latest release notes mention patch Patch 2.5 and the release is on/after the patch date.",
+      "breakage_reports": [],
       "official": null,
-      "release_tag": "v1.27.5",
-      "release_name": "ArchiveXL 1.27.5",
-      "release_published_at": "2026-10-19T17:23:14Z",
-      "release_url": "https://github.com/psiberx/cp2077-archive-xl/releases/tag/v1.27.5",
-      "mentions_patch": false,
-      "newer_than_patch": false,
-      "mention_releases": []
+      "release_tag": "v1.28.0",
+      "release_name": "ArchiveXL 1.28.0",
+      "release_published_at": "2026-10-25T08:07:26Z",
+      "release_url": "https://github.com/psiberx/cp2077-archive-xl/releases/tag/v1.28.0",
+      "mentions_patch": true,
+      "newer_than_patch": true,
+      "mention_releases": [
+        "v1.28.0"
+      ]
     },
     {
       "id": "tweak-xl",
@@ -128,18 +121,20 @@
       "repo": "psiberx/cp2077-tweak-xl",
       "tracked": true,
       "sensitive": true,
-      "status": "Just patched, wait",
-      "base_status": "Unknown / check",
-      "reason": "Latest release predates patch Patch 2.5; compatibility is unverified \u2014 check the project page.",
+      "status": "Safe",
+      "base_status": "Updated for latest patch",
+      "reason": "Latest release notes mention patch Patch 2.5 and the release is on/after the patch date.",
       "breakage_reports": [],
       "official": null,
-      "release_tag": "v1.11.5",
-      "release_name": "TweakXL 1.11.5",
-      "release_published_at": "2026-10-19T17:24:02Z",
-      "release_url": "https://github.com/psiberx/cp2077-tweak-xl/releases/tag/v1.11.5",
-      "mentions_patch": false,
-      "newer_than_patch": false,
-      "mention_releases": []
+      "release_tag": "v1.12.0",
+      "release_name": "TweakXL 1.12.0",
+      "release_published_at": "2026-10-25T07:49:09Z",
+      "release_url": "https://github.com/psiberx/cp2077-tweak-xl/releases/tag/v1.12.0",
+      "mentions_patch": true,
+      "newer_than_patch": true,
+      "mention_releases": [
+        "v1.12.0"
+      ]
     },
     {
       "id": "codeware",
@@ -150,18 +145,20 @@
       "repo": "psiberx/cp2077-codeware",
       "tracked": true,
       "sensitive": true,
-      "status": "Just patched, wait",
-      "base_status": "Unknown / check",
-      "reason": "Latest release predates patch Patch 2.5; compatibility is unverified \u2014 check the project page.",
+      "status": "Safe",
+      "base_status": "Updated for latest patch",
+      "reason": "Latest release notes mention patch Patch 2.5 and the release is on/after the patch date.",
       "breakage_reports": [],
       "official": null,
-      "release_tag": "v1.20.6",
-      "release_name": "Codeware 1.20.6",
-      "release_published_at": "2026-10-19T17:28:03Z",
-      "release_url": "https://github.com/psiberx/cp2077-codeware/releases/tag/v1.20.6",
-      "mentions_patch": false,
-      "newer_than_patch": false,
-      "mention_releases": []
+      "release_tag": "v1.21.0",
+      "release_name": "Codeware 1.21.0",
+      "release_published_at": "2026-10-25T08:07:31Z",
+      "release_url": "https://github.com/psiberx/cp2077-codeware/releases/tag/v1.21.0",
+      "mentions_patch": true,
+      "newer_than_patch": true,
+      "mention_releases": [
+        "v1.21.0"
+      ]
     }
   ],
   "history": [
@@ -204,28 +201,28 @@
           "id": "archive-xl",
           "short": "ArchiveXL",
           "name": "ArchiveXL",
-          "status": "No post-patch release",
-          "release_tag": null,
-          "release_published_at": null,
-          "mentions_patch": false
+          "status": "Safe",
+          "release_tag": "v1.28.0",
+          "release_published_at": "2026-10-25T08:07:26Z",
+          "mentions_patch": true
         },
         {
           "id": "tweak-xl",
           "short": "TweakXL",
           "name": "TweakXL",
-          "status": "No post-patch release",
-          "release_tag": null,
-          "release_published_at": null,
-          "mentions_patch": false
+          "status": "Safe",
+          "release_tag": "v1.12.0",
+          "release_published_at": "2026-10-25T07:49:09Z",
+          "mentions_patch": true
         },
         {
           "id": "codeware",
           "short": "Codeware",
           "name": "Codeware",
-          "status": "No post-patch release",
-          "release_tag": null,
-          "release_published_at": null,
-          "mentions_patch": false
+          "status": "Safe",
+          "release_tag": "v1.21.0",
+          "release_published_at": "2026-10-25T08:07:31Z",
+          "mentions_patch": true
         }
       ]
     },
@@ -607,8 +604,8 @@
           "short": "Codeware",
           "name": "Codeware",
           "status": "Likely safe",
-          "release_tag": "v1.11.2",
-          "release_published_at": "2024-07-12T10:24:57Z",
+          "release_tag": "v1.12.0",
+          "release_published_at": "2024-07-29T19:40:19Z",
           "mentions_patch": false
         }
       ]
@@ -671,8 +668,8 @@
           "short": "Codeware",
           "name": "Codeware",
           "status": "Likely safe",
-          "release_tag": "v1.11.2",
-          "release_published_at": "2024-07-12T10:24:57Z",
+          "release_tag": "v1.12.0",
+          "release_published_at": "2024-07-29T19:40:19Z",
           "mentions_patch": false
         }
       ]
@@ -726,8 +723,8 @@
           "short": "TweakXL",
           "name": "TweakXL",
           "status": "Likely safe",
-          "release_tag": "v1.6.1",
-          "release_published_at": "2023-12-28T18:45:40Z",
+          "release_tag": "v1.6.2",
+          "release_published_at": "2024-01-18T04:54:17Z",
           "mentions_patch": false
         },
         {
@@ -735,8 +732,8 @@
           "short": "Codeware",
           "name": "Codeware",
           "status": "Likely safe",
-          "release_tag": "v1.11.2",
-          "release_published_at": "2024-07-12T10:24:57Z",
+          "release_tag": "v1.12.0",
+          "release_published_at": "2024-07-29T19:40:19Z",
           "mentions_patch": false
         }
       ]
@@ -790,8 +787,8 @@
           "short": "TweakXL",
           "name": "TweakXL",
           "status": "Likely safe",
-          "release_tag": "v1.6.1",
-          "release_published_at": "2023-12-28T18:45:40Z",
+          "release_tag": "v1.6.2",
+          "release_published_at": "2024-01-18T04:54:17Z",
           "mentions_patch": false
         },
         {
@@ -799,8 +796,8 @@
           "short": "Codeware",
           "name": "Codeware",
           "status": "Likely safe",
-          "release_tag": "v1.11.2",
-          "release_published_at": "2024-07-12T10:24:57Z",
+          "release_tag": "v1.12.0",
+          "release_published_at": "2024-07-29T19:40:19Z",
           "mentions_patch": false
         }
       ]
@@ -854,8 +851,8 @@
           "short": "TweakXL",
           "name": "TweakXL",
           "status": "Likely safe",
-          "release_tag": "v1.6.1",
-          "release_published_at": "2023-12-28T18:45:40Z",
+          "release_tag": "v1.6.2",
+          "release_published_at": "2024-01-18T04:54:17Z",
           "mentions_patch": false
         },
         {
@@ -863,8 +860,8 @@
           "short": "Codeware",
           "name": "Codeware",
           "status": "Likely safe",
-          "release_tag": "v1.11.2",
-          "release_published_at": "2024-07-12T10:24:57Z",
+          "release_tag": "v1.12.0",
+          "release_published_at": "2024-07-29T19:40:19Z",
           "mentions_patch": false
         }
       ]
@@ -918,8 +915,8 @@
           "short": "TweakXL",
           "name": "TweakXL",
           "status": "Likely safe",
-          "release_tag": "v1.6.1",
-          "release_published_at": "2023-12-28T18:45:40Z",
+          "release_tag": "v1.6.2",
+          "release_published_at": "2024-01-18T04:54:17Z",
           "mentions_patch": false
         },
         {
@@ -927,8 +924,8 @@
           "short": "Codeware",
           "name": "Codeware",
           "status": "Likely safe",
-          "release_tag": "v1.11.2",
-          "release_published_at": "2024-07-12T10:24:57Z",
+          "release_tag": "v1.12.0",
+          "release_published_at": "2024-07-29T19:40:19Z",
           "mentions_patch": false
         }
       ]
@@ -1158,6 +1155,46 @@
           "short": "Codeware",
           "status": "Just patched, wait",
           "release_tag": "v1.20.6"
+        }
+      ]
+    },
+    {
+      "at": "2026-10-25T12:26:17Z",
+      "patch": "Patch 2.5",
+      "patch_key": "2.5",
+      "patch_published_at": "2026-10-22T10:06:54Z",
+      "patch_url": "https://store.steampowered.com/news/app/1091500/view/1847286114032016",
+      "verdict": "Safe",
+      "frameworks": [
+        {
+          "short": "CET",
+          "status": "Safe",
+          "release_tag": "v1.38.0"
+        },
+        {
+          "short": "RED4ext",
+          "status": "Safe",
+          "release_tag": "v1.31.0"
+        },
+        {
+          "short": "redscript",
+          "status": "Safe",
+          "release_tag": "v0.5.32"
+        },
+        {
+          "short": "ArchiveXL",
+          "status": "Safe",
+          "release_tag": "v1.28.0"
+        },
+        {
+          "short": "TweakXL",
+          "status": "Safe",
+          "release_tag": "v1.12.0"
+        },
+        {
+          "short": "Codeware",
+          "status": "Safe",
+          "release_tag": "v1.21.0"
         }
       ]
     }

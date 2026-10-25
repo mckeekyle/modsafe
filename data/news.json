@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T06:30:35Z",
+  "generated_at": "2026-10-25T12:27:48Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,35 @@
     }
   ],
   "items": [
+    {
+      "title": "Mass Effect 5 would have let players generate alternate timelines based on their choices in previous games, according to the series' technical director",
+      "url": "https://www.pcgamer.com/games/mass-effect/mass-effect-5-would-have-let-players-generate-alternate-timelines-based-on-their-choices-in-previous-games-according-to-the-series-technical-director/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-25T12:01:33Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The Sunday Papers",
+      "url": "https://www.rockpapershotgun.com/the-sunday-papers-833",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-25T10:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Cyberpunk: Edgerunners Season 2 is more than a retread of Netflix's beloved first season - it's a story that truly understands what it means to exist in Night City",
+      "url": "https://www.eurogamer.net/cyberpunk-edgerunners-season-2-major-theme",
+      "source": "Eurogamer",
+      "published_at": "2026-10-25T10:00:00Z",
+      "games": [
+        "cyberpunk-2077"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Abelina is a strange, platforming romp through a natural afterlife from a former League of Legends animator and the composer of Zach Cregger's Resident Evil",
       "url": "https://www.rockpapershotgun.com/abelina-is-a-strange-platforming-romp-through-a-natural-afterlife-from-a-former-league-of-legends-animator-and-the-composer-of-zach-creggers-resident-evil",
@@ -540,33 +569,6 @@
       "url": "https://www.pcgamer.com/hardware/graphics-cards/graphics-card-wholesale-prices-are-on-the-rise-once-again-in-china-so-its-time-to-brace-yourself-for-even-more-gpu-pricing-pain/",
       "source": "PC Gamer",
       "published_at": "2026-10-23T13:36:34Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Vote now: The Mammoth Tank and Priest go head-to-head to determine the best RTS unit of all time",
-      "url": "https://www.pcgamer.com/games/rts/vote-now-the-mammoth-tank-and-priest-go-head-to-head-to-determine-the-best-rts-unit-of-all-time/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-23T13:16:54Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Half-Life 3 is back in the news again as Valve developer accidentally sort-of references it in public, reigniting hope once more",
-      "url": "https://www.eurogamer.net/half-life-3-developer-references-codename-public",
-      "source": "Eurogamer",
-      "published_at": "2026-10-23T12:43:22Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Phantom Blade Zero isn't even out yet, but it could be 'one of the year's breakout hits' as it shifts half a million copies on Steam alone",
-      "url": "https://www.eurogamer.net/phantom-blade-zero-hit-not-out",
-      "source": "Eurogamer",
-      "published_at": "2026-10-23T12:33:45Z",
       "games": [],
       "kind": "news",
       "highlight": false
