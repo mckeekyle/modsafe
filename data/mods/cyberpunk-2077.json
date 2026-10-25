@@ -22,7 +22,7 @@
       "url": "https://www.nexusmods.com/cyberpunk2077/mods/107",
       "requires": [],
       "framework_id": "cet",
-      "last_updated": "2025-09-30"
+      "last_updated": "2026-10-22"
     },
     {
       "id": "red4ext",
@@ -35,7 +35,7 @@
       "url": "https://www.nexusmods.com/cyberpunk2077/mods/2380",
       "requires": [],
       "framework_id": "red4ext",
-      "last_updated": "2026-03-09"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "redscript",
@@ -48,7 +48,7 @@
       "url": "https://www.nexusmods.com/cyberpunk2077/mods/1511",
       "requires": [],
       "framework_id": "redscript",
-      "last_updated": "2025-09-05"
+      "last_updated": "2026-10-22"
     },
     {
       "id": "archive-xl",
@@ -63,7 +63,7 @@
         "red4ext"
       ],
       "framework_id": "archive-xl",
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-25"
     },
     {
       "id": "tweak-xl",
@@ -78,7 +78,7 @@
         "red4ext"
       ],
       "framework_id": "tweak-xl",
-      "last_updated": "2026-07-30"
+      "last_updated": "2026-10-25"
     },
     {
       "id": "codeware",
@@ -93,7 +93,7 @@
         "red4ext"
       ],
       "framework_id": "codeware",
-      "last_updated": "2026-09-20"
+      "last_updated": "2026-10-25"
     },
     {
       "id": "native-settings-ui",
@@ -107,7 +107,7 @@
       "requires": [
         "cet"
       ],
-      "last_updated": "2024-01-06"
+      "last_updated": "2026-10-22"
     },
     {
       "id": "mod-settings",
@@ -123,7 +123,7 @@
         "redscript",
         "archive-xl"
       ],
-      "last_updated": "2025-07-19"
+      "last_updated": "2026-10-25"
     },
     {
       "id": "virtual-atelier",
@@ -144,7 +144,7 @@
       "also_requires": [
         "Browser Extension"
       ],
-      "last_updated": "2026-08-18"
+      "last_updated": "2026-10-25"
     },
     {
       "id": "equipment-ex",
@@ -182,7 +182,7 @@
       "also_requires": [
         "Input Loader"
       ],
-      "last_updated": "2026-07-26"
+      "last_updated": "2026-10-25"
     },
     {
       "id": "amm",
@@ -201,7 +201,7 @@
       "also_requires": [
         "Appearance Runtime Plugin"
       ],
-      "last_updated": "2026-10-16"
+      "last_updated": "2026-10-25"
     },
     {
       "id": "no-intro-videos",

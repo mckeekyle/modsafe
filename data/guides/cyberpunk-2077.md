@@ -25,4 +25,4 @@ Cyberpunk mods lean on six frameworks (CET, RED4ext, redscript, ArchiveXL, Tweak
 - In Vortex, disable the mod and deploy. Manually, delete the files the mod added (most mods list them).
 - To test without mods, rename the archive/pc/mod, r6/scripts, bin/x64/plugins and red4ext folders temporarily.
 - Your saves are in Saved Games/CD Projekt Red/Cyberpunk 2077. Back them up before big changes.
-- GOG Galaxy can roll back to older game versions. Steam can't officially, so wait for framework updates instead.
+- Steam keeps older versions under Properties > Game Versions & Betas (e.g. `2_31_old` for Patch 2.31), and GOG Galaxy can roll back too. Rolling back is a stopgap; framework updates usually follow within days.

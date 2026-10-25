@@ -26,4 +26,4 @@ Baldur's Gate 3 has an **in-game mod manager** (mod.io) for mods published there
 - Move a mod back to the inactive list in BG3 Mod Manager and export again, or disable it in the in-game Mod Manager.
 - If a patch broke things, disable all mods, check the game launches clean, then re-enable a few at a time.
 - Restore your PlayerProfiles backup if a save stops loading.
-- Steam can't officially roll back the game, so wait for Script Extender and mod updates.
+- Steam only offers older major patches under Properties > Game Versions & Betas (Patch 7 Hotfix 3, Patch 6 Hotfix 9), not the previous hotfix, so after a small patch it's usually best to wait for Script Extender and mod updates.

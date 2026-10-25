@@ -33,6 +33,13 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: ./update
 
+      # Mod lists show "Last updated on its download page"; refresh those dates
+      # from the Nexus/Modrinth/Thunderstore APIs. Non-fatal: a flaky API must
+      # not block the status refresh.
+      - name: Refresh mod list dates
+        continue-on-error: true
+        run: python3 tools/verify_mods.py --write
+
       - name: Build site (verify generator)
         env:
           SITE_URL: https://modsafe.app
@@ -44,7 +51,7 @@ jobs:
           echo "base=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/games data/news.json
+          git add data/games data/news.json data/mods
           if git diff --staged --quiet; then
             echo "No status changes."
           else

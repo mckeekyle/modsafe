@@ -24,7 +24,7 @@
       ],
       "modrinth_slug": "fabric-api",
       "framework_id": "fabric-api",
-      "last_updated": "2026-10-14"
+      "last_updated": "2026-10-23"
     },
     {
       "id": "sodium",
@@ -152,7 +152,7 @@
         "fabric-api"
       ],
       "modrinth_slug": "xaeros-minimap",
-      "last_updated": "2026-10-05"
+      "last_updated": "2026-10-25"
     },
     {
       "id": "xaeros-world-map",
@@ -166,7 +166,7 @@
         "fabric-api"
       ],
       "modrinth_slug": "xaeros-world-map",
-      "last_updated": "2026-10-05"
+      "last_updated": "2026-10-25"
     },
     {
       "id": "appleskin",
