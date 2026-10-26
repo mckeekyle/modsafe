@@ -58,7 +58,7 @@ class Test404Page(unittest.TestCase):
         imgs.append(re.search(r"--hero:url\('([^']+)'\)", self.html).group(1))
         self.assertGreaterEqual(len(imgs), 2)
         for s in imgs:
-            self.assertTrue((build.STATIC / s.removeprefix("/")).is_file(), s)
+            self.assertTrue((build.STATIC / s.removeprefix("/").split("?")[0]).is_file(), s)  # ?v= cache-buster
 
     def test_other_pages_still_indexable(self):
         home = build.build_home(self.games_data)

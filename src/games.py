@@ -544,6 +544,47 @@ GAMES = [
                  "Workshop mods ship their own UE4SS copy, so never also keep a manual dwmapi.dll install."),
         "blurb": "Palworld patches often move the game's code and data, which breaks UE4SS, PalSchema and pak mods until they are updated.",
     },
+    {
+        "slug": "monster-hunter-wilds",
+        "name": "Monster Hunter Wilds",
+        "short": "MH Wilds",
+        "developer": "Capcom",
+        "genre": "Action RPG",
+        "steam_appid": 2246340,
+        # Capcom titles every patch post "Update Summary (Ver.1.042.00.02)"; combined posts list the main game first
+        # ("Ver.1.042.00.01 / Demo Version 1.0.1"). Maintenance notices and "Introducing Update" previews don't match.
+        "patch_rule": {
+            "include": r"^update summary",
+            "exclude": r"maintenance|introducing",
+            "version": r"Ver\.?\s*(\d+\.\d+(?:\.\d+)*)",
+            "require_version": True,
+            "label": "Ver.{v}",
+        },
+        "frameworks": [
+            # REFramework ships as nightlies; since Sept 2026 one REFramework.zip covers every RE Engine game, so a new
+            # nightly is not evidence of a Wilds fix. The shared praydog/REFramework tracker is filtered to Wilds issues.
+            {"id": "reframework", "name": "REFramework (nightly)", "short": "REFramework", "source": "github",
+             "repo": "praydog/REFramework-nightly", "issues_repo": "praydog/REFramework",
+             "issues_title_re": r"(?i)wilds|\bmhws?\b",
+             "crash_query": "wilds",
+             "issues_note": "(Searched praydog/REFramework issues that mention Wilds; the nightly repo has no tracker of its own.)",
+             "newer_note": ("Each nightly is one build for every RE Engine game, so a newer nightly doesn't prove a Wilds fix."),
+             "url": "https://github.com/praydog/REFramework-nightly/releases/latest"},
+            {"id": "fluffy-mm", "name": "Fluffy Mod Manager", "short": "Fluffy MM", "source": "manual",
+             "agnostic": True, "url": "https://www.nexusmods.com/site/mods/818",
+             "agnostic_note": ("Copies pak and loose-file mods into the game folder and doesn't hook the game, so patches don't "
+                               "break the manager itself; the mods it installs can still need updates."),
+             "manual_note": "No public release feed; check the Nexus page for a new version after a big title update."},
+        ],
+        "extra_links": [("REFramework documentation", "https://cursey.github.io/reframework-book/"),
+                        ("Monster Hunter Wilds mods on Nexus Mods", "https://www.nexusmods.com/games/monsterhunterwilds/mods"),
+                        ("Capcom: Preparation for Update & A Message on Mods",
+                         "https://store.steampowered.com/news/app/2246340/view/1818752592134430")],
+        "wiki": "https://cursey.github.io/reframework-book/",
+        "note": ("Tracks the Steam PC version. Capcom doesn't support mods: after a title update, mods can stop the game "
+                 "launching until they are updated."),
+        "blurb": "Wilds title updates often change the game's data files and code, which breaks REFramework scripts and armor/pak mods until they are updated.",
+    },
 ]
 
 GAMES_BY_SLUG = {g["slug"]: g for g in GAMES}

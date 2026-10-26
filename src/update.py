@@ -263,9 +263,11 @@ from datetime import timedelta as _td  # noqa: E402
 PRE_PATCH_WINDOW = _td(days=7)
 
 
-def breakage_reports(repo: str, since_iso: str, patch_version: str | None, patch_dt=None) -> list[dict] | None:
+def breakage_reports(repo: str, since_iso: str, patch_version: str | None, patch_dt=None,
+                     title_re: str | None = None) -> list[dict] | None:
     """Open GitHub issues filed since `since_iso` (and within BREAKAGE_WINDOW_DAYS of the patch, when
-    patch-caused breakage actually surfaces) whose titles report update-related breakage."""
+    patch-caused breakage actually surfaces) whose titles report update-related breakage. `title_re` keeps only
+    issues about this game when the tracker is shared by several games (e.g. praydog/REFramework)."""
     wait = 6.5 - (time.time() - _last_search[0])  # search API: 10 req/min unauthenticated
     if wait > 0:
         time.sleep(wait)
@@ -281,6 +283,8 @@ def breakage_reports(repo: str, since_iso: str, patch_version: str | None, patch
     for i in res.get("items", []):
         if not is_breakage_title(i["title"], patch_version):
             continue
+        if title_re and not re.search(title_re, i["title"]):
+            continue
         cdt = parse_iso(i["created_at"])
         if patch_dt and cdt and cdt > patch_dt + timedelta(days=BREAKAGE_WINDOW_DAYS):
             continue
@@ -288,6 +292,37 @@ def breakage_reports(repo: str, since_iso: str, patch_version: str | None, patch
                     "labels": [lb.get("name", "") for lb in i.get("labels", [])], "comments": i.get("comments", 0),
                     "thumbs_up": (i.get("reactions") or {}).get("+1", 0)})
     return out
+
+
+CRASH_TITLE_RE = r"(?i)crash|broke|broken|not work|doesn'?t work|fail|black screen|freez|won'?t (?:launch|start)"
+
+
+def open_crash_reports(repo: str, since_iso: str, query: str, title_re: str | None = None) -> list[dict] | None:
+    """Open issues about this game that report crashes since `since_iso`, whatever caused them. Used where the
+    framework changes on its own schedule (REFramework nightlies), so a regression can appear without a game patch.
+    These are reported in the reason text only; they never count as patch breakage."""
+    wait = 6.5 - (time.time() - _last_search[0])
+    if wait > 0:
+        time.sleep(wait)
+    _last_search[0] = time.time()
+    q = urllib.parse.quote(f"repo:{repo} is:issue is:open created:>={since_iso[:10]} {query}")
+    try:
+        res = http_get_json(f"https://api.github.com/search/issues?q={q}&per_page=50", gh_headers())
+    except Exception as e:  # noqa: BLE001
+        print(f"  crash-report search failed for {repo}: {e}", file=sys.stderr)
+        return None
+    return [{"title": i["title"], "url": i["html_url"], "created_at": i["created_at"]}
+            for i in res.get("items", [])
+            if re.search(CRASH_TITLE_RE, i["title"]) and (not title_re or re.search(title_re, i["title"]))]
+
+
+def crash_reports_note(reports: list[dict] | None) -> str:
+    if not reports:
+        return ""
+    n = len(reports)
+    newest = max(reports, key=lambda r: r["created_at"])
+    return (f" {n} open crash report{'' if n == 1 else 's'} against recent builds, not tied to a game patch"
+            f" (newest {newest['created_at'][:10]}: {newest['title'].strip()!r}). If the latest build crashes, try an older one.")
 
 
 def quiet_period_note(age: float, issues_repo: str | None, searched: bool) -> str:
@@ -405,10 +440,11 @@ def build_steam_game(game: dict) -> dict:
         issues_repo = None if fw.get("no_issue_tracker") else (
             fw.get("issues_repo") or (fw.get("repo") if fw["source"] != "thunderstore" else None))
         searched = False
+        crash_reports = None
         if sensitive and v["status"] != STATUS_UPDATED and not (official and official["supports_current"]) and issues_repo:
             rdt = parse_iso(rel.get("published_at"))
             since = max([d for d in (patch_dt, rdt) if d]).isoformat()
-            found = breakage_reports(issues_repo, since, latest.get("version"), patch_dt)
+            found = breakage_reports(issues_repo, since, latest.get("version"), patch_dt, fw.get("issues_title_re"))
             searched = found is not None
             reports = found or []
         confirmed = confirmed_breakage(reports)
@@ -431,6 +467,16 @@ def build_steam_game(game: dict) -> dict:
             reason += quiet_period_note(age, issues_repo, searched)
             if searched and fw.get("issues_note"):
                 reason += " " + fw["issues_note"]
+        elif fw.get("newer_note") and label == "Likely safe" and v["status"] != STATUS_UPDATED:
+            # e.g. one REFramework nightly covers every RE Engine game, so "newer than the patch" is weak evidence.
+            reason += " " + fw["newer_note"]
+            if fw.get("crash_query") and issues_repo and patch_dt:
+                crashes = open_crash_reports(issues_repo, patch_dt.isoformat(), fw["crash_query"], fw.get("issues_title_re"))
+                if crashes is not None:
+                    crash_reports = crashes
+                    reason += crash_reports_note(crashes) or " No open crash reports since the patch."
+                    if fw.get("issues_note"):
+                        reason += " " + fw["issues_note"]
         if fw["source"] == "ficsit_sml":
             label, reason = ficsit_compat_adjust(label, reason, rel.get("ficsit_compat"), min_cl=rel.get("game_version"),
                                                  sensitive=sensitive)
@@ -443,7 +489,7 @@ def build_steam_game(game: dict) -> dict:
         if rel.get("deprecated"):
             reason += " (Package is marked deprecated on Thunderstore.)"
         fws.append({**base, "status": label, "base_status": v["status"], "reason": reason,
-                    "breakage_reports": reports, "official": official, "release_tag": rel.get("tag_name"),
+                    "breakage_reports": reports, **({"crash_reports": crash_reports} if crash_reports else {}), "official": official, "release_tag": rel.get("tag_name"),
                     "release_name": rel.get("name"), "release_published_at": rel.get("published_at"),
                     "release_url": rel.get("html_url") or fw["url"], "mentions_patch": v["mentions_patch"],
                     "newer_than_patch": v["newer_than_patch"], "mention_releases": lineage})

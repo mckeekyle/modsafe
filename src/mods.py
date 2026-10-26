@@ -65,6 +65,11 @@ def md_to_html(md: str) -> str:
     return "\n".join(out)
 
 
+def md_plain(t: str) -> str:
+    """Markdown inline -> plain text (for JSON-LD and meta text): keep link text, drop **, ` and URLs."""
+    return re.sub(r"\*\*|`", "", re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", t))
+
+
 def guide_parts(md: str) -> dict:
     """Split guide into title, intro and the ordered '## Steps' list (for HowTo JSON-LD)."""
     title = re.search(r"^# (.+)$", md, re.M).group(1)
@@ -74,9 +79,9 @@ def guide_parts(md: str) -> dict:
     for line in (steps_block.group(1) if steps_block else "").splitlines():
         m = re.match(r"^\d+\. \*\*(.+?)\*\*\s*(.*)", line)
         if m:
-            steps.append({"name": m.group(1).rstrip("."), "text": m.group(2)})
+            steps.append({"name": md_plain(m.group(1)).rstrip("."), "text": md_plain(m.group(2))})
     intro = body.strip().split("\n\n")[0]
-    return {"title": title, "body": body, "steps": steps, "intro": re.sub(r"\*\*|`", "", intro)}
+    return {"title": title, "body": body, "steps": steps, "intro": md_plain(intro)}
 
 
 def compat(mod: dict, game_data: dict) -> tuple[str, str]:

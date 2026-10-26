@@ -40,5 +40,5 @@
       "note": "Nearly every release since v1.0.0 has its own branch."}
   },
   "beta_only": ["msfs-2024", "msfs-2020", "satisfactory"],
-  "none": ["skyrim-se", "fallout-4", "starfield", "elden-ring", "gta-v", "doom-the-dark-ages", "palworld"]
+  "none": ["skyrim-se", "fallout-4", "starfield", "elden-ring", "gta-v", "doom-the-dark-ages", "palworld", "monster-hunter-wilds"]
 }

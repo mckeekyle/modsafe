@@ -1,0 +1,446 @@
+{
+  "generated_at": "2026-10-26T22:51:40Z",
+  "game": {
+    "slug": "monster-hunter-wilds",
+    "name": "Monster Hunter Wilds",
+    "steam_appid": 2246340,
+    "latest_patch": {
+      "version": "1.042.00.02",
+      "label": "Ver.1.042.00.02",
+      "title": "Update Summary (Ver.1.042.00.02)",
+      "published_at": "2026-08-14T03:26:59Z",
+      "published_unix": 1786678019,
+      "url": "https://store.steampowered.com/news/app/2246340/view/1840944183778483"
+    }
+  },
+  "verdict": "Likely safe",
+  "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
+  "frameworks": [
+    {
+      "id": "reframework",
+      "name": "REFramework (nightly)",
+      "short": "REFramework",
+      "url": "https://github.com/praydog/REFramework-nightly/releases/latest",
+      "source": "github",
+      "repo": "praydog/REFramework-nightly",
+      "tracked": true,
+      "sensitive": true,
+      "status": "Likely safe",
+      "base_status": "Likely OK",
+      "reason": "Latest release is newer than patch Ver.1.042.00.02, but notes do not explicitly mention that version. Each nightly is one build for every RE Engine game, so a newer nightly doesn't prove a Wilds fix. 3 open crash reports against recent builds, not tied to a game patch (newest 2026-10-08: 'Monster hunter wilds problem Issue do not now what is causing crashes about graphics'). If the latest build crashes, try an older one. (Searched praydog/REFramework issues that mention Wilds; the nightly repo has no tracker of its own.)",
+      "breakage_reports": [],
+      "crash_reports": [
+        {
+          "title": "Monster Hunter Wilds Linux Crash During Initialization",
+          "url": "https://github.com/praydog/REFramework/issues/1823",
+          "created_at": "2026-09-05T15:37:43Z"
+        },
+        {
+          "title": "Monster hunter wilds problem Issue do not now what is causing crashes about graphics ",
+          "url": "https://github.com/praydog/REFramework/issues/1858",
+          "created_at": "2026-10-08T04:04:49Z"
+        },
+        {
+          "title": "[BUG] Monster Hunter Wilds: Different crash behavior between REFramework build 01417 and 01424",
+          "url": "https://github.com/praydog/REFramework/issues/1850",
+          "created_at": "2026-09-24T10:11:59Z"
+        }
+      ],
+      "official": null,
+      "release_tag": "nightly-01433-d4611aef1d63effd3a736bdf9404ea702428017d",
+      "release_name": "REF Nightly 01433 (d4611aef1d63effd3a736bdf9404ea702428017d)",
+      "release_published_at": "2026-10-21T04:37:39Z",
+      "release_url": "https://github.com/praydog/REFramework-nightly/releases/tag/nightly-01433-d4611aef1d63effd3a736bdf9404ea702428017d",
+      "mentions_patch": false,
+      "newer_than_patch": true,
+      "mention_releases": []
+    },
+    {
+      "id": "fluffy-mm",
+      "name": "Fluffy Mod Manager",
+      "short": "Fluffy MM",
+      "url": "https://www.nexusmods.com/site/mods/818",
+      "source": "manual",
+      "tracked": false,
+      "sensitive": false,
+      "status": "Not affected by patches",
+      "reason": "Copies pak and loose-file mods into the game folder and doesn't hook the game, so patches don't break the manager itself; the mods it installs can still need updates. No public release feed; check the Nexus page for a new version after a big title update.",
+      "release_tag": null,
+      "release_published_at": null,
+      "release_url": "https://www.nexusmods.com/site/mods/818"
+    }
+  ],
+  "history": [
+    {
+      "version": "1.042.00.02",
+      "label": "Ver.1.042.00.02",
+      "title": "Update Summary (Ver.1.042.00.02)",
+      "published_at": "2026-08-14T03:26:59Z",
+      "published_unix": 1786678019,
+      "url": "https://store.steampowered.com/news/app/2246340/view/1840944183778483",
+      "frameworks": [
+        {
+          "id": "reframework",
+          "short": "REFramework",
+          "name": "REFramework (nightly)",
+          "status": "Likely safe",
+          "release_tag": "nightly-01396-6dd6724325d13f05e2e897907aa568fc9cf72574",
+          "release_published_at": "2026-08-19T12:47:56Z",
+          "mentions_patch": false,
+          "first_release_tag": "nightly-01396-6dd6724325d13f05e2e897907aa568fc9cf72574",
+          "first_release_at": "2026-08-19T12:47:56Z",
+          "data_from": "2026-06-03T19:16:48Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
+      "version": "1.042.00.01",
+      "label": "Ver.1.042.00.01",
+      "title": "Update Summary (Ver.1.042.00.01 / Demo Version 1.0.1)",
+      "published_at": "2026-08-08T02:25:12Z",
+      "published_unix": 1786155912,
+      "url": "https://store.steampowered.com/news/app/2246340/view/1840310314346672",
+      "frameworks": [
+        {
+          "id": "reframework",
+          "short": "REFramework",
+          "name": "REFramework (nightly)",
+          "status": "Likely safe",
+          "release_tag": "nightly-01395-f9a4cf0e2f70a73c5552129f47fbdd95cb8d1903",
+          "release_published_at": "2026-08-13T04:47:38Z",
+          "mentions_patch": false,
+          "first_release_tag": "nightly-01395-f9a4cf0e2f70a73c5552129f47fbdd95cb8d1903",
+          "first_release_at": "2026-08-13T04:47:38Z",
+          "data_from": "2026-06-03T19:16:48Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
+      "version": "1.042.00.00",
+      "label": "Ver.1.042.00.00",
+      "title": "Update Summary (Ver.1.042.00.00)",
+      "published_at": "2026-08-03T22:35:56Z",
+      "published_unix": 1785796556,
+      "url": "https://store.steampowered.com/news/app/2246340/view/1839676055896017",
+      "frameworks": [
+        {
+          "id": "reframework",
+          "short": "REFramework",
+          "name": "REFramework (nightly)",
+          "status": "Likely safe",
+          "release_tag": "nightly-01395-f9a4cf0e2f70a73c5552129f47fbdd95cb8d1903",
+          "release_published_at": "2026-08-13T04:47:38Z",
+          "mentions_patch": false,
+          "first_release_tag": "nightly-01395-f9a4cf0e2f70a73c5552129f47fbdd95cb8d1903",
+          "first_release_at": "2026-08-13T04:47:38Z",
+          "data_from": "2026-06-03T19:16:48Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
+      "version": "1.041.03.00",
+      "label": "Ver.1.041.03.00",
+      "title": "Update Summary (Ver.1.041.03.00 / Ver.1.041.02.00)",
+      "published_at": "2026-02-27T08:42:19Z",
+      "published_unix": 1772181739,
+      "url": "https://store.steampowered.com/news/app/2246340/view/1825727806709998",
+      "frameworks": [
+        {
+          "id": "reframework",
+          "short": "REFramework",
+          "name": "REFramework (nightly)",
+          "status": "Likely safe",
+          "release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
+          "release_published_at": "2026-06-03T19:16:48Z",
+          "mentions_patch": false,
+          "first_release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
+          "first_release_at": "2026-06-03T19:16:48Z",
+          "data_from": "2026-06-03T19:16:48Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
+      "version": "1.041.01.00",
+      "label": "Ver.1.041.01.00",
+      "title": "Update Summary (Ver.1.041.01.00)",
+      "published_at": "2026-02-27T08:42:00Z",
+      "published_unix": 1772181720,
+      "url": "https://store.steampowered.com/news/app/2246340/view/1825727806709997",
+      "frameworks": [
+        {
+          "id": "reframework",
+          "short": "REFramework",
+          "name": "REFramework (nightly)",
+          "status": "Likely safe",
+          "release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
+          "release_published_at": "2026-06-03T19:16:48Z",
+          "mentions_patch": false,
+          "first_release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
+          "first_release_at": "2026-06-03T19:16:48Z",
+          "data_from": "2026-06-03T19:16:48Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
+      "version": "1.041.00.00",
+      "label": "Ver.1.041.00.00",
+      "title": "Update Summary (Ver.1.041.00.00)",
+      "published_at": "2026-02-18T23:14:42Z",
+      "published_unix": 1771456482,
+      "url": "https://store.steampowered.com/news/app/2246340/view/1825093633183688",
+      "frameworks": [
+        {
+          "id": "reframework",
+          "short": "REFramework",
+          "name": "REFramework (nightly)",
+          "status": "Likely safe",
+          "release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
+          "release_published_at": "2026-06-03T19:16:48Z",
+          "mentions_patch": false,
+          "first_release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
+          "first_release_at": "2026-06-03T19:16:48Z",
+          "data_from": "2026-06-03T19:16:48Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
+      "version": "1.040.03.02",
+      "label": "Ver.1.040.03.02",
+      "title": "Update Summary (Ver.1.040.03.02)",
+      "published_at": "2026-02-01T00:30:08Z",
+      "published_unix": 1769905808,
+      "url": "https://store.steampowered.com/news/app/2246340/view/1823191198608402",
+      "frameworks": [
+        {
+          "id": "reframework",
+          "short": "REFramework",
+          "name": "REFramework (nightly)",
+          "status": "Likely safe",
+          "release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
+          "release_published_at": "2026-06-03T19:16:48Z",
+          "mentions_patch": false,
+          "first_release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
+          "first_release_at": "2026-06-03T19:16:48Z",
+          "data_from": "2026-06-03T19:16:48Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
+      "version": "1.040.03.01",
+      "label": "Ver.1.040.03.01",
+      "title": "Update Summary (Ver.1.040.03.01)",
+      "published_at": "2026-01-28T02:13:28Z",
+      "published_unix": 1769566408,
+      "url": "https://store.steampowered.com/news/app/2246340/view/1823191198598921",
+      "frameworks": [
+        {
+          "id": "reframework",
+          "short": "REFramework",
+          "name": "REFramework (nightly)",
+          "status": "Likely safe",
+          "release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
+          "release_published_at": "2026-06-03T19:16:48Z",
+          "mentions_patch": false,
+          "first_release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
+          "first_release_at": "2026-06-03T19:16:48Z",
+          "data_from": "2026-06-03T19:16:48Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
+      "version": "1.040.03.00",
+      "label": "Ver.1.040.03.00",
+      "title": "Update Summary (Ver.1.040.03.00)",
+      "published_at": "2026-01-28T02:11:33Z",
+      "published_unix": 1769566293,
+      "url": "https://store.steampowered.com/news/app/2246340/view/1823191198598913",
+      "frameworks": [
+        {
+          "id": "reframework",
+          "short": "REFramework",
+          "name": "REFramework (nightly)",
+          "status": "Likely safe",
+          "release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
+          "release_published_at": "2026-06-03T19:16:48Z",
+          "mentions_patch": false,
+          "first_release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
+          "first_release_at": "2026-06-03T19:16:48Z",
+          "data_from": "2026-06-03T19:16:48Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
+      "version": "1.040.02.00",
+      "label": "Ver.1.040.02.00",
+      "title": "Update Summary (Ver.1.040.02.00)",
+      "published_at": "2025-12-19T08:27:13Z",
+      "published_unix": 1766132833,
+      "url": "https://store.steampowered.com/news/app/2246340/view/1819386365094112",
+      "frameworks": [
+        {
+          "id": "reframework",
+          "short": "REFramework",
+          "name": "REFramework (nightly)",
+          "status": "Likely safe",
+          "release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
+          "release_published_at": "2026-06-03T19:16:48Z",
+          "mentions_patch": false,
+          "first_release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
+          "first_release_at": "2026-06-03T19:16:48Z",
+          "data_from": "2026-06-03T19:16:48Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
+      "version": "1.040.01.00",
+      "label": "Ver.1.040.01.00",
+      "title": "Update Summary (Ver.1.040.01.00)",
+      "published_at": "2025-12-17T11:36:01Z",
+      "published_unix": 1765971361,
+      "url": "https://store.steampowered.com/news/app/2246340/view/1819386365086422",
+      "frameworks": [
+        {
+          "id": "reframework",
+          "short": "REFramework",
+          "name": "REFramework (nightly)",
+          "status": "Likely safe",
+          "release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
+          "release_published_at": "2026-06-03T19:16:48Z",
+          "mentions_patch": false,
+          "first_release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
+          "first_release_at": "2026-06-03T19:16:48Z",
+          "data_from": "2026-06-03T19:16:48Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
+      "version": "1.040",
+      "label": "Ver.1.040",
+      "title": "Update Summary (Ver.1.040)",
+      "published_at": "2025-12-15T23:44:23Z",
+      "published_unix": 1765842263,
+      "url": "https://store.steampowered.com/news/app/2246340/view/1818752592134338",
+      "frameworks": [
+        {
+          "id": "reframework",
+          "short": "REFramework",
+          "name": "REFramework (nightly)",
+          "status": "Likely safe",
+          "release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
+          "release_published_at": "2026-06-03T19:16:48Z",
+          "mentions_patch": false,
+          "first_release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
+          "first_release_at": "2026-06-03T19:16:48Z",
+          "data_from": "2026-06-03T19:16:48Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    }
+  ],
+  "news": [
+    {
+      "title": "Khezu Stretches into Monster Hunter Wilds: Ascendance!",
+      "url": "https://store.steampowered.com/news/app/2246340/view/1844115010496733",
+      "published_at": "2026-09-19T07:00:19Z",
+      "is_patch": false
+    },
+    {
+      "title": "Notice on Changes Coming to Character Edits",
+      "url": "https://store.steampowered.com/news/app/2246340/view/1844115010491010",
+      "published_at": "2026-09-17T06:34:04Z",
+      "is_patch": false
+    },
+    {
+      "title": "The Elder Dragon Teostra Blazes into Monster Hunter Wilds: Ascendance!",
+      "url": "https://store.steampowered.com/news/app/2246340/view/1844115010490908",
+      "published_at": "2026-09-17T05:33:54Z",
+      "is_patch": false
+    },
+    {
+      "title": "Check out the next wave of weapon videos for Monster Hunter Wilds: Ascendance!",
+      "url": "https://store.steampowered.com/news/app/2246340/view/1844115010488498",
+      "published_at": "2026-09-16T08:49:24Z",
+      "is_patch": false
+    },
+    {
+      "title": "Capcom Spotlight | TGS 2026 will be streamed on Wednesday, September 16.",
+      "url": "https://store.steampowered.com/news/app/2246340/view/1843481262691145",
+      "published_at": "2026-09-10T04:59:47Z",
+      "is_patch": false
+    },
+    {
+      "title": "Check out the first wave of intro videos for Monster Hunter Wilds: Ascendance!",
+      "url": "https://store.steampowered.com/news/app/2246340/view/1842846814455054",
+      "published_at": "2026-09-08T08:52:12Z",
+      "is_patch": false
+    },
+    {
+      "title": "Monster Hunter Wilds: Ascendance \u2014 Trailer #1 is out!",
+      "url": "https://store.steampowered.com/news/app/2246340/view/1842846814445479",
+      "published_at": "2026-09-04T06:20:25Z",
+      "is_patch": false
+    },
+    {
+      "title": "Get a glimpse of the action of Monster Hunter Wilds: Ascendance!",
+      "url": "https://store.steampowered.com/news/app/2246340/view/1842846814439778",
+      "published_at": "2026-09-02T09:40:28Z",
+      "is_patch": false
+    },
+    {
+      "title": "Update Summary (Ver.1.042.00.02)",
+      "url": "https://store.steampowered.com/news/app/2246340/view/1840944183778483",
+      "published_at": "2026-08-14T03:26:59Z",
+      "is_patch": true
+    },
+    {
+      "title": "Update Summary (Ver.1.042.00.01 / Demo Version 1.0.1)",
+      "url": "https://store.steampowered.com/news/app/2246340/view/1840310314346672",
+      "published_at": "2026-08-08T02:25:12Z",
+      "is_patch": true
+    }
+  ],
+  "channels": [],
+  "sources": {
+    "steam_news": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=2246340&count=100"
+  },
+  "verdict_log": [
+    {
+      "at": "2026-10-26T22:49:50Z",
+      "patch": "Ver.1.042.00.02",
+      "patch_key": "1.042.00.02",
+      "patch_published_at": "2026-08-14T03:26:59Z",
+      "patch_url": "https://store.steampowered.com/news/app/2246340/view/1840944183778483",
+      "verdict": "Likely safe",
+      "frameworks": [
+        {
+          "short": "REFramework",
+          "status": "Likely safe",
+          "release_tag": "nightly-01433-d4611aef1d63effd3a736bdf9404ea702428017d"
+        }
+      ]
+    }
+  ]
+}

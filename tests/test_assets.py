@@ -34,6 +34,14 @@ class TestAssets(unittest.TestCase):
             self.skipTest("dist not built")
         self.assertEqual(build.missing_asset_refs(dist), [])
 
+    def test_card_and_hero_urls_are_cache_busted(self):
+        # /img/* is cached for a week; replaced art must get a new URL or visitors keep the old file.
+        import hashlib
+        u = build.busted(build.game_img("satisfactory"))
+        path, _, v = u.partition("?v=")
+        self.assertEqual(v, hashlib.sha1((ROOT / "static" / path.lstrip("/")).read_bytes()).hexdigest()[:8])
+        self.assertEqual(build.busted("/img/does-not-exist.webp"), "/img/does-not-exist.webp")
+
 
 if __name__ == "__main__":
     unittest.main()

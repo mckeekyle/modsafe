@@ -199,5 +199,87 @@ class TestPalworld(unittest.TestCase):
         self.assertEqual(self._run(fresh)[0]["verdict"], V_WAIT)
 
 
+class TestMonsterHunterWilds(unittest.TestCase):
+    g = GAMES_BY_SLUG["monster-hunter-wilds"]
+
+    def test_config(self):
+        self.assertEqual(self.g["steam_appid"], 2246340)
+        ref, fmm = self.g["frameworks"]
+        self.assertEqual((ref["id"], ref["repo"], ref["issues_repo"]),
+                         ("reframework", "praydog/REFramework-nightly", "praydog/REFramework"))
+        self.assertTrue(fmm["agnostic"])
+        self.assertEqual(fmm["source"], "manual")
+
+    def test_patch_rule(self):
+        r = self.g["patch_rule"]
+        for t, v in (("Update Summary (Ver.1.042.00.02)", "1.042.00.02"),
+                     ("Update Summary (Ver.1.042.00.01 / Demo Version 1.0.1)", "1.042.00.01"),
+                     ("Update Summary (Ver.1.041.03.00 / Ver.1.041.02.00)", "1.041.03.00"),
+                     ("Update Summary (Ver.1.040)", "1.040")):
+            self.assertEqual(detect_patch(t, r)["version"], v, t)
+        for t in ("Update Ver. 1.042 \u2014 Maintenance Notice", "Introducing Update Ver. 1.041 \u2014 Available Wednesday",
+                  "Preparation for Update & A Message on Mods", "Notice on Changes Coming to Character Edits"):
+            self.assertIsNone(detect_patch(t, r), t)
+
+    def test_news_alias(self):
+        import news as news_mod
+        self.assertIn("monster-hunter-wilds", news_mod.tag_games("MH Wilds Title Update 5 date revealed"))
+        self.assertNotIn("monster-hunter-wilds", news_mod.tag_games("Monster Hunter Rise sells 20 million"))
+
+    def _run(self, patch_iso, breakage=(), crashes=()):
+        urls = []
+
+        def get(url):
+            if "GetNewsForApp" in url:
+                return news(("Update Summary (Ver.1.042.00.02)", patch_iso), ("Update Ver. 1.042 \u2014 Maintenance Notice", patch_iso),
+                            ("Update Summary (Ver.1.042.00.01 / Demo Version 1.0.1)", "2026-08-08T01:00:00Z"))
+            if "steamcmd" in url:
+                return pics(2246340, 24705561, patch_iso)
+            if "search/issues" in url:
+                urls.append(url)
+                return {"items": list(crashes if url.endswith("%20wilds&per_page=50") else breakage)}
+            raise AssertionError(url)
+        rels = [gh_rel("nightly-01433-d4611ae", "2026-10-21T04:37:39Z")]
+        with FakeHttp(get, sources={"github": lambda fw: rels}):
+            return update.build_game(self.g), urls
+
+    @staticmethod
+    def issue(n, title, iso):
+        return {"title": title, "html_url": f"https://github.com/praydog/REFramework/issues/{n}", "created_at": iso, "labels": []}
+
+    def test_old_patch_likely_safe_with_honest_reason(self):
+        d, urls = self._run("2026-08-14T03:26:59Z")
+        self.assertEqual(d["game"]["latest_patch"]["label"], "Ver.1.042.00.02")
+        self.assertEqual(d["verdict"], V_LIKELY)
+        why = d["frameworks"][0]["reason"]
+        self.assertIn("doesn't prove a Wilds fix", why)
+        self.assertIn("No open crash reports since the patch", why)
+        self.assertTrue(urls and all("repo%3Apraydog/REFramework%20" in u for u in urls), urls)
+        self.assertEqual(d["frameworks"][1]["status"], "Not affected by patches")
+
+    def test_crash_reports_are_reported_but_not_counted_as_breakage(self):
+        crashes = [self.issue(1850, "[BUG] Monster Hunter Wilds: Different crash behavior between builds", "2026-09-24T10:11:59Z"),
+                   self.issue(1900, "RE9 crash on startup", "2026-09-25T00:00:00Z")]
+        d, _ = self._run("2026-08-14T03:26:59Z", crashes=crashes)
+        fw = d["frameworks"][0]
+        self.assertEqual(d["verdict"], V_LIKELY)
+        self.assertIn("1 open crash report against recent builds", fw["reason"])
+        self.assertEqual([c["url"][-4:] for c in fw["crash_reports"]], ["1850"])  # other RE Engine games filtered out
+
+    def test_breakage_search_keeps_only_wilds_titles(self):
+        fresh = datetime.fromtimestamp(time.time() - 10 * 86400, tz=timezone.utc).isoformat().replace("+00:00", "Z")
+        soon = datetime.fromtimestamp(time.time() - 2 * 86400, tz=timezone.utc).isoformat().replace("+00:00", "Z")
+        other = [self.issue(2001, "Resident Evil Requiem crashes after latest update", soon)]
+        d, _ = self._run(fresh, breakage=other)
+        self.assertEqual(d["frameworks"][0]["breakage_reports"], [])
+        wilds = [self.issue(2002, "MH Wilds crashes after Ver.1.042.00.02 update", soon)]
+        d, _ = self._run(fresh, breakage=wilds)
+        self.assertEqual(len(d["frameworks"][0]["breakage_reports"]), 1)
+
+    def test_fresh_patch_waits(self):
+        fresh = datetime.fromtimestamp(time.time() - 86400, tz=timezone.utc).isoformat().replace("+00:00", "Z")
+        self.assertEqual(self._run(fresh)[0]["verdict"], V_WAIT)
+
+
 if __name__ == "__main__":
     unittest.main()

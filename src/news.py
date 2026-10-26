@@ -41,6 +41,7 @@ ALIASES = {
     "satisfactory": [r"(?-i:\bSatisfactory\b)(?!:? (?:the )?board game)(?=.*\b(?:update|patch|hotfix|mods?|factory|coffee stain|1\.\d))",
                      r"coffee stain'?s satisfactory"],
     "palworld": [r"palworld"],
+    "monster-hunter-wilds": [r"monster hunter wilds", r"\bmh ?wilds\b"],
 }
 
 

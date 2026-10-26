@@ -601,6 +601,12 @@ def missing_asset_refs(dist: Path) -> list[tuple[str, str]]:
     return out
 
 
+def asset_ver(rel: str) -> str:
+    """Short content hash for cache-busting (/img/* is cached a week, so replaced art needs a new URL)."""
+    import hashlib
+    return hashlib.sha1((STATIC / rel).read_bytes()).hexdigest()[:8]
+
+
 def game_img(slug: str, kind: str = "cap") -> str:
     """kind: 'cap' (616x353 card art) or 'hero' (1600x516 banner). Falls back to SVG tile / header.jpg."""
     if (STATIC / "img" / f"{slug}-{kind}.webp").exists():
@@ -608,6 +614,12 @@ def game_img(slug: str, kind: str = "cap") -> str:
     if (STATIC / "img" / f"{slug}.svg").exists():
         return f"/img/{slug}.svg"
     return f"/img/{slug}.jpg"
+
+
+def busted(url: str) -> str:
+    """Append ?v=<content hash>: /img/* is cached for a week, so replaced art needs a new URL to show up."""
+    f = STATIC / url.lstrip("/")
+    return f"{url}?v={asset_ver(url.lstrip('/'))}" if f.is_file() else url
 
 
 ICONS = {"ok": "✔", "likely": "◑", "wait": "⏳", "broken": "✖", "agnostic": "∞", "manual": "?", "unknown": "?"}
@@ -635,31 +647,40 @@ def badge(status: str, tracked: bool = True) -> str:
     return f'<span class="badge {status_class(status)}">{icon(status)}{esc(status)}</span>'
 
 
+def and_join(items: list) -> str:
+    items = list(items)
+    return items[0] if len(items) == 1 else ", ".join(items[:-1]) + " and " + items[-1] if items else ""
+
+
 def verdict_sentence(game: dict, data: dict) -> str:
     v = data["verdict"]
     p = data["game"]["latest_patch"]["label"]
     fws = [f for f in data["frameworks"] if f.get("tracked", True) and f.get("sensitive", True)]
     manual = [f["short"] for f in data["frameworks"] if not f.get("tracked", True) and f["status"] == "Check manually"]
     worst = [f["short"] for f in fws if f["status"] == v]
-    tail = f" Also check {', '.join(manual)} manually (no public release feed, not counted)." if manual else ""
+    tail = f" Also check {and_join(manual)} manually (no public release feed, not counted)." if manual else ""
     if v == "Safe":
         msg = f"Every patch-sensitive framework has explicit support for {p}."
     elif v == "Likely safe":
-        msg = (f"No sign of trouble with {p}. {', '.join(worst)} {'hasn’t' if len(worst) == 1 else 'haven’t'} named this patch in a release, "
+        msg = (f"No sign of trouble with {p}. {and_join(worst)} {'hasn’t' if len(worst) == 1 else 'haven’t'} named this patch in a release, "
                "but there’s either a newer release or no breakage reports since. Probably fine — skim the notes before updating.")
     elif v == "Just patched, wait":
-        msg = f"{p} is under a week old and {', '.join(worst)} {'has' if len(worst) == 1 else 'have'} not updated yet. Hold the update a few days."
+        msg = f"{p} is under a week old and {and_join(worst)} {'has' if len(worst) == 1 else 'have'} not updated yet. Hold the update a few days."
     elif v == "Breakage reported":
-        msg = f"Open issues report breakage after {p} for {', '.join(worst)}. Hold the update or check the linked reports."
+        msg = f"Open issues report breakage after {p} for {and_join(worst)}. Hold the update or check the linked reports."
     elif v == "Not ported yet" and game.get("kind") == "manual":
         # Hand-maintained hooks (Script Hook V) can lag on one edition only: say which, from the framework reason.
         why = " ".join(f"{f['name']}: {re.sub(r' [(]Manually verified [^)]*[)][.]?$', '', f.get('reason', ''))}"
                        for f in fws if f["status"] == v)
         msg = f"{why} Stay on your current version if you depend on it."
     elif v == "Not ported yet":
-        msg = f"{', '.join(worst)} {'has' if len(worst) == 1 else 'have'} no build for {p} yet. Stay on your current version if you depend on them."
+        msg = f"{and_join(worst)} {'has' if len(worst) == 1 else 'have'} no build for {p} yet. Stay on your current version if you depend on them."
     else:
         msg = "Some data could not be fetched; check the project pages."
+    crashy = [f["short"] for f in fws if f.get("crash_reports")]
+    if crashy:
+        msg += (f" Separately, there are open crash reports against recent {and_join(crashy)} builds that aren’t tied to this patch;"
+                " see “Why?” below.")
     return msg + tail
 
 
@@ -763,6 +784,9 @@ def game_faq(game: dict, data: dict) -> list[dict]:
     if game["slug"] == "palworld":
         items.append({"q": "Can I use Palworld mods on official servers?",
                       "a": "No. Pocketpair's mod guidelines forbid mods on official servers and say accounts can be banned. Use mods in single-player, on your own world or on a community server that allows them."})
+    if game["slug"] == "monster-hunter-wilds":
+        items.append({"q": "What should I do with my mods when Monster Hunter Wilds updates?",
+                      "a": "Capcom says mods aren't supported and can stop the game launching after an update. If that happens, uninstall all mods (in Fluffy Mod Manager, \"Uninstall all mods\"), remove dinput8.dll, verify the game files in Steam and launch once unmodded, then reinstall mods as they get updated for the new version."})
     if (steam_item := guides_mod.game_faq_item(game)):
         items.append(steam_item)
     return items
@@ -780,16 +804,31 @@ def stale_banner(data: dict) -> str:
             "Recent automatic checks failed, so this may be out of date. Verify on the project pages.</p>")
 
 
+def display_tag(tag) -> str:
+    """Release tag for display: drop a full 40-char commit hash suffix (REFramework nightly-01433-<sha>)."""
+    return re.sub(r"-[0-9a-f]{40}$", "", tag) if tag else "—"
+
+
+def rel_line(fw: dict) -> str:
+    if not fw.get("release_tag") and not fw.get("release_published_at"):
+        return (f'<div class="rel"><span class="muted">No public release feed</span>'
+                f'<span><a href="{esc(fw.get("release_url") or fw["url"])}">check its page</a></span></div>')
+    return (f'<div class="rel"><span><code>{esc(display_tag(fw.get("release_tag")))}</code></span><span>{esc(fmt_date(fw.get("release_published_at")))} · '
+            f'<a href="{esc(fw.get("release_url") or fw["url"])}">source</a></span></div>')
+
+
 def framework_cards(data: dict) -> str:
     out = []
     for fw in data["frameworks"]:
         tracked = fw.get("tracked", True)
         st = fw["status"] if tracked else "Check manually"
         reps = "".join(f'<li><a href="{esc(r["url"])}">{esc(r["title"])}</a></li>' for r in fw.get("breakage_reports") or [])
+        reps += "".join(f'<li><a href="{esc(r["url"])}">{esc(r["title"].strip())}</a> <span class="muted">(crash report, not tied to a patch)</span></li>'
+                        for r in fw.get("crash_reports") or [])
         out.append(f"""<article class="fw {status_class(st)}">
 <h3><a href="{esc(fw['url'])}">{esc(fw['name'])}</a></h3>
 {badge(st)}
-<div class="rel"><span><code>{esc(fw.get('release_tag') or '—')}</code></span><span>{esc(fmt_date(fw.get('release_published_at')))} · <a href="{esc(fw.get('release_url') or fw['url'])}">source</a></span></div>
+{rel_line(fw)}
 <details><summary>Why?</summary><p>{esc(fw.get('reason', ''))}</p>{f"<ul>{reps}</ul>" if reps else ""}</details>
 </article>""")
     return "".join(out)
@@ -830,6 +869,8 @@ def build_game_page(game: dict, data: dict) -> str:
     slug = game["slug"]
     def reason_li(fw):
         reps = "".join(f'<li><a href="{esc(r["url"])}">{esc(r["title"])}</a></li>' for r in fw.get("breakage_reports") or [])
+        reps += "".join(f'<li><a href="{esc(r["url"])}">{esc(r["title"].strip())}</a> <span class="muted">(crash report, not tied to a patch)</span></li>'
+                        for r in fw.get("crash_reports") or [])
         return f"<li><strong>{esc(fw['short'])}:</strong> {esc(fw.get('reason', ''))}" + (f"<ul>{reps}</ul>" if reps else "") + "</li>"
     faq = game_faq(game, data)
     faq_html = "".join(faq_article(i) for i in faq)
@@ -845,7 +886,7 @@ def build_game_page(game: dict, data: dict) -> str:
     vc = status_class(data["verdict"])
     body = f"""
 <p class="crumbs"><a href="/">Home</a> › <a href="/games/">Games</a> › {esc(game['name'])}</p>
-<section class="game-hero v-{vc}" style="--hero:url('{game_img(slug, "hero")}')">
+<section class="game-hero v-{vc}" style="--hero:url('{busted(game_img(slug, "hero"))}')">
 <div>
 <h1>Is it safe to update {esc(game['name'])}?</h1>
 <p>{vbadge(data['verdict'])}<span class="micro">{esc(MICROCOPY.get(data['verdict'], ''))}</span></p>
@@ -904,7 +945,7 @@ def history_cards(data: dict, limit: int | None = None) -> str:
     sections = []
     for entry in (data.get("history", []) or [])[:limit] if limit else data.get("history", []):
         cells = "".join(
-            f'<li>{badge(fw["status"])} <strong>{esc(fw["short"])}</strong> <code>{esc(fw.get("release_tag") or "—")}</code></li>'
+            f'<li>{badge(fw["status"])} <strong>{esc(fw["short"])}</strong> <code>{esc(display_tag(fw.get("release_tag")))}</code></li>'
             for fw in entry.get("frameworks", []))
         sections.append(f"""<article class="hist-card" id="patch-{esc(entry['label']).replace(' ', '-')}">
 <h3>{esc(entry['label'])}</h3>
@@ -1124,7 +1165,7 @@ def build_game_history(game: dict, data: dict) -> str:
     cards = []
     for entry, until in zip(hist, bounds):
         cells = "".join(
-            f'<li>{badge(fw["status"])} <strong>{esc(fw["short"])}</strong> <code>{esc(fw.get("release_tag") or "—")}</code> {_fw_timing(entry, fw, until)}</li>'
+            f'<li>{badge(fw["status"])} <strong>{esc(fw["short"])}</strong> <code>{esc(display_tag(fw.get("release_tag")))}</code> {_fw_timing(entry, fw, until)}</li>'
             for fw in entry.get("frameworks", []))
         cards.append(f"""<article class="hist-card" id="patch-{esc(entry['label']).replace(' ', '-')}">
 <h3>{esc(entry['label'])}</h3>
@@ -1194,7 +1235,7 @@ def build_install_page(game: dict, data: dict, md: str) -> str:
     mods = mods_mod.load_mods(slug)
     errors = guide_errors(md)
     fws = [f for f in data.get("frameworks", []) if f.get("tracked", True)]
-    fw_li = "".join(f'<li>{badge(f["status"])} <strong>{esc(f["short"])}</strong> <code>{esc(f.get("release_tag") or "—")}</code></li>' for f in fws)
+    fw_li = "".join(f'<li>{badge(f["status"])} <strong>{esc(f["short"])}</strong> <code>{esc(display_tag(f.get("release_tag")))}</code></li>' for f in fws)
     body = f"""
 <p class="crumbs"><a href="/">Home</a> › <a href="/games/">Games</a> › <a href="/{slug}/">{esc(game['name'])}</a> › Install guide</p>
 <section class="page-hero"><h1>{esc(g['title'])}</h1>
@@ -1351,7 +1392,7 @@ def game_cards(games_data, compact: bool = False) -> str:
         up_html = (f'<p class="card-upcoming" data-hide-after="{esc(upcoming_hide_after(up))}">⚡ {esc(up.get("label") or up.get("name"))} arrives {esc(upcoming_date_text(up))}: '
                    f'turn off auto-update</p>') if up else ""
         cards.append(f"""<article class="game-card v-{cls}" data-name="{esc(game['name'].lower())} {esc(game['short'].lower())}" data-status="{cls}" data-genre="{esc(game.get('genre', ''))}">
-<div class="card-art"><img src="{game_img(game['slug'])}" width="616" height="353" {'loading="lazy" ' if i > 2 else ''}decoding="async" alt="{esc(game['name'])} cover art">{badge(data['verdict'])}</div>
+<div class="card-art"><img src="{busted(game_img(game['slug']))}" width="616" height="353" {'loading="lazy" ' if i > 2 else ''}decoding="async" alt="{esc(game['name'])} cover art">{badge(data['verdict'])}</div>
 <div class="card-body">
 <h3><a href="/{game['slug']}/" class="stretched">{esc(game['name'])}</a></h3>
 {up_html}<p class="card-meta"><span>{patch_label_html(p['label'])}</span><span>{esc(fmt_date(p.get('published_at')))}</span></p>
