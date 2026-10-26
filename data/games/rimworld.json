@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T18:38:57Z",
+  "generated_at": "2026-10-26T19:29:38Z",
   "game": {
     "slug": "rimworld",
     "name": "RimWorld",
@@ -89,7 +89,12 @@
           "status": "Not affected by patches",
           "release_tag": "v2.4.3",
           "release_published_at": "2026-10-11T15:38:46Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v2.4.3",
+          "first_release_at": "2026-10-11T15:38:46Z",
+          "data_from": "2020-04-20T20:13:02Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "hugslib",
@@ -98,7 +103,12 @@
           "status": "No post-patch release",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2018-10-11T06:11:46Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -117,7 +127,12 @@
           "status": "Not affected by patches",
           "release_tag": "v2.4.3",
           "release_published_at": "2026-10-11T15:38:46Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v2.4.3",
+          "first_release_at": "2026-10-11T15:38:46Z",
+          "data_from": "2020-04-20T20:13:02Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "hugslib",
@@ -126,7 +141,12 @@
           "status": "No post-patch release",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2018-10-11T06:11:46Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -145,7 +165,12 @@
           "status": "Not affected by patches",
           "release_tag": "v2.4.2.0",
           "release_published_at": "2025-11-13T00:28:38Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v2.4.2.0",
+          "first_release_at": "2025-11-13T00:28:38Z",
+          "data_from": "2020-04-20T20:13:02Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "hugslib",
@@ -154,7 +179,12 @@
           "status": "No post-patch release",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2018-10-11T06:11:46Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -173,7 +203,12 @@
           "status": "Not affected by patches",
           "release_tag": "v2.4.2.0",
           "release_published_at": "2025-11-13T00:28:38Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v2.4.2.0",
+          "first_release_at": "2025-11-13T00:28:38Z",
+          "data_from": "2020-04-20T20:13:02Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "hugslib",
@@ -182,7 +217,12 @@
           "status": "No post-patch release",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2018-10-11T06:11:46Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -201,7 +241,12 @@
           "status": "Not affected by patches",
           "release_tag": "v2.4.0.0",
           "release_published_at": "2025-08-17T20:53:16Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v2.4.0.0",
+          "first_release_at": "2025-08-17T20:53:16Z",
+          "data_from": "2020-04-20T20:13:02Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "hugslib",
@@ -210,7 +255,12 @@
           "status": "No post-patch release",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2018-10-11T06:11:46Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -229,7 +279,12 @@
           "status": "Not affected by patches",
           "release_tag": "v2.4.0.0",
           "release_published_at": "2025-08-17T20:53:16Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v2.4.0.0",
+          "first_release_at": "2025-08-17T20:53:16Z",
+          "data_from": "2020-04-20T20:13:02Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "hugslib",
@@ -238,7 +293,12 @@
           "status": "No post-patch release",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2018-10-11T06:11:46Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -257,7 +317,12 @@
           "status": "Not affected by patches",
           "release_tag": "v2.4.0.0",
           "release_published_at": "2025-08-17T20:53:16Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v2.4.0.0",
+          "first_release_at": "2025-08-17T20:53:16Z",
+          "data_from": "2020-04-20T20:13:02Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "hugslib",
@@ -266,7 +331,12 @@
           "status": "No post-patch release",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2018-10-11T06:11:46Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -285,16 +355,26 @@
           "status": "Not affected by patches",
           "release_tag": "v2.3.4.0",
           "release_published_at": "2025-02-05T22:37:42Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v2.3.4.0",
+          "first_release_at": "2025-02-05T22:37:42Z",
+          "data_from": "2020-04-20T20:13:02Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "hugslib",
           "short": "HugsLib",
           "name": "HugsLib",
           "status": "Likely safe",
-          "release_tag": "v11.0.4",
-          "release_published_at": "2024-05-26T19:16:04Z",
-          "mentions_patch": false
+          "release_tag": "v12.0.0",
+          "release_published_at": "2025-07-13T19:17:00Z",
+          "mentions_patch": false,
+          "first_release_tag": "v12.0.0",
+          "first_release_at": "2025-07-13T19:17:00Z",
+          "data_from": "2018-10-11T06:11:46Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -313,16 +393,26 @@
           "status": "Not affected by patches",
           "release_tag": "v2.3.0.0",
           "release_published_at": "2024-02-26T09:36:33Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v2.3.0.0",
+          "first_release_at": "2024-02-26T09:36:33Z",
+          "data_from": "2020-04-20T20:13:02Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "hugslib",
           "short": "HugsLib",
           "name": "HugsLib",
           "status": "Likely safe",
-          "release_tag": "v11.0.2",
-          "release_published_at": "2024-03-17T18:02:34Z",
-          "mentions_patch": false
+          "release_tag": "v12.0.0",
+          "release_published_at": "2025-07-13T19:17:00Z",
+          "mentions_patch": false,
+          "first_release_tag": "v12.0.0",
+          "first_release_at": "2025-07-13T19:17:00Z",
+          "data_from": "2018-10-11T06:11:46Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -341,16 +431,26 @@
           "status": "Not affected by patches",
           "release_tag": "v2.3.0.0",
           "release_published_at": "2024-02-26T09:36:33Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v2.3.0.0",
+          "first_release_at": "2024-02-26T09:36:33Z",
+          "data_from": "2020-04-20T20:13:02Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "hugslib",
           "short": "HugsLib",
           "name": "HugsLib",
           "status": "Likely safe",
-          "release_tag": "v11.0.2",
-          "release_published_at": "2024-03-17T18:02:34Z",
-          "mentions_patch": false
+          "release_tag": "v12.0.0",
+          "release_published_at": "2025-07-13T19:17:00Z",
+          "mentions_patch": false,
+          "first_release_tag": "v12.0.0",
+          "first_release_at": "2025-07-13T19:17:00Z",
+          "data_from": "2018-10-11T06:11:46Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -369,16 +469,26 @@
           "status": "Not affected by patches",
           "release_tag": "v2.3.0.0",
           "release_published_at": "2024-02-26T09:36:33Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v2.3.0.0",
+          "first_release_at": "2024-02-26T09:36:33Z",
+          "data_from": "2020-04-20T20:13:02Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "hugslib",
           "short": "HugsLib",
           "name": "HugsLib",
           "status": "Likely safe",
-          "release_tag": "v11.0.2",
-          "release_published_at": "2024-03-17T18:02:34Z",
-          "mentions_patch": false
+          "release_tag": "v12.0.0",
+          "release_published_at": "2025-07-13T19:17:00Z",
+          "mentions_patch": false,
+          "first_release_tag": "v12.0.0",
+          "first_release_at": "2025-07-13T19:17:00Z",
+          "data_from": "2018-10-11T06:11:46Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -397,16 +507,26 @@
           "status": "Not affected by patches",
           "release_tag": "v2.3.0.0",
           "release_published_at": "2024-02-26T09:36:33Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v2.3.0.0",
+          "first_release_at": "2024-02-26T09:36:33Z",
+          "data_from": "2020-04-20T20:13:02Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "hugslib",
           "short": "HugsLib",
           "name": "HugsLib",
           "status": "Likely safe",
-          "release_tag": "v11.0.2",
-          "release_published_at": "2024-03-17T18:02:34Z",
-          "mentions_patch": false
+          "release_tag": "v12.0.0",
+          "release_published_at": "2025-07-13T19:17:00Z",
+          "mentions_patch": false,
+          "first_release_tag": "v12.0.0",
+          "first_release_at": "2025-07-13T19:17:00Z",
+          "data_from": "2018-10-11T06:11:46Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -425,16 +545,26 @@
           "status": "Not affected by patches",
           "release_tag": "v2.3.0.0",
           "release_published_at": "2024-02-26T09:36:33Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v2.3.0.0",
+          "first_release_at": "2024-02-26T09:36:33Z",
+          "data_from": "2020-04-20T20:13:02Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "hugslib",
           "short": "HugsLib",
           "name": "HugsLib",
           "status": "Likely safe",
-          "release_tag": "v11.0.2",
-          "release_published_at": "2024-03-17T18:02:34Z",
-          "mentions_patch": false
+          "release_tag": "v12.0.0",
+          "release_published_at": "2025-07-13T19:17:00Z",
+          "mentions_patch": false,
+          "first_release_tag": "v12.0.0",
+          "first_release_at": "2025-07-13T19:17:00Z",
+          "data_from": "2018-10-11T06:11:46Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T18:38:23Z",
+  "generated_at": "2026-10-26T19:29:04Z",
   "game": {
     "slug": "stardew-valley",
     "name": "Stardew Valley",
@@ -57,7 +57,12 @@
           "status": "Safe",
           "release_tag": "4.1.10",
           "release_published_at": "2024-12-19T15:49:49Z",
-          "mentions_patch": true
+          "mentions_patch": true,
+          "first_release_tag": "4.2.0",
+          "first_release_at": "2025-03-26T20:58:40Z",
+          "data_from": "2023-10-05T23:05:02Z",
+          "first_mention_tag": "4.1.10",
+          "first_mention_at": "2024-12-19T15:49:49Z"
         }
       ]
     },
@@ -76,7 +81,12 @@
           "status": "Safe",
           "release_tag": "4.5.2",
           "release_published_at": "2026-03-22T23:55:42Z",
-          "mentions_patch": true
+          "mentions_patch": true,
+          "first_release_tag": "4.1.7",
+          "first_release_at": "2024-11-12T17:12:16Z",
+          "data_from": "2023-10-05T23:05:02Z",
+          "first_mention_tag": "4.1.7",
+          "first_mention_at": "2024-11-12T17:12:16Z"
         }
       ]
     },
@@ -95,7 +105,12 @@
           "status": "Likely safe",
           "release_tag": "4.1.7",
           "release_published_at": "2024-11-12T17:12:16Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "4.1.7",
+          "first_release_at": "2024-11-12T17:12:16Z",
+          "data_from": "2023-10-05T23:05:02Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -114,7 +129,12 @@
           "status": "Likely safe",
           "release_tag": "4.1.6",
           "release_published_at": "2024-11-08T04:27:23Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "4.1.6",
+          "first_release_at": "2024-11-08T04:27:23Z",
+          "data_from": "2023-10-05T23:05:02Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -133,7 +153,12 @@
           "status": "Likely safe",
           "release_tag": "4.1.5",
           "release_published_at": "2024-11-07T06:25:58Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "4.1.5",
+          "first_release_at": "2024-11-07T06:25:58Z",
+          "data_from": "2023-10-05T23:05:02Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -152,7 +177,12 @@
           "status": "Safe",
           "release_tag": "4.1.6",
           "release_published_at": "2024-11-08T04:27:23Z",
-          "mentions_patch": true
+          "mentions_patch": true,
+          "first_release_tag": "4.1.2",
+          "first_release_at": "2024-11-05T00:17:15Z",
+          "data_from": "2023-10-05T23:05:02Z",
+          "first_mention_tag": "4.1.2",
+          "first_mention_at": "2024-11-05T00:17:15Z"
         }
       ]
     },
@@ -171,7 +201,12 @@
           "status": "Safe",
           "release_tag": "4.1.5",
           "release_published_at": "2024-11-07T06:25:58Z",
-          "mentions_patch": true
+          "mentions_patch": true,
+          "first_release_tag": "4.1.0",
+          "first_release_at": "2024-11-04T18:06:11Z",
+          "data_from": "2023-10-05T23:05:02Z",
+          "first_mention_tag": "4.1.0",
+          "first_mention_at": "2024-11-04T18:06:11Z"
         }
       ]
     },
@@ -190,7 +225,12 @@
           "status": "Likely safe",
           "release_tag": "4.0.8",
           "release_published_at": "2024-04-26T21:50:30Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "4.0.8",
+          "first_release_at": "2024-04-26T21:50:30Z",
+          "data_from": "2023-10-05T23:05:02Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -209,7 +249,12 @@
           "status": "Likely safe",
           "release_tag": "4.0.8",
           "release_published_at": "2024-04-26T21:50:30Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "4.0.8",
+          "first_release_at": "2024-04-26T21:50:30Z",
+          "data_from": "2023-10-05T23:05:02Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -228,7 +273,12 @@
           "status": "Safe",
           "release_tag": "4.0.8",
           "release_published_at": "2024-04-26T21:50:30Z",
-          "mentions_patch": true
+          "mentions_patch": true,
+          "first_release_tag": "4.0.8",
+          "first_release_at": "2024-04-26T21:50:30Z",
+          "data_from": "2023-10-05T23:05:02Z",
+          "first_mention_tag": "4.0.7",
+          "first_mention_at": "2024-04-18T20:13:22Z"
         }
       ]
     },
@@ -247,7 +297,12 @@
           "status": "Safe",
           "release_tag": "4.0.3",
           "release_published_at": "2024-03-27T23:48:35Z",
-          "mentions_patch": true
+          "mentions_patch": true,
+          "first_release_tag": "4.0.3",
+          "first_release_at": "2024-03-27T23:48:35Z",
+          "data_from": "2023-10-05T23:05:02Z",
+          "first_mention_tag": "4.0.3",
+          "first_mention_at": "2024-03-27T23:48:35Z"
         }
       ]
     },
@@ -266,7 +321,12 @@
           "status": "Likely safe",
           "release_tag": "4.0.1",
           "release_published_at": "2024-03-24T16:12:20Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "4.0.1",
+          "first_release_at": "2024-03-24T16:12:20Z",
+          "data_from": "2023-10-05T23:05:02Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     }

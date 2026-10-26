@@ -20,6 +20,13 @@ Cyberpunk mods lean on six frameworks (CET, RED4ext, redscript, ArchiveXL, Tweak
 - **Antivirus quarantining DLLs.** Some antivirus tools flag RED4ext or CET; restore and whitelist them if they vanish.
 - **Old mods in archive/pc/mod.** Leftover files from old versions can conflict. Remove a mod completely before reinstalling a new version.
 
+## Common errors and fixes
+
+- **The game crashes on launch right after a patch. What do I do?** Update every core framework (CET, RED4ext, redscript, ArchiveXL, TweakXL) to a release published after the patch. If a framework hasn't shipped one yet, disable the mods that need it, or roll the game back, until it does. Source: [REDmodding wiki: troubleshooting after a game update](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/user-guide-troubleshooting/users-troubleshooting-after-a-game-update).
+- **How do I fix "Script compilation failed"?** The pop-up names the mods involved. A duplicate install of a listed mod is a common cause, so remove every copy and reinstall it once. If it persists, delete the `r6\cache` folder, verify the game files in your launcher and reinstall redscript. If every listed mod is an Atelier store, install Virtual Atelier. Source: [REDmodding wiki: troubleshooting](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/user-guide-troubleshooting).
+- **Which log file shows what went wrong?** redscript writes `r6\logs\redscript_rCURRENT.log`, RED4ext writes `red4ext\logs\red4ext.log`, ArchiveXL and TweakXL write logs in their folders under `red4ext\plugins\`, and CET writes `bin\x64\plugins\cyber_engine_tweaks\cyber_engine_tweaks.log`. Source: [REDmodding wiki: finding and reading log files](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/user-guide-troubleshooting/finding-and-reading-log-files).
+- **My mods stopped loading after an update on Linux or Steam Deck. Why?** Steam can reset your launch options during an update, so check them again after every patch. Source: [REDmodding wiki: troubleshooting after a game update](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/user-guide-troubleshooting/users-troubleshooting-after-a-game-update).
+
 ## Rolling back
 
 - In Vortex, disable the mod and deploy. Manually, delete the files the mod added (most mods list them).

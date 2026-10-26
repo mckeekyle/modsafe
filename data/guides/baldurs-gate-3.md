@@ -21,6 +21,13 @@ Baldur's Gate 3 has an **in-game mod manager** (mod.io) for mods published there
 - **Removing mods mid-save.** Saves remember the mods that touched them. Removing a class, race or item mod can stop a save from loading.
 - **Multiplayer mismatch.** Every player needs the same gameplay mods in the same order.
 
+## Common errors and fixes
+
+- **Why does my load order keep resetting?** The game resets `modsettings.lsx` if there are subfolders in `%LOCALAPPDATA%\Larian Studios\Baldur's Gate 3\Mods`. Keep only `.pak` files there. If it still resets, one of the active mods is erroring, so disable mods in halves until you find it. Source: [BG3 Mod Manager README](https://github.com/LaughingLeader/BG3ModManager).
+- **I ordered my mods but nothing changed in game. Why?** BG3 Mod Manager only writes the order when you click **Export Load Order to Game**, which saves `modsettings.lsx`. Export with the main campaign selected. Source: [BG3 Mod Manager README](https://github.com/LaughingLeader/BG3ModManager).
+- **BG3 Mod Manager won't start or can't find the game. What do I do?** Run the game once before using it, and install .NET 8 and the latest Visual C++ redistributable. Extract the manager somewhere outside Program Files, and set the Game Data Path in its preferences. Source: [BG3 Mod Manager README](https://github.com/LaughingLeader/BG3ModManager).
+- **How do I see Script Extender errors?** Set `"CreateConsole": true` in `ScriptExtenderSettings.json` next to the game exe to open a debug console. `LogRuntime` writes logs, by default to `Documents\OsirisLogs`. Source: [BG3 Script Extender README](https://github.com/Norbyte/bg3se).
+
 ## Rolling back
 
 - Move a mod back to the inactive list in BG3 Mod Manager and export again, or disable it in the in-game Mod Manager.

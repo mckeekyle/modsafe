@@ -19,6 +19,12 @@ Elden Ring mods are **offline only**. Easy Anti-Cheat (EAC) protects normal onli
 - **Outdated mods after a patch.** A crash on startup after an update usually means a DLL mod or Seamless Co-op needs updating.
 - **Antivirus.** Some tools flag mod loaders. Only download from the official pages.
 
+## Common errors and fixes
+
+- **Why won't the game launch through me3?** Make sure Steam is running, and check the paths in your `.me3` profile. `[[packages]]` and `[[natives]]` paths are relative to the profile file. On Windows, run `me3 info` to check the install. On Linux, set `windows_binaries_dir` in `~/.config/me3`. Source: [me3 docs: troubleshooting](https://me3.help/en/latest/user-guide/troubleshooting/).
+- **A mod in my profile isn't loading. Why?** Most often there is a typo in the `.me3` file or a path that doesn't match where the mod was extracted. Fix the entry and relaunch. Source: [me3 docs: troubleshooting](https://me3.help/en/latest/user-guide/troubleshooting/).
+- **My antivirus flags me3. Is it safe?** The me3 binaries are code-signed. Download them only from the official GitHub releases and add an exclusion if your antivirus blocks them. Source: [me3 docs: troubleshooting](https://me3.help/en/latest/user-guide/troubleshooting/).
+
 ## Rolling back
 
 - Remove the mod from your me3 profile, or start the game normally from Steam to play vanilla.

@@ -21,6 +21,14 @@ Skyrim mods are safest with a mod manager that keeps your game folder clean. We 
 - **Too many plugins.** Regular plugins are capped at 254; prefer ESL-flagged (light) versions when offered.
 - **Removing mods mid-save.** Uninstalling script-heavy mods from an ongoing save can corrupt it. Test on a new save.
 
+## Common errors and fixes
+
+- **Why does Skyrim start without SKSE?** You have to start the game through `skse64_loader.exe`, or through your mod manager's SKSE entry. The Steam Play button skips it. If it still loads vanilla, try running the loader as administrator. Source: [SKSE64 readme](https://skse.silverlock.org/skse64_readme.txt).
+- **Where do the SKSE files go?** Put the `.dll` and `.exe` files in the folder that contains `SkyrimSE.exe`, not in `Data`. The `.pex` script files go in `Data\Scripts`. Source: [SKSE64 readme](https://skse.silverlock.org/skse64_readme.txt).
+- **Which stores are supported?** SKSE64 supports the Steam and GOG versions. Its readme says the Epic Games Store and Game Pass/MS Store versions are not supported. Source: [SKSE64 readme](https://skse.silverlock.org/skse64_readme.txt).
+- **Where are the SKSE logs?** Look for `skse64.log` and `skse64_loader.log` in `Documents\My Games\Skyrim Special Edition\SKSE\`. Source: [SKSE64 readme](https://skse.silverlock.org/skse64_readme.txt).
+- **My antivirus flags skse64_loader.exe. Is that normal?** SKSE works by injecting a DLL into the game, which some antivirus tools flag. Add an exception for the game folder. Source: [SKSE64 readme](https://skse.silverlock.org/skse64_readme.txt).
+
 ## Rolling back
 
 - In MO2, untick the mod (or switch to a backup profile); in Vortex, disable it and deploy.

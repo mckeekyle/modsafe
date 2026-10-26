@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T18:39:00Z",
+  "generated_at": "2026-10-26T19:29:41Z",
   "game": {
     "slug": "bannerlord",
     "name": "Mount & Blade II: Bannerlord",
@@ -82,7 +82,12 @@
           "status": "Safe",
           "release_tag": "v1.7.5",
           "release_published_at": "2026-10-17T13:17:30Z",
-          "mentions_patch": true
+          "mentions_patch": true,
+          "first_release_tag": "v1.7.0",
+          "first_release_at": "2026-08-23T17:09:17Z",
+          "data_from": "2023-11-25T21:15:42Z",
+          "first_mention_tag": "v1.7.0",
+          "first_mention_at": "2026-08-23T17:09:17Z"
         },
         {
           "id": "harmony-bl",
@@ -91,7 +96,12 @@
           "status": "Not affected by patches",
           "release_tag": "v2.4.3",
           "release_published_at": "2026-10-11T15:38:46Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v2.4.3",
+          "first_release_at": "2026-10-11T15:38:46Z",
+          "data_from": "2020-04-20T20:13:02Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -110,7 +120,12 @@
           "status": "Safe",
           "release_tag": "v1.7.5",
           "release_published_at": "2026-10-17T13:17:30Z",
-          "mentions_patch": true
+          "mentions_patch": true,
+          "first_release_tag": "v1.7.0",
+          "first_release_at": "2026-08-23T17:09:17Z",
+          "data_from": "2023-11-25T21:15:42Z",
+          "first_mention_tag": "v1.7.0",
+          "first_mention_at": "2026-08-23T17:09:17Z"
         },
         {
           "id": "harmony-bl",
@@ -119,7 +134,12 @@
           "status": "Not affected by patches",
           "release_tag": "v2.4.3",
           "release_published_at": "2026-10-11T15:38:46Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v2.4.3",
+          "first_release_at": "2026-10-11T15:38:46Z",
+          "data_from": "2020-04-20T20:13:02Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -138,7 +158,12 @@
           "status": "Safe",
           "release_tag": "v1.7.5",
           "release_published_at": "2026-10-17T13:17:30Z",
-          "mentions_patch": true
+          "mentions_patch": true,
+          "first_release_tag": "v1.7.0",
+          "first_release_at": "2026-08-23T17:09:17Z",
+          "data_from": "2023-11-25T21:15:42Z",
+          "first_mention_tag": "v1.7.0",
+          "first_mention_at": "2026-08-23T17:09:17Z"
         },
         {
           "id": "harmony-bl",
@@ -147,7 +172,12 @@
           "status": "Not affected by patches",
           "release_tag": "v2.4.3",
           "release_published_at": "2026-10-11T15:38:46Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v2.4.3",
+          "first_release_at": "2026-10-11T15:38:46Z",
+          "data_from": "2020-04-20T20:13:02Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -166,7 +196,12 @@
           "status": "Safe",
           "release_tag": "v1.7.5",
           "release_published_at": "2026-10-17T13:17:30Z",
-          "mentions_patch": true
+          "mentions_patch": true,
+          "first_release_tag": "v1.7.0",
+          "first_release_at": "2026-08-23T17:09:17Z",
+          "data_from": "2023-11-25T21:15:42Z",
+          "first_mention_tag": "v1.7.0",
+          "first_mention_at": "2026-08-23T17:09:17Z"
         },
         {
           "id": "harmony-bl",
@@ -175,7 +210,12 @@
           "status": "Not affected by patches",
           "release_tag": "v2.4.3",
           "release_published_at": "2026-10-11T15:38:46Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v2.4.3",
+          "first_release_at": "2026-10-11T15:38:46Z",
+          "data_from": "2020-04-20T20:13:02Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -194,7 +234,12 @@
           "status": "Safe",
           "release_tag": "v1.7.5",
           "release_published_at": "2026-10-17T13:17:30Z",
-          "mentions_patch": true
+          "mentions_patch": true,
+          "first_release_tag": "v1.6.3",
+          "first_release_at": "2026-04-25T17:32:00Z",
+          "data_from": "2023-11-25T21:15:42Z",
+          "first_mention_tag": "v1.6.3",
+          "first_mention_at": "2026-04-25T17:32:00Z"
         },
         {
           "id": "harmony-bl",
@@ -203,7 +248,12 @@
           "status": "Not affected by patches",
           "release_tag": "v2.4.3",
           "release_published_at": "2026-10-11T15:38:46Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v2.4.3",
+          "first_release_at": "2026-10-11T15:38:46Z",
+          "data_from": "2020-04-20T20:13:02Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -222,7 +272,12 @@
           "status": "Safe",
           "release_tag": "v1.7.5",
           "release_published_at": "2026-10-17T13:17:30Z",
-          "mentions_patch": true
+          "mentions_patch": true,
+          "first_release_tag": "v1.6.0",
+          "first_release_at": "2026-01-27T12:08:48Z",
+          "data_from": "2023-11-25T21:15:42Z",
+          "first_mention_tag": "v1.6.0",
+          "first_mention_at": "2026-01-27T12:08:48Z"
         },
         {
           "id": "harmony-bl",
@@ -231,7 +286,12 @@
           "status": "Not affected by patches",
           "release_tag": "v2.4.3",
           "release_published_at": "2026-10-11T15:38:46Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v2.4.3",
+          "first_release_at": "2026-10-11T15:38:46Z",
+          "data_from": "2020-04-20T20:13:02Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -250,7 +310,12 @@
           "status": "Safe",
           "release_tag": "v1.7.5",
           "release_published_at": "2026-10-17T13:17:30Z",
-          "mentions_patch": true
+          "mentions_patch": true,
+          "first_release_tag": "v1.6.0",
+          "first_release_at": "2026-01-27T12:08:48Z",
+          "data_from": "2023-11-25T21:15:42Z",
+          "first_mention_tag": "v1.6.0",
+          "first_mention_at": "2026-01-27T12:08:48Z"
         },
         {
           "id": "harmony-bl",
@@ -259,7 +324,12 @@
           "status": "Not affected by patches",
           "release_tag": "v2.4.3",
           "release_published_at": "2026-10-11T15:38:46Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v2.4.3",
+          "first_release_at": "2026-10-11T15:38:46Z",
+          "data_from": "2020-04-20T20:13:02Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -278,7 +348,12 @@
           "status": "Safe",
           "release_tag": "v1.7.5",
           "release_published_at": "2026-10-17T13:17:30Z",
-          "mentions_patch": true
+          "mentions_patch": true,
+          "first_release_tag": "v1.5.12",
+          "first_release_at": "2025-12-09T22:00:05Z",
+          "data_from": "2023-11-25T21:15:42Z",
+          "first_mention_tag": "v1.5.11",
+          "first_mention_at": "2025-12-06T11:35:42Z"
         },
         {
           "id": "harmony-bl",
@@ -287,7 +362,12 @@
           "status": "Not affected by patches",
           "release_tag": "v2.4.3",
           "release_published_at": "2026-10-11T15:38:46Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v2.4.3",
+          "first_release_at": "2026-10-11T15:38:46Z",
+          "data_from": "2020-04-20T20:13:02Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -306,7 +386,12 @@
           "status": "Safe",
           "release_tag": "v1.7.5",
           "release_published_at": "2026-10-17T13:17:30Z",
-          "mentions_patch": true
+          "mentions_patch": true,
+          "first_release_tag": "v1.5.9",
+          "first_release_at": "2025-12-05T17:33:29Z",
+          "data_from": "2023-11-25T21:15:42Z",
+          "first_mention_tag": "v1.5.9",
+          "first_mention_at": "2025-12-05T17:33:29Z"
         },
         {
           "id": "harmony-bl",
@@ -315,7 +400,12 @@
           "status": "Not affected by patches",
           "release_tag": "v2.4.3",
           "release_published_at": "2026-10-11T15:38:46Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v2.4.3",
+          "first_release_at": "2026-10-11T15:38:46Z",
+          "data_from": "2020-04-20T20:13:02Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -334,7 +424,12 @@
           "status": "Safe",
           "release_tag": "v1.7.5",
           "release_published_at": "2026-10-17T13:17:30Z",
-          "mentions_patch": true
+          "mentions_patch": true,
+          "first_release_tag": "v1.5.9",
+          "first_release_at": "2025-12-05T17:33:29Z",
+          "data_from": "2023-11-25T21:15:42Z",
+          "first_mention_tag": "v1.5.9",
+          "first_mention_at": "2025-12-05T17:33:29Z"
         },
         {
           "id": "harmony-bl",
@@ -343,7 +438,12 @@
           "status": "Not affected by patches",
           "release_tag": "v2.4.3",
           "release_published_at": "2026-10-11T15:38:46Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v2.4.3",
+          "first_release_at": "2026-10-11T15:38:46Z",
+          "data_from": "2020-04-20T20:13:02Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -362,7 +462,12 @@
           "status": "Safe",
           "release_tag": "v1.7.5",
           "release_published_at": "2026-10-17T13:17:30Z",
-          "mentions_patch": true
+          "mentions_patch": true,
+          "first_release_tag": "v1.5.9",
+          "first_release_at": "2025-12-05T17:33:29Z",
+          "data_from": "2023-11-25T21:15:42Z",
+          "first_mention_tag": "v1.5.9",
+          "first_mention_at": "2025-12-05T17:33:29Z"
         },
         {
           "id": "harmony-bl",
@@ -371,7 +476,12 @@
           "status": "Not affected by patches",
           "release_tag": "v2.4.3",
           "release_published_at": "2026-10-11T15:38:46Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v2.4.3",
+          "first_release_at": "2026-10-11T15:38:46Z",
+          "data_from": "2020-04-20T20:13:02Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -390,7 +500,12 @@
           "status": "Safe",
           "release_tag": "v1.7.5",
           "release_published_at": "2026-10-17T13:17:30Z",
-          "mentions_patch": true
+          "mentions_patch": true,
+          "first_release_tag": "v1.5.9",
+          "first_release_at": "2025-12-05T17:33:29Z",
+          "data_from": "2023-11-25T21:15:42Z",
+          "first_mention_tag": "v1.5.9",
+          "first_mention_at": "2025-12-05T17:33:29Z"
         },
         {
           "id": "harmony-bl",
@@ -399,7 +514,12 @@
           "status": "Not affected by patches",
           "release_tag": "v2.4.3",
           "release_published_at": "2026-10-11T15:38:46Z",
-          "mentions_patch": true
+          "mentions_patch": true,
+          "first_release_tag": "v2.4.3",
+          "first_release_at": "2026-10-11T15:38:46Z",
+          "data_from": "2020-04-20T20:13:02Z",
+          "first_mention_tag": "v2.4.3",
+          "first_mention_at": "2026-10-11T15:38:46Z"
         }
       ]
     }

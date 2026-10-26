@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T18:38:21Z",
+  "generated_at": "2026-10-26T19:29:03Z",
   "game": {
     "slug": "baldurs-gate-3",
     "name": "Baldur's Gate 3",
@@ -89,7 +89,12 @@
           "status": "Likely safe",
           "release_tag": "v33",
           "release_published_at": "2026-10-12T21:35:28Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v33",
+          "first_release_at": "2026-10-12T21:35:28Z",
+          "data_from": "2023-10-28T20:36:57Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "bg3mm",
@@ -98,7 +103,12 @@
           "status": "Not affected by patches",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2021-12-19T22:38:16Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -117,7 +127,12 @@
           "status": "Likely safe",
           "release_tag": "v31",
           "release_published_at": "2026-04-17T10:46:04Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v31",
+          "first_release_at": "2026-04-17T10:46:04Z",
+          "data_from": "2023-10-28T20:36:57Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "bg3mm",
@@ -126,7 +141,12 @@
           "status": "Not affected by patches",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2021-12-19T22:38:16Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -145,7 +165,12 @@
           "status": "Likely safe",
           "release_tag": "v31",
           "release_published_at": "2026-04-17T10:46:04Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v31",
+          "first_release_at": "2026-04-17T10:46:04Z",
+          "data_from": "2023-10-28T20:36:57Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "bg3mm",
@@ -154,7 +179,12 @@
           "status": "Not affected by patches",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2021-12-19T22:38:16Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -173,7 +203,12 @@
           "status": "Likely safe",
           "release_tag": "v31",
           "release_published_at": "2026-04-17T10:46:04Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v31",
+          "first_release_at": "2026-04-17T10:46:04Z",
+          "data_from": "2023-10-28T20:36:57Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "bg3mm",
@@ -182,7 +217,12 @@
           "status": "Not affected by patches",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2021-12-19T22:38:16Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -201,7 +241,12 @@
           "status": "Likely safe",
           "release_tag": "v31",
           "release_published_at": "2026-04-17T10:46:04Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v31",
+          "first_release_at": "2026-04-17T10:46:04Z",
+          "data_from": "2023-10-28T20:36:57Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "bg3mm",
@@ -210,7 +255,12 @@
           "status": "Not affected by patches",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2021-12-19T22:38:16Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -229,7 +279,12 @@
           "status": "Likely safe",
           "release_tag": "v31",
           "release_published_at": "2026-04-17T10:46:04Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v31",
+          "first_release_at": "2026-04-17T10:46:04Z",
+          "data_from": "2023-10-28T20:36:57Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "bg3mm",
@@ -238,7 +293,12 @@
           "status": "Not affected by patches",
           "release_tag": "1.0.12.9",
           "release_published_at": "2025-05-18T18:42:15Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.0.12.9",
+          "first_release_at": "2025-05-18T18:42:15Z",
+          "data_from": "2021-12-19T22:38:16Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -257,7 +317,12 @@
           "status": "Likely safe",
           "release_tag": "v31",
           "release_published_at": "2026-04-17T10:46:04Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v31",
+          "first_release_at": "2026-04-17T10:46:04Z",
+          "data_from": "2023-10-28T20:36:57Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "bg3mm",
@@ -266,7 +331,12 @@
           "status": "Not affected by patches",
           "release_tag": "1.0.12.3",
           "release_published_at": "2025-05-01T02:15:08Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.0.12.3",
+          "first_release_at": "2025-05-01T02:15:08Z",
+          "data_from": "2021-12-19T22:38:16Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -285,7 +355,12 @@
           "status": "Likely safe",
           "release_tag": "v31",
           "release_published_at": "2026-04-17T10:46:04Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v31",
+          "first_release_at": "2026-04-17T10:46:04Z",
+          "data_from": "2023-10-28T20:36:57Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "bg3mm",
@@ -294,7 +369,12 @@
           "status": "Not affected by patches",
           "release_tag": "1.0.12.0",
           "release_published_at": "2025-04-15T21:02:29Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.0.12.0",
+          "first_release_at": "2025-04-15T21:02:29Z",
+          "data_from": "2021-12-19T22:38:16Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -313,7 +393,12 @@
           "status": "Likely safe",
           "release_tag": "v31",
           "release_published_at": "2026-04-17T10:46:04Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v31",
+          "first_release_at": "2026-04-17T10:46:04Z",
+          "data_from": "2023-10-28T20:36:57Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "bg3mm",
@@ -322,7 +407,12 @@
           "status": "Not affected by patches",
           "release_tag": "1.0.12.0",
           "release_published_at": "2025-04-15T21:02:29Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.0.12.0",
+          "first_release_at": "2025-04-15T21:02:29Z",
+          "data_from": "2021-12-19T22:38:16Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -341,7 +431,12 @@
           "status": "Likely safe",
           "release_tag": "v31",
           "release_published_at": "2026-04-17T10:46:04Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v31",
+          "first_release_at": "2026-04-17T10:46:04Z",
+          "data_from": "2023-10-28T20:36:57Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "bg3mm",
@@ -350,7 +445,12 @@
           "status": "Not affected by patches",
           "release_tag": "1.0.12.0",
           "release_published_at": "2025-04-15T21:02:29Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.0.12.0",
+          "first_release_at": "2025-04-15T21:02:29Z",
+          "data_from": "2021-12-19T22:38:16Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -369,7 +469,12 @@
           "status": "Likely safe",
           "release_tag": "v31",
           "release_published_at": "2026-04-17T10:46:04Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v31",
+          "first_release_at": "2026-04-17T10:46:04Z",
+          "data_from": "2023-10-28T20:36:57Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "bg3mm",
@@ -378,7 +483,12 @@
           "status": "Not affected by patches",
           "release_tag": "1.0.12.0",
           "release_published_at": "2025-04-15T21:02:29Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.0.12.0",
+          "first_release_at": "2025-04-15T21:02:29Z",
+          "data_from": "2021-12-19T22:38:16Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -397,7 +507,12 @@
           "status": "Likely safe",
           "release_tag": "v31",
           "release_published_at": "2026-04-17T10:46:04Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v31",
+          "first_release_at": "2026-04-17T10:46:04Z",
+          "data_from": "2023-10-28T20:36:57Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "bg3mm",
@@ -406,7 +521,12 @@
           "status": "Not affected by patches",
           "release_tag": "1.0.11.0",
           "release_published_at": "2024-09-06T01:48:17Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.0.11.0",
+          "first_release_at": "2024-09-06T01:48:17Z",
+          "data_from": "2021-12-19T22:38:16Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -425,7 +545,12 @@
           "status": "Likely safe",
           "release_tag": "updater-20240430",
           "release_published_at": "2024-04-30T19:25:30Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "updater-20240430",
+          "first_release_at": "2024-04-30T19:25:30Z",
+          "data_from": "2023-10-28T20:36:57Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "bg3mm",
@@ -434,7 +559,12 @@
           "status": "Not affected by patches",
           "release_tag": "1.0.11.0",
           "release_published_at": "2024-09-06T01:48:17Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.0.11.0",
+          "first_release_at": "2024-09-06T01:48:17Z",
+          "data_from": "2021-12-19T22:38:16Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     }

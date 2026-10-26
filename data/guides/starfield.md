@@ -19,6 +19,13 @@ Starfield supports official **Creations** in game, but most popular PC mods are 
 - **Mixing Creations and Nexus versions.** Don't install the same mod from both. Pick one source.
 - **Loose file mods not loading.** Some mods need loose-file loading switched on in StarfieldCustom.ini. The mod page says if so.
 
+## Common errors and fixes
+
+- **Why does Starfield start without SFSE?** Make sure Steam is running, then start the game with `sfse_loader.exe`. Source: [SFSE readme](https://github.com/ianpatt/sfse).
+- **Where do the SFSE files go?** Put the `.dll` and `sfse_loader.exe` in the Starfield folder, next to `Starfield.exe`, not in `Data`. The optional config file goes in `Data\SFSE\SFSE.ini`. Source: [SFSE readme](https://github.com/ianpatt/sfse).
+- **Does SFSE work on Game Pass?** No. SFSE supports the Steam version, and its readme lists Game Pass/MS Store as unsupported. Source: [SFSE readme](https://github.com/ianpatt/sfse).
+- **Where are the SFSE logs?** In `Documents\My Games\Starfield\SFSE\Logs\`. Source: [SFSE readme](https://github.com/ianpatt/sfse).
+
 ## Rolling back
 
 - Disable the mod in your manager (MO2 profile or Vortex deploy).

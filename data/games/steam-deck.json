@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T18:39:06Z",
+  "generated_at": "2026-10-26T19:29:46Z",
   "game": {
     "slug": "steam-deck",
     "name": "Steam Deck (SteamOS)",
@@ -143,7 +143,12 @@
           "status": "No post-patch release",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2025-07-01T05:56:46Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-steamgriddb",
@@ -152,7 +157,12 @@
           "status": "Not affected by patches",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2023-11-14T20:46:32Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-cssloader",
@@ -161,7 +171,12 @@
           "status": "Not affected by patches",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2023-09-30T18:41:10Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-protondb",
@@ -170,7 +185,12 @@
           "status": "Not affected by patches",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2023-04-01T16:53:50Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-powertools",
@@ -179,7 +199,12 @@
           "status": "Not affected by patches",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2023-02-19T02:28:43Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -198,7 +223,12 @@
           "status": "Likely safe",
           "release_tag": "v3.2.10",
           "release_published_at": "2026-10-04T21:22:37Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v3.2.10",
+          "first_release_at": "2026-10-04T21:22:37Z",
+          "data_from": "2025-07-01T05:56:46Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-steamgriddb",
@@ -207,7 +237,12 @@
           "status": "Not affected by patches",
           "release_tag": "1.8.1",
           "release_published_at": "2026-10-07T19:45:20Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.8.1",
+          "first_release_at": "2026-10-07T19:45:20Z",
+          "data_from": "2023-11-14T20:46:32Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-cssloader",
@@ -216,7 +251,12 @@
           "status": "Not affected by patches",
           "release_tag": "2.1.3",
           "release_published_at": "2026-10-19T23:43:49Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "2.1.3",
+          "first_release_at": "2026-10-19T23:43:49Z",
+          "data_from": "2023-09-30T18:41:10Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-protondb",
@@ -225,7 +265,12 @@
           "status": "Not affected by patches",
           "release_tag": "1.3.4",
           "release_published_at": "2026-10-14T08:00:23Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.3.4",
+          "first_release_at": "2026-10-14T08:00:23Z",
+          "data_from": "2023-04-01T16:53:50Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-powertools",
@@ -234,7 +279,12 @@
           "status": "Not affected by patches",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2023-02-19T02:28:43Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -253,7 +303,12 @@
           "status": "Likely safe",
           "release_tag": "v3.2.8",
           "release_published_at": "2026-09-02T22:46:56Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v3.2.8",
+          "first_release_at": "2026-09-02T22:46:56Z",
+          "data_from": "2025-07-01T05:56:46Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-steamgriddb",
@@ -262,7 +317,12 @@
           "status": "Not affected by patches",
           "release_tag": "1.8.1",
           "release_published_at": "2026-10-07T19:45:20Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.8.1",
+          "first_release_at": "2026-10-07T19:45:20Z",
+          "data_from": "2023-11-14T20:46:32Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-cssloader",
@@ -271,7 +331,12 @@
           "status": "Not affected by patches",
           "release_tag": "2.1.3",
           "release_published_at": "2026-10-19T23:43:49Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "2.1.3",
+          "first_release_at": "2026-10-19T23:43:49Z",
+          "data_from": "2023-09-30T18:41:10Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-protondb",
@@ -280,7 +345,12 @@
           "status": "Not affected by patches",
           "release_tag": "1.3.4",
           "release_published_at": "2026-10-14T08:00:23Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.3.4",
+          "first_release_at": "2026-10-14T08:00:23Z",
+          "data_from": "2023-04-01T16:53:50Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-powertools",
@@ -289,7 +359,12 @@
           "status": "Not affected by patches",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2023-02-19T02:28:43Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -308,7 +383,12 @@
           "status": "Likely safe",
           "release_tag": "v3.2.8",
           "release_published_at": "2026-09-02T22:46:56Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v3.2.8",
+          "first_release_at": "2026-09-02T22:46:56Z",
+          "data_from": "2025-07-01T05:56:46Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-steamgriddb",
@@ -317,7 +397,12 @@
           "status": "Not affected by patches",
           "release_tag": "1.8.1",
           "release_published_at": "2026-10-07T19:45:20Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.8.1",
+          "first_release_at": "2026-10-07T19:45:20Z",
+          "data_from": "2023-11-14T20:46:32Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-cssloader",
@@ -326,7 +411,12 @@
           "status": "Not affected by patches",
           "release_tag": "2.1.3",
           "release_published_at": "2026-10-19T23:43:49Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "2.1.3",
+          "first_release_at": "2026-10-19T23:43:49Z",
+          "data_from": "2023-09-30T18:41:10Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-protondb",
@@ -335,7 +425,12 @@
           "status": "Not affected by patches",
           "release_tag": "1.3.4",
           "release_published_at": "2026-10-14T08:00:23Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.3.4",
+          "first_release_at": "2026-10-14T08:00:23Z",
+          "data_from": "2023-04-01T16:53:50Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-powertools",
@@ -344,7 +439,12 @@
           "status": "Not affected by patches",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2023-02-19T02:28:43Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -363,7 +463,12 @@
           "status": "Likely safe",
           "release_tag": "v3.2.8",
           "release_published_at": "2026-09-02T22:46:56Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v3.2.8",
+          "first_release_at": "2026-09-02T22:46:56Z",
+          "data_from": "2025-07-01T05:56:46Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-steamgriddb",
@@ -372,7 +477,12 @@
           "status": "Not affected by patches",
           "release_tag": "1.8.1",
           "release_published_at": "2026-10-07T19:45:20Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.8.1",
+          "first_release_at": "2026-10-07T19:45:20Z",
+          "data_from": "2023-11-14T20:46:32Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-cssloader",
@@ -381,7 +491,12 @@
           "status": "Not affected by patches",
           "release_tag": "2.1.3",
           "release_published_at": "2026-10-19T23:43:49Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "2.1.3",
+          "first_release_at": "2026-10-19T23:43:49Z",
+          "data_from": "2023-09-30T18:41:10Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-protondb",
@@ -390,7 +505,12 @@
           "status": "Not affected by patches",
           "release_tag": "1.3.4",
           "release_published_at": "2026-10-14T08:00:23Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.3.4",
+          "first_release_at": "2026-10-14T08:00:23Z",
+          "data_from": "2023-04-01T16:53:50Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-powertools",
@@ -399,7 +519,12 @@
           "status": "Not affected by patches",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2023-02-19T02:28:43Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -418,7 +543,12 @@
           "status": "Likely safe",
           "release_tag": "v3.2.8",
           "release_published_at": "2026-09-02T22:46:56Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v3.2.8",
+          "first_release_at": "2026-09-02T22:46:56Z",
+          "data_from": "2025-07-01T05:56:46Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-steamgriddb",
@@ -427,7 +557,12 @@
           "status": "Not affected by patches",
           "release_tag": "1.8.1",
           "release_published_at": "2026-10-07T19:45:20Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.8.1",
+          "first_release_at": "2026-10-07T19:45:20Z",
+          "data_from": "2023-11-14T20:46:32Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-cssloader",
@@ -436,7 +571,12 @@
           "status": "Not affected by patches",
           "release_tag": "2.1.3",
           "release_published_at": "2026-10-19T23:43:49Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "2.1.3",
+          "first_release_at": "2026-10-19T23:43:49Z",
+          "data_from": "2023-09-30T18:41:10Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-protondb",
@@ -445,7 +585,12 @@
           "status": "Not affected by patches",
           "release_tag": "1.3.4",
           "release_published_at": "2026-10-14T08:00:23Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.3.4",
+          "first_release_at": "2026-10-14T08:00:23Z",
+          "data_from": "2023-04-01T16:53:50Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-powertools",
@@ -454,7 +599,12 @@
           "status": "Not affected by patches",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2023-02-19T02:28:43Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -473,7 +623,12 @@
           "status": "Likely safe",
           "release_tag": "v3.2.8",
           "release_published_at": "2026-09-02T22:46:56Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v3.2.8",
+          "first_release_at": "2026-09-02T22:46:56Z",
+          "data_from": "2025-07-01T05:56:46Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-steamgriddb",
@@ -482,7 +637,12 @@
           "status": "Not affected by patches",
           "release_tag": "1.8.1",
           "release_published_at": "2026-10-07T19:45:20Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.8.1",
+          "first_release_at": "2026-10-07T19:45:20Z",
+          "data_from": "2023-11-14T20:46:32Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-cssloader",
@@ -491,7 +651,12 @@
           "status": "Not affected by patches",
           "release_tag": "2.1.3",
           "release_published_at": "2026-10-19T23:43:49Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "2.1.3",
+          "first_release_at": "2026-10-19T23:43:49Z",
+          "data_from": "2023-09-30T18:41:10Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-protondb",
@@ -500,7 +665,12 @@
           "status": "Not affected by patches",
           "release_tag": "1.3.4",
           "release_published_at": "2026-10-14T08:00:23Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.3.4",
+          "first_release_at": "2026-10-14T08:00:23Z",
+          "data_from": "2023-04-01T16:53:50Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-powertools",
@@ -509,7 +679,12 @@
           "status": "Not affected by patches",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2023-02-19T02:28:43Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -528,7 +703,12 @@
           "status": "Likely safe",
           "release_tag": "v3.2.6",
           "release_published_at": "2026-06-24T18:26:57Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v3.2.6",
+          "first_release_at": "2026-06-24T18:26:57Z",
+          "data_from": "2025-07-01T05:56:46Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-steamgriddb",
@@ -537,7 +717,12 @@
           "status": "Not affected by patches",
           "release_tag": "1.8.1",
           "release_published_at": "2026-10-07T19:45:20Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.8.1",
+          "first_release_at": "2026-10-07T19:45:20Z",
+          "data_from": "2023-11-14T20:46:32Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-cssloader",
@@ -546,7 +731,12 @@
           "status": "Not affected by patches",
           "release_tag": "2.1.3",
           "release_published_at": "2026-10-19T23:43:49Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "2.1.3",
+          "first_release_at": "2026-10-19T23:43:49Z",
+          "data_from": "2023-09-30T18:41:10Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-protondb",
@@ -555,7 +745,12 @@
           "status": "Not affected by patches",
           "release_tag": "1.3.4",
           "release_published_at": "2026-10-14T08:00:23Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.3.4",
+          "first_release_at": "2026-10-14T08:00:23Z",
+          "data_from": "2023-04-01T16:53:50Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-powertools",
@@ -564,7 +759,12 @@
           "status": "Not affected by patches",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2023-02-19T02:28:43Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -583,7 +783,12 @@
           "status": "Likely safe",
           "release_tag": "v3.2.6",
           "release_published_at": "2026-06-24T18:26:57Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v3.2.6",
+          "first_release_at": "2026-06-24T18:26:57Z",
+          "data_from": "2025-07-01T05:56:46Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-steamgriddb",
@@ -592,7 +797,12 @@
           "status": "Not affected by patches",
           "release_tag": "1.8.1",
           "release_published_at": "2026-10-07T19:45:20Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.8.1",
+          "first_release_at": "2026-10-07T19:45:20Z",
+          "data_from": "2023-11-14T20:46:32Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-cssloader",
@@ -601,7 +811,12 @@
           "status": "Not affected by patches",
           "release_tag": "2.1.3",
           "release_published_at": "2026-10-19T23:43:49Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "2.1.3",
+          "first_release_at": "2026-10-19T23:43:49Z",
+          "data_from": "2023-09-30T18:41:10Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-protondb",
@@ -610,7 +825,12 @@
           "status": "Not affected by patches",
           "release_tag": "1.3.4",
           "release_published_at": "2026-10-14T08:00:23Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.3.4",
+          "first_release_at": "2026-10-14T08:00:23Z",
+          "data_from": "2023-04-01T16:53:50Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "decky-powertools",
@@ -619,7 +839,12 @@
           "status": "Not affected by patches",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2023-02-19T02:28:43Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     }

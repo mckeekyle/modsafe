@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T18:38:41Z",
+  "generated_at": "2026-10-26T19:29:22Z",
   "game": {
     "slug": "elden-ring",
     "name": "Elden Ring",
@@ -91,7 +91,12 @@
           "status": "No post-patch release",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2022-11-13T21:00:17Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "me3",
@@ -100,7 +105,12 @@
           "status": "No post-patch release",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2025-05-31T09:29:22Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -125,7 +135,12 @@
           "status": "No post-patch release",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2022-11-13T21:00:17Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "me3",
@@ -134,7 +149,12 @@
           "status": "No post-patch release",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2025-05-31T09:29:22Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -153,7 +173,12 @@
           "status": "Safe",
           "release_tag": "v2.0.1",
           "release_published_at": "2026-09-03T19:40:04Z",
-          "mentions_patch": true
+          "mentions_patch": true,
+          "first_release_tag": "v2.0.1",
+          "first_release_at": "2026-09-03T19:40:04Z",
+          "data_from": "2022-11-13T21:00:17Z",
+          "first_mention_tag": "v2.0.1",
+          "first_mention_at": "2026-09-03T19:40:04Z"
         },
         {
           "id": "me3",
@@ -162,7 +187,12 @@
           "status": "No post-patch release",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2025-05-31T09:29:22Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -179,9 +209,14 @@
           "short": "Seamless Co-op",
           "name": "Seamless Co-op",
           "status": "Likely safe",
-          "release_tag": "v1.9.2",
-          "release_published_at": "2026-02-02T22:35:49Z",
-          "mentions_patch": false
+          "release_tag": "v2.0.1",
+          "release_published_at": "2026-09-03T19:40:04Z",
+          "mentions_patch": false,
+          "first_release_tag": "v2.0.1",
+          "first_release_at": "2026-09-03T19:40:04Z",
+          "data_from": "2022-11-13T21:00:17Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "me3",
@@ -190,7 +225,12 @@
           "status": "Likely safe",
           "release_tag": "v0.8.0",
           "release_published_at": "2025-09-05T21:39:50Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v0.8.0",
+          "first_release_at": "2025-09-05T21:39:50Z",
+          "data_from": "2025-05-31T09:29:22Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -207,9 +247,14 @@
           "short": "Seamless Co-op",
           "name": "Seamless Co-op",
           "status": "Likely safe",
-          "release_tag": "v1.9.0",
-          "release_published_at": "2025-01-21T18:05:10Z",
-          "mentions_patch": false
+          "release_tag": "v2.0.1",
+          "release_published_at": "2026-09-03T19:40:04Z",
+          "mentions_patch": false,
+          "first_release_tag": "v2.0.1",
+          "first_release_at": "2026-09-03T19:40:04Z",
+          "data_from": "2022-11-13T21:00:17Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "me3",
@@ -218,7 +263,12 @@
           "status": "Safe",
           "release_tag": "v0.12.0",
           "release_published_at": "2026-07-18T15:51:21Z",
-          "mentions_patch": true
+          "mentions_patch": true,
+          "first_release_tag": "v0.1.0",
+          "first_release_at": "2025-05-31T09:29:22Z",
+          "data_from": "2025-05-31T09:29:22Z",
+          "first_mention_tag": "v0.12.0",
+          "first_mention_at": "2026-07-18T15:51:21Z"
         }
       ]
     },
@@ -235,9 +285,14 @@
           "short": "Seamless Co-op",
           "name": "Seamless Co-op",
           "status": "Likely safe",
-          "release_tag": "v1.9.0",
-          "release_published_at": "2025-01-21T18:05:10Z",
-          "mentions_patch": false
+          "release_tag": "v2.0.1",
+          "release_published_at": "2026-09-03T19:40:04Z",
+          "mentions_patch": false,
+          "first_release_tag": "v2.0.1",
+          "first_release_at": "2026-09-03T19:40:04Z",
+          "data_from": "2022-11-13T21:00:17Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "me3",
@@ -246,7 +301,12 @@
           "status": "Likely safe",
           "release_tag": "v0.1.0",
           "release_published_at": "2025-05-31T09:29:22Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v0.1.0",
+          "first_release_at": "2025-05-31T09:29:22Z",
+          "data_from": "2025-05-31T09:29:22Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -263,9 +323,14 @@
           "short": "Seamless Co-op",
           "name": "Seamless Co-op",
           "status": "Likely safe",
-          "release_tag": "v1.8.5",
-          "release_published_at": "2024-09-11T21:09:04Z",
-          "mentions_patch": false
+          "release_tag": "v2.0.1",
+          "release_published_at": "2026-09-03T19:40:04Z",
+          "mentions_patch": false,
+          "first_release_tag": "v2.0.1",
+          "first_release_at": "2026-09-03T19:40:04Z",
+          "data_from": "2022-11-13T21:00:17Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "me3",
@@ -274,7 +339,12 @@
           "status": "Likely safe",
           "release_tag": "v0.1.0",
           "release_published_at": "2025-05-31T09:29:22Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v0.1.0",
+          "first_release_at": "2025-05-31T09:29:22Z",
+          "data_from": "2025-05-31T09:29:22Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -291,9 +361,14 @@
           "short": "Seamless Co-op",
           "name": "Seamless Co-op",
           "status": "Likely safe",
-          "release_tag": "v1.8.4",
-          "release_published_at": "2024-08-11T21:37:42Z",
-          "mentions_patch": false
+          "release_tag": "v2.0.1",
+          "release_published_at": "2026-09-03T19:40:04Z",
+          "mentions_patch": false,
+          "first_release_tag": "v2.0.1",
+          "first_release_at": "2026-09-03T19:40:04Z",
+          "data_from": "2022-11-13T21:00:17Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "me3",
@@ -302,7 +377,12 @@
           "status": "Likely safe",
           "release_tag": "v0.1.0",
           "release_published_at": "2025-05-31T09:29:22Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v0.1.0",
+          "first_release_at": "2025-05-31T09:29:22Z",
+          "data_from": "2025-05-31T09:29:22Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -319,9 +399,14 @@
           "short": "Seamless Co-op",
           "name": "Seamless Co-op",
           "status": "Likely safe",
-          "release_tag": "v1.8.2",
-          "release_published_at": "2024-07-30T19:37:09Z",
-          "mentions_patch": false
+          "release_tag": "v2.0.1",
+          "release_published_at": "2026-09-03T19:40:04Z",
+          "mentions_patch": false,
+          "first_release_tag": "v2.0.1",
+          "first_release_at": "2026-09-03T19:40:04Z",
+          "data_from": "2022-11-13T21:00:17Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "me3",
@@ -330,7 +415,12 @@
           "status": "Likely safe",
           "release_tag": "v0.1.0",
           "release_published_at": "2025-05-31T09:29:22Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v0.1.0",
+          "first_release_at": "2025-05-31T09:29:22Z",
+          "data_from": "2025-05-31T09:29:22Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -347,9 +437,14 @@
           "short": "Seamless Co-op",
           "name": "Seamless Co-op",
           "status": "Likely safe",
-          "release_tag": "v1.7.7",
-          "release_published_at": "2024-07-06T19:23:07Z",
-          "mentions_patch": false
+          "release_tag": "v2.0.1",
+          "release_published_at": "2026-09-03T19:40:04Z",
+          "mentions_patch": false,
+          "first_release_tag": "v2.0.1",
+          "first_release_at": "2026-09-03T19:40:04Z",
+          "data_from": "2022-11-13T21:00:17Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "me3",
@@ -358,7 +453,12 @@
           "status": "Likely safe",
           "release_tag": "v0.1.0",
           "release_published_at": "2025-05-31T09:29:22Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v0.1.0",
+          "first_release_at": "2025-05-31T09:29:22Z",
+          "data_from": "2025-05-31T09:29:22Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -375,9 +475,14 @@
           "short": "Seamless Co-op",
           "name": "Seamless Co-op",
           "status": "Likely safe",
-          "release_tag": "v1.7.2",
-          "release_published_at": "2024-06-30T14:10:24Z",
-          "mentions_patch": false
+          "release_tag": "v2.0.1",
+          "release_published_at": "2026-09-03T19:40:04Z",
+          "mentions_patch": false,
+          "first_release_tag": "v2.0.1",
+          "first_release_at": "2026-09-03T19:40:04Z",
+          "data_from": "2022-11-13T21:00:17Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "me3",
@@ -386,7 +491,12 @@
           "status": "Likely safe",
           "release_tag": "v0.1.0",
           "release_published_at": "2025-05-31T09:29:22Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v0.1.0",
+          "first_release_at": "2025-05-31T09:29:22Z",
+          "data_from": "2025-05-31T09:29:22Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -403,9 +513,14 @@
           "short": "Seamless Co-op",
           "name": "Seamless Co-op",
           "status": "Likely safe",
-          "release_tag": "v1.7.2",
-          "release_published_at": "2024-06-30T14:10:24Z",
-          "mentions_patch": false
+          "release_tag": "v2.0.1",
+          "release_published_at": "2026-09-03T19:40:04Z",
+          "mentions_patch": false,
+          "first_release_tag": "v2.0.1",
+          "first_release_at": "2026-09-03T19:40:04Z",
+          "data_from": "2022-11-13T21:00:17Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "me3",
@@ -414,7 +529,12 @@
           "status": "Likely safe",
           "release_tag": "v0.1.0",
           "release_published_at": "2025-05-31T09:29:22Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v0.1.0",
+          "first_release_at": "2025-05-31T09:29:22Z",
+          "data_from": "2025-05-31T09:29:22Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -431,9 +551,14 @@
           "short": "Seamless Co-op",
           "name": "Seamless Co-op",
           "status": "Likely safe",
-          "release_tag": "v1.7.2",
-          "release_published_at": "2024-06-30T14:10:24Z",
-          "mentions_patch": false
+          "release_tag": "v2.0.1",
+          "release_published_at": "2026-09-03T19:40:04Z",
+          "mentions_patch": false,
+          "first_release_tag": "v2.0.1",
+          "first_release_at": "2026-09-03T19:40:04Z",
+          "data_from": "2022-11-13T21:00:17Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "me3",
@@ -442,7 +567,12 @@
           "status": "Likely safe",
           "release_tag": "v0.1.0",
           "release_published_at": "2025-05-31T09:29:22Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v0.1.0",
+          "first_release_at": "2025-05-31T09:29:22Z",
+          "data_from": "2025-05-31T09:29:22Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -459,9 +589,14 @@
           "short": "Seamless Co-op",
           "name": "Seamless Co-op",
           "status": "Likely safe",
-          "release_tag": "v1.7.2",
-          "release_published_at": "2024-06-30T14:10:24Z",
-          "mentions_patch": false
+          "release_tag": "v2.0.1",
+          "release_published_at": "2026-09-03T19:40:04Z",
+          "mentions_patch": false,
+          "first_release_tag": "v2.0.1",
+          "first_release_at": "2026-09-03T19:40:04Z",
+          "data_from": "2022-11-13T21:00:17Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "me3",
@@ -470,7 +605,12 @@
           "status": "Likely safe",
           "release_tag": "v0.1.0",
           "release_published_at": "2025-05-31T09:29:22Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v0.1.0",
+          "first_release_at": "2025-05-31T09:29:22Z",
+          "data_from": "2025-05-31T09:29:22Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     }

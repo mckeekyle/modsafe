@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T18:38:17Z",
+  "generated_at": "2026-10-26T19:28:59Z",
   "game": {
     "slug": "fallout-4",
     "name": "Fallout 4",
@@ -88,7 +88,12 @@
           "status": "No post-patch release",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2025-11-25T22:47:28Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -107,7 +112,12 @@
           "status": "Likely safe",
           "release_tag": "v0.7.9",
           "release_published_at": "2026-08-16T18:48:30Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v0.7.9",
+          "first_release_at": "2026-08-16T18:48:30Z",
+          "data_from": "2025-11-25T22:47:28Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -126,7 +136,12 @@
           "status": "Likely safe",
           "release_tag": "v0.7.7",
           "release_published_at": "2025-12-16T17:36:45Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v0.7.7",
+          "first_release_at": "2025-12-16T17:36:45Z",
+          "data_from": "2025-11-25T22:47:28Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -145,7 +160,12 @@
           "status": "Likely safe",
           "release_tag": "v0.7.6",
           "release_published_at": "2025-11-25T22:47:28Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v0.7.6",
+          "first_release_at": "2025-11-25T22:47:28Z",
+          "data_from": "2025-11-25T22:47:28Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -164,7 +184,12 @@
           "status": "Likely safe",
           "release_tag": "v0.7.6",
           "release_published_at": "2025-11-25T22:47:28Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v0.7.6",
+          "first_release_at": "2025-11-25T22:47:28Z",
+          "data_from": "2025-11-25T22:47:28Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -183,7 +208,12 @@
           "status": "Likely safe",
           "release_tag": "v0.7.6",
           "release_published_at": "2025-11-25T22:47:28Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v0.7.6",
+          "first_release_at": "2025-11-25T22:47:28Z",
+          "data_from": "2025-11-25T22:47:28Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -202,7 +232,12 @@
           "status": "Likely safe",
           "release_tag": "v0.7.6",
           "release_published_at": "2025-11-25T22:47:28Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v0.7.6",
+          "first_release_at": "2025-11-25T22:47:28Z",
+          "data_from": "2025-11-25T22:47:28Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -221,7 +256,12 @@
           "status": "Likely safe",
           "release_tag": "v0.7.6",
           "release_published_at": "2025-11-25T22:47:28Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v0.7.6",
+          "first_release_at": "2025-11-25T22:47:28Z",
+          "data_from": "2025-11-25T22:47:28Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -240,7 +280,12 @@
           "status": "Likely safe",
           "release_tag": "v0.7.6",
           "release_published_at": "2025-11-25T22:47:28Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v0.7.6",
+          "first_release_at": "2025-11-25T22:47:28Z",
+          "data_from": "2025-11-25T22:47:28Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -259,7 +304,12 @@
           "status": "Likely safe",
           "release_tag": "v0.7.6",
           "release_published_at": "2025-11-25T22:47:28Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v0.7.6",
+          "first_release_at": "2025-11-25T22:47:28Z",
+          "data_from": "2025-11-25T22:47:28Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -278,7 +328,12 @@
           "status": "Likely safe",
           "release_tag": "v0.7.6",
           "release_published_at": "2025-11-25T22:47:28Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v0.7.6",
+          "first_release_at": "2025-11-25T22:47:28Z",
+          "data_from": "2025-11-25T22:47:28Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -297,7 +352,12 @@
           "status": "Likely safe",
           "release_tag": "v0.7.6",
           "release_published_at": "2025-11-25T22:47:28Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v0.7.6",
+          "first_release_at": "2025-11-25T22:47:28Z",
+          "data_from": "2025-11-25T22:47:28Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     }

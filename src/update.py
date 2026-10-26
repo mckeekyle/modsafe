@@ -411,8 +411,10 @@ def build_steam_game(game: dict) -> dict:
         for fw in game["frameworks"]:
             if fw["source"] == "manual" or fw["id"] not in rels_by:
                 continue
+            stable = pick_latest_stable_release(rels_by[fw["id"]]) or {}
             snap = status_for_patch_history(releases=rels_by[fw["id"]], patch_version=p["label"],
-                                            patch_published_at=p["published_at"], mention_fn=pm)
+                                            patch_published_at=p["published_at"], mention_fn=pm,
+                                            line_tag=stable.get("tag_name"))
             snap["status"] = history_label(snap["status"]) if not fw.get("agnostic") else "Not affected by patches"
             row.append({"id": fw["id"], "short": fw["short"], "name": fw["name"], **snap})
         history.append({**p, "frameworks": row})

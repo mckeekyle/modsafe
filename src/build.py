@@ -19,6 +19,7 @@ import mods as mods_mod  # noqa: E402
 import feeds  # noqa: E402
 import badges  # noqa: E402
 import guides as guides_mod  # noqa: E402
+import history_stats as hstats  # noqa: E402
 GAMES_SLUGS = {g["slug"] for g in GAMES}
 NEWS_FILE = ROOT / "data" / "news.json"
 DIST = ROOT / "dist"
@@ -322,6 +323,14 @@ section { margin: 0 0 1.75rem; }
 .page-hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); margin: 0 0 .5rem; text-transform: uppercase; }
 .page-hero .lede { color: var(--muted); font-size: 1.1rem; max-width: 60ch; }
 .hist-list { display: grid; gap: .8rem; }
+.hub-nav a[aria-current="page"] { background: rgba(0,240,255,.14); color: var(--neon); }
+.hist-t { color: var(--muted); font-size: .82rem; }
+.hist-t.ok { color: var(--neon); }
+.hist-stats { margin-top: 0; }
+.track-record { color: var(--muted); max-width: var(--measure); }
+.panel-h { font-size: 1.1rem; margin: 0 0 .6rem; display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; }
+.order-list { margin: 0; padding-left: 1.4rem; display: grid; gap: .35rem; }
+.order-list li { line-height: 1.5; }
 .hist-card h3 { margin: 0; }
 .hist-fw { list-style: none; padding: 0; margin: .7rem 0 0; display: flex; flex-wrap: wrap; gap: .45rem .9rem; }
 .hist-fw li { display: flex; gap: .4rem; align-items: center; font-size: .9rem; }
@@ -839,7 +848,7 @@ def build_game_page(game: dict, data: dict) -> str:
 </section>
 {upcoming_notice(active_upcoming(slug, data))}
 {stale_banner(data)}
-<nav class="tabs" aria-label="On this page"><a href="#status">Status</a><a href="#fw-heading">Frameworks</a>{'<a href="#history">Patch history</a>' if data.get("history") else ''}{'<a href="#mods">Essential ' + (mods_mod.load_mods(slug) or {}).get("noun", "mods") + '</a>' if mods_mod.load_mods(slug) else ''}{'<a href="#console">Console mods</a>' if slug in (CONSOLE_MODS if CONSOLE_MODS is not None else load_console_mods()) else ''}<a href="#news">News</a><a href="#follow">Follow</a><a href="#faq-heading">FAQ</a></nav>
+<nav class="tabs" aria-label="On this page"><a href="#status">Status</a><a href="#fw-heading">Frameworks</a>{'<a href="#history">Patch history</a>' if has_history(data) else ''}{'<a href="#mods">Essential ' + (mods_mod.load_mods(slug) or {}).get("noun", "mods") + '</a>' if mods_mod.load_mods(slug) else ''}{'<a href="#console">Console mods</a>' if slug in (CONSOLE_MODS if CONSOLE_MODS is not None else load_console_mods()) else ''}<a href="#news">News</a><a href="#follow">Follow</a><a href="#faq-heading">FAQ</a></nav>
 <div class="vgrid" id="status">
 <section class="panel" aria-labelledby="verdict-heading">
 <h2 id="verdict-heading">Verdict for {esc(p['label'])}</h2>
@@ -864,7 +873,7 @@ def build_game_page(game: dict, data: dict) -> str:
 <section class="fw-grid" aria-labelledby="fw-heading">{framework_cards(data)}</section>
 {f'<ul>{extra}</ul>' if extra else ''}
 <p class="disclaimer">{esc(data.get('disclaimer', ''))} Items marked “Check manually” are not counted in the verdict.</p>
-{f'<div class="sec-head" id="history"><h2>Patch history</h2><a href="/{slug}/history/">Full history →</a></div><section class="hist-list">{history_cards(data, 4)}</section>' if data.get("history") else ""}
+{f'<div class="sec-head" id="history"><h2>Patch history</h2><a href="/{slug}/history/">Full history →</a></div><p class="track-record">{esc(track_record_sentence(game, data))} <a href="/{slug}/history/#frameworks">Per-framework times →</a></p><section class="hist-list">{history_cards(data, 4)}</section>' if has_history(data) else ""}
 {mods_teaser(game, data)}
 {console_mods_section(slug)}
 <div class="sec-head" id="news"><h2>{esc(game['short'])} news</h2><a href="/news/">All news →</a></div>
@@ -874,7 +883,7 @@ def build_game_page(game: dict, data: dict) -> str:
 <section class="faq-list" aria-labelledby="faq-heading">
 {faq_html}
 </section>
-<section class="links">{f'<a href="/{slug}/history/">📜 Full patch history</a>' if data.get("history") else ''} <a href="{esc(game['wiki'])}">🛠 Modding resources</a>{f' <a href="{guides_mod.STEAM_GUIDE_PATH}">🛑 Stop Steam auto-updates</a>' if game.get("steam_appid") else ''} <a href="/">🎮 All games</a></section>
+{related_links(game, data, "status", wiki=True)}
 """
     return page_shell(
         f"Is it safe to update {game['name']}? Mod status for {p['label']} — ModSafe",
@@ -969,70 +978,298 @@ def mods_teaser(game: dict, data: dict) -> str:
             f'<section class="mod-grid">{mod_cards(game, data, mods, 6)}</section>')
 
 
-def build_mods_page(game: dict, data: dict, mods: dict) -> str:
+MIN_HISTORY = 2  # a history page needs at least two patches to say anything beyond the main page
+
+
+def has_history(data: dict) -> bool:
+    return len(data.get("history") or []) >= MIN_HISTORY
+
+
+def _clip(text: str, n: int = 158) -> str:
+    text = re.sub(r"\s+", " ", text).strip()
+    if len(text) <= n:
+        return text
+    return text[: text.rfind(" ", 0, n - 1)].rstrip(",;:") + "…"
+
+
+def _md_plain(s: str) -> str:
+    s = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", s)
+    return re.sub(r"\*\*|`", "", s).strip()
+
+
+def hub_pages(game: dict, data: dict) -> list[tuple[str, str, str]]:
     slug = game["slug"]
-    mgr = mods["manager"]
-    noun = mods.get("noun", "mods")
+    mods = mods_mod.load_mods(slug)
+    items = [("status", f"/{slug}/", f"{game['short']} status")]
+    if has_history(data):
+        items.append(("history", f"/{slug}/history/", "Patch history"))
+    if mods:
+        items.append(("mods", f"/{slug}/mods/", "Essential " + mods.get("noun", "mods")))
+    if mods_mod.load_guide(slug):
+        items.append(("install", f"/{slug}/install/", "Install guide"))
+    return items
+
+
+def hub_nav(game: dict, data: dict, current: str) -> str:
+    cur = ' aria-current="page"'
+    links = "".join(f'<a href="{u}"{cur if k == current else ""}>{esc(t)}</a>' for k, u, t in hub_pages(game, data))
+    return f'<nav class="tabs hub-nav" aria-label="{esc(game["short"])} pages">{links}</nav>'
+
+
+def related_links(game: dict, data: dict, current: str, wiki: bool = False) -> str:
+    icons = {"status": "📊", "history": "📜", "mods": "🧩", "install": "📘"}
+    out = [f'<a href="{u}">{icons[k]} {esc(t)}</a>' for k, u, t in hub_pages(game, data) if k != current]
+    if game.get("steam_appid"):
+        out.append(f'<a href="{guides_mod.STEAM_GUIDE_PATH}">🛑 Stop Steam auto-updates</a>')
+    if wiki and game.get("wiki"):
+        out.append(f'<a href="{esc(game["wiki"])}">🛠 Modding resources</a>')
+    out.append('<a href="/games/">🎮 All games</a>')
+    return f'<section class="links" aria-label="Related pages">{" ".join(out)}</section>'
+
+
+def track_record_sentence(game: dict, data: dict) -> str:
+    """One data-derived sentence for the game page and the history page lede."""
+    s = hstats.game_summary(data)
+    if s["patches"] < MIN_HISTORY:
+        return ""
+    out = (f"ModSafe has tracked {s['patches']} {game['short']} patches between {fmt_date(s['first'].isoformat())} "
+           f"and {fmt_date(s['last'].isoformat())}, about one every {hstats.fmt_days(s['avg_gap'])}.")
+    if s["pairs"]:
+        out += (f" When a framework release named the patch, it arrived a median of "
+                f"{hstats.fmt_days(s['median_days'])} after the patch post ({s['pairs']} cases).")
+    elif s["next_median"] is not None and s["next_pairs"] >= 3:
+        out += (f" No release in our data names a specific patch, but the next framework release came a median of "
+                f"{hstats.fmt_days(s['next_median'])} after one ({s['next_pairs']} cases).")
+    return out
+
+
+def _fw_timing(entry: dict, fw: dict, until) -> str:
+    info = hstats.pair_info(entry, fw, until)
+    if info["kind"] == "named":
+        return f'<span class="hist-t ok">named in {esc(info["tag"] or "?")} +{esc(hstats.fmt_days(info["days"]))}</span>'
+    if info["kind"] == "unnamed":
+        if info.get("next_days") is not None:
+            return f'<span class="hist-t">next release +{esc(hstats.fmt_days(info["next_days"]))}</span>'
+        return '<span class="hist-t">no release before the next patch</span>' if until else '<span class="hist-t">no release yet</span>'
+    if info["kind"] == "outside":
+        return '<span class="hist-t">older than our release data</span>'
+    return ""
+
+
+def history_faq(game: dict, data: dict, s: dict) -> list[dict]:
+    name, short = game["name"], game["short"]
+    faq = [{"q": f"How often does {name} get patched?",
+            "a": f"ModSafe has {s['patches']} {short} patches on record, from {fmt_date(s['first'].isoformat())} to "
+                 f"{fmt_date(s['last'].isoformat())}. The average gap between them is {hstats.fmt_days(s['avg_gap'])}."}]
+    if s["pairs"]:
+        lw = s["longest_wait"]
+        a = (f"Across {s['pairs']} patch and framework pairs where a release named the patch, the update came a median "
+             f"of {hstats.fmt_days(s['median_days'])} (mean {hstats.fmt_days(s['mean_days'])}) after the patch post. "
+             f"The longest was {lw['fw']} {lw['tag']} for {lw['patch']}, at {hstats.fmt_days(lw['days'])}.")
+    elif s["next_median"] is not None:
+        a = (f"No framework release in our data names a specific {short} patch, so we can't time confirmed fixes. As "
+             f"context, the next framework release came a median of {hstats.fmt_days(s['next_median'])} after a patch "
+             f"({s['next_pairs']} cases where it came before the following patch).")
+    else:
+        a = (f"We can't say yet. Our framework release data doesn't reach back to these {short} patches, so we only "
+             f"report each patch's verdict and wait for new patches to build a track record.")
+    faq.append({"q": f"How long do {short} mod frameworks take to update after a patch?", "a": a})
+    if s["log_start"]:
+        ls = s["longest_stretch"]
+        if ls:
+            end = (f"It ended on {fmt_date(ls['end'].isoformat())} with the verdict {ls['end_verdict']}." if ls["end"]
+                   else "It is still ongoing.")
+            a = (f"Since our verdict log started on {fmt_date(s['log_start'].isoformat())}, the longest unsafe stretch was "
+                 f"{hstats.fmt_days(ls['days'])} after {ls['patch']} ({', '.join(ls['verdicts'])}). {end}")
+        else:
+            a = (f"Since our verdict log started on {fmt_date(s['log_start'].isoformat())}, the {short} verdict hasn't "
+                 f"been unsafe (Breakage reported, Just patched, wait or Not ported yet).")
+        faq.append({"q": f"What is the longest {short} mods have been unsafe after a patch?", "a": a})
+    return faq
+
+
+def build_game_history(game: dict, data: dict) -> str:
+    slug, name, short = game["slug"], game["name"], game["short"]
+    hist = data.get("history") or []
+    s = hstats.game_summary(data)
+    bounds = hstats.next_patch_dates(hist)
+    tiles = [(str(s["patches"]), "patches tracked"), (hstats.fmt_days(s["avg_gap"]), "average gap between patches")]
+    if s["pairs"]:
+        tiles.append((hstats.fmt_days(s["median_days"]), "median time to an update naming the patch"))
+    elif s["next_median"] is not None and s["next_pairs"] >= 3:
+        tiles.append((hstats.fmt_days(s["next_median"]), "median time to the next framework release"))
+    if s["longest_stretch"]:
+        ls = s["longest_stretch"]
+        tiles.append((hstats.fmt_days(ls["days"]), "longest unsafe stretch" + (" (ongoing)" if ls["end"] is None else "")))
+    tiles_html = "".join(f"<div><strong>{esc(v)}</strong>{esc(k)}</div>" for v, k in tiles)
+    rows = []
+    for f in s["frameworks"]:
+        if not f["affected"]:
+            continue
+        lg = f"{hstats.fmt_days(f['longest'][0])} ({esc(f['longest'][1])})" if f["longest"] else "—"
+        rows.append(f"<tr><td>{esc(f['short'])}</td><td>{f['n']}</td><td>{esc(hstats.fmt_days(f['median']))}</td><td>{lg}</td>"
+                    f"<td>{esc(hstats.fmt_days(f['next_median']))}</td><td>{f['unnamed']}</td><td>{f['outside']}</td></tr>")
+    table = (f"""<div class="sec-head"><h2 id="frameworks">Framework update times</h2></div>
+<section class="panel guide"><div class="table-wrap"><table><thead><tr><th>Framework</th><th>Patches named</th><th>Median to named update</th><th>Longest</th><th>Median to next release</th><th>Not named</th><th>Older than data</th></tr></thead>
+<tbody>{''.join(rows)}</tbody></table></div>
+<p class="muted">“Patches named”: releases whose notes name the patch. “Median to next release” covers any release, not only fixes, and counts it only if it shipped before the following patch. “Not named” pairs may simply not have needed an update. “Older than data”: the patch predates the releases we have for that framework.</p></section>""" if rows else "")
+    faq = history_faq(game, data, s)
+    cards = []
+    for entry, until in zip(hist, bounds):
+        cells = "".join(
+            f'<li>{badge(fw["status"])} <strong>{esc(fw["short"])}</strong> <code>{esc(fw.get("release_tag") or "—")}</code> {_fw_timing(entry, fw, until)}</li>'
+            for fw in entry.get("frameworks", []))
+        cards.append(f"""<article class="hist-card" id="patch-{esc(entry['label']).replace(' ', '-')}">
+<h3>{esc(entry['label'])}</h3>
+<p class="muted">{esc(fmt_date(entry.get('published_at')))} · <a href="{esc(entry.get('url', ''))}">{esc(entry.get('title', ''))}</a></p>
+<ul class="hist-fw">{cells}</ul>
+</article>""")
     body = f"""
-<p class="crumbs"><a href="/">Home</a> › <a href="/games/">Games</a> › <a href="/{slug}/">{esc(game['name'])}</a> › Essential {noun}</p>
-<section class="page-hero"><h1>Essential {esc(game['name'])} {noun}</h1>
-<p class="lede">{esc(mods['intro'])}</p>
-<p class="muted">Hand-picked by ModSafe, listed in install order. We link only to the official download pages and never host files. Badges reflect our live framework status for {esc(data['game']['latest_patch']['label'])}. List verified {esc(mods['verified_at'])}.</p>
-<p class="cta-row"><a class="btn" href="/{slug}/install/">📘 How to install {noun}</a> <a class="btn ghost" href="{esc(mgr['url'])}" rel="noopener external">Recommended manager: {esc(mgr['name'])} ↗</a>
-{f'<a class="btn ghost" href="{esc(mods["compat_list"])}" rel="noopener external">Community compatibility list ↗</a>' if mods.get('compat_list') else ''}</p>
-</section>
-<section class="mod-grid">{mod_cards(game, data, mods)}</section>
-<p class="disclaimer">Mod pages and requirements can change; always read the mod's own page before installing. Not affiliated with Nexus Mods or any mod author.</p>
+<p class="crumbs"><a href="/">Home</a> › <a href="/games/">Games</a> › <a href="/{slug}/">{esc(name)}</a> › Patch history</p>
+<section class="page-hero"><h1>{esc(name)} patch history &amp; mod update times</h1>
+<p class="lede">{esc(track_record_sentence(game, data))}</p></section>
+{hub_nav(game, data, "history")}
+<section class="panel"><div class="stats hist-stats">{tiles_html}</div></section>
+<div class="sec-head"><h2 id="summary">Track record</h2></div>
+<section class="faq-list">{"".join(faq_article(i) for i in faq)}</section>
+{table}
+<div class="sec-head"><h2 id="patches">Patch by patch</h2></div>
+<section class="hist-list">{''.join(cards)}</section>
+<p class="disclaimer">Every number on this page comes from ModSafe's own data: the patch list, each framework's release history from its official source, and our verdict log (kept since {esc(fmt_date(s['log_start'].isoformat())) if s['log_start'] else 'recently'}). Times run from the official patch post to the framework release. See the <a href="/faq/">FAQ</a> for how verdicts are decided, or <a href="/{slug}/status.json">download the raw data</a>.</p>
+{related_links(game, data, "history")}
 """
-    itemlist = {"@context": "https://schema.org", "@type": "ItemList", "name": f"Essential {game['name']} {noun}",
-                "itemListOrder": "https://schema.org/ItemListOrderAscending",
-                "itemListElement": [{"@type": "ListItem", "position": i, "name": m["name"], "url": m["url"]}
-                                    for i, m in enumerate(mods["mods"], 1)]}
-    return page_shell(f"Essential {game['name']} {noun} ({len(mods['mods'])}) & install order — ModSafe",
-                      f"{len(mods['mods'])} essential {game['name']} {noun} in install order, with requirements and live compatibility after the latest patch.",
-                      f"/{slug}/mods/", slug, body,
-                      extra_jsonld=[itemlist, breadcrumb_ld([("Games", "/"), (game["name"], f"/{slug}/"), ("Essential mods", f"/{slug}/mods/")])])
+    if s["pairs"]:
+        hl = f"framework updates named the patch a median {hstats.fmt_days(s['median_days'])} later"
+    elif s["next_median"] is not None and s["next_pairs"] >= 3:
+        hl = f"next framework release a median {hstats.fmt_days(s['next_median'])} after a patch"
+    else:
+        hl = "verdicts for each patch"
+    ls = s["longest_stretch"]
+    desc = (f"{s['patches']} {name} patches since {s['first'].year}: {hl}"
+            + (f"; longest unsafe stretch {hstats.fmt_days(ls['days'])}." if ls else ".") + " Per framework, from our own data.")
+    return page_shell(f"{name} patch history: {s['patches']} patches & mod update times — ModSafe", _clip(desc),
+                      f"/{slug}/history/", slug, body,
+                      extra_jsonld=[faq_ld(faq), breadcrumb_ld([("Games", "/"), (name, f"/{slug}/"), ("Patch history", f"/{slug}/history/")])])
+
+
+def guide_errors(md: str) -> list[dict]:
+    """FAQ items from the guide's '## Common errors and fixes' bullets ('- **Question?** Answer. Source: [..](..)')."""
+    block = re.search(r"^## Common errors and fixes\n(.*?)(?=^## |\Z)", md, re.M | re.S)
+    out = []
+    for line in (block.group(1) if block else "").splitlines():
+        m = re.match(r"^- \*\*(.+?)\*\*\s*(.+)", line)
+        if m:
+            out.append({"q": _md_plain(m.group(1)), "a": _md_plain(m.group(2))})
+    return out
+
+
+def install_order_html(game: dict, data: dict, mods: dict | None) -> str:
+    if not mods:
+        return ""
+    slug = game["slug"]
+    names = {m["id"]: m["name"] for m in mods["mods"]}
+    names.update({f["id"]: f["short"] for f in data.get("frameworks", [])})
+    lis = []
+    for m in mods["mods"]:
+        req = [names.get(r, r) for r in m.get("requires", [])]
+        st, _ = mods_mod.compat(m, data)
+        lis.append(f'<li><a href="/{slug}/mods/#mod-{esc(m["id"])}">{esc(m["name"])}</a> {badge(st)}'
+                   + (f' <span class="muted">needs {esc(", ".join(req))}</span>' if req else "") + "</li>")
+    return (f'<div class="sec-head"><h2 id="order">Install order at a glance</h2><a href="/{slug}/mods/">Details →</a></div>'
+            f'<section class="panel"><ol class="order-list">{"".join(lis)}</ol>'
+            f'<p class="muted">Frameworks first, then the mods that need them. Badges are our live status for '
+            f'{esc(data["game"]["latest_patch"]["label"])}.</p></section>')
 
 
 def build_install_page(game: dict, data: dict, md: str) -> str:
     slug = game["slug"]
     g = mods_mod.guide_parts(md)
+    mods = mods_mod.load_mods(slug)
+    errors = guide_errors(md)
+    fws = [f for f in data.get("frameworks", []) if f.get("tracked", True)]
+    fw_li = "".join(f'<li>{badge(f["status"])} <strong>{esc(f["short"])}</strong> <code>{esc(f.get("release_tag") or "—")}</code></li>' for f in fws)
     body = f"""
 <p class="crumbs"><a href="/">Home</a> › <a href="/games/">Games</a> › <a href="/{slug}/">{esc(game['name'])}</a> › Install guide</p>
 <section class="page-hero"><h1>{esc(g['title'])}</h1>
-<p class="lede">Current status: {vbadge(data['verdict'])} for {esc(data['game']['latest_patch']['label'])}. <a href="/{slug}/">Check frameworks →</a></p></section>
-<article class="panel guide">{mods_mod.md_to_html(g['body'])}</article>
-<section class="links"><a href="/{slug}/mods/">🧩 Essential mods list</a> <a href="/{slug}/">📊 {esc(game['short'])} status</a></section>
+<p class="lede">{esc(g['intro'])}</p></section>
+{hub_nav(game, data, "install")}
+<section class="panel"><h2 class="panel-h">Before you start: {vbadge(data['verdict'])} for {esc(data['game']['latest_patch']['label'])}</h2>
+<ul class="hist-fw">{fw_li}</ul>
+<p class="muted">Live framework status, refreshed every few hours. <a href="/{slug}/">Full status →</a>{' · <a href="/' + slug + '/history/">How fast they update after patches →</a>' if has_history(data) else ''}</p></section>
+{install_order_html(game, data, mods)}
+<article class="panel guide">{mods_mod.md_to_html(g['body'].strip().split(chr(10) * 2, 1)[-1])}</article>
+{f'<p class="disclaimer">Keep a working setup by stopping Steam from patching the game before your mods catch up: <a href="{guides_mod.STEAM_GUIDE_PATH}">how to stop Steam auto-updates</a>.</p>' if game.get("steam_appid") else ''}
+{related_links(game, data, "install")}
 """
     howto = {"@context": "https://schema.org", "@type": "HowTo", "name": g["title"], "description": g["intro"][:300],
              "step": [{"@type": "HowToStep", "position": i, "name": s["name"], "text": s["text"],
                        "url": f"{SITE_URL}/{slug}/install/#steps"} for i, s in enumerate(g["steps"], 1)]}
-    return page_shell(f"{g['title']} (beginner guide) — ModSafe", g["intro"][:155], f"/{slug}/install/", slug, body,
-                      extra_jsonld=[howto, breadcrumb_ld([("Games", "/"), (game["name"], f"/{slug}/"), ("Install guide", f"/{slug}/install/")])])
+    desc = (f"Mod {game['name']} with {fws[0]['short'] if fws else 'the core frameworks'}: {len(g['steps'])} steps, "
+            f"install order, {len(errors)} common errors with sourced fixes, and how to roll back.")
+    ld = [howto, breadcrumb_ld([("Games", "/"), (game["name"], f"/{slug}/"), ("Install guide", f"/{slug}/install/")])]
+    if errors:
+        ld.insert(1, faq_ld(errors))
+    return page_shell(f"{g['title']} (beginner guide) — ModSafe", _clip(desc), f"/{slug}/install/", slug, body, extra_jsonld=ld)
 
 
-def build_game_history(game: dict, data: dict) -> str:
-    sections = []
-    for entry in data.get("history", []):
-        cells = "".join(
-            f'<li>{badge(fw["status"])} <strong>{esc(fw["short"])}</strong> <code>{esc(fw.get("release_tag") or "—")}</code></li>'
-            for fw in entry.get("frameworks", []))
-        sections.append(f"""<article class="hist-card" id="patch-{esc(entry['label']).replace(' ', '-')}">
-<h3>{esc(entry['label'])}</h3>
-<p class="muted">{esc(fmt_date(entry.get('published_at')))} · <a href="{esc(entry.get('url', ''))}">{esc(entry.get('title', ''))}</a></p>
-<ul class="hist-fw">{cells}</ul>
-</article>""")
+def dependency_map_html(game: dict, data: dict, mods: dict) -> tuple[str, list[dict]]:
+    names = {m["id"]: m["name"] for m in mods["mods"]}
+    names.update({f["id"]: f["short"] for f in data.get("frameworks", [])})
+    needed: dict[str, list[str]] = {}
+    standalone = []
+    for m in mods["mods"]:
+        if not m.get("requires"):
+            standalone.append(m["name"])
+        for r in m.get("requires", []):
+            needed.setdefault(r, []).append(m["name"])
+    rows = "".join(f"<tr><td>{esc(names.get(r, r))}</td><td>{len(ms)}</td><td>{esc(', '.join(ms))}</td></tr>"
+                   for r, ms in sorted(needed.items(), key=lambda kv: -len(kv[1])))
+    faq = []
+    if needed:
+        top, ms = max(needed.items(), key=lambda kv: len(kv[1]))
+        faq.append({"q": f"Which {game['short']} {mods.get('noun', 'mods')} depend on {names.get(top, top)}?",
+                    "a": f"{len(ms)} of the {len(mods['mods'])} on our list need {names.get(top, top)}: {', '.join(ms)}. "
+                         f"If {names.get(top, top)} breaks after a patch, all of them are affected."})
+    first = [m["name"] for m in mods["mods"][:4]]
+    faq.insert(0, {"q": f"What should I install first for {game['name']}?",
+                   "a": f"Install in list order: {', '.join(first)}{', and so on' if len(mods['mods']) > 4 else ''}. "
+                        f"Frameworks come first because the mods after them need them. We recommend {mods['manager']['name']} to manage them."})
+    html_ = (f"""<div class="sec-head"><h2 id="deps">Dependency map</h2></div>
+<section class="panel guide"><div class="table-wrap"><table><thead><tr><th>Requirement</th><th>Mods</th><th>Needed by</th></tr></thead><tbody>{rows}</tbody></table></div>
+{f'<p class="muted">No listed requirements: {esc(", ".join(standalone))}.</p>' if standalone else ''}</section>""" if rows else "")
+    return html_, faq
+
+
+def build_mods_page(game: dict, data: dict, mods: dict) -> str:
     slug = game["slug"]
+    mgr = mods["manager"]
+    noun = mods.get("noun", "mods")
+    deps, faq = dependency_map_html(game, data, mods)
     body = f"""
-<p class="crumbs"><a href="/">Home</a> › <a href="/games/">Games</a> › <a href="/{slug}/">{esc(game['name'])}</a> › History</p>
-<section class="page-hero"><h1>{esc(game['name'])} patch history</h1>
-<p class="lede">How tracked frameworks looked relative to each recent {esc(game['name'])} patch, using the same rules as the main page.</p></section>
-<section class="hist-list">{''.join(sections) or '<p>No patch history available.</p>'}</section>
+<p class="crumbs"><a href="/">Home</a> › <a href="/games/">Games</a> › <a href="/{slug}/">{esc(game['name'])}</a> › Essential {noun}</p>
+<section class="page-hero"><h1>Essential {esc(game['name'])} {noun}</h1>
+<p class="lede">{esc(mods['intro'])}</p>
+<p class="muted">Hand-picked by ModSafe, listed in install order. We link only to the official download pages and never host files. Badges reflect our live framework status for {esc(data['game']['latest_patch']['label'])}. List verified {esc(mods['verified_at'])}.</p>
+<p class="cta-row">{f'<a class="btn" href="/{slug}/install/">📘 How to install {noun}</a> ' if mods_mod.load_guide(slug) else ''}<a class="btn ghost" href="{esc(mgr['url'])}" rel="noopener external">Recommended manager: {esc(mgr['name'])} ↗</a>
+{f'<a class="btn ghost" href="{esc(mods["compat_list"])}" rel="noopener external">Community compatibility list ↗</a>' if mods.get('compat_list') else ''}</p>
+</section>
+{hub_nav(game, data, "mods")}
+<section class="mod-grid">{mod_cards(game, data, mods)}</section>
+{deps}
+<div class="sec-head"><h2 id="faq-heading">{esc(game['short'])} {esc(noun)} FAQ</h2></div>
+<section class="faq-list">{"".join(faq_article(i) for i in faq)}</section>
+<p class="disclaimer">Mod pages and requirements can change; always read the mod's own page before installing. Not affiliated with Nexus Mods or any mod author.</p>
+{related_links(game, data, "mods")}
 """
-    return page_shell(f"{game['name']} patch history — ModSafe",
-                      f"Historical {game['name']} patch compatibility for its core mod frameworks.",
-                      f"/{slug}/history/", slug, body,
-                      extra_jsonld=[breadcrumb_ld([("Games", "/"), (game["name"], f"/{slug}/"), ("History", f"/{slug}/history/")])])
+    itemlist = {"@context": "https://schema.org", "@type": "ItemList", "name": f"Essential {game['name']} {noun}",
+                "itemListOrder": "https://schema.org/ItemListOrderAscending",
+                "itemListElement": [{"@type": "ListItem", "position": i, "name": m["name"], "url": m["url"]}
+                                    for i, m in enumerate(mods["mods"], 1)]}
+    top = ", ".join(m["name"] for m in mods["mods"][:3])
+    desc = f"{len(mods['mods'])} essential {game['name']} {noun}, what each needs, and live {data['game']['latest_patch']['label']} status. Install order: {top}…"
+    return page_shell(f"Essential {game['name']} {noun} ({len(mods['mods'])}) & install order — ModSafe", _clip(desc),
+                      f"/{slug}/mods/", slug, body,
+                      extra_jsonld=[itemlist, faq_ld(faq), breadcrumb_ld([("Games", "/"), (game["name"], f"/{slug}/"), ("Essential mods", f"/{slug}/mods/")])])
 
 
 UPCOMING_FILE = ROOT / "data" / "manual" / "upcoming-patches.json"
@@ -1382,10 +1619,23 @@ def build_robots() -> str:
     return f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n"
 
 
+def _game_data(slug: str) -> dict:
+    f = DATA_DIR / f"{slug}.json"
+    return json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}
+
+
+def build_redirects(games_data) -> str:
+    """Static rules plus a 301 to the game page for games whose history is too short to get its own page."""
+    extra = [f"/{g['slug']}/history{t} /{g['slug']}/ 301" for g, d in games_data if not has_history(d) for t in ("", "/")]
+    return REDIRECTS + ("# Games without enough patch history for a history page\n" + "\n".join(extra) + "\n" if extra else "")
+
+
 def sitemap_urls() -> list[str]:
     urls = ["/", "/games/", "/news/", "/faq/", "/guides/", guides_mod.STEAM_GUIDE_PATH]
     for g in GAMES:
-        urls += [f"/{g['slug']}/", f"/{g['slug']}/history/"]
+        urls.append(f"/{g['slug']}/")
+        if has_history(_game_data(g["slug"])):
+            urls.append(f"/{g['slug']}/history/")
         if mods_mod.load_mods(g["slug"]):
             urls.append(f"/{g['slug']}/mods/")
         if mods_mod.load_guide(g["slug"]):
@@ -1581,10 +1831,14 @@ def main() -> int:
         for p in DIST.rglob("*"):
             if p.is_file():
                 p.unlink()
+        for p in sorted((p for p in DIST.rglob("*") if p.is_dir()), key=lambda p: len(p.parts), reverse=True):
+            if not any(p.iterdir()):
+                p.rmdir()  # e.g. a history/ folder for a game that no longer gets one
     write(DIST / "index.html", build_home(games_data))
     for g, d in games_data:
         write(DIST / g["slug"] / "index.html", build_game_page(g, d))
-        write(DIST / g["slug"] / "history" / "index.html", build_game_history(g, d))
+        if has_history(d):
+            write(DIST / g["slug"] / "history" / "index.html", build_game_history(g, d))
         write(DIST / g["slug"] / "status.json", json.dumps(d, indent=2) + "\n")
         write(DIST / g["slug"] / "feed.xml", feeds.game_feed(g, d, SITE_URL))
         write(DIST / "badge" / f"{g['slug']}.svg", badges.game_badge(g, d, status_class(d["verdict"])))
@@ -1616,7 +1870,7 @@ def main() -> int:
     write(DIST / "robots.txt", build_robots())
     write(DIST / f"{INDEXNOW_KEY}.txt", INDEXNOW_KEY)
     write(DIST / "sitemap.xml", build_sitemap())
-    write(DIST / "_redirects", REDIRECTS)
+    write(DIST / "_redirects", build_redirects(games_data))
     write(DIST / "_headers", HEADERS)
     write(DIST / "_routes.json", build_routes())
     missing = missing_asset_refs(DIST)

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T18:39:16Z",
+  "generated_at": "2026-10-26T19:29:57Z",
   "game": {
     "slug": "msfs-2024",
     "name": "Microsoft Flight Simulator 2024",
@@ -113,7 +113,12 @@
           "status": "No post-patch release",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2026-06-07T03:26:42Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "fsuipc7",
@@ -122,7 +127,12 @@
           "status": "No post-patch release",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2026-09-29T12:00:00Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "mobiflight",
@@ -131,7 +141,12 @@
           "status": "No post-patch release",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2026-03-08T20:24:40Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -150,7 +165,12 @@
           "status": "No post-patch release",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2026-06-07T03:26:42Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "fsuipc7",
@@ -159,7 +179,12 @@
           "status": "No post-patch release",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2026-09-29T12:00:00Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "mobiflight",
@@ -168,7 +193,12 @@
           "status": "No post-patch release",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2026-03-08T20:24:40Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -187,7 +217,12 @@
           "status": "Likely safe",
           "release_tag": "v2024.1.0",
           "release_published_at": "2026-08-22T18:22:33Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v2024.1.0",
+          "first_release_at": "2026-08-22T18:22:33Z",
+          "data_from": "2026-06-07T03:26:42Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "fsuipc7",
@@ -196,7 +231,12 @@
           "status": "Likely safe",
           "release_tag": "7.5.9",
           "release_published_at": "2026-09-29T12:00:00Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "7.5.9",
+          "first_release_at": "2026-09-29T12:00:00Z",
+          "data_from": "2026-09-29T12:00:00Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "mobiflight",
@@ -205,7 +245,12 @@
           "status": "Likely safe",
           "release_tag": "11.2.0.3",
           "release_published_at": "2026-08-19T13:49:44Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "11.2.0.3",
+          "first_release_at": "2026-08-19T13:49:44Z",
+          "data_from": "2026-03-08T20:24:40Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -224,7 +269,12 @@
           "status": "Likely safe",
           "release_tag": "v2024.1.0",
           "release_published_at": "2026-08-22T18:22:33Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v2024.1.0",
+          "first_release_at": "2026-08-22T18:22:33Z",
+          "data_from": "2026-06-07T03:26:42Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "fsuipc7",
@@ -233,7 +283,12 @@
           "status": "Likely safe",
           "release_tag": "7.5.9",
           "release_published_at": "2026-09-29T12:00:00Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "7.5.9",
+          "first_release_at": "2026-09-29T12:00:00Z",
+          "data_from": "2026-09-29T12:00:00Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "mobiflight",
@@ -242,7 +297,12 @@
           "status": "Likely safe",
           "release_tag": "11.2.0",
           "release_published_at": "2026-07-29T13:25:58Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "11.2.0",
+          "first_release_at": "2026-07-29T13:25:58Z",
+          "data_from": "2026-03-08T20:24:40Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -261,7 +321,12 @@
           "status": "Likely safe",
           "release_tag": "v2024.1.0",
           "release_published_at": "2026-08-22T18:22:33Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v2024.1.0",
+          "first_release_at": "2026-08-22T18:22:33Z",
+          "data_from": "2026-06-07T03:26:42Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "fsuipc7",
@@ -270,7 +335,12 @@
           "status": "Likely safe",
           "release_tag": "7.5.9",
           "release_published_at": "2026-09-29T12:00:00Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "7.5.9",
+          "first_release_at": "2026-09-29T12:00:00Z",
+          "data_from": "2026-09-29T12:00:00Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "mobiflight",
@@ -279,7 +349,12 @@
           "status": "Likely safe",
           "release_tag": "11.1.0",
           "release_published_at": "2026-05-13T06:49:37Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "11.1.0",
+          "first_release_at": "2026-05-13T06:49:37Z",
+          "data_from": "2026-03-08T20:24:40Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -298,7 +373,12 @@
           "status": "Likely safe",
           "release_tag": "v2024.1.0",
           "release_published_at": "2026-08-22T18:22:33Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v2024.1.0",
+          "first_release_at": "2026-08-22T18:22:33Z",
+          "data_from": "2026-06-07T03:26:42Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "fsuipc7",
@@ -307,7 +387,12 @@
           "status": "Likely safe",
           "release_tag": "7.5.9",
           "release_published_at": "2026-09-29T12:00:00Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "7.5.9",
+          "first_release_at": "2026-09-29T12:00:00Z",
+          "data_from": "2026-09-29T12:00:00Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "mobiflight",
@@ -316,7 +401,12 @@
           "status": "Likely safe",
           "release_tag": "11.0.0",
           "release_published_at": "2026-03-16T14:50:54Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "11.0.0",
+          "first_release_at": "2026-03-16T14:50:54Z",
+          "data_from": "2026-03-08T20:24:40Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -335,7 +425,12 @@
           "status": "Likely safe",
           "release_tag": "v2024.1.0",
           "release_published_at": "2026-08-22T18:22:33Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v2024.1.0",
+          "first_release_at": "2026-08-22T18:22:33Z",
+          "data_from": "2026-06-07T03:26:42Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "fsuipc7",
@@ -344,7 +439,12 @@
           "status": "Likely safe",
           "release_tag": "7.5.9",
           "release_published_at": "2026-09-29T12:00:00Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "7.5.9",
+          "first_release_at": "2026-09-29T12:00:00Z",
+          "data_from": "2026-09-29T12:00:00Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "mobiflight",
@@ -353,7 +453,12 @@
           "status": "Likely safe",
           "release_tag": "11.0.0",
           "release_published_at": "2026-03-16T14:50:54Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "11.0.0",
+          "first_release_at": "2026-03-16T14:50:54Z",
+          "data_from": "2026-03-08T20:24:40Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -372,7 +477,12 @@
           "status": "Likely safe",
           "release_tag": "v2024.1.0",
           "release_published_at": "2026-08-22T18:22:33Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v2024.1.0",
+          "first_release_at": "2026-08-22T18:22:33Z",
+          "data_from": "2026-06-07T03:26:42Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "fsuipc7",
@@ -381,7 +491,12 @@
           "status": "Likely safe",
           "release_tag": "7.5.9",
           "release_published_at": "2026-09-29T12:00:00Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "7.5.9",
+          "first_release_at": "2026-09-29T12:00:00Z",
+          "data_from": "2026-09-29T12:00:00Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "mobiflight",
@@ -390,7 +505,12 @@
           "status": "Safe",
           "release_tag": "11.0.0",
           "release_published_at": "2026-03-16T14:50:54Z",
-          "mentions_patch": true
+          "mentions_patch": true,
+          "first_release_tag": "11.0.0",
+          "first_release_at": "2026-03-16T14:50:54Z",
+          "data_from": "2026-03-08T20:24:40Z",
+          "first_mention_tag": "11.0.0",
+          "first_mention_at": "2026-03-16T14:50:54Z"
         }
       ]
     }

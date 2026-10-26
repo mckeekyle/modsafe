@@ -165,7 +165,12 @@ class TestBuild(unittest.TestCase):
                 self.assertIn(f"/{g['slug']}/", sitemap)
                 self.assertIn(f"/{g['slug']}/", llms)
                 json.loads((dist / g["slug"] / "status.json").read_text())
-                self.assertTrue((dist / g["slug"] / "history" / "index.html").exists())
+                d = json.loads((dist / g["slug"] / "status.json").read_text())
+                hist_page = (dist / g["slug"] / "history" / "index.html").exists()
+                self.assertEqual(hist_page, build.has_history(d), g["slug"])
+                if not hist_page:  # too little history: 301 to the game page, kept out of the sitemap
+                    self.assertIn(f"/{g['slug']}/history/ /{g['slug']}/ 301", (dist / "_redirects").read_text())
+                    self.assertNotIn(f"/{g['slug']}/history/", sitemap)
             home = (dist / "index.html").read_text()
             for g in GAMES:
                 self.assertIn(f'href="/{g["slug"]}/"', home)

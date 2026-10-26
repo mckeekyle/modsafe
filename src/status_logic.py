@@ -10,7 +10,7 @@ Statuses (honest, evidence-based):
 from __future__ import annotations
 
 import re
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from typing import Any, Optional
 
 
@@ -286,14 +286,21 @@ def status_for_patch_history(
     patch_version: str,
     patch_published_at: str,
     mention_fn=None,
+    line_tag: Optional[str] = None,
 ) -> dict[str, Any]:
     """
     For a historical patch, find the best matching release evidence:
     prefer a release that mentions the patch; else the first release on/after the patch.
+
+    Also returns timing facts for the history page: ``first_release_tag``/``first_release_at`` (earliest stable
+    release on/after the patch, whether or not it names it) and ``data_from`` (oldest release in the fetched list,
+    so the page can tell "no release" apart from "older than the release data we have"). ``line_tag`` (the current
+    stable tag) skips mentions on a separate maintenance line, e.g. tModLoader's 1.3-legacy v0.11.x builds.
     """
     patch_dt = parse_iso(patch_published_at)
     mentioned = []
     after = []
+    data_from = None
     for r in releases:
         if r.get("draft"):
             continue
@@ -302,11 +309,32 @@ def status_for_patch_history(
         pub = r.get("published_at")
         notes = f"{tag}\n{body}"
         hit = mention_fn(notes) if mention_fn is not None else notes_mention_patch(notes, patch_version)
-        if hit:
+        in_line = line_tag is None or same_release_line(tag, line_tag)
+        if hit and in_line:
             mentioned.append(r)
         rdt = parse_iso(pub)
-        if patch_dt and rdt and rdt >= patch_dt and not is_effectively_prerelease(r):
+        if rdt and (data_from is None or rdt < data_from):
+            data_from = rdt
+        if patch_dt and rdt and rdt >= patch_dt and in_line and not is_effectively_prerelease(r):
             after.append(r)
+    after.sort(key=lambda r: parse_iso(r.get("published_at")) or datetime.fromtimestamp(0, tz=timezone.utc))
+    timing = {
+        "first_release_tag": after[0].get("tag_name") if after else None,
+        "first_release_at": after[0].get("published_at") if after else None,
+        "data_from": data_from.isoformat().replace("+00:00", "Z") if data_from else None,
+        "first_mention_tag": None,
+        "first_mention_at": None,
+    }
+    # Earliest release that names the patch, published no earlier than 2 days before it (prep releases for an
+    # announced patch count; a years-older release that happens to contain the version string does not).
+    if patch_dt:
+        lead = patch_dt - timedelta(days=2)
+        named = sorted((r for r in mentioned if not is_effectively_prerelease(r)
+                        and (parse_iso(r.get("published_at")) or lead - timedelta(days=1)) >= lead),
+                       key=lambda r: parse_iso(r.get("published_at")))
+        if named:
+            timing["first_mention_tag"] = named[0].get("tag_name")
+            timing["first_mention_at"] = named[0].get("published_at")
 
     if mentioned:
         # Newest mention
@@ -321,6 +349,7 @@ def status_for_patch_history(
             "release_tag": r.get("tag_name"),
             "release_published_at": r.get("published_at"),
             "mentions_patch": True,
+            **timing,
         }
 
     if after:
@@ -334,6 +363,7 @@ def status_for_patch_history(
             "release_tag": r.get("tag_name"),
             "release_published_at": r.get("published_at"),
             "mentions_patch": False,
+            **timing,
         }
 
     return {
@@ -341,6 +371,7 @@ def status_for_patch_history(
         "release_tag": None,
         "release_published_at": None,
         "mentions_patch": False,
+        **timing,
     }
 
 

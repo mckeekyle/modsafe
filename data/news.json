@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T18:39:31Z",
+  "generated_at": "2026-10-26T19:30:12Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,42 @@
     }
   ],
   "items": [
+    {
+      "title": "CD Projekt marks the 19th anniversary of its first Witcher RPG with a tribute to BioWare: 'Their support helped turn our vision into Geralt\u2019s first interactive adventure'",
+      "url": "https://www.pcgamer.com/games/the-witcher/cd-projekt-marks-the-19th-anniversary-of-its-first-witcher-rpg-with-a-tribute-to-bioware-their-support-helped-turn-our-vision-into-geralts-first-interactive-adventure/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-26T19:05:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "What to play this Halloween, plus last-minute costume ideas and spooky movie recommendations",
+      "url": "https://www.pcgamer.com/games/horror/2026-halloween-horror-gaming-hub-recommendations/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-26T18:59:37Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "A long-overdue conversation with Jordan Mechner",
+      "url": "https://www.pcgamer.com/gaming-industry/an-overdue-conversation-with-jordan-mechner/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-26T18:52:49Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Amid sweeping layoffs at Xbox and massive AI investments, Microsoft introduces a \"Voluntary Exit Offer\" to 60,000 workers",
+      "url": "https://www.eurogamer.net/xbox-ai-microsoft-voluntary-exit-offer-60000",
+      "source": "Eurogamer",
+      "published_at": "2026-10-26T18:44:22Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "The GameMaker engine series behind Undertale, Hotline Miami and Spelunky is going free for commercial use on PC",
       "url": "https://www.rockpapershotgun.com/the-gamemaker-engine-series-behind-undertale-hotline-miami-and-spelunky-is-going-free-for-commercial-use-on-pc",
@@ -531,42 +567,6 @@
       "url": "https://www.rockpapershotgun.com/helena-cloud-district-is-a-megastructure-photography-game-laser-targeted-at-my-interests-and-its-out-next-week",
       "source": "Rock Paper Shotgun",
       "published_at": "2026-10-24T18:58:26Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Top Xbox exec promoted in brand 'reset' leaves after 3 months in role",
-      "url": "https://www.pcgamer.com/gaming-industry/top-xbox-exec-promoted-in-brand-reset-leaves-after-3-months-in-role/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-24T18:58:24Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Penguin Colony review: A daringly weird horror game whose atmosphere and surprises overcome its rough edges",
-      "url": "https://www.pcgamer.com/games/horror/penguin-colony-review/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-24T18:10:01Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Stalker 2's next update has already leaked",
-      "url": "https://www.eurogamer.net/stalker-2-update-2-1-zone-lookout-playstation-asia-leak",
-      "source": "Eurogamer",
-      "published_at": "2026-10-24T18:08:22Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "BioWare's incredible legacy will continue as long as there are RPGs",
-      "url": "https://www.pcgamer.com/games/rpg/biowares-incredible-legacy-will-continue-as-long-as-there-are-rpgs/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-24T18:00:00Z",
       "games": [],
       "kind": "news",
       "highlight": false

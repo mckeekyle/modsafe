@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T18:38:54Z",
+  "generated_at": "2026-10-26T19:29:35Z",
   "game": {
     "slug": "terraria",
     "name": "Terraria",
@@ -64,10 +64,15 @@
           "id": "tmodloader",
           "short": "tModLoader",
           "name": "tModLoader",
-          "status": "Safe",
-          "release_tag": "v0.11.8.11",
-          "release_published_at": "2026-08-27T23:29:48Z",
-          "mentions_patch": true
+          "status": "Likely safe",
+          "release_tag": "v2026.07.3.0",
+          "release_published_at": "2026-09-01T00:11:46Z",
+          "mentions_patch": false,
+          "first_release_tag": "v2026.07.3.0",
+          "first_release_at": "2026-09-01T00:11:46Z",
+          "data_from": "2026-05-01T00:23:19Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -86,7 +91,12 @@
           "status": "Likely safe",
           "release_tag": "v2026.07.3.0",
           "release_published_at": "2026-09-01T00:11:46Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v2026.07.3.0",
+          "first_release_at": "2026-09-01T00:11:46Z",
+          "data_from": "2026-05-01T00:23:19Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -102,10 +112,15 @@
           "id": "tmodloader",
           "short": "tModLoader",
           "name": "tModLoader",
-          "status": "Safe",
-          "release_tag": "v0.11.8.11",
-          "release_published_at": "2026-08-27T23:29:48Z",
-          "mentions_patch": true
+          "status": "Likely safe",
+          "release_tag": "v2026.04.3.0",
+          "release_published_at": "2026-06-01T00:27:54Z",
+          "mentions_patch": false,
+          "first_release_tag": "v2026.04.3.0",
+          "first_release_at": "2026-06-01T00:27:54Z",
+          "data_from": "2026-05-01T00:23:19Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     }

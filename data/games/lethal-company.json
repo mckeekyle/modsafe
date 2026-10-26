@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T18:38:33Z",
+  "generated_at": "2026-10-26T19:29:15Z",
   "game": {
     "slug": "lethal-company",
     "name": "Lethal Company",
@@ -135,7 +135,12 @@
           "status": "Not affected by patches",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2026-03-17T05:05:21Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "lethallib",
@@ -144,7 +149,12 @@
           "status": "No post-patch release",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2024-01-12T16:12:14Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "lethallevelloader",
@@ -153,7 +163,12 @@
           "status": "Safe",
           "release_tag": "1.7.13",
           "release_published_at": "2026-09-18T10:52:51Z",
-          "mentions_patch": true
+          "mentions_patch": true,
+          "first_release_tag": "1.7.13",
+          "first_release_at": "2026-09-18T10:52:51Z",
+          "data_from": "2026-09-18T10:52:51Z",
+          "first_mention_tag": "1.7.13",
+          "first_mention_at": "2026-09-18T10:52:51Z"
         },
         {
           "id": "morecompany",
@@ -162,7 +177,12 @@
           "status": "Likely safe",
           "release_tag": "1.14.0",
           "release_published_at": "2026-04-25T01:28:40Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.14.0",
+          "first_release_at": "2026-04-25T01:28:40Z",
+          "data_from": "2026-04-25T01:28:40Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -181,7 +201,12 @@
           "status": "Not affected by patches",
           "release_tag": null,
           "release_published_at": null,
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2026-03-17T05:05:21Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "lethallib",
@@ -190,7 +215,12 @@
           "status": "Safe",
           "release_tag": "v1.2.0",
           "release_published_at": "2026-04-01T20:00:18Z",
-          "mentions_patch": true
+          "mentions_patch": true,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2024-01-12T16:12:14Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "lethallevelloader",
@@ -199,7 +229,12 @@
           "status": "Likely safe",
           "release_tag": "1.7.13",
           "release_published_at": "2026-09-18T10:52:51Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.7.13",
+          "first_release_at": "2026-09-18T10:52:51Z",
+          "data_from": "2026-09-18T10:52:51Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "morecompany",
@@ -208,7 +243,12 @@
           "status": "Likely safe",
           "release_tag": "1.14.0",
           "release_published_at": "2026-04-25T01:28:40Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.14.0",
+          "first_release_at": "2026-04-25T01:28:40Z",
+          "data_from": "2026-04-25T01:28:40Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -227,7 +267,12 @@
           "status": "Not affected by patches",
           "release_tag": "5.4.2305",
           "release_published_at": "2026-03-17T05:05:21Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "5.4.2305",
+          "first_release_at": "2026-03-17T05:05:21Z",
+          "data_from": "2026-03-17T05:05:21Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "lethallib",
@@ -236,7 +281,12 @@
           "status": "Likely safe",
           "release_tag": "v1.2.0",
           "release_published_at": "2026-04-01T20:00:18Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v1.2.0",
+          "first_release_at": "2026-04-01T20:00:18Z",
+          "data_from": "2024-01-12T16:12:14Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "lethallevelloader",
@@ -245,7 +295,12 @@
           "status": "Likely safe",
           "release_tag": "1.7.13",
           "release_published_at": "2026-09-18T10:52:51Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.7.13",
+          "first_release_at": "2026-09-18T10:52:51Z",
+          "data_from": "2026-09-18T10:52:51Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "morecompany",
@@ -254,7 +309,12 @@
           "status": "Likely safe",
           "release_tag": "1.14.0",
           "release_published_at": "2026-04-25T01:28:40Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.14.0",
+          "first_release_at": "2026-04-25T01:28:40Z",
+          "data_from": "2026-04-25T01:28:40Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -273,7 +333,12 @@
           "status": "Not affected by patches",
           "release_tag": "5.4.2305",
           "release_published_at": "2026-03-17T05:05:21Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "5.4.2305",
+          "first_release_at": "2026-03-17T05:05:21Z",
+          "data_from": "2026-03-17T05:05:21Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "lethallib",
@@ -282,7 +347,12 @@
           "status": "Likely safe",
           "release_tag": "v1.1.1",
           "release_published_at": "2025-06-11T01:11:40Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v1.1.1",
+          "first_release_at": "2025-06-11T01:11:40Z",
+          "data_from": "2024-01-12T16:12:14Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "lethallevelloader",
@@ -291,7 +361,12 @@
           "status": "Likely safe",
           "release_tag": "1.7.13",
           "release_published_at": "2026-09-18T10:52:51Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.7.13",
+          "first_release_at": "2026-09-18T10:52:51Z",
+          "data_from": "2026-09-18T10:52:51Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "morecompany",
@@ -300,7 +375,12 @@
           "status": "Likely safe",
           "release_tag": "1.14.0",
           "release_published_at": "2026-04-25T01:28:40Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.14.0",
+          "first_release_at": "2026-04-25T01:28:40Z",
+          "data_from": "2026-04-25T01:28:40Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -319,7 +399,12 @@
           "status": "Not affected by patches",
           "release_tag": "5.4.2305",
           "release_published_at": "2026-03-17T05:05:21Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "5.4.2305",
+          "first_release_at": "2026-03-17T05:05:21Z",
+          "data_from": "2026-03-17T05:05:21Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "lethallib",
@@ -328,7 +413,12 @@
           "status": "Likely safe",
           "release_tag": "v1.1.1",
           "release_published_at": "2025-06-11T01:11:40Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "v1.1.1",
+          "first_release_at": "2025-06-11T01:11:40Z",
+          "data_from": "2024-01-12T16:12:14Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "lethallevelloader",
@@ -337,7 +427,12 @@
           "status": "Likely safe",
           "release_tag": "1.7.13",
           "release_published_at": "2026-09-18T10:52:51Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.7.13",
+          "first_release_at": "2026-09-18T10:52:51Z",
+          "data_from": "2026-09-18T10:52:51Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "morecompany",
@@ -346,7 +441,12 @@
           "status": "Likely safe",
           "release_tag": "1.14.0",
           "release_published_at": "2026-04-25T01:28:40Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.14.0",
+          "first_release_at": "2026-04-25T01:28:40Z",
+          "data_from": "2026-04-25T01:28:40Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -365,7 +465,12 @@
           "status": "Not affected by patches",
           "release_tag": "5.4.2305",
           "release_published_at": "2026-03-17T05:05:21Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "5.4.2305",
+          "first_release_at": "2026-03-17T05:05:21Z",
+          "data_from": "2026-03-17T05:05:21Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "lethallib",
@@ -374,7 +479,12 @@
           "status": "Safe",
           "release_tag": "v1.1.0",
           "release_published_at": "2025-06-01T15:28:27Z",
-          "mentions_patch": true
+          "mentions_patch": true,
+          "first_release_tag": "v1.1.0",
+          "first_release_at": "2025-06-01T15:28:27Z",
+          "data_from": "2024-01-12T16:12:14Z",
+          "first_mention_tag": "v1.1.0",
+          "first_mention_at": "2025-06-01T15:28:27Z"
         },
         {
           "id": "lethallevelloader",
@@ -383,7 +493,12 @@
           "status": "Likely safe",
           "release_tag": "1.7.13",
           "release_published_at": "2026-09-18T10:52:51Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.7.13",
+          "first_release_at": "2026-09-18T10:52:51Z",
+          "data_from": "2026-09-18T10:52:51Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "morecompany",
@@ -392,7 +507,12 @@
           "status": "Likely safe",
           "release_tag": "1.14.0",
           "release_published_at": "2026-04-25T01:28:40Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.14.0",
+          "first_release_at": "2026-04-25T01:28:40Z",
+          "data_from": "2026-04-25T01:28:40Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -411,16 +531,26 @@
           "status": "Not affected by patches",
           "release_tag": "5.4.2305",
           "release_published_at": "2026-03-17T05:05:21Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "5.4.2305",
+          "first_release_at": "2026-03-17T05:05:21Z",
+          "data_from": "2026-03-17T05:05:21Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "lethallib",
           "short": "LethalLib",
           "name": "LethalLib",
           "status": "Likely safe",
-          "release_tag": "v0.16.3",
-          "release_published_at": "2025-03-15T09:02:43Z",
-          "mentions_patch": false
+          "release_tag": "v1.0.0",
+          "release_published_at": "2025-03-25T04:32:27Z",
+          "mentions_patch": false,
+          "first_release_tag": "v1.0.0",
+          "first_release_at": "2025-03-25T04:32:27Z",
+          "data_from": "2024-01-12T16:12:14Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "lethallevelloader",
@@ -429,7 +559,12 @@
           "status": "Likely safe",
           "release_tag": "1.7.13",
           "release_published_at": "2026-09-18T10:52:51Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.7.13",
+          "first_release_at": "2026-09-18T10:52:51Z",
+          "data_from": "2026-09-18T10:52:51Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "morecompany",
@@ -438,7 +573,12 @@
           "status": "Likely safe",
           "release_tag": "1.14.0",
           "release_published_at": "2026-04-25T01:28:40Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.14.0",
+          "first_release_at": "2026-04-25T01:28:40Z",
+          "data_from": "2026-04-25T01:28:40Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -457,16 +597,26 @@
           "status": "Not affected by patches",
           "release_tag": "5.4.2305",
           "release_published_at": "2026-03-17T05:05:21Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "5.4.2305",
+          "first_release_at": "2026-03-17T05:05:21Z",
+          "data_from": "2026-03-17T05:05:21Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "lethallib",
           "short": "LethalLib",
           "name": "LethalLib",
           "status": "Likely safe",
-          "release_tag": "v0.16.2",
-          "release_published_at": "2024-12-10T23:02:57Z",
-          "mentions_patch": false
+          "release_tag": "v1.0.0",
+          "release_published_at": "2025-03-25T04:32:27Z",
+          "mentions_patch": false,
+          "first_release_tag": "v1.0.0",
+          "first_release_at": "2025-03-25T04:32:27Z",
+          "data_from": "2024-01-12T16:12:14Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "lethallevelloader",
@@ -475,7 +625,12 @@
           "status": "Likely safe",
           "release_tag": "1.7.13",
           "release_published_at": "2026-09-18T10:52:51Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.7.13",
+          "first_release_at": "2026-09-18T10:52:51Z",
+          "data_from": "2026-09-18T10:52:51Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "morecompany",
@@ -484,7 +639,12 @@
           "status": "Likely safe",
           "release_tag": "1.14.0",
           "release_published_at": "2026-04-25T01:28:40Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.14.0",
+          "first_release_at": "2026-04-25T01:28:40Z",
+          "data_from": "2026-04-25T01:28:40Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -503,16 +663,26 @@
           "status": "Not affected by patches",
           "release_tag": "5.4.2305",
           "release_published_at": "2026-03-17T05:05:21Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "5.4.2305",
+          "first_release_at": "2026-03-17T05:05:21Z",
+          "data_from": "2026-03-17T05:05:21Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "lethallib",
           "short": "LethalLib",
           "name": "LethalLib",
           "status": "Likely safe",
-          "release_tag": "v0.16.2",
-          "release_published_at": "2024-12-10T23:02:57Z",
-          "mentions_patch": false
+          "release_tag": "v1.0.0",
+          "release_published_at": "2025-03-25T04:32:27Z",
+          "mentions_patch": false,
+          "first_release_tag": "v1.0.0",
+          "first_release_at": "2025-03-25T04:32:27Z",
+          "data_from": "2024-01-12T16:12:14Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "lethallevelloader",
@@ -521,7 +691,12 @@
           "status": "Likely safe",
           "release_tag": "1.7.13",
           "release_published_at": "2026-09-18T10:52:51Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.7.13",
+          "first_release_at": "2026-09-18T10:52:51Z",
+          "data_from": "2026-09-18T10:52:51Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "morecompany",
@@ -530,7 +705,12 @@
           "status": "Likely safe",
           "release_tag": "1.14.0",
           "release_published_at": "2026-04-25T01:28:40Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.14.0",
+          "first_release_at": "2026-04-25T01:28:40Z",
+          "data_from": "2026-04-25T01:28:40Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -549,16 +729,26 @@
           "status": "Not affected by patches",
           "release_tag": "5.4.2305",
           "release_published_at": "2026-03-17T05:05:21Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "5.4.2305",
+          "first_release_at": "2026-03-17T05:05:21Z",
+          "data_from": "2026-03-17T05:05:21Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "lethallib",
           "short": "LethalLib",
           "name": "LethalLib",
           "status": "Likely safe",
-          "release_tag": "v0.16.2",
-          "release_published_at": "2024-12-10T23:02:57Z",
-          "mentions_patch": false
+          "release_tag": "v1.0.0",
+          "release_published_at": "2025-03-25T04:32:27Z",
+          "mentions_patch": false,
+          "first_release_tag": "v1.0.0",
+          "first_release_at": "2025-03-25T04:32:27Z",
+          "data_from": "2024-01-12T16:12:14Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "lethallevelloader",
@@ -567,7 +757,12 @@
           "status": "Likely safe",
           "release_tag": "1.7.13",
           "release_published_at": "2026-09-18T10:52:51Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.7.13",
+          "first_release_at": "2026-09-18T10:52:51Z",
+          "data_from": "2026-09-18T10:52:51Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "morecompany",
@@ -576,7 +771,12 @@
           "status": "Likely safe",
           "release_tag": "1.14.0",
           "release_published_at": "2026-04-25T01:28:40Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.14.0",
+          "first_release_at": "2026-04-25T01:28:40Z",
+          "data_from": "2026-04-25T01:28:40Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -595,16 +795,26 @@
           "status": "Not affected by patches",
           "release_tag": "5.4.2305",
           "release_published_at": "2026-03-17T05:05:21Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "5.4.2305",
+          "first_release_at": "2026-03-17T05:05:21Z",
+          "data_from": "2026-03-17T05:05:21Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "lethallib",
           "short": "LethalLib",
           "name": "LethalLib",
           "status": "Likely safe",
-          "release_tag": "v0.16.2",
-          "release_published_at": "2024-12-10T23:02:57Z",
-          "mentions_patch": false
+          "release_tag": "v1.0.0",
+          "release_published_at": "2025-03-25T04:32:27Z",
+          "mentions_patch": false,
+          "first_release_tag": "v1.0.0",
+          "first_release_at": "2025-03-25T04:32:27Z",
+          "data_from": "2024-01-12T16:12:14Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "lethallevelloader",
@@ -613,7 +823,12 @@
           "status": "Likely safe",
           "release_tag": "1.7.13",
           "release_published_at": "2026-09-18T10:52:51Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.7.13",
+          "first_release_at": "2026-09-18T10:52:51Z",
+          "data_from": "2026-09-18T10:52:51Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "morecompany",
@@ -622,7 +837,12 @@
           "status": "Likely safe",
           "release_tag": "1.14.0",
           "release_published_at": "2026-04-25T01:28:40Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.14.0",
+          "first_release_at": "2026-04-25T01:28:40Z",
+          "data_from": "2026-04-25T01:28:40Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -641,16 +861,26 @@
           "status": "Not affected by patches",
           "release_tag": "5.4.2305",
           "release_published_at": "2026-03-17T05:05:21Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "5.4.2305",
+          "first_release_at": "2026-03-17T05:05:21Z",
+          "data_from": "2026-03-17T05:05:21Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "lethallib",
           "short": "LethalLib",
           "name": "LethalLib",
           "status": "Likely safe",
-          "release_tag": "v0.16.1",
-          "release_published_at": "2024-07-11T22:10:49Z",
-          "mentions_patch": false
+          "release_tag": "v1.0.0",
+          "release_published_at": "2025-03-25T04:32:27Z",
+          "mentions_patch": false,
+          "first_release_tag": "v1.0.0",
+          "first_release_at": "2025-03-25T04:32:27Z",
+          "data_from": "2024-01-12T16:12:14Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "lethallevelloader",
@@ -659,7 +889,12 @@
           "status": "Likely safe",
           "release_tag": "1.7.13",
           "release_published_at": "2026-09-18T10:52:51Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.7.13",
+          "first_release_at": "2026-09-18T10:52:51Z",
+          "data_from": "2026-09-18T10:52:51Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "morecompany",
@@ -668,7 +903,12 @@
           "status": "Likely safe",
           "release_tag": "1.14.0",
           "release_published_at": "2026-04-25T01:28:40Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.14.0",
+          "first_release_at": "2026-04-25T01:28:40Z",
+          "data_from": "2026-04-25T01:28:40Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -687,16 +927,26 @@
           "status": "Not affected by patches",
           "release_tag": "5.4.2305",
           "release_published_at": "2026-03-17T05:05:21Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "5.4.2305",
+          "first_release_at": "2026-03-17T05:05:21Z",
+          "data_from": "2026-03-17T05:05:21Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "lethallib",
           "short": "LethalLib",
           "name": "LethalLib",
-          "status": "Safe",
-          "release_tag": "v0.16.0",
-          "release_published_at": "2024-05-28T13:18:33Z",
-          "mentions_patch": true
+          "status": "Likely safe",
+          "release_tag": "v1.0.0",
+          "release_published_at": "2025-03-25T04:32:27Z",
+          "mentions_patch": false,
+          "first_release_tag": "v1.0.0",
+          "first_release_at": "2025-03-25T04:32:27Z",
+          "data_from": "2024-01-12T16:12:14Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "lethallevelloader",
@@ -705,7 +955,12 @@
           "status": "Likely safe",
           "release_tag": "1.7.13",
           "release_published_at": "2026-09-18T10:52:51Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.7.13",
+          "first_release_at": "2026-09-18T10:52:51Z",
+          "data_from": "2026-09-18T10:52:51Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         },
         {
           "id": "morecompany",
@@ -714,7 +969,12 @@
           "status": "Likely safe",
           "release_tag": "1.14.0",
           "release_published_at": "2026-04-25T01:28:40Z",
-          "mentions_patch": false
+          "mentions_patch": false,
+          "first_release_tag": "1.14.0",
+          "first_release_at": "2026-04-25T01:28:40Z",
+          "data_from": "2026-04-25T01:28:40Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     }
