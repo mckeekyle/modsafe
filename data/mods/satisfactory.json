@@ -1,0 +1,189 @@
+{
+  "game": "satisfactory",
+  "verified_at": "2026-10-26",
+  "manager": {
+    "name": "Satisfactory Mod Manager (SMM)",
+    "url": "https://smm.ficsit.app/"
+  },
+  "intro": "Popular, recently updated mods from ficsit.app, the official Satisfactory Mod Repository. Install them with Satisfactory Mod Manager, which adds SML and every library a mod needs. All of these are marked Works for the stable branch on ficsit.app as of the verified date.",
+  "mods": [
+    {
+      "id": "sml",
+      "name": "Satisfactory Mod Loader (SML)",
+      "category": "Framework",
+      "summary": "The mod loader every code mod needs. SMM installs and updates it for you.",
+      "source": "ficsit",
+      "ficsit_ref": "SML",
+      "url": "https://ficsit.app/mod/SML",
+      "requires": [],
+      "framework_id": "sml",
+      "note": "Don't install it by hand; let the mod manager pick the version.",
+      "last_updated": "2026-06-06"
+    },
+    {
+      "id": "smm",
+      "name": "Satisfactory Mod Manager",
+      "category": "Mod manager",
+      "summary": "Installs mods, dependencies and SML, with profiles you can share for multiplayer.",
+      "source": "github",
+      "url": "https://github.com/satisfactorymodding/SatisfactoryModManager",
+      "requires": [],
+      "framework_id": "smm"
+    },
+    {
+      "id": "smart",
+      "name": "Smart!",
+      "category": "Building",
+      "summary": "Build grids of foundations, walls and machines in one go, with auto-connected belts and power.",
+      "source": "ficsit",
+      "ficsit_ref": "SmartFoundations",
+      "url": "https://ficsit.app/mod/SmartFoundations",
+      "requires": [
+        "sml"
+      ],
+      "note": "Very popular; check its ficsit.app page after big game updates.",
+      "last_updated": "2026-10-23"
+    },
+    {
+      "id": "infinite-zoop",
+      "name": "Infinite Zoop",
+      "category": "Building",
+      "summary": "Raises the zoop (drag-build) limit and lets you zoop in two directions at once.",
+      "source": "ficsit",
+      "ficsit_ref": "InfiniteZoop",
+      "url": "https://ficsit.app/mod/InfiniteZoop",
+      "requires": [
+        "sml"
+      ],
+      "last_updated": "2026-07-28"
+    },
+    {
+      "id": "infinite-nudge",
+      "name": "Infinite Nudge",
+      "category": "Building",
+      "summary": "Nudge, rotate and scale buildables in finer steps and on any axis while placing them.",
+      "source": "ficsit",
+      "ficsit_ref": "InfiniteNudge",
+      "url": "https://ficsit.app/mod/InfiniteNudge",
+      "requires": [
+        "sml"
+      ],
+      "last_updated": "2026-09-02"
+    },
+    {
+      "id": "refined-power",
+      "name": "Refined Power",
+      "category": "Power",
+      "summary": "Adds 30+ power buildings, including solar, wind, hydro and nuclear options.",
+      "source": "ficsit",
+      "ficsit_ref": "RefinedPower",
+      "url": "https://ficsit.app/mod/RefinedPower",
+      "requires": [
+        "sml"
+      ],
+      "also_requires": [
+        "ModularUI",
+        "RefinedRDLib (with RefinedRDApi)"
+      ],
+      "last_updated": "2026-08-14"
+    },
+    {
+      "id": "structural-solutions",
+      "name": "Structural Solutions",
+      "category": "Building",
+      "summary": "300+ extra building pieces: foundations, walls, ramps and decorative parts.",
+      "source": "ficsit",
+      "ficsit_ref": "SS_Mod",
+      "url": "https://ficsit.app/mod/SS_Mod",
+      "requires": [
+        "sml"
+      ],
+      "last_updated": "2026-06-09"
+    },
+    {
+      "id": "linear-motion",
+      "name": "Linear Motion",
+      "category": "Logistics",
+      "summary": "Elevators and other moving platforms for getting around tall factories.",
+      "source": "ficsit",
+      "ficsit_ref": "LinearMotion",
+      "url": "https://ficsit.app/mod/LinearMotion",
+      "requires": [
+        "sml"
+      ],
+      "last_updated": "2026-08-02"
+    },
+    {
+      "id": "efficiency-checker",
+      "name": "Efficiency Checker Mod",
+      "category": "Tools",
+      "summary": "Shows whether a production line is under- or over-supplied, with a buildable and a hand tool.",
+      "source": "ficsit",
+      "ficsit_ref": "EfficiencyCheckerMod",
+      "url": "https://ficsit.app/mod/EfficiencyCheckerMod",
+      "requires": [
+        "sml"
+      ],
+      "also_requires": [
+        "MarcioCommonLibs"
+      ],
+      "last_updated": "2026-09-27"
+    },
+    {
+      "id": "load-balancers",
+      "name": "Modular Load Balancers",
+      "category": "Logistics",
+      "summary": "Snap-together splitter blocks that build even load balancers without the usual spaghetti.",
+      "source": "ficsit",
+      "ficsit_ref": "LoadBalancers",
+      "url": "https://ficsit.app/mod/LoadBalancers",
+      "requires": [
+        "sml"
+      ],
+      "last_updated": "2026-08-12"
+    },
+    {
+      "id": "counter-limiter",
+      "name": "Throughput Counter and Limiter",
+      "category": "Logistics",
+      "summary": "A belt attachment that shows real items per minute and can cap belt throughput.",
+      "source": "ficsit",
+      "ficsit_ref": "CounterLimiter",
+      "url": "https://ficsit.app/mod/CounterLimiter",
+      "requires": [
+        "sml"
+      ],
+      "last_updated": "2026-08-17"
+    },
+    {
+      "id": "ficsit-farming",
+      "name": "Ficsit Farming",
+      "category": "Content",
+      "summary": "Grow crops and raise animals as new production chains.",
+      "source": "ficsit",
+      "ficsit_ref": "FicsitFarming",
+      "url": "https://ficsit.app/mod/FicsitFarming",
+      "requires": [
+        "sml"
+      ],
+      "also_requires": [
+        "ModularUI",
+        "RefinedRDLib (with RefinedRDApi)"
+      ],
+      "last_updated": "2026-08-14"
+    },
+    {
+      "id": "minimap",
+      "name": "MiniMap",
+      "category": "Interface",
+      "summary": "Adds a minimap to your HUD.",
+      "source": "ficsit",
+      "ficsit_ref": "MiniMap",
+      "url": "https://ficsit.app/mod/MiniMap",
+      "requires": [
+        "sml"
+      ],
+      "last_updated": "2026-07-02"
+    }
+  ]
+}

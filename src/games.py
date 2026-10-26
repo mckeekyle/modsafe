@@ -480,6 +480,36 @@ GAMES = [
                  "an update. If the game crashes on startup, delete modloader_cache.bin and rerun the mod loader."),
         "blurb": "Each DOOM: The Dark Ages update needs a new supported-build entry for the Atlan patcher; mods themselves can still break after updates.",
     },
+    {
+        "slug": "satisfactory",
+        "name": "Satisfactory",
+        "short": "Satisfactory",
+        "developer": "Coffee Stain Studios",
+        "genre": "Factory sim",
+        "steam_appid": 526870,
+        # Stable-branch posts only ("1.2 Update Fixes v1.2.4.1", "Satisfactory 1.2 Update out now!"). Experimental
+        # (test-branch) posts are excluded; the Steam check reads the public branch only.
+        "patch_rule": {
+            "include": r"^\d+\.\d+\s+(?:update\s+)?fixes\s+v\d|^satisfactory\s+\d+\.\d+\s+(?:update\s+)?out now|^fics\*mas update v\d",
+            "exclude": r"experimental|\bptb\b|board game|anniversary",
+            "version": r"(?:^.*\bv(?=\d)|^(?:satisfactory\s+)?)(\d+(?:\.\d+)+)",
+            "require_version": True,
+            "label": "{v}",
+        },
+        "frameworks": [
+            {"id": "sml", "name": "Satisfactory Mod Loader (SML)", "short": "SML", "source": "ficsit_sml",
+             "issues_repo": "satisfactorymodding/SatisfactoryModLoader", "url": "https://ficsit.app/mod/SML"},
+            {"id": "smm", "name": "Satisfactory Mod Manager (SMM)", "short": "SMM", "source": "github",
+             "repo": "satisfactorymodding/SatisfactoryModManager", "url": "https://github.com/satisfactorymodding/SatisfactoryModManager",
+             "agnostic": True, "agnostic_note": "Installs mods and picks SML versions for you; it isn't built against a game version."},
+        ],
+        "extra_links": [("ficsit.app (Satisfactory Mod Repository)", "https://ficsit.app/"),
+                        ("Satisfactory Modding documentation", "https://docs.ficsit.app/satisfactory-modding/latest/index.html")],
+        "wiki": "https://docs.ficsit.app/satisfactory-modding/latest/index.html",
+        "note": ("ModSafe tracks the stable (Early Access) branch; Experimental needs its own SML build. "
+                 "Every player in a multiplayer session needs the same mods."),
+        "blurb": "Major Satisfactory updates (1.1, 1.2) change the game's code, so SML and C++ mods must be rebuilt; the smaller fix patches usually keep working.",
+    },
 ]
 
 GAMES_BY_SLUG = {g["slug"]: g for g in GAMES}

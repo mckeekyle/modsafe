@@ -710,6 +710,7 @@ SOURCE_NAMES = {"github": "GitHub releases", "github_tags": "GitHub tags", "thun
                 "decky_store": "the Decky plugin store API", "fsuipc": "fsuipc.com", "mc_fabric": "Fabric meta",
                 "mc_forge": "Forge promotions", "mc_neoforge": "NeoForge maven", "mc_modrinth": "the Modrinth API",
                 "manual_shv": "a hand-checked Script Hook V record",
+                "ficsit_sml": "the ficsit.app (Satisfactory Mod Repository) API, including its SML compatibility flag",
                 "atlan": "the Atlan patcher's supported-build list and the mod loader's GitHub release", "manual": None}
 
 
@@ -756,6 +757,9 @@ def game_faq(game: dict, data: dict) -> list[dict]:
     if game["slug"] == "stardew-valley":
         items.append({"q": "How do I check individual Stardew mods?",
                       "a": "Use the official SMAPI mod compatibility list at smapi.io/mods, which tracks compatible, broken and obsolete mods."})
+    if game["slug"] == "satisfactory":
+        items.append({"q": "Does this cover the Experimental branch?",
+                      "a": "No. ModSafe tracks the stable (Early Access) branch: stable Steam posts, Steam's public build and ficsit.app's stable-branch SML flag. Experimental often needs a different SML build, so check ficsit.app before switching branches."})
     if (steam_item := guides_mod.game_faq_item(game)):
         items.append(steam_item)
     return items
@@ -918,7 +922,7 @@ def game_news(slug: str, data: dict) -> list[dict]:
 def host_label(url: str) -> str:
     h = url.split("/")[2].replace("www.", "")
     return {"nexusmods.com": "Nexus Mods", "github.com": "GitHub", "thunderstore.io": "Thunderstore", "modrinth.com": "Modrinth",
-            "flightsim.to": "flightsim.to"}.get(h, h)
+            "flightsim.to": "flightsim.to", "ficsit.app": "ficsit.app"}.get(h, h)
 
 
 def mod_cards(game: dict, data: dict, mods: dict, limit: int | None = None) -> str:

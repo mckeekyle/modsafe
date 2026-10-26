@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import sys
 import time
 import urllib.error
@@ -26,6 +27,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from games import GAMES  # noqa: E402
 import feeds  # noqa: E402
 from status_logic import (  # noqa: E402
+    ficsit_compat_adjust,
     confirmed_breakage,
     STATUS_UNKNOWN,
     STATUS_UPDATED,
@@ -178,7 +180,49 @@ def releases_decky_store(fw: dict) -> list[dict]:
              "html_url": fw["url"], "prerelease": False, "draft": False} for v in p.get("versions", [])[:10]]
 
 
-SOURCES = {"github_asset": lambda fw: releases_github_asset(fw), "fsuipc": releases_fsuipc, "decky_store": releases_decky_store, "github": releases_github, "github_tags": releases_github_tags, "thunderstore": releases_thunderstore}
+FICSIT_API = "https://api.ficsit.app/v2/query"
+FICSIT_SML_QUERY = ("{getModByReference(modReference:\"SML\"){compatibility{EA{state note}} "
+                    "versions(filter:{limit:10}){id version created_at game_version changelog}}}")
+
+
+def http_post_json(url: str, payload: dict, timeout: int = 30, retries: int = 3):
+    body = json.dumps(payload).encode("utf-8")
+    h = {"User-Agent": USER_AGENT, "Accept": "application/json", "Content-Type": "application/json"}
+    last: Exception | None = None
+    for attempt in range(retries):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, data=body, headers=h, method="POST"), timeout=timeout) as r:
+                return json.loads(r.read().decode("utf-8"))
+        except (urllib.error.URLError, TimeoutError) as e:
+            last = e
+            time.sleep(3 * (attempt + 1))
+    assert last is not None
+    raise last
+
+
+def parse_ficsit_sml(resp: dict) -> list[dict]:
+    """SML versions from the ficsit.app GraphQL API as release-like dicts, newest first. The stable-branch ('EA')
+    compatibility flag rides on each item as `ficsit_compat`; `game_version` is SML's minimum game CL ('>=491125')."""
+    mod = ((resp or {}).get("data") or {}).get("getModByReference")
+    if not mod or not mod.get("versions"):
+        raise RuntimeError("SML not found in the ficsit.app API response")
+    compat = (mod.get("compatibility") or {}).get("EA")
+    out = []
+    for v in mod["versions"]:
+        out.append({"tag_name": f"v{v['version']}", "name": f"SML {v['version']}",
+                    "body": (v.get("changelog") or "") + f"\nRequires game CL {v.get('game_version') or '?'}",
+                    "published_at": v["created_at"], "html_url": f"https://ficsit.app/mod/SML/version/{v['id']}",
+                    "prerelease": bool(re.search(r"-", v["version"])), "draft": False,
+                    "game_version": v.get("game_version"), "ficsit_compat": compat})
+    out.sort(key=lambda r: r["published_at"], reverse=True)
+    return out
+
+
+def releases_ficsit_sml(fw: dict) -> list[dict]:
+    return parse_ficsit_sml(http_post_json(FICSIT_API, {"query": FICSIT_SML_QUERY}))
+
+
+SOURCES = {"ficsit_sml": releases_ficsit_sml, "github_asset": lambda fw: releases_github_asset(fw), "fsuipc": releases_fsuipc, "decky_store": releases_decky_store, "github": releases_github, "github_tags": releases_github_tags, "thunderstore": releases_thunderstore}
 
 
 def http_get_text(url: str, timeout: int = 30) -> str:
@@ -383,6 +427,9 @@ def build_steam_game(game: dict) -> dict:
                        " maintainers or other users, so it isn't counted as breakage.")
         elif v["status"] != STATUS_UPDATED and label == "Likely safe" and v["status"] == STATUS_UNKNOWN:
             reason += quiet_period_note(age, issues_repo, searched)
+        if fw["source"] == "ficsit_sml":
+            label, reason = ficsit_compat_adjust(label, reason, rel.get("ficsit_compat"), min_cl=rel.get("game_version"),
+                                                 sensitive=sensitive)
         label, reason = apply_unannounced(label, reason, sensitive=sensitive,
                                           release_published_at=rel.get("published_at"), event=unannounced)
         if __import__("re").search(r"(?i)beta|alpha|\brc\d*\b|-pre", rel.get("tag_name") or ""):

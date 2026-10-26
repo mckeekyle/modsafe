@@ -886,3 +886,32 @@ def atlan_verdict(*, newest_entry: Optional[str], build_published_at: str, now: 
     return {"status": V_WAIT, "reason": f"Steam build updated {bday}; the Atlan patcher's newest supported build is "
                                         f"dated {newest_entry}. Wait for an updated config (it is fetched automatically)."
                                         + (f" The build is {int(age)} days old." if age >= FRESH_PATCH_DAYS else "")}
+
+
+# --- Satisfactory: ficsit.app (Satisfactory Mod Repository) SML compatibility ---
+
+FICSIT_BAD_STATES = {"Broken": "Broken", "Damaged": "Damaged (partly broken)"}
+
+
+def ficsit_compat_adjust(label: str, reason: str, compat: Optional[dict], *, min_cl: Optional[str] = None,
+                         sensitive: bool = True) -> tuple[str, str]:
+    """Fold ficsit.app's hand-set SML compatibility flag for the stable branch ('EA' in the API) into a verdict.
+
+    'Broken'/'Damaged' is a breakage report by the repository's maintainers and always wins. 'Works' never upgrades a
+    verdict: the flag carries no game version or date, so right after a patch it may not have been re-checked yet.
+    The experimental branch ('EXP') is ignored. SML declares a *minimum* game changelist (CL); Steam doesn't expose
+    the game's CL, so that number is reported but never used as proof of support."""
+    if not sensitive or label in (V_NODATA, V_AGNOSTIC, V_MANUAL):
+        return label, reason
+    cl = (f" SML requires game build CL {min_cl.lstrip('>=') if min_cl else '?'} or newer (a minimum, not a match: "
+          "Steam doesn't publish the game's CL, so ModSafe can't compare builds directly).") if min_cl else ""
+    state = (compat or {}).get("state")
+    note = ((compat or {}).get("note") or "").strip()
+    if state in FICSIT_BAD_STATES:
+        return V_BROKEN, (reason + f" ficsit.app marks SML as {FICSIT_BAD_STATES[state]} on the stable branch"
+                          + (f": {note}" if note else ".") + cl)
+    if state == "Works":
+        tail = (" ficsit.app lists SML as Works on the stable branch, but that flag is set by hand and may not "
+                "reflect this patch yet." if label == V_WAIT else " ficsit.app lists SML as Works on the stable branch.")
+        return label, reason + tail + cl
+    return label, reason + " ficsit.app has no compatibility flag for SML on the stable branch." + cl

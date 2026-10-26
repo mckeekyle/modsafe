@@ -37,6 +37,9 @@ ALIASES = {
     "starfield": [r"starfield"], "elden-ring": [r"elden ring(?! nightreign)"], "valheim": [r"valheim"],
     "terraria": [r"terraria"], "rimworld": [r"rimworld"], "bannerlord": [r"bannerlord"],
     "minecraft": [r"minecraft(?! dungeons| legends)"],
+    # "satisfactory" is an ordinary word: require the capitalised name plus a game/update word nearby.
+    "satisfactory": [r"(?-i:\bSatisfactory\b)(?!:? (?:the )?board game)(?=.*\b(?:update|patch|hotfix|mods?|factory|coffee stain|1\.\d))",
+                     r"coffee stain'?s satisfactory"],
 }
 
 

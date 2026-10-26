@@ -16,7 +16,8 @@ GUIDES_DIR = ROOT / "data" / "guides"
 ALLOWED_HOSTS = ("www.nexusmods.com", "nexusmods.com", "github.com", "thunderstore.io", "modrinth.com", "flightsim.to",
                  "smapi.io", "skse.silverlock.org", "fsuipc.com", "www.fsuipc.com", "navigraph.com", "www.navigraph.com",
                  "flybywiresim.com", "docs.flybywiresim.com", "www.flightsimulator.com", "flightsimulator.com", "volanta.app", "fslivetrafficliveries.com",
-                 "vpilot.rosscarlson.dev", "headwindsim.net", "www.mobiflight.com", "mod.io", "prismlauncher.org", "www.overwolf.com")
+                 "vpilot.rosscarlson.dev", "headwindsim.net", "www.mobiflight.com", "mod.io", "prismlauncher.org", "www.overwolf.com",
+                 "ficsit.app")
 # Severity order for the "worst required framework" compat badge.
 RANK = ["Breakage reported", "Not ported yet", "Just patched, wait", "No data", "Check manually", "Likely safe", "Safe",
         "Not affected by patches"]

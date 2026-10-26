@@ -24,6 +24,7 @@ Static site that tracks whether each game's core mod frameworks/loaders have cau
 | MSFS 2024 | `/msfs-2024/` | Steam news (2537590) | FlyByWire A32NX, MobiFlight (GitHub releases), FSUIPC7 (fsuipc.com); Navigraph (manual) |
 | MSFS 2020 | `/msfs-2020/` | Steam news (1250410) | FlyByWire A32NX, MobiFlight (GitHub releases), FSUIPC7 (fsuipc.com); Navigraph (manual) |
 | DOOM: The Dark Ages (Steam only) | `/doom-the-dark-ages/` | Steam public build via api.steamcmd.net (3017860) | Atlan Mod Loader (GitHub `ModLoader` release, dated by asset `updated_at`); Safe when [AtlanPatcher.txt](https://dcealopez.es/AtlanPatcher.txt) has a `darkage_steam_MMDDYYYY` entry on/after the Steam build date |
+| Satisfactory (stable branch) | `/satisfactory/` | Steam news (526870, `x.y fixes vN` / `out now` posts; Experimental and PTB ignored) | SML (ficsit.app GraphQL API: versions, `game_version` CL and the stable `compatibility` flag; Broken/Damaged forces Breakage reported), Satisfactory Mod Manager (GitHub, agnostic) |
 
 Steam-news games are also checked against the Steam public-branch build (api.steamcmd.net); a build change with no matching post is flagged as an unannounced update. Hotfixes announced only off Steam (developer sites, X, forums) are recorded by hand with sources in `data/manual/silent-patches.json`. For GTA V, a Steam build that differs from the recorded `steam_builds` forces "Just patched, wait" until the manual record is re-checked.
 

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Verify every curated mod link resolves to a published page. Nexus pages sit behind a browser
-challenge, so Nexus mods are checked through Nexus Mods' public GraphQL API instead; other links via HTTP."""
+challenge, so Nexus mods are checked through Nexus Mods' public GraphQL API instead, ficsit.app mods through its API
+(which also rejects mods flagged Broken/Damaged for the stable branch); other links via HTTP."""
 import json
 import sys
 import urllib.request
@@ -56,6 +57,19 @@ def main():
                     ok = not pj.get("is_deprecated")
                     info = f"{pj['full_name']} {pj['latest']['version_number']} ({pj['latest']['date_created'][:10]})"
                     m["last_updated"] = pj["latest"]["date_created"][:10]
+                except Exception as e:  # noqa: BLE001
+                    ok, info = False, str(e)
+            elif m["source"] == "ficsit":
+                try:
+                    q = ('{getModByReference(modReference:"%s"){name hidden last_version_date compatibility{EA{state}}}}'
+                         % m["ficsit_ref"])
+                    pj = json.load(urllib.request.urlopen(urllib.request.Request(
+                        "https://api.ficsit.app/v2/query", json.dumps({"query": q}).encode(), UA), timeout=30))
+                    pj = pj["data"]["getModByReference"]
+                    state = ((pj.get("compatibility") or {}).get("EA") or {}).get("state") or "no flag"
+                    ok = bool(pj) and not pj.get("hidden") and state not in ("Broken", "Damaged") and http_ok(m["url"])
+                    info = f"{pj['name']} (updated {pj['last_version_date'][:10]}, stable: {state})"
+                    m["last_updated"] = pj["last_version_date"][:10]
                 except Exception as e:  # noqa: BLE001
                     ok, info = False, str(e)
             else:
