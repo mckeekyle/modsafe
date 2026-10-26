@@ -40,6 +40,7 @@ ALIASES = {
     # "satisfactory" is an ordinary word: require the capitalised name plus a game/update word nearby.
     "satisfactory": [r"(?-i:\bSatisfactory\b)(?!:? (?:the )?board game)(?=.*\b(?:update|patch|hotfix|mods?|factory|coffee stain|1\.\d))",
                      r"coffee stain'?s satisfactory"],
+    "palworld": [r"palworld"],
 }
 
 

@@ -26,6 +26,17 @@ def pics(appid, buildid, iso):
     return {"data": {str(appid): {"depots": {"branches": {"public": {"buildid": str(buildid), "timeupdated": str(unix(iso))}}}}}}
 
 
+class _NoSleep:
+    """Stands in for update's `time` module so the API pacing sleeps don't slow the suite."""
+
+    def __getattr__(self, name):
+        return getattr(time, name)
+
+    @staticmethod
+    def sleep(_s):
+        return None
+
+
 class FakeHttp:
     """Patch update's network helpers for one test; restores them afterwards."""
 
@@ -33,10 +44,10 @@ class FakeHttp:
         self.get, self.post, self.sources = get, post, sources or {}
 
     def __enter__(self):
-        self.saved = (update.http_get_json, update.http_post_json, dict(update.SOURCES), update.DATA_DIR)
+        self.saved = (update.http_get_json, update.http_post_json, dict(update.SOURCES), update.DATA_DIR, update.time)
+        update.time = _NoSleep()
         self.tmp = tempfile.TemporaryDirectory()
         update.DATA_DIR = Path(self.tmp.name)
-        update._last_search[0] = 0.0  # skip the search-API pacing sleep
         update.http_get_json = lambda url, *a, **k: self.get(url)
         if self.post:
             update.http_post_json = lambda url, payload, **k: self.post(url, payload)
@@ -44,7 +55,7 @@ class FakeHttp:
         return self
 
     def __exit__(self, *a):
-        update.http_get_json, update.http_post_json, sources, update.DATA_DIR = self.saved
+        update.http_get_json, update.http_post_json, sources, update.DATA_DIR, update.time = self.saved
         update.SOURCES.clear()
         update.SOURCES.update(sources)
         self.tmp.cleanup()
@@ -127,6 +138,65 @@ class TestSatisfactory(unittest.TestCase):
     def test_end_to_end_fresh_patch_waits(self):
         fresh = datetime.fromtimestamp(time.time() - 86400, tz=timezone.utc).isoformat().replace("+00:00", "Z")
         self.assertEqual(self._run("Works", fresh)["verdict"], V_WAIT)
+
+
+def gh_rel(tag, iso, url="https://github.com/x"):
+    return {"tag_name": tag, "name": tag, "body": "", "published_at": iso, "created_at": iso, "html_url": url,
+            "prerelease": False, "draft": False}
+
+
+class TestPalworld(unittest.TestCase):
+    g = GAMES_BY_SLUG["palworld"]
+
+    def test_config(self):
+        self.assertEqual(self.g["steam_appid"], 1623730)
+        ue, ps = self.g["frameworks"]
+        self.assertEqual((ue["id"], ue["repo"], ue["issues_repo"]), ("ue4ss", "Okaetsu/RE-UE4SS", "Okaetsu/PalSchema"))
+        self.assertEqual((ps["id"], ps["repo"]), ("palschema", "Okaetsu/PalSchema"))
+
+    def test_patch_rule(self):
+        r = self.g["patch_rule"]
+        for t, v in (("v1.0.5: Bug fixes", "1.0.5"), ("v1.0.2.101103:Bug fixes", "1.0.2.101103"),
+                     ("Update v0.6.8: Halloween! Zoe's Halloween costume and Depresso suit!", "0.6.8"),
+                     ("Palworld v1.0 - Official Release Changelog", "1.0"), ("v0.6.5\uff1aMission Bug Fixes", "0.6.5")):
+            self.assertEqual(detect_patch(t, r)["version"], v, t)
+        for t in ("Global Popularity Poll 2026 Results & New Update", "Palworld \u00d7 RuneScape: Dragonwilds Steam Bundle is Out Now!",
+                  "Palworld 1.0 Official Launch Trailer is OUT!", "Important: About MODs and 1.0!",
+                  "Palworld to exit early access and officially release (Ver 1.0) in 2026!"):
+            self.assertIsNone(detect_patch(t, r), t)
+
+    def test_experimental_tag_ignored(self):
+        rels = [gh_rel("2281fa31", "2026-09-03T21:06:13Z"), gh_rel("experimental-palworld", "2025-02-20T15:16:34Z")]
+        with FakeHttp(lambda url: rels):
+            got = update.releases_github(self.g["frameworks"][0])
+        self.assertEqual([r["tag_name"] for r in got], ["2281fa31"])
+
+    def _run(self, patch_iso, issues=()):
+        searched = []
+
+        def get(url):
+            if "GetNewsForApp" in url:
+                return news(("v1.0.5: Bug fixes", patch_iso), ("Global Popularity Poll 2026 Results & New Update", "2026-10-20T13:06:39Z"),
+                            ("v1.0.4: Balance Adjustments & Bug Fixes", "2026-09-07T03:04:45Z"))
+            if "steamcmd" in url:
+                return pics(1623730, 25246127, patch_iso)
+            if "search/issues" in url:
+                searched.append(url)
+                return {"items": list(issues)}
+            raise AssertionError(url)
+        rels = {"ue4ss": [gh_rel("2281fa31", "2026-09-03T21:06:13Z")], "palschema": [gh_rel("0.6.71", "2026-09-09T14:45:21Z")]}
+        with FakeHttp(get, sources={"github": lambda fw: rels[fw["id"]]}):
+            return update.build_game(self.g), searched
+
+    def test_end_to_end_likely_safe(self):
+        d, searched = self._run("2026-09-15T03:03:47Z")
+        self.assertEqual(d["game"]["latest_patch"]["label"], "v1.0.5")  # poll post with "New Update" ignored
+        self.assertEqual(d["verdict"], V_LIKELY)
+        self.assertTrue(searched and all("repo%3AOkaetsu/PalSchema%20" in u for u in searched), searched)
+
+    def test_fresh_patch_waits(self):
+        fresh = datetime.fromtimestamp(time.time() - 86400, tz=timezone.utc).isoformat().replace("+00:00", "Z")
+        self.assertEqual(self._run(fresh)[0]["verdict"], V_WAIT)
 
 
 if __name__ == "__main__":

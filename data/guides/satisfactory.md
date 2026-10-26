@@ -7,7 +7,7 @@ Satisfactory mods come from **ficsit.app** (the Satisfactory Mod Repository) and
 1. **Launch the game once.** Start Satisfactory to the title screen at least once so the game folders and config exist.
 2. **Back up your saves.** Copy `%LOCALAPPDATA%\FactoryGame\Saved\SaveGames` somewhere safe, especially before a game update.
 3. **Install Satisfactory Mod Manager.** Download it from [smm.ficsit.app](https://smm.ficsit.app/) or its GitHub releases page (or run `winget install SatisfactoryModding.SatisfactoryModManager`). It finds your Steam or Epic install by itself.
-4. **Pick the right install and branch.** Choose your game install in the Install dropdown. Early Access (stable) and Experimental are separate installs; most mods target Early Access.
+4. **Pick the right install and branch.** Choose your game install in the Install dropdown. SMM still labels the stable branch "Early Access" (a leftover name from before 1.0); stable and Experimental are separate installs, and most mods target stable.
 5. **Filter to Compatible.** Set the funnel filter to Compatible so SMM only shows mods that work with your selected install.
 6. **Install mods.** Click the download arrow next to a mod. SMM adds SML and any required libraries (such as ModularUI or MarcioCommonLibs) for you.
 7. **Launch the game.** Start from SMM's Launch button or from Steam/Epic as usual. The mod files stay in place either way, so mods still load.

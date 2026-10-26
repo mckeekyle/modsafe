@@ -506,9 +506,43 @@ GAMES = [
         "extra_links": [("ficsit.app (Satisfactory Mod Repository)", "https://ficsit.app/"),
                         ("Satisfactory Modding documentation", "https://docs.ficsit.app/satisfactory-modding/latest/index.html")],
         "wiki": "https://docs.ficsit.app/satisfactory-modding/latest/index.html",
-        "note": ("ModSafe tracks the stable (Early Access) branch; Experimental needs its own SML build. "
+        "note": ("ModSafe tracks the stable branch (SMM and ficsit.app still call it Early Access); Experimental needs its own SML build. "
                  "Every player in a multiplayer session needs the same mods."),
         "blurb": "Major Satisfactory updates (1.1, 1.2) change the game's code, so SML and C++ mods must be rebuilt; the smaller fix patches usually keep working.",
+    },
+    {
+        "slug": "palworld",
+        "name": "Palworld",
+        "short": "Palworld",
+        "developer": "Pocketpair",
+        "genre": "Survival crafting",
+        "steam_appid": 1623730,
+        # Patch posts are titled "v1.0.5: Bug fixes", "Update v0.6.8: Halloween!..." or "Palworld v1.0 - Official
+        # Release Changelog". Polls, bundles and trailers are excluded.
+        "patch_rule": {
+            "include": r"^(?:update\s+)?v\d+\.\d+|^palworld\s+v\d+\.\d+",
+            "exclude": r"popularity poll|bundle|trailer|sale",
+            "version": r"v(\d+(?:\.\d+)+)",
+            "require_version": True,
+            "label": "v{v}",
+        },
+        "frameworks": [
+            # Okaetsu (pwmodding.wiki) publishes the Palworld build of UE4SS; its repo has issues turned off, so the
+            # same maintainer's PalSchema tracker (where Palworld UE4SS crashes get reported) is searched instead.
+            {"id": "ue4ss", "name": "UE4SS (Palworld build)", "short": "UE4SS", "source": "github",
+             "repo": "Okaetsu/RE-UE4SS", "exclude_tag": r"^experimental-", "issues_repo": "Okaetsu/PalSchema",
+             "issues_note": "(Searched the PalSchema tracker; this UE4SS fork has no issue tracker of its own.)",
+             "url": "https://github.com/Okaetsu/RE-UE4SS/releases/latest"},
+            {"id": "palschema", "name": "PalSchema", "short": "PalSchema", "source": "github",
+             "repo": "Okaetsu/PalSchema", "url": "https://github.com/Okaetsu/PalSchema/releases/latest"},
+        ],
+        "extra_links": [("Palworld Modding Docs (pwmodding.wiki)", "https://pwmodding.wiki/"),
+                        ("Pocketpair mod usage guidelines", "https://guideline.palworldgame.com/palworld-mod-guideline"),
+                        ("Palworld Steam Workshop", "https://steamcommunity.com/app/1623730/workshop/")],
+        "wiki": "https://pwmodding.wiki/",
+        "note": ("Tracks the Steam PC version. Pocketpair forbids mods on official servers. "
+                 "Workshop mods ship their own UE4SS copy, so never also keep a manual dwmapi.dll install."),
+        "blurb": "Palworld patches often move the game's code and data, which breaks UE4SS, PalSchema and pak mods until they are updated.",
     },
 ]
 

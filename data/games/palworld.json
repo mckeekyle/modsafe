@@ -1,0 +1,610 @@
+{
+  "generated_at": "2026-10-26T22:39:37Z",
+  "game": {
+    "slug": "palworld",
+    "name": "Palworld",
+    "steam_appid": 1623730,
+    "latest_patch": {
+      "version": "1.0.5",
+      "label": "v1.0.5",
+      "title": "v1.0.5: Bug fixes",
+      "published_at": "2026-09-15T03:03:47Z",
+      "published_unix": 1789441427,
+      "url": "https://store.steampowered.com/news/app/1623730/view/1843481262703464"
+    }
+  },
+  "verdict": "Likely safe",
+  "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
+  "frameworks": [
+    {
+      "id": "ue4ss",
+      "name": "UE4SS (Palworld build)",
+      "short": "UE4SS",
+      "url": "https://github.com/Okaetsu/RE-UE4SS/releases/latest",
+      "source": "github",
+      "repo": "Okaetsu/RE-UE4SS",
+      "tracked": true,
+      "sensitive": true,
+      "status": "Likely safe",
+      "base_status": "Unknown / check",
+      "reason": "Latest release predates patch v1.0.5; compatibility is unverified \u2014 check the project page. No open breakage reports 41 days after the patch. (Searched the PalSchema tracker; this UE4SS fork has no issue tracker of its own.)",
+      "breakage_reports": [],
+      "official": null,
+      "release_tag": "2281fa31",
+      "release_name": "Palworld (2281fa31)",
+      "release_published_at": "2026-09-03T21:06:13Z",
+      "release_url": "https://github.com/Okaetsu/RE-UE4SS/releases/tag/2281fa31",
+      "mentions_patch": false,
+      "newer_than_patch": false,
+      "mention_releases": []
+    },
+    {
+      "id": "palschema",
+      "name": "PalSchema",
+      "short": "PalSchema",
+      "url": "https://github.com/Okaetsu/PalSchema/releases/latest",
+      "source": "github",
+      "repo": "Okaetsu/PalSchema",
+      "tracked": true,
+      "sensitive": true,
+      "status": "Likely safe",
+      "base_status": "Unknown / check",
+      "reason": "Latest release predates patch v1.0.5; compatibility is unverified \u2014 check the project page. No open breakage reports 41 days after the patch.",
+      "breakage_reports": [],
+      "official": null,
+      "release_tag": "0.6.71",
+      "release_name": "0.6.71",
+      "release_published_at": "2026-09-09T14:45:21Z",
+      "release_url": "https://github.com/Okaetsu/PalSchema/releases/tag/0.6.71",
+      "mentions_patch": false,
+      "newer_than_patch": false,
+      "mention_releases": []
+    }
+  ],
+  "history": [
+    {
+      "version": "1.0.5",
+      "label": "v1.0.5",
+      "title": "v1.0.5: Bug fixes",
+      "published_at": "2026-09-15T03:03:47Z",
+      "published_unix": 1789441427,
+      "url": "https://store.steampowered.com/news/app/1623730/view/1843481262703464",
+      "frameworks": [
+        {
+          "id": "ue4ss",
+          "short": "UE4SS",
+          "name": "UE4SS (Palworld build)",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2026-09-03T21:06:13Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "palschema",
+          "short": "PalSchema",
+          "name": "PalSchema",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2025-01-10T14:14:46Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
+      "version": "1.0.4",
+      "label": "v1.0.4",
+      "title": "v1.0.4: Balance Adjustments & Bug Fixes",
+      "published_at": "2026-09-07T03:04:45Z",
+      "published_unix": 1788750285,
+      "url": "https://store.steampowered.com/news/app/1623730/view/1842846814452062",
+      "frameworks": [
+        {
+          "id": "ue4ss",
+          "short": "UE4SS",
+          "name": "UE4SS (Palworld build)",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2026-09-03T21:06:13Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "palschema",
+          "short": "PalSchema",
+          "name": "PalSchema",
+          "status": "Likely safe",
+          "release_tag": "0.6.71",
+          "release_published_at": "2026-09-09T14:45:21Z",
+          "mentions_patch": false,
+          "first_release_tag": "0.6.71",
+          "first_release_at": "2026-09-09T14:45:21Z",
+          "data_from": "2025-01-10T14:14:46Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
+      "version": "1.0.3",
+      "label": "v1.0.3",
+      "title": "v1.0.3: Balance Adjustments & Bug Fixes",
+      "published_at": "2026-08-12T03:13:23Z",
+      "published_unix": 1786504403,
+      "url": "https://store.steampowered.com/news/app/1623730/view/1840944183772872",
+      "frameworks": [
+        {
+          "id": "ue4ss",
+          "short": "UE4SS",
+          "name": "UE4SS (Palworld build)",
+          "status": "Likely safe",
+          "release_tag": "2281fa31",
+          "release_published_at": "2026-09-03T21:06:13Z",
+          "mentions_patch": false,
+          "first_release_tag": "2281fa31",
+          "first_release_at": "2026-09-03T21:06:13Z",
+          "data_from": "2026-09-03T21:06:13Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "palschema",
+          "short": "PalSchema",
+          "name": "PalSchema",
+          "status": "Likely safe",
+          "release_tag": "0.6.2",
+          "release_published_at": "2026-08-15T10:16:39Z",
+          "mentions_patch": false,
+          "first_release_tag": "0.6.2",
+          "first_release_at": "2026-08-15T10:16:39Z",
+          "data_from": "2025-01-10T14:14:46Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
+      "version": "1.0.2.101103",
+      "label": "v1.0.2.101103",
+      "title": "v1.0.2.101103:Bug fixes",
+      "published_at": "2026-07-30T12:16:34Z",
+      "published_unix": 1785413794,
+      "url": "https://store.steampowered.com/news/app/1623730/view/1839676055885050",
+      "frameworks": [
+        {
+          "id": "ue4ss",
+          "short": "UE4SS",
+          "name": "UE4SS (Palworld build)",
+          "status": "Likely safe",
+          "release_tag": "2281fa31",
+          "release_published_at": "2026-09-03T21:06:13Z",
+          "mentions_patch": false,
+          "first_release_tag": "2281fa31",
+          "first_release_at": "2026-09-03T21:06:13Z",
+          "data_from": "2026-09-03T21:06:13Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "palschema",
+          "short": "PalSchema",
+          "name": "PalSchema",
+          "status": "Likely safe",
+          "release_tag": "0.6.2",
+          "release_published_at": "2026-08-15T10:16:39Z",
+          "mentions_patch": false,
+          "first_release_tag": "0.6.2",
+          "first_release_at": "2026-08-15T10:16:39Z",
+          "data_from": "2025-01-10T14:14:46Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
+      "version": "1.0.2",
+      "label": "v1.0.2",
+      "title": "v1.0.2: Bug fixes",
+      "published_at": "2026-07-29T03:08:24Z",
+      "published_unix": 1785294504,
+      "url": "https://store.steampowered.com/news/app/1623730/view/1839676055881423",
+      "frameworks": [
+        {
+          "id": "ue4ss",
+          "short": "UE4SS",
+          "name": "UE4SS (Palworld build)",
+          "status": "Likely safe",
+          "release_tag": "2281fa31",
+          "release_published_at": "2026-09-03T21:06:13Z",
+          "mentions_patch": false,
+          "first_release_tag": "2281fa31",
+          "first_release_at": "2026-09-03T21:06:13Z",
+          "data_from": "2026-09-03T21:06:13Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "palschema",
+          "short": "PalSchema",
+          "name": "PalSchema",
+          "status": "Likely safe",
+          "release_tag": "0.6.2",
+          "release_published_at": "2026-08-15T10:16:39Z",
+          "mentions_patch": false,
+          "first_release_tag": "0.6.2",
+          "first_release_at": "2026-08-15T10:16:39Z",
+          "data_from": "2025-01-10T14:14:46Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
+      "version": "1.0.1",
+      "label": "v1.0.1",
+      "title": "v1.0.1: Bug fixes",
+      "published_at": "2026-07-15T05:17:43Z",
+      "published_unix": 1784092663,
+      "url": "https://store.steampowered.com/news/app/1623730/view/1838407329253279",
+      "frameworks": [
+        {
+          "id": "ue4ss",
+          "short": "UE4SS",
+          "name": "UE4SS (Palworld build)",
+          "status": "Likely safe",
+          "release_tag": "2281fa31",
+          "release_published_at": "2026-09-03T21:06:13Z",
+          "mentions_patch": false,
+          "first_release_tag": "2281fa31",
+          "first_release_at": "2026-09-03T21:06:13Z",
+          "data_from": "2026-09-03T21:06:13Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "palschema",
+          "short": "PalSchema",
+          "name": "PalSchema",
+          "status": "Likely safe",
+          "release_tag": "0.6.1",
+          "release_published_at": "2026-07-19T07:21:38Z",
+          "mentions_patch": false,
+          "first_release_tag": "0.6.1",
+          "first_release_at": "2026-07-19T07:21:38Z",
+          "data_from": "2025-01-10T14:14:46Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
+      "version": "1.0",
+      "label": "v1.0",
+      "title": "Palworld v1.0 - Official Release Changelog",
+      "published_at": "2026-07-10T03:09:10Z",
+      "published_unix": 1783652950,
+      "url": "https://store.steampowered.com/news/app/1623730/view/1837955055355658",
+      "frameworks": [
+        {
+          "id": "ue4ss",
+          "short": "UE4SS",
+          "name": "UE4SS (Palworld build)",
+          "status": "Likely safe",
+          "release_tag": "2281fa31",
+          "release_published_at": "2026-09-03T21:06:13Z",
+          "mentions_patch": false,
+          "first_release_tag": "2281fa31",
+          "first_release_at": "2026-09-03T21:06:13Z",
+          "data_from": "2026-09-03T21:06:13Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "palschema",
+          "short": "PalSchema",
+          "name": "PalSchema",
+          "status": "Safe",
+          "release_tag": "0.1.0-beta",
+          "release_published_at": "2025-01-10T14:14:46Z",
+          "mentions_patch": true,
+          "first_release_tag": "0.6.1",
+          "first_release_at": "2026-07-19T07:21:38Z",
+          "data_from": "2025-01-10T14:14:46Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
+      "version": "0.7.3",
+      "label": "v0.7.3",
+      "title": "v0.7.3: Balance adjustments and bug fixes",
+      "published_at": "2026-04-06T03:08:53Z",
+      "published_unix": 1775444933,
+      "url": "https://store.steampowered.com/news/app/1623730/view/1828894815564607",
+      "frameworks": [
+        {
+          "id": "ue4ss",
+          "short": "UE4SS",
+          "name": "UE4SS (Palworld build)",
+          "status": "Likely safe",
+          "release_tag": "2281fa31",
+          "release_published_at": "2026-09-03T21:06:13Z",
+          "mentions_patch": false,
+          "first_release_tag": "2281fa31",
+          "first_release_at": "2026-09-03T21:06:13Z",
+          "data_from": "2026-09-03T21:06:13Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "palschema",
+          "short": "PalSchema",
+          "name": "PalSchema",
+          "status": "Likely safe",
+          "release_tag": "0.6.0",
+          "release_published_at": "2026-07-10T00:01:58Z",
+          "mentions_patch": false,
+          "first_release_tag": "0.6.0",
+          "first_release_at": "2026-07-10T00:01:58Z",
+          "data_from": "2025-01-10T14:14:46Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
+      "version": "0.7.2",
+      "label": "v0.7.2",
+      "title": "v0.7.2: Balance adjustments and bug fixes",
+      "published_at": "2026-02-16T05:02:05Z",
+      "published_unix": 1771218125,
+      "url": "https://store.steampowered.com/news/app/1623730/view/1824644522844567",
+      "frameworks": [
+        {
+          "id": "ue4ss",
+          "short": "UE4SS",
+          "name": "UE4SS (Palworld build)",
+          "status": "Likely safe",
+          "release_tag": "2281fa31",
+          "release_published_at": "2026-09-03T21:06:13Z",
+          "mentions_patch": false,
+          "first_release_tag": "2281fa31",
+          "first_release_at": "2026-09-03T21:06:13Z",
+          "data_from": "2026-09-03T21:06:13Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "palschema",
+          "short": "PalSchema",
+          "name": "PalSchema",
+          "status": "Likely safe",
+          "release_tag": "0.6.0",
+          "release_published_at": "2026-07-10T00:01:58Z",
+          "mentions_patch": false,
+          "first_release_tag": "0.6.0",
+          "first_release_at": "2026-07-10T00:01:58Z",
+          "data_from": "2025-01-10T14:14:46Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
+      "version": "0.7.1",
+      "label": "v0.7.1",
+      "title": "v0.7.1: Balance adjustments and bug fixes",
+      "published_at": "2026-01-21T03:04:52Z",
+      "published_unix": 1768964692,
+      "url": "https://store.steampowered.com/news/app/1623730/view/1822556746155818",
+      "frameworks": [
+        {
+          "id": "ue4ss",
+          "short": "UE4SS",
+          "name": "UE4SS (Palworld build)",
+          "status": "Likely safe",
+          "release_tag": "2281fa31",
+          "release_published_at": "2026-09-03T21:06:13Z",
+          "mentions_patch": false,
+          "first_release_tag": "2281fa31",
+          "first_release_at": "2026-09-03T21:06:13Z",
+          "data_from": "2026-09-03T21:06:13Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "palschema",
+          "short": "PalSchema",
+          "name": "PalSchema",
+          "status": "Likely safe",
+          "release_tag": "0.6.0",
+          "release_published_at": "2026-07-10T00:01:58Z",
+          "mentions_patch": false,
+          "first_release_tag": "0.6.0",
+          "first_release_at": "2026-07-10T00:01:58Z",
+          "data_from": "2025-01-10T14:14:46Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
+      "version": "0.7",
+      "label": "v0.7",
+      "title": "Palworld v0.7 - Home Sweet Home",
+      "published_at": "2025-12-17T03:04:26Z",
+      "published_unix": 1765940666,
+      "url": "https://store.steampowered.com/news/app/1623730/view/1819386365085520",
+      "frameworks": [
+        {
+          "id": "ue4ss",
+          "short": "UE4SS",
+          "name": "UE4SS (Palworld build)",
+          "status": "Likely safe",
+          "release_tag": "2281fa31",
+          "release_published_at": "2026-09-03T21:06:13Z",
+          "mentions_patch": false,
+          "first_release_tag": "2281fa31",
+          "first_release_at": "2026-09-03T21:06:13Z",
+          "data_from": "2026-09-03T21:06:13Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "palschema",
+          "short": "PalSchema",
+          "name": "PalSchema",
+          "status": "Safe",
+          "release_tag": "0.5.2",
+          "release_published_at": "2026-01-17T17:52:13Z",
+          "mentions_patch": true,
+          "first_release_tag": "0.5.1",
+          "first_release_at": "2025-12-28T03:08:28Z",
+          "data_from": "2025-01-10T14:14:46Z",
+          "first_mention_tag": "0.5.1",
+          "first_mention_at": "2025-12-28T03:08:28Z"
+        }
+      ]
+    },
+    {
+      "version": "0.6.9.82911",
+      "label": "v0.6.9.82911",
+      "title": "v0.6.9.82911: Multiplayer connectivity improvements",
+      "published_at": "2025-11-10T03:07:18Z",
+      "published_unix": 1762744038,
+      "url": "https://store.steampowered.com/news/app/1623730/view/1815580768377452",
+      "frameworks": [
+        {
+          "id": "ue4ss",
+          "short": "UE4SS",
+          "name": "UE4SS (Palworld build)",
+          "status": "Likely safe",
+          "release_tag": "2281fa31",
+          "release_published_at": "2026-09-03T21:06:13Z",
+          "mentions_patch": false,
+          "first_release_tag": "2281fa31",
+          "first_release_at": "2026-09-03T21:06:13Z",
+          "data_from": "2026-09-03T21:06:13Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "palschema",
+          "short": "PalSchema",
+          "name": "PalSchema",
+          "status": "Likely safe",
+          "release_tag": "0.5.1",
+          "release_published_at": "2025-12-28T03:08:28Z",
+          "mentions_patch": false,
+          "first_release_tag": "0.5.1",
+          "first_release_at": "2025-12-28T03:08:28Z",
+          "data_from": "2025-01-10T14:14:46Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    }
+  ],
+  "news": [
+    {
+      "title": "Global Popularity Poll 2026 Results & New Update",
+      "url": "https://store.steampowered.com/news/app/1623730/view/1846651706695192",
+      "published_at": "2026-10-20T13:06:39Z",
+      "is_patch": false
+    },
+    {
+      "title": "Palworld \u00d7 RuneScape: Dragonwilds Steam Bundle is Out Now!",
+      "url": "https://store.steampowered.com/news/app/1623730/view/1844751498224251",
+      "published_at": "2026-09-25T11:41:18Z",
+      "is_patch": false
+    },
+    {
+      "title": "v1.0.5: Bug fixes",
+      "url": "https://store.steampowered.com/news/app/1623730/view/1843481262703464",
+      "published_at": "2026-09-15T03:03:47Z",
+      "is_patch": true
+    },
+    {
+      "title": "v1.0.4: Balance Adjustments & Bug Fixes",
+      "url": "https://store.steampowered.com/news/app/1623730/view/1842846814452062",
+      "published_at": "2026-09-07T03:04:45Z",
+      "is_patch": true
+    },
+    {
+      "title": "Palworld Global Popularity Poll 2026 is LIVE!",
+      "url": "https://store.steampowered.com/news/app/1623730/view/1842212951313335",
+      "published_at": "2026-09-01T13:00:38Z",
+      "is_patch": false
+    },
+    {
+      "title": "v1.0.3: Balance Adjustments & Bug Fixes",
+      "url": "https://store.steampowered.com/news/app/1623730/view/1840944183772872",
+      "published_at": "2026-08-12T03:13:23Z",
+      "is_patch": true
+    },
+    {
+      "title": "v1.0.2.101103:Bug fixes",
+      "url": "https://store.steampowered.com/news/app/1623730/view/1839676055885050",
+      "published_at": "2026-07-30T12:16:34Z",
+      "is_patch": true
+    },
+    {
+      "title": "Mod Support Improvement",
+      "url": "https://store.steampowered.com/news/app/1623730/view/1839676055884093",
+      "published_at": "2026-07-30T03:05:21Z",
+      "is_patch": false
+    },
+    {
+      "title": "v1.0.2: Bug fixes",
+      "url": "https://store.steampowered.com/news/app/1623730/view/1839676055881423",
+      "published_at": "2026-07-29T03:08:24Z",
+      "is_patch": true
+    },
+    {
+      "title": "v1.0.1: Bug fixes",
+      "url": "https://store.steampowered.com/news/app/1623730/view/1838407329253279",
+      "published_at": "2026-07-15T05:17:43Z",
+      "is_patch": true
+    }
+  ],
+  "channels": [],
+  "sources": {
+    "steam_news": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1623730&count=100"
+  },
+  "verdict_log": [
+    {
+      "at": "2026-10-26T22:39:18Z",
+      "patch": "v1.0.5",
+      "patch_key": "1.0.5",
+      "patch_published_at": "2026-09-15T03:03:47Z",
+      "patch_url": "https://store.steampowered.com/news/app/1623730/view/1843481262703464",
+      "verdict": "Likely safe",
+      "frameworks": [
+        {
+          "short": "UE4SS",
+          "status": "Likely safe",
+          "release_tag": "2281fa31"
+        },
+        {
+          "short": "PalSchema",
+          "status": "Likely safe",
+          "release_tag": "0.6.71"
+        }
+      ]
+    }
+  ]
+}

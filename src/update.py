@@ -113,6 +113,8 @@ def releases_github(fw: dict) -> list[dict]:
     rels = http_get_json(f"https://api.github.com/repos/{fw['repo']}/releases?per_page=30", gh_headers())
     if fw.get("tag_prefix"):  # monorepos shipping several products (e.g. FlyByWire v2020.* vs v2024.*)
         rels = [r for r in rels if (r.get("tag_name") or "").startswith(fw["tag_prefix"])]
+    if fw.get("exclude_tag"):  # e.g. Okaetsu/RE-UE4SS keeps an old "experimental-palworld" test release
+        rels = [r for r in rels if not re.search(fw["exclude_tag"], r.get("tag_name") or "")]
     return rels
 
 
@@ -427,6 +429,8 @@ def build_steam_game(game: dict) -> dict:
                        " maintainers or other users, so it isn't counted as breakage.")
         elif v["status"] != STATUS_UPDATED and label == "Likely safe" and v["status"] == STATUS_UNKNOWN:
             reason += quiet_period_note(age, issues_repo, searched)
+            if searched and fw.get("issues_note"):
+                reason += " " + fw["issues_note"]
         if fw["source"] == "ficsit_sml":
             label, reason = ficsit_compat_adjust(label, reason, rel.get("ficsit_compat"), min_cl=rel.get("game_version"),
                                                  sensitive=sensitive)

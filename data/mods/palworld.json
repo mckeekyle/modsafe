@@ -1,0 +1,190 @@
+{
+  "game": "palworld",
+  "verified_at": "2026-10-26",
+  "manager": {
+    "name": "Steam Workshop + in-game Mod Management",
+    "url": "https://steamcommunity.com/app/1623730/workshop/"
+  },
+  "intro": "Popular mods that were updated after Palworld 1.0. Most are on Nexus Mods, and many are on the Steam Workshop too. Install UE4SS first for anything that needs it. Never use mods on official servers: Pocketpair's guidelines prohibit it.",
+  "mods": [
+    {
+      "id": "ue4ss",
+      "name": "UE4SS (Palworld build)",
+      "category": "Framework",
+      "summary": "Script loader most Palworld code mods need. Okaetsu's build adds the file Palworld needs to avoid crashes.",
+      "source": "github",
+      "url": "https://github.com/Okaetsu/RE-UE4SS",
+      "requires": [],
+      "framework_id": "ue4ss",
+      "note": "Download UE4SS-Palworld.zip, not the zDev zip. Workshop mods bring their own copy, so don't install both."
+    },
+    {
+      "id": "palschema",
+      "name": "PalSchema",
+      "category": "Framework",
+      "summary": "Changes game data with JSON files so mods conflict less. Many item and Pal mods need it.",
+      "source": "nexus",
+      "nexus_domain": "palworld",
+      "nexus_id": 2361,
+      "url": "https://www.nexusmods.com/palworld/mods/2361",
+      "requires": [
+        "ue4ss"
+      ],
+      "framework_id": "palschema",
+      "note": "Each PalSchema release must be used with the UE4SS build its release notes name.",
+      "last_updated": "2026-09-09"
+    },
+    {
+      "id": "pal-analyzer",
+      "name": "Pal Analyzer",
+      "category": "Interface",
+      "summary": "Hover over a wild Pal to see its stats, skills and passives. More unlocks as you catch that species.",
+      "source": "nexus",
+      "nexus_domain": "palworld",
+      "nexus_id": 336,
+      "url": "https://www.nexusmods.com/palworld/mods/336",
+      "requires": [
+        "ue4ss"
+      ],
+      "note": "Client-side only; don't install it on a dedicated server.",
+      "last_updated": "2026-09-23"
+    },
+    {
+      "id": "less-restrictive-building",
+      "name": "Less Restrictive Building",
+      "category": "Building",
+      "summary": "Build floating, on steep ground, overlapping and past the height and object caps.",
+      "source": "nexus",
+      "nexus_domain": "palworld",
+      "nexus_id": 98,
+      "url": "https://www.nexusmods.com/palworld/mods/98",
+      "requires": [],
+      "note": "Comes as a pak version or a UE4SS version; the UE4SS one has more options.",
+      "last_updated": "2026-09-07"
+    },
+    {
+      "id": "unlock-world-map",
+      "name": "Unlock View and Free Teleport for World Map",
+      "category": "Quality of life",
+      "summary": "Reveals the whole world map and lets you fast-travel from anywhere.",
+      "source": "nexus",
+      "nexus_domain": "palworld",
+      "nexus_id": 1055,
+      "url": "https://www.nexusmods.com/palworld/mods/1055",
+      "requires": [],
+      "note": "Edits BP_PalGameSetting, so it conflicts with other mods that change that file.",
+      "last_updated": "2026-09-08"
+    },
+    {
+      "id": "base-camp-area",
+      "name": "Base Camp Construction Area x1.5 or x2",
+      "category": "Building",
+      "summary": "Makes base build range 1.5x or 2x larger. Only affects bases you create after installing.",
+      "source": "nexus",
+      "nexus_domain": "palworld",
+      "nexus_id": 949,
+      "url": "https://www.nexusmods.com/palworld/mods/949",
+      "requires": [],
+      "note": "Edits BP_PalGameSetting, so it conflicts with other mods that change that file.",
+      "last_updated": "2026-09-07"
+    },
+    {
+      "id": "all-storage-slots",
+      "name": "All Storage Slots x10",
+      "category": "Quality of life",
+      "summary": "Far more slots in chests, shelves and fridges, plus the guild chest and disassembly conveyor.",
+      "source": "nexus",
+      "nexus_domain": "palworld",
+      "nexus_id": 1672,
+      "url": "https://www.nexusmods.com/palworld/mods/1672",
+      "requires": [],
+      "note": "Applies to storage built after installing; the guild chest may need a new guild.",
+      "last_updated": "2026-10-01"
+    },
+    {
+      "id": "storage-manager",
+      "name": "Mr. Greens Storage Manager",
+      "category": "Quality of life",
+      "summary": "Set the slot count of 28 storage containers in a config file; no pak replacement needed.",
+      "source": "nexus",
+      "nexus_domain": "palworld",
+      "nexus_id": 1537,
+      "url": "https://www.nexusmods.com/palworld/mods/1537",
+      "requires": [
+        "ue4ss"
+      ],
+      "last_updated": "2026-10-05"
+    },
+    {
+      "id": "upgradable-spheres",
+      "name": "Upgradable Pal Spheres",
+      "category": "Gameplay",
+      "summary": "Craft higher-rank Pal Spheres from lower-rank ones you no longer use.",
+      "source": "nexus",
+      "nexus_domain": "palworld",
+      "nexus_id": 2208,
+      "url": "https://www.nexusmods.com/palworld/mods/2208",
+      "requires": [
+        "ue4ss",
+        "palschema"
+      ],
+      "note": "On dedicated servers, install it on the server and every client.",
+      "last_updated": "2026-09-10"
+    },
+    {
+      "id": "true-monster-rancher",
+      "name": "True Monster Rancher",
+      "category": "Gameplay",
+      "summary": "Ranch Pals drop many more kinds of items; condensing a Pal raises the rates.",
+      "source": "nexus",
+      "nexus_domain": "palworld",
+      "nexus_id": 481,
+      "url": "https://www.nexusmods.com/palworld/mods/481",
+      "requires": [
+        "ue4ss",
+        "palschema"
+      ],
+      "last_updated": "2026-09-05"
+    },
+    {
+      "id": "skip-mod-caution",
+      "name": "Automatically Skip Mod Caution",
+      "category": "Quality of life",
+      "summary": "Skips the mod caution dialog Palworld shows every launch while mods are enabled.",
+      "source": "nexus",
+      "nexus_domain": "palworld",
+      "nexus_id": 3595,
+      "url": "https://www.nexusmods.com/palworld/mods/3595",
+      "requires": [
+        "ue4ss"
+      ],
+      "last_updated": "2026-10-15"
+    },
+    {
+      "id": "pal-calc",
+      "name": "Pal Calc",
+      "category": "Tools",
+      "summary": "Reads your save and works out the fastest breeding path to a Pal with the passives you want.",
+      "source": "nexus",
+      "nexus_domain": "palworld",
+      "nexus_id": 1651,
+      "url": "https://www.nexusmods.com/palworld/mods/1651",
+      "requires": [],
+      "note": "A separate Windows program; the author posts the newest builds on GitHub first.",
+      "last_updated": "2026-09-18"
+    },
+    {
+      "id": "pal-editor",
+      "name": "Palworld Pal Editor",
+      "category": "Tools",
+      "summary": "Save editor for players, Pals, technology and inventories. Back up saves before editing.",
+      "source": "nexus",
+      "nexus_domain": "palworld",
+      "nexus_id": 995,
+      "url": "https://www.nexusmods.com/palworld/mods/995",
+      "requires": [],
+      "note": "A separate program that edits save files; it doesn't load into the game.",
+      "last_updated": "2026-09-15"
+    }
+  ]
+}
