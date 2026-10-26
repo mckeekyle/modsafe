@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T18:38:35Z",
+  "generated_at": "2026-10-26T19:04:48Z",
   "game": {
     "slug": "gta-v",
     "name": "Grand Theft Auto V",
@@ -42,7 +42,7 @@
       "sensitive": true,
       "release_url": "http://www.dev-c.com/gtav/scripthookv/",
       "status": "Not ported yet",
-      "reason": "Supports Legacy 1.0.3889.0. No build yet for Enhanced 1.0.1158.16. (Manually verified 2026-10-25.)",
+      "reason": "Supports Legacy 1.0.3889.0. No build yet for Enhanced 1.0.1158.16. (Manually verified 2026-10-26.)",
       "release_tag": "v3889.0 / 1158.13",
       "release_published_at": "2026-07-15T00:00:00Z",
       "manual_data": true
@@ -125,7 +125,7 @@
       "published_at": "2026-06-22T10:43:51Z"
     }
   ],
-  "last_verified": "2026-10-25",
+  "last_verified": "2026-10-26",
   "sources": {
     "manual": "data/manual/gta-v.json",
     "patch_sources": [
