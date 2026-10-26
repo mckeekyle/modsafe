@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T18:23:30Z",
+  "generated_at": "2026-10-26T00:38:10Z",
   "game": {
     "slug": "cyberpunk-2077",
     "name": "Cyberpunk 2077",
@@ -147,13 +147,13 @@
       "sensitive": true,
       "status": "Safe",
       "base_status": "Updated for latest patch",
-      "reason": "Latest release notes mention patch Patch 2.5 and the release is on/after the patch date.",
+      "reason": "Latest release is on/after patch Patch 2.5; an earlier post-patch release (v1.21.0) explicitly mentioned that version.",
       "breakage_reports": [],
       "official": null,
-      "release_tag": "v1.21.0",
-      "release_name": "Codeware 1.21.0",
-      "release_published_at": "2026-10-25T08:07:31Z",
-      "release_url": "https://github.com/psiberx/cp2077-codeware/releases/tag/v1.21.0",
+      "release_tag": "v1.21.1",
+      "release_name": "Codeware 1.21.1",
+      "release_published_at": "2026-10-25T21:05:25Z",
+      "release_url": "https://github.com/psiberx/cp2077-codeware/releases/tag/v1.21.1",
       "mentions_patch": true,
       "newer_than_patch": true,
       "mention_releases": [
@@ -604,8 +604,8 @@
           "short": "Codeware",
           "name": "Codeware",
           "status": "Likely safe",
-          "release_tag": "v1.12.0",
-          "release_published_at": "2024-07-29T19:40:19Z",
+          "release_tag": "v1.12.1",
+          "release_published_at": "2024-08-01T19:39:49Z",
           "mentions_patch": false
         }
       ]
@@ -668,8 +668,8 @@
           "short": "Codeware",
           "name": "Codeware",
           "status": "Likely safe",
-          "release_tag": "v1.12.0",
-          "release_published_at": "2024-07-29T19:40:19Z",
+          "release_tag": "v1.12.1",
+          "release_published_at": "2024-08-01T19:39:49Z",
           "mentions_patch": false
         }
       ]
@@ -732,8 +732,8 @@
           "short": "Codeware",
           "name": "Codeware",
           "status": "Likely safe",
-          "release_tag": "v1.12.0",
-          "release_published_at": "2024-07-29T19:40:19Z",
+          "release_tag": "v1.12.1",
+          "release_published_at": "2024-08-01T19:39:49Z",
           "mentions_patch": false
         }
       ]
@@ -796,8 +796,8 @@
           "short": "Codeware",
           "name": "Codeware",
           "status": "Likely safe",
-          "release_tag": "v1.12.0",
-          "release_published_at": "2024-07-29T19:40:19Z",
+          "release_tag": "v1.12.1",
+          "release_published_at": "2024-08-01T19:39:49Z",
           "mentions_patch": false
         }
       ]
@@ -860,8 +860,8 @@
           "short": "Codeware",
           "name": "Codeware",
           "status": "Likely safe",
-          "release_tag": "v1.12.0",
-          "release_published_at": "2024-07-29T19:40:19Z",
+          "release_tag": "v1.12.1",
+          "release_published_at": "2024-08-01T19:39:49Z",
           "mentions_patch": false
         }
       ]
@@ -924,8 +924,8 @@
           "short": "Codeware",
           "name": "Codeware",
           "status": "Likely safe",
-          "release_tag": "v1.12.0",
-          "release_published_at": "2024-07-29T19:40:19Z",
+          "release_tag": "v1.12.1",
+          "release_published_at": "2024-08-01T19:39:49Z",
           "mentions_patch": false
         }
       ]

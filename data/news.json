@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T18:24:59Z",
+  "generated_at": "2026-10-26T00:39:40Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,60 @@
     }
   ],
   "items": [
+    {
+      "title": "Phantom Blade Zero review",
+      "url": "https://www.eurogamer.net/phantom-blade-zero-review-1",
+      "source": "Eurogamer",
+      "published_at": "2026-10-26T00:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Commander Shepard actors Jennifer Hale & Mark Meer mourn BioWare: 'It was in the hands of ownership that may not have understood what BioWare fully is''",
+      "url": "https://www.pcgamer.com/games/mass-effect/commander-shepard-actors-jennifer-hale-and-mark-meer-mourn-bioware-together-it-was-in-the-hands-of-ownership-that-may-not-have-understood-what-bioware-fully-is/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-25T20:49:51Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Indies and non-sequels have exploded in the last year, and it's not all friendslop",
+      "url": "https://www.pcgamer.com/gaming-industry/indies-and-non-sequels-have-exploded-in-the-last-year-and-its-not-all-friendslop/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-25T19:17:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "187K+ fans call for EA to \"Save Mass Effect\"",
+      "url": "https://www.eurogamer.net/save-mass-effect-petition",
+      "source": "Eurogamer",
+      "published_at": "2026-10-25T18:50:44Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "'Save Mass Effect' petition hits over 180,000 signatures within days of BioWare's closure",
+      "url": "https://www.pcgamer.com/games/mass-effect/save-mass-effect-petition-hits-over-180-000-signatures-within-days-of-biowares-closure/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-25T18:24:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The creator of our running RPG of the year weighs in on BioWare's closure: 'They were fundamental to the genre'",
+      "url": "https://www.pcgamer.com/games/rpg/the-creator-of-our-running-rpg-of-the-year-weighs-in-on-biowares-closure-they-were-fundamental-to-the-genre/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-25T18:23:41Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Call of Duty movie will explore the \"cost of war\", says director",
       "url": "https://www.eurogamer.net/call-of-duty-movie-cost-of-war",
@@ -513,62 +567,6 @@
       "url": "https://www.rockpapershotgun.com/future-no-thanks-dev-removes-ai-generated-voices-from-game-and-offers-refunds-to-players-who-feel-betrayed",
       "source": "Rock Paper Shotgun",
       "published_at": "2026-10-23T17:26:32Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Mass Effect crossover items have seemingly been removed from Battlefield 6 following EA's sudden closure of BioWare",
-      "url": "https://www.eurogamer.net/mass-effect-battlefield-6-crossover-bioware-closure",
-      "source": "Eurogamer",
-      "published_at": "2026-10-23T17:19:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Abyssal Lapidary is making the social media rounds and I can confirm cutting gemstones is just as satisfying as it looks",
-      "url": "https://www.pcgamer.com/games/sim/abyssal-lapidary-is-making-the-social-media-rounds-and-i-can-confirm-cutting-gemstones-is-just-as-satisfying-as-it-looks/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-23T16:47:44Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Sim Update 7.1 Release Notes [1.9.21.0] - Available Now",
-      "url": "https://store.steampowered.com/news/app/2537590/view/1847286114037158",
-      "source": "Steam \u00b7 MSFS 2024",
-      "published_at": "2026-10-23T16:40:37Z",
-      "games": [
-        "msfs-2024"
-      ],
-      "kind": "patch",
-      "highlight": true
-    },
-    {
-      "title": "BioWare staff \"should be given the first opportunity and the federal support\" to buy the studio and keep it running, says Canadian political party leader",
-      "url": "https://www.rockpapershotgun.com/bioware-staff-should-be-given-the-first-opportunity-and-the-federal-support-to-buy-the-studio-and-keep-it-running-says-canadian-political-party-leader",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-23T16:30:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Upcoming Mass Effect-like Exodus himbo-fies protagonist after fans complain about his face",
-      "url": "https://www.pcgamer.com/games/rpg/upcoming-mass-effect-like-exodus-himbo-fies-protagonist-after-fans-complain-about-his-face/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-23T16:27:52Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Call of Duty: Modern Warfare 4 actually runs pretty smoothly with Activision's 'recommended' RTX 3060 Ti graphics card, and here are the settings I use to get the best performance from it",
-      "url": "https://www.pcgamer.com/games/call-of-duty/call-of-duty-modern-warfare-4-actually-runs-pretty-smoothly-with-activisions-recommended-rtx-3060-ti-graphics-card-and-here-are-the-settings-i-use-to-get-the-best-performance-from-it/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-23T16:13:25Z",
       "games": [],
       "kind": "news",
       "highlight": false
