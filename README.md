@@ -198,3 +198,7 @@ Not affiliated with CD PROJEKT RED, Nexus Mods, or framework authors. Statuses a
 
 Preferred: Cloudflare dashboard → Workers & Pages → `modsafe` → Metrics → **Web Analytics → Enable**. Cloudflare injects the beacon itself on the next deploy, with no code change.
 Alternative: create a Web Analytics site for `modsafe.app` (manual JS snippet), then set the Pages env var `CF_ANALYTICS_TOKEN=<site token>`. The build then adds the beacon to every page. The token is public.
+
+## Canonical host (Pages Function)
+
+`functions/_middleware.js` (Pages CI compiles `functions/` at the repo root, not inside `dist/`) 301-redirects `www.modsafe.app` and `modsafe.pages.dev` to the same path + query on `https://modsafe.app`. Per-deployment/branch preview URLs (`<hash>.modsafe.pages.dev`) are not redirected; they get `X-Robots-Tag: noindex`. `dist/_routes.json` (from `build_routes()` in `src/build.py`) keeps the polled feeds, `/api/*`, badges and static assets off the Function so the free 100k Function requests/day is never close. Machine-readable files not listed in the sitemap get `X-Robots-Tag: noindex` via `_headers` (one matching rule per path). Tested in `tests/test_canonical_host.py`.

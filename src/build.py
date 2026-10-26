@@ -1518,14 +1518,37 @@ HEADERS = """/*
 /feed.xml
   Content-Type: application/atom+xml; charset=utf-8
   Cache-Control: public, max-age=600
+  X-Robots-Tag: noindex
 /:slug/feed.xml
   Content-Type: application/atom+xml; charset=utf-8
   Cache-Control: public, max-age=600
+  X-Robots-Tag: noindex
 /badge/*
   Cache-Control: public, max-age=900
+  X-Robots-Tag: noindex
 /badge/*.svg
   Content-Type: image/svg+xml; charset=utf-8
+/status.json
+  X-Robots-Tag: noindex
+/:slug/status.json
+  X-Robots-Tag: noindex
+/:slug/mods.json
+  X-Robots-Tag: noindex
 """
+# X-Robots-Tag: machine-readable files that are NOT in the sitemap get noindex (one
+# matching rule per path, or Pages joins duplicates as "noindex, noindex").
+# /api/v1/status.json, /games.json and /llms.txt stay indexable: they are listed in
+# the sitemap on purpose, and noindex + sitemap = "Submitted URL marked noindex".
+
+
+def build_routes() -> str:
+    """dist/_routes.json: which paths invoke functions/_middleware.js (canonical-host
+    redirect). Free plan = 100k Function requests/day, so high-volume static/machine
+    paths (polled feeds, API, badges, assets) bypass the Function entirely."""
+    exclude = ["/api/*", "/badge/*", "/fonts/*", "/img/*", "/og/*", "/styles.css",
+               "/feed.xml", "/status.json", "/games.json"]
+    exclude += [f"/{g['slug']}/feed.xml" for g in GAMES]
+    return json.dumps({"version": 1, "include": ["/*"], "exclude": exclude}, indent=2) + "\n"
 
 
 def shields_endpoint(game: dict, data: dict) -> dict:
@@ -1595,6 +1618,7 @@ def main() -> int:
     write(DIST / "sitemap.xml", build_sitemap())
     write(DIST / "_redirects", REDIRECTS)
     write(DIST / "_headers", HEADERS)
+    write(DIST / "_routes.json", build_routes())
     missing = missing_asset_refs(DIST)
     if missing:
         raise SystemExit("Build check failed: referenced images missing from dist/:\n  " +
