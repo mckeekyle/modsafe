@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T00:39:40Z",
+  "generated_at": "2026-10-26T06:38:18Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,15 @@
     }
   ],
   "items": [
+    {
+      "title": "Steam Week in Review: AI disclosures enter the discourse again, as Epic CEO calls them 'just as partisan as mandatory political essays'",
+      "url": "https://www.pcgamer.com/gaming-industry/steam-week-in-review-ai-disclosures-enter-the-discourse-again-as-epic-ceo-calls-them-just-as-partisan-as-mandatory-political-essays/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-26T03:12:41Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Phantom Blade Zero review",
       "url": "https://www.eurogamer.net/phantom-blade-zero-review-1",
@@ -558,15 +567,6 @@
       "url": "https://www.rockpapershotgun.com/factorios-final-major-update-has-rolled-off-the-assembly-line-adding-the-things-we-wanted-to-do-for-20-but-didnt-have-time-for",
       "source": "Rock Paper Shotgun",
       "published_at": "2026-10-23T17:30:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Future? No Thanks! dev removes AI-generated voices from game and offers refunds to players who feel \"betrayed\"",
-      "url": "https://www.rockpapershotgun.com/future-no-thanks-dev-removes-ai-generated-voices-from-game-and-offers-refunds-to-players-who-feel-betrayed",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-23T17:26:32Z",
       "games": [],
       "kind": "news",
       "highlight": false

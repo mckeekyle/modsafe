@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T00:38:10Z",
+  "generated_at": "2026-10-26T06:36:48Z",
   "game": {
     "slug": "cyberpunk-2077",
     "name": "Cyberpunk 2077",
@@ -27,13 +27,13 @@
       "sensitive": true,
       "status": "Safe",
       "base_status": "Updated for latest patch",
-      "reason": "Latest release notes mention patch Patch 2.5 and the release is on/after the patch date.",
+      "reason": "Latest release is on/after patch Patch 2.5; an earlier post-patch release (v1.38.0) explicitly mentioned that version.",
       "breakage_reports": [],
       "official": null,
-      "release_tag": "v1.38.0",
-      "release_name": "Game version 2.5",
-      "release_published_at": "2026-10-22T12:57:17Z",
-      "release_url": "https://github.com/maximegmd/CyberEngineTweaks/releases/tag/v1.38.0",
+      "release_tag": "v1.38.1",
+      "release_name": "v1.38.1",
+      "release_published_at": "2026-10-26T01:28:51Z",
+      "release_url": "https://github.com/maximegmd/CyberEngineTweaks/releases/tag/v1.38.1",
       "mentions_patch": true,
       "newer_than_patch": true,
       "mention_releases": [
