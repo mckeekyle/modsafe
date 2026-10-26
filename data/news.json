@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T14:41:17Z",
+  "generated_at": "2026-10-26T18:39:31Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -22,6 +22,161 @@
   ],
   "items": [
     {
+      "title": "The GameMaker engine series behind Undertale, Hotline Miami and Spelunky is going free for commercial use on PC",
+      "url": "https://www.rockpapershotgun.com/the-gamemaker-engine-series-behind-undertale-hotline-miami-and-spelunky-is-going-free-for-commercial-use-on-pc",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-26T18:15:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "World Update 23: Poland and the Baltics",
+      "url": "https://store.steampowered.com/news/app/2537590/view/1847286114046193",
+      "source": "Steam \u00b7 MSFS 2024",
+      "published_at": "2026-10-26T18:11:27Z",
+      "games": [
+        "msfs-2024"
+      ],
+      "kind": "announcement",
+      "highlight": false
+    },
+    {
+      "title": "Microsoft is looking to cut more than 25% of its workforce",
+      "url": "https://www.pcgamer.com/gaming-industry/microsoft-is-looking-to-cut-more-than-25-percent-of-its-workforce/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-26T17:49:25Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Ghost of Yotei studio Sucker Punch reportedly lays off 26 developers \"after carefully observing the challenges in the market\"",
+      "url": "https://www.eurogamer.net/ghost-of-yotei-sucker-punch-lays-off-developers",
+      "source": "Eurogamer",
+      "published_at": "2026-10-26T17:48:33Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "With Xbox cuts not done, Microsoft offer voluntary buyouts to around 60,000 workers across the company in latest attempt to get rid of staff",
+      "url": "https://www.rockpapershotgun.com/with-xbox-cuts-not-done-microsoft-offer-voluntary-buyouts-to-around-60000-workers-across-the-company-in-latest-attempt-to-get-rid-of-staff",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-26T17:40:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "New Windows 11 Insider Experimental build adds the ability to check your internet speed without a browser",
+      "url": "https://www.pcgamer.com/software/windows/new-windows-11-insider-experimental-build-adds-the-ability-to-check-your-internet-speed-without-a-browser/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-26T17:29:05Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Steam's AI disclosures are akin to \"forcing developers to list their voting history\", says man who must hate seeing eggs virtue signal that they're free-range",
+      "url": "https://www.rockpapershotgun.com/steams-ai-disclosures-are-akin-to-forcing-developers-to-list-their-voting-history-says-man-who-must-hate-seeing-eggs-virtue-signal-that-theyre-free-range",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-26T17:03:44Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "A whole host of Steam PC games can now run locally on a jailbroken PlayStation 5, including Portal, Left 4 Dead 2, and many more",
+      "url": "https://www.pcgamer.com/hardware/a-whole-host-of-steam-pc-games-can-now-run-locally-on-a-jailbroken-playstation-5-including-portal-left-4-dead-2-and-many-more/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-26T16:56:44Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "220,000-signatory petition to \"save Mass Effect\" doesn't mention BioWare, suggests giving Mass Effect 5 to somebody else",
+      "url": "https://www.rockpapershotgun.com/220000-signatory-petition-to-save-mass-effect-doesnt-mention-bioware-suggests-giving-mass-effect-5-to-somebody-else",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-26T16:17:51Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Valve adds CD-ROM support to Steam Frame kernel less than ten minutes after saying it would look into it",
+      "url": "https://www.pcgamer.com/hardware/vr-hardware/valve-adds-cd-rom-support-to-steam-frame-kernel-less-than-ten-minutes-after-saying-it-would-look-into-it/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-26T16:11:08Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The 13 scariest, spookiest video games you should play this Halloween",
+      "url": "https://www.eurogamer.net/13-scariest-spookiest-video-games-this-halloween",
+      "source": "Eurogamer",
+      "published_at": "2026-10-26T15:29:45Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "'I no longer think we\u2019re going to be able to patch all bugs' says AI Pandora's box opener Sam Altman: 'We're going to have to completely switch the defense model'",
+      "url": "https://www.pcgamer.com/software/ai/i-no-longer-think-were-going-to-be-able-to-patch-all-bugs-says-ai-pandoras-box-opener-sam-altman-were-going-to-have-to-completely-switch-the-defense-model/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-26T15:24:27Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Call of Duty's director explains that his film will be all about the 'consequence of war' and not just a shoot-'em-up",
+      "url": "https://www.pcgamer.com/movies-tv/call-of-dutys-director-explains-that-his-film-will-be-all-about-the-consequence-of-war-and-not-just-a-shoot-em-up/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-26T15:12:54Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Control loreheads shouldn't put too much stock into what The Board says in Control Resonant - the devs say it's \"basically gibberish\"",
+      "url": "https://www.eurogamer.net/control-resonant-the-board-dialogue-crafted-gibberish",
+      "source": "Eurogamer",
+      "published_at": "2026-10-26T15:10:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Steam is broken: It's still up but some users can't log in",
+      "url": "https://www.pcgamer.com/games/steam-is-broken-its-still-up-but-some-users-cant-log-in/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-26T14:57:12Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "I have jumped in WoW: Forever's beta 7738 times, roughly 135 jumps an hour, and if you'd like to find out if you beat me there's a stat tracker",
+      "url": "https://www.pcgamer.com/games/world-of-warcraft/i-have-jumped-in-wow-forevers-beta-7738-times-roughly-135-jumps-an-hour-and-if-youd-like-to-find-out-if-you-beat-me-theres-a-stat-tracker/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-26T14:52:49Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "As beloved Dishonored studio faces closure, Xbox agrees union request to extend negotiations deadline in hope of saving 217 jobs",
+      "url": "https://www.eurogamer.net/arkane-lyon-consultation-period-extended-december",
+      "source": "Eurogamer",
+      "published_at": "2026-10-26T14:47:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
       "title": "REDstreams \u2013 Cyberpunk: Edgerunners 2",
       "url": "https://store.steampowered.com/news/app/1091500/view/1847286114045127",
       "source": "Steam \u00b7 Cyberpunk",
@@ -30,6 +185,15 @@
         "cyberpunk-2077"
       ],
       "kind": "announcement",
+      "highlight": false
+    },
+    {
+      "title": "I've never felt worse for doing well in a videogame than in this intensely '90s citybuilder",
+      "url": "https://www.pcgamer.com/games/sim/ive-never-felt-worse-for-doing-well-in-a-videogame-than-in-this-intensely-90s-citybuilder/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-26T14:38:24Z",
+      "games": [],
+      "kind": "news",
       "highlight": false
     },
     {
@@ -403,168 +567,6 @@
       "url": "https://www.pcgamer.com/games/rpg/biowares-incredible-legacy-will-continue-as-long-as-there-are-rpgs/",
       "source": "PC Gamer",
       "published_at": "2026-10-24T18:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "FBI investigating theft of more than 6000 PSA-graded trading cards, including almost 3000 Pok\u00e9mon cards",
-      "url": "https://www.eurogamer.net/fbi-investigates-psa-graded-card-theft-pokemon",
-      "source": "Eurogamer",
-      "published_at": "2026-10-24T17:17:53Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Paralives' first major update slips to next year, but when it comes you can expect some pretty meaty improvements for all of its main features",
-      "url": "https://www.rockpapershotgun.com/paralives-first-major-update-slips-to-next-year-but-when-it-comes-you-can-expect-some-pretty-meaty-improvements-for-all-of-its-main-features",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-24T17:03:55Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Now it's over, WoW: Forever's beta has left me with just one fear\u2014its endgame",
-      "url": "https://www.pcgamer.com/games/world-of-warcraft/now-its-over-wow-forevers-beta-has-left-me-with-just-one-fear-its-endgame/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-24T17:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "New Blood CEO confirms it: the worst way to sell immersive sims like Gloomwood and Fallen Aces is to call them immersive sims",
-      "url": "https://www.pcgamer.com/games/sim/new-blood-ceo-confirms-it-the-worst-way-to-sell-immersive-sims-like-gloomwood-and-fallen-aces-is-to-call-them-immersive-sims/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-24T16:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "I've got egg on my face because Steam's Personal Calendar feature has apparently been a test this whole time and is only now actually a fully fledged component",
-      "url": "https://www.rockpapershotgun.com/ive-got-egg-on-my-face-because-steams-personal-calendar-feature-has-apparently-been-a-test-this-whole-time-and-is-only-now-actually-a-fully-fledged-component",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-24T15:57:33Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The mouse P.I. for hire from Mouse: P.I. For Hire joins the meat boy from Super Meat Boy 3D in gaming's latest indie crossover",
-      "url": "https://www.pcgamer.com/games/action/the-mouse-p-i-for-hire-from-mouse-p-i-for-hire-joins-the-meat-boy-from-super-meat-boy-3d-in-gamings-latest-indie-crossover/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-24T15:46:15Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Japan Actors Union pushes for heavy restrictions on AI copying dead actors",
-      "url": "https://www.pcgamer.com/software/ai/japan-actors-union-pushes-for-heavy-restrictions-on-ai-copying-dead-actors/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-24T15:33:23Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Are we in the cozy gaming gold rush era? 'Cozy' has grown over 250% on Steam and 200% in my inbox since 2024",
-      "url": "https://www.pcgamer.com/games/life-sim/are-we-in-the-cozy-gaming-gold-rush-era-cozy-has-grown-over-250-percent-on-steam-and-200-percent-in-my-inbox-since-2024/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-24T15:10:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The best feature in the original Alan Wake is an absence: the man has no reticle",
-      "url": "https://www.pcgamer.com/games/horror/the-best-feature-in-the-original-alan-wake-is-an-absence-the-man-has-no-reticle/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-24T15:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "'I drank from the chalice of blood': indie dev scrubs his game of AI-generated voice lines, having previously described the technology as 'anti-human and anti-art'",
-      "url": "https://www.pcgamer.com/gaming-industry/game-development/i-drank-from-the-chalice-of-blood-indie-dev-scrubs-his-game-of-ai-generated-voice-lines-having-previously-described-the-technology-as-anti-human-and-anti-art/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-24T14:30:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Mass Effect Universe \"looked incredible\" says creator who claims he advised BioWare",
-      "url": "https://www.eurogamer.net/mass-effect-universe-details-dantics-claims",
-      "source": "Eurogamer",
-      "published_at": "2026-10-24T14:26:27Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Award-winning sci-fi author NK Jemisin joins BioWare's mourners and scorns a broken industry for killing geese that 'laid the golden eggs'",
-      "url": "https://www.pcgamer.com/gaming-industry/award-winning-sci-fi-author-nk-jemisin-joins-biowares-mourners-and-scorns-a-broken-industry-for-killing-geese-that-laid-the-golden-eggs/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-24T14:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Mass Effect 3 ending discourse ignored the RPG's scale, ambition, and exuberance, including that of its oddly great co-op",
-      "url": "https://www.rockpapershotgun.com/mass-effect-3-ending-discourse-ignored-the-rpgs-scale-ambition-and-exuberance-including-that-of-its-oddly-great-co-op",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-24T14:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Prime Video's Fallout reality competition Fallout Shelter: The Experiment premieres in January",
-      "url": "https://www.eurogamer.net/fallout-shelter-the-experiment-prime-video-release-date",
-      "source": "Eurogamer",
-      "published_at": "2026-10-24T13:30:30Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Xbox's first chief operating officer Helen Chiang leaves Microsoft just three months into the job",
-      "url": "https://www.eurogamer.net/xbox-coo-helen-chiang-leaves-microsoft",
-      "source": "Eurogamer",
-      "published_at": "2026-10-24T12:57:17Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "After 14 years of development, Factorio's final major update is out now",
-      "url": "https://www.pcgamer.com/games/survival-crafting/after-14-years-of-development-factorios-final-major-update-is-out-now/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-24T12:10:44Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Star Wars Galaxies' Restoration project just received another massive update, including a huge visual upgrade and an overhaul to the Wookiees' home planet",
-      "url": "https://www.pcgamer.com/games/mmo/star-wars-galaxies-just-got-another-massive-update-thanks-to-its-community-restoration-project-including-a-huge-visual-upgrade-and-a-refurb-to-the-wookiees-home-planet/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-24T11:09:10Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "What are we all playing this weekend?",
-      "url": "https://www.rockpapershotgun.com/what-are-we-all-playing-this-weekend-405",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-24T07:00:00Z",
       "games": [],
       "kind": "news",
       "highlight": false
