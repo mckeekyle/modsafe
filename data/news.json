@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T06:38:18Z",
+  "generated_at": "2026-10-26T14:41:17Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,145 @@
     }
   ],
   "items": [
+    {
+      "title": "REDstreams \u2013 Cyberpunk: Edgerunners 2",
+      "url": "https://store.steampowered.com/news/app/1091500/view/1847286114045127",
+      "source": "Steam \u00b7 Cyberpunk",
+      "published_at": "2026-10-26T14:39:00Z",
+      "games": [
+        "cyberpunk-2077"
+      ],
+      "kind": "announcement",
+      "highlight": false
+    },
+    {
+      "title": "Phantom Blade Zero devs say the game needs 300 GB of free space for the pre-load process, alongside updated system requirements",
+      "url": "https://www.pcgamer.com/hardware/phantom-blade-zero-devs-say-the-game-needs-300-gb-of-free-space-for-the-pre-load-process-alongside-updated-system-requirements/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-26T14:21:32Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "After a year of testing, one of Steam's best features is finally out of beta, making it easier to find games you might actually like",
+      "url": "https://www.eurogamer.net/steam-personal-calendar-full-release",
+      "source": "Eurogamer",
+      "published_at": "2026-10-26T14:06:37Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The Golden Joystick Awards Ultimate Game of the Year voting is a-go, with games like Crimson Desert, The Blood of Dawnwalker, and Big Walk all on the docket",
+      "url": "https://www.pcgamer.com/gaming-industry/events-conferences/the-golden-joystick-awards-ultimate-game-of-the-year-voting-is-a-go-with-games-like-crimson-desert-the-blood-of-dawnwalker-and-big-walk-all-on-the-docket/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-26T14:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "\"IT FLIPS UP,\" Fallout New Vegas modders yell after releasing a funky Pip-Boy based on cancelled entry Van Buren's design docs",
+      "url": "https://www.rockpapershotgun.com/it-flips-up-fallout-new-vegas-modders-yell-after-releasing-a-funky-pip-boy-based-on-cancelled-entry-van-burens-design-docs",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-26T13:30:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Clean a whole planet with a toothbrush in Moon Sweepers, the PowerWash genre's latest crime against perfectionists",
+      "url": "https://www.rockpapershotgun.com/clean-a-whole-planet-with-a-toothbrush-in-moon-sweepers-the-powerwash-genres-latest-crime-against-perfectionists",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-26T12:44:03Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Despite initial player concerns, Capcom feels good about Onimusha: Way of the Sword's difficulty, and says it has the data to prove it got it right",
+      "url": "https://www.eurogamer.net/onimusha-way-of-the-sword-enemy-difficulty-capcom",
+      "source": "Eurogamer",
+      "published_at": "2026-10-26T12:32:53Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Leaked video shows hundreds, possibly thousands of brand-new RTX 5090s being dismantled for AI server usage in Chinese factory",
+      "url": "https://www.pcgamer.com/hardware/graphics-cards/leaked-video-shows-hundreds-possibly-thousands-of-brand-new-rtx-5090s-being-dismantled-for-ai-server-usage-in-chinese-factory/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-26T12:28:15Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "This week in PC games: Run a shady cyberpunk boutique in Probably Stolen, autobattle Viking towns in Northgard Battlegrounds, and trash homophobic robots in Virtue and a Sledgehammer",
+      "url": "https://www.rockpapershotgun.com/this-week-in-pc-games-run-a-shady-cyberpunk-boutique-in-probably-stolen-autobattle-viking-towns-in-northgard-battlegrounds-and-trash-homophobic-robots-in-virtue-and-a-sledgehammer",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-26T12:12:05Z",
+      "games": [
+        "cyberpunk-2077"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Shenmue 3: Enhanced Edition has been delayed to \"get everything right\"",
+      "url": "https://www.eurogamer.net/shenmue-3-enhanced-edition-delayed",
+      "source": "Eurogamer",
+      "published_at": "2026-10-26T12:05:37Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Korean police arrest cyberhacking gang reportedly led by self-taught hacker, who allegedly used AI to breach 60 firms and received a mere $210 in ransom",
+      "url": "https://www.pcgamer.com/hardware/korean-police-arrest-cyberhacking-gang-reportedly-led-by-self-taught-hacker-who-allegedly-used-ai-to-breach-60-firms-and-received-a-mere-usd210-in-ransom/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-26T12:00:52Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "32-year-old \"ellipsoid\" horror game Ecstatica gets a PC re-release today, showing us an alternative timeline in which polygonal 3D never became dominant",
+      "url": "https://www.rockpapershotgun.com/32-year-old-ellipsoid-horror-game-ecstatica-gets-a-pc-re-release-today-showing-us-an-alternative-timeline-in-which-polygonal-3d-never-became-dominant",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-26T11:35:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Mass Effect 5 was named Universe partly because it let players generate alternate timelines based on their choices in previous entries, technical director says",
+      "url": "https://www.rockpapershotgun.com/mass-effect-5-was-named-universe-partly-because-it-let-players-generate-alternate-timelines-based-on-their-choices-in-previous-entries-technical-director-says",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-26T11:02:57Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Call of Duty: Modern Warfare 4 players are calling for a PvE-only version of its DMZ mode - just like every extraction shooter before it",
+      "url": "https://www.eurogamer.net/call-of-duty-modern-warfare-4-dmz-pve-petition",
+      "source": "Eurogamer",
+      "published_at": "2026-10-26T09:56:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Canadian political party leader blames BioWare's closure on private equity, says government should help former employees buy it back",
+      "url": "https://www.eurogamer.net/canadian-politician-bioware-employees-buy-studio-federal-support",
+      "source": "Eurogamer",
+      "published_at": "2026-10-26T09:53:04Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Steam Week in Review: AI disclosures enter the discourse again, as Epic CEO calls them 'just as partisan as mandatory political essays'",
       "url": "https://www.pcgamer.com/gaming-industry/steam-week-in-review-ai-disclosures-enter-the-discourse-again-as-epic-ceo-calls-them-just-as-partisan-as-mandatory-political-essays/",
@@ -426,147 +565,6 @@
       "url": "https://www.rockpapershotgun.com/what-are-we-all-playing-this-weekend-405",
       "source": "Rock Paper Shotgun",
       "published_at": "2026-10-24T07:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "What we've been playing - \"Shoving Moon Flesh into an alien grandma's mouth\"",
-      "url": "https://www.eurogamer.net/what-weve-been-playing-warframe-over-the-hill-switch-sports-resort",
-      "source": "Eurogamer",
-      "published_at": "2026-10-24T07:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Why private equity acquisitions like the one that just claimed BioWare are so dreaded",
-      "url": "https://www.pcgamer.com/gaming-industry/why-private-equity-acquisitions-like-the-one-that-just-claimed-bioware-are-so-dreaded/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-23T22:46:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "SteamOS 3.9",
-      "url": "https://store.steampowered.com/news/app/1675200/view/1847286114038096",
-      "source": "Steam \u00b7 Steam Deck",
-      "published_at": "2026-10-23T22:04:26Z",
-      "games": [
-        "steam-deck"
-      ],
-      "kind": "patch",
-      "highlight": true
-    },
-    {
-      "title": "SteamOS 3.9.5 Beta",
-      "url": "https://store.steampowered.com/news/app/1675200/view/1847286114038094",
-      "source": "Steam \u00b7 Steam Deck",
-      "published_at": "2026-10-23T22:04:14Z",
-      "games": [
-        "steam-deck"
-      ],
-      "kind": "announcement",
-      "highlight": false
-    },
-    {
-      "title": "Mass Effect 5 was set in a 'galactic Cold War,' new leak claims, and all 3 endings were wrapped into 1",
-      "url": "https://www.pcgamer.com/games/mass-effect/mass-effect-5-was-set-in-a-galactic-cold-war-new-leak-claims-and-all-3-endings-were-wrapped-into-1/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-23T21:58:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Based on player data, Capcom's pretty happy with the difficulty level of Onimusha: Way of the Sword: 'We think it's hit the right spot'",
-      "url": "https://www.pcgamer.com/games/action/based-on-player-data-capcoms-pretty-happy-with-the-difficulty-level-of-onimusha-way-of-the-sword-we-think-its-hit-the-right-spot/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-23T21:43:44Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Nintendo's Shigeru Miyamoto says even if gen-AI \"were to eventually handle everything, there will always be a role left\" for human designers",
-      "url": "https://www.eurogamer.net/nintendo-shigeru-miyamoto-gen-ai",
-      "source": "Eurogamer",
-      "published_at": "2026-10-23T20:12:34Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Time could be running out for Arkane",
-      "url": "https://www.pcgamer.com/gaming-industry/time-could-be-running-out-for-arkane/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-23T20:07:21Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "It's our new daily game fixation and we all stink at it: Can you guess how much used cars cost?",
-      "url": "https://www.pcgamer.com/games/puzzle/its-our-new-daily-game-fixation-and-we-all-stink-at-it-can-you-guess-how-much-used-cars-cost/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-23T19:37:16Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Creative Assembly exec pins the blame for the Shogun 2 remaster mess on someone else: 'This was not a Creative Assembly developed game'",
-      "url": "https://www.pcgamer.com/games/strategy/creative-assembly-exec-pins-the-blame-for-the-shogun-2-remaster-mess-on-someone-else-this-was-not-a-creative-assembly-developed-game/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-23T19:35:17Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "'Every single week it's going to feel like the sky is falling': Cloudflare CEO says strap in for 'a couple years' of AI-powered internet security mayhem",
-      "url": "https://www.pcgamer.com/software/security/every-single-week-its-going-to-feel-like-the-sky-is-falling-cloudflare-ceo-says-strap-in-for-a-couple-years-of-ai-powered-internet-security-mayhem/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-23T19:24:34Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "With Minecraft and Diablo shows already on the way, Netflix reportedly offered Xbox $500m for a bigger film and TV deal",
-      "url": "https://www.eurogamer.net/netflix-500m-xbox-film-tv-rights",
-      "source": "Eurogamer",
-      "published_at": "2026-10-23T18:38:57Z",
-      "games": [
-        "minecraft"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "As devastating Xbox \"reset\" continues, Dishonored studio Arkane Lyon reportedly only has until November to find a new buyer before it's closed",
-      "url": "https://www.eurogamer.net/xbox-layoffs-marvels-blade-arkane-lyon-closure",
-      "source": "Eurogamer",
-      "published_at": "2026-10-23T18:09:03Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "'I'm forever grateful to BioWare': 16 game developers share the moment a BioWare game inspired them to join the industry",
-      "url": "https://www.pcgamer.com/gaming-industry/im-forever-grateful-to-bioware-16-game-developers-share-the-moment-a-bioware-game-inspired-them-to-join-the-industry/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-23T17:56:29Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Factorio's final major update has rolled off the assembly line, adding \"the things we wanted to do for 2.0 but didn't have time for\"",
-      "url": "https://www.rockpapershotgun.com/factorios-final-major-update-has-rolled-off-the-assembly-line-adding-the-things-we-wanted-to-do-for-20-but-didnt-have-time-for",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-23T17:30:00Z",
       "games": [],
       "kind": "news",
       "highlight": false
