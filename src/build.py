@@ -1111,7 +1111,7 @@ def history_faq(game: dict, data: dict, s: dict) -> list[dict]:
                  f"{fmt_date(s['last'].isoformat())}. The average gap between them is {hstats.fmt_days(s['avg_gap'])}."}]
     if s["pairs"]:
         lw = s["longest_wait"]
-        a = (f"Across {s['pairs']} patch and framework pairs where a release named the patch, the update came a median "
+        a = (f"Across {s['pairs']} {'patch-and-framework pair' if s['pairs'] == 1 else 'patch-and-framework pairs'} where a release named the patch, the update came a median "
              f"of {hstats.fmt_days(s['median_days'])} (mean {hstats.fmt_days(s['mean_days'])}) after the patch post. "
              f"The longest was {lw['fw']} {lw['tag']} for {lw['patch']}, at {hstats.fmt_days(lw['days'])}.")
     elif s["next_median"] is not None:
