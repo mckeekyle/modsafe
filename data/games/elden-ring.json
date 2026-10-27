@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T06:35:51Z",
+  "generated_at": "2026-10-27T12:37:23Z",
   "game": {
     "slug": "elden-ring",
     "name": "Elden Ring",
@@ -20,7 +20,7 @@
       ]
     }
   },
-  "verdict": "Just patched, wait",
+  "verdict": "Likely safe",
   "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
   "frameworks": [
     {
@@ -32,9 +32,9 @@
       "repo": "yuiamoroll/EldenRingSeamlessCoopRelease",
       "tracked": true,
       "sensitive": true,
-      "status": "Just patched, wait",
+      "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch 1.17.2; compatibility is unverified \u2014 check the project page.",
+      "reason": "Latest release predates patch 1.17.2; compatibility is unverified \u2014 check the project page. Patch is 7 days old; no breakage signal available.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v2.0.1",
@@ -54,9 +54,9 @@
       "repo": "garyttierney/me3",
       "tracked": true,
       "sensitive": true,
-      "status": "Just patched, wait",
+      "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch 1.17.2; compatibility is unverified \u2014 check the project page.",
+      "reason": "Latest release predates patch 1.17.2; compatibility is unverified \u2014 check the project page. No open breakage reports 7 days after the patch.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v0.13.0",
@@ -738,6 +738,26 @@
         {
           "short": "me3",
           "status": "Just patched, wait",
+          "release_tag": "v0.13.0"
+        }
+      ]
+    },
+    {
+      "at": "2026-10-27T12:37:23Z",
+      "patch": "1.17.2",
+      "patch_key": "1.17.2",
+      "patch_published_at": "2026-10-20T07:00:45Z",
+      "patch_url": "https://www.eldenring.jp/newsdetail/news_detail_261020_1.html",
+      "verdict": "Likely safe",
+      "frameworks": [
+        {
+          "short": "Seamless Co-op",
+          "status": "Likely safe",
+          "release_tag": "v2.0.1"
+        },
+        {
+          "short": "me3",
+          "status": "Likely safe",
           "release_tag": "v0.13.0"
         }
       ]
