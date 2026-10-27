@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T12:37:45Z",
+  "generated_at": "2026-10-27T18:38:42Z",
   "game": {
     "slug": "minecraft",
     "name": "Minecraft: Java Edition",
@@ -731,7 +731,7 @@
       "published_at": "2026-03-24T12:11:04Z"
     }
   ],
-  "latest_snapshot": "26.4-snapshot-5",
+  "latest_snapshot": "26.4-snapshot-6",
   "sources": {
     "mojang_manifest": "https://piston-meta.mojang.com/mc/game/version_manifest_v2.json",
     "fabric_meta": "https://meta.fabricmc.net/v2/versions/game",
