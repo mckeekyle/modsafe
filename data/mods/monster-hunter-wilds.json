@@ -1,198 +1,198 @@
 {
- "game": "monster-hunter-wilds",
- "verified_at": "2026-10-26",
- "manager": {
-  "name": "Fluffy Mod Manager",
-  "url": "https://www.nexusmods.com/site/mods/818"
- },
- "intro": "Popular Monster Hunter Wilds mods updated after Ver.1.042 (August 2026). Most are on Nexus Mods and need REFramework; install it first, then use Fluffy Mod Manager for the rest. Capcom doesn't support mods, so uninstall them before each title update.",
- "mods": [
-  {
-   "id": "reframework",
-   "name": "REFramework",
-   "category": "Framework",
-   "summary": "praydog's mod framework for RE Engine games. Every script mod for Wilds needs it.",
-   "source": "github",
-   "url": "https://github.com/praydog/REFramework-nightly/releases",
-   "requires": [],
-   "framework_id": "reframework",
-   "note": "Download REFramework.zip and extract only dinput8.dll next to MonsterHunterWilds.exe. If the newest nightly crashes, try the previous one."
+  "game": "monster-hunter-wilds",
+  "verified_at": "2026-10-26",
+  "manager": {
+    "name": "Fluffy Mod Manager",
+    "url": "https://www.nexusmods.com/site/mods/818"
   },
-  {
-   "id": "catlib",
-   "name": "CatLib",
-   "category": "Framework",
-   "summary": "Shared scripts and resources used by several popular editor mods. Does nothing on its own.",
-   "source": "nexus",
-   "nexus_domain": "monsterhunterwilds",
-   "nexus_id": 65,
-   "url": "https://www.nexusmods.com/monsterhunterwilds/mods/65",
-   "requires": [
-    "reframework"
-   ],
-   "last_updated": "2026-08-21"
-  },
-  {
-   "id": "hunterpie",
-   "name": "HunterPie",
-   "category": "Interface",
-   "summary": "Overlay showing monster health, parts, ailments, your damage meter and buff timers, without editing game files.",
-   "source": "github",
-   "url": "https://github.com/HunterPie/HunterPie",
-   "requires": [],
-   "note": "Standalone app (needs the .NET 10 Desktop Runtime), not an REFramework mod; its release notes name the Wilds version they support."
-  },
-  {
-   "id": "monster-weakness-icon",
-   "name": "Monster Weakness Icon Indicator",
-   "category": "Interface",
-   "summary": "Shows which elements each monster is weak to as icons on the HUD.",
-   "source": "nexus",
-   "nexus_domain": "monsterhunterwilds",
-   "nexus_id": 367,
-   "url": "https://www.nexusmods.com/monsterhunterwilds/mods/367",
-   "requires": [
-    "reframework"
-   ],
-   "note": "Install it with Fluffy Mod Manager; higher-priority texture mods can hide the icons.",
-   "last_updated": "2026-09-06"
-  },
-  {
-   "id": "auto-skip-kill-cam",
-   "name": "Auto Skip Kill Cam (Fast Return)",
-   "category": "Quality of life",
-   "summary": "Skips the kill camera and, optionally, the carve timer and quest-end scenes.",
-   "source": "nexus",
-   "nexus_domain": "monsterhunterwilds",
-   "nexus_id": 617,
-   "url": "https://www.nexusmods.com/monsterhunterwilds/mods/617",
-   "requires": [
-    "reframework"
-   ],
-   "note": "Options are in the REFramework menu (Insert key).",
-   "last_updated": "2026-09-13"
-  },
-  {
-   "id": "disable-post-processing",
-   "name": "Disable Post-Processing Effects",
-   "category": "Visuals",
-   "summary": "Turn off or tune post-processing such as TAA, color correction, sharpening and film grain.",
-   "source": "nexus",
-   "nexus_domain": "monsterhunterwilds",
-   "nexus_id": 221,
-   "url": "https://www.nexusmods.com/monsterhunterwilds/mods/221",
-   "requires": [
-    "reframework"
-   ],
-   "note": "Needs the .NET 10 Desktop Runtime.",
-   "last_updated": "2026-09-06"
-  },
-  {
-   "id": "renodx",
-   "name": "RenoDX (HDR and SDR fix)",
-   "category": "Visuals",
-   "summary": "Rewrites the game's color grading to fix SDR and HDR, with controls for tone mapping, paper white and UI brightness.",
-   "source": "nexus",
-   "nexus_domain": "monsterhunterwilds",
-   "nexus_id": 202,
-   "url": "https://www.nexusmods.com/monsterhunterwilds/mods/202",
-   "requires": [
-    "reframework"
-   ],
-   "note": "Needs ReShade with full add-on support; it's an add-on, not a ReShade effect preset.",
-   "last_updated": "2026-08-04"
-  },
-  {
-   "id": "wilds-rehydrated",
-   "name": "Wilds Rehydrated",
-   "category": "Visuals",
-   "summary": "Color and lighting preset with deeper colors and shadows that removes the yellow tint, for SDR and HDR.",
-   "source": "nexus",
-   "nexus_domain": "monsterhunterwilds",
-   "nexus_id": 50,
-   "url": "https://www.nexusmods.com/monsterhunterwilds/mods/50",
-   "requires": [
-    "reframework",
-    "disable-post-processing",
-    "renodx"
-   ],
-   "note": "Also needs ReShade with add-on support.",
-   "last_updated": "2026-09-08"
-  },
-  {
-   "id": "permanent-event-quests",
-   "name": "Permanent Event Quests and Custom Quest Loader",
-   "category": "Content",
-   "summary": "Keeps Capcom's time-limited event quests playable any time, offline too, and loads custom quests.",
-   "source": "nexus",
-   "nexus_domain": "monsterhunterwilds",
-   "nexus_id": 1096,
-   "url": "https://www.nexusmods.com/monsterhunterwilds/mods/1096",
-   "requires": [
-    "reframework"
-   ],
-   "note": "Capcom warns against modified quests online; play these solo.",
-   "last_updated": "2026-09-17"
-  },
-  {
-   "id": "no-crafting-requirements",
-   "name": "No Crafting Requirements",
-   "category": "Gameplay",
-   "summary": "Sets material requirements for weapons, armor, talismans and Palico gear to zero.",
-   "source": "nexus",
-   "nexus_domain": "monsterhunterwilds",
-   "nexus_id": 29,
-   "url": "https://www.nexusmods.com/monsterhunterwilds/mods/29",
-   "requires": [
-    "reframework"
-   ],
-   "note": "Single player only. The loose-file version needs Fluffy Mod Manager's loose file loader.",
-   "last_updated": "2026-08-04"
-  },
-  {
-   "id": "artian-editor",
-   "name": "Artian Editor",
-   "category": "Gameplay",
-   "summary": "Edit the bonuses on Artian weapons from the REFramework menu.",
-   "source": "nexus",
-   "nexus_domain": "monsterhunterwilds",
-   "nexus_id": 196,
-   "url": "https://www.nexusmods.com/monsterhunterwilds/mods/196",
-   "requires": [
-    "reframework",
-    "catlib"
-   ],
-   "note": "Single player only. Open it under Script Generated UI in the REFramework menu.",
-   "last_updated": "2026-08-21"
-  },
-  {
-   "id": "charm-editor",
-   "name": "Charm Editor",
-   "category": "Gameplay",
-   "summary": "Edit talisman skills and slots; a Valid Check option keeps you to combinations the game can roll.",
-   "source": "nexus",
-   "nexus_domain": "monsterhunterwilds",
-   "nexus_id": 3067,
-   "url": "https://www.nexusmods.com/monsterhunterwilds/mods/3067",
-   "requires": [
-    "reframework",
-    "catlib"
-   ],
-   "note": "Single player only. Open it under Script Generated UI in the REFramework menu.",
-   "last_updated": "2026-08-21"
-  },
-  {
-   "id": "obsolete-mod-detector",
-   "name": "Obsolete Mod Detector (Blackscreen Fixer)",
-   "category": "Tools",
-   "summary": "Scans your mods for files that are likely outdated after a title update, a common cause of black screens.",
-   "source": "nexus",
-   "nexus_domain": "monsterhunterwilds",
-   "nexus_id": 1651,
-   "url": "https://www.nexusmods.com/monsterhunterwilds/mods/1651",
-   "requires": [],
-   "note": "Needs the .NET 8 Desktop Runtime. It's a best guess, so test the mods it flags.",
-   "last_updated": "2026-08-04"
-  }
- ]
+  "intro": "Popular Monster Hunter Wilds mods updated after Ver.1.042 (August 2026). Most are on Nexus Mods and need REFramework; install it first, then use Fluffy Mod Manager for the rest. Capcom doesn't support mods, so uninstall them before each title update.",
+  "mods": [
+    {
+      "id": "reframework",
+      "name": "REFramework",
+      "category": "Framework",
+      "summary": "praydog's mod framework for RE Engine games. Every script mod for Wilds needs it.",
+      "source": "github",
+      "url": "https://github.com/praydog/REFramework-nightly/releases",
+      "requires": [],
+      "framework_id": "reframework",
+      "note": "Download REFramework.zip and extract only dinput8.dll next to MonsterHunterWilds.exe. If the newest nightly crashes, try the previous one."
+    },
+    {
+      "id": "catlib",
+      "name": "CatLib",
+      "category": "Framework",
+      "summary": "Shared scripts and resources used by several popular editor mods. Does nothing on its own.",
+      "source": "nexus",
+      "nexus_domain": "monsterhunterwilds",
+      "nexus_id": 65,
+      "url": "https://www.nexusmods.com/monsterhunterwilds/mods/65",
+      "requires": [
+        "reframework"
+      ],
+      "last_updated": "2026-08-21"
+    },
+    {
+      "id": "hunterpie",
+      "name": "HunterPie",
+      "category": "Interface",
+      "summary": "Overlay showing monster health, parts, ailments, your damage meter and buff timers, without editing game files.",
+      "source": "github",
+      "url": "https://github.com/HunterPie/HunterPie",
+      "requires": [],
+      "note": "Standalone app (needs the .NET 10 Desktop Runtime), not an REFramework mod; its release notes name the Wilds version they support."
+    },
+    {
+      "id": "monster-weakness-icon",
+      "name": "Monster Weakness Icon Indicator",
+      "category": "Interface",
+      "summary": "Shows which elements each monster is weak to as icons on the HUD.",
+      "source": "nexus",
+      "nexus_domain": "monsterhunterwilds",
+      "nexus_id": 367,
+      "url": "https://www.nexusmods.com/monsterhunterwilds/mods/367",
+      "requires": [
+        "reframework"
+      ],
+      "note": "Install it with Fluffy Mod Manager; higher-priority texture mods can hide the icons.",
+      "last_updated": "2026-09-06"
+    },
+    {
+      "id": "auto-skip-kill-cam",
+      "name": "Auto Skip Kill Cam (Fast Return)",
+      "category": "Quality of life",
+      "summary": "Skips the kill camera and, optionally, the carve timer and quest-end scenes.",
+      "source": "nexus",
+      "nexus_domain": "monsterhunterwilds",
+      "nexus_id": 617,
+      "url": "https://www.nexusmods.com/monsterhunterwilds/mods/617",
+      "requires": [
+        "reframework"
+      ],
+      "note": "Options are in the REFramework menu (Insert key).",
+      "last_updated": "2026-09-13"
+    },
+    {
+      "id": "disable-post-processing",
+      "name": "Disable Post-Processing Effects",
+      "category": "Visuals",
+      "summary": "Turn off or tune post-processing such as TAA, color correction, sharpening and film grain.",
+      "source": "nexus",
+      "nexus_domain": "monsterhunterwilds",
+      "nexus_id": 221,
+      "url": "https://www.nexusmods.com/monsterhunterwilds/mods/221",
+      "requires": [
+        "reframework"
+      ],
+      "note": "Needs the .NET 10 Desktop Runtime.",
+      "last_updated": "2026-09-06"
+    },
+    {
+      "id": "renodx",
+      "name": "RenoDX (HDR and SDR fix)",
+      "category": "Visuals",
+      "summary": "Rewrites the game's color grading to fix SDR and HDR, with controls for tone mapping, paper white and UI brightness.",
+      "source": "nexus",
+      "nexus_domain": "monsterhunterwilds",
+      "nexus_id": 202,
+      "url": "https://www.nexusmods.com/monsterhunterwilds/mods/202",
+      "requires": [
+        "reframework"
+      ],
+      "note": "Needs ReShade with full add-on support; it's an add-on, not a ReShade effect preset.",
+      "last_updated": "2026-08-04"
+    },
+    {
+      "id": "wilds-rehydrated",
+      "name": "Wilds Rehydrated",
+      "category": "Visuals",
+      "summary": "Color and lighting preset with deeper colors and shadows that removes the yellow tint, for SDR and HDR.",
+      "source": "nexus",
+      "nexus_domain": "monsterhunterwilds",
+      "nexus_id": 50,
+      "url": "https://www.nexusmods.com/monsterhunterwilds/mods/50",
+      "requires": [
+        "reframework",
+        "disable-post-processing",
+        "renodx"
+      ],
+      "note": "Also needs ReShade with add-on support.",
+      "last_updated": "2026-09-08"
+    },
+    {
+      "id": "permanent-event-quests",
+      "name": "Permanent Event Quests and Custom Quest Loader",
+      "category": "Content",
+      "summary": "Keeps Capcom's time-limited event quests playable any time, offline too, and loads custom quests.",
+      "source": "nexus",
+      "nexus_domain": "monsterhunterwilds",
+      "nexus_id": 1096,
+      "url": "https://www.nexusmods.com/monsterhunterwilds/mods/1096",
+      "requires": [
+        "reframework"
+      ],
+      "note": "Capcom warns against modified quests online; play these solo.",
+      "last_updated": "2026-09-17"
+    },
+    {
+      "id": "no-crafting-requirements",
+      "name": "No Crafting Requirements",
+      "category": "Gameplay",
+      "summary": "Sets material requirements for weapons, armor, talismans and Palico gear to zero.",
+      "source": "nexus",
+      "nexus_domain": "monsterhunterwilds",
+      "nexus_id": 29,
+      "url": "https://www.nexusmods.com/monsterhunterwilds/mods/29",
+      "requires": [
+        "reframework"
+      ],
+      "note": "Single player only. The loose-file version needs Fluffy Mod Manager's loose file loader.",
+      "last_updated": "2026-08-04"
+    },
+    {
+      "id": "artian-editor",
+      "name": "Artian Editor",
+      "category": "Gameplay",
+      "summary": "Edit the bonuses on Artian weapons from the REFramework menu.",
+      "source": "nexus",
+      "nexus_domain": "monsterhunterwilds",
+      "nexus_id": 196,
+      "url": "https://www.nexusmods.com/monsterhunterwilds/mods/196",
+      "requires": [
+        "reframework",
+        "catlib"
+      ],
+      "note": "Single player only. Open it under Script Generated UI in the REFramework menu.",
+      "last_updated": "2026-08-21"
+    },
+    {
+      "id": "charm-editor",
+      "name": "Charm Editor",
+      "category": "Gameplay",
+      "summary": "Edit talisman skills and slots; a Valid Check option keeps you to combinations the game can roll.",
+      "source": "nexus",
+      "nexus_domain": "monsterhunterwilds",
+      "nexus_id": 3067,
+      "url": "https://www.nexusmods.com/monsterhunterwilds/mods/3067",
+      "requires": [
+        "reframework",
+        "catlib"
+      ],
+      "note": "Single player only. Open it under Script Generated UI in the REFramework menu.",
+      "last_updated": "2026-08-21"
+    },
+    {
+      "id": "obsolete-mod-detector",
+      "name": "Obsolete Mod Detector (Blackscreen Fixer)",
+      "category": "Tools",
+      "summary": "Scans your mods for files that are likely outdated after a title update, a common cause of black screens.",
+      "source": "nexus",
+      "nexus_domain": "monsterhunterwilds",
+      "nexus_id": 1651,
+      "url": "https://www.nexusmods.com/monsterhunterwilds/mods/1651",
+      "requires": [],
+      "note": "Needs the .NET 8 Desktop Runtime. It's a best guess, so test the mods it flags.",
+      "last_updated": "2026-08-04"
+    }
+  ]
 }

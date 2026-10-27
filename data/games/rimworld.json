@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T19:29:38Z",
+  "generated_at": "2026-10-27T00:32:29Z",
   "game": {
     "slug": "rimworld",
     "name": "RimWorld",
@@ -571,6 +571,12 @@
   ],
   "news": [
     {
+      "title": "It's RimWorld's birthday!",
+      "url": "https://store.steampowered.com/news/app/294100/view/1847286114046348",
+      "published_at": "2026-10-26T18:49:58Z",
+      "is_patch": false
+    },
+    {
       "title": "Pick your storyteller!",
       "url": "https://store.steampowered.com/news/app/294100/view/1847286114029498",
       "published_at": "2026-10-21T16:19:21Z",
@@ -623,12 +629,6 @@
       "url": "https://store.steampowered.com/news/app/294100/view/1815034433047502",
       "published_at": "2025-11-04T22:55:25Z",
       "is_patch": false
-    },
-    {
-      "title": "Update 1.6.4630 released",
-      "url": "https://store.steampowered.com/news/app/294100/view/1815034432907541",
-      "published_at": "2025-10-31T15:30:18Z",
-      "is_patch": true
     }
   ],
   "channels": [],
