@@ -377,7 +377,11 @@ GAMES = [
         ],
         "frameworks": [
             {"id": "decky-loader", "name": "Decky Loader", "short": "Decky", "source": "github",
-             "repo": "SteamDeckHomebrew/decky-loader", "url": "https://github.com/SteamDeckHomebrew/decky-loader"},
+             "repo": "SteamDeckHomebrew/decky-loader", "url": "https://github.com/SteamDeckHomebrew/decky-loader",
+             # Shared tracker also covers Steam Frame (SteamOS "0.x VR") and pre-release/dev builds; those don't apply to
+             # the stable release on Steam Deck.
+             "issues_exclude_re": r"(?i)\bsteam ?frame\b|^\[bug\][^\n]*\bframe\b|steamvr|SteamOS version\s+\S+\s+VR\b"
+                                  r"|Decky Loader Version\s+v?\d[\w.]*-(?:pre|dev)"},
             {"id": "decky-steamgriddb", "name": "SteamGridDB (Decky plugin)", "short": "SteamGridDB", "source": "decky_store",
              "package": "SteamGridDB", "url": "https://github.com/SteamGridDB/decky-steamgriddb", "issues_repo": "SteamGridDB/decky-steamgriddb",
              "agnostic": True, "agnostic_note": "Plugin runs inside Decky Loader; it follows Steam client UI changes, not SteamOS builds, and updates via the Decky store."},

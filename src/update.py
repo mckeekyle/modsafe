@@ -264,10 +264,12 @@ PRE_PATCH_WINDOW = _td(days=7)
 
 
 def breakage_reports(repo: str, since_iso: str, patch_version: str | None, patch_dt=None,
-                     title_re: str | None = None) -> list[dict] | None:
+                     title_re: str | None = None, exclude_re: str | None = None) -> list[dict] | None:
     """Open GitHub issues filed since `since_iso` (and within BREAKAGE_WINDOW_DAYS of the patch, when
     patch-caused breakage actually surfaces) whose titles report update-related breakage. `title_re` keeps only
-    issues about this game when the tracker is shared by several games (e.g. praydog/REFramework)."""
+    issues about this game when the tracker is shared by several games (e.g. praydog/REFramework). `exclude_re`
+    drops issues whose title or body show they are about a different device or a pre-release/dev build (e.g. Decky
+    on Steam Frame / SteamOS VR, or a v3.3.1-pre1-dev6 PR artifact), not the stable release on the tracked platform."""
     wait = 6.5 - (time.time() - _last_search[0])  # search API: 10 req/min unauthenticated
     if wait > 0:
         time.sleep(wait)
@@ -284,6 +286,8 @@ def breakage_reports(repo: str, since_iso: str, patch_version: str | None, patch
         if not is_breakage_title(i["title"], patch_version):
             continue
         if title_re and not re.search(title_re, i["title"]):
+            continue
+        if exclude_re and re.search(exclude_re, f'{i["title"]}\n{i.get("body") or ""}'):
             continue
         cdt = parse_iso(i["created_at"])
         if patch_dt and cdt and cdt > patch_dt + timedelta(days=BREAKAGE_WINDOW_DAYS):
@@ -444,7 +448,8 @@ def build_steam_game(game: dict) -> dict:
         if sensitive and v["status"] != STATUS_UPDATED and not (official and official["supports_current"]) and issues_repo:
             rdt = parse_iso(rel.get("published_at"))
             since = max([d for d in (patch_dt, rdt) if d]).isoformat()
-            found = breakage_reports(issues_repo, since, latest.get("version"), patch_dt, fw.get("issues_title_re"))
+            found = breakage_reports(issues_repo, since, latest.get("version"), patch_dt, fw.get("issues_title_re"),
+                                     fw.get("issues_exclude_re"))
             searched = found is not None
             reports = found or []
         confirmed = confirmed_breakage(reports)

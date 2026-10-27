@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T18:38:48Z",
+  "generated_at": "2026-10-27T19:10:15Z",
   "game": {
     "slug": "steam-deck",
     "name": "Steam Deck (SteamOS)",
@@ -13,7 +13,7 @@
       "url": "https://store.steampowered.com/news/app/1675200/view/1847286114038096"
     }
   },
-  "verdict": "Breakage reported",
+  "verdict": "Likely safe",
   "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
   "frameworks": [
     {
@@ -25,21 +25,10 @@
       "repo": "SteamDeckHomebrew/decky-loader",
       "tracked": true,
       "sensitive": true,
-      "status": "Breakage reported",
+      "status": "Likely safe",
       "base_status": "Likely OK",
-      "reason": "Latest release is newer than patch SteamOS 3.9, but notes do not explicitly mention that version. 1 open issue(s) report breakage since the patch/latest release.",
-      "breakage_reports": [
-        {
-          "title": "[BUG] Frame build installs a broken service on update",
-          "url": "https://github.com/SteamDeckHomebrew/decky-loader/issues/1005",
-          "created_at": "2026-10-27T05:57:44Z",
-          "labels": [
-            "bug"
-          ],
-          "comments": 0,
-          "thumbs_up": 0
-        }
-      ],
+      "reason": "Latest release is newer than patch SteamOS 3.9, but notes do not explicitly mention that version.",
+      "breakage_reports": [],
       "official": null,
       "release_tag": "v3.3.1",
       "release_name": "Release v3.3.1",
@@ -971,16 +960,16 @@
       ]
     },
     {
-      "at": "2026-10-27T06:36:14Z",
+      "at": "2026-10-27T19:10:15Z",
       "patch": "SteamOS 3.9",
       "patch_key": "3.9",
       "patch_published_at": "2026-10-23T22:04:26Z",
       "patch_url": "https://store.steampowered.com/news/app/1675200/view/1847286114038096",
-      "verdict": "Breakage reported",
+      "verdict": "Likely safe",
       "frameworks": [
         {
           "short": "Decky",
-          "status": "Breakage reported",
+          "status": "Likely safe",
           "release_tag": "v3.3.1"
         }
       ]
