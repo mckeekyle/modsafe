@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T18:39:31Z",
+  "generated_at": "2026-10-28T19:08:39Z",
   "game": {
     "slug": "gta-v",
     "name": "Grand Theft Auto V",
@@ -19,6 +19,7 @@
         "enhanced": "2026-09-15"
       },
       "sources": [
+        "https://steamdb.info/patchnotes/25971420/ and https://api.steamcmd.net/v1/info/3240220 (new Enhanced public build 25971420, 2026-10-27T10:00:40Z, no patch notes; exe version not yet published as of 2026-10-28)",
         "https://support.rockstargames.com/articles/4vRqEDvjUs9h7nqRUgc8YO/gtav-title-update-1-73-notes-ps5-ps4-xbox-series-x-or-s-xbox-one-pc-enhanced-legacy ([September 15, 2026] - PC (Enhanced): General fixes)",
         "https://api.steamcmd.net/v1/info/3240220 (Enhanced public build 25261616, updated 2026-09-15T09:00:30Z); https://api.steamcmd.net/v1/info/271590 (Legacy public build 24129523, updated 2026-07-14T09:01:57Z)",
         "https://w.atwiki.jp/lspdfrinfo/pages/16.html (as of 2026-10-14: Enhanced latest v1158.16, Script Hook V supports up to 1158.13; Legacy v3889.0 supported)",
@@ -26,7 +27,7 @@
         "https://gta.wiki/w/Grand_Theft_Auto_V/Title_Update_Notes/Update-2026-07-14",
         "https://www.reddit.com/r/lspdfr/comments/1uwf499/gta_v_update_july_2026/"
       ],
-      "notes": "Title Update 1.73 shipped Jul 14 (Legacy 1.0.3889.0, Enhanced 1.0.1158.13). On Sep 15, 2026 Rockstar pushed a PC Enhanced-only update ('General fixes') that moved Enhanced to 1.0.1158.16; Legacy is unchanged. Script Hook V (dev-c.com, checked by hand 2026-10-18) still lists only 1.0.3889.0 / 1.0.1158.13, so it does not support current Enhanced. Corrected in the 2026-10-18 audit; earlier checks had treated the Sep 15 item as an event update.",
+      "notes": "Title Update 1.73 shipped Jul 14 (Legacy 1.0.3889.0, Enhanced 1.0.1158.13). On Sep 15, 2026 Rockstar pushed a PC Enhanced-only update ('General fixes') that moved Enhanced to 1.0.1158.16; Legacy is unchanged. Script Hook V (dev-c.com, checked by hand 2026-10-18) still lists only 1.0.3889.0 / 1.0.1158.13, so it does not support current Enhanced. Corrected in the 2026-10-18 audit; earlier checks had treated the Sep 15 item as an event update. On Oct 27, 2026 Steam shipped another Enhanced-only build (25971420) with no patch notes; its exe version isn't published yet and Script Hook V (checked 2026-10-28) is still v3889.0 / 1158.13, so the build is intentionally left unrecorded and the page holds Enhanced at 'Just patched, wait' until the version is known.",
       "unannounced_update": {
         "version": null,
         "label": "Unrecorded enhanced build 2026-10-27",
@@ -50,7 +51,7 @@
       "sensitive": true,
       "release_url": "http://www.dev-c.com/gtav/scripthookv/",
       "status": "Just patched, wait",
-      "reason": "Supports Legacy 1.0.3889.0. No build yet for Enhanced 1.0.1158.16. Steam's public Enhanced build changed on 2026-10-27 (build 25971420) after the last manual check; Script Hook V support for it is unconfirmed, so hold that update. (Manually verified 2026-10-27.)",
+      "reason": "Supports Legacy 1.0.3889.0. No build yet for Enhanced 1.0.1158.16. Steam's public Enhanced build changed on 2026-10-27 (build 25971420) after the last manual check; Script Hook V support for it is unconfirmed, so hold that update. (Manually verified 2026-10-28.)",
       "release_tag": "v3889.0 / 1158.13",
       "release_published_at": "2026-07-15T00:00:00Z",
       "manual_data": true
@@ -133,10 +134,11 @@
       "published_at": "2026-06-22T10:43:51Z"
     }
   ],
-  "last_verified": "2026-10-27",
+  "last_verified": "2026-10-28",
   "sources": {
     "manual": "data/manual/gta-v.json",
     "patch_sources": [
+      "https://steamdb.info/patchnotes/25971420/ and https://api.steamcmd.net/v1/info/3240220 (new Enhanced public build 25971420, 2026-10-27T10:00:40Z, no patch notes; exe version not yet published as of 2026-10-28)",
       "https://support.rockstargames.com/articles/4vRqEDvjUs9h7nqRUgc8YO/gtav-title-update-1-73-notes-ps5-ps4-xbox-series-x-or-s-xbox-one-pc-enhanced-legacy ([September 15, 2026] - PC (Enhanced): General fixes)",
       "https://api.steamcmd.net/v1/info/3240220 (Enhanced public build 25261616, updated 2026-09-15T09:00:30Z); https://api.steamcmd.net/v1/info/271590 (Legacy public build 24129523, updated 2026-07-14T09:01:57Z)",
       "https://w.atwiki.jp/lspdfrinfo/pages/16.html (as of 2026-10-14: Enhanced latest v1158.16, Script Hook V supports up to 1158.13; Legacy v3889.0 supported)",
