@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T00:42:49Z",
+  "generated_at": "2026-10-28T06:42:41Z",
   "game": {
     "slug": "palworld",
     "name": "Palworld",
@@ -27,7 +27,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch v1.0.5; compatibility is unverified \u2014 check the project page. No open breakage reports 42 days after the patch. (Searched the PalSchema tracker; this UE4SS fork has no issue tracker of its own.)",
+      "reason": "Latest release predates patch v1.0.5; compatibility is unverified \u2014 check the project page. No open breakage reports 43 days after the patch. (Searched the PalSchema tracker; this UE4SS fork has no issue tracker of its own.)",
       "breakage_reports": [],
       "official": null,
       "release_tag": "2281fa31",
@@ -49,7 +49,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch v1.0.5; compatibility is unverified \u2014 check the project page. No open breakage reports 42 days after the patch.",
+      "reason": "Latest release predates patch v1.0.5; compatibility is unverified \u2014 check the project page. No open breakage reports 43 days after the patch.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "0.6.71",
@@ -521,6 +521,12 @@
   ],
   "news": [
     {
+      "title": "Palworld \u00d7 Graveyard Keeper 2 Steam Bundle is Out Now!",
+      "url": "https://store.steampowered.com/news/app/1623730/view/1847920302229254",
+      "published_at": "2026-10-28T01:21:53Z",
+      "is_patch": false
+    },
+    {
       "title": "Global Popularity Poll 2026 Results & New Update",
       "url": "https://store.steampowered.com/news/app/1623730/view/1846651706695192",
       "published_at": "2026-10-20T13:06:39Z",
@@ -572,12 +578,6 @@
       "title": "v1.0.2: Bug fixes",
       "url": "https://store.steampowered.com/news/app/1623730/view/1839676055881423",
       "published_at": "2026-07-29T03:08:24Z",
-      "is_patch": true
-    },
-    {
-      "title": "v1.0.1: Bug fixes",
-      "url": "https://store.steampowered.com/news/app/1623730/view/1838407329253279",
-      "published_at": "2026-07-15T05:17:43Z",
       "is_patch": true
     }
   ],

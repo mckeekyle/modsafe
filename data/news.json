@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T00:43:03Z",
+  "generated_at": "2026-10-28T06:42:55Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,26 @@
     }
   ],
   "items": [
+    {
+      "title": "Here's the Phantom Blade Zero release time for your region",
+      "url": "https://www.pcgamer.com/games/action/phantom-blade-zero-release-date-launch-times/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-28T02:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Palworld \u00d7 Graveyard Keeper 2 Steam Bundle is Out Now!",
+      "url": "https://store.steampowered.com/news/app/1623730/view/1847920302229254",
+      "source": "Steam \u00b7 Palworld",
+      "published_at": "2026-10-28T01:21:53Z",
+      "games": [
+        "palworld"
+      ],
+      "kind": "announcement",
+      "highlight": false
+    },
     {
       "title": "Monarchs at Play is a 4X strategy city-builder about chaining hexagonal tiles that only takes an hour out of your day",
       "url": "https://www.rockpapershotgun.com/monarchs-at-play-is-a-4x-strategy-city-builder-about-chaining-hexagonal-tiles-that-only-takes-an-hour-out-of-your-day",
@@ -539,24 +559,6 @@
       "url": "https://www.pcgamer.com/games/the-witcher/cd-projekt-marks-the-19th-anniversary-of-its-first-witcher-rpg-with-a-tribute-to-bioware-their-support-helped-turn-our-vision-into-geralts-first-interactive-adventure/",
       "source": "PC Gamer",
       "published_at": "2026-10-26T19:05:30Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "What to play this Halloween, plus last-minute costume ideas and spooky movie recommendations",
-      "url": "https://www.pcgamer.com/games/horror/2026-halloween-horror-gaming-hub-recommendations/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-26T18:59:37Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "A long-overdue conversation with Jordan Mechner",
-      "url": "https://www.pcgamer.com/gaming-industry/an-overdue-conversation-with-jordan-mechner/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-26T18:52:49Z",
       "games": [],
       "kind": "news",
       "highlight": false
