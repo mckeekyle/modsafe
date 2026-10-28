@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T18:39:43Z",
+  "generated_at": "2026-10-28T00:43:02Z",
   "game": {
     "slug": "monster-hunter-wilds",
     "name": "Monster Hunter Wilds",
@@ -10,10 +10,17 @@
       "title": "Update Summary (Ver.1.042.00.02)",
       "published_at": "2026-08-14T03:26:59Z",
       "published_unix": 1786678019,
-      "url": "https://store.steampowered.com/news/app/2246340/view/1840944183778483"
+      "url": "https://store.steampowered.com/news/app/2246340/view/1840944183778483",
+      "unannounced_update": {
+        "version": null,
+        "label": "Unannounced update 2026-10-27",
+        "published_at": "2026-10-27T02:59:45Z",
+        "buildid": "25921695",
+        "source": "Steam public branch (api.steamcmd.net / PICS)"
+      }
     }
   },
-  "verdict": "Likely safe",
+  "verdict": "Just patched, wait",
   "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
   "frameworks": [
     {
@@ -25,9 +32,9 @@
       "repo": "praydog/REFramework-nightly",
       "tracked": true,
       "sensitive": true,
-      "status": "Likely safe",
+      "status": "Just patched, wait",
       "base_status": "Likely OK",
-      "reason": "Latest release is newer than patch Ver.1.042.00.02, but notes do not explicitly mention that version. Each nightly is one build for every RE Engine game, so a newer nightly doesn't prove a Wilds fix. 3 open crash reports against recent builds, not tied to a game patch (newest 2026-10-08: 'Monster hunter wilds problem Issue do not now what is causing crashes about graphics'). If the latest build crashes, try an older one. (Searched praydog/REFramework issues that mention Wilds; the nightly repo has no tracker of its own.)",
+      "reason": "Latest release is newer than patch Ver.1.042.00.02, but notes do not explicitly mention that version. Each nightly is one build for every RE Engine game, so a newer nightly doesn't prove a Wilds fix. 3 open crash reports against recent builds, not tied to a game patch (newest 2026-10-08: 'Monster hunter wilds problem Issue do not now what is causing crashes about graphics'). If the latest build crashes, try an older one. (Searched praydog/REFramework issues that mention Wilds; the nightly repo has no tracker of its own.) Steam's public build changed on 2026-10-27 (build 25921695) with no announcement, and this tool hasn't released since; wait for confirmation.",
       "breakage_reports": [],
       "crash_reports": [
         {
@@ -78,6 +85,13 @@
       "published_at": "2026-08-14T03:26:59Z",
       "published_unix": 1786678019,
       "url": "https://store.steampowered.com/news/app/2246340/view/1840944183778483",
+      "unannounced_update": {
+        "version": null,
+        "label": "Unannounced update 2026-10-27",
+        "published_at": "2026-10-27T02:59:45Z",
+        "buildid": "25921695",
+        "source": "Steam public branch (api.steamcmd.net / PICS)"
+      },
       "frameworks": [
         {
           "id": "reframework",
@@ -438,6 +452,21 @@
         {
           "short": "REFramework",
           "status": "Likely safe",
+          "release_tag": "nightly-01433-d4611aef1d63effd3a736bdf9404ea702428017d"
+        }
+      ]
+    },
+    {
+      "at": "2026-10-28T00:43:02Z",
+      "patch": "Ver.1.042.00.02",
+      "patch_key": "1.042.00.02",
+      "patch_published_at": "2026-08-14T03:26:59Z",
+      "patch_url": "https://store.steampowered.com/news/app/2246340/view/1840944183778483",
+      "verdict": "Just patched, wait",
+      "frameworks": [
+        {
+          "short": "REFramework",
+          "status": "Just patched, wait",
           "release_tag": "nightly-01433-d4611aef1d63effd3a736bdf9404ea702428017d"
         }
       ]

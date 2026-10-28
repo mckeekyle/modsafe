@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T18:39:44Z",
+  "generated_at": "2026-10-28T00:43:03Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,60 @@
     }
   ],
   "items": [
+    {
+      "title": "Monarchs at Play is a 4X strategy city-builder about chaining hexagonal tiles that only takes an hour out of your day",
+      "url": "https://www.rockpapershotgun.com/monarchs-at-play-is-a-4x-strategy-city-builder-about-chaining-hexagonal-tiles-that-only-takes-an-hour-out-of-your-day",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-27T22:46:08Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Rockstar will hold union vote right on top of Grand Theft Auto 6 release",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/rockstar-will-hold-union-vote-right-on-top-of-grand-theft-auto-6-release/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-27T22:23:23Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Messages in certain large public Discord servers will be searchable on the web after December",
+      "url": "https://www.pcgamer.com/software/platforms/messages-in-certain-large-public-discord-servers-will-be-searchable-on-the-web-after-december/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-27T21:53:41Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Discord know they replaced forums, so they're making your messages in discoverable servers searchable, which immediately raises one question: what about AI?",
+      "url": "https://www.rockpapershotgun.com/discord-know-they-replaced-forums-so-theyre-making-your-messages-in-discoverable-servers-searchable-which-immediately-raises-one-question-what-about-ai",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-27T21:28:32Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Mass Effect composer Sam Hulick is working on a 're-scored' version of the leaked Mass Effect 5 trailer for N7 Day",
+      "url": "https://www.pcgamer.com/games/mass-effect/mass-effect-composer-sam-hulick-is-working-on-a-re-scored-version-of-the-leaked-mass-effect-5-trailer-for-n7-day/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-27T21:12:29Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Former Halo boss is now in charge of Wizards of the Coast and Hasbro Digital Games",
+      "url": "https://www.pcgamer.com/gaming-industry/former-halo-boss-is-now-in-charge-of-wizards-of-the-coast-and-hasbro-digital-games/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-27T19:48:09Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "UK-based Rockstar devs will be putting their union recognition to a vote during GTA 6's launch next month",
       "url": "https://www.rockpapershotgun.com/uk-based-rockstar-devs-will-be-putting-their-union-recognition-to-a-vote-during-gta-6s-launch-next-month",
@@ -503,64 +557,6 @@
       "url": "https://www.pcgamer.com/gaming-industry/an-overdue-conversation-with-jordan-mechner/",
       "source": "PC Gamer",
       "published_at": "2026-10-26T18:52:49Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "It's RimWorld's birthday!",
-      "url": "https://store.steampowered.com/news/app/294100/view/1847286114046348",
-      "source": "Steam \u00b7 RimWorld",
-      "published_at": "2026-10-26T18:49:58Z",
-      "games": [
-        "rimworld"
-      ],
-      "kind": "announcement",
-      "highlight": false
-    },
-    {
-      "title": "Amid sweeping layoffs at Xbox and massive AI investments, Microsoft introduces a \"Voluntary Exit Offer\" to 60,000 workers",
-      "url": "https://www.eurogamer.net/xbox-ai-microsoft-voluntary-exit-offer-60000",
-      "source": "Eurogamer",
-      "published_at": "2026-10-26T18:44:22Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The GameMaker engine series behind Undertale, Hotline Miami and Spelunky is going free for commercial use on PC",
-      "url": "https://www.rockpapershotgun.com/the-gamemaker-engine-series-behind-undertale-hotline-miami-and-spelunky-is-going-free-for-commercial-use-on-pc",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-26T18:15:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "World Update 23: Poland and the Baltics",
-      "url": "https://store.steampowered.com/news/app/2537590/view/1847286114046193",
-      "source": "Steam \u00b7 MSFS 2024",
-      "published_at": "2026-10-26T18:11:27Z",
-      "games": [
-        "msfs-2024"
-      ],
-      "kind": "announcement",
-      "highlight": false
-    },
-    {
-      "title": "Over 25% of Microsoft's workforce is reportedly eligible to apply for a 'voluntary exit offer'",
-      "url": "https://www.pcgamer.com/gaming-industry/microsoft-is-looking-to-cut-more-than-25-percent-of-its-workforce/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-26T17:49:25Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Ghost of Yotei studio Sucker Punch reportedly lays off 26 developers \"after carefully observing the challenges in the market\"",
-      "url": "https://www.eurogamer.net/ghost-of-yotei-sucker-punch-lays-off-developers",
-      "source": "Eurogamer",
-      "published_at": "2026-10-26T17:48:33Z",
       "games": [],
       "kind": "news",
       "highlight": false

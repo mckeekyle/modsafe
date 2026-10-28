@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T19:10:07Z",
+  "generated_at": "2026-10-28T00:41:34Z",
   "game": {
     "slug": "gta-v",
     "name": "Grand Theft Auto V",
@@ -26,10 +26,18 @@
         "https://gta.wiki/w/Grand_Theft_Auto_V/Title_Update_Notes/Update-2026-07-14",
         "https://www.reddit.com/r/lspdfr/comments/1uwf499/gta_v_update_july_2026/"
       ],
-      "notes": "Title Update 1.73 shipped Jul 14 (Legacy 1.0.3889.0, Enhanced 1.0.1158.13). On Sep 15, 2026 Rockstar pushed a PC Enhanced-only update ('General fixes') that moved Enhanced to 1.0.1158.16; Legacy is unchanged. Script Hook V (dev-c.com, checked by hand 2026-10-18) still lists only 1.0.3889.0 / 1.0.1158.13, so it does not support current Enhanced. Corrected in the 2026-10-18 audit; earlier checks had treated the Sep 15 item as an event update."
+      "notes": "Title Update 1.73 shipped Jul 14 (Legacy 1.0.3889.0, Enhanced 1.0.1158.13). On Sep 15, 2026 Rockstar pushed a PC Enhanced-only update ('General fixes') that moved Enhanced to 1.0.1158.16; Legacy is unchanged. Script Hook V (dev-c.com, checked by hand 2026-10-18) still lists only 1.0.3889.0 / 1.0.1158.13, so it does not support current Enhanced. Corrected in the 2026-10-18 audit; earlier checks had treated the Sep 15 item as an event update.",
+      "unannounced_update": {
+        "version": null,
+        "label": "Unrecorded enhanced build 2026-10-27",
+        "published_at": "2026-10-27T10:00:40Z",
+        "buildid": "25971420",
+        "edition": "enhanced",
+        "source": "Steam public branch (api.steamcmd.net / PICS)"
+      }
     }
   },
-  "verdict": "Not ported yet",
+  "verdict": "Just patched, wait",
   "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
   "frameworks": [
     {
@@ -41,8 +49,8 @@
       "tracked": true,
       "sensitive": true,
       "release_url": "http://www.dev-c.com/gtav/scripthookv/",
-      "status": "Not ported yet",
-      "reason": "Supports Legacy 1.0.3889.0. No build yet for Enhanced 1.0.1158.16. (Manually verified 2026-10-27.)",
+      "status": "Just patched, wait",
+      "reason": "Supports Legacy 1.0.3889.0. No build yet for Enhanced 1.0.1158.16. Steam's public Enhanced build changed on 2026-10-27 (build 25971420) after the last manual check; Script Hook V support for it is unconfirmed, so hold that update. (Manually verified 2026-10-27.)",
       "release_tag": "v3889.0 / 1158.13",
       "release_published_at": "2026-07-15T00:00:00Z",
       "manual_data": true
@@ -149,6 +157,21 @@
         {
           "short": "ScriptHookV",
           "status": "Not ported yet",
+          "release_tag": "v3889.0 / 1158.13"
+        }
+      ]
+    },
+    {
+      "at": "2026-10-28T00:41:34Z",
+      "patch": "Title Update 1.73",
+      "patch_key": "1.73",
+      "patch_published_at": "2026-07-14T09:00:00Z",
+      "patch_url": "https://support.rockstargames.com/articles/4vRqEDvjUs9h7nqRUgc8YO/gtav-title-update-1-73-notes-ps5-ps4-xbox-series-x-or-s-xbox-one-pc-enhanced-legacy",
+      "verdict": "Just patched, wait",
+      "frameworks": [
+        {
+          "short": "ScriptHookV",
+          "status": "Just patched, wait",
           "release_tag": "v3889.0 / 1158.13"
         }
       ]
