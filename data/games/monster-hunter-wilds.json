@@ -1,23 +1,16 @@
 {
-  "generated_at": "2026-10-28T06:42:54Z",
+  "generated_at": "2026-10-28T12:43:46Z",
   "game": {
     "slug": "monster-hunter-wilds",
     "name": "Monster Hunter Wilds",
     "steam_appid": 2246340,
     "latest_patch": {
-      "version": "1.042.00.02",
-      "label": "Ver.1.042.00.02",
-      "title": "Update Summary (Ver.1.042.00.02)",
-      "published_at": "2026-08-14T03:26:59Z",
-      "published_unix": 1786678019,
-      "url": "https://store.steampowered.com/news/app/2246340/view/1840944183778483",
-      "unannounced_update": {
-        "version": null,
-        "label": "Unannounced update 2026-10-27",
-        "published_at": "2026-10-27T02:59:45Z",
-        "buildid": "25921695",
-        "source": "Steam public branch (api.steamcmd.net / PICS)"
-      }
+      "version": "1.042.00.03",
+      "label": "Ver.1.042.00.03",
+      "title": "Update Summary (Ver.1.042.00.03)",
+      "published_at": "2026-10-28T10:54:39Z",
+      "published_unix": 1793184879,
+      "url": "https://store.steampowered.com/news/app/2246340/view/1847920302230509"
     }
   },
   "verdict": "Just patched, wait",
@@ -33,33 +26,16 @@
       "tracked": true,
       "sensitive": true,
       "status": "Just patched, wait",
-      "base_status": "Likely OK",
-      "reason": "Latest release is newer than patch Ver.1.042.00.02, but notes do not explicitly mention that version. Each nightly is one build for every RE Engine game, so a newer nightly doesn't prove a Wilds fix. 3 open crash reports against recent builds, not tied to a game patch (newest 2026-10-08: 'Monster hunter wilds problem Issue do not now what is causing crashes about graphics'). If the latest build crashes, try an older one. (Searched praydog/REFramework issues that mention Wilds; the nightly repo has no tracker of its own.) Steam's public build changed on 2026-10-27 (build 25921695) with no announcement, and this tool hasn't released since; wait for confirmation.",
+      "base_status": "Unknown / check",
+      "reason": "Latest release predates patch Ver.1.042.00.03; compatibility is unverified \u2014 check the project page.",
       "breakage_reports": [],
-      "crash_reports": [
-        {
-          "title": "Monster Hunter Wilds Linux Crash During Initialization",
-          "url": "https://github.com/praydog/REFramework/issues/1823",
-          "created_at": "2026-09-05T15:37:43Z"
-        },
-        {
-          "title": "Monster hunter wilds problem Issue do not now what is causing crashes about graphics ",
-          "url": "https://github.com/praydog/REFramework/issues/1858",
-          "created_at": "2026-10-08T04:04:49Z"
-        },
-        {
-          "title": "[BUG] Monster Hunter Wilds: Different crash behavior between REFramework build 01417 and 01424",
-          "url": "https://github.com/praydog/REFramework/issues/1850",
-          "created_at": "2026-09-24T10:11:59Z"
-        }
-      ],
       "official": null,
       "release_tag": "nightly-01433-d4611aef1d63effd3a736bdf9404ea702428017d",
       "release_name": "REF Nightly 01433 (d4611aef1d63effd3a736bdf9404ea702428017d)",
       "release_published_at": "2026-10-21T04:37:39Z",
       "release_url": "https://github.com/praydog/REFramework-nightly/releases/tag/nightly-01433-d4611aef1d63effd3a736bdf9404ea702428017d",
       "mentions_patch": false,
-      "newer_than_patch": true,
+      "newer_than_patch": false,
       "mention_releases": []
     },
     {
@@ -79,19 +55,36 @@
   ],
   "history": [
     {
+      "version": "1.042.00.03",
+      "label": "Ver.1.042.00.03",
+      "title": "Update Summary (Ver.1.042.00.03)",
+      "published_at": "2026-10-28T10:54:39Z",
+      "published_unix": 1793184879,
+      "url": "https://store.steampowered.com/news/app/2246340/view/1847920302230509",
+      "frameworks": [
+        {
+          "id": "reframework",
+          "short": "REFramework",
+          "name": "REFramework (nightly)",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2026-06-03T19:16:48Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
       "version": "1.042.00.02",
       "label": "Ver.1.042.00.02",
       "title": "Update Summary (Ver.1.042.00.02)",
       "published_at": "2026-08-14T03:26:59Z",
       "published_unix": 1786678019,
       "url": "https://store.steampowered.com/news/app/2246340/view/1840944183778483",
-      "unannounced_update": {
-        "version": null,
-        "label": "Unannounced update 2026-10-27",
-        "published_at": "2026-10-27T02:59:45Z",
-        "buildid": "25921695",
-        "source": "Steam public branch (api.steamcmd.net / PICS)"
-      },
       "frameworks": [
         {
           "id": "reframework",
@@ -348,33 +341,15 @@
           "first_mention_at": null
         }
       ]
-    },
-    {
-      "version": "1.040",
-      "label": "Ver.1.040",
-      "title": "Update Summary (Ver.1.040)",
-      "published_at": "2025-12-15T23:44:23Z",
-      "published_unix": 1765842263,
-      "url": "https://store.steampowered.com/news/app/2246340/view/1818752592134338",
-      "frameworks": [
-        {
-          "id": "reframework",
-          "short": "REFramework",
-          "name": "REFramework (nightly)",
-          "status": "Likely safe",
-          "release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
-          "release_published_at": "2026-06-03T19:16:48Z",
-          "mentions_patch": false,
-          "first_release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
-          "first_release_at": "2026-06-03T19:16:48Z",
-          "data_from": "2026-06-03T19:16:48Z",
-          "first_mention_tag": null,
-          "first_mention_at": null
-        }
-      ]
     }
   ],
   "news": [
+    {
+      "title": "Update Summary (Ver.1.042.00.03)",
+      "url": "https://store.steampowered.com/news/app/2246340/view/1847920302230509",
+      "published_at": "2026-10-28T10:54:39Z",
+      "is_patch": true
+    },
     {
       "title": "Khezu Stretches into Monster Hunter Wilds: Ascendance!",
       "url": "https://store.steampowered.com/news/app/2246340/view/1844115010496733",
@@ -428,12 +403,6 @@
       "url": "https://store.steampowered.com/news/app/2246340/view/1840944183778483",
       "published_at": "2026-08-14T03:26:59Z",
       "is_patch": true
-    },
-    {
-      "title": "Update Summary (Ver.1.042.00.01 / Demo Version 1.0.1)",
-      "url": "https://store.steampowered.com/news/app/2246340/view/1840310314346672",
-      "published_at": "2026-08-08T02:25:12Z",
-      "is_patch": true
     }
   ],
   "channels": [],
@@ -462,6 +431,21 @@
       "patch_key": "1.042.00.02",
       "patch_published_at": "2026-08-14T03:26:59Z",
       "patch_url": "https://store.steampowered.com/news/app/2246340/view/1840944183778483",
+      "verdict": "Just patched, wait",
+      "frameworks": [
+        {
+          "short": "REFramework",
+          "status": "Just patched, wait",
+          "release_tag": "nightly-01433-d4611aef1d63effd3a736bdf9404ea702428017d"
+        }
+      ]
+    },
+    {
+      "at": "2026-10-28T12:43:46Z",
+      "patch": "Ver.1.042.00.03",
+      "patch_key": "1.042.00.03",
+      "patch_published_at": "2026-10-28T10:54:39Z",
+      "patch_url": "https://store.steampowered.com/news/app/2246340/view/1847920302230509",
       "verdict": "Just patched, wait",
       "frameworks": [
         {
