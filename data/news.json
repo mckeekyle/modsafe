@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T12:43:47Z",
+  "generated_at": "2026-10-28T18:41:47Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,288 @@
     }
   ],
   "items": [
+    {
+      "title": "Witchbrook is delayed again, now set for release in 2027",
+      "url": "https://www.pcgamer.com/games/rpg/witchbrook-is-delayed-again-now-set-for-release-in-2027/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-28T18:28:34Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Cyberpunk 2 might include multiplayer after CD Projekt Red scrapped the feature in Cyberpunk 2077",
+      "url": "https://www.eurogamer.net/cyberpunk-2077-multiplayer-quests-cd-projekt-red",
+      "source": "Eurogamer",
+      "published_at": "2026-10-28T17:56:45Z",
+      "games": [
+        "cyberpunk-2077"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "One of the best quests in Baldur's Gate 3 is also its scariest, and it doesn't have anything to do with ghosts or vampires",
+      "url": "https://www.pcgamer.com/games/baldurs-gate/one-of-the-best-quests-in-baldurs-gate-3-is-also-its-scariest-and-it-doesnt-have-anything-to-do-with-ghosts-or-vampires/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-28T17:38:31Z",
+      "games": [
+        "baldurs-gate-3"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Valve admits Steam has an AI slop and cloning problem, but says 'we don't want to be gatekeepers telling developers which tools they should or shouldn't use'",
+      "url": "https://www.pcgamer.com/software/ai/valve-admits-steam-has-an-ai-slop-and-cloning-problem-but-says-we-dont-want-to-be-gatekeepers-telling-developers-which-tools-they-should-or-shouldnt-use/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-28T17:37:24Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Cyberpunk trading sim Probably Stolen is about running a kiosk in a space station full of gangs, megacorps, and secret rogue cyborgs",
+      "url": "https://www.rockpapershotgun.com/cyberpunk-trading-sim-probably-stolen-is-about-running-a-kiosk-in-a-space-station-full-of-gangs-megacorps-and-secret-rogue-cyborgs",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-28T17:29:10Z",
+      "games": [
+        "cyberpunk-2077"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Backrooms director Kane Parsons is currently working on '3 dream projects' while wearing a Valve hoodie\u2014suspicious",
+      "url": "https://www.pcgamer.com/movies-tv/backrooms-director-kane-parsons-is-currently-working-on-3-dream-projects-while-wearing-a-valve-hoodie-suspicious/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-28T17:28:02Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Arc Raiders' executive producer was 'a bit skeptical' about adding PvE, but after the successful test the team needs to decide 'what we want to do going forward'",
+      "url": "https://www.pcgamer.com/games/third-person-shooter/arc-raiders-executive-producer-was-a-bit-skeptical-about-adding-pve-but-after-the-successful-test-the-team-needs-to-decide-what-we-want-to-do-going-forward/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-28T17:12:25Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "\"This company has been driven into a wall for years\" - Life is Strange studio Don't Nod faces unrest while teetering on insolvency",
+      "url": "https://www.eurogamer.net/dont-nod-insolvency-life-is-strange-aphelion",
+      "source": "Eurogamer",
+      "published_at": "2026-10-28T17:10:24Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "If you love horror but hate actually being scared, I've got the perfect Halloween game for you",
+      "url": "https://www.pcgamer.com/games/puzzle/if-you-love-horror-but-hate-actually-being-scared-ive-got-the-perfect-halloween-game-for-you/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-28T17:02:09Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Company of Heroes 3's Operation Torch DLC ships off to North Africa in November, for new missions based around the Allied landings",
+      "url": "https://www.rockpapershotgun.com/company-of-heroes-3s-operation-torch-dlc-ships-off-to-north-africa-in-november-for-new-missions-based-around-the-allied-landings",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-28T17:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "\"We are more concerned about the risks of moving too slowly\": Epic get more specific about genAI use in Unreal Engine and Fortnite development",
+      "url": "https://www.rockpapershotgun.com/we-are-more-concerned-about-the-risks-of-moving-too-slowly-epic-get-more-specific-about-genai-use-in-unreal-engine-and-fortnite-development",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-28T16:49:39Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Vote now: 8 games remain in our scariest games bracket",
+      "url": "https://www.pcgamer.com/games/horror/vote-now-8-games-remain-in-our-scariest-games-bracket/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-28T16:28:03Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Here are our PS Plus monthly games for November 2026",
+      "url": "https://www.eurogamer.net/playstation-plus-monthly-games-november-2026",
+      "source": "Eurogamer",
+      "published_at": "2026-10-28T16:27:41Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "GTA 6's PS5 install size is so big you could store 3500 copies of Balatro inside",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6s-ps5-install-size-is-so-big-you-could-store-3500-copies-of-balatro-inside/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-28T15:52:11Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Subnautica 2 dev thinks early access teams should worry less about adding features that are \"very ugly, incomplete, or prototype\"",
+      "url": "https://www.rockpapershotgun.com/subnautica-2-dev-thinks-early-access-teams-should-worry-less-about-adding-features-that-are-very-ugly-incomplete-or-prototype",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-28T15:40:46Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Capcom's golden streak continues as Onimusha and Pragmata sell well, but Monster Hunter Wilds conspicuously absent from financial report",
+      "url": "https://www.eurogamer.net/capcom-financial-report-onimusha-sales-pragmata-monster-hunter-wilds",
+      "source": "Eurogamer",
+      "published_at": "2026-10-28T15:32:33Z",
+      "games": [
+        "monster-hunter-wilds"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "World of Warcraft was meant to have viable levelling gear from professions way back in 2004, but the designers on raids and dungeons 'cheated a little bit'",
+      "url": "https://www.pcgamer.com/games/world-of-warcraft/world-of-warcraft-was-meant-to-have-viable-levelling-gear-from-professions-way-back-in-2004-but-the-designers-on-raids-and-dungeons-cheated-a-little-bit/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-28T15:28:18Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "GOG's getting into publishing in its new, post-CD-Projekt life, and it already has games on the way",
+      "url": "https://www.pcgamer.com/gaming-industry/gogs-getting-into-publishing-in-its-new-post-cd-projekt-life-and-it-already-has-games-on-the-way/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-28T15:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Elon Musk says 'robot RAM needs will exceed everything else on Earth' but only assuming we throw all the data centers into space",
+      "url": "https://www.pcgamer.com/hardware/memory/elon-musk-says-robot-ram-needs-will-exceed-everything-else-on-earth-but-only-assuming-we-throw-all-the-data-centers-into-space/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-28T14:56:17Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Valve addresses Steam's AI game cloning problem - by suggesting developers make their games less copyable",
+      "url": "https://www.eurogamer.net/steam-ai-clone-game-problem-valve-response",
+      "source": "Eurogamer",
+      "published_at": "2026-10-28T14:43:53Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Mass Effect composer wants to rescore leaked internal ME Universe trailer to \"properly represent my musical vision\"",
+      "url": "https://www.eurogamer.net/mass-effect-universe-trailer-rescore-composer-n7-day",
+      "source": "Eurogamer",
+      "published_at": "2026-10-28T14:40:48Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Proton's Black Friday sale is already live: ditch Google with up to 70% off its VPN and 50% off unlimited plan",
+      "url": "https://www.pcgamer.com/hardware/protons-black-friday-sale-is-already-live-ditch-google-with-up-to-70-percent-off-its-vpn-and-50-percent-off-unlimited-plan/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-28T14:16:58Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Palworld studio still hopes to release the game on Switch 2 one day, despite being in a legal battle with Nintendo",
+      "url": "https://www.eurogamer.net/palworld-switch-2-port-legal-battle-nintendo",
+      "source": "Eurogamer",
+      "published_at": "2026-10-28T14:03:01Z",
+      "games": [
+        "palworld"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "As No Man's Sky arrives on mobile, Hello Games celebrates with a spooky update for all that includes delivery missions and \"seamless\" interstellar travel",
+      "url": "https://www.eurogamer.net/no-mans-sky-forsaken-update-release-ipad-iphone",
+      "source": "Eurogamer",
+      "published_at": "2026-10-28T14:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Monster Train 2 is getting a new clan, and they're edgy as h\u0336e\u0336l\u0336l heaven",
+      "url": "https://www.pcgamer.com/games/card-games/monster-train-2-the-punished-dlc/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-28T13:59:25Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "'Yes, we are vibe-coding things': Epic confirms it's using AI tools to code Unreal Engine 6, Fortnite, and more",
+      "url": "https://www.pcgamer.com/software/ai/yes-we-are-vibe-coding-things-epic-confirms-its-using-ai-tools-to-code-unreal-engine-6-fortnite-and-more/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-28T13:58:17Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Dawn of War 4 may be the most generous RTS I've played",
+      "url": "https://www.eurogamer.net/dawn-of-war-4-preview-most-generous-rts",
+      "source": "Eurogamer",
+      "published_at": "2026-10-28T13:53:43Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Hot Wax sets fire to the Tetris playbook with slow-burn puzzle mechanics and a dollop of eldritch menace",
+      "url": "https://www.rockpapershotgun.com/hot-wax-sets-fire-to-the-tetris-playbook-with-slow-burn-puzzle-mechanics-and-a-dollop-of-eldritch-menace",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-28T13:30:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "As Skydance merges with Warner Bros. and Paramount, the company offers voluntary redundancy and mandates return to the office",
+      "url": "https://www.eurogamer.net/skydance-return-to-office-voluntary-buyouts",
+      "source": "Eurogamer",
+      "published_at": "2026-10-28T13:22:47Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Patch 1.0.21",
+      "url": "https://store.steampowered.com/news/app/892970/view/1847920302230913",
+      "source": "Steam \u00b7 Valheim",
+      "published_at": "2026-10-28T13:11:25Z",
+      "games": [
+        "valheim"
+      ],
+      "kind": "patch",
+      "highlight": true
+    },
     {
       "title": "\"We basically rewrote the entire State of Decay game\": Undead Labs spent years trying to make State of Decay 3 into a full-blown zombie apocalypse MMO",
       "url": "https://www.rockpapershotgun.com/we-basically-rewrote-the-entire-state-of-decay-game-undead-labs-spent-years-trying-to-make-state-of-decay-3-into-a-full-blown-zombie-apocalypse-mmo",
@@ -291,276 +573,6 @@
       "url": "https://www.pcgamer.com/software/ai/nvidia-and-amd-invest-billions-into-meta-as-companies-egg-each-other-on-to-bet-even-more-on-ai/",
       "source": "PC Gamer",
       "published_at": "2026-10-27T16:34:31Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Street Fighter V temporarily delisted and online functions turned off due to issues caused by last week's PHP security flaw",
-      "url": "https://www.rockpapershotgun.com/street-fighter-v-temporarily-delisted-and-online-functions-turned-off-due-to-issues-caused-by-last-weeks-php-security-flaw",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-27T16:30:29Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Vote for the scariest game of all time: Round 1",
-      "url": "https://www.pcgamer.com/games/horror/vote-for-the-scariest-game-of-all-time-round-1/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-27T16:28:58Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Dungeons & Dragons: World of Warcraft's class designer 'crammed as much' of the MMO into it so that even veteran tabletop players can experience something new",
-      "url": "https://www.pcgamer.com/games/world-of-warcraft/dungeons-and-dragons-world-of-warcrafts-class-designer-crammed-as-much-of-the-mmo-into-it-so-that-even-veteran-tabletop-players-can-experience-something-new/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-27T16:12:10Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Virtue and a Sledgehammer review \u2013 a haunting sci-fi drama about breaking walls, AI faces, and your heart",
-      "url": "https://www.rockpapershotgun.com/virtue-and-a-sledgehammer-review",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-27T16:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "\"Every piece is unified\": Dark Messiah of Might and Magic returns with co-op, an Adventure mode, a level generator and New Game+ in the 64-bit Community Edition",
-      "url": "https://www.rockpapershotgun.com/every-piece-is-unified-dark-messiah-of-might-and-magic-returns-with-co-op-an-adventure-mode-a-level-generator-and-new-game-in-the-64-bit-community-edition",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-27T15:38:47Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Revisiting Ecstatica - the pioneering survival horror that used its fancy ellipsoid graphics tech to fill its world with dongs",
-      "url": "https://www.eurogamer.net/ecstatica-now-playing",
-      "source": "Eurogamer",
-      "published_at": "2026-10-27T15:36:35Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Square Enix vets say devs of the future will need to 'master the use of AI', but the human touch will still be vital",
-      "url": "https://www.pcgamer.com/gaming-industry/game-development/square-enix-vets-say-devs-of-the-future-will-need-to-master-the-use-of-ai-but-the-human-touch-will-still-be-vital/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-27T15:15:52Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Roblox users have made a playable version of Counter-Strike and full, working PlayStation games that you can play right now",
-      "url": "https://www.eurogamer.net/roblox-counter-strike-playstation-homepage-super-hot-simpsons-hit-and-run",
-      "source": "Eurogamer",
-      "published_at": "2026-10-27T15:01:29Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Edge magazine went to Rockstar to see GTA 6, and will tell you all about it in lavish detail this Thursday, October 29",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/edge-magazine-went-to-rockstar-to-see-gta-6-and-will-tell-you-all-about-in-lavish-detail-this-thursday-october-29/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-27T15:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Nvidia may not have discontinued the RTX 5090, but one AIB partner says it can't get hold of the parts required to make the card",
-      "url": "https://www.pcgamer.com/hardware/graphics-cards/nvidia-may-not-have-discontinued-the-rtx-5090-but-one-aib-partner-says-it-cant-get-hold-of-the-parts-required-to-make-the-card/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-27T14:22:56Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Deadline: Afterlife Processing lets you take morality into your own hands and judge who deserves eternal salvation or damnation",
-      "url": "https://www.pcgamer.com/games/sim/deadline-afterlife-processing-lets-you-take-morality-into-your-own-hands-and-judge-who-deserves-eternal-salvation-or-damnation/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-27T14:20:39Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Nintendo is hosting a new Indie World showcase tomorrow, featuring games for Switch and Switch 2, and it'll be 15 minutes long",
-      "url": "https://www.eurogamer.net/nintendo-new-indie-world-showcase-october-28",
-      "source": "Eurogamer",
-      "published_at": "2026-10-27T14:06:39Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "You just can't win\u2014despite Ghost of Y\u014dtei selling millions of copies, 24 people are reportedly being let go from Sucker Punch",
-      "url": "https://www.pcgamer.com/gaming-industry/you-just-cant-win-despite-ghost-of-yotei-selling-millions-of-copies-24-people-are-reportedly-being-let-go-from-sucker-punch/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-27T14:01:58Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Call of Duty passes $40 billion in lifetime revenue, making it one of the most lucrative videogame franchises ever",
-      "url": "https://www.pcgamer.com/games/call-of-duty/call-of-duty-passes-usd40-billion-in-lifetime-revenue-making-it-one-of-the-most-lucrative-videogame-franchise-ever/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-27T13:55:38Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Peter Molyneux speaks candidly about AI: 'We, as the industry, are pretending we're not using AI, but the reality is, it's almost impossible to code now without using AI'",
-      "url": "https://www.pcgamer.com/games/strategy/peter-molyneux-speaks-candidly-about-ai-we-as-the-industry-are-pretending-were-not-using-ai-but-the-reality-is-its-almost-impossible-to-code-now-without-using-ai/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-27T13:30:01Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Phantom Blade Zero is asking players to free up 300GB of space for pre-loading, double its actual 145GB file size",
-      "url": "https://www.eurogamer.net/phantom-blade-zero-300gb-pre-load-space",
-      "source": "Eurogamer",
-      "published_at": "2026-10-27T13:06:03Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "STALKER 2's latest update expands its A-Life NPC simulation bubble, seemingly without a scary performance tax",
-      "url": "https://www.rockpapershotgun.com/stalker-2s-latest-update-expands-its-a-life-npc-simulation-bubble-seemingly-without-a-scary-performance-tax",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-27T13:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Life is Strange makers Don't Nod face layoffs and possible insolvency, French workers union STJV state",
-      "url": "https://www.rockpapershotgun.com/life-is-strange-makers-dont-nod-face-layoffs-and-possible-insolvency-french-workers-union-stjv-state",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-27T12:21:37Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Dark Messiah's new edition adds co-op, cut content and console-exclusive maps to the 20-year-old orc-kicking extravaganza, and it's coming to Steam this year",
-      "url": "https://www.pcgamer.com/games/rpg/dark-messiahs-new-edition-adds-co-op-cut-content-and-console-exclusive-maps-to-the-20-year-old-orc-kicking-extravaganza-and-its-coming-to-steam-this-year/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-27T12:11:37Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Kingdom Come, Lord of the Rings studio Warhorse 'hit by a cyberattack'",
-      "url": "https://www.pcgamer.com/gaming-industry/kingdom-come-lord-of-the-rings-studio-warhorse-hit-by-a-cyberattack/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-27T11:55:58Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Bassist plays Halloween gig wearing a Steam Frame: 'Interestingly, only one guy asked me about the Frame'",
-      "url": "https://www.pcgamer.com/hardware/vr-hardware/bassist-plays-halloween-gig-wearing-a-steam-frame-interestingly-only-one-guy-asked-me-about-the-frame/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-27T11:46:33Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Fan favourite map Shipment arrives today in Modern Warfare 4, just four days after launch - a new record for Call of Duty",
-      "url": "https://www.eurogamer.net/call-of-duty-modern-warfare-4-shipment-map-date",
-      "source": "Eurogamer",
-      "published_at": "2026-10-27T11:42:58Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Half-Life: Alyx patch adds foveated rendering support a mere 6 years after the game's release",
-      "url": "https://www.pcgamer.com/hardware/vr-hardware/half-life-alyx-patch-adds-foveated-rendering-support-a-mere-6-years-after-the-games-release/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-27T11:13:22Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Steam Frame kernel updated with external CD-ROM drive compatibility just one day after a user asked Valve for it",
-      "url": "https://www.rockpapershotgun.com/steam-frame-kernel-updated-with-external-cd-rom-drive-compatibility-just-one-day-after-a-user-asked-valve-for-it",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-27T11:04:11Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Pok\u00e9mon Unite closing down for good, but you'll still be able to use it afterwards, sort of",
-      "url": "https://www.eurogamer.net/pokemon-unite-closing-date",
-      "source": "Eurogamer",
-      "published_at": "2026-10-27T10:56:34Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "\"Mass Effect was my ultimate white whale\": Journey composer shares 20 minutes of music created during talks to work on BioWare's recently cancelled RPG",
-      "url": "https://www.rockpapershotgun.com/mass-effect-was-my-ultimate-white-whale-journey-composer-shares-20-minutes-of-music-created-during-talks-to-work-on-biowares-recently-cancelled-rpg",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-27T10:30:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Boltgun 2 and Warhammer Survivors devs Auroch Digital say they're laying off 25% of their staff in now-deleted posts",
-      "url": "https://www.rockpapershotgun.com/boltgun-2-and-warhammer-survivors-devs-auroch-digital-say-theyre-laying-of-25-of-their-staff-in-now-deleted-posts",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-27T10:06:45Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Composer shares 20 minutes of music created for Mass Effect 5 following tragic closure of BioWare",
-      "url": "https://www.eurogamer.net/mass-effect-5-pitched-music-composer",
-      "source": "Eurogamer",
-      "published_at": "2026-10-27T10:02:28Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "AI fan wikis riddled with errors are muddying the waters of an already contested part of games culture",
-      "url": "https://www.eurogamer.net/ai-fan-wikis-errors-complicating-games-culture",
-      "source": "Eurogamer",
-      "published_at": "2026-10-27T10:00:41Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Assassin's Creed Black Flag Resynced's final major update adds long-awaited New Game Plus, new Nightmare difficulty and much more",
-      "url": "https://www.eurogamer.net/assassins-creed-black-flag-resynced-new-game-plus-final-update",
-      "source": "Eurogamer",
-      "published_at": "2026-10-27T09:18:45Z",
       "games": [],
       "kind": "news",
       "highlight": false

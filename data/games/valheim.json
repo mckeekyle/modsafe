@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-10-28T12:42:38Z",
+  "generated_at": "2026-10-28T18:39:45Z",
   "game": {
     "slug": "valheim",
     "name": "Valheim",
     "steam_appid": 892970,
     "latest_patch": {
-      "version": "1.0.20",
-      "label": "1.0.20",
-      "title": "Patch 1.0.20",
-      "published_at": "2026-10-15T08:58:17Z",
-      "published_unix": 1792054697,
-      "url": "https://store.steampowered.com/news/app/892970/view/1846651706676865"
+      "version": "1.0.21",
+      "label": "1.0.21",
+      "title": "Patch 1.0.21",
+      "published_at": "2026-10-28T13:11:25Z",
+      "published_unix": 1793193085,
+      "url": "https://store.steampowered.com/news/app/892970/view/1847920302230913"
     }
   },
-  "verdict": "Likely safe",
+  "verdict": "Just patched, wait",
   "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
   "frameworks": [
     {
@@ -26,16 +26,16 @@
       "tracked": true,
       "sensitive": true,
       "status": "Likely safe",
-      "base_status": "Unknown / check",
-      "reason": "Latest release predates patch 1.0.20; compatibility is unverified \u2014 check the project page. Patch is 13 days old; no breakage signal available.",
+      "base_status": "Likely OK",
+      "reason": "Latest release is newer than patch 1.0.21, but notes do not explicitly mention that version.",
       "breakage_reports": [],
       "official": null,
-      "release_tag": "5.4.2351",
-      "release_name": "denikson-BepInExPack_Valheim 5.4.2351",
-      "release_published_at": "2026-09-24T06:11:48Z",
+      "release_tag": "5.4.2360",
+      "release_name": "denikson-BepInExPack_Valheim 5.4.2360",
+      "release_published_at": "2026-10-28T15:59:55Z",
       "release_url": "https://thunderstore.io/c/valheim/p/denikson/BepInExPack_Valheim/",
       "mentions_patch": false,
-      "newer_than_patch": false,
+      "newer_than_patch": true,
       "mention_releases": []
     },
     {
@@ -47,9 +47,9 @@
       "repo": "Valheim-Modding/Jotunn",
       "tracked": true,
       "sensitive": true,
-      "status": "Likely safe",
+      "status": "Just patched, wait",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch 1.0.20; compatibility is unverified \u2014 check the project page. No open breakage reports 13 days after the patch.",
+      "reason": "Latest release predates patch 1.0.21; compatibility is unverified \u2014 check the project page.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v2.30.2",
@@ -63,6 +63,44 @@
   ],
   "history": [
     {
+      "version": "1.0.21",
+      "label": "1.0.21",
+      "title": "Patch 1.0.21",
+      "published_at": "2026-10-28T13:11:25Z",
+      "published_unix": 1793193085,
+      "url": "https://store.steampowered.com/news/app/892970/view/1847920302230913",
+      "frameworks": [
+        {
+          "id": "bepinexpack-valheim",
+          "short": "BepInEx",
+          "name": "BepInExPack Valheim",
+          "status": "Likely safe",
+          "release_tag": "5.4.2360",
+          "release_published_at": "2026-10-28T15:59:55Z",
+          "mentions_patch": false,
+          "first_release_tag": "5.4.2360",
+          "first_release_at": "2026-10-28T15:59:55Z",
+          "data_from": "2026-10-28T15:59:55Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "jotunn",
+          "short": "J\u00f6tunn",
+          "name": "J\u00f6tunn (mod library)",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2024-04-24T14:41:32Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
       "version": "1.0.20",
       "label": "1.0.20",
       "title": "Patch 1.0.20",
@@ -74,13 +112,13 @@
           "id": "bepinexpack-valheim",
           "short": "BepInEx",
           "name": "BepInExPack Valheim",
-          "status": "No post-patch release",
-          "release_tag": null,
-          "release_published_at": null,
+          "status": "Likely safe",
+          "release_tag": "5.4.2360",
+          "release_published_at": "2026-10-28T15:59:55Z",
           "mentions_patch": false,
-          "first_release_tag": null,
-          "first_release_at": null,
-          "data_from": "2026-09-24T06:11:48Z",
+          "first_release_tag": "5.4.2360",
+          "first_release_at": "2026-10-28T15:59:55Z",
+          "data_from": "2026-10-28T15:59:55Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -112,13 +150,13 @@
           "id": "bepinexpack-valheim",
           "short": "BepInEx",
           "name": "BepInExPack Valheim",
-          "status": "No post-patch release",
-          "release_tag": null,
-          "release_published_at": null,
+          "status": "Likely safe",
+          "release_tag": "5.4.2360",
+          "release_published_at": "2026-10-28T15:59:55Z",
           "mentions_patch": false,
-          "first_release_tag": null,
-          "first_release_at": null,
-          "data_from": "2026-09-24T06:11:48Z",
+          "first_release_tag": "5.4.2360",
+          "first_release_at": "2026-10-28T15:59:55Z",
+          "data_from": "2026-10-28T15:59:55Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -150,13 +188,13 @@
           "id": "bepinexpack-valheim",
           "short": "BepInEx",
           "name": "BepInExPack Valheim",
-          "status": "No post-patch release",
-          "release_tag": null,
-          "release_published_at": null,
+          "status": "Likely safe",
+          "release_tag": "5.4.2360",
+          "release_published_at": "2026-10-28T15:59:55Z",
           "mentions_patch": false,
-          "first_release_tag": null,
-          "first_release_at": null,
-          "data_from": "2026-09-24T06:11:48Z",
+          "first_release_tag": "5.4.2360",
+          "first_release_at": "2026-10-28T15:59:55Z",
+          "data_from": "2026-10-28T15:59:55Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -189,12 +227,12 @@
           "short": "BepInEx",
           "name": "BepInExPack Valheim",
           "status": "Likely safe",
-          "release_tag": "5.4.2351",
-          "release_published_at": "2026-09-24T06:11:48Z",
+          "release_tag": "5.4.2360",
+          "release_published_at": "2026-10-28T15:59:55Z",
           "mentions_patch": false,
-          "first_release_tag": "5.4.2351",
-          "first_release_at": "2026-09-24T06:11:48Z",
-          "data_from": "2026-09-24T06:11:48Z",
+          "first_release_tag": "5.4.2360",
+          "first_release_at": "2026-10-28T15:59:55Z",
+          "data_from": "2026-10-28T15:59:55Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -227,12 +265,12 @@
           "short": "BepInEx",
           "name": "BepInExPack Valheim",
           "status": "Likely safe",
-          "release_tag": "5.4.2351",
-          "release_published_at": "2026-09-24T06:11:48Z",
+          "release_tag": "5.4.2360",
+          "release_published_at": "2026-10-28T15:59:55Z",
           "mentions_patch": false,
-          "first_release_tag": "5.4.2351",
-          "first_release_at": "2026-09-24T06:11:48Z",
-          "data_from": "2026-09-24T06:11:48Z",
+          "first_release_tag": "5.4.2360",
+          "first_release_at": "2026-10-28T15:59:55Z",
+          "data_from": "2026-10-28T15:59:55Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -265,12 +303,12 @@
           "short": "BepInEx",
           "name": "BepInExPack Valheim",
           "status": "Likely safe",
-          "release_tag": "5.4.2351",
-          "release_published_at": "2026-09-24T06:11:48Z",
+          "release_tag": "5.4.2360",
+          "release_published_at": "2026-10-28T15:59:55Z",
           "mentions_patch": false,
-          "first_release_tag": "5.4.2351",
-          "first_release_at": "2026-09-24T06:11:48Z",
-          "data_from": "2026-09-24T06:11:48Z",
+          "first_release_tag": "5.4.2360",
+          "first_release_at": "2026-10-28T15:59:55Z",
+          "data_from": "2026-10-28T15:59:55Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -303,12 +341,12 @@
           "short": "BepInEx",
           "name": "BepInExPack Valheim",
           "status": "Likely safe",
-          "release_tag": "5.4.2351",
-          "release_published_at": "2026-09-24T06:11:48Z",
+          "release_tag": "5.4.2360",
+          "release_published_at": "2026-10-28T15:59:55Z",
           "mentions_patch": false,
-          "first_release_tag": "5.4.2351",
-          "first_release_at": "2026-09-24T06:11:48Z",
-          "data_from": "2026-09-24T06:11:48Z",
+          "first_release_tag": "5.4.2360",
+          "first_release_at": "2026-10-28T15:59:55Z",
+          "data_from": "2026-10-28T15:59:55Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -341,12 +379,12 @@
           "short": "BepInEx",
           "name": "BepInExPack Valheim",
           "status": "Likely safe",
-          "release_tag": "5.4.2351",
-          "release_published_at": "2026-09-24T06:11:48Z",
+          "release_tag": "5.4.2360",
+          "release_published_at": "2026-10-28T15:59:55Z",
           "mentions_patch": false,
-          "first_release_tag": "5.4.2351",
-          "first_release_at": "2026-09-24T06:11:48Z",
-          "data_from": "2026-09-24T06:11:48Z",
+          "first_release_tag": "5.4.2360",
+          "first_release_at": "2026-10-28T15:59:55Z",
+          "data_from": "2026-10-28T15:59:55Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -379,12 +417,12 @@
           "short": "BepInEx",
           "name": "BepInExPack Valheim",
           "status": "Likely safe",
-          "release_tag": "5.4.2351",
-          "release_published_at": "2026-09-24T06:11:48Z",
+          "release_tag": "5.4.2360",
+          "release_published_at": "2026-10-28T15:59:55Z",
           "mentions_patch": false,
-          "first_release_tag": "5.4.2351",
-          "first_release_at": "2026-09-24T06:11:48Z",
-          "data_from": "2026-09-24T06:11:48Z",
+          "first_release_tag": "5.4.2360",
+          "first_release_at": "2026-10-28T15:59:55Z",
+          "data_from": "2026-10-28T15:59:55Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -417,12 +455,12 @@
           "short": "BepInEx",
           "name": "BepInExPack Valheim",
           "status": "Likely safe",
-          "release_tag": "5.4.2351",
-          "release_published_at": "2026-09-24T06:11:48Z",
+          "release_tag": "5.4.2360",
+          "release_published_at": "2026-10-28T15:59:55Z",
           "mentions_patch": false,
-          "first_release_tag": "5.4.2351",
-          "first_release_at": "2026-09-24T06:11:48Z",
-          "data_from": "2026-09-24T06:11:48Z",
+          "first_release_tag": "5.4.2360",
+          "first_release_at": "2026-10-28T15:59:55Z",
+          "data_from": "2026-10-28T15:59:55Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -455,12 +493,12 @@
           "short": "BepInEx",
           "name": "BepInExPack Valheim",
           "status": "Likely safe",
-          "release_tag": "5.4.2351",
-          "release_published_at": "2026-09-24T06:11:48Z",
+          "release_tag": "5.4.2360",
+          "release_published_at": "2026-10-28T15:59:55Z",
           "mentions_patch": false,
-          "first_release_tag": "5.4.2351",
-          "first_release_at": "2026-09-24T06:11:48Z",
-          "data_from": "2026-09-24T06:11:48Z",
+          "first_release_tag": "5.4.2360",
+          "first_release_at": "2026-10-28T15:59:55Z",
+          "data_from": "2026-10-28T15:59:55Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -479,47 +517,15 @@
           "first_mention_at": null
         }
       ]
-    },
-    {
-      "version": "0.220.3",
-      "label": "0.220.3",
-      "title": "Patch 0.220.3",
-      "published_at": "2025-03-04T09:16:50Z",
-      "published_unix": 1741079810,
-      "url": "https://store.steampowered.com/news/app/892970/view/1792751526166512",
-      "frameworks": [
-        {
-          "id": "bepinexpack-valheim",
-          "short": "BepInEx",
-          "name": "BepInExPack Valheim",
-          "status": "Likely safe",
-          "release_tag": "5.4.2351",
-          "release_published_at": "2026-09-24T06:11:48Z",
-          "mentions_patch": false,
-          "first_release_tag": "5.4.2351",
-          "first_release_at": "2026-09-24T06:11:48Z",
-          "data_from": "2026-09-24T06:11:48Z",
-          "first_mention_tag": null,
-          "first_mention_at": null
-        },
-        {
-          "id": "jotunn",
-          "short": "J\u00f6tunn",
-          "name": "J\u00f6tunn (mod library)",
-          "status": "Safe",
-          "release_tag": "v2.24.1",
-          "release_published_at": "2025-03-04T10:48:51Z",
-          "mentions_patch": true,
-          "first_release_tag": "v2.24.1",
-          "first_release_at": "2025-03-04T10:48:51Z",
-          "data_from": "2024-04-24T14:41:32Z",
-          "first_mention_tag": "v2.24.1",
-          "first_mention_at": "2025-03-04T10:48:51Z"
-        }
-      ]
     }
   ],
   "news": [
+    {
+      "title": "Patch 1.0.21",
+      "url": "https://store.steampowered.com/news/app/892970/view/1847920302230913",
+      "published_at": "2026-10-28T13:11:25Z",
+      "is_patch": true
+    },
     {
       "title": "Patch 1.0.20",
       "url": "https://store.steampowered.com/news/app/892970/view/1846651706676865",
@@ -573,12 +579,6 @@
       "url": "https://store.steampowered.com/news/app/892970/view/1841579228664600",
       "published_at": "2026-08-20T07:03:31Z",
       "is_patch": false
-    },
-    {
-      "title": "Word From the Devs: See You Soon!",
-      "url": "https://store.steampowered.com/news/app/892970/view/1836506165545761",
-      "published_at": "2026-06-24T12:13:07Z",
-      "is_patch": false
     }
   ],
   "channels": [],
@@ -622,6 +622,26 @@
         {
           "short": "J\u00f6tunn",
           "status": "Likely safe",
+          "release_tag": "v2.30.2"
+        }
+      ]
+    },
+    {
+      "at": "2026-10-28T18:39:45Z",
+      "patch": "1.0.21",
+      "patch_key": "1.0.21",
+      "patch_published_at": "2026-10-28T13:11:25Z",
+      "patch_url": "https://store.steampowered.com/news/app/892970/view/1847920302230913",
+      "verdict": "Just patched, wait",
+      "frameworks": [
+        {
+          "short": "BepInEx",
+          "status": "Likely safe",
+          "release_tag": "5.4.2360"
+        },
+        {
+          "short": "J\u00f6tunn",
+          "status": "Just patched, wait",
           "release_tag": "v2.30.2"
         }
       ]
