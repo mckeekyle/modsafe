@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T18:41:21Z",
+  "generated_at": "2026-10-29T00:42:14Z",
   "game": {
     "slug": "msfs-2020",
     "name": "Microsoft Flight Simulator (2020)",
@@ -131,6 +131,20 @@
           "first_mention_at": null
         },
         {
+          "id": "fsuipc7",
+          "short": "FSUIPC7",
+          "name": "FSUIPC7",
+          "status": "Likely safe",
+          "release_tag": "7.5.9",
+          "release_published_at": "2026-09-29T12:00:00Z",
+          "mentions_patch": false,
+          "first_release_tag": "7.5.9",
+          "first_release_at": "2026-09-29T12:00:00Z",
+          "data_from": "2026-09-29T12:00:00Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
           "id": "mobiflight",
           "short": "MobiFlight",
           "name": "MobiFlight Connector (SimConnect/WASM)",
@@ -165,6 +179,20 @@
           "first_release_tag": "v2020.15.0",
           "first_release_at": "2026-08-22T18:23:00Z",
           "data_from": "2026-06-07T03:27:25Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "fsuipc7",
+          "short": "FSUIPC7",
+          "name": "FSUIPC7",
+          "status": "Likely safe",
+          "release_tag": "7.5.9",
+          "release_published_at": "2026-09-29T12:00:00Z",
+          "mentions_patch": false,
+          "first_release_tag": "7.5.9",
+          "first_release_at": "2026-09-29T12:00:00Z",
+          "data_from": "2026-09-29T12:00:00Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -207,6 +235,20 @@
           "first_mention_at": null
         },
         {
+          "id": "fsuipc7",
+          "short": "FSUIPC7",
+          "name": "FSUIPC7",
+          "status": "Likely safe",
+          "release_tag": "7.5.9",
+          "release_published_at": "2026-09-29T12:00:00Z",
+          "mentions_patch": false,
+          "first_release_tag": "7.5.9",
+          "first_release_at": "2026-09-29T12:00:00Z",
+          "data_from": "2026-09-29T12:00:00Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
           "id": "mobiflight",
           "short": "MobiFlight",
           "name": "MobiFlight Connector (SimConnect/WASM)",
@@ -245,6 +287,20 @@
           "first_mention_at": null
         },
         {
+          "id": "fsuipc7",
+          "short": "FSUIPC7",
+          "name": "FSUIPC7",
+          "status": "Likely safe",
+          "release_tag": "7.5.9",
+          "release_published_at": "2026-09-29T12:00:00Z",
+          "mentions_patch": false,
+          "first_release_tag": "7.5.9",
+          "first_release_at": "2026-09-29T12:00:00Z",
+          "data_from": "2026-09-29T12:00:00Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
           "id": "mobiflight",
           "short": "MobiFlight",
           "name": "MobiFlight Connector (SimConnect/WASM)",
@@ -279,6 +335,20 @@
           "first_release_tag": "v2020.15.0",
           "first_release_at": "2026-08-22T18:23:00Z",
           "data_from": "2026-06-07T03:27:25Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "fsuipc7",
+          "short": "FSUIPC7",
+          "name": "FSUIPC7",
+          "status": "Likely safe",
+          "release_tag": "7.5.9",
+          "release_published_at": "2026-09-29T12:00:00Z",
+          "mentions_patch": false,
+          "first_release_tag": "7.5.9",
+          "first_release_at": "2026-09-29T12:00:00Z",
+          "data_from": "2026-09-29T12:00:00Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },

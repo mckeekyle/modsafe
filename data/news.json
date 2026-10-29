@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T18:41:47Z",
+  "generated_at": "2026-10-29T00:42:40Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,69 @@
     }
   ],
   "items": [
+    {
+      "title": "'I feel like we've built a pyramid on Everest' says Rockstar of GTA 6 meeting impossible expectations",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/i-feel-like-weve-built-a-pyramid-on-everest-says-rockstar-of-gta-6-meeting-impossible-expectations/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-29T00:35:52Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "GTA 6's map is almost as big as Rockstar's last 3 games combined, contains 'an order of magnitude more interiors'",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6s-map-is-almost-as-big-as-rockstars-last-3-games-combined-contains-an-order-of-magnitude-more-interiors/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-29T00:17:15Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Can you name the horror games these deeply unpleasant bathrooms are from?",
+      "url": "https://www.pcgamer.com/games/horror/can-you-name-the-horror-game-these-deeply-unpleasant-bathrooms-are-from/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-28T22:50:34Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Epic Games chief Tim Sweeney claims 'Valve has held gaming back for years'",
+      "url": "https://www.pcgamer.com/software/platforms/epic-games-chief-tim-sweeney-claims-valve-has-held-gaming-back-for-years/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-28T21:00:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "WoW: Forever's update schedule will be 'a little more laid back' than the main MMO",
+      "url": "https://www.pcgamer.com/games/world-of-warcraft/wow-forevers-update-schedule-will-be-a-little-more-laid-back-than-the-main-mmo/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-28T20:10:35Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Epic Games further doubles down on gen-AI tools for Fortnite, Unreal Engine 6 and more: \"Our engineers are no longer writing the bulk of the code\"",
+      "url": "https://www.eurogamer.net/epic-genai-fortnite-unreal-engine-6-no-longer-writing-code",
+      "source": "Eurogamer",
+      "published_at": "2026-10-28T20:08:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Alien: Isolation 2 devs commit to a physical edition: \"Staying true to the analogue nature of Alien is one of our pillars\"",
+      "url": "https://www.eurogamer.net/alien-isolation-2-commit-physical-edition",
+      "source": "Eurogamer",
+      "published_at": "2026-10-28T19:16:08Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Witchbrook is delayed again, now set for release in 2027",
       "url": "https://www.pcgamer.com/games/rpg/witchbrook-is-delayed-again-now-set-for-release-in-2027/",
@@ -510,69 +573,6 @@
       "url": "https://www.rockpapershotgun.com/a-leaked-trailer-for-transformers-reactivate-shows-off-the-only-lick-of-gameplay-well-likely-ever-see-of-the-cancelled-co-op-action-game",
       "source": "Rock Paper Shotgun",
       "published_at": "2026-10-27T18:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Assassin's Creed Black Flag Resynced is wrapping things up with one last big update that adds in new game plus and a throwback to the original game",
-      "url": "https://www.rockpapershotgun.com/assassins-creed-black-flag-resynced-is-wrapping-things-up-with-one-last-big-update-that-adds-in-new-game-plus-and-a-throwback-to-the-original-game",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-27T17:58:44Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "After Onimusha's focused swordplay, Phantom Blade Zero delivers a sprawling, maximalist action epic",
-      "url": "https://www.pcgamer.com/games/action/phantom-blade-zero-vs-onimusha-way-of-the-sword/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-27T17:55:06Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Warhammer 40,000: Boltgun studio announces major layoffs, then quickly deletes the announcement",
-      "url": "https://www.pcgamer.com/gaming-industry/warhammer-40-000-boltgun-studio-announces-major-layoffs-then-quickly-deletes-the-announcement/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-27T17:31:12Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Demanding 300GB to install despite its actual size of 145GB, Phantom Blade Zero makes me question what a gigabyte is worth",
-      "url": "https://www.rockpapershotgun.com/demanding-300gb-to-install-despite-its-actual-size-of-145gb-phantom-blade-zero-makes-me-question-what-a-gigabyte-is-worth",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-27T17:30:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "\"This is a serious incident\": Kingdom Come: Deliverance 2 devs Warhorse hit by cyberattack targeting their systems and data",
-      "url": "https://www.rockpapershotgun.com/this-is-a-serious-incident-kingdom-come-deliverance-2-devs-warhorse-hit-by-cyberattack-targeting-their-systems-and-data",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-27T17:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "\"This is a serious incident\" - Kingdom Come: Deliverance developer Warhorse suffers cyberattack",
-      "url": "https://www.eurogamer.net/warhorse-cyberattack-kingdom-come-deliverance",
-      "source": "Eurogamer",
-      "published_at": "2026-10-27T16:53:16Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Nvidia and AMD invest billions into Meta as companies egg each other on to bet even more on AI",
-      "url": "https://www.pcgamer.com/software/ai/nvidia-and-amd-invest-billions-into-meta-as-companies-egg-each-other-on-to-bet-even-more-on-ai/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-27T16:34:31Z",
       "games": [],
       "kind": "news",
       "highlight": false
