@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T12:44:09Z",
+  "generated_at": "2026-10-29T18:43:31Z",
   "game": {
     "slug": "satisfactory",
     "name": "Satisfactory",
@@ -27,7 +27,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch 1.2.4.1; compatibility is unverified \u2014 check the project page. No open breakage reports 16 days after the patch. ficsit.app lists SML as Works on the stable branch. SML requires game build CL 491125 or newer (a minimum, not a match: Steam doesn't publish the game's CL, so ModSafe can't compare builds directly).",
+      "reason": "Latest release predates patch 1.2.4.1; compatibility is unverified \u2014 check the project page. No open breakage reports 17 days after the patch. ficsit.app lists SML as Works on the stable branch. SML requires game build CL 491125 or newer (a minimum, not a match: Steam doesn't publish the game's CL, so ModSafe can't compare builds directly).",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v3.12.0",
