@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T06:44:16Z",
+  "generated_at": "2026-10-29T12:43:33Z",
   "game": {
     "slug": "minecraft",
     "name": "Minecraft: Java Edition",
@@ -306,7 +306,7 @@
           "name": "NeoForge",
           "status": "Safe",
           "reason": "NeoForge publishes a stable build for Minecraft 26.1.2.",
-          "release_tag": "26.1.2.124",
+          "release_tag": "26.1.2.125",
           "release_published_at": null
         },
         {

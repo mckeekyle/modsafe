@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T06:45:12Z",
+  "generated_at": "2026-10-29T12:44:28Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,114 @@
     }
   ],
   "items": [
+    {
+      "title": "Call of Duty: Modern Warfare 4 intro cinematic is \"not intended to reference or trivialise\" real-world South Korean crowd crush, Activision say amid reported backlash",
+      "url": "https://www.rockpapershotgun.com/call-of-duty-modern-warfare-4-intro-cinematic-is-not-intended-to-reference-or-trivialise-real-world-south-korean-crowd-crush-activision-say-amid-reported-backlash",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-29T12:34:09Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "World of Warcraft players angry after Blizzard seems to contradict housing cosmetics policy with Halloween additions",
+      "url": "https://www.eurogamer.net/world-of-warcraft-halloween-housing-cosmetics-controversy-kul-tiran",
+      "source": "Eurogamer",
+      "published_at": "2026-10-29T11:59:54Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "'It\u2019s so much easier to steal this than to rob a bank': $100,000,000+ worth of AI data center freight reportedly stolen since June",
+      "url": "https://www.pcgamer.com/software/ai/its-so-much-easier-to-steal-this-than-to-rob-a-bank-usd100-000-000-worth-of-ai-data-center-freight-reportedly-stolen-since-june/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-29T11:53:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "'Morale has been terrible' at EA, workers claim, saying that AI mandates and mismanagement have left the company 'a cold dead place that's slowly decaying as leadership pilfers every last cent'",
+      "url": "https://www.pcgamer.com/gaming-industry/morale-has-been-terrible-at-ea-workers-claim-saying-that-ai-mandates-and-mismanagement-have-left-the-company-a-cold-dead-place-thats-slowly-decaying-as-leadership-pilfers-every-last-cent/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-29T11:47:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Phantom Blade Zero dev says don't get the latest Nvidia drivers",
+      "url": "https://www.pcgamer.com/hardware/phantom-blade-zero-dev-says-dont-get-the-latest-nvidia-drivers/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-29T11:36:07Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "COD Modern Warfare 4's controversial Possum ability nerfed to stop it being used \"as a combat mechanic instead of a survival mechanic\"",
+      "url": "https://www.eurogamer.net/call-of-duty-modern-warfare-4-dmz-possum-nerf",
+      "source": "Eurogamer",
+      "published_at": "2026-10-29T11:33:05Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Xbox leader Asha Sharma says there's \"more demand than consoles available\" as Xbox hardware sales dip by 14%",
+      "url": "https://www.eurogamer.net/xbox-financials-sales-asha-sharma-microsoft",
+      "source": "Eurogamer",
+      "published_at": "2026-10-29T11:21:44Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "GTA 6 has a smell reaction system, which immediately joins Red Dead Redemption 2's dynamically shrinking horse balls on Rockstar's list of immersive symbols of excess",
+      "url": "https://www.rockpapershotgun.com/gta-6-has-a-smell-reaction-system-which-immediately-joins-red-dead-redemption-2s-dynamically-shrinking-horse-balls-on-rockstars-list-of-immersive-symbols-of-excess",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-29T11:12:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Modern Warfare 4 faces backlash after real footage of South Korean crowd crush tragedy was discovered in game's opening moments",
+      "url": "https://www.eurogamer.net/modern-warfare-4-south-korean-crowd-crush-footage",
+      "source": "Eurogamer",
+      "published_at": "2026-10-29T11:11:01Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "For the second time this year, Galax says it's not closing down: Palit-owned graphics card brand 'continues to operate as usual'",
+      "url": "https://www.pcgamer.com/hardware/graphics-cards/for-the-second-time-this-year-galax-says-its-not-closing-down-palit-owned-graphics-card-brand-continues-to-operate-as-usual/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-29T10:29:32Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Dog poo, anti-social behaviour, and Jason: Our latest look at GTA 6 gameplay comes from an episode of South Park",
+      "url": "https://www.eurogamer.net/dog-poo-anti-social-behaviour-and-jason-our-latest-look-at-gta-6-gameplay-comes-from-the-latest-episode-of-south-park",
+      "source": "Eurogamer",
+      "published_at": "2026-10-29T09:55:54Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "More Chinese success as Phantom Blade Zero enjoys a big launch and becomes one of Steam's most played games",
+      "url": "https://www.eurogamer.net/phantom-blade-zero-steam-launch-1-million-sales",
+      "source": "Eurogamer",
+      "published_at": "2026-10-29T09:26:46Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "I've spent over 50 hours in Phantom Blade Zero\u2014here are my top 20 tips to conquer the Wulin",
       "url": "https://www.pcgamer.com/games/action/phantom-blade-zero-tips/",
@@ -94,6 +202,15 @@
       "highlight": false
     },
     {
+      "title": "All Honor Among Thieves answers in Phantom Blade Zero",
+      "url": "https://www.pcgamer.com/games/action/phantom-blade-zero-honor-among-thieves-answers-gentle-thief-questions/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-29T02:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
       "title": "How to enter the Crimson Manor in Phantom Blade Zero",
       "url": "https://www.pcgamer.com/games/action/phantom-blade-zero-crimson-manor-enter/",
       "source": "PC Gamer",
@@ -103,8 +220,17 @@
       "highlight": false
     },
     {
-      "title": "All Honor Among Thieves answers in Phantom Blade Zero",
-      "url": "https://www.pcgamer.com/games/action/phantom-blade-zero-honor-among-thieves-answers-gentle-thief-questions/",
+      "title": "Where to find the Flesh Lily in Phantom Blade Zero",
+      "url": "https://www.pcgamer.com/games/action/phantom-blade-zero-flesh-lily-location/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-29T02:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Where to find the Backstreet Courtyard Key in Phantom Blade Zero",
+      "url": "https://www.pcgamer.com/games/action/phantom-blade-zero-backstreet-courtyard-key-location/",
       "source": "PC Gamer",
       "published_at": "2026-10-29T02:00:00Z",
       "games": [],
@@ -123,15 +249,6 @@
     {
       "title": "How to complete Whence the Weeping in Phantom Blade Zero",
       "url": "https://www.pcgamer.com/games/action/phantom-blade-zero-whence-the-weeping-walkthrough/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-29T02:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Where to find the Backstreet Courtyard Key in Phantom Blade Zero",
-      "url": "https://www.pcgamer.com/games/action/phantom-blade-zero-backstreet-courtyard-key-location/",
       "source": "PC Gamer",
       "published_at": "2026-10-29T02:00:00Z",
       "games": [],
@@ -159,15 +276,6 @@
     {
       "title": "How to beat The Gold-Masked One in Phantom Blade Zero",
       "url": "https://www.pcgamer.com/games/action/phantom-blade-zero-gold-masked-one-boss-guide/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-29T02:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Where to find the Flesh Lily in Phantom Blade Zero",
-      "url": "https://www.pcgamer.com/games/action/phantom-blade-zero-flesh-lily-location/",
       "source": "PC Gamer",
       "published_at": "2026-10-29T02:00:00Z",
       "games": [],
@@ -460,116 +568,6 @@
       "games": [
         "palworld"
       ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "As No Man's Sky arrives on mobile, Hello Games celebrates with a spooky update for all that includes delivery missions and \"seamless\" interstellar travel",
-      "url": "https://www.eurogamer.net/no-mans-sky-forsaken-update-release-ipad-iphone",
-      "source": "Eurogamer",
-      "published_at": "2026-10-28T14:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Monster Train 2 is getting a new clan, and they're edgy as h\u0336e\u0336l\u0336l heaven",
-      "url": "https://www.pcgamer.com/games/card-games/monster-train-2-the-punished-dlc/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-28T13:59:25Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "'Yes, we are vibe-coding things': Epic confirms it's using AI tools to code Unreal Engine 6, Fortnite, and more",
-      "url": "https://www.pcgamer.com/software/ai/yes-we-are-vibe-coding-things-epic-confirms-its-using-ai-tools-to-code-unreal-engine-6-fortnite-and-more/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-28T13:58:17Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Dawn of War 4 may be the most generous RTS I've played",
-      "url": "https://www.eurogamer.net/dawn-of-war-4-preview-most-generous-rts",
-      "source": "Eurogamer",
-      "published_at": "2026-10-28T13:53:43Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Hot Wax sets fire to the Tetris playbook with slow-burn puzzle mechanics and a dollop of eldritch menace",
-      "url": "https://www.rockpapershotgun.com/hot-wax-sets-fire-to-the-tetris-playbook-with-slow-burn-puzzle-mechanics-and-a-dollop-of-eldritch-menace",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-28T13:30:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "As Skydance merges with Warner Bros. and Paramount, the company offers voluntary redundancy and mandates return to the office",
-      "url": "https://www.eurogamer.net/skydance-return-to-office-voluntary-buyouts",
-      "source": "Eurogamer",
-      "published_at": "2026-10-28T13:22:47Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Patch 1.0.21",
-      "url": "https://store.steampowered.com/news/app/892970/view/1847920302230913",
-      "source": "Steam \u00b7 Valheim",
-      "published_at": "2026-10-28T13:11:25Z",
-      "games": [
-        "valheim"
-      ],
-      "kind": "patch",
-      "highlight": true
-    },
-    {
-      "title": "\"We basically rewrote the entire State of Decay game\": Undead Labs spent years trying to make State of Decay 3 into a full-blown zombie apocalypse MMO",
-      "url": "https://www.rockpapershotgun.com/we-basically-rewrote-the-entire-state-of-decay-game-undead-labs-spent-years-trying-to-make-state-of-decay-3-into-a-full-blown-zombie-apocalypse-mmo",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-28T12:30:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Here's the Crimson Desert: Charting the Unknown release time for your region",
-      "url": "https://www.pcgamer.com/games/rpg/crimson-desert-charting-the-unknown-dlc-release-date-launch-times/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-28T12:14:17Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "\"We need to understand what the need is here\" - Arc Raiders studio still undecided about the future of PvE despite a seemingly successful test",
-      "url": "https://www.eurogamer.net/arc-raiders-pve-mode-embark-undecided",
-      "source": "Eurogamer",
-      "published_at": "2026-10-28T11:58:27Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "FF14's new Evolved jobs won't deal a 'huge amount' more damage than their Reborn counterparts, says Koji Fox",
-      "url": "https://www.pcgamer.com/games/mmo/ff14s-new-evolved-jobs-wont-deal-a-huge-amount-more-damage-than-their-reborn-counterparts-says-koji-fox/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-28T11:58:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Project Titan's end 'immediately instilled a culture of humility' in the Overwatch team which has helped them see the last decade through",
-      "url": "https://www.pcgamer.com/games/fps/project-titans-end-immediately-instilled-a-culture-of-humility-in-the-overwatch-team-which-has-helped-them-see-the-last-decade-through/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-28T11:53:09Z",
-      "games": [],
       "kind": "news",
       "highlight": false
     }
