@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data" / "games"
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from games import GAMES  # noqa: E402
+import patches as patches_mod  # noqa: E402
 import mods as mods_mod  # noqa: E402
 import feeds  # noqa: E402
 import badges  # noqa: E402
@@ -378,6 +379,31 @@ section { margin: 0 0 1.75rem; }
 .news li.hl { background: linear-gradient(90deg, rgba(255,159,28,.1), transparent); border-left: 3px solid var(--wait); padding-left: .7rem; border-radius: 6px; }
 .nmeta { display: flex; flex-wrap: wrap; gap: .35rem; align-items: center; color: var(--dim); font-size: .82rem; margin-top: .2rem; }
 .nmeta .chip { text-decoration: none; }
+.pt-list { list-style: none; margin: 0; padding: 0; display: grid; gap: .55rem; }
+.pt-row { display: grid; grid-template-columns: 112px 1fr auto; gap: .9rem; align-items: center; padding: .55rem .7rem .55rem .55rem;
+  border-radius: 12px; background: rgba(255,255,255,.025); border: 1px solid var(--line); border-left: 3px solid var(--line); }
+.pt-row.v-ok { border-left-color: var(--lime); } .pt-row.v-likely { border-left-color: var(--neon); }
+.pt-row.v-wait { border-left-color: #ffb020; } .pt-row.v-broken { border-left-color: var(--neon2); }
+.pt-row.v-old { opacity: .82; }
+.pt-art img { display: block; width: 112px; height: 64px; object-fit: cover; border-radius: 8px; }
+.pt-main p { margin: 0; } .pt-main { min-width: 0; }
+.pt-game { font-family: var(--head); font-size: 1.02rem; } .pt-game a { color: var(--text); text-decoration: none; }
+.pt-game a:hover { color: var(--neon); }
+.pt-patch { color: #cdd7ea; font-size: .92rem; overflow-wrap: anywhere; } .pt-time { color: var(--dim); font-size: .82rem; }
+.pt-new { font-size: .68rem; font-weight: 700; letter-spacing: .08em; padding: .05rem .4rem; margin-left: .35rem; border-radius: 5px;
+  background: rgba(0,240,255,.12); color: var(--neon); border: 1px solid rgba(0,240,255,.4); vertical-align: middle; }
+.pt-verdict { display: flex; flex-direction: column; align-items: flex-end; gap: .25rem; text-align: right; }
+.pt-note { color: var(--dim); font-size: .74rem; max-width: 18ch; }
+.pt-month h3 { margin: 0; font-size: 1.05rem; text-transform: uppercase; letter-spacing: .08em; color: var(--neon2); }
+.pt-hold p { margin: .3rem 0; } .pt-hold .chip { display: inline-block; margin: .15rem .2rem .15rem 0; text-decoration: none; color: var(--text); }
+.rollback { border-color: rgba(255,176,32,.45); background: linear-gradient(135deg, rgba(255,176,32,.08), rgba(255,42,109,.05)); }
+.rollback h2 { margin-top: 0; font-size: 1.2rem; } .rb-links { display: flex; flex-wrap: wrap; gap: .5rem; }
+@media (max-width: 560px) {
+  .pt-row { grid-template-columns: 72px 1fr; gap: .6rem; }
+  .pt-art img { width: 72px; height: 41px; }
+  .pt-verdict { grid-column: 1 / -1; flex-direction: row; align-items: center; justify-content: flex-start; text-align: left; gap: .5rem; }
+  .pt-note { max-width: none; }
+}
 @media (max-width: 820px) {
   .vgrid { grid-template-columns: 1fr; }
   .footer-in { grid-template-columns: 1fr; }
@@ -388,6 +414,10 @@ section { margin: 0 0 1.75rem; }
   .menu-pop { position: fixed; left: 4vw; right: 4vw; width: auto; top: 96px; grid-template-columns: 1fr 1fr; }
   .tabs { top: 96px; }
   .nav a { padding: .35rem .65rem; font-size: .92rem; }
+}
+@media (max-width: 430px) {
+  .nav { gap: 0; flex-wrap: nowrap; }
+  .nav a, .games-menu summary { padding: .32rem .5rem; font-size: .86rem; white-space: nowrap; }
   main { padding: 1rem .85rem 2.5rem; }
   .home-hero, .game-hero { border-radius: 16px; }
   .vbadge { font-size: 1.1rem; }
@@ -526,7 +556,7 @@ def games_menu(active: str) -> str:
 
 
 def nav(active: str) -> str:
-    links = [("/news/", "news", "News"), ("/guides/", "guides", "Guides"), ("/faq/", "faq", "FAQ")]
+    links = [("/patches/", "patches", "Patches"), ("/news/", "news", "News"), ("/guides/", "guides", "Guides"), ("/faq/", "faq", "FAQ")]
     items = [games_menu(active)]
     for href, key, label in links:
         aria = ' aria-current="page"' if key == active else ""
@@ -545,7 +575,7 @@ def footer() -> str:
 <div>{brand()}
 <p>Know if your mods survived the patch before you hit update.</p>
 <p>Not affiliated with any game developer, publisher, Nexus Mods, Thunderstore, Modrinth or Mojang. Game art © its respective owners. Data from public sources (Steam, api.steamcmd.net, GitHub, Thunderstore, Mojang, Fabric, Forge, NeoForge, Modrinth, the Decky plugin store, silverlock.org, fsuipc.com, the Atlan patcher list) plus hand-checked records (GTA V, console mods, off-Steam hotfixes). Dates are UTC.</p></div>
-<div><nav aria-label="Footer">{game_links} <a href="/news/">News</a> <a href="/guides/">Guides</a> <a href="/faq/">FAQ</a></nav>
+<div><nav aria-label="Footer">{game_links} <a href="/patches/">Patches</a> <a href="/news/">News</a> <a href="/guides/">Guides</a> <a href="/faq/">FAQ</a></nav>
 <p class="dev">For developers &amp; AI: <a href="/games.json">Data (JSON)</a> · <a href="/llms.txt">llms.txt</a> · <a href="/feed.xml">Atom feed</a></p></div>
 </div></footer>"""
 
@@ -917,6 +947,7 @@ def build_game_page(game: dict, data: dict) -> str:
 </dl>
 </section>
 </div>
+{rollback_callout(game, data)}
 <div class="sec-head"><h2 id="fw-heading">Frameworks &amp; loaders</h2></div>
 <section class="fw-grid" aria-labelledby="fw-heading">{framework_cards(data)}</section>
 {f'<ul>{extra}</ul>' if extra else ''}
@@ -1501,12 +1532,14 @@ def build_home(games_data: list[tuple[dict, dict]]) -> str:
 <section class="game-grid" aria-label="Games">
 {game_cards(games_data, compact=True)}
 </section>
+<div class="sec-head"><h2>Latest patches</h2><a href="/patches/">Patch timeline →</a></div>
+<section class="panel"><ul class="pt-list">{patch_rows(patches_mod.collect_patches(games_data, limit=5))}</ul></section>
 <div class="sec-head"><h2>Latest gaming news</h2><a href="/news/">All news →</a></div>
 <section class="panel">{news_list(news.get("items", []), 8)}</section>
 <section class="panel"><h2>How we call it</h2>{legend_html()}
 <p style="margin-top:var(--s4)"><a href="/faq/">Read the FAQ →</a></p></section>
 """
-    return page_shell(f"ModSafe — Is it safe to update? Mod compatibility for {sum(1 for g in GAMES if g.get('genre') != 'Platform')} PC games & Steam Deck", SITE_DESC, "/", "home", body + FILTER_JS, extra_jsonld=[itemlist])
+    return page_shell(f"ModSafe — Is it safe to update? Mod compatibility for {sum(1 for g in GAMES if g.get('genre') != 'Platform')} PC games & Steam Deck", SITE_DESC, "/", "home", body + FILTER_JS + LOCAL_TIME_JS, extra_jsonld=[itemlist])
 
 
 def build_games_index(games_data) -> str:
@@ -1596,6 +1629,115 @@ def build_guides_index() -> str:
                       extra_jsonld=[breadcrumb_ld([("Home", "/"), ("Guides", "/guides/")])], og=guides_mod.GUIDES_OG)
 
 
+ROLLBACK_VERDICTS = ("Just patched, wait", "Breakage reported", "Not ported yet")
+
+
+def rollback_callout(game: dict, data: dict) -> str:
+    """Shown on Steam game pages while the verdict says mods may be broken: how to get the old version back."""
+    if data.get("verdict") not in ROLLBACK_VERDICTS or not game.get("steam_appid") \
+            or game.get("kind_label") == "platform" or game.get("kind") == "minecraft":
+        return ""
+    g = guides_mod.STEAM_GUIDE_PATH
+    return f"""<section class="panel rollback" id="rollback" aria-labelledby="rollback-heading">
+<h2 id="rollback-heading">⏪ Already updated and your mods broke?</h2>
+<p>{esc(guides_mod.branch_summary(game["slug"]))}</p>
+<p class="rb-links"><a class="btn ghost" href="{g}#branches">Old versions on Steam</a> <a class="btn ghost" href="{g}#rollback">Roll back with download_depot</a> <a class="btn ghost" href="{g}#backup">Back up before the next patch</a></p>
+<p class="muted">Not updated yet? <a href="{g}#wait-until-launch">Stop Steam auto-updating {esc(game["short"])}</a> until the frameworks catch up.</p>
+</section>"""
+
+
+LOCAL_TIME_JS = """<script>
+(function(){[].forEach.call(document.querySelectorAll('time.utc'),function(t){var d=new Date(t.getAttribute('datetime'));if(isNaN(d))return;var s=d.toLocaleString([], {month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});var l=t.parentNode.querySelector('.local');if(l){l.textContent='· '+s+' your time';}});})();
+</script>"""
+
+
+def patch_rows(items: list[dict], now: datetime | None = None) -> str:
+    now = now or datetime.now(timezone.utc)
+    out = []
+    for i in items:
+        g = i["game"]
+        slug = g["slug"]
+        fresh = (now - i["at"]).total_seconds() < 7 * 86400
+        src = (f' · <a href="{esc(i["url"])}" rel="noopener external" title="{esc(i["title"])}">patch notes</a>' if i.get("url")
+               else ' · <span class="muted">no patch notes</span>')
+        if i["current"]:
+            right = f'{badge(i["verdict"])}<span class="pt-note">Current verdict</span>'
+        elif i.get("verdict"):
+            right = f'{badge(i["verdict"])}<span class="pt-note">Last verdict before {esc(i.get("superseded_by") or "the next patch")}</span>'
+        else:
+            right = f'<span class="chip">Superseded by {esc(i.get("superseded_by") or "a newer patch")}</span>'
+        cls = status_class(i["verdict"]) if i["current"] and i.get("verdict") else "old"
+        out.append(f"""<li class="pt-row v-{cls}">
+<a class="pt-art" href="/{slug}/" tabindex="-1" aria-hidden="true"><img src="{busted(game_img(slug))}" width="112" height="64" loading="lazy" decoding="async" alt=""></a>
+<div class="pt-main"><p class="pt-game"><a href="/{slug}/">{esc(g["name"])}</a>{' <span class="pt-new">NEW</span>' if fresh else ''}</p>
+<p class="pt-patch">{patch_label_html(i["label"])}{src}</p>
+<p class="pt-time"><time class="utc" datetime="{i["at"].strftime('%Y-%m-%dT%H:%M:%SZ')}">{esc(patches_mod.fmt_utc(i["at"]))}</time> <span class="local muted"></span></p></div>
+<div class="pt-verdict">{right}</div>
+</li>""")
+    return "".join(out) or '<li class="muted">No patches in this window.</li>'
+
+
+def event_rows(events: list[dict]) -> str:
+    out = []
+    for ev in events:
+        g, e = ev["game"], ev["entry"]
+        kind = {"new-patch": "🛠 New patch", "verdict": "⚖ Verdict", "framework": "🔧 Framework"}.get(ev["kind"], "Update")
+        out.append(f"""<li><span class="badge {status_class(e.get('verdict') or '')}">{esc(kind)}</span> <a href="/{g['slug']}/">{esc(ev['title'])}</a>
+<span class="nmeta"><time class="utc" datetime="{ev['at'].strftime('%Y-%m-%dT%H:%M:%SZ')}">{esc(patches_mod.fmt_utc(ev['at']))}</time> <span class="local muted"></span></span></li>""")
+    return f'<ul class="news">{"".join(out) or "<li class=muted>No verdict changes yet.</li>"}</ul>'
+
+
+def build_patches_page(games_data, now: datetime | None = None) -> str:
+    now = now or datetime.now(timezone.utc)
+    items = patches_mod.collect_patches(games_data, now=now)
+    events = patches_mod.recent_events(games_data)
+    c = patches_mod.counts(items, now)
+    holding = [(g, d) for g, d in games_data if d["verdict"] in ROLLBACK_VERDICTS]
+    log_at = [e["at"] for _, d in games_data for e in d.get("verdict_log") or [] if e.get("at")]
+    log_start = fmt_date(min(log_at)) if log_at else "recently"
+    newest = items[0] if items else None
+    hero_slug = newest["game"]["slug"] if newest else "cyberpunk-2077"
+    groups, order = {}, []
+    for i in items:
+        k = f"{i['at'].strftime('%B')} {i['at'].year}"
+        if k not in groups:
+            groups[k] = []
+            order.append(k)
+        groups[k].append(i)
+    months = "".join(f'<div class="sec-head pt-month"><h3>{esc(k)}</h3><span class="muted">{len(groups[k])} patch{"es" if len(groups[k]) != 1 else ""}</span></div>'
+                     f'<section class="panel"><ul class="pt-list">{patch_rows(groups[k], now)}</ul></section>' for k in order)
+    hold_html = (" ".join(f'<a class="chip" href="/{g["slug"]}/">{esc(g["short"])}: {esc(d["verdict"])}</a>' for g, d in holding)
+                 if holding else '<span class="muted">None right now. Every tracked game is Safe or Likely safe.</span>')
+    latest_line = (f'Latest drop: <a href="/{newest["game"]["slug"]}/">{esc(newest["game"]["name"])} {esc(newest["label"])}</a>, '
+                   f'{esc(patches_mod.fmt_utc(newest["at"]))}.') if newest else ""
+    body = f"""<p class="crumbs"><a href="/">Home</a> › Patches</p>
+<section class="home-hero pt-hero" style="--hero:url('{busted(game_img(hero_slug, "hero"))}')">
+<p class="eyebrow">Patch radar · all {len(games_data)} games</p>
+<h1>Every patch. <em>Every game.</em></h1>
+<p class="lede">The newest game patches across everything ModSafe tracks, with the verdict for your mods. {latest_line}</p>
+<div class="stats"><div><strong>{c['7d']}</strong>patches in 7 days</div><div><strong>{c['30d']}</strong>patches in 30 days</div><div><strong>{len(holding)}</strong>games on hold now</div></div>
+</section>
+<section class="panel pt-hold"><h2 class="panel-h">⏳ Hold the update</h2><p>{hold_html}</p>
+<p class="muted">Already patched? <a href="{guides_mod.STEAM_GUIDE_PATH}#rollback">How to roll back a Steam game</a> · <a href="{guides_mod.STEAM_GUIDE_PATH}">Stop Steam auto-updates</a></p></section>
+<div class="sec-head"><h2 id="timeline">Patch timeline</h2><a href="/feed.xml">Atom feed →</a></div>
+<p class="muted">Newest first, last 12 months (up to {patches_mod.PATCH_LIMIT} patches). Times are when the official patch post went live, in UTC. Older patches are on each game's history page.</p>
+{months}
+<div class="sec-head"><h2 id="changes">Recent verdict changes</h2><a href="/feed.xml">Atom feed →</a></div>
+<p class="muted">New patches, verdict flips and framework catch-ups, as ModSafe first saw them (UTC).</p>
+<section class="panel">{event_rows(events)}</section>
+<p class="disclaimer">Built from ModSafe's own data: each game's official patch source (the “patch notes” link on each row) and our verdict log, kept since {esc(log_start)} and refreshed every 6 hours. “Last verdict” is the last status we recorded before the next patch replaced it; patches from before the log show no verdict. Raw data: <a href="/api/v1/status.json">API</a> · <a href="/games.json">games.json</a>.</p>
+"""
+    ld = {"@context": "https://schema.org", "@type": "ItemList", "name": "Recent game patches tracked by ModSafe",
+          "itemListOrder": "https://schema.org/ItemListOrderDescending",
+          "itemListElement": [{"@type": "ListItem", "position": n + 1, "name": f"{i['game']['name']} {i['label']}",
+                               "url": f"{SITE_URL}/{i['game']['slug']}/"} for n, i in enumerate(items[:20])]}
+    desc = (f"{c['7d']} game patches in the last 7 days and {c['30d']} in 30 days across {len(games_data)} modded games, "
+            "with the current mod verdict for each: is it safe to update?")
+    return page_shell("Recent game patches & mod status — patch timeline for every game — ModSafe", _clip(desc), "/patches/", "patches",
+                      body + LOCAL_TIME_JS, extra_jsonld=[ld, breadcrumb_ld([("Home", "/"), ("Patches", "/patches/")])],
+                      og="patches.png")
+
+
 NOT_FOUND_HERO = "elden-ring"
 NOT_FOUND_PICKS = ("cyberpunk-2077", "skyrim-se", "baldurs-gate-3", "fallout-4", "stardew-valley", "minecraft")
 
@@ -1653,7 +1795,8 @@ def build_llms_txt(games_data) -> str:
             tr = "" if fw.get("tracked", True) else " [not auto-tracked]"
             lines.append(f"  - {fw['name']}: {fw['status']}{tr}; release {fw.get('release_tag')} {fw.get('release_published_at') or ''}; {fw.get('reason')}")
         lines.append("")
-    lines += ["## Pages", f"- FAQ: {SITE_URL}/faq/", f"- Guides: {SITE_URL}/guides/",
+    lines += ["## Pages", f"- Patch timeline (newest game patches across all games, with verdicts and recent verdict changes): {SITE_URL}/patches/",
+              f"- FAQ: {SITE_URL}/faq/", f"- Guides: {SITE_URL}/guides/",
               f"- Guide: How to stop Steam auto-updating a game (Wait until I launch, Offline Mode, Steam Deck, Game Versions & Betas, "
               f"download_depot/DepotDownloader rollback, backups): {SITE_URL}{guides_mod.STEAM_GUIDE_PATH}", "",
               "Statuses are inferred from public release data; not official developer guidance.", ""]
@@ -1679,7 +1822,7 @@ def build_redirects(games_data) -> str:
 
 
 def sitemap_urls() -> list[str]:
-    urls = ["/", "/games/", "/news/", "/faq/", "/guides/", guides_mod.STEAM_GUIDE_PATH]
+    urls = ["/", "/games/", "/patches/", "/news/", "/faq/", "/guides/", guides_mod.STEAM_GUIDE_PATH]
     for g in GAMES:
         urls.append(f"/{g['slug']}/")
         if has_history(_game_data(g["slug"])):
@@ -1902,6 +2045,7 @@ def main() -> int:
             legacy["game"]["latest_patch"]["version"] = legacy["game"]["latest_patch"].get("version")
             write(DIST / "status.json", json.dumps(legacy, indent=2) + "\n")
     write(DIST / "games" / "index.html", build_games_index(games_data))
+    write(DIST / "patches" / "index.html", build_patches_page(games_data))
     write(DIST / "news" / "index.html", build_news_page())
     write(DIST / "faq" / "index.html", build_faq())
     write(DIST / "guides" / "index.html", build_guides_index())

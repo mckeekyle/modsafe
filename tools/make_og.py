@@ -82,6 +82,9 @@ def main():
     sky = ROOT / "static/img/fallout-4-hero.webp"
     render(Image.open(sky) if sky.exists() else None, "Modding guides",
            "Hold updates, roll back patches, install mods", OUT / "guides.png")
+    mh = ROOT / "static/img/monster-hunter-wilds-hero.webp"
+    render(Image.open(mh) if mh.exists() else None, "Every patch. Every game.",
+           "The newest game patches and the verdict for your mods", OUT / "patches.png")
 
 
 if __name__ == "__main__":

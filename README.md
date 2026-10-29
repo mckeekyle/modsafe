@@ -80,6 +80,8 @@ export GITHUB_TOKEN=ghp_...   # or GH_TOKEN
 
 `src/news.py` (run by `./update`) writes `data/news.json`: headline, source, date and link only, from Steam announcements of tracked games + PC Gamer, Rock Paper Shotgun and Eurogamer RSS. Items older than 21 days are dropped; patches for tracked games are highlighted. Shown on `/` and `/news/`, and per game.
 
+`src/patches.py` builds `/patches/` at build time: every tracked game's patches from the last 12 months (newest 60) from `history` + `latest_patch`, with the current verdict (or the last logged verdict for older patches) and the recent verdict-change stream from `verdict_log`. Wait/broken Steam game pages also get a rollback callout linking the Steam updates guide.
+
 ## Atom feeds (patches & verdict changes)
 
 - `/feed.xml`: every game; `/<slug>/feed.xml`: one game (Atom 1.0, `application/atom+xml` via `_headers`).
