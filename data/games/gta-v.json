@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T18:42:04Z",
+  "generated_at": "2026-10-29T19:06:54Z",
   "game": {
     "slug": "gta-v",
     "name": "Grand Theft Auto V",
@@ -51,7 +51,7 @@
       "sensitive": true,
       "release_url": "http://www.dev-c.com/gtav/scripthookv/",
       "status": "Just patched, wait",
-      "reason": "Supports Legacy 1.0.3889.0. No build yet for Enhanced 1.0.1158.16. Steam's public Enhanced build changed on 2026-10-27 (build 25971420) after the last manual check; Script Hook V support for it is unconfirmed, so hold that update. (Manually verified 2026-10-28.)",
+      "reason": "Supports Legacy 1.0.3889.0. No build yet for Enhanced 1.0.1158.16. Steam's public Enhanced build changed on 2026-10-27 (build 25971420) after the last manual check; Script Hook V support for it is unconfirmed, so hold that update. (Manually verified 2026-10-29.)",
       "release_tag": "v3889.0 / 1158.13",
       "release_published_at": "2026-07-15T00:00:00Z",
       "manual_data": true
@@ -134,7 +134,7 @@
       "published_at": "2026-06-22T10:43:51Z"
     }
   ],
-  "last_verified": "2026-10-28",
+  "last_verified": "2026-10-29",
   "sources": {
     "manual": "data/manual/gta-v.json",
     "patch_sources": [
