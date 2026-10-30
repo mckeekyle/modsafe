@@ -1,6 +1,6 @@
 {
   "_comment": "Hand-maintained. Builds never fetch dev-c.com. Refresh per /workspace/modsafe-ops-log.md (GTA V step), then bump last_verified. latest_patch/script_hook_v feed the combined /gta-v/ compat record (status.json, feed, badge, api 'gta-v'); editions.<ed> feed the per-edition pages. When a new build ships, update builds/build_dates/steam_builds AND the edition's label/version/published_at and prepend a history row (shv_date null until Script Hook V lists it).",
-  "last_verified": "2026-10-29",
+  "last_verified": "2026-10-30",
   "verified_by": "ModSafe ops (manual check)",
   "latest_patch": {
     "label": "Title Update 1.73",
