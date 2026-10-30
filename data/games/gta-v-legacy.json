@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T18:39:22Z",
+  "generated_at": "2026-10-30T19:11:46Z",
   "game": {
     "slug": "gta-v-legacy",
     "name": "Grand Theft Auto V Legacy",
@@ -38,7 +38,7 @@
       "sensitive": true,
       "release_url": "http://www.dev-c.com/gtav/scripthookv/",
       "status": "Safe",
-      "reason": "Supports the current game build(s): Legacy 1.0.3889.0. (Manually verified 2026-10-29.)",
+      "reason": "Supports the current game build(s): Legacy 1.0.3889.0. (Manually verified 2026-10-30.)",
       "release_tag": "v3889.0",
       "release_published_at": "2026-07-15T00:00:00Z",
       "manual_data": true
@@ -408,7 +408,7 @@
       "published_at": "2026-06-22T10:43:51Z"
     }
   ],
-  "last_verified": "2026-10-29",
+  "last_verified": "2026-10-30",
   "sources": {
     "manual": "data/manual/gta-v.json",
     "patch_sources": [

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T18:39:23Z",
+  "generated_at": "2026-10-30T19:11:49Z",
   "game": {
     "slug": "gta-v-enhanced",
     "name": "Grand Theft Auto V Enhanced",
@@ -47,7 +47,7 @@
       "sensitive": true,
       "release_url": "http://www.dev-c.com/gtav/scripthookv/",
       "status": "Just patched, wait",
-      "reason": "No build yet for Enhanced 1.0.1158.16. Steam's public Enhanced build changed on 2026-10-27 (build 25971420) after the last manual check; Script Hook V support for it is unconfirmed, so hold that update. (Manually verified 2026-10-29.)",
+      "reason": "No build yet for Enhanced 1.0.1158.16. Steam's public Enhanced build changed on 2026-10-27 (build 25971420) after the last manual check; Script Hook V support for it is unconfirmed, so hold that update. (Manually verified 2026-10-30.)",
       "release_tag": "v1158.13",
       "release_published_at": "2026-07-15T00:00:00Z",
       "manual_data": true
@@ -391,7 +391,7 @@
       "published_at": "2026-07-03T13:44:06Z"
     }
   ],
-  "last_verified": "2026-10-29",
+  "last_verified": "2026-10-30",
   "sources": {
     "manual": "data/manual/gta-v.json",
     "patch_sources": [
