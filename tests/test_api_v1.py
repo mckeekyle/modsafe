@@ -8,10 +8,12 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
 import build  # noqa: E402
-from games import GAMES  # noqa: E402
+from games import COMPAT_GAMES, GAMES  # noqa: E402
 
 GAME_KEYS = {"id", "name", "short_name", "kind", "steam_appid", "steam_appids", "current_patch", "verdict",
-             "verdict_label", "severity", "updated_at", "upcoming_patch", "page_url", "json_url", "mods"}
+             "verdict_label", "severity", "updated_at", "upcoming_patch", "page_url", "json_url", "mods",
+             # Added 2026-10-29 with the GTA V edition split (additive, api_version stays 1).
+             "edition", "hub", "deprecated", "superseded_by"}
 MOD_KEYS = {"id", "name", "short", "verdict", "verdict_label", "severity", "tracked", "counts_toward_verdict",
             "reason", "release", "release_published_at", "release_url", "url"}
 
@@ -27,7 +29,7 @@ class TestApiV1(unittest.TestCase):
         self.assertEqual(a["api_version"], 1)
         for k in ("generated_at", "data_updated_at", "site", "disclaimer", "verdicts", "games"):
             self.assertIn(k, a)
-        self.assertEqual(len(a["games"]), len(GAMES))
+        self.assertEqual(len(a["games"]), len(GAMES) + len(COMPAT_GAMES))
         json.dumps(a)  # serialisable
 
     def test_game_and_mod_shape(self):
@@ -44,7 +46,16 @@ class TestApiV1(unittest.TestCase):
     def test_known_values(self):
         by = {g["id"]: g for g in self.api["games"]}
         self.assertEqual(by["cyberpunk-2077"]["steam_appid"], 1091500)
-        self.assertEqual(by["gta-v"]["steam_appids"], [271590, 3240220])
+        self.assertEqual(by["gta-v"]["steam_appids"], [271590, 3240220])  # compat entry kept for v1 clients
+        self.assertTrue(by["gta-v"]["deprecated"])
+        self.assertEqual(by["gta-v"]["superseded_by"], ["gta-v-legacy", "gta-v-enhanced"])
+        self.assertEqual(by["gta-v-legacy"]["steam_appids"], [271590])
+        self.assertEqual(by["gta-v-enhanced"]["steam_appids"], [3240220])
+        self.assertEqual((by["gta-v-legacy"]["edition"], by["gta-v-legacy"]["hub"]), ("legacy", "gta-v"))
+        self.assertFalse(by["cyberpunk-2077"]["deprecated"])
+        self.assertIsNone(by["cyberpunk-2077"]["superseded_by"])
+        ids = [g["id"] for g in self.api["games"]]
+        self.assertLess(ids.index("gta-v-enhanced"), ids.index("gta-v"))  # appid lookups hit the edition first
         self.assertIsNone(by["minecraft"]["steam_appid"])
         self.assertEqual(by["minecraft"]["steam_appids"], [])
         self.assertEqual(by["steam-deck"]["kind"], "platform")

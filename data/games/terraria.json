@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T00:42:48Z",
+  "generated_at": "2026-10-30T01:42:11Z",
   "game": {
     "slug": "terraria",
     "name": "Terraria",
@@ -16,7 +16,8 @@
         "https://store.steampowered.com/news/app/105600/view/1844751498222763 (State of the Game, Sep 2026: 'lingering fixes that remain from 1.4.5.8'; tModLoader team: 'the 1.4.5.8 hotfix changes')",
         "https://github.com/tModLoader/tModLoader/releases/tag/v0.11.8.11 ('launch with Terraria 1.4.5.8 installed')",
         "https://api.steamcmd.net/v1/info/105600 (public build 24893155, updated 2026-08-23T18:47:09Z)"
-      ]
+      ],
+      "steam_build": "24893155"
     }
   },
   "verdict": "Likely safe",
@@ -59,6 +60,7 @@
         "https://github.com/tModLoader/tModLoader/releases/tag/v0.11.8.11 ('launch with Terraria 1.4.5.8 installed')",
         "https://api.steamcmd.net/v1/info/105600 (public build 24893155, updated 2026-08-23T18:47:09Z)"
       ],
+      "steam_build": "24893155",
       "frameworks": [
         {
           "id": "tmodloader",

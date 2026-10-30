@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T00:42:28Z",
+  "generated_at": "2026-10-30T01:44:25Z",
   "game": {
     "slug": "gta-v",
     "name": "Grand Theft Auto V",
@@ -147,6 +147,10 @@
       "https://www.reddit.com/r/lspdfr/comments/1uwf499/gta_v_update_july_2026/"
     ]
   },
+  "superseded_by": [
+    "gta-v-legacy",
+    "gta-v-enhanced"
+  ],
   "verdict_log": [
     {
       "at": "2026-10-20T00:33:34Z",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T00:43:25Z",
+  "generated_at": "2026-10-30T01:42:51Z",
   "game": {
     "slug": "msfs-2020",
     "name": "Microsoft Flight Simulator (2020)",
@@ -15,7 +15,8 @@
       "sources": [
         "https://forums.flightsimulator.com/t/release-notes-microsoft-flight-simulator-2020-sim-update-16-1-1-39-12-0/758903 (release date March 2, 2026; stability fixes incl. a SimConnect crash fix)",
         "https://api.steamcmd.net/v1/info/1250410 (public build 21580682, updated 2026-03-02T18:00:47Z)"
-      ]
+      ],
+      "steam_build": "21580682"
     }
   },
   "verdict": "Likely safe",
@@ -115,6 +116,7 @@
         "https://forums.flightsimulator.com/t/release-notes-microsoft-flight-simulator-2020-sim-update-16-1-1-39-12-0/758903 (release date March 2, 2026; stability fixes incl. a SimConnect crash fix)",
         "https://api.steamcmd.net/v1/info/1250410 (public build 21580682, updated 2026-03-02T18:00:47Z)"
       ],
+      "steam_build": "21580682",
       "frameworks": [
         {
           "id": "fbw-a32nx",

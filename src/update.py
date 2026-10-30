@@ -24,7 +24,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from games import GAMES  # noqa: E402
+from games import ALL_GAMES as GAMES  # noqa: E402  (editions + compat records)
 import feeds  # noqa: E402
 from status_logic import (  # noqa: E402
     ficsit_compat_adjust,
@@ -41,6 +41,7 @@ from status_logic import (  # noqa: E402
     manual_hook_verdict,
     manual_build_drift,
     V_WAIT,
+    V_SAFE,
     merge_silent_patches,
     parse_atlan_config,
     atlan_verdict,
@@ -351,7 +352,14 @@ def unannounced_event(game: dict, patches: list[dict], latest: dict) -> Optional
             prev = json.loads((DATA_DIR / f"{game['slug']}.json").read_text(encoding="utf-8"))["game"]["latest_patch"]
         except Exception:  # noqa: BLE001
             return None
-        return prev.get("unannounced_update") if prev.get("label") == latest.get("label") else None
+        if prev.get("label") == latest.get("label"):
+            if prev.get("steam_build"):
+                latest["steam_build"] = prev["steam_build"]
+            return prev.get("unannounced_update")
+        return None
+    if build and build.get("buildid"):
+        # Recorded so tools/fast_check.py can spot a new Steam build cheaply between full refreshes.
+        latest["steam_build"] = build["buildid"]
     return detect_unannounced_update(build, patches)
 
 
@@ -641,8 +649,13 @@ def build_manual_game(game: dict) -> dict:
     """Hand-maintained game (GTA V): patch + hook data from data/manual/*.json; never fetches dev-c.com."""
     man = json.loads((ROOT / game["manual_file"]).read_text(encoding="utf-8"))
     lp = man["latest_patch"]
+    ed = game.get("edition")
+    if ed:
+        lp = manual_edition_patch(lp, man["editions"][ed], ed)
     latest = {k: lp.get(k) for k in ("label", "version", "published_at", "title", "url", "builds", "build_dates",
                                       "sources", "notes")}
+    if ed:
+        latest["edition"] = ed
     verified_age = patch_age_days(man["last_verified"] + "T00:00:00Z")
     age = patch_age_days(lp["published_at"])
     build_ages = {ed: patch_age_days(d + "T00:00:00Z") for ed, d in (lp.get("build_dates") or {}).items()}
@@ -652,7 +665,7 @@ def build_manual_game(game: dict) -> dict:
         latest["unannounced_update"] = {"version": None, "label": f"Unrecorded {d0['edition']} build {d0['published_at'][:10]}",
                                         "published_at": d0["published_at"], "buildid": d0["buildid"], "edition": d0["edition"],
                                         "source": "Steam public branch (api.steamcmd.net / PICS)"}
-    fws = []
+    fws, shv_status = [], None
     for fw in game["frameworks"]:
         base = {"id": fw["id"], "name": fw["name"], "short": fw["short"], "url": fw["url"], "source": fw["source"],
                 "tracked": True, "sensitive": not fw.get("agnostic"), "release_url": fw["url"]}
@@ -665,7 +678,14 @@ def build_manual_game(game: dict) -> dict:
                 v = {"status": V_WAIT, "reason": v["reason"] + (
                     f" Steam's public {d['edition'].title()} build changed on {d['published_at'][:10]} (build {d['buildid']}) "
                     "after the last manual check; Script Hook V support for it is unconfirmed, so hold that update.")}
-            fws.append({**base, **v, "release_tag": shv["version"], "release_published_at": shv["released"] + "T00:00:00Z",
+            tag, rel_at = shv["version"], shv["released"]
+            if ed:  # this edition's newest Script Hook V build, e.g. v1158.13, not the combined "v3889.0 / 1158.13"
+                rows = [r for r in man["editions"][ed].get("history", []) if r.get("shv_date")]
+                if rows:
+                    r = max(rows, key=lambda r: (r["shv_date"], r["game_date"]))
+                    tag, rel_at = f"v{r['build'].removeprefix('1.0.')}", r["shv_date"]
+            shv_status = v["status"]
+            fws.append({**base, **v, "release_tag": tag, "release_published_at": rel_at + "T00:00:00Z",
                         "reason": v["reason"] + f" (Manually verified {man['last_verified']}.)", "manual_data": True})
             continue
         try:
@@ -685,8 +705,52 @@ def build_manual_game(game: dict) -> dict:
                     for n in items[:10]]
     except Exception as e:  # noqa: BLE001
         print(f"  steam news failed for {game['slug']}: {e}", file=sys.stderr)
-    return {"latest_patch": latest, "frameworks": fws, "history": [], "news": news_out, "last_verified": man["last_verified"],
-            "sources": {"manual": game["manual_file"], "patch_sources": lp.get("sources", [])}}
+    history = manual_edition_history(game, man["editions"][ed], current_status=shv_status) if ed else []
+    out = {"latest_patch": latest, "frameworks": fws, "history": history, "news": news_out, "last_verified": man["last_verified"],
+           "sources": {"manual": game["manual_file"], "patch_sources": lp.get("sources", [])}}
+    if ed:
+        out["edition"] = ed
+        out["hub"] = game.get("hub")
+        if man.get("history_source"):
+            out["sources"]["history"] = man["history_source"]
+    elif game.get("editions"):
+        out["superseded_by"] = list(game["editions"])
+    return out
+
+
+def manual_edition_patch(lp: dict, edd: dict, ed: str) -> dict:
+    """One PC edition's view of the shared GTA V manual record: only that edition's build, date and Steam build,
+    so manual_hook_verdict and the Steam drift check judge that edition alone (same guard, same data)."""
+    pick = lambda m: {ed: m[ed]} if m and ed in m else {}  # noqa: E731
+    out = {k: edd.get(k) for k in ("label", "version", "published_at", "title", "url", "notes")}
+    out.update(builds=pick(lp.get("builds")), build_dates=pick(lp.get("build_dates")),
+               steam_builds=pick(lp.get("steam_builds")), sources=edd.get("sources") or lp.get("sources", []))
+    if (lp.get("builds") or {}).get(ed) != edd.get("version"):
+        raise SystemExit(f"data/manual: editions.{ed}.version {edd.get('version')} != latest_patch.builds.{ed} "
+                         f"{(lp.get('builds') or {}).get(ed)}; update both together")
+    return out
+
+
+def manual_edition_history(game: dict, edd: dict, current_status: str | None = None) -> list[dict]:
+    """History entries (same shape as Steam games) from the hand-kept per-build rows: game build date and the date
+    Script Hook V first listed that build. Dates only, so times are whole days. A not-yet-supported row for the
+    CURRENT build takes the live verdict (e.g. "Just patched, wait"); an older unsupported build was never ported."""
+    sh = next(f for f in game["frameworks"] if f["source"] == "manual_shv")
+    data_from = min(r["game_date"] for r in edd["history"]) + "T00:00:00Z"
+    out = []
+    for r in edd.get("history", []):
+        tag = f"v{r['build'].removeprefix('1.0.')}" if r.get("shv_date") else None
+        at = r["shv_date"] + "T00:00:00Z" if r.get("shv_date") else None
+        row = [{"id": sh["id"], "short": sh["short"], "name": sh["name"],
+                "status": V_SAFE if at else (current_status if current_status and r["build"] == edd.get("version")
+                                             else "Not ported yet"), "release_tag": tag, "release_published_at": at,
+                "mentions_patch": bool(at), "first_release_tag": tag, "first_release_at": at, "data_from": data_from,
+                "first_mention_tag": tag, "first_mention_at": at}]
+        out.append({"version": r["build"], "label": f"Build {r['build']}",
+                    "title": r.get("title") or f"{game['short']} {r['build']} (game and Script Hook V dates)",
+                    "published_at": r["game_date"] + "T00:00:00Z", "url": r["url"], "sources": [r["url"]],
+                    "frameworks": row})
+    return out
 
 
 DISCLAIMER = ("Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/"

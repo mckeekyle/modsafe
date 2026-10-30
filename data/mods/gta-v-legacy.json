@@ -1,0 +1,147 @@
+{
+  "game": "gta-v-legacy",
+  "verified_at": "2026-10-29",
+  "manager": {
+    "name": "OpenIV (mods folder) + manual ASI/script install",
+    "url": "https://www.gta5-mods.com/tools/openiv"
+  },
+  "intro": "Popular Story Mode mods for GTA V Legacy (GTA5.exe), mostly from GTA5-Mods.com. Script Hook V comes first, and every mod that needs it stops working after a game patch until Script Hook V is updated. Story Mode only: never launch GTA Online with mods installed.",
+  "mods": [
+    {
+      "id": "scripthookv",
+      "name": "Script Hook V + Native Trainer",
+      "category": "Framework",
+      "summary": "Alexander Blade's script loader. Nearly every script and trainer needs it, and each game patch breaks it until it's updated.",
+      "source": "gta5-mods",
+      "url": "https://www.gta5-mods.com/tools/script-hook-v",
+      "requires": [],
+      "framework_id": "scripthookv",
+      "note": "Copy ScriptHookV.dll and the bundled ASI loader (dinput8.dll) next to GTA5.exe. It closes the game if you go into GTA Online."
+    },
+    {
+      "id": "openiv",
+      "name": "OpenIV",
+      "category": "Tools",
+      "summary": "Archive editor and mod installer for Legacy. Its OpenIV.asi lets replacement mods load from a separate mods folder.",
+      "source": "gta5-mods",
+      "url": "https://www.gta5-mods.com/tools/openiv",
+      "requires": [],
+      "note": "Use Tools › ASI Manager to install OpenIV.ASI, and only edit files inside the mods folder, never the originals."
+    },
+    {
+      "id": "shvdn",
+      "name": "Community Script Hook V .NET",
+      "category": "Framework",
+      "summary": "Runs .NET (C#) scripts from the scripts folder. Most Legacy C# mods target it.",
+      "source": "gta5-mods",
+      "url": "https://www.gta5-mods.com/tools/scripthookv-net",
+      "requires": [
+        "scripthookv"
+      ],
+      "note": "Install Microsoft .NET Framework 4.8 and the Visual C++ redistributable first, as its page explains."
+    },
+    {
+      "id": "lemonui",
+      "name": "LemonUI",
+      "category": "Framework",
+      "summary": "Menu library many SHVDN scripts use for their menus. Install it if a mod lists it as required.",
+      "source": "gta5-mods",
+      "url": "https://www.gta5-mods.com/tools/lemonui",
+      "requires": [
+        "shvdn"
+      ]
+    },
+    {
+      "id": "simple-trainer",
+      "name": "Simple Trainer",
+      "category": "Gameplay",
+      "summary": "Long-running trainer: spawn vehicles and peds, change weather and time, teleport, and save outfits.",
+      "source": "gta5-mods",
+      "url": "https://www.gta5-mods.com/scripts/simple-trainer-for-gtav",
+      "requires": [
+        "scripthookv"
+      ]
+    },
+    {
+      "id": "menyoo",
+      "name": "Menyoo 2.0",
+      "category": "Gameplay",
+      "summary": "Trainer and map editor: spawn and place objects, edit outfits, and build scenes for screenshots.",
+      "source": "gta5-mods",
+      "url": "https://www.gta5-mods.com/scripts/menyoo-2-0",
+      "requires": [
+        "scripthookv"
+      ],
+      "note": "Use the Menyoo 2.0 listing; the old Menyoo PC page is no longer maintained."
+    },
+    {
+      "id": "ent",
+      "name": "Enhanced Native Trainer",
+      "category": "Gameplay",
+      "summary": "Community-updated Enhanced Native Trainer with vehicle, ped, weapon and world options.",
+      "source": "gta5-mods",
+      "url": "https://www.gta5-mods.com/scripts/enhanced-native-trainer-zemanez-and-others",
+      "requires": [
+        "scripthookv"
+      ]
+    },
+    {
+      "id": "packfile-la",
+      "name": "Packfile Limit Adjuster",
+      "category": "Fixes",
+      "summary": "Doubles how many RPF archives the game can load. Fixes ERR_FIL_PACK_1 crashes, nothing else.",
+      "source": "gta5-mods",
+      "url": "https://www.gta5-mods.com/tools/packfile-limit-adjuster",
+      "requires": []
+    },
+    {
+      "id": "heapadjuster",
+      "name": "HeapAdjuster",
+      "category": "Fixes",
+      "summary": "Fixes ERR_MEM_EMBEDDEDALLOC_ALLOC crashes from heavy modding by letting you set a bigger heap in its ini.",
+      "source": "gta5-mods",
+      "url": "https://www.gta5-mods.com/tools/heapadjuster",
+      "requires": []
+    },
+    {
+      "id": "weapon-la",
+      "name": "Weapon Limits Adjuster",
+      "category": "Fixes",
+      "summary": "Raises the weapons.meta and weapon-component limits so add-on weapon packs don't crash while loading.",
+      "source": "gta5-mods",
+      "url": "https://www.gta5-mods.com/tools/cweaponinfoblob-limit-adjuster",
+      "requires": []
+    },
+    {
+      "id": "fwbox-variable",
+      "name": "fwBoxStreamerVariable patch",
+      "category": "Fixes",
+      "summary": "Stops parts of the map and LODs vanishing when many map mods are installed, and can raise the decal limit.",
+      "source": "gta5-mods",
+      "url": "https://www.gta5-mods.com/tools/ymap-load-list-extent-limit-fix-fwboxstreamervariable-patch",
+      "requires": []
+    },
+    {
+      "id": "addon-spawner",
+      "name": "Add-On Vehicle Spawner",
+      "category": "Interface",
+      "summary": "Finds the add-on vehicles you've installed and lists them in a menu to spawn, with search and sorting.",
+      "source": "gta5-mods",
+      "url": "https://www.gta5-mods.com/scripts/add-on-vehicle-spawner",
+      "requires": [
+        "scripthookv"
+      ]
+    },
+    {
+      "id": "all-interiors",
+      "name": "Enable All Interiors",
+      "category": "Content",
+      "summary": "Opens interiors across the map in Story Mode, replacing older mods such as Open All Interiors.",
+      "source": "gta5-mods",
+      "url": "https://www.gta5-mods.com/scripts/enable-all-interiors-wip",
+      "requires": [
+        "scripthookv"
+      ]
+    }
+  ]
+}

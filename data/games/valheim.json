@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T00:42:42Z",
+  "generated_at": "2026-10-30T01:42:04Z",
   "game": {
     "slug": "valheim",
     "name": "Valheim",
@@ -10,7 +10,8 @@
       "title": "Patch 1.0.21",
       "published_at": "2026-10-28T13:11:25Z",
       "published_unix": 1793193085,
-      "url": "https://store.steampowered.com/news/app/892970/view/1847920302230913"
+      "url": "https://store.steampowered.com/news/app/892970/view/1847920302230913",
+      "steam_build": "26249040"
     }
   },
   "verdict": "Just patched, wait",
@@ -69,6 +70,7 @@
       "published_at": "2026-10-28T13:11:25Z",
       "published_unix": 1793193085,
       "url": "https://store.steampowered.com/news/app/892970/view/1847920302230913",
+      "steam_build": "26249040",
       "frameworks": [
         {
           "id": "bepinexpack-valheim",

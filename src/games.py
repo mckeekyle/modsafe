@@ -17,6 +17,16 @@ Flags:
 
 from status_logic import FRAMEWORKS as CP_FRAMEWORKS
 
+GTA_FRAMEWORKS = [
+    {"id": "scripthookv", "name": "Script Hook V", "short": "ScriptHookV", "source": "manual_shv",
+     "url": "http://www.dev-c.com/gtav/scripthookv/"},
+    {"id": "asi-loader", "name": "Ultimate ASI Loader", "short": "ASI Loader", "source": "github",
+     "repo": "ThirteenAG/Ultimate-ASI-Loader", "url": "https://github.com/ThirteenAG/Ultimate-ASI-Loader",
+     "agnostic": True, "agnostic_note": "Generic DLL/ASI loader used across many games; not tied to a GTA V build."},
+]
+GTA_NOTE = ("Single-player only. Never use mods in GTA Online: Script Hook V closes the game when you go online, and "
+            "modding Online risks a permanent ban.")
+
 GAMES = [
     {
         "slug": "cyberpunk-2077",
@@ -169,25 +179,46 @@ GAMES = [
         "blurb": "Game version bumps (v50, v70, v80…) regularly break level, item and lobby mods built on BepInEx.",
     },
     {
-        "slug": "gta-v",
+        "slug": "gta-v-legacy",
         "genre": "Action",
-        "name": "Grand Theft Auto V",
-        "short": "GTA V",
+        "name": "Grand Theft Auto V Legacy",
+        "short": "GTA V Legacy",
         "developer": "Rockstar Games",
         "kind": "manual",
         "manual_file": "data/manual/gta-v.json",
+        "edition": "legacy",
+        "exe": "GTA5.exe",
+        "edition_hint": "The original 2015 PC version. GTA5.exe › Properties › Details shows product version 1.0.3xxx.",
+        "hub": "gta-v",
         "steam_appid": 271590,
-        "steam_appids": {"legacy": 271590, "enhanced": 3240220},
-        "frameworks": [
-            {"id": "scripthookv", "name": "Script Hook V", "short": "ScriptHookV", "source": "manual_shv",
-             "url": "http://www.dev-c.com/gtav/scripthookv/"},
-            {"id": "asi-loader", "name": "Ultimate ASI Loader", "short": "ASI Loader", "source": "github",
-             "repo": "ThirteenAG/Ultimate-ASI-Loader", "url": "https://github.com/ThirteenAG/Ultimate-ASI-Loader",
-             "agnostic": True, "agnostic_note": "Generic DLL/ASI loader used across many games; not tied to a GTA V build."},
-        ],
-        "note": "Single-player only. Never use mods in GTA Online: Script Hook V closes the game when you go online, and modding Online risks a permanent ban.",
+        "steam_appids": {"legacy": 271590},
+        "frameworks": GTA_FRAMEWORKS,
+        "note": GTA_NOTE,
         "wiki": "http://www.dev-c.com/gtav/scripthookv/",
-        "blurb": "Every GTA V title update breaks Script Hook V (and every .asi script that depends on it) until Alexander Blade ships a new build for the new executable version.",
+        "blurb": ("The original 2015 PC edition (Steam: Grand Theft Auto V Legacy, GTA5.exe, current builds 1.0.3xxx). Every "
+                  "Legacy title update breaks Script Hook V, and every .asi script that depends on it, until Alexander "
+                  "Blade ships a build for the new executable."),
+    },
+    {
+        "slug": "gta-v-enhanced",
+        "genre": "Action",
+        "name": "Grand Theft Auto V Enhanced",
+        "short": "GTA V Enhanced",
+        "developer": "Rockstar Games",
+        "kind": "manual",
+        "manual_file": "data/manual/gta-v.json",
+        "edition": "enhanced",
+        "exe": "GTA5_Enhanced.exe",
+        "edition_hint": "March 2025 next-gen version with ray tracing settings. Its exe shows product version 1.0.8xx or later (1.0.1158.x now).",
+        "hub": "gta-v",
+        "steam_appid": 3240220,
+        "steam_appids": {"enhanced": 3240220},
+        "frameworks": GTA_FRAMEWORKS,
+        "note": GTA_NOTE,
+        "wiki": "http://www.dev-c.com/gtav/scripthookv/",
+        "blurb": ("The March 2025 next-gen PC edition (Steam: Grand Theft Auto V Enhanced, GTA5_Enhanced.exe, builds 1.0.8xx to 1.0.11xx) "
+                  "with ray tracing and DirectStorage. Rockstar ships Enhanced-only PC builds, so Script Hook V and "
+                  "Enhanced-ready .asi scripts can lag behind Legacy."),
     },
     {
         "slug": "starfield",
@@ -591,4 +622,30 @@ GAMES = [
     },
 ]
 
-GAMES_BY_SLUG = {g["slug"]: g for g in GAMES}
+# GTA V used to be one page covering both PC editions. /gta-v/ is now a short hub that links to the two edition
+# pages; this combined record still refreshes so existing /gta-v/status.json, /gta-v/feed.xml, /badge/gta-v.*
+# and the api/v1 "gta-v" entry (marked deprecated) keep working for clients that rely on them.
+COMPAT_GAMES = [
+    {
+        "slug": "gta-v",
+        "genre": "Action",
+        "name": "Grand Theft Auto V",
+        "short": "GTA V",
+        "developer": "Rockstar Games",
+        "kind": "manual",
+        "manual_file": "data/manual/gta-v.json",
+        "compat": True,
+        "editions": ["gta-v-legacy", "gta-v-enhanced"],
+        "steam_appid": 271590,
+        "steam_appids": {"legacy": 271590, "enhanced": 3240220},
+        "frameworks": GTA_FRAMEWORKS,
+        "note": GTA_NOTE,
+        "wiki": "http://www.dev-c.com/gtav/scripthookv/",
+        "blurb": "Every GTA V title update breaks Script Hook V (and every .asi script that depends on it) until Alexander Blade ships a new build for the new executable version.",
+    },
+]
+# Hub pages: slug -> edition slugs (a short "which edition do I have?" page at /<hub>/).
+HUBS = {g["slug"]: g["editions"] for g in COMPAT_GAMES if g.get("editions")}
+ALL_GAMES = GAMES + COMPAT_GAMES  # everything ./update refreshes
+
+GAMES_BY_SLUG = {g["slug"]: g for g in ALL_GAMES}

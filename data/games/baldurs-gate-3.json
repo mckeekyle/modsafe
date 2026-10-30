@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T00:42:15Z",
+  "generated_at": "2026-10-30T01:41:26Z",
   "game": {
     "slug": "baldurs-gate-3",
     "name": "Baldur's Gate 3",
@@ -16,7 +16,8 @@
         "https://x.com/larianstudios/status/2104950573405704200 (2026-09-29T15:04Z: GOG Mac launcher crash fix, PS5 map-marker fix, beards; 'Game Version: 4.1.1.7631656')",
         "https://bg3.wiki/wiki/Patch_notes (2026-09-29, 4.1.1.7631656, Larian Forum, 'Not given number')",
         "https://api.steamcmd.net/v1/info/1086940 (public build 25605617, updated 2026-09-29T14:55:18Z)"
-      ]
+      ],
+      "steam_build": "25605617"
     }
   },
   "verdict": "Likely safe",
@@ -81,6 +82,7 @@
         "https://bg3.wiki/wiki/Patch_notes (2026-09-29, 4.1.1.7631656, Larian Forum, 'Not given number')",
         "https://api.steamcmd.net/v1/info/1086940 (public build 25605617, updated 2026-09-29T14:55:18Z)"
       ],
+      "steam_build": "25605617",
       "frameworks": [
         {
           "id": "bg3se",

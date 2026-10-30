@@ -99,17 +99,19 @@ class TestManualGTA(unittest.TestCase):
         self.assertEqual(set(d["latest_patch"]["builds"]), {"legacy", "enhanced"})
         src = (root / "src/update.py").read_text()
         self.assertNotIn("://www.dev-c.com", src)
-        gta = next(g for g in GAMES if g["slug"] == "gta-v")
-        self.assertTrue(next(f for f in gta["frameworks"] if f["id"] == "asi-loader")["agnostic"])
-        self.assertIn("GTA Online", gta["note"])
+        from games import ALL_GAMES
+        for slug in ("gta-v", "gta-v-legacy", "gta-v-enhanced"):
+            gta = next(g for g in ALL_GAMES if g["slug"] == slug)
+            self.assertTrue(next(f for f in gta["frameworks"] if f["id"] == "asi-loader")["agnostic"])
+            self.assertIn("GTA Online", gta["note"])
 
     def test_build_shows_verified_and_warning(self):
         import json, tempfile, build
         from games import GAMES as G
-        g = next(x for x in G if x["slug"] == "gta-v")
+        g = next(x for x in G if x["slug"] == "gta-v-enhanced")
         d = {"generated_at": "2026-10-15T00:00:00Z", "verdict": V_SAFE, "disclaimer": "", "last_verified": "2026-10-15",
-             "game": {"slug": "gta-v", "name": g["name"], "latest_patch": {"label": "TU 1.73", "published_at": "2026-07-14T00:00:00Z",
-                      "builds": {"legacy": "1.0.3889.0", "enhanced": "1.0.1158.13"}, "url": "", "title": ""}},
+             "game": {"slug": "gta-v-enhanced", "name": g["name"], "latest_patch": {"label": "Build 1.0.1158.13", "published_at": "2026-07-14T00:00:00Z",
+                      "builds": {"enhanced": "1.0.1158.13"}, "url": "", "title": "", "edition": "enhanced"}},
              "frameworks": [], "history": []}
         html = build.build_game_page(g, d)
         self.assertIn("Last manually verified", html)

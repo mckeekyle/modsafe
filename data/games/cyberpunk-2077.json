@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T00:41:56Z",
+  "generated_at": "2026-10-30T01:40:58Z",
   "game": {
     "slug": "cyberpunk-2077",
     "name": "Cyberpunk 2077",
@@ -10,7 +10,8 @@
       "title": "Cyberpunk 2077's Edgerunners 2 Update (2.5) is out now!",
       "published_at": "2026-10-22T10:06:54Z",
       "published_unix": 1792663614,
-      "url": "https://store.steampowered.com/news/app/1091500/view/1847286114032016"
+      "url": "https://store.steampowered.com/news/app/1091500/view/1847286114032016",
+      "steam_build": "26161058"
     }
   },
   "verdict": "Safe",
@@ -169,6 +170,7 @@
       "published_at": "2026-10-22T10:06:54Z",
       "published_unix": 1792663614,
       "url": "https://store.steampowered.com/news/app/1091500/view/1847286114032016",
+      "steam_build": "26161058",
       "frameworks": [
         {
           "id": "cet",

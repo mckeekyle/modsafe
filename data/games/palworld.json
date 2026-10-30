@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T00:43:44Z",
+  "generated_at": "2026-10-30T01:43:10Z",
   "game": {
     "slug": "palworld",
     "name": "Palworld",
@@ -10,7 +10,8 @@
       "title": "v1.0.5: Bug fixes",
       "published_at": "2026-09-15T03:03:47Z",
       "published_unix": 1789441427,
-      "url": "https://store.steampowered.com/news/app/1623730/view/1843481262703464"
+      "url": "https://store.steampowered.com/news/app/1623730/view/1843481262703464",
+      "steam_build": "25246127"
     }
   },
   "verdict": "Likely safe",
@@ -69,6 +70,7 @@
       "published_at": "2026-09-15T03:03:47Z",
       "published_unix": 1789441427,
       "url": "https://store.steampowered.com/news/app/1623730/view/1843481262703464",
+      "steam_build": "25246127",
       "frameworks": [
         {
           "id": "ue4ss",

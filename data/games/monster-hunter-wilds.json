@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T00:43:50Z",
+  "generated_at": "2026-10-30T01:43:17Z",
   "game": {
     "slug": "monster-hunter-wilds",
     "name": "Monster Hunter Wilds",
@@ -10,7 +10,8 @@
       "title": "Update Summary (Ver.1.042.00.03)",
       "published_at": "2026-10-28T10:54:39Z",
       "published_unix": 1793184879,
-      "url": "https://store.steampowered.com/news/app/2246340/view/1847920302230509"
+      "url": "https://store.steampowered.com/news/app/2246340/view/1847920302230509",
+      "steam_build": "25921695"
     }
   },
   "verdict": "Just patched, wait",
@@ -61,6 +62,7 @@
       "published_at": "2026-10-28T10:54:39Z",
       "published_unix": 1793184879,
       "url": "https://store.steampowered.com/news/app/2246340/view/1847920302230509",
+      "steam_build": "25921695",
       "frameworks": [
         {
           "id": "reframework",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T00:42:54Z",
+  "generated_at": "2026-10-30T01:42:20Z",
   "game": {
     "slug": "bannerlord",
     "name": "Mount & Blade II: Bannerlord",
@@ -10,7 +10,8 @@
       "title": "War Sails Modding Kit Release & Patch WS v1.2.8 / BL v1.4.8",
       "published_at": "2026-08-10T12:09:06Z",
       "published_unix": 1786363746,
-      "url": "https://store.steampowered.com/news/app/261550/view/1840310314351373"
+      "url": "https://store.steampowered.com/news/app/261550/view/1840310314351373",
+      "steam_build": "24573425"
     }
   },
   "verdict": "Safe",
@@ -74,6 +75,7 @@
       "published_at": "2026-08-10T12:09:06Z",
       "published_unix": 1786363746,
       "url": "https://store.steampowered.com/news/app/261550/view/1840310314351373",
+      "steam_build": "24573425",
       "frameworks": [
         {
           "id": "blse",

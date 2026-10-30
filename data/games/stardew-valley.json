@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T00:42:16Z",
+  "generated_at": "2026-10-30T01:41:29Z",
   "game": {
     "slug": "stardew-valley",
     "name": "Stardew Valley",
@@ -10,7 +10,8 @@
       "title": "Stardew Valley 1.6.15 Patch now available",
       "published_at": "2024-12-20T18:14:21Z",
       "published_unix": 1734718461,
-      "url": "https://store.steampowered.com/news/app/413150/view/1786573930663336"
+      "url": "https://store.steampowered.com/news/app/413150/view/1786573930663336",
+      "steam_build": "16826371"
     }
   },
   "verdict": "Safe",
@@ -49,6 +50,7 @@
       "published_at": "2024-12-20T18:14:21Z",
       "published_unix": 1734718461,
       "url": "https://store.steampowered.com/news/app/413150/view/1786573930663336",
+      "steam_build": "16826371",
       "frameworks": [
         {
           "id": "smapi",

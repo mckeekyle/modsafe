@@ -1,5 +1,5 @@
 {
-  "_comment": "Hand-maintained. Builds never fetch dev-c.com. Refresh per /workspace/modsafe-ops-log.md (GTA V step), then bump last_verified.",
+  "_comment": "Hand-maintained. Builds never fetch dev-c.com. Refresh per /workspace/modsafe-ops-log.md (GTA V step), then bump last_verified. latest_patch/script_hook_v feed the combined /gta-v/ compat record (status.json, feed, badge, api 'gta-v'); editions.<ed> feed the per-edition pages. When a new build ships, update builds/build_dates/steam_builds AND the edition's label/version/published_at and prepend a history row (shv_date null until Script Hook V lists it).",
   "last_verified": "2026-10-29",
   "verified_by": "ModSafe ops (manual check)",
   "latest_patch": {
@@ -39,5 +39,168 @@
       "1.0.1158.13"
     ],
     "url": "http://www.dev-c.com/gtav/scripthookv/"
-  }
+  },
+  "editions": {
+    "legacy": {
+      "label": "Build 1.0.3889.0",
+      "version": "1.0.3889.0",
+      "published_at": "2026-07-14T09:00:00Z",
+      "title": "GTAV Title Update 1.73 Notes (Rockstar Support)",
+      "url": "https://support.rockstargames.com/articles/4vRqEDvjUs9h7nqRUgc8YO/gtav-title-update-1-73-notes-ps5-ps4-xbox-series-x-or-s-xbox-one-pc-enhanced-legacy",
+      "notes": "Title Update 1.73 moved Legacy to 1.0.3889.0 on Jul 14, 2026. Script Hook V v3889.0 / 1158.13 (Jul 15, 2026) supports it. Later 2026 PC updates (Sep 15, Oct 27) were Enhanced-only; Legacy's Steam build is unchanged since Jul 14.",
+      "sources": [
+        "https://support.rockstargames.com/articles/4vRqEDvjUs9h7nqRUgc8YO/gtav-title-update-1-73-notes-ps5-ps4-xbox-series-x-or-s-xbox-one-pc-enhanced-legacy",
+        "https://api.steamcmd.net/v1/info/271590 (Legacy public build 24129523, updated 2026-07-14T09:01:57Z)",
+        "https://w.atwiki.jp/lspdfrinfo/pages/16.html (Legacy v3889.0 supported by Script Hook V)"
+      ],
+      "history": [
+        {
+          "build": "1.0.3889.0",
+          "game_date": "2026-07-14",
+          "shv_date": "2026-07-15",
+          "url": "https://support.rockstargames.com/articles/4vRqEDvjUs9h7nqRUgc8YO/gtav-title-update-1-73-notes-ps5-ps4-xbox-series-x-or-s-xbox-one-pc-enhanced-legacy",
+          "title": "Title Update 1.73 (Legacy 1.0.3889.0)"
+        },
+        {
+          "build": "1.0.3788.0",
+          "game_date": "2026-03-17",
+          "shv_date": "2026-03-18",
+          "url": "https://w.atwiki.jp/lspdfrinfo/pages/16.html"
+        },
+        {
+          "build": "1.0.3751.0",
+          "game_date": "2026-01-27",
+          "shv_date": "2026-01-29",
+          "url": "https://w.atwiki.jp/lspdfrinfo/pages/16.html"
+        },
+        {
+          "build": "1.0.3725.0",
+          "game_date": "2025-12-17",
+          "shv_date": "2025-12-28",
+          "url": "https://w.atwiki.jp/lspdfrinfo/pages/16.html"
+        },
+        {
+          "build": "1.0.3717.0",
+          "game_date": "2025-12-10",
+          "shv_date": "2025-12-15",
+          "url": "https://w.atwiki.jp/lspdfrinfo/pages/16.html"
+        },
+        {
+          "build": "1.0.3586.0",
+          "game_date": "2025-07-08",
+          "shv_date": "2025-07-10",
+          "url": "https://w.atwiki.jp/lspdfrinfo/pages/16.html"
+        },
+        {
+          "build": "1.0.3570.0",
+          "game_date": "2025-06-17",
+          "shv_date": "2025-06-18",
+          "url": "https://w.atwiki.jp/lspdfrinfo/pages/16.html"
+        },
+        {
+          "build": "1.0.3521.0",
+          "game_date": "2025-05-06",
+          "shv_date": "2025-05-10",
+          "url": "https://w.atwiki.jp/lspdfrinfo/pages/16.html"
+        },
+        {
+          "build": "1.0.3504.0",
+          "game_date": "2025-04-10",
+          "shv_date": "2025-04-13",
+          "url": "https://w.atwiki.jp/lspdfrinfo/pages/16.html"
+        },
+        {
+          "build": "1.0.3442.0",
+          "game_date": "2025-02-19",
+          "shv_date": "2025-02-20",
+          "url": "https://w.atwiki.jp/lspdfrinfo/pages/16.html"
+        },
+        {
+          "build": "1.0.3411.0",
+          "game_date": "2024-12-13",
+          "shv_date": "2024-12-16",
+          "url": "https://w.atwiki.jp/lspdfrinfo/pages/16.html"
+        }
+      ]
+    },
+    "enhanced": {
+      "label": "Build 1.0.1158.16",
+      "version": "1.0.1158.16",
+      "published_at": "2026-09-15T09:00:00Z",
+      "title": "GTAV Title Update 1.73 Notes (Rockstar Support; PC Enhanced-only update Sep 15, 2026)",
+      "url": "https://support.rockstargames.com/articles/4vRqEDvjUs9h7nqRUgc8YO/gtav-title-update-1-73-notes-ps5-ps4-xbox-series-x-or-s-xbox-one-pc-enhanced-legacy",
+      "notes": "On Sep 15, 2026 Rockstar pushed a PC Enhanced-only update ('General fixes') that moved Enhanced from 1.0.1158.13 to 1.0.1158.16. Script Hook V (checked by hand) still lists only 1.0.3889.0 / 1.0.1158.13. On Oct 27, 2026 Steam shipped another Enhanced-only build (25971420) with no patch notes; its exe version isn't published yet, so it is intentionally left unrecorded and the page holds Enhanced at 'Just patched, wait' until the version is known.",
+      "sources": [
+        "https://support.rockstargames.com/articles/4vRqEDvjUs9h7nqRUgc8YO/gtav-title-update-1-73-notes-ps5-ps4-xbox-series-x-or-s-xbox-one-pc-enhanced-legacy ([September 15, 2026] - PC (Enhanced): General fixes)",
+        "https://api.steamcmd.net/v1/info/3240220 (Enhanced public build 25261616, updated 2026-09-15T09:00:30Z; new build 25971420 on 2026-10-27T10:00:40Z)",
+        "https://w.atwiki.jp/lspdfrinfo/pages/16.html (as of 2026-10-28: Enhanced latest v1158.16, Script Hook V supports up to 1158.13)",
+        "https://www.reddit.com/r/RAGEPluginHook/comments/1wjb502/unsupported_game_patch/ (Enhanced 'unsupported game patch', 2026-09-18)"
+      ],
+      "history": [
+        {
+          "build": "1.0.1158.16",
+          "game_date": "2026-09-15",
+          "shv_date": null,
+          "url": "https://support.rockstargames.com/articles/4vRqEDvjUs9h7nqRUgc8YO/gtav-title-update-1-73-notes-ps5-ps4-xbox-series-x-or-s-xbox-one-pc-enhanced-legacy",
+          "title": "PC Enhanced-only update: General fixes (1.0.1158.16)"
+        },
+        {
+          "build": "1.0.1158.13",
+          "game_date": "2026-07-14",
+          "shv_date": "2026-07-15",
+          "url": "https://support.rockstargames.com/articles/4vRqEDvjUs9h7nqRUgc8YO/gtav-title-update-1-73-notes-ps5-ps4-xbox-series-x-or-s-xbox-one-pc-enhanced-legacy",
+          "title": "Title Update 1.73 (Enhanced 1.0.1158.13)"
+        },
+        {
+          "build": "1.0.1013.34",
+          "game_date": "2026-04-07",
+          "shv_date": "2026-04-10",
+          "url": "https://w.atwiki.jp/lspdfrinfo/pages/16.html"
+        },
+        {
+          "build": "1.0.1013.33",
+          "game_date": "2026-03-17",
+          "shv_date": "2026-03-18",
+          "url": "https://w.atwiki.jp/lspdfrinfo/pages/16.html"
+        },
+        {
+          "build": "1.0.1013.29",
+          "game_date": "2026-01-27",
+          "shv_date": "2026-01-29",
+          "url": "https://w.atwiki.jp/lspdfrinfo/pages/16.html"
+        },
+        {
+          "build": "1.0.1013.20",
+          "game_date": "2025-12-17",
+          "shv_date": "2025-12-28",
+          "url": "https://w.atwiki.jp/lspdfrinfo/pages/16.html"
+        },
+        {
+          "build": "1.0.1013.17",
+          "game_date": "2025-12-10",
+          "shv_date": "2025-12-15",
+          "url": "https://w.atwiki.jp/lspdfrinfo/pages/16.html"
+        },
+        {
+          "build": "1.0.889.22",
+          "game_date": "2025-08-13",
+          "shv_date": "2025-08-14",
+          "url": "https://w.atwiki.jp/lspdfrinfo/pages/16.html"
+        },
+        {
+          "build": "1.0.889.19",
+          "game_date": "2025-07-08",
+          "shv_date": "2025-07-10",
+          "url": "https://w.atwiki.jp/lspdfrinfo/pages/16.html"
+        },
+        {
+          "build": "1.0.889.15",
+          "game_date": "2025-06-17",
+          "shv_date": "2025-06-18",
+          "url": "https://w.atwiki.jp/lspdfrinfo/pages/16.html"
+        }
+      ]
+    }
+  },
+  "history_source": "https://w.atwiki.jp/lspdfrinfo/pages/16.html (lspdfrinfo wiki: per-build game and Script Hook V release dates, JST; dates only, so times are whole days)"
 }

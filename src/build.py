@@ -14,7 +14,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data" / "games"
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from games import GAMES  # noqa: E402
+from games import GAMES, COMPAT_GAMES, HUBS, GAMES_BY_SLUG  # noqa: E402
 import patches as patches_mod  # noqa: E402
 import mods as mods_mod  # noqa: E402
 import feeds  # noqa: E402
@@ -22,6 +22,20 @@ import badges  # noqa: E402
 import guides as guides_mod  # noqa: E402
 import history_stats as hstats  # noqa: E402
 GAMES_SLUGS = {g["slug"] for g in GAMES}
+HUB_SLUGS = set(HUBS)  # e.g. /gta-v/: short hub page linking to the per-edition pages
+
+
+def distinct_games(games) -> int:
+    """Games (not platforms), counting editions that share a hub (GTA V Legacy + Enhanced) once."""
+    return len({g.get("hub") or g["slug"] for g in games if g.get("genre") != "Platform"})
+
+
+def edition_label(game: dict) -> str:
+    return (game.get("edition") or "").title()
+
+
+def other_editions(game: dict) -> list[dict]:
+    return [GAMES_BY_SLUG[s] for s in HUBS.get(game.get("hub"), []) if s != game["slug"]]
 NEWS_FILE = ROOT / "data" / "news.json"
 DIST = ROOT / "dist"
 STATIC = ROOT / "static"
@@ -34,7 +48,7 @@ SITE_URL = os.environ.get("SITE_URL", "https://modsafe.app").rstrip("/")
 SITE_NAME = "ModSafe — Mod Compatibility After Game Patches"
 SITE_DESC = (
     "Is it safe to update? Live status of core mod frameworks and loaders (script extenders, BepInEx, SMAPI, "
-    "tModLoader, Fabric/Forge and more) after each official patch, for " + str(sum(1 for g in GAMES if g.get("genre") != "Platform")) + " heavily modded PC games plus Steam Deck."
+    "tModLoader, Fabric/Forge and more) after each official patch, for " + str(distinct_games(GAMES)) + " heavily modded PC games plus Steam Deck."
 )
 
 
@@ -68,8 +82,8 @@ def base_head(title: str, description: str, path: str, extra_jsonld: list | None
               noindex: bool = False) -> str:
     canon = f"{SITE_URL}{path}"
     seg = path.strip("/").split("/")[0]
-    alt_json = f"{SITE_URL}/{seg}/status.json" if any(g["slug"] == seg for g in GAMES) else f"{SITE_URL}/games.json"
-    og_name = f"{seg}.png" if (STATIC / "og" / f"{seg}.png").exists() and seg in GAMES_SLUGS else "default.png"
+    alt_json = f"{SITE_URL}/{seg}/status.json" if any(g["slug"] == seg for g in GAMES + COMPAT_GAMES) else f"{SITE_URL}/games.json"
+    og_name = f"{seg}.png" if (STATIC / "og" / f"{seg}.png").exists() and (seg in GAMES_SLUGS or seg in HUB_SLUGS) else "default.png"
     if og and (STATIC / "og" / og).exists():
         og_name = og
     og_image = f"{SITE_URL}/og/{og_name}"
@@ -529,6 +543,13 @@ html, body { overflow-x: hidden; }
 .guide-hero h1 { max-width: 24ch; }
 .guide-hero .note { margin-top: var(--s4); }
 .table-wrap { overflow-x: auto; margin: var(--s3) 0; }
+.ed-ids { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--s3); margin: var(--s3) 0; }
+.ed-id { padding: .8rem 1rem; border: 1px solid var(--line); border-radius: 12px; }
+.ed-id h3 { margin: 0 0 .4rem; }
+.ed-id dl { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: .25rem .8rem; }
+.ed-id dt { color: var(--muted, #9aa7bd); font-size: .85rem; }
+.ed-id dd { margin: 0; overflow-wrap: anywhere; }
+@media (max-width: 480px) { .ed-id dl { grid-template-columns: 1fr; } .ed-id dd { margin-bottom: .35rem; } }
 .guide table { width: 100%; border-collapse: collapse; font-size: .95rem; line-height: 1.5; }
 .guide th, .guide td { text-align: left; vertical-align: top; padding: .55rem .7rem; border-bottom: 1px solid var(--line); }
 .guide th { font-family: var(--head); color: var(--muted); text-transform: uppercase; font-size: .8rem; letter-spacing: .06em; }
@@ -543,6 +564,10 @@ html, body { overflow-x: hidden; }
 .guide-card h2 a { text-decoration: none; }
 .guide-card p { margin: 0; color: var(--muted); }
 @media (max-width: 560px) { .guide td:first-child { white-space: normal; } }
+.ed-switch { margin: var(--s3) 0 0; font-size: .95rem; }
+.ed-switch a { color: inherit; text-decoration: underline; text-underline-offset: 2px; font-weight: 600; }
+.hub-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--s3); }
+.hub-list li { line-height: 1.7; }
 """
 
 
@@ -550,7 +575,7 @@ html, body { overflow-x: hidden; }
 
 def games_menu(active: str) -> str:
     items = "".join(f'<a href="/{g["slug"]}/"{" aria-current=page" if g["slug"] == active else ""}>{esc(g["name"])}</a>' for g in GAMES)
-    cur = ' aria-current="page"' if active in ("games",) or active in GAMES_SLUGS else ""
+    cur = ' aria-current="page"' if active in ("games",) or active in GAMES_SLUGS or active in HUB_SLUGS else ""
     return (f'<details class="games-menu"><summary{cur}>🎮 Games</summary><div class="menu-pop">'
             f'<a class="all" href="/games/">All games →</a>{items}</div></details>')
 
@@ -694,6 +719,10 @@ def verdict_sentence(game: dict, data: dict) -> str:
     elif v == "Likely safe":
         msg = (f"No sign of trouble with {p}. {and_join(worst)} {'hasn’t' if len(worst) == 1 else 'haven’t'} named this patch in a release, "
                "but there’s either a newer release or no breakage reports since. Probably fine — skim the notes before updating.")
+    elif v == "Just patched, wait" and game.get("kind") == "manual" and data["game"]["latest_patch"].get("unannounced_update"):
+        u = data["game"]["latest_patch"]["unannounced_update"]
+        msg = (f"Steam shipped a new {str(u.get('edition') or '').title()} build on {u['published_at'][:10]} that isn’t in the "
+               f"manual record yet, and {and_join(worst)} support for it is unconfirmed. Hold the update until it’s checked.")
     elif v == "Just patched, wait":
         msg = f"{p} is under a week old and {and_join(worst)} {'has' if len(worst) == 1 else 'have'} not updated yet. Hold the update a few days."
     elif v == "Breakage reported":
@@ -784,7 +813,8 @@ def game_faq(game: dict, data: dict) -> list[dict]:
     manual = [f["name"] for f in data["frameworks"] if not f.get("tracked")]
     src = ("the Mojang version manifest" if game.get("kind") == "minecraft"
            else ("a hand-maintained record checked by ModSafe (Rockstar title update notes and the Script Hook V page), "
-                 "cross-checked against each edition's Steam public build (api.steamcmd.net)") if game.get("kind") == "manual"
+                 + ("cross-checked against this edition's Steam public build (api.steamcmd.net)" if game.get("edition")
+                    else "cross-checked against each edition's Steam public build (api.steamcmd.net)")) if game.get("kind") == "manual"
            else (f"Steam's public build record (Steam PICS via api.steamcmd.net, app {game.get('steam_appid')}), "
                  "because this game's updates often ship without a Steam post") if game.get("kind") == "atlan"
            else f"official Steam announcements (app {game.get('steam_appid')}, stable-channel SteamOS posts)" if game.get("kind_label") == "platform"
@@ -800,11 +830,18 @@ def game_faq(game: dict, data: dict) -> list[dict]:
         {"q": "Where does the data come from?",
          "a": f"Game patches come from {src}. Framework data comes from {fw_sources(game)}. ModSafe does not scrape Nexus Mods or SteamDB."},
     ]
-    if game["slug"] == "gta-v":
+    if game.get("hub") == "gta-v":
         items.append({"q": "Can I use mods in GTA Online?",
                       "a": "No. Only mod single-player (Story Mode). Script Hook V closes the game if you go online, and modding GTA Online risks a permanent ban. Keep a clean install or remove mods before playing Online."})
-        items.append({"q": "Does this cover GTA V Enhanced and Legacy?",
-                      "a": "Yes. ModSafe tracks the executable build for both the Legacy (Steam app 271590) and Enhanced (Steam app 3240220) editions, and checks that Script Hook V lists both."})
+        others = other_editions(game)
+        items.append({"q": f"Is this page for GTA V {edition_label(game)} or {' or '.join(edition_label(o) for o in others)}?",
+                      "a": f"{game['name']} only (Steam app {game.get('steam_appid')}, {game.get('exe')}). Rockstar patches the PC editions "
+                           "separately and Script Hook V can support one before the other, so each has its own verdict. "
+                           + " ".join(f"{o['name']} (Steam app {o.get('steam_appid')}, {o.get('exe')}) is tracked at {SITE_URL}/{o['slug']}/." for o in others)
+                           + f" Not sure which you have? See {SITE_URL}/gta-v/."})
+        items.append({"q": f"Where do the {game['short']} patch history dates come from?",
+                      "a": "From a hand-kept table of each PC build's release date and the date Script Hook V first listed it, cross-checked "
+                           "against the lspdfrinfo wiki's GTA V build list. The sources give dates only, so update times are whole days."})
     if game["slug"] == "stardew-valley":
         items.append({"q": "How do I check individual Stardew mods?",
                       "a": "Use the official SMAPI mod compatibility list at smapi.io/mods, which tracks compatible, broken and obsolete mods."})
@@ -915,13 +952,14 @@ def build_game_page(game: dict, data: dict) -> str:
                                  "contentUrl": f"{SITE_URL}/{slug}/status.json"}]}
     vc = status_class(data["verdict"])
     body = f"""
-<p class="crumbs"><a href="/">Home</a> › <a href="/games/">Games</a> › {esc(game['name'])}</p>
+{game_crumbs(game)}
 <section class="game-hero v-{vc}" style="--hero:url('{busted(game_img(slug, "hero"))}')">
 <div>
 <h1>Is it safe to update {esc(game['name'])}?</h1>
 <p>{vbadge(data['verdict'])}<span class="micro">{esc(MICROCOPY.get(data['verdict'], ''))}</span></p>
 <p class="lede">{esc(game['blurb'])}</p>
 {f'<p class="note" role="note"><strong>⚠ {esc(game["note"])}</strong></p>' if game.get("note") else ''}
+{edition_switch(game)}
 </div>
 </section>
 {upcoming_notice(active_upcoming(slug, data))}
@@ -968,8 +1006,29 @@ def build_game_page(game: dict, data: dict) -> str:
         f"Is it safe to update {game['name']}? Mod status for {p['label']} — ModSafe",
         f"{game['name']} {p['label']}: {data['verdict']}. Live status of " + ", ".join(f['short'] for f in data['frameworks']) + " after the latest patch.",
         f"/{slug}/", slug, body,
-        extra_jsonld=[dataset, faq_ld(faq), breadcrumb_ld([("Games", "/"), (game["name"], f"/{slug}/")])],
+        extra_jsonld=[dataset, faq_ld(faq), breadcrumb_ld([("Games", "/")] + hub_crumb(game) + [(game["name"], f"/{slug}/")])],
     )
+
+
+def hub_crumb(game: dict) -> list[tuple[str, str]]:
+    h = game.get("hub")
+    return [(GAMES_BY_SLUG[h]["short"], f"/{h}/")] if h and h in GAMES_BY_SLUG else []
+
+
+def game_crumbs(game: dict, tail: str | None = None) -> str:
+    """Home › Games › [GTA V ›] Game [› tail]. The game is a link when a tail follows."""
+    hub = "".join(f'<a href="{u}">{esc(n)}</a> › ' for n, u in hub_crumb(game))
+    me = (f'<a href="/{game["slug"]}/">{esc(game["name"])}</a> › {esc(tail)}' if tail else esc(game["name"]))
+    return f'<p class="crumbs"><a href="/">Home</a> › <a href="/games/">Games</a> › {hub}{me}</p>'
+
+
+def edition_switch(game: dict) -> str:
+    others = other_editions(game)
+    if not others:
+        return ""
+    links = " · ".join(f'<a href="/{o["slug"]}/">{esc(o["short"])} status →</a>' for o in others)
+    return (f'<p class="ed-switch">This page covers {esc(edition_label(game))} only. Playing '
+            f'{" or ".join(esc(edition_label(o)) for o in others)}? {links} · <a href="/{game["hub"]}/">Which edition do I have?</a></p>')
 
 
 def history_cards(data: dict, limit: int | None = None) -> str:
@@ -997,7 +1056,7 @@ def game_news(slug: str, data: dict) -> list[dict]:
 def host_label(url: str) -> str:
     h = url.split("/")[2].replace("www.", "")
     return {"nexusmods.com": "Nexus Mods", "github.com": "GitHub", "thunderstore.io": "Thunderstore", "modrinth.com": "Modrinth",
-            "flightsim.to": "flightsim.to", "ficsit.app": "ficsit.app"}.get(h, h)
+            "flightsim.to": "flightsim.to", "ficsit.app": "ficsit.app", "gta5-mods.com": "GTA5-Mods.com"}.get(h, h)
 
 
 def mod_cards(game: dict, data: dict, mods: dict, limit: int | None = None) -> str:
@@ -1098,6 +1157,7 @@ def hub_nav(game: dict, data: dict, current: str) -> str:
 def related_links(game: dict, data: dict, current: str, wiki: bool = False) -> str:
     icons = {"status": "📊", "history": "📜", "mods": "🧩", "install": "📘"}
     out = [f'<a href="{u}">{icons[k]} {esc(t)}</a>' for k, u, t in hub_pages(game, data) if k != current]
+    out += [f'<a href="/{o["slug"]}/">🔀 {esc(o["short"])}</a>' for o in other_editions(game)]
     if game.get("steam_appid"):
         out.append(f'<a href="{guides_mod.STEAM_GUIDE_PATH}">🛑 Stop Steam auto-updates</a>')
     if wiki and game.get("wiki"):
@@ -1153,7 +1213,7 @@ def history_faq(game: dict, data: dict, s: dict) -> list[dict]:
         a = (f"We can't say yet. Our framework release data doesn't reach back to these {short} patches, so we only "
              f"report each patch's verdict and wait for new patches to build a track record.")
     faq.append({"q": f"How long do {short} mod frameworks take to update after a patch?", "a": a})
-    if s["log_start"]:
+    if s["log_start"] and not s.get("log_young"):
         ls = s["longest_stretch"]
         if ls:
             end = (f"It ended on {fmt_date(ls['end'].isoformat())} with the verdict {ls['end_verdict']}." if ls["end"]
@@ -1204,7 +1264,7 @@ def build_game_history(game: dict, data: dict) -> str:
 <ul class="hist-fw">{cells}</ul>
 </article>""")
     body = f"""
-<p class="crumbs"><a href="/">Home</a> › <a href="/games/">Games</a> › <a href="/{slug}/">{esc(name)}</a> › Patch history</p>
+{game_crumbs(game, "Patch history")}
 <section class="page-hero"><h1>{esc(name)} patch history &amp; mod update times</h1>
 <p class="lede">{esc(track_record_sentence(game, data))}</p></section>
 {hub_nav(game, data, "history")}
@@ -1228,7 +1288,7 @@ def build_game_history(game: dict, data: dict) -> str:
             + (f"; longest unsafe stretch {hstats.fmt_days(ls['days'])}." if ls else ".") + " Per framework, from our own data.")
     return page_shell(f"{name} patch history: {s['patches']} patches & mod update times — ModSafe", _clip(desc),
                       f"/{slug}/history/", slug, body,
-                      extra_jsonld=[faq_ld(faq), breadcrumb_ld([("Games", "/"), (name, f"/{slug}/"), ("Patch history", f"/{slug}/history/")])])
+                      extra_jsonld=[faq_ld(faq), breadcrumb_ld([("Games", "/")] + hub_crumb(game) + [(name, f"/{slug}/"), ("Patch history", f"/{slug}/history/")])])
 
 
 def guide_errors(md: str) -> list[dict]:
@@ -1268,7 +1328,7 @@ def build_install_page(game: dict, data: dict, md: str) -> str:
     fws = [f for f in data.get("frameworks", []) if f.get("tracked", True)]
     fw_li = "".join(f'<li>{badge(f["status"])} <strong>{esc(f["short"])}</strong> <code>{esc(display_tag(f.get("release_tag")))}</code></li>' for f in fws)
     body = f"""
-<p class="crumbs"><a href="/">Home</a> › <a href="/games/">Games</a> › <a href="/{slug}/">{esc(game['name'])}</a> › Install guide</p>
+{game_crumbs(game, "Install guide")}
 <section class="page-hero"><h1>{esc(g['title'])}</h1>
 <p class="lede">{esc(g['intro'])}</p></section>
 {hub_nav(game, data, "install")}
@@ -1285,7 +1345,7 @@ def build_install_page(game: dict, data: dict, md: str) -> str:
                        "url": f"{SITE_URL}/{slug}/install/#steps"} for i, s in enumerate(g["steps"], 1)]}
     desc = (f"Mod {game['name']} with {fws[0]['short'] if fws else 'the core frameworks'}: {len(g['steps'])} steps, "
             f"install order, {len(errors)} common errors with sourced fixes, and how to roll back.")
-    ld = [howto, breadcrumb_ld([("Games", "/"), (game["name"], f"/{slug}/"), ("Install guide", f"/{slug}/install/")])]
+    ld = [howto, breadcrumb_ld([("Games", "/")] + hub_crumb(game) + [(game["name"], f"/{slug}/"), ("Install guide", f"/{slug}/install/")])]
     if errors:
         ld.insert(1, faq_ld(errors))
     return page_shell(f"{g['title']} (beginner guide) — ModSafe", _clip(desc), f"/{slug}/install/", slug, body, extra_jsonld=ld)
@@ -1325,7 +1385,7 @@ def build_mods_page(game: dict, data: dict, mods: dict) -> str:
     noun = mods.get("noun", "mods")
     deps, faq = dependency_map_html(game, data, mods)
     body = f"""
-<p class="crumbs"><a href="/">Home</a> › <a href="/games/">Games</a> › <a href="/{slug}/">{esc(game['name'])}</a> › Essential {noun}</p>
+{game_crumbs(game, "Essential " + noun)}
 <section class="page-hero"><h1>Essential {esc(game['name'])} {noun}</h1>
 <p class="lede">{esc(mods['intro'])}</p>
 <p class="muted">Hand-picked by ModSafe, listed in install order. We link only to the official download pages and never host files. Badges reflect our live framework status for {esc(data['game']['latest_patch']['label'])}. List verified {esc(mods['verified_at'])}.</p>
@@ -1348,7 +1408,7 @@ def build_mods_page(game: dict, data: dict, mods: dict) -> str:
     desc = f"{len(mods['mods'])} essential {game['name']} {noun}, what each needs, and live {data['game']['latest_patch']['label']} status. Install order: {top}…"
     return page_shell(f"Essential {game['name']} {noun} ({len(mods['mods'])}) & install order — ModSafe", _clip(desc),
                       f"/{slug}/mods/", slug, body,
-                      extra_jsonld=[itemlist, faq_ld(faq), breadcrumb_ld([("Games", "/"), (game["name"], f"/{slug}/"), ("Essential mods", f"/{slug}/mods/")])])
+                      extra_jsonld=[itemlist, faq_ld(faq), breadcrumb_ld([("Games", "/")] + hub_crumb(game) + [(game["name"], f"/{slug}/"), ("Essential mods", f"/{slug}/mods/")])])
 
 
 UPCOMING_FILE = ROOT / "data" / "manual" / "upcoming-patches.json"
@@ -1514,8 +1574,8 @@ def build_home(games_data: list[tuple[dict, dict]]) -> str:
                 "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": g["name"], "url": f"{SITE_URL}/{g['slug']}/"}
                                     for i, (g, _) in enumerate(games_data)]}
     n_fw = sum(1 for _, d in games_data for f in d["frameworks"] if f.get("tracked", True))
-    n_games = sum(1 for g, _ in games_data if g.get("genre") != "Platform")
-    n_plat = len(games_data) - n_games
+    n_games = distinct_games([g for g, _ in games_data])
+    n_plat = sum(1 for g, _ in games_data if g.get("genre") == "Platform")
     n_ok = sum(1 for _, d in games_data if d["verdict"] in ("Safe", "Likely safe"))
     body = f"""
 <section class="home-hero" style="--hero:url('/img/cyberpunk-2077-hero.webp')">
@@ -1539,7 +1599,7 @@ def build_home(games_data: list[tuple[dict, dict]]) -> str:
 <section class="panel"><h2>How we call it</h2>{legend_html()}
 <p style="margin-top:var(--s4)"><a href="/faq/">Read the FAQ →</a></p></section>
 """
-    return page_shell(f"ModSafe — Is it safe to update? Mod compatibility for {sum(1 for g in GAMES if g.get('genre') != 'Platform')} PC games & Steam Deck", SITE_DESC, "/", "home", body + FILTER_JS + LOCAL_TIME_JS, extra_jsonld=[itemlist])
+    return page_shell(f"ModSafe — Is it safe to update? Mod compatibility for {distinct_games(GAMES)} PC games & Steam Deck", SITE_DESC, "/", "home", body + FILTER_JS + LOCAL_TIME_JS, extra_jsonld=[itemlist])
 
 
 def build_games_index(games_data) -> str:
@@ -1770,6 +1830,54 @@ OG_SVG = """<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" vi
 """
 
 
+def build_hub_page(hub: dict, editions: list[tuple[dict, dict]]) -> str:
+    """/gta-v/: a short 'which edition do I have?' page linking to each edition's own pages. Kept deliberately
+    thin (no verdict text, framework cards or FAQ duplicated from the edition pages)."""
+    slug, short = hub["slug"], hub["short"]
+    rows = []
+    for g, d in editions:
+        links = " · ".join(f'<a href="{u}">{esc(t)}</a>' for _, u, t in hub_pages(g, d))
+        rows.append(f'<li><strong><a href="/{g["slug"]}/">{esc(g["name"])}</a></strong> {badge(d["verdict"])} '
+                    f'<span class="muted">{esc(d["game"]["latest_patch"]["label"])}</span><br>{links}</li>')
+    which = "".join(f'<div class="ed-id"><h3><a href="/{g["slug"]}/">{esc(edition_label(g))}</a></h3><dl>'
+                    f"<dt>Steam library name</dt><dd>{esc(g['name'])}</dd>"
+                    f"<dt>Executable</dt><dd><code>{esc(g.get('exe') or '')}</code></dd>"
+                    f"<dt>Tell-tale</dt><dd>{esc(g.get('edition_hint') or '')}</dd>"
+                    f"<dt>Steam app ID</dt><dd>{g.get('steam_appid')}</dd></dl></div>" for g, _ in editions)
+    body = f"""
+<p class="crumbs"><a href="/">Home</a> › <a href="/games/">Games</a> › {esc(short)}</p>
+<section class="page-hero"><h1>{esc(short)} mods: Legacy or Enhanced?</h1>
+<p class="lede">Rockstar patches the two PC editions of {esc(hub['name'])} separately, and Script Hook V can support one before
+the other. ModSafe gives each edition its own verdict, install guide, mod list and patch history. Pick yours.</p></section>
+<div class="sec-head"><h2 id="editions">Choose your edition</h2></div>
+<section class="game-grid" aria-label="{esc(short)} editions">{game_cards(editions, compact=True)}</section>
+<section class="panel"><ul class="hub-list">{''.join(rows)}</ul></section>
+<div class="sec-head"><h2 id="which">Which edition do I have?</h2></div>
+<section class="panel guide"><div class="ed-ids">{which}</div>
+<p class="muted">Bought GTA V on Steam before March 2025? You may own both: Steam lists them as two separate games. The Rockstar Games Launcher and Epic also show the edition in the game's name.</p></section>
+<p class="note" role="note"><strong>⚠ {esc(hub.get('note') or '')}</strong></p>
+<p class="disclaimer">Apps and bots: <a href="/{slug}/status.json">/{slug}/status.json</a>, <a href="/{slug}/feed.xml">/{slug}/feed.xml</a> and
+<a href="/badge/{slug}.svg">/badge/{slug}.svg</a> still work and combine both editions (the worse verdict wins). New integrations should use
+{' and '.join(f'<a href="/{g["slug"]}/status.json">/{g["slug"]}/status.json</a>' for g, _ in editions)}; in <a href="/api/v1/status.json">api/v1</a> the
+<code>{esc(slug)}</code> entry is marked <code>deprecated</code> with <code>superseded_by</code>.</p>
+<section class="links" aria-label="Related pages">{" ".join(f'<a href="/{g["slug"]}/">🎮 {esc(g["short"])}</a>' for g, _ in editions)} <a href="/guides/stop-steam-auto-updates/">🛑 Stop Steam auto-updates</a> <a href="/games/">🎮 All games</a></section>
+"""
+    itemlist = {"@context": "https://schema.org", "@type": "ItemList", "name": f"{hub['name']} PC editions",
+                "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": g["name"], "url": f"{SITE_URL}/{g['slug']}/"}
+                                    for i, (g, _) in enumerate(editions)]}
+    return page_shell(f"{short} mod status: Legacy or Enhanced? — ModSafe",
+                      _clip(f"Is it safe to update {hub['name']} with mods? Pick your PC edition: "
+                            + " · ".join(f"{edition_label(g)}: {d['verdict']}" for g, d in editions)
+                            + ". Each has its own verdict, install guide and mod list."),
+                      f"/{slug}/", slug, body + AGO_JS,
+                      extra_jsonld=[itemlist, breadcrumb_ld([("Games", "/"), (short, f"/{slug}/")])])
+
+
+def hub_editions(hub_slug: str, games_data) -> list[tuple[dict, dict]]:
+    by = {g["slug"]: (g, d) for g, d in games_data}
+    return [by[s] for s in HUBS.get(hub_slug, []) if s in by]
+
+
 def build_llms_txt(games_data) -> str:
     lines = [f"# {SITE_NAME}", "", f"> {SITE_DESC}", "", f"Site: {SITE_URL}/", f"Index JSON: {SITE_URL}/games.json",
              f"Stable API (v1, CORS-enabled, all games + per-mod verdicts): {SITE_URL}/api/v1/status.json",
@@ -1795,6 +1903,15 @@ def build_llms_txt(games_data) -> str:
             tr = "" if fw.get("tracked", True) else " [not auto-tracked]"
             lines.append(f"  - {fw['name']}: {fw['status']}{tr}; release {fw.get('release_tag')} {fw.get('release_published_at') or ''}; {fw.get('reason')}")
         lines.append("")
+    for hub in COMPAT_GAMES:
+        eds = hub_editions(hub["slug"], games_data)
+        if not eds:
+            continue
+        lines += [f"## {hub['name']} (hub)", f"- Hub page (pick an edition): {SITE_URL}/{hub['slug']}/",
+                  "- Editions: " + "; ".join(f"{g['name']} {SITE_URL}/{g['slug']}/ (verdict: {d['verdict']})" for g, d in eds),
+                  f"- Compatibility endpoints (both editions combined, worse verdict wins; deprecated, prefer the edition entries): "
+                  f"{SITE_URL}/{hub['slug']}/status.json, {SITE_URL}/{hub['slug']}/feed.xml, {SITE_URL}/badge/{hub['slug']}.svg; "
+                  f"api/v1 entry id '{hub['slug']}' has deprecated: true and superseded_by: {[g['slug'] for g, _ in eds]}", ""]
     lines += ["## Pages", f"- Patch timeline (newest game patches across all games, with verdicts and recent verdict changes): {SITE_URL}/patches/",
               f"- FAQ: {SITE_URL}/faq/", f"- Guides: {SITE_URL}/guides/",
               f"- Guide: How to stop Steam auto-updating a game (Wait until I launch, Offline Mode, Steam Deck, Game Versions & Betas, "
@@ -1823,6 +1940,7 @@ def build_redirects(games_data) -> str:
 
 def sitemap_urls() -> list[str]:
     urls = ["/", "/games/", "/patches/", "/news/", "/faq/", "/guides/", guides_mod.STEAM_GUIDE_PATH]
+    urls += [f"/{h}/" for h in HUBS]
     for g in GAMES:
         urls.append(f"/{g['slug']}/")
         if has_history(_game_data(g["slug"])):
@@ -1848,6 +1966,9 @@ REDIRECTS = """# Legacy Cyberpunk-only URLs (pre multi-game)
 /skyrim /skyrim-se/ 301
 /bg3 /baldurs-gate-3/ 301
 /stardew /stardew-valley/ 301
+# GTA V split into per-edition pages (2026-10-29); /gta-v/ is the hub. It never had a history page.
+/gta-v/history /gta-v/ 301
+/gta-v/history/ /gta-v/ 301
 # Discontinued pages
 /newsletter / 301
 /newsletter/ / 301
@@ -1857,11 +1978,18 @@ REDIRECTS = """# Legacy Cyberpunk-only URLs (pre multi-game)
 def games_index(games_data) -> dict:
     return {"generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
             "games": [{"slug": g["slug"], "name": g["name"], "verdict": d["verdict"],
+                       **({"edition": g["edition"], "hub": g.get("hub")} if g.get("edition") else {}),
+                       **({"deprecated": True, "superseded_by": list(g.get("editions") or [])} if g.get("compat") else {}),
                        "latest_patch": {k: d["game"]["latest_patch"].get(k) for k in ("label", "version", "published_at", "url")},
                        "page": f"{SITE_URL}/{g['slug']}/", "json": f"{SITE_URL}/{g['slug']}/status.json",
                        "frameworks": [{"id": f["id"], "name": f["name"], "status": f["status"], "tracked": f.get("tracked", True),
                                        "release_tag": f.get("release_tag")} for f in d["frameworks"]]}
-                      for g, d in games_data]}
+                      for g, d in list(games_data) + compat_data()]}
+
+
+def compat_data() -> list[tuple[dict, dict]]:
+    """Combined records kept for existing clients (gta-v): (game, data) for those with data on disk."""
+    return [(g, _game_data(g["slug"])) for g in COMPAT_GAMES if _game_data(g["slug"])]
 
 
 # ---- Public API v1 (/api/v1/status.json) -------------------------------------------------------------------------
@@ -1889,10 +2017,12 @@ def verdict_id(label: str | None) -> str:
     return VERDICT_IDS.get(label) or (re.sub(r"[^a-z0-9]+", "-", label.lower()).strip("-") or "no-data")
 
 
-def api_v1_status(games_data, today=None, upcoming: dict | None = None) -> dict:
+def api_v1_status(games_data, today=None, upcoming: dict | None = None, compat=None) -> dict:
+    """compat: combined records (gta-v) appended after the real games with deprecated/superseded_by; additive only,
+    so v1 clients that look up 'gta-v' keep working. Defaults to the records on disk."""
     up_all = upcoming if upcoming is not None else load_upcoming()
     games = []
-    for g, d in games_data:
+    for g, d in list(games_data) + list(compat_data() if compat is None else compat):
         lp = (d.get("game") or {}).get("latest_patch") or {}
         appids = sorted({int(a) for a in ([g.get("steam_appid")] + list((g.get("steam_appids") or {}).values())) if a})
         vid = verdict_id(d.get("verdict"))
@@ -1918,6 +2048,9 @@ def api_v1_status(games_data, today=None, upcoming: dict | None = None) -> dict:
             "upcoming_patch": ({k: up.get(k) for k in ("label", "version", "date", "source")} if up else None),
             "page_url": f"{SITE_URL}/{g['slug']}/", "json_url": f"{SITE_URL}/{g['slug']}/status.json",
             "mods": mods,
+            "edition": g.get("edition"), "hub": g.get("hub"),
+            "deprecated": bool(g.get("compat")),
+            "superseded_by": list(g.get("editions") or []) if g.get("compat") else None,
         })
     updated = [x["updated_at"] for x in games if x["updated_at"]]
     return {
@@ -1988,7 +2121,7 @@ def build_routes() -> str:
     paths (polled feeds, API, badges, assets) bypass the Function entirely."""
     exclude = ["/api/*", "/badge/*", "/fonts/*", "/img/*", "/og/*", "/styles.css",
                "/feed.xml", "/status.json", "/games.json"]
-    exclude += [f"/{g['slug']}/feed.xml" for g in GAMES]
+    exclude += [f"/{g['slug']}/feed.xml" for g in GAMES + COMPAT_GAMES]
     return json.dumps({"version": 1, "include": ["/*"], "exclude": exclude}, indent=2) + "\n"
 
 
@@ -2044,6 +2177,13 @@ def main() -> int:
             legacy = json.loads(json.dumps(d))
             legacy["game"]["latest_patch"]["version"] = legacy["game"]["latest_patch"].get("version")
             write(DIST / "status.json", json.dumps(legacy, indent=2) + "\n")
+    for hub, d in compat_data():
+        # /gta-v/: hub page + the combined compat endpoints (status.json, feed, badges) for existing clients.
+        write(DIST / hub["slug"] / "index.html", build_hub_page(hub, hub_editions(hub["slug"], games_data)))
+        write(DIST / hub["slug"] / "status.json", json.dumps(d, indent=2) + "\n")
+        write(DIST / hub["slug"] / "feed.xml", feeds.game_feed(hub, d, SITE_URL))
+        write(DIST / "badge" / f"{hub['slug']}.svg", badges.game_badge(hub, d, status_class(d["verdict"])))
+        write(DIST / "badge" / f"{hub['slug']}.json", json.dumps(shields_endpoint(hub, d), indent=2, ensure_ascii=False) + "\n")
     write(DIST / "games" / "index.html", build_games_index(games_data))
     write(DIST / "patches" / "index.html", build_patches_page(games_data))
     write(DIST / "news" / "index.html", build_news_page())

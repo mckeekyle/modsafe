@@ -1,0 +1,440 @@
+{
+  "generated_at": "2026-10-30T01:44:19Z",
+  "game": {
+    "slug": "gta-v-legacy",
+    "name": "Grand Theft Auto V Legacy",
+    "steam_appid": 271590,
+    "latest_patch": {
+      "label": "Build 1.0.3889.0",
+      "version": "1.0.3889.0",
+      "published_at": "2026-07-14T09:00:00Z",
+      "title": "GTAV Title Update 1.73 Notes (Rockstar Support)",
+      "url": "https://support.rockstargames.com/articles/4vRqEDvjUs9h7nqRUgc8YO/gtav-title-update-1-73-notes-ps5-ps4-xbox-series-x-or-s-xbox-one-pc-enhanced-legacy",
+      "builds": {
+        "legacy": "1.0.3889.0"
+      },
+      "build_dates": {
+        "legacy": "2026-07-14"
+      },
+      "sources": [
+        "https://support.rockstargames.com/articles/4vRqEDvjUs9h7nqRUgc8YO/gtav-title-update-1-73-notes-ps5-ps4-xbox-series-x-or-s-xbox-one-pc-enhanced-legacy",
+        "https://api.steamcmd.net/v1/info/271590 (Legacy public build 24129523, updated 2026-07-14T09:01:57Z)",
+        "https://w.atwiki.jp/lspdfrinfo/pages/16.html (Legacy v3889.0 supported by Script Hook V)"
+      ],
+      "notes": "Title Update 1.73 moved Legacy to 1.0.3889.0 on Jul 14, 2026. Script Hook V v3889.0 / 1158.13 (Jul 15, 2026) supports it. Later 2026 PC updates (Sep 15, Oct 27) were Enhanced-only; Legacy's Steam build is unchanged since Jul 14.",
+      "edition": "legacy"
+    }
+  },
+  "verdict": "Safe",
+  "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
+  "frameworks": [
+    {
+      "id": "scripthookv",
+      "name": "Script Hook V",
+      "short": "ScriptHookV",
+      "url": "http://www.dev-c.com/gtav/scripthookv/",
+      "source": "manual_shv",
+      "tracked": true,
+      "sensitive": true,
+      "release_url": "http://www.dev-c.com/gtav/scripthookv/",
+      "status": "Safe",
+      "reason": "Supports the current game build(s): Legacy 1.0.3889.0. (Manually verified 2026-10-29.)",
+      "release_tag": "v3889.0",
+      "release_published_at": "2026-07-15T00:00:00Z",
+      "manual_data": true
+    },
+    {
+      "id": "asi-loader",
+      "name": "Ultimate ASI Loader",
+      "short": "ASI Loader",
+      "url": "https://github.com/ThirteenAG/Ultimate-ASI-Loader",
+      "source": "github",
+      "tracked": true,
+      "sensitive": false,
+      "release_url": "https://github.com/ThirteenAG/Ultimate-ASI-Loader/releases/tag/v10.0.2",
+      "status": "Not affected by patches",
+      "reason": "Generic DLL/ASI loader used across many games; not tied to a GTA V build.",
+      "release_tag": "v10.0.2",
+      "release_published_at": "2026-10-27T10:49:21Z"
+    }
+  ],
+  "history": [
+    {
+      "version": "1.0.3889.0",
+      "label": "Build 1.0.3889.0",
+      "title": "Title Update 1.73 (Legacy 1.0.3889.0)",
+      "published_at": "2026-07-14T00:00:00Z",
+      "url": "https://support.rockstargames.com/articles/4vRqEDvjUs9h7nqRUgc8YO/gtav-title-update-1-73-notes-ps5-ps4-xbox-series-x-or-s-xbox-one-pc-enhanced-legacy",
+      "sources": [
+        "https://support.rockstargames.com/articles/4vRqEDvjUs9h7nqRUgc8YO/gtav-title-update-1-73-notes-ps5-ps4-xbox-series-x-or-s-xbox-one-pc-enhanced-legacy"
+      ],
+      "frameworks": [
+        {
+          "id": "scripthookv",
+          "short": "ScriptHookV",
+          "name": "Script Hook V",
+          "status": "Safe",
+          "release_tag": "v3889.0",
+          "release_published_at": "2026-07-15T00:00:00Z",
+          "mentions_patch": true,
+          "first_release_tag": "v3889.0",
+          "first_release_at": "2026-07-15T00:00:00Z",
+          "data_from": "2024-12-13T00:00:00Z",
+          "first_mention_tag": "v3889.0",
+          "first_mention_at": "2026-07-15T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "version": "1.0.3788.0",
+      "label": "Build 1.0.3788.0",
+      "title": "GTA V Legacy 1.0.3788.0 (game and Script Hook V dates)",
+      "published_at": "2026-03-17T00:00:00Z",
+      "url": "https://w.atwiki.jp/lspdfrinfo/pages/16.html",
+      "sources": [
+        "https://w.atwiki.jp/lspdfrinfo/pages/16.html"
+      ],
+      "frameworks": [
+        {
+          "id": "scripthookv",
+          "short": "ScriptHookV",
+          "name": "Script Hook V",
+          "status": "Safe",
+          "release_tag": "v3788.0",
+          "release_published_at": "2026-03-18T00:00:00Z",
+          "mentions_patch": true,
+          "first_release_tag": "v3788.0",
+          "first_release_at": "2026-03-18T00:00:00Z",
+          "data_from": "2024-12-13T00:00:00Z",
+          "first_mention_tag": "v3788.0",
+          "first_mention_at": "2026-03-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "version": "1.0.3751.0",
+      "label": "Build 1.0.3751.0",
+      "title": "GTA V Legacy 1.0.3751.0 (game and Script Hook V dates)",
+      "published_at": "2026-01-27T00:00:00Z",
+      "url": "https://w.atwiki.jp/lspdfrinfo/pages/16.html",
+      "sources": [
+        "https://w.atwiki.jp/lspdfrinfo/pages/16.html"
+      ],
+      "frameworks": [
+        {
+          "id": "scripthookv",
+          "short": "ScriptHookV",
+          "name": "Script Hook V",
+          "status": "Safe",
+          "release_tag": "v3751.0",
+          "release_published_at": "2026-01-29T00:00:00Z",
+          "mentions_patch": true,
+          "first_release_tag": "v3751.0",
+          "first_release_at": "2026-01-29T00:00:00Z",
+          "data_from": "2024-12-13T00:00:00Z",
+          "first_mention_tag": "v3751.0",
+          "first_mention_at": "2026-01-29T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "version": "1.0.3725.0",
+      "label": "Build 1.0.3725.0",
+      "title": "GTA V Legacy 1.0.3725.0 (game and Script Hook V dates)",
+      "published_at": "2025-12-17T00:00:00Z",
+      "url": "https://w.atwiki.jp/lspdfrinfo/pages/16.html",
+      "sources": [
+        "https://w.atwiki.jp/lspdfrinfo/pages/16.html"
+      ],
+      "frameworks": [
+        {
+          "id": "scripthookv",
+          "short": "ScriptHookV",
+          "name": "Script Hook V",
+          "status": "Safe",
+          "release_tag": "v3725.0",
+          "release_published_at": "2025-12-28T00:00:00Z",
+          "mentions_patch": true,
+          "first_release_tag": "v3725.0",
+          "first_release_at": "2025-12-28T00:00:00Z",
+          "data_from": "2024-12-13T00:00:00Z",
+          "first_mention_tag": "v3725.0",
+          "first_mention_at": "2025-12-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "version": "1.0.3717.0",
+      "label": "Build 1.0.3717.0",
+      "title": "GTA V Legacy 1.0.3717.0 (game and Script Hook V dates)",
+      "published_at": "2025-12-10T00:00:00Z",
+      "url": "https://w.atwiki.jp/lspdfrinfo/pages/16.html",
+      "sources": [
+        "https://w.atwiki.jp/lspdfrinfo/pages/16.html"
+      ],
+      "frameworks": [
+        {
+          "id": "scripthookv",
+          "short": "ScriptHookV",
+          "name": "Script Hook V",
+          "status": "Safe",
+          "release_tag": "v3717.0",
+          "release_published_at": "2025-12-15T00:00:00Z",
+          "mentions_patch": true,
+          "first_release_tag": "v3717.0",
+          "first_release_at": "2025-12-15T00:00:00Z",
+          "data_from": "2024-12-13T00:00:00Z",
+          "first_mention_tag": "v3717.0",
+          "first_mention_at": "2025-12-15T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "version": "1.0.3586.0",
+      "label": "Build 1.0.3586.0",
+      "title": "GTA V Legacy 1.0.3586.0 (game and Script Hook V dates)",
+      "published_at": "2025-07-08T00:00:00Z",
+      "url": "https://w.atwiki.jp/lspdfrinfo/pages/16.html",
+      "sources": [
+        "https://w.atwiki.jp/lspdfrinfo/pages/16.html"
+      ],
+      "frameworks": [
+        {
+          "id": "scripthookv",
+          "short": "ScriptHookV",
+          "name": "Script Hook V",
+          "status": "Safe",
+          "release_tag": "v3586.0",
+          "release_published_at": "2025-07-10T00:00:00Z",
+          "mentions_patch": true,
+          "first_release_tag": "v3586.0",
+          "first_release_at": "2025-07-10T00:00:00Z",
+          "data_from": "2024-12-13T00:00:00Z",
+          "first_mention_tag": "v3586.0",
+          "first_mention_at": "2025-07-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "version": "1.0.3570.0",
+      "label": "Build 1.0.3570.0",
+      "title": "GTA V Legacy 1.0.3570.0 (game and Script Hook V dates)",
+      "published_at": "2025-06-17T00:00:00Z",
+      "url": "https://w.atwiki.jp/lspdfrinfo/pages/16.html",
+      "sources": [
+        "https://w.atwiki.jp/lspdfrinfo/pages/16.html"
+      ],
+      "frameworks": [
+        {
+          "id": "scripthookv",
+          "short": "ScriptHookV",
+          "name": "Script Hook V",
+          "status": "Safe",
+          "release_tag": "v3570.0",
+          "release_published_at": "2025-06-18T00:00:00Z",
+          "mentions_patch": true,
+          "first_release_tag": "v3570.0",
+          "first_release_at": "2025-06-18T00:00:00Z",
+          "data_from": "2024-12-13T00:00:00Z",
+          "first_mention_tag": "v3570.0",
+          "first_mention_at": "2025-06-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "version": "1.0.3521.0",
+      "label": "Build 1.0.3521.0",
+      "title": "GTA V Legacy 1.0.3521.0 (game and Script Hook V dates)",
+      "published_at": "2025-05-06T00:00:00Z",
+      "url": "https://w.atwiki.jp/lspdfrinfo/pages/16.html",
+      "sources": [
+        "https://w.atwiki.jp/lspdfrinfo/pages/16.html"
+      ],
+      "frameworks": [
+        {
+          "id": "scripthookv",
+          "short": "ScriptHookV",
+          "name": "Script Hook V",
+          "status": "Safe",
+          "release_tag": "v3521.0",
+          "release_published_at": "2025-05-10T00:00:00Z",
+          "mentions_patch": true,
+          "first_release_tag": "v3521.0",
+          "first_release_at": "2025-05-10T00:00:00Z",
+          "data_from": "2024-12-13T00:00:00Z",
+          "first_mention_tag": "v3521.0",
+          "first_mention_at": "2025-05-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "version": "1.0.3504.0",
+      "label": "Build 1.0.3504.0",
+      "title": "GTA V Legacy 1.0.3504.0 (game and Script Hook V dates)",
+      "published_at": "2025-04-10T00:00:00Z",
+      "url": "https://w.atwiki.jp/lspdfrinfo/pages/16.html",
+      "sources": [
+        "https://w.atwiki.jp/lspdfrinfo/pages/16.html"
+      ],
+      "frameworks": [
+        {
+          "id": "scripthookv",
+          "short": "ScriptHookV",
+          "name": "Script Hook V",
+          "status": "Safe",
+          "release_tag": "v3504.0",
+          "release_published_at": "2025-04-13T00:00:00Z",
+          "mentions_patch": true,
+          "first_release_tag": "v3504.0",
+          "first_release_at": "2025-04-13T00:00:00Z",
+          "data_from": "2024-12-13T00:00:00Z",
+          "first_mention_tag": "v3504.0",
+          "first_mention_at": "2025-04-13T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "version": "1.0.3442.0",
+      "label": "Build 1.0.3442.0",
+      "title": "GTA V Legacy 1.0.3442.0 (game and Script Hook V dates)",
+      "published_at": "2025-02-19T00:00:00Z",
+      "url": "https://w.atwiki.jp/lspdfrinfo/pages/16.html",
+      "sources": [
+        "https://w.atwiki.jp/lspdfrinfo/pages/16.html"
+      ],
+      "frameworks": [
+        {
+          "id": "scripthookv",
+          "short": "ScriptHookV",
+          "name": "Script Hook V",
+          "status": "Safe",
+          "release_tag": "v3442.0",
+          "release_published_at": "2025-02-20T00:00:00Z",
+          "mentions_patch": true,
+          "first_release_tag": "v3442.0",
+          "first_release_at": "2025-02-20T00:00:00Z",
+          "data_from": "2024-12-13T00:00:00Z",
+          "first_mention_tag": "v3442.0",
+          "first_mention_at": "2025-02-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "version": "1.0.3411.0",
+      "label": "Build 1.0.3411.0",
+      "title": "GTA V Legacy 1.0.3411.0 (game and Script Hook V dates)",
+      "published_at": "2024-12-13T00:00:00Z",
+      "url": "https://w.atwiki.jp/lspdfrinfo/pages/16.html",
+      "sources": [
+        "https://w.atwiki.jp/lspdfrinfo/pages/16.html"
+      ],
+      "frameworks": [
+        {
+          "id": "scripthookv",
+          "short": "ScriptHookV",
+          "name": "Script Hook V",
+          "status": "Safe",
+          "release_tag": "v3411.0",
+          "release_published_at": "2024-12-16T00:00:00Z",
+          "mentions_patch": true,
+          "first_release_tag": "v3411.0",
+          "first_release_at": "2024-12-16T00:00:00Z",
+          "data_from": "2024-12-13T00:00:00Z",
+          "first_mention_tag": "v3411.0",
+          "first_mention_at": "2024-12-16T00:00:00Z"
+        }
+      ]
+    }
+  ],
+  "news": [
+    {
+      "title": "Experience Halloween Thrills All Throughout October in GTA Online",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1845383656393775",
+      "is_patch": false,
+      "published_at": "2026-10-05T15:22:49Z"
+    },
+    {
+      "title": "Compete Across Entrepreneurial Endeavors in the Business Rivalries Event",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1843481262692369",
+      "is_patch": false,
+      "published_at": "2026-09-10T14:12:27Z"
+    },
+    {
+      "title": "Declare Your Allegiance and Determine Who Owns Los Santos in the Brand Wars Event",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840944183786534",
+      "is_patch": false,
+      "published_at": "2026-08-17T16:26:51Z"
+    },
+    {
+      "title": "Plan the Perfect Getaway During the Summer Heist Event",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1839676055888608",
+      "is_patch": false,
+      "published_at": "2026-07-31T15:43:38Z"
+    },
+    {
+      "title": "Apprehend the New Pegassi Ignus Pursuit Law Enforcement Vehicle",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1839041357029759",
+      "is_patch": false,
+      "published_at": "2026-07-24T14:39:02Z"
+    },
+    {
+      "title": "The Kortz Center Heist Now Available in GTA Online",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1838407329254306",
+      "is_patch": false,
+      "published_at": "2026-07-15T14:00:16Z"
+    },
+    {
+      "title": "The Kortz Center Heist, Coming to GTA Online July 14",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1837955055356438",
+      "is_patch": false,
+      "published_at": "2026-07-10T10:51:33Z"
+    },
+    {
+      "title": "Enjoy Star-Spangled GTA Online Bonuses This Independence Day",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1836506165570549",
+      "is_patch": false,
+      "published_at": "2026-07-03T13:44:14Z"
+    },
+    {
+      "title": "Earn Special Rewards in GTA Online with the Fine Art Collector Program",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1835871199315621",
+      "is_patch": false,
+      "published_at": "2026-06-23T13:57:16Z"
+    },
+    {
+      "title": "The Next Big Score",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1835871199312632",
+      "is_patch": false,
+      "published_at": "2026-06-22T10:43:51Z"
+    }
+  ],
+  "last_verified": "2026-10-29",
+  "sources": {
+    "manual": "data/manual/gta-v.json",
+    "patch_sources": [
+      "https://support.rockstargames.com/articles/4vRqEDvjUs9h7nqRUgc8YO/gtav-title-update-1-73-notes-ps5-ps4-xbox-series-x-or-s-xbox-one-pc-enhanced-legacy",
+      "https://api.steamcmd.net/v1/info/271590 (Legacy public build 24129523, updated 2026-07-14T09:01:57Z)",
+      "https://w.atwiki.jp/lspdfrinfo/pages/16.html (Legacy v3889.0 supported by Script Hook V)"
+    ],
+    "history": "https://w.atwiki.jp/lspdfrinfo/pages/16.html (lspdfrinfo wiki: per-build game and Script Hook V release dates, JST; dates only, so times are whole days)"
+  },
+  "edition": "legacy",
+  "hub": "gta-v",
+  "verdict_log": [
+    {
+      "at": "2026-10-30T01:33:16Z",
+      "patch": "Build 1.0.3889.0",
+      "patch_key": "1.0.3889.0",
+      "patch_published_at": "2026-07-14T09:00:00Z",
+      "patch_url": "https://support.rockstargames.com/articles/4vRqEDvjUs9h7nqRUgc8YO/gtav-title-update-1-73-notes-ps5-ps4-xbox-series-x-or-s-xbox-one-pc-enhanced-legacy",
+      "verdict": "Safe",
+      "frameworks": [
+        {
+          "short": "ScriptHookV",
+          "status": "Safe",
+          "release_tag": "v3889.0 / 1158.13"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "game": "gta-v-enhanced",
+  "verified_at": "2026-10-29",
+  "manager": {
+    "name": "OpenRPF (mods folder) + manual ASI/script install",
+    "url": "https://www.gta5-mods.com/tools/openrpf-openiv-asi-for-gta-v-enhanced"
+  },
+  "intro": "Popular Story Mode mods for GTA V Enhanced (GTA5_Enhanced.exe). Legacy mods don't automatically work here: use builds marked Enhanced. Script Hook V comes first, and every mod that needs it waits for a Script Hook V update after each patch. Story Mode only: never launch GTA Online with mods installed.",
+  "mods": [
+    {
+      "id": "scripthookv",
+      "name": "Script Hook V + Native Trainer",
+      "category": "Framework",
+      "summary": "Alexander Blade's script loader. Nearly every script and trainer needs it, and each game patch breaks it until it's updated.",
+      "source": "gta5-mods",
+      "url": "https://www.gta5-mods.com/tools/script-hook-v",
+      "requires": [],
+      "framework_id": "scripthookv",
+      "note": "Copy ScriptHookV.dll and the bundled ASI loader (dinput8.dll) next to GTA5_Enhanced.exe. It closes the game if you go into GTA Online."
+    },
+    {
+      "id": "directstoragefix",
+      "name": "DirectStorageFix",
+      "category": "Fixes",
+      "summary": "Lets scripts write their own config, log and save files on Enhanced again when DirectStorage is on.",
+      "source": "gta5-mods",
+      "url": "https://www.gta5-mods.com/scripts/directstoragefix",
+      "requires": []
+    },
+    {
+      "id": "openrpf",
+      "name": "OpenRPF",
+      "category": "Tools",
+      "summary": "Enhanced's equivalent of OpenIV.asi: loads replacement and add-on files from a separate mods folder.",
+      "source": "gta5-mods",
+      "url": "https://www.gta5-mods.com/tools/openrpf-openiv-asi-for-gta-v-enhanced",
+      "requires": [],
+      "note": "OpenIV itself doesn't support Enhanced. Keep edits in the mods folder so a Steam verify restores the originals."
+    },
+    {
+      "id": "shvdn-enhanced",
+      "name": "Script Hook V .NET Enhanced",
+      "category": "Framework",
+      "summary": "Runs .NET (C#) scripts on Enhanced as well as Legacy. Most C# mods ported to Enhanced need it.",
+      "source": "gta5-mods",
+      "url": "https://www.gta5-mods.com/tools/script-hook-v-net-enhanced",
+      "requires": [
+        "scripthookv"
+      ],
+      "note": "Install Microsoft .NET Framework 4.8 first. It also runs on Legacy, so scripts can target both editions."
+    },
+    {
+      "id": "simple-mods-loader",
+      "name": "Simple Mods Loader",
+      "category": "Tools",
+      "summary": "Loads custom files from a mods folder as loose files or RPFs, and adjusts heap and packfile limits for you.",
+      "source": "gta5-mods",
+      "url": "https://www.gta5-mods.com/tools/simple-mods-loader-enhanced",
+      "requires": []
+    },
+    {
+      "id": "simple-trainer",
+      "name": "Simple Trainer",
+      "category": "Gameplay",
+      "summary": "Trainer with an Enhanced build: spawn vehicles and peds, change weather and time, and teleport.",
+      "source": "gta5-mods",
+      "url": "https://www.gta5-mods.com/scripts/simple-trainer-for-gtav",
+      "requires": [
+        "scripthookv"
+      ],
+      "note": "Enhanced keeps its settings in %APPDATA%\\trainerv\\enhanced, separate from Legacy."
+    },
+    {
+      "id": "menyoo",
+      "name": "Menyoo 2.0",
+      "category": "Gameplay",
+      "summary": "Trainer and map editor with Enhanced support: place objects, edit outfits and build scenes.",
+      "source": "gta5-mods",
+      "url": "https://www.gta5-mods.com/scripts/menyoo-2-0",
+      "requires": [
+        "scripthookv",
+        "directstoragefix",
+        "openrpf"
+      ],
+      "note": "Its page lists OpenRPF's ASI loader and, on Windows 11, DirectStorageFix as requirements."
+    },
+    {
+      "id": "rampage",
+      "name": "Rampage Trainer",
+      "category": "Gameplay",
+      "summary": "Story Mode trainer with many vehicle, weapon, world and player options. Needs the latest Script Hook V.",
+      "source": "gta5-mods",
+      "url": "https://www.gta5-mods.com/scripts/rampage-trainer",
+      "requires": [
+        "scripthookv"
+      ],
+      "note": "On Enhanced, install DirectStorageFix if its settings don't save."
+    },
+    {
+      "id": "packfile-la",
+      "name": "Packfile Limit Adjuster Enhanced",
+      "category": "Fixes",
+      "summary": "Packfile Limit Adjuster rebuilt for Enhanced: fixes crashes from installing a large number of RPF archives.",
+      "source": "gta5-mods",
+      "url": "https://www.gta5-mods.com/scripts/packfile-limit-adjuster-enhanced",
+      "requires": []
+    },
+    {
+      "id": "modkit-la",
+      "name": "Modkit Limit Adjuster Enhanced",
+      "category": "Fixes",
+      "summary": "Raises the vehicle modkit limit (2048 by default) so tuning parts on add-on cars work.",
+      "source": "gta5-mods",
+      "url": "https://www.gta5-mods.com/scripts/modkit-limit-adjuster-enhanced",
+      "requires": []
+    },
+    {
+      "id": "fwbox-decals",
+      "name": "fwBoxStreamer + DecalsPatch Enhanced",
+      "category": "Fixes",
+      "summary": "Raises Enhanced's decal limit (bullet holes, blood, tire marks) so heavy action runs smoother and crashes less.",
+      "source": "gta5-mods",
+      "url": "https://www.gta5-mods.com/scripts/tanuki-s-fwbox-streamer-decals-patch-enhanced",
+      "requires": []
+    },
+    {
+      "id": "story-mode",
+      "name": "Straight To Story Mode",
+      "category": "Quality of life",
+      "summary": "Skips the legal and splash screens and Enhanced's landing page, loading straight into Story Mode.",
+      "source": "gta5-mods",
+      "url": "https://www.gta5-mods.com/scripts/straight-to-story-mode",
+      "requires": []
+    },
+    {
+      "id": "all-interiors",
+      "name": "Enable All Interiors",
+      "category": "Content",
+      "summary": "Opens interiors across the map in Story Mode, replacing older mods such as Open All Interiors.",
+      "source": "gta5-mods",
+      "url": "https://www.gta5-mods.com/scripts/enable-all-interiors-wip",
+      "requires": [
+        "scripthookv"
+      ]
+    }
+  ]
+}

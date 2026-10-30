@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T00:42:11Z",
+  "generated_at": "2026-10-30T01:41:21Z",
   "game": {
     "slug": "fallout-4",
     "name": "Fallout 4",
@@ -10,7 +10,8 @@
       "title": "Fallout 4 Update - August 18th ",
       "published_at": "2026-08-18T16:12:21Z",
       "published_unix": 1787069541,
-      "url": "https://store.steampowered.com/news/app/377160/view/1840944183789236"
+      "url": "https://store.steampowered.com/news/app/377160/view/1840944183789236",
+      "steam_build": "24564252"
     }
   },
   "verdict": "Safe",
@@ -80,6 +81,7 @@
       "published_at": "2026-08-18T16:12:21Z",
       "published_unix": 1787069541,
       "url": "https://store.steampowered.com/news/app/377160/view/1840944183789236",
+      "steam_build": "24564252",
       "frameworks": [
         {
           "id": "f4se",

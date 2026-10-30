@@ -101,6 +101,9 @@ def framework_stats(history: list[dict]) -> list[dict]:
     return out
 
 
+LOG_MIN_DAYS = 3
+
+
 def unsafe_stretches(verdict_log: list[dict], now: datetime | None = None) -> list[dict]:
     """Contiguous runs of unsafe verdicts in the verdict log, with start, end (None if ongoing) and length."""
     now = now or datetime.now(timezone.utc)
@@ -145,6 +148,9 @@ def game_summary(data: dict, now: datetime | None = None) -> dict:
                 unnamed += 1
     runs = unsafe_stretches(data.get("verdict_log") or [], now)
     log_start = min((_dt(e.get("at")) for e in data.get("verdict_log") or [] if _dt(e.get("at"))), default=None)
+    # A log only hours or a day old (a newly added or newly split page) would report "under 1 hour" as the
+    # longest unsafe stretch, which says nothing; wait for LOG_MIN_DAYS of log before quoting it.
+    log_young = bool(log_start) and _days(log_start, now or datetime.now(timezone.utc)) < LOG_MIN_DAYS
     return {
         "patches": len(history),
         "first": dates[0] if dates else None,
@@ -160,8 +166,9 @@ def game_summary(data: dict, now: datetime | None = None) -> dict:
         "unnamed": unnamed,
         "frameworks": framework_stats(history),
         "stretches": runs,
-        "longest_stretch": max(runs, key=lambda r: r["days"]) if runs else None,
+        "longest_stretch": max(runs, key=lambda r: r["days"]) if runs and not log_young else None,
         "log_start": log_start,
+        "log_young": log_young,
     }
 
 

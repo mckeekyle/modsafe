@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T00:42:51Z",
+  "generated_at": "2026-10-30T01:42:16Z",
   "game": {
     "slug": "rimworld",
     "name": "RimWorld",
@@ -16,7 +16,8 @@
         "https://steamcommunity.com/app/294100/discussions/0/572668324079519232/ (moderator-marked answer quoting the developer Discord: 'Version 1.6.4871 is up now on the unstable branch\u2026 Updated translations. Updated creative content rewards.')",
         "https://steamcommunity.com/app/294100/discussions/0/572668858640587805/ ('1.6.4850 patch but my game is 1.6.4871')",
         "https://api.steamcmd.net/v1/info/294100 (public build 23969874, updated 2026-06-30T17:12:35Z)"
-      ]
+      ],
+      "steam_build": "23969874"
     }
   },
   "verdict": "Safe",
@@ -81,6 +82,7 @@
         "https://steamcommunity.com/app/294100/discussions/0/572668858640587805/ ('1.6.4850 patch but my game is 1.6.4871')",
         "https://api.steamcmd.net/v1/info/294100 (public build 23969874, updated 2026-06-30T17:12:35Z)"
       ],
+      "steam_build": "23969874",
       "frameworks": [
         {
           "id": "harmony",

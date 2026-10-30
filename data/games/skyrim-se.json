@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T00:42:08Z",
+  "generated_at": "2026-10-30T01:41:14Z",
   "game": {
     "slug": "skyrim-se",
     "name": "Skyrim Special Edition",
@@ -11,6 +11,7 @@
       "published_at": "2026-08-20T14:55:37Z",
       "published_unix": 1787237737,
       "url": "https://store.steampowered.com/news/app/489830/view/1841579228665884",
+      "steam_build": "24914197",
       "unannounced_update": {
         "version": null,
         "label": "Unannounced update 2026-08-27",
@@ -142,6 +143,7 @@
       "published_at": "2026-08-20T14:55:37Z",
       "published_unix": 1787237737,
       "url": "https://store.steampowered.com/news/app/489830/view/1841579228665884",
+      "steam_build": "24914197",
       "unannounced_update": {
         "version": null,
         "label": "Unannounced update 2026-08-27",

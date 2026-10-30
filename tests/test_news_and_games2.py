@@ -42,7 +42,7 @@ class TestNews(unittest.TestCase):
 
     def test_tagging(self):
         self.assertEqual(news.tag_games("Elden Ring Nightreign gets DLC"), [])
-        self.assertIn("gta-v", news.tag_games("GTA 5 mods are great"))
+        self.assertTrue({"gta-v-legacy", "gta-v-enhanced"} <= set(news.tag_games("GTA 5 mods are great")))
         self.assertIn("baldurs-gate-3", news.tag_games("Baldur's Gate 3 patch"))
 
 

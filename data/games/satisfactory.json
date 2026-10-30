@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T00:43:32Z",
+  "generated_at": "2026-10-30T01:42:59Z",
   "game": {
     "slug": "satisfactory",
     "name": "Satisfactory",
@@ -10,7 +10,8 @@
       "title": "1.2 Update Fixes v1.2.4.1",
       "published_at": "2026-10-12T14:39:03Z",
       "published_unix": 1791815943,
-      "url": "https://store.steampowered.com/news/app/526870/view/1846018067941164"
+      "url": "https://store.steampowered.com/news/app/526870/view/1846018067941164",
+      "steam_build": "25782416"
     }
   },
   "verdict": "Likely safe",
@@ -69,6 +70,7 @@
       "published_at": "2026-10-12T14:39:03Z",
       "published_unix": 1791815943,
       "url": "https://store.steampowered.com/news/app/526870/view/1846018067941164",
+      "steam_build": "25782416",
       "frameworks": [
         {
           "id": "sml",
