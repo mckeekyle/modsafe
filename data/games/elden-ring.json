@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T06:44:56Z",
+  "generated_at": "2026-10-30T12:43:18Z",
   "game": {
     "slug": "elden-ring",
     "name": "Elden Ring",
@@ -35,7 +35,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch 1.17.2; compatibility is unverified \u2014 check the project page. Patch is 9 days old; no breakage signal available.",
+      "reason": "Latest release predates patch 1.17.2; compatibility is unverified \u2014 check the project page. Patch is 10 days old; no breakage signal available.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v2.0.1",
@@ -57,7 +57,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch 1.17.2; compatibility is unverified \u2014 check the project page. No open breakage reports 9 days after the patch.",
+      "reason": "Latest release predates patch 1.17.2; compatibility is unverified \u2014 check the project page. No open breakage reports 10 days after the patch.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v0.13.0",
@@ -619,6 +619,12 @@
   ],
   "news": [
     {
+      "title": "Alexander, Warrior Jar Artisan Keycap has arrived!",
+      "url": "https://store.steampowered.com/news/app/1245620/view/1847920302237841",
+      "published_at": "2026-10-30T09:39:00Z",
+      "is_patch": false
+    },
+    {
       "title": "STARSCOURGE RADAHN JOINS THE ELDEN RING FIGUARTS MINI SERIES",
       "url": "https://store.steampowered.com/news/app/1245620/view/1845383656393031",
       "published_at": "2026-10-05T10:00:24Z",
@@ -671,12 +677,6 @@
       "url": "https://store.steampowered.com/news/app/1245620/view/1818752592134836",
       "published_at": "2025-12-16T07:05:57Z",
       "is_patch": false
-    },
-    {
-      "title": "ELDEN RING - Patch Notes Version 1.16.1",
-      "url": "https://store.steampowered.com/news/app/1245620/view/1808601382443022",
-      "published_at": "2025-08-21T12:09:05Z",
-      "is_patch": true
     }
   ],
   "channels": [],
