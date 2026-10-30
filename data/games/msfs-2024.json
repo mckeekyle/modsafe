@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T12:43:54Z",
+  "generated_at": "2026-10-30T16:58:23Z",
   "game": {
     "slug": "msfs-2024",
     "name": "Microsoft Flight Simulator 2024",
@@ -14,7 +14,7 @@
       "steam_build": "26058316"
     }
   },
-  "verdict": "Just patched, wait",
+  "verdict": "Likely safe",
   "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
   "frameworks": [
     {
@@ -26,9 +26,9 @@
       "repo": "flybywiresim/aircraft",
       "tracked": true,
       "sensitive": true,
-      "status": "Just patched, wait",
+      "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch Sim Update 7.1; compatibility is unverified \u2014 check the project page.",
+      "reason": "Latest release predates patch Sim Update 7.1; compatibility is unverified \u2014 check the project page. No open breakage reports 7 days after the patch.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v2024.1.0",
@@ -48,9 +48,9 @@
       "repo": null,
       "tracked": true,
       "sensitive": true,
-      "status": "Just patched, wait",
+      "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch Sim Update 7.1; compatibility is unverified \u2014 check the project page.",
+      "reason": "Latest release predates patch Sim Update 7.1; compatibility is unverified \u2014 check the project page. Patch is 7 days old; no breakage signal available.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "7.5.9",
@@ -70,17 +70,17 @@
       "repo": "MobiFlight/MobiFlight-Connector",
       "tracked": true,
       "sensitive": true,
-      "status": "Just patched, wait",
-      "base_status": "Unknown / check",
-      "reason": "Latest release predates patch Sim Update 7.1; compatibility is unverified \u2014 check the project page.",
+      "status": "Likely safe",
+      "base_status": "Likely OK",
+      "reason": "Latest release is newer than patch Sim Update 7.1, but notes do not explicitly mention that version.",
       "breakage_reports": [],
       "official": null,
-      "release_tag": "11.3.1",
-      "release_name": "11.3.1 (Hotfix)",
-      "release_published_at": "2026-10-06T10:51:23Z",
-      "release_url": "https://github.com/MobiFlight/MobiFlight-Connector/releases/tag/11.3.1",
+      "release_tag": "11.3.1.3",
+      "release_name": "11.3.1.3",
+      "release_published_at": "2026-10-30T16:29:26Z",
+      "release_url": "https://github.com/MobiFlight/MobiFlight-Connector/releases/tag/11.3.1.3",
       "mentions_patch": false,
-      "newer_than_patch": false,
+      "newer_than_patch": true,
       "mention_releases": []
     },
     {
@@ -140,13 +140,13 @@
           "id": "mobiflight",
           "short": "MobiFlight",
           "name": "MobiFlight Connector (SimConnect/WASM)",
-          "status": "No post-patch release",
-          "release_tag": null,
-          "release_published_at": null,
+          "status": "Likely safe",
+          "release_tag": "11.3.1.3",
+          "release_published_at": "2026-10-30T16:29:26Z",
           "mentions_patch": false,
-          "first_release_tag": null,
-          "first_release_at": null,
-          "data_from": "2026-03-08T20:24:40Z",
+          "first_release_tag": "11.3.1.3",
+          "first_release_at": "2026-10-30T16:29:26Z",
+          "data_from": "2026-03-16T14:50:54Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -192,13 +192,13 @@
           "id": "mobiflight",
           "short": "MobiFlight",
           "name": "MobiFlight Connector (SimConnect/WASM)",
-          "status": "No post-patch release",
-          "release_tag": null,
-          "release_published_at": null,
+          "status": "Likely safe",
+          "release_tag": "11.3.1.3",
+          "release_published_at": "2026-10-30T16:29:26Z",
           "mentions_patch": false,
-          "first_release_tag": null,
-          "first_release_at": null,
-          "data_from": "2026-03-08T20:24:40Z",
+          "first_release_tag": "11.3.1.3",
+          "first_release_at": "2026-10-30T16:29:26Z",
+          "data_from": "2026-03-16T14:50:54Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -250,7 +250,7 @@
           "mentions_patch": false,
           "first_release_tag": "11.2.0.3",
           "first_release_at": "2026-08-19T13:49:44Z",
-          "data_from": "2026-03-08T20:24:40Z",
+          "data_from": "2026-03-16T14:50:54Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -302,7 +302,7 @@
           "mentions_patch": false,
           "first_release_tag": "11.2.0",
           "first_release_at": "2026-07-29T13:25:58Z",
-          "data_from": "2026-03-08T20:24:40Z",
+          "data_from": "2026-03-16T14:50:54Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -354,7 +354,7 @@
           "mentions_patch": false,
           "first_release_tag": "11.1.0",
           "first_release_at": "2026-05-13T06:49:37Z",
-          "data_from": "2026-03-08T20:24:40Z",
+          "data_from": "2026-03-16T14:50:54Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -406,7 +406,7 @@
           "mentions_patch": false,
           "first_release_tag": "11.0.0",
           "first_release_at": "2026-03-16T14:50:54Z",
-          "data_from": "2026-03-08T20:24:40Z",
+          "data_from": "2026-03-16T14:50:54Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -458,7 +458,7 @@
           "mentions_patch": false,
           "first_release_tag": "11.0.0",
           "first_release_at": "2026-03-16T14:50:54Z",
-          "data_from": "2026-03-08T20:24:40Z",
+          "data_from": "2026-03-16T14:50:54Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -510,7 +510,7 @@
           "mentions_patch": true,
           "first_release_tag": "11.0.0",
           "first_release_at": "2026-03-16T14:50:54Z",
-          "data_from": "2026-03-08T20:24:40Z",
+          "data_from": "2026-03-16T14:50:54Z",
           "first_mention_tag": "11.0.0",
           "first_mention_at": "2026-03-16T14:50:54Z"
         }
@@ -656,6 +656,31 @@
           "short": "MobiFlight",
           "status": "Just patched, wait",
           "release_tag": "11.3.1"
+        }
+      ]
+    },
+    {
+      "at": "2026-10-30T16:58:23Z",
+      "patch": "Sim Update 7.1",
+      "patch_key": "7.1",
+      "patch_published_at": "2026-10-23T16:40:37Z",
+      "patch_url": "https://store.steampowered.com/news/app/2537590/view/1847286114037158",
+      "verdict": "Likely safe",
+      "frameworks": [
+        {
+          "short": "FBW A32NX",
+          "status": "Likely safe",
+          "release_tag": "v2024.1.0"
+        },
+        {
+          "short": "FSUIPC7",
+          "status": "Likely safe",
+          "release_tag": "7.5.9"
+        },
+        {
+          "short": "MobiFlight",
+          "status": "Likely safe",
+          "release_tag": "11.3.1.3"
         }
       ]
     }
