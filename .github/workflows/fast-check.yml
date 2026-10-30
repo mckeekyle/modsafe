@@ -1,0 +1,78 @@
+name: Fast patch check
+
+# Every 30 minutes, at :15 and :45, so it never lines up with the 6-hourly full refresh (cron :00, which
+# GitHub usually starts around :35-:45). The probe compares cheap signals (Steam public build, Steam patch
+# news, framework latest releases) with the committed data and exits in seconds when nothing changed.
+# It dispatches update-and-deploy.yml for just the affected games, or for games in "Just patched, wait".
+# Free: the repo is public, so standard GitHub-hosted runner minutes aren't billed (see README).
+on:
+  schedule:
+    - cron: "15,45 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write
+
+concurrency:
+  group: modsafe-fast-check
+  cancel-in-progress: true
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Probe Steam builds and framework releases
+        id: probe
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 tools/fast_check.py probe
+
+      # A change that the full refresh doesn't turn into a commit (e.g. a source the probe reads differently)
+      # must not re-dispatch every 30 minutes: remember each change signature once.
+      - name: Seen this change before?
+        id: seen
+        if: steps.probe.outputs.sig != ''
+        uses: actions/cache/restore@v4
+        with:
+          path: .fastcheck-seen
+          key: fastcheck-${{ steps.probe.outputs.sig }}
+          lookup-only: true
+
+      - name: Dispatch fast refresh
+        id: dispatch
+        if: steps.probe.outputs.games != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CHANGED: ${{ steps.probe.outputs.changed }}
+          WAITING: ${{ steps.probe.outputs.waiting }}
+          SEEN: ${{ steps.seen.outputs.cache-hit }}
+          REASON: ${{ steps.probe.outputs.reason }}
+        run: |
+          games="$WAITING"
+          if [ -n "$CHANGED" ] && [ "$SEEN" != "true" ]; then games="$CHANGED $WAITING"; fi
+          games=$(echo $games | tr ' ' '\n' | sort -u | tr '\n' ' ' | sed 's/ *$//')
+          if [ -z "$games" ]; then echo "Change already handled; nothing to do."; exit 0; fi
+          busy=$(gh run list --workflow update-and-deploy.yml --limit 5 --json status \
+                 --jq '[.[] | select(.status != "completed")] | length')
+          if [ "$busy" != "0" ]; then
+            echo "update-and-deploy is already queued or running; it (or the next check) will pick this up."
+            exit 0
+          fi
+          echo "Dispatching update-and-deploy for: $games"
+          gh workflow run update-and-deploy.yml --ref main -f games="$games" -f reason="$REASON"
+          echo "dispatched=1" >> "$GITHUB_OUTPUT"
+
+      - name: Remember change signature
+        if: steps.probe.outputs.sig != '' && steps.seen.outputs.cache-hit != 'true' && steps.dispatch.outputs.dispatched == '1'
+        run: mkdir -p .fastcheck-seen && echo "${{ steps.probe.outputs.sig }}" > .fastcheck-seen/sig
+
+      - name: Save change signature
+        if: steps.probe.outputs.sig != '' && steps.seen.outputs.cache-hit != 'true' && steps.dispatch.outputs.dispatched == '1'
+        uses: actions/cache/save@v4
+        with:
+          path: .fastcheck-seen
+          key: fastcheck-${{ steps.probe.outputs.sig }}

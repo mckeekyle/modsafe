@@ -4,13 +4,23 @@ on:
   schedule:
     - cron: "0 */6 * * *"
   workflow_dispatch:
+    inputs:
+      games:
+        description: "Space-separated slugs for a fast patch-day refresh (empty = full refresh)"
+        required: false
+        default: ""
+      reason:
+        description: "Why the fast check dispatched this run (log only)"
+        required: false
+        default: ""
 
 permissions:
   contents: write
 
+# Never cancel a run that is already pushing; the fast check also skips dispatching while one is queued/running.
 concurrency:
   group: modsafe-update
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   update:
@@ -31,12 +41,18 @@ jobs:
       - name: Fetch status from Steam + GitHub
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: ./update
+          GAMES: ${{ inputs.games }}
+          REASON: ${{ inputs.reason }}
+        run: |
+          if [ -n "$GAMES" ]; then echo "Fast patch-day refresh: $REASON"; fi
+          # $GAMES is intentionally unquoted: one argument per slug (empty = every game).
+          ./update $GAMES
 
       # Mod lists show "Last updated on its download page"; refresh those dates
       # from the Nexus/Modrinth/Thunderstore APIs. Non-fatal: a flaky API must
       # not block the status refresh.
       - name: Refresh mod list dates
+        if: inputs.games == ''
         continue-on-error: true
         run: python3 tools/verify_mods.py --write
 
@@ -47,10 +63,18 @@ jobs:
 
       - name: Commit data/games/*.json (Cloudflare Pages rebuilds on push)
         id: commit
+        env:
+          GAMES: ${{ inputs.games }}
         run: |
           echo "base=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$GAMES" ] && ! python3 tools/fast_check.py meaningful; then
+            # Fast mode: only timestamps moved. Don't commit (each push costs a Cloudflare Pages build).
+            git checkout -- data
+            echo "No user-visible changes."
+            exit 0
+          fi
           git add data/games data/news.json data/mods
           if git diff --staged --quiet; then
             echo "No status changes."
@@ -64,6 +88,7 @@ jobs:
       # repository secret CLOUDFLARE_PAGES_DEPLOY_HOOK to force a rebuild even
       # when status.json is unchanged.
       - name: Ping Cloudflare Deploy Hook
+        if: inputs.games == '' || steps.commit.outputs.pushed == '1'
         env:
           HOOK: ${{ secrets.CLOUDFLARE_PAGES_DEPLOY_HOOK }}
         run: |
