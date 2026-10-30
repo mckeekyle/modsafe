@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T12:44:35Z",
+  "generated_at": "2026-10-30T18:40:47Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,217 @@
     }
   ],
   "items": [
+    {
+      "title": "Romero Games has a new publisher for the game Xbox abandoned, but its 110-person team is now just 16 devs: 'I needed to basically design a new game that could use as much of that stuff as possible'",
+      "url": "https://www.pcgamer.com/games/fps/romero-games-has-a-new-publisher-for-the-game-xbox-abandoned-but-its-110-person-team-is-now-just-16-devs-i-needed-to-basically-design-a-new-game-that-could-use-as-much-of-that-stuff-as-possible/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-30T18:33:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Wooshy wuxia actioner Phantom Blade Zero is sharp enough on the Steam Machine, if blunted on the Steam Deck",
+      "url": "https://www.rockpapershotgun.com/phantom-blade-zero-steam-machine-steam-deck",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-30T17:45:52Z",
+      "games": [
+        "steam-deck"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Dark Souls 2 and Dark Souls 3's online servers are temporarily going dark, FromSoftware announces",
+      "url": "https://www.eurogamer.net/dark-souls-servers-temporarily-shutting-down-fromsoftware",
+      "source": "Eurogamer",
+      "published_at": "2026-10-30T17:45:23Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "How to get the True Ending in Phantom Blade Zero",
+      "url": "https://www.pcgamer.com/games/action/phantom-blade-zero-endings-true/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-30T17:45:22Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "A Daedalic adventure classic is free on GOG",
+      "url": "https://www.pcgamer.com/games/adventure/a-daedalic-adventure-classic-is-free-on-gog/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-30T17:42:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "This brutal Fallout 4 horror mod turns the Commonwealth into Silent Hill",
+      "url": "https://www.pcgamer.com/games/fallout/this-brutal-fallout-4-horror-mod-turns-the-commonwealth-into-silent-hill/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-30T17:38:41Z",
+      "games": [
+        "fallout-4"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "'We act as if Halloween is ours': The best way to spend spooky season is within The Outlast Trials' Sinyala Facility",
+      "url": "https://www.pcgamer.com/games/horror/we-act-as-if-halloween-is-ours-the-best-way-to-spend-spooky-season-is-within-the-outlast-trials-sinyala-facility/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-30T17:21:12Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Edifier G5 Max wireless gaming headset review",
+      "url": "https://www.pcgamer.com/hardware/gaming-headsets/edifier-g5-max-review/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-30T17:06:25Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Sam Altman argues that it's bad you want DRAM in your computer and not a data center, actually",
+      "url": "https://www.pcgamer.com/software/ai/sam-altman-argues-that-its-bad-you-want-dram-in-your-computer-and-not-a-data-center-actually/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-30T16:45:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "EA reportedly canned BioWare and Mass Effect 5 to make a new Star Wars: Battlefront instead",
+      "url": "https://www.pcgamer.com/games/mass-effect/ea-reportedly-canned-bioware-and-mass-effect-5-to-make-a-new-star-wars-battlefront-instead/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-30T16:43:23Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "EA execs choosing Star Wars Battlefront 3 over Mass Effect 5 was the main factor in BioWare's demise, according to report",
+      "url": "https://www.rockpapershotgun.com/ea-execs-choosing-star-wars-battlefront-3-over-mass-effect-5-was-the-main-factor-in-biowares-demise-according-to-report",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-30T16:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Splendid Junji Ito-inspired RPG World of Horror is now 20% more horrible, thanks to a free PC update with extra gods, locations, and wounds",
+      "url": "https://www.rockpapershotgun.com/splendid-junji-ito-inspired-rpg-world-of-horror-is-now-20-more-horrible-thanks-to-a-free-pc-update-with-extra-gods-locations-and-wounds",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-30T15:29:54Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "GTA 6's souped-up Red Dead Redemption 2-style morality system will scale from 'Professional' to 'Irredeemable' so players can decide what kind of criminal they want to be",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6s-souped-up-red-dead-redemption-2-style-morality-system-will-scale-from-professional-to-irredeemable-so-players-can-decide-what-kind-of-criminal-they-want-to-be/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-30T15:23:59Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Screw Grand Theft Auto 6's supercars, I'm here for Leonida's robust public transportation system",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/screw-grand-theft-auto-6s-supercars-im-here-for-leonidas-robust-public-transportation-system/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-30T15:22:01Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Real-world disaster footage in Modern Warfare 4 opening cinematic will be removed following complaints from victims' families",
+      "url": "https://www.pcgamer.com/games/fps/real-world-disaster-footage-in-modern-warfare-4-opening-cinematic-will-be-removed-following-complaints-from-victims-families/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-30T15:20:25Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "8-bit horror Tenebris Somnia mixes weird live-action horror with a retro 2D adventure to impressive and unsettling effect",
+      "url": "https://www.eurogamer.net/tenebris-somnia-horror-game-fmv-live-action-faith",
+      "source": "Eurogamer",
+      "published_at": "2026-10-30T15:15:54Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Crimson Desert Enhanced Edition gets a surprise demo on PlayStation and Xbox, lets you play for 5 hours and carry over your save data",
+      "url": "https://www.eurogamer.net/crimson-desert-free-demo-xbox-playstation",
+      "source": "Eurogamer",
+      "published_at": "2026-10-30T14:58:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "EA reportedly closed BioWare because it was forced to choose between Mass Effect 5 and Star Wars Battlefront 3",
+      "url": "https://www.eurogamer.net/ea-closed-bioware-because-star-wars-battlefront-3",
+      "source": "Eurogamer",
+      "published_at": "2026-10-30T14:54:16Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Forza director, who'd been with Turn 10 for 27 years leaves Microsoft, following studios merger with Playground Games",
+      "url": "https://www.eurogamer.net/director-leaves-forza-playground-games-merge-microsoft",
+      "source": "Eurogamer",
+      "published_at": "2026-10-30T14:16:41Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Intel giving us a reason to be excited for Nova Lake: 'We've had a bit of a hole in our portfolio for high-end desktop, Nova Lake filled in that gap'",
+      "url": "https://www.pcgamer.com/hardware/processors/intel-giving-us-a-reason-to-be-excited-for-nova-lake-weve-had-a-bit-of-a-hole-in-our-portfolio-for-high-end-desktop-nova-lake-filled-in-that-gap/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-30T14:12:35Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "All the RPS Supporter rewards for October 2026: Hangout game angst, muddy RPGs, and one utterly useless butler",
+      "url": "https://www.rockpapershotgun.com/all-the-rps-supporter-rewards-for-october-2026-hangout-game-angst-muddy-rpgs-and-one-utterly-useless-butler",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-30T14:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Rockstar developer union could end up over 1,600 workers strong and encompass nearly all UK staff below senior management, IWGB claim",
+      "url": "https://www.rockpapershotgun.com/rockstar-developer-union-could-end-up-over-1600-workers-strong-and-encompass-nearly-all-uk-staff-below-senior-management-iwgb-claim",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-30T13:30:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Helldivers 2 boss can \"absolutely see\" making a game parody of generative AI, but it would need to be \"quirky\" rather than \"doom-laden\"",
+      "url": "https://www.rockpapershotgun.com/helldivers-2-boss-can-absolutely-see-making-a-game-parody-of-generative-ai-but-it-would-need-to-be-quirky-rather-than-doom-laden",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-30T12:58:41Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Intel shifts Panther Lake capacity to data center chips while the memory crisis wreaks havoc on PC market; still sold out of budget Wildcat Lake chips",
       "url": "https://www.pcgamer.com/hardware/processors/intel-shifts-panther-lake-capacity-to-data-center-chips-while-the-memory-crisis-wreaks-havoc-on-pc-market-still-sold-out-of-budget-wildcat-lake-chips/",
@@ -356,213 +567,6 @@
       "url": "https://www.rockpapershotgun.com/atmosfar-is-a-giddy-aerial-exploration-game-after-the-heart-of-no-mans-sky-but-im-already-trying-to-escape-it",
       "source": "Rock Paper Shotgun",
       "published_at": "2026-10-29T16:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "YouTuber buys and turns 32 GB of laptop DDR5 into desktop RAM for just $175",
-      "url": "https://www.pcgamer.com/hardware/memory/youtuber-buys-and-turns-32-gb-of-laptop-ddr5-into-desktop-ram-for-just-usd175/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-29T15:55:22Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "I'm calling it: GTA 6 is officially an immersive sim, based on what you can do with NPCs",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/im-calling-it-gta-6-is-officially-an-immersive-sim-based-on-what-you-can-do-with-npcs/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-29T15:21:58Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Where to find the Hokubo region Treasure Hunt in Forza Horizon 6",
-      "url": "https://www.pcgamer.com/games/racing/forza-horizon-6-treasure-hunt-hokubo-region-location/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-29T15:18:30Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "EA's sale to Saudi-led consortium was \"final nail in the coffin\" for BioWare, says studio co-founder",
-      "url": "https://www.eurogamer.net/bioware-co-founder-greg-zeschuk-closure-interview",
-      "source": "Eurogamer",
-      "published_at": "2026-10-29T15:08:17Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Havn HS 360 review",
-      "url": "https://www.pcgamer.com/hardware/pc-cases/havn-hs-360-review/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-29T15:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "After a month of voting, PC Gamer readers have picked the best RTS unit of all time",
-      "url": "https://www.pcgamer.com/games/rts/after-a-month-of-voting-pc-gamer-readers-have-picked-the-best-rts-unit-of-all-time/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-29T14:16:19Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "FromSoft's Switch 2 exclusive, The Duskbloods, has been delayed into 2027",
-      "url": "https://www.eurogamer.net/fromsofts-switch-2-exclusive-the-duskbloods-has-been-delayed-into-2027",
-      "source": "Eurogamer",
-      "published_at": "2026-10-29T14:14:25Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "World of Warcraft: Forever's shiny lighting and water changes will be coming to retail: 'I don't know when, but I know they're talking about doing it'",
-      "url": "https://www.pcgamer.com/games/world-of-warcraft/world-of-warcraft-forevers-shiny-lighting-and-water-changes-will-be-coming-to-retail-i-dont-know-when-but-i-know-theyre-talking-about-doing-it/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-29T14:09:56Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "\"A cold dead place that's slowly decaying\" - EA employees reveal a culture of secrecy and terrible morale following layoffs",
-      "url": "https://www.eurogamer.net/inside-ea-layoffs-report-bioware-morale-secrecy",
-      "source": "Eurogamer",
-      "published_at": "2026-10-29T14:08:30Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "$60 million AI rack cluster listed on eBay, with 1.4 petabytes of memory and almost 10,000 Nvidia AI GPUs",
-      "url": "https://www.pcgamer.com/software/ai/usd60-million-ai-rack-cluster-listed-on-ebay-with-1-4-petabytes-of-memory-and-almost-10-000-nvidia-ai-gpus/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-29T14:01:48Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Call of Duty Modern Warfare 4 review",
-      "url": "https://www.eurogamer.net/call-of-duty-modern-warfare-4-review",
-      "source": "Eurogamer",
-      "published_at": "2026-10-29T14:01:33Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Mouthwashing is finally on consoles and Xbox Game Pass, and it's a Halloween must for horror fans",
-      "url": "https://www.eurogamer.net/mouthwashing-game-pass-ps5-ps4-switch-xbox-now-playing",
-      "source": "Eurogamer",
-      "published_at": "2026-10-29T13:40:45Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "If Kane Parsons does make a Backrooms sequel then it'll be to 'poke at' aspects of the first film that 'didn't feel like it accurately spoke to the cultural core of Backrooms'",
-      "url": "https://www.pcgamer.com/movies-tv/if-kane-parsons-does-make-a-backrooms-sequel-then-itll-be-to-poke-at-aspects-of-the-first-film-that-didnt-feel-like-it-accurately-spoke-to-the-cultural-core-of-backrooms/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-29T13:35:07Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "With a cracking new tactical feature and dedicated UI \"strike team\", Football Manager 27 is a huge step back towards FM's best form",
-      "url": "https://www.eurogamer.net/football-manager-27-preview-interview-tactical-effectiveness-ui-strike-team",
-      "source": "Eurogamer",
-      "published_at": "2026-10-29T13:20:59Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Can the SideWinder Game Pad, Microsoft's first game controller, work on modern PCs? I bought three of them to find out",
-      "url": "https://www.rockpapershotgun.com/can-the-sidewinder-game-pad-microsofts-first-game-controller-work-on-modern-pcs-i-bought-three-of-them-to-find-out",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-29T13:13:35Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Over $12 million worth of AI chips seized by Malaysian authorities after suspected smuggling syndicate tries to sneak servers through customs under false pretenses",
-      "url": "https://www.pcgamer.com/software/ai/over-usd12-million-worth-of-ai-chips-seized-by-malaysian-authorities-after-suspected-smuggling-syndicate-tries-to-sneak-servers-through-customs-under-false-pretenses/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-29T12:49:29Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Call of Duty: Modern Warfare 4 intro cinematic is \"not intended to reference or trivialise\" real-world South Korean crowd crush, Activision say amid reported backlash",
-      "url": "https://www.rockpapershotgun.com/call-of-duty-modern-warfare-4-intro-cinematic-is-not-intended-to-reference-or-trivialise-real-world-south-korean-crowd-crush-activision-say-amid-reported-backlash",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-29T12:34:09Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "World of Warcraft players angry after Blizzard seems to contradict housing cosmetics policy with Halloween additions",
-      "url": "https://www.eurogamer.net/world-of-warcraft-halloween-housing-cosmetics-controversy-kul-tiran",
-      "source": "Eurogamer",
-      "published_at": "2026-10-29T11:59:54Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "'It\u2019s so much easier to steal this than to rob a bank': $100,000,000+ worth of AI data center freight reportedly stolen since June",
-      "url": "https://www.pcgamer.com/software/ai/its-so-much-easier-to-steal-this-than-to-rob-a-bank-usd100-000-000-worth-of-ai-data-center-freight-reportedly-stolen-since-june/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-29T11:53:40Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "'Morale has been terrible' at EA, workers claim, saying that AI mandates and mismanagement have left the company 'a cold dead place that's slowly decaying as leadership pilfers every last cent'",
-      "url": "https://www.pcgamer.com/gaming-industry/morale-has-been-terrible-at-ea-workers-claim-saying-that-ai-mandates-and-mismanagement-have-left-the-company-a-cold-dead-place-thats-slowly-decaying-as-leadership-pilfers-every-last-cent/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-29T11:47:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Phantom Blade Zero dev says don't get the latest Nvidia drivers",
-      "url": "https://www.pcgamer.com/hardware/phantom-blade-zero-dev-says-dont-get-the-latest-nvidia-drivers/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-29T11:36:07Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "COD Modern Warfare 4's controversial Possum ability nerfed to stop it being used \"as a combat mechanic instead of a survival mechanic\"",
-      "url": "https://www.eurogamer.net/call-of-duty-modern-warfare-4-dmz-possum-nerf",
-      "source": "Eurogamer",
-      "published_at": "2026-10-29T11:33:05Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Xbox leader Asha Sharma says there's \"more demand than consoles available\" as Xbox hardware sales dip by 14%",
-      "url": "https://www.eurogamer.net/xbox-financials-sales-asha-sharma-microsoft",
-      "source": "Eurogamer",
-      "published_at": "2026-10-29T11:21:44Z",
       "games": [],
       "kind": "news",
       "highlight": false
