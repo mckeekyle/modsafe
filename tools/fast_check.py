@@ -151,19 +151,25 @@ def probe(games: list[dict], fetch=None, load=load_committed, workers: int = 8) 
         d = committed[g["slug"]]
         if d and d.get("verdict") == V_WAIT:
             waiting.append(g["slug"])
-    run = set(changed) | set(waiting)
-    # GTA V: the editions and the combined compat record share one manual file, so refresh them together.
-    for g in games:
-        group = {g["slug"], *(g.get("editions") or [])}
-        if g.get("editions") and run & group:
-            run |= {s for s in group if s in committed}
-    run = sorted(run)
+    def expand(slugs) -> list[str]:
+        # GTA V: the editions and the combined compat record share one manual file, so refresh them together.
+        out = set(slugs)
+        for g in games:
+            group = {g["slug"], *(g.get("editions") or [])}
+            if g.get("editions") and out & group:
+                out |= {s for s in group if s in committed}
+        return sorted(out)
+
+    run = expand(set(changed) | set(waiting))
     # Signature of what changed (not of waiting games): the workflow dispatches a given change at most once.
     sig = hashlib.sha256(json.dumps(changed, sort_keys=True).encode()).hexdigest()[:16] if changed else ""
     reason = "; ".join(f"{s}: {', '.join(r)}" for s, r in sorted(changed.items()))
     if waiting:
         reason = (reason + "; " if reason else "") + "waiting: " + " ".join(waiting)
-    return {"games": run, "changed": changed, "waiting": waiting, "sig": sig, "reason": reason[:900]}
+    # changed_run / waiting_run are the group-expanded sets the workflow dispatches (it re-combines them after
+    # deciding whether this change signature was already handled).
+    return {"games": run, "changed": changed, "waiting": waiting, "changed_run": expand(changed),
+            "waiting_run": expand(waiting), "sig": sig, "reason": reason[:900]}
 
 
 # --- meaningful diff -------------------------------------------------------------------------------------------
@@ -214,8 +220,8 @@ def write_outputs(res: dict) -> None:
         return
     with open(gh, "a", encoding="utf-8") as f:
         f.write(f"games={' '.join(res['games'])}\n")
-        f.write(f"changed={' '.join(sorted(res['changed']))}\n")
-        f.write(f"waiting={' '.join(res['waiting'])}\n")
+        f.write(f"changed={' '.join(res['changed_run'])}\n")
+        f.write(f"waiting={' '.join(res['waiting_run'])}\n")
         f.write(f"sig={res['sig']}\n")
         f.write(f"reason={res['reason'].replace(chr(10), ' ')}\n")
 

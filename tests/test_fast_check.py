@@ -180,3 +180,19 @@ class TestHubGrouping(unittest.TestCase):
             fast_check.probe_game = orig
         self.assertEqual(res["games"], ["a", "a-enhanced", "a-legacy"])
         self.assertEqual(list(res["changed"]), ["a-legacy"])
+        self.assertEqual(res["changed_run"], ["a", "a-enhanced", "a-legacy"])
+        self.assertEqual(res["waiting_run"], [])
+
+    def test_waiting_edition_dispatches_whole_group(self):
+        import fast_check
+        games = [{"slug": "a-legacy"}, {"slug": "a-enhanced"}, {"slug": "a", "editions": ["a-legacy", "a-enhanced"]}, {"slug": "b"}]
+        orig = fast_check.probe_game
+        try:
+            fast_check.probe_game = lambda g, c, f: []
+            res = fast_check.probe(games, fetch=object(),
+                                   load=lambda s: {"verdict": "Just patched, wait" if s == "a-enhanced" else "Safe"})
+        finally:
+            fast_check.probe_game = orig
+        self.assertEqual(res["waiting"], ["a-enhanced"])
+        self.assertEqual(res["waiting_run"], ["a", "a-enhanced", "a-legacy"])
+        self.assertEqual(res["sig"], "")
