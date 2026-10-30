@@ -1502,7 +1502,7 @@ AGO_JS = """<script>
 
 FILTER_JS = """<script>
 (function(){var q=document.getElementById('gq'),st=document.getElementById('gs'),ge=document.getElementById('gg'),cards=[].slice.call(document.querySelectorAll('.game-card')),cnt=document.getElementById('gcount');
-function f(){var t=(q.value||'').toLowerCase().trim(),s=st.value,g=ge.value,n=0;cards.forEach(function(c){var ok=(!t||c.dataset.name.indexOf(t)>-1)&&(!s||c.dataset.status===s)&&(!g||c.dataset.genre===g);c.hidden=!ok;if(ok)n++;});cnt.textContent=n+' of '+cards.length+' games';}
+function f(){var t=(q.value||'').toLowerCase().trim(),s=st.value,g=ge.value,n=0;cards.forEach(function(c){var ok=(!t||c.dataset.name.indexOf(t)>-1)&&(!s||c.dataset.status===s)&&(!g||c.dataset.genre===g);c.hidden=!ok;if(ok)n++;});cnt.textContent=n+' of '+cards.length+' pages';}
 [q,st,ge].forEach(function(e){e.addEventListener('input',f);});f();
 document.addEventListener('keydown',function(e){var t=e.target.tagName;if(e.key==='/'&&!/INPUT|SELECT|TEXTAREA/.test(t)&&!e.ctrlKey&&!e.metaKey){e.preventDefault();q.focus();}if(e.key==='Escape'&&e.target===q){q.value='';f();q.blur();}});})();
 </script>""" + AGO_JS
@@ -1584,7 +1584,7 @@ def build_home(games_data: list[tuple[dict, dict]]) -> str:
 <p class="lede">A new update drops, and script extenders and mod loaders break first. ModSafe watches every game's core frameworks so you know whether to hit update or hold the line.</p>
 <div class="legend"><span class="badge ok">{icon("Safe")}Safe</span><span class="badge likely">{icon("Likely safe")}Likely safe</span><span class="badge wait">{icon("Just patched, wait")}Just patched, wait</span><span class="badge broken">{icon("Breakage reported")}Breakage reported</span></div>
 <div class="hero-actions"><a class="btn" href="#games">🎮 Pick your game</a> <a class="btn ghost" href="/faq/">❓ How it works</a></div>
-<div class="stats"><div><strong>{n_games}</strong>games{f" + {n_plat} platform" if n_plat else ""}</div><div><strong>{n_fw}</strong>frameworks auto-tracked</div><div><strong>{n_ok}/{len(games_data)}</strong>safe or likely safe now</div></div>
+<div class="stats"><div><strong>{n_games}</strong>games{f" + {n_plat} platform" if n_plat else ""}</div><div><strong>{n_fw}</strong>frameworks auto-tracked</div><div><strong>{n_ok}/{len(games_data)}</strong>status pages safe or likely safe now</div></div>
 </section>
 <div class="sec-head" id="games"><h2>Choose your game</h2><a href="/games/">All games →</a></div>
 <p class="muted">Every game has its own page with the verdict, each framework, patch history, news and FAQ. Tap a card.</p>
@@ -1772,7 +1772,7 @@ def build_patches_page(games_data, now: datetime | None = None) -> str:
                    f'{esc(patches_mod.fmt_utc(newest["at"]))}.') if newest else ""
     body = f"""<p class="crumbs"><a href="/">Home</a> › Patches</p>
 <section class="home-hero pt-hero" style="--hero:url('{busted(game_img(hero_slug, "hero"))}')">
-<p class="eyebrow">Patch radar · all {len(games_data)} games</p>
+<p class="eyebrow">Patch radar · every tracked game</p>
 <h1>Every patch. <em>Every game.</em></h1>
 <p class="lede">The newest game patches across everything ModSafe tracks, with the verdict for your mods. {latest_line}</p>
 <div class="stats"><div><strong>{c['7d']}</strong>patches in 7 days</div><div><strong>{c['30d']}</strong>patches in 30 days</div><div><strong>{len(holding)}</strong>games on hold now</div></div>
