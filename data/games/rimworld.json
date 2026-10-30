@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T01:42:16Z",
+  "generated_at": "2026-10-30T06:45:12Z",
   "game": {
     "slug": "rimworld",
     "name": "RimWorld",
@@ -94,7 +94,7 @@
           "mentions_patch": false,
           "first_release_tag": "v2.4.3",
           "first_release_at": "2026-10-11T15:38:46Z",
-          "data_from": "2020-04-20T20:13:02Z",
+          "data_from": "2020-05-10T09:13:41Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -132,7 +132,7 @@
           "mentions_patch": false,
           "first_release_tag": "v2.4.3",
           "first_release_at": "2026-10-11T15:38:46Z",
-          "data_from": "2020-04-20T20:13:02Z",
+          "data_from": "2020-05-10T09:13:41Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -170,7 +170,7 @@
           "mentions_patch": false,
           "first_release_tag": "v2.4.2.0",
           "first_release_at": "2025-11-13T00:28:38Z",
-          "data_from": "2020-04-20T20:13:02Z",
+          "data_from": "2020-05-10T09:13:41Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -208,7 +208,7 @@
           "mentions_patch": false,
           "first_release_tag": "v2.4.2.0",
           "first_release_at": "2025-11-13T00:28:38Z",
-          "data_from": "2020-04-20T20:13:02Z",
+          "data_from": "2020-05-10T09:13:41Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -246,7 +246,7 @@
           "mentions_patch": false,
           "first_release_tag": "v2.4.0.0",
           "first_release_at": "2025-08-17T20:53:16Z",
-          "data_from": "2020-04-20T20:13:02Z",
+          "data_from": "2020-05-10T09:13:41Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -284,7 +284,7 @@
           "mentions_patch": false,
           "first_release_tag": "v2.4.0.0",
           "first_release_at": "2025-08-17T20:53:16Z",
-          "data_from": "2020-04-20T20:13:02Z",
+          "data_from": "2020-05-10T09:13:41Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -322,7 +322,7 @@
           "mentions_patch": false,
           "first_release_tag": "v2.4.0.0",
           "first_release_at": "2025-08-17T20:53:16Z",
-          "data_from": "2020-04-20T20:13:02Z",
+          "data_from": "2020-05-10T09:13:41Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -360,7 +360,7 @@
           "mentions_patch": false,
           "first_release_tag": "v2.3.4.0",
           "first_release_at": "2025-02-05T22:37:42Z",
-          "data_from": "2020-04-20T20:13:02Z",
+          "data_from": "2020-05-10T09:13:41Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -398,7 +398,7 @@
           "mentions_patch": false,
           "first_release_tag": "v2.3.0.0",
           "first_release_at": "2024-02-26T09:36:33Z",
-          "data_from": "2020-04-20T20:13:02Z",
+          "data_from": "2020-05-10T09:13:41Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -436,7 +436,7 @@
           "mentions_patch": false,
           "first_release_tag": "v2.3.0.0",
           "first_release_at": "2024-02-26T09:36:33Z",
-          "data_from": "2020-04-20T20:13:02Z",
+          "data_from": "2020-05-10T09:13:41Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -474,7 +474,7 @@
           "mentions_patch": false,
           "first_release_tag": "v2.3.0.0",
           "first_release_at": "2024-02-26T09:36:33Z",
-          "data_from": "2020-04-20T20:13:02Z",
+          "data_from": "2020-05-10T09:13:41Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -512,7 +512,7 @@
           "mentions_patch": false,
           "first_release_tag": "v2.3.0.0",
           "first_release_at": "2024-02-26T09:36:33Z",
-          "data_from": "2020-04-20T20:13:02Z",
+          "data_from": "2020-05-10T09:13:41Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -550,7 +550,7 @@
           "mentions_patch": false,
           "first_release_tag": "v2.3.0.0",
           "first_release_at": "2024-02-26T09:36:33Z",
-          "data_from": "2020-04-20T20:13:02Z",
+          "data_from": "2020-05-10T09:13:41Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
