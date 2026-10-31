@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T00:48:41Z",
+  "generated_at": "2026-10-31T06:42:00Z",
   "game": {
     "slug": "lethal-company",
     "name": "Lethal Company",
@@ -56,7 +56,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch v81; compatibility is unverified \u2014 check the project page. No open breakage reports 196 days after the patch.",
+      "reason": "Latest release predates patch v81; compatibility is unverified \u2014 check the project page. No open breakage reports 197 days after the patch.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v1.2.0",

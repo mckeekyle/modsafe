@@ -16,7 +16,8 @@
       "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3692202776",
       "requires": [],
       "framework_id": "cmf",
-      "note": "Its author says to load it first in your playset."
+      "note": "Its author says to load it first in your playset.",
+      "last_updated": "2026-10-03"
     },
     {
       "id": "glorp-ui",
@@ -27,7 +28,8 @@
       "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3601047146",
       "requires": [],
       "framework_id": "glorp-ui",
-      "note": "Integrates with CMF's mod menu. Mods placed after it in the playset override its changes."
+      "note": "Integrates with CMF's mod menu. Mods placed after it in the playset override its changes.",
+      "last_updated": "2026-10-30"
     },
     {
       "id": "cheat-menu-pro",
@@ -37,7 +39,8 @@
       "source": "workshop",
       "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3600272327",
       "requires": [],
-      "framework_id": "cheat-menu-pro"
+      "framework_id": "cheat-menu-pro",
+      "last_updated": "2026-10-30"
     },
     {
       "id": "better-road-builder",
@@ -48,7 +51,8 @@
       "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3605677866",
       "requires": [],
       "framework_id": "better-road-builder",
-      "note": "Its author lists it as achievement compatible and save safe."
+      "note": "Its author lists it as achievement compatible and save safe.",
+      "last_updated": "2026-10-28"
     },
     {
       "id": "construction-manager",
@@ -57,9 +61,12 @@
       "summary": "Automates construction: auto-expand buildings and RGOs, auto-upgrade, auto-build and auto-food.",
       "source": "workshop",
       "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3736668860",
-      "requires": ["cmf"],
+      "requires": [
+        "cmf"
+      ],
       "framework_id": "construction-manager",
-      "note": "Lists Community Mod Framework as a required item on the Workshop."
+      "note": "Lists Community Mod Framework as a required item on the Workshop.",
+      "last_updated": "2026-10-28"
     },
     {
       "id": "thick-borders",
@@ -70,7 +77,8 @@
       "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3602694948",
       "requires": [],
       "framework_id": "thick-borders",
-      "note": "Its author lists it as Ironman and achievement compatible."
+      "note": "Its author lists it as Ironman and achievement compatible.",
+      "last_updated": "2026-10-29"
     },
     {
       "id": "free-console-access",
@@ -81,7 +89,8 @@
       "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3600131257",
       "requires": [],
       "framework_id": "free-console-access",
-      "note": "Its author says to put it at the bottom of your playset, after UI mods such as Glorp UI."
+      "note": "Its author says to put it at the bottom of your playset, after UI mods such as Glorp UI.",
+      "last_updated": "2026-10-29"
     },
     {
       "id": "national-destinies",
@@ -91,7 +100,8 @@
       "source": "workshop",
       "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3668193813",
       "requires": [],
-      "framework_id": "national-destinies"
+      "framework_id": "national-destinies",
+      "last_updated": "2026-10-28"
     },
     {
       "id": "basileia-romaion",
@@ -102,7 +112,8 @@
       "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3618199037",
       "requires": [],
       "framework_id": "basileia-romaion",
-      "note": "A total overhaul: don't combine it with other big overhauls."
+      "note": "A total overhaul: don't combine it with other big overhauls.",
+      "last_updated": "2026-10-28"
     },
     {
       "id": "meiou",
@@ -113,7 +124,8 @@
       "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3735059838",
       "requires": [],
       "framework_id": "meiou",
-      "note": "Its team calls the Workshop version an initial test release and takes bug reports on its Discord."
+      "note": "Its team calls the Workshop version an initial test release and takes bug reports on its Discord.",
+      "last_updated": "2026-10-28"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T00:50:05Z",
+  "generated_at": "2026-10-31T06:43:36Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -406,6 +406,17 @@
       "highlight": false
     },
     {
+      "title": "Hotfix 1.4.6",
+      "url": "https://store.steampowered.com/news/app/3450310/view/1847920302237902",
+      "source": "Steam \u00b7 EU5",
+      "published_at": "2026-10-30T10:00:27Z",
+      "games": [
+        "europa-universalis-v"
+      ],
+      "kind": "patch",
+      "highlight": true
+    },
+    {
       "title": "Alexander, Warrior Jar Artisan Keycap has arrived!",
       "url": "https://store.steampowered.com/news/app/1245620/view/1847920302237841",
       "source": "Steam \u00b7 Elden Ring",
@@ -558,15 +569,6 @@
       "url": "https://www.pcgamer.com/games/horror/in-2023-an-anonymous-modder-released-one-of-the-best-horror-games-of-the-decade-and-they-still-havent-broken-character/",
       "source": "PC Gamer",
       "published_at": "2026-10-29T17:31:57Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Nvidia CEO reportedly targeted by Chinese spy previously under suspicion for AI chip smuggling",
-      "url": "https://www.pcgamer.com/software/ai/nvidia-ceo-reportedly-targeted-by-chinese-spy-previously-under-suspicion-for-ai-chip-smuggling/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-29T17:30:39Z",
       "games": [],
       "kind": "news",
       "highlight": false

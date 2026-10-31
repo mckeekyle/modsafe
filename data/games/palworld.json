@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T00:49:57Z",
+  "generated_at": "2026-10-31T06:43:20Z",
   "game": {
     "slug": "palworld",
     "name": "Palworld",
@@ -28,7 +28,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch v1.0.5; compatibility is unverified \u2014 check the project page. No open breakage reports 45 days after the patch. (Searched the PalSchema tracker; this UE4SS fork has no issue tracker of its own.)",
+      "reason": "Latest release predates patch v1.0.5; compatibility is unverified \u2014 check the project page. No open breakage reports 46 days after the patch. (Searched the PalSchema tracker; this UE4SS fork has no issue tracker of its own.)",
       "breakage_reports": [],
       "official": null,
       "release_tag": "2281fa31",
@@ -50,7 +50,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch v1.0.5; compatibility is unverified \u2014 check the project page. No open breakage reports 45 days after the patch.",
+      "reason": "Latest release predates patch v1.0.5; compatibility is unverified \u2014 check the project page. No open breakage reports 46 days after the patch.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "0.6.71",
