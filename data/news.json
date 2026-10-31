@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T06:43:36Z",
+  "generated_at": "2026-10-31T12:40:51Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,42 @@
     }
   ],
   "items": [
+    {
+      "title": "Horror-steeped card game Forbidden Solitaire shows how a strong theme can elevate even decade-old mechanics",
+      "url": "https://www.rockpapershotgun.com/horror-steeped-card-game-forbidden-solitaire-shows-how-a-strong-theme-can-elevate-even-decade-old-mechanics",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-31T12:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Silver Pines is a great survival horror throwback with an unexpected Metroidvania twist, but it makes me glad the genre's moved on",
+      "url": "https://www.eurogamer.net/silver-pines-now-playing",
+      "source": "Eurogamer",
+      "published_at": "2026-10-31T10:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "What are we all playing this weekend?",
+      "url": "https://www.rockpapershotgun.com/what-are-we-all-playing-this-weekend-406",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-10-31T09:45:21Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "What we've been playing - \"I've been intrigued by horrible images of live-action sequences for weeks\"",
+      "url": "https://www.eurogamer.net/what-weve-been-playing-tenebris-somnia-moonlight-peaks-amnesia",
+      "source": "Eurogamer",
+      "published_at": "2026-10-31T08:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "AI-powered game development is 'leading to an explosion of content,' Roblox says, as it brags about 70,000 games published on its platform in the last 5 months alone",
       "url": "https://www.pcgamer.com/software/ai/ai-powered-game-development-is-leading-to-an-explosion-of-content-roblox-says-as-it-brags-about-70-000-games-published-on-its-platform-in-the-last-5-months-alone/",
@@ -535,42 +571,6 @@
         "terraria"
       ],
       "kind": "announcement",
-      "highlight": false
-    },
-    {
-      "title": "The Elder Scrolls 6: Sentinel will be an Elder Scrolls game about the infinite mysteries of the Elder Scrolls, report with some plot hintage claims",
-      "url": "https://www.rockpapershotgun.com/the-elder-scrolls-6-sentinel-will-be-an-elder-scrolls-game-about-the-infinite-mysteries-of-the-elder-scrolls-report-with-some-plot-hintage-claims",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-29T18:09:29Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Destiny 2 unvaulting update: It sure sounds like the original Destiny is finally coming to PC",
-      "url": "https://www.pcgamer.com/games/fps/destiny-2-unvaulting-update-it-sure-sounds-like-the-original-destiny-is-finally-coming-to-pc/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-29T17:57:52Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Celeste and TowerFall have been removed from the Xbox store in a move to \"support the BDS boycott\" against Microsoft",
-      "url": "https://www.rockpapershotgun.com/celeste-and-towerfall-have-been-removed-from-the-xbox-store-in-a-move-to-support-the-bds-boycott-against-microsoft",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-29T17:49:39Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "In 2023, an anonymous modder released one of the best horror games of the decade, and they still haven't broken character",
-      "url": "https://www.pcgamer.com/games/horror/in-2023-an-anonymous-modder-released-one-of-the-best-horror-games-of-the-decade-and-they-still-havent-broken-character/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-29T17:31:57Z",
-      "games": [],
-      "kind": "news",
       "highlight": false
     }
   ]
