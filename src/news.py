@@ -43,6 +43,7 @@ ALIASES = {
                      r"coffee stain'?s satisfactory"],
     "palworld": [r"palworld"],
     "monster-hunter-wilds": [r"monster hunter wilds", r"\bmh ?wilds\b"],
+    "europa-universalis-v": [r"europa universalis (?:v|5)\b", r"\beu ?5\b"],
 }
 
 

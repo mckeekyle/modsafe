@@ -620,6 +620,65 @@ GAMES = [
                  "launching until they are updated."),
         "blurb": "Wilds title updates often change the game's data files and code, which breaks REFramework scripts and armor/pak mods until they are updated.",
     },
+    {
+        "slug": "europa-universalis-v",
+        "name": "Europa Universalis V",
+        "short": "EU5",
+        "developer": "Paradox Tinto",
+        "genre": "Grand strategy",
+        "steam_appid": 3450310,
+        # Live posts are titled "Update 1.4 "Rio Salado" is out now!", "Hotfix 1.4.6", "Patch 1.2.5 Out Now" or
+        # "Europa Universalis V - 1.0.5 Patch Notes". Open-beta posts, surveys, previews and Tinto Talks are excluded.
+        "patch_rule": {
+            "include": r"^(?:update|patch|hotfix)\s+\d+\.\d+|^europa universalis v\s*-\s*\d+\.\d+(?:\.\d+)*\s+patch notes",
+            "exclude": r"beta|survey|preview|release date|feature video|thoughts|tinto",
+            "version": r"(\d+\.\d+(?:\.\d+)*)",
+            "require_version": True,
+            "label": "{v}",
+        },
+        # Workshop mods declare supported_game_version per major series ("1.4.*"); a series change (1.3 -> 1.4) is the
+        # update that breaks mods. The verdict compares each key mod's Workshop update time and version tags with the
+        # date that series went live (keyless ISteamRemoteStorage/GetPublishedFileDetails).
+        "kind": "workshop",
+        "frameworks": [
+            {"id": "cmf", "name": "Community Mod Framework (CMF)", "short": "CMF", "source": "workshop",
+             "workshop_id": "3692202776", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3692202776",
+             "issues_repo": "Europa-Universalis-5-Modding-Co-op/community-mod-framework",
+             # Hand-checked user reports from the Workshop comments (no API). Shown only while the mod still has no
+             # update since this series went live; never counted as confirmed breakage.
+             "reports_note": {"series": "1.4", "checked": "2026-10-30",
+                              "text": "Workshop comments since 1.4 went live report CMF breaking some interface graphics on "
+                                      "1.4.5 and the country-selection bonus icons (a UI function it calls was removed in 1.4)."}},
+            {"id": "glorp-ui", "name": "Glorp UI", "short": "Glorp UI", "source": "workshop",
+             "workshop_id": "3601047146", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3601047146"},
+            {"id": "cheat-menu-pro", "name": "Cheat Menu Pro", "short": "Cheat Menu Pro", "source": "workshop",
+             "workshop_id": "3600272327", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3600272327"},
+            {"id": "better-road-builder", "name": "Better Road Builder", "short": "Road Builder", "source": "workshop",
+             "workshop_id": "3605677866", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3605677866"},
+            {"id": "construction-manager", "name": "Construction Manager", "short": "Construction Mgr", "source": "workshop",
+             "workshop_id": "3736668860", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3736668860"},
+            {"id": "thick-borders", "name": "Thick borders", "short": "Thick borders", "source": "workshop",
+             "workshop_id": "3602694948", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3602694948"},
+            {"id": "free-console-access", "name": "Free Console Access", "short": "Console Access", "source": "workshop",
+             "workshop_id": "3600131257", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3600131257"},
+            {"id": "national-destinies", "name": "National Destinies - Formables Content", "short": "National Destinies",
+             "source": "workshop", "workshop_id": "3668193813",
+             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3668193813"},
+            {"id": "basileia-romaion", "name": "Basileia Romaion 1337", "short": "BR 1337", "source": "workshop",
+             "workshop_id": "3618199037", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3618199037"},
+            {"id": "meiou", "name": "MEIOU and Taxes", "short": "MEIOU", "source": "workshop",
+             "workshop_id": "3735059838", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3735059838"},
+        ],
+        "extra_links": [("Europa Universalis V Steam Workshop", "https://steamcommunity.com/app/3450310/workshop/"),
+                        ("EU5 wiki: installing and using mods", "https://eu5.paradoxwikis.com/Mod"),
+                        ("Community Mod Framework on GitHub",
+                         "https://github.com/Europa-Universalis-5-Modding-Co-op/community-mod-framework")],
+        "wiki": "https://eu5.paradoxwikis.com/Modding",
+        "note": ("Tracks the Steam PC version's public branch; open-beta branches are ignored. Major updates (1.3 → 1.4) "
+                 "break most mods until they're updated; Steam keeps one branch per older version for rollbacks."),
+        "blurb": ("Each EU5 major update (1.1, 1.2, 1.3, 1.4) changes the script and interface files Workshop mods "
+                  "build on, so mods need an update for the new version; hotfixes within a version rarely break them."),
+    },
 ]
 
 # GTA V used to be one page covering both PC editions. /gta-v/ is now a short hub that links to the two edition

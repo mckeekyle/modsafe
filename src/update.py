@@ -31,8 +31,14 @@ from status_logic import (  # noqa: E402
     confirmed_breakage,
     STATUS_UNKNOWN,
     STATUS_UPDATED,
+    V_BROKEN,
+    V_NOT_PORTED,
     V_MANUAL,
     V_NODATA,
+    rollback_branch,
+    series_release,
+    version_series,
+    workshop_mod_verdict,
     determine_with_lineage,
     game_verdict,
     history_label,
@@ -830,10 +836,198 @@ def build_atlan_game(game: dict) -> dict:
             "sources": {"steam_build": latest["url"], "atlan_config": game["frameworks"][0]["config_url"]}}
 
 
+WORKSHOP_DETAILS = "https://api.steampowered.com/ISteamRemoteStorage/GetPublishedFileDetails/v1/"
+
+
+def http_post_form(url: str, fields: dict, timeout: int = 30, retries: int = 3):
+    body = urllib.parse.urlencode(fields).encode("utf-8")
+    h = {"User-Agent": USER_AGENT, "Accept": "application/json", "Content-Type": "application/x-www-form-urlencoded"}
+    last: Exception | None = None
+    for attempt in range(retries):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, data=body, headers=h, method="POST"), timeout=timeout) as r:
+                return json.loads(r.read().decode("utf-8"))
+        except (urllib.error.URLError, TimeoutError) as e:
+            last = e
+            time.sleep(3 * (attempt + 1))
+    assert last is not None
+    raise last
+
+
+def workshop_details(ids: list[str]) -> dict[str, dict]:
+    """Public Workshop item details (no API key): id -> {title, tags, time_updated, subscriptions, ...}.
+    Items the API can't return (removed, private) are left out."""
+    fields = {"itemcount": len(ids), **{f"publishedfileids[{n}]": i for n, i in enumerate(ids)}}
+    items = (http_post_form(WORKSHOP_DETAILS, fields).get("response") or {}).get("publishedfiledetails") or []
+    out = {}
+    for it in items:
+        if it.get("result") == 1 and it.get("time_updated"):
+            out[str(it["publishedfileid"])] = {
+                "title": it.get("title"), "tags": [t.get("tag") for t in it.get("tags") or [] if t.get("tag")],
+                "time_updated": datetime.fromtimestamp(int(it["time_updated"]), tz=timezone.utc).isoformat().replace("+00:00", "Z"),
+                "subscriptions": it.get("subscriptions"), "banned": bool(it.get("banned"))}
+    return out
+
+
+def releases_workshop(fw: dict) -> list[dict]:
+    """A Workshop item as one release-like dict (the Workshop keeps no version history, only the last update)."""
+    it = workshop_details([fw["workshop_id"]]).get(str(fw["workshop_id"]))
+    if not it:
+        raise RuntimeError(f"Workshop item {fw['workshop_id']} not returned by the Steam API")
+    return [workshop_release(fw, it)]
+
+
+def workshop_release(fw: dict, it: dict) -> dict:
+    vtags = [t for t in it["tags"] if re.fullmatch(r"\d+\.\d+", t)]
+    return {"tag_name": ", ".join(vtags) or None, "name": it.get("title") or fw["name"], "body": "",
+            "published_at": it["time_updated"], "prerelease": False, "draft": False,
+            "html_url": f"https://steamcommunity.com/sharedfiles/filedetails/changelog/{fw['workshop_id']}"}
+
+
+SOURCES["workshop"] = releases_workshop
+
+
+def steam_branches(appid) -> tuple[Optional[dict], list[str]]:
+    """Public build + the names of password-free branches from Steam PICS (api.steamcmd.net)."""
+    info = http_get_json(STEAMCMD_INFO.format(appid=appid), retries=2)
+    try:
+        br = info["data"][str(appid)]["depots"]["branches"]
+    except (KeyError, TypeError):
+        br = {}
+    names = [k for k, v in br.items() if k != "public" and str((v or {}).get("pwdrequired") or "0") == "0"]
+    return parse_steam_public_build(info, appid), names
+
+
+def build_workshop_game(game: dict) -> dict:
+    """Europa Universalis V: Steam patch posts + public build, and each key Workshop mod's update time and version
+    tags compared with the date the current major version series (e.g. 1.4) went live."""
+    news = http_get_json(STEAM_NEWS.format(appid=game["steam_appid"])).get("appnews", {}).get("newsitems", [])
+    for n in news:
+        if n.get("gid"):
+            n["url"] = f"https://store.steampowered.com/news/app/{game['steam_appid']}/view/{n['gid']}"
+    rule = game["patch_rule"]
+    patches = merge_silent_patches(list_patches_generic(news, rule, limit=12), silent_patches_for(game["slug"]))
+    if not patches:
+        raise RuntimeError(f"No patch announcements found in Steam news for {game['name']}")
+    latest = patches[0]
+    series = version_series(latest.get("version"))
+    first = series_release(patches, series) or latest
+    is_major = first["label"] == latest["label"]
+    latest.update(series=series, series_released_at=first["published_at"], series_url=first.get("url"),
+                  series_label=first["label"], is_major=is_major)
+    try:
+        build, branches = steam_branches(game["steam_appid"])
+        if build and build.get("buildid"):
+            latest["steam_build"] = build["buildid"]
+        unannounced = detect_unannounced_update(build, patches)
+    except Exception as e:  # noqa: BLE001
+        print(f"  WARNING: steamcmd build info failed ({e}); reusing committed value", file=sys.stderr)
+        branches, unannounced = [], None
+        try:
+            prev = json.loads((DATA_DIR / f"{game['slug']}.json").read_text(encoding="utf-8"))["game"]["latest_patch"]
+            if prev.get("label") == latest.get("label"):
+                latest["steam_build"] = prev.get("steam_build")
+                unannounced = prev.get("unannounced_update")
+                branches = prev.get("rollback_branches") or []
+        except Exception:  # noqa: BLE001
+            pass
+    if unannounced:
+        latest["unannounced_update"] = unannounced
+    latest["rollback_branches"] = sorted((b for b in branches if re.fullmatch(r"\d+(?:\.\d+)+", b)), key=lambda b: [int(x) for x in b.split(".")],
+                                         reverse=True)
+    # Last version before this series (what mods built for the previous major need), plus an earlier build of the same
+    # series when Steam has one (for a hotfix that broke something).
+    latest["rollback_branch"] = rollback_branch(latest["rollback_branches"], f"{series}.0")
+    same = rollback_branch(latest["rollback_branches"], latest.get("version")) if not is_major else None
+    latest["rollback_branch_series"] = same if same and version_series(same) == series else None
+
+    wfws = [fw for fw in game["frameworks"] if fw["source"] == "workshop"]
+    try:
+        items = workshop_details([fw["workshop_id"] for fw in wfws])
+        err = None
+    except Exception as e:  # noqa: BLE001
+        items, err = {}, e
+    fws, rels_by = [], {}
+    for fw in game["frameworks"]:
+        if fw["source"] == "manual":
+            fws.append(manual_entry(fw))
+            continue
+        base = {"id": fw["id"], "name": fw["name"], "short": fw["short"], "url": fw["url"], "source": fw["source"],
+                "workshop_id": fw.get("workshop_id"), "tracked": True, "sensitive": True}
+        it = items.get(str(fw.get("workshop_id")))
+        if not it:
+            prev = previous_framework(game["slug"], fw["id"], latest)
+            if prev:
+                fws.append(prev)
+                continue
+            why = f"Fetch failed: {err}" if err else "The Steam Workshop API didn't return this item (removed or hidden?)."
+            fws.append({**base, "status": V_NODATA, "base_status": None, "reason": why, "release_tag": None,
+                        "release_published_at": None, "release_url": fw["url"], **({"error": str(err)} if err else {})})
+            continue
+        rel = workshop_release(fw, it)
+        rels_by[fw["id"]] = [rel]
+        v = workshop_mod_verdict(tags=it["tags"], updated_at=it["time_updated"], series=series,
+                                 series_released_at=first["published_at"], patch_label=latest["label"], is_major=is_major,
+                                 ui="User Interface" in it["tags"])
+        label, reason = v["status"], v["reason"]
+        reports: list[dict] = []
+        if fw.get("issues_repo") and label != V_NODATA:
+            since = max(parse_iso(first["published_at"]), parse_iso(it["time_updated"])).isoformat()
+            found = breakage_reports(fw["issues_repo"], since, latest.get("version"), parse_iso(first["published_at"]))
+            reports = found or []
+            confirmed = confirmed_breakage(reports)
+            if confirmed:
+                label = V_BROKEN
+                reason += f" {len(confirmed)} open issue(s) on its GitHub tracker report breakage since {series} went live."
+            elif reports:
+                reason += (f" One unconfirmed user report of breakage is open ({reports[0]['title']!r}); not yet confirmed by the"
+                           " maintainers or other users, so it isn't counted as breakage.")
+            elif found is not None:
+                reason += f" No open breakage reports on its GitHub tracker since {series} went live."
+        rn = fw.get("reports_note") or {}
+        # Shown while the mod has no update since this series went live, even once the verdict ages into Likely safe.
+        if rn.get("series") == series and label != V_NODATA \
+                and parse_iso(it["time_updated"]) < parse_iso(first["published_at"]):
+            reason += f" {rn['text']} (Checked by hand {rn['checked']}; user comments, not counted as confirmed breakage.)"
+        label, reason = apply_unannounced(label, reason, sensitive=True, release_published_at=it["time_updated"],
+                                          event=unannounced)
+        if it.get("banned"):
+            reason += " (Steam lists this item as banned.)"
+        fws.append({**base, "status": label, "base_status": label, "reason": reason, "breakage_reports": reports,
+                    "release_tag": rel["tag_name"], "release_name": it.get("title"),
+                    "release_published_at": it["time_updated"], "release_url": rel["html_url"],
+                    "workshop_title": it.get("title"), "workshop_tags": it["tags"], "version_tags": v.get("version_tags", []),
+                    "tagged_for_series": v.get("tagged", False), "subscriptions": it.get("subscriptions"),
+                    "mentions_patch": False, "newer_than_patch": parse_iso(it["time_updated"]) >= parse_iso(latest["published_at"])})
+
+    history = []
+    live = {f["id"]: f["status"] for f in fws}
+    for p in patches:
+        row = []
+        for fw in game["frameworks"]:
+            if fw["id"] not in rels_by:
+                continue
+            snap = status_for_patch_history(releases=rels_by[fw["id"]], patch_version=p["label"],
+                                            patch_published_at=p["published_at"], mention_fn=lambda _n: False)
+            # The current patch shows the live verdict (judged against its series, so a mod updated for 1.4 before the
+            # 1.4.6 hotfix isn't listed as "no post-patch release"); older patches use release timing only.
+            snap["status"] = live[fw["id"]] if p is latest else history_label(snap["status"])
+            row.append({"id": fw["id"], "short": fw["short"], "name": fw["name"], **snap})
+        history.append({**p, "frameworks": row})
+    patch_urls = {p["url"] for p in patches}
+    news_out = [{"title": n.get("title", ""), "url": n.get("url", ""), "is_patch": n.get("url") in patch_urls,
+                 "published_at": datetime.fromtimestamp(int(n["date"]), tz=timezone.utc).isoformat().replace("+00:00", "Z")}
+                for n in news if n.get("date")][:10]
+    return {"latest_patch": latest, "frameworks": fws, "history": history, "news": news_out,
+            "sources": {"steam_news": STEAM_NEWS.format(appid=game["steam_appid"]).split("&maxlength")[0],
+                        "steam_build": STEAMCMD_INFO.format(appid=game["steam_appid"]), "workshop": WORKSHOP_DETAILS}}
+
+
 def build_game(game: dict) -> dict:
     kind = game.get("kind")
     body = (build_minecraft(game) if kind == "minecraft" else build_manual_game(game) if kind == "manual"
-            else build_atlan_game(game) if kind == "atlan" else build_steam_game(game))
+            else build_atlan_game(game) if kind == "atlan" else build_workshop_game(game) if kind == "workshop"
+            else build_steam_game(game))
     tracked = [f["status"] for f in body["frameworks"] if f.get("tracked") and f.get("sensitive", True)]
     return {
         "generated_at": now_iso(),

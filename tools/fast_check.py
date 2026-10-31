@@ -2,7 +2,8 @@
 """Cheap patch-day probe for the 30-minute fast-check workflow.
 
   fast_check.py probe       Compare a few cheap live signals (Steam public build, Steam patch news, framework
-                            latest release, Atlan config, Mojang manifest) with the committed data/games/*.json.
+                            latest release, Steam Workshop update times, Atlan config, Mojang manifest) with the
+                            committed data/games/*.json.
                             Prints the games to refresh and, on GitHub Actions, writes `games`, `changed`, `waiting`,
                             `sig` and `reason` to $GITHUB_OUTPUT. Never fails the job on a fetch error: a source that
                             can't be read simply doesn't trigger anything (the 6-hourly full refresh still covers it).
@@ -51,6 +52,9 @@ class LiveFetch:
 
     def atlan_entries(self, fw):
         return parse_atlan_config(update.http_get_text(fw["config_url"], timeout=15))
+
+    def workshop(self, ids):
+        return update.workshop_details(ids)
 
     def mc_latest(self):
         man = update.http_get_json(update.MC_MANIFEST, timeout=15, retries=1)
@@ -109,6 +113,16 @@ def probe_game(game: dict, committed: dict | None, fetch) -> list[str]:
                                            update.silent_patches_for(slug))
             if patches and lp.get("label") and patches[0]["label"] != lp["label"]:
                 out.append(f"patch {lp['label']} -> {patches[0]['label']}")
+
+    if kind == "workshop":  # one keyless Workshop call for every tracked mod: compare last-update times
+        wfw = [fw for fw in game.get("frameworks") or [] if fw.get("workshop_id")]
+        items = _try(fetch.workshop, [fw["workshop_id"] for fw in wfw]) or {}
+        for fw in wfw:
+            prev, it = fws.get(fw["id"]) or {}, items.get(str(fw["workshop_id"]))
+            if it and prev.get("release_published_at") and not prev.get("error") \
+                    and it["time_updated"] != prev["release_published_at"]:
+                out.append(f"{fw['short']} Workshop update {prev['release_published_at'][:16]} -> {it['time_updated'][:16]}")
+        return out
 
     for fw in game.get("frameworks") or []:
         prev = fws.get(fw["id"]) or {}

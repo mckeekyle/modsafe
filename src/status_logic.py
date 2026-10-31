@@ -888,6 +888,82 @@ def atlan_verdict(*, newest_entry: Optional[str], build_published_at: str, now: 
                                         + (f" The build is {int(age)} days old." if age >= FRESH_PATCH_DAYS else "")}
 
 
+# --- Steam Workshop games (Europa Universalis V): major vs hotfix by version series ---
+
+WORKSHOP_VERSION_TAG_RE = re.compile(r"^\d+\.\d+$")
+# A Workshop update this long before the release post still counts as "for" that release (builds can go live a few
+# hours before the post). Anything older was built against the previous version or an open beta.
+WORKSHOP_RELEASE_GRACE = timedelta(hours=24)
+
+
+def version_series(version: Optional[str], depth: int = 2) -> Optional[str]:
+    """'1.4.6' -> '1.4' (the major series EU5 mods declare in supported_game_version / Workshop tags)."""
+    parts = re.findall(r"\d+", version or "")
+    return ".".join(parts[:depth]) if len(parts) >= depth else None
+
+
+def _vkey(v: str) -> tuple:
+    return tuple(int(x) for x in re.findall(r"\d+", v or ""))
+
+
+def series_release(patches: list[dict[str, Any]], series: Optional[str]) -> Optional[dict[str, Any]]:
+    """The first tracked patch of a series (e.g. 'Update 1.4' for 1.4.6): the release that changed the major version."""
+    hits = [p for p in patches or [] if series and version_series(p.get("version")) == series and parse_iso(p.get("published_at"))]
+    return min(hits, key=lambda p: parse_iso(p["published_at"])) if hits else None
+
+
+def rollback_branch(branches: list[str], version: Optional[str]) -> Optional[str]:
+    """Newest numbered Steam branch older than the current version, e.g. 1.3.11 while 1.4.6 is live (EU5 keeps one
+    branch per release). Open-beta branches and anything not purely numeric are ignored."""
+    cur = _vkey(version or "")
+    cands = [b for b in branches or [] if re.fullmatch(r"\d+(?:\.\d+)+", b) and _vkey(b) < cur]
+    return max(cands, key=_vkey) if cands else None
+
+
+def workshop_mod_verdict(*, tags: list[str], updated_at: Optional[str], series: Optional[str],
+                         series_released_at: Optional[str], patch_label: str, is_major: bool,
+                         ui: bool = False, now: Optional[datetime] = None) -> dict[str, Any]:
+    """Verdict for one Workshop mod against the current game version series (e.g. EU5 1.4).
+
+    A new major version (1.3 -> 1.4) changes the script and interface files mods replace, so a mod counts as ready
+    only once it has a Workshop update on/after that release went live. A version tag alone isn't enough when the
+    update predates the release (it was built against the open beta). Hotfixes within the series (1.4.5 -> 1.4.6)
+    keep that verdict, with a caveat for interface mods."""
+    vtags = sorted({t for t in tags or [] if WORKSHOP_VERSION_TAG_RE.match(t)}, key=_vkey)
+    tagged = bool(series and series in vtags)
+    udt, sdt = parse_iso(updated_at), parse_iso(series_released_at)
+    if not udt or not sdt or not series:
+        return {"status": V_NODATA, "reason": "No Workshop update time or game release date to compare.", "tagged": tagged,
+                "version_tags": vtags}
+    uday, sday = udt.strftime("%Y-%m-%d"), sdt.strftime("%Y-%m-%d")
+    tag_txt = (f" It carries the {series} version tag." if tagged else
+               f" Its Workshop version tags ({', '.join(vtags)}) don't include {series}." if vtags else
+               " It doesn't use Workshop version tags.")
+    hotfix = ((f" {patch_label} is a hotfix within {series}: it rarely breaks mods that already work on {series}, but this mod "
+               "changes the interface (UI), and UI mods can still break when a hotfix touches the same files.") if ui else
+              (f" {patch_label} is a hotfix within {series}; hotfixes rarely break mods that already work on {series}.")
+              ) if not is_major else ""
+    if udt >= sdt - WORKSHOP_RELEASE_GRACE:
+        return {"status": V_LIKELY, "tagged": tagged, "version_tags": vtags,
+                "reason": f"Updated on the Workshop on {uday}, after {series} went live on {sday}.{tag_txt}"
+                          + ("" if tagged else " Support is inferred from the update date.") + hotfix}
+    age = patch_age_days(series_released_at, now)
+    before = f"Last Workshop update {uday}, before {series} went live on {sday}."
+    if tagged:
+        before += (f" It already carries the {series} version tag, but that build predates the release (open-beta era), "
+                   f"so it isn't confirmed for the live {series}.")
+    else:
+        before += tag_txt
+    if age < FRESH_PATCH_DAYS:
+        return {"status": V_WAIT, "tagged": tagged, "version_tags": vtags,
+                "reason": before + f" {series} is under a week old: wait for a post-release update."}
+    if vtags and not tagged:
+        return {"status": V_NOT_PORTED, "tagged": tagged, "version_tags": vtags,
+                "reason": before + f" {int(age)} days on, the author hasn't declared {series} support."}
+    return {"status": V_LIKELY, "tagged": tagged, "version_tags": vtags,
+            "reason": before + f" {series} has been out {int(age)} days with no update needed so far; no breakage signal available." + hotfix}
+
+
 # --- Satisfactory: ficsit.app (Satisfactory Mod Repository) SML compatibility ---
 
 FICSIT_BAD_STATES = {"Broken": "Broken", "Damaged": "Damaged (partly broken)"}

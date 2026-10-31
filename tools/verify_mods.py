@@ -22,6 +22,18 @@ def nexus(pairs):
     return out
 
 
+def workshop(ids):
+    """Steam Workshop items through the keyless GetPublishedFileDetails API (community pages rate-limit bots)."""
+    if not ids:
+        return {}
+    import urllib.parse
+    fields = {"itemcount": len(ids), **{f"publishedfileids[{n}]": i for n, i in enumerate(ids)}}
+    req = urllib.request.Request("https://api.steampowered.com/ISteamRemoteStorage/GetPublishedFileDetails/v1/",
+                                 urllib.parse.urlencode(fields).encode(), {"User-Agent": UA["User-Agent"]})
+    items = json.load(urllib.request.urlopen(req, timeout=30))["response"].get("publishedfiledetails") or []
+    return {str(i["publishedfileid"]): i for i in items}
+
+
 def http_ok(url):
     try:
         req = urllib.request.Request(url, headers={"User-Agent": UA["User-Agent"]}, method="GET")
@@ -35,8 +47,21 @@ def main():
     for f in sorted((ROOT / "data/mods").glob("*.json")):
         d = json.loads(f.read_text())
         nx = nexus([(m["nexus_domain"], m["nexus_id"]) for m in d["mods"] if m["source"] == "nexus"])
+        try:
+            ws = workshop([m["url"].split("id=")[-1] for m in d["mods"] if m["source"] == "workshop"])
+        except Exception as e:  # noqa: BLE001
+            ws, ws_err = {}, str(e)
+        else:
+            ws_err = "not returned by the Workshop API"
         for m in d["mods"]:
-            if m["source"] == "nexus":
+            if m["source"] == "workshop":
+                w = ws.get(m["url"].split("id=")[-1])
+                ok = bool(w and w.get("result") == 1 and not w.get("banned"))
+                if ok:
+                    from datetime import datetime, timezone
+                    m["last_updated"] = datetime.fromtimestamp(int(w["time_updated"]), timezone.utc).strftime("%Y-%m-%d")
+                info = f"{w.get('title')} (updated {m.get('last_updated')})" if ok else ws_err
+            elif m["source"] == "nexus":
                 n = nx.get((m["nexus_domain"], m["nexus_id"]))
                 ok = bool(n and n["status"] == "published")
                 info = f"{n['name']} (updated {n['updatedAt'][:10]})" if n else "not found"

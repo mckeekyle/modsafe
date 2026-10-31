@@ -42,7 +42,7 @@ def branch_summary(slug: str, b: dict | None = None) -> str:
     """Plain-text sentence about rollback branches for one game (used in the per-game FAQ)."""
     b = b or load_branches()
     name = GAMES_BY_SLUG[slug]["name"]
-    when = verified_text(b)
+    when = verified_text(b["games"][slug] if b["games"].get(slug, {}).get("verified") else b)
     if slug in b["games"]:
         rb = b["games"][slug]["rollback"]
         listed = ", ".join(f"{r['label']} ({r['branch']})" for r in rb)
@@ -82,7 +82,7 @@ STEAM_GUIDE_FAQ = [
           "On older Steam clients the same option is called 'Only update this game when I launch it'."},
     {"q": "How do I roll back a Steam game to an older version?",
      "a": "First check Properties > Game Versions & Betas: some games (Cyberpunk 2077, Baldur's Gate 3, Stardew Valley, Valheim, RimWorld, "
-          "Bannerlord, Lethal Company, Terraria) keep previous versions there. If not, use the Steam console command "
+          "Bannerlord, Lethal Company, Terraria, Europa Universalis V) keep previous versions there. If not, use the Steam console command "
           "download_depot <appid> <depotid> <manifestid> with IDs from SteamDB, or DepotDownloader, then copy the files over a backup "
           "of your game folder. Skyrim SE, Fallout 4, Starfield, Elden Ring and GTA V have no rollback branch."},
     {"q": "Does Steam Offline Mode still work in 2026?",

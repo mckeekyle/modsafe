@@ -1,0 +1,119 @@
+{
+  "game": "europa-universalis-v",
+  "verified_at": "2026-10-30",
+  "manager": {
+    "name": "Steam Workshop + EU5's in-game mod manager (playsets)",
+    "url": "https://steamcommunity.com/app/3450310/workshop/"
+  },
+  "intro": "Ten of the most-subscribed Europa Universalis V mods on the Steam Workshop, all updated within the past few months. Subscribe on the Workshop, then add them to a playset in the game's mod manager in this order. Each badge is that mod's own live status for the current game version, from its Workshop update date and version tags.",
+  "mods": [
+    {
+      "id": "cmf",
+      "name": "Community Mod Framework (CMF)",
+      "category": "Framework",
+      "summary": "Shared mod menu and scripting tools many EU5 mods hook into, to improve compatibility between mods.",
+      "source": "workshop",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3692202776",
+      "requires": [],
+      "framework_id": "cmf",
+      "note": "Its author says to load it first in your playset."
+    },
+    {
+      "id": "glorp-ui",
+      "name": "Glorp UI",
+      "category": "Interface",
+      "summary": "Interface overhaul with colour-coded icons, a customisable map-mode bar and per-save UI settings.",
+      "source": "workshop",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3601047146",
+      "requires": [],
+      "framework_id": "glorp-ui",
+      "note": "Integrates with CMF's mod menu. Mods placed after it in the playset override its changes."
+    },
+    {
+      "id": "cheat-menu-pro",
+      "name": "Cheat Menu Pro",
+      "category": "Utility",
+      "summary": "In-game cheat menu with tools for countries, government and laws, geopolitics, trade and religious orders.",
+      "source": "workshop",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3600272327",
+      "requires": [],
+      "framework_id": "cheat-menu-pro"
+    },
+    {
+      "id": "better-road-builder",
+      "name": "Better Road Builder",
+      "category": "Map",
+      "summary": "Shows roads and rivers together in the Roads and Road Builder map modes.",
+      "source": "workshop",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3605677866",
+      "requires": [],
+      "framework_id": "better-road-builder",
+      "note": "Its author lists it as achievement compatible and save safe."
+    },
+    {
+      "id": "construction-manager",
+      "name": "Construction Manager",
+      "category": "Utility",
+      "summary": "Automates construction: auto-expand buildings and RGOs, auto-upgrade, auto-build and auto-food.",
+      "source": "workshop",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3736668860",
+      "requires": ["cmf"],
+      "framework_id": "construction-manager",
+      "note": "Lists Community Mod Framework as a required item on the Workshop."
+    },
+    {
+      "id": "thick-borders",
+      "name": "Thick borders",
+      "category": "Map",
+      "summary": "Black, thicker country borders and province borders that stay visible from further away.",
+      "source": "workshop",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3602694948",
+      "requires": [],
+      "framework_id": "thick-borders",
+      "note": "Its author lists it as Ironman and achievement compatible."
+    },
+    {
+      "id": "free-console-access",
+      "name": "Free Console Access",
+      "category": "Utility",
+      "summary": "Toggles debug mode (and the console) with a shortcut, Shift+F10 by default.",
+      "source": "workshop",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3600131257",
+      "requires": [],
+      "framework_id": "free-console-access",
+      "note": "Its author says to put it at the bottom of your playset, after UI mods such as Glorp UI."
+    },
+    {
+      "id": "national-destinies",
+      "name": "National Destinies - Formables Content",
+      "category": "Content",
+      "summary": "Events, advances, missions and units for 149 formable countries, including 39 new formables.",
+      "source": "workshop",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3668193813",
+      "requires": [],
+      "framework_id": "national-destinies"
+    },
+    {
+      "id": "basileia-romaion",
+      "name": "Basileia Romaion 1337",
+      "category": "Overhaul",
+      "summary": "Alternate-history overhaul set in 1337 in which the Medieval Roman Empire survived in Anatolia.",
+      "source": "workshop",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3618199037",
+      "requires": [],
+      "framework_id": "basileia-romaion",
+      "note": "A total overhaul: don't combine it with other big overhauls."
+    },
+    {
+      "id": "meiou",
+      "name": "MEIOU and Taxes",
+      "category": "Overhaul",
+      "summary": "Economy overhaul: RGOs become buildings, estates share building upkeep and climates follow Köppen.",
+      "source": "workshop",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3735059838",
+      "requires": [],
+      "framework_id": "meiou",
+      "note": "Its team calls the Workshop version an initial test release and takes bug reports on its Discord."
+    }
+  ]
+}

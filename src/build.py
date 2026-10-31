@@ -599,7 +599,7 @@ def footer() -> str:
     return f"""<footer class="footer"><div class="footer-in">
 <div>{brand()}
 <p>Know if your mods survived the patch before you hit update.</p>
-<p>Not affiliated with any game developer, publisher, Nexus Mods, Thunderstore, Modrinth or Mojang. Game art © its respective owners. Data from public sources (Steam, api.steamcmd.net, GitHub, Thunderstore, Mojang, Fabric, Forge, NeoForge, Modrinth, the Decky plugin store, silverlock.org, fsuipc.com, the Atlan patcher list) plus hand-checked records (GTA V, console mods, off-Steam hotfixes). Dates are UTC.</p></div>
+<p>Not affiliated with any game developer, publisher, Nexus Mods, Thunderstore, Modrinth or Mojang. Game art © its respective owners. Data from public sources (Steam, the Steam Workshop, api.steamcmd.net, GitHub, Thunderstore, Mojang, Fabric, Forge, NeoForge, Modrinth, the Decky plugin store, silverlock.org, fsuipc.com, the Atlan patcher list) plus hand-checked records (GTA V, console mods, off-Steam hotfixes). Dates are UTC.</p></div>
 <div><nav aria-label="Footer">{game_links} <a href="/patches/">Patches</a> <a href="/news/">News</a> <a href="/guides/">Guides</a> <a href="/faq/">FAQ</a></nav>
 <p class="dev">For developers &amp; AI: <a href="/games.json">Data (JSON)</a> · <a href="/llms.txt">llms.txt</a> · <a href="/feed.xml">Atom feed</a></p></div>
 </div></footer>"""
@@ -719,6 +719,12 @@ def verdict_sentence(game: dict, data: dict) -> str:
     elif v == "Likely safe":
         msg = (f"No sign of trouble with {p}. {and_join(worst)} {'hasn’t' if len(worst) == 1 else 'haven’t'} named this patch in a release, "
                "but there’s either a newer release or no breakage reports since. Probably fine — skim the notes before updating.")
+    elif v in ("Just patched, wait", "Not ported yet") and game.get("kind") == "workshop":
+        lp = data["game"]["latest_patch"]
+        s, rb = lp.get("series") or p, lp.get("rollback_branch")
+        msg = (f"{and_join(worst)} {'hasn’t' if len(worst) == 1 else 'haven’t'} shipped a Workshop update since {s} went live on "
+               f"{fmt_date(lp.get('series_released_at'))}. Hold the update"
+               + (f", or switch to Steam’s {rb} branch (the last version before {s})," if rb else "") + " until they catch up.")
     elif v == "Just patched, wait" and game.get("kind") == "manual" and data["game"]["latest_patch"].get("unannounced_update"):
         u = data["game"]["latest_patch"]["unannounced_update"]
         msg = (f"Steam shipped a new {str(u.get('edition') or '').title()} build on {u['published_at'][:10]} that isn’t in the "
@@ -736,6 +742,10 @@ def verdict_sentence(game: dict, data: dict) -> str:
         msg = f"{and_join(worst)} {'has' if len(worst) == 1 else 'have'} no build for {p} yet. Stay on your current version if you depend on them."
     else:
         msg = "Some data could not be fetched; check the project pages."
+    lp = data["game"]["latest_patch"]
+    if game.get("kind") == "workshop" and v in ("Safe", "Likely safe") and lp.get("is_major") is False:
+        msg += (f" {p} is a hotfix within {lp.get('series')}; mods that replace interface files can still break, so check "
+                "the Workshop comments of any UI mod you use.")
     crashy = [f["short"] for f in fws if f.get("crash_reports")]
     if crashy:
         msg += (f" Separately, there are open crash reports against recent {and_join(crashy)} builds that aren’t tied to this patch;"
@@ -791,7 +801,8 @@ SOURCE_NAMES = {"github": "GitHub releases", "github_tags": "GitHub tags", "thun
                 "mc_forge": "Forge promotions", "mc_neoforge": "NeoForge maven", "mc_modrinth": "the Modrinth API",
                 "manual_shv": "a hand-checked Script Hook V record",
                 "ficsit_sml": "the ficsit.app (Satisfactory Mod Repository) API, including its SML compatibility flag",
-                "atlan": "the Atlan patcher's supported-build list and the mod loader's GitHub release", "manual": None}
+                "atlan": "the Atlan patcher's supported-build list and the mod loader's GitHub release",
+                "workshop": "the Steam Workshop (each mod's last update time and version tags)", "manual": None}
 
 
 def fw_sources(game: dict) -> str:
@@ -854,6 +865,15 @@ def game_faq(game: dict, data: dict) -> list[dict]:
     if game["slug"] == "monster-hunter-wilds":
         items.append({"q": "What should I do with my mods when Monster Hunter Wilds updates?",
                       "a": "Capcom says mods aren't supported and can stop the game launching after an update. If that happens, uninstall all mods (in Fluffy Mod Manager, \"Uninstall all mods\"), remove dinput8.dll, verify the game files in Steam and launch once unmodded, then reinstall mods as they get updated for the new version."})
+    if game["slug"] == "europa-universalis-v":
+        items.append({"q": "Which EU5 updates break mods?",
+                      "a": "Major updates that change the version series (1.3 to 1.4) change the script and interface files mods build on, so "
+                           "ModSafe waits until the key Workshop mods have been updated after that release went live. A version tag added "
+                           "during an open beta isn't enough. Hotfixes within a series (1.4.5 to 1.4.6) rarely break mods that already work "
+                           "on it, though mods that replace interface files can still break."})
+        items.append({"q": "Why does ModSafe track EU5 and not EU4?",
+                      "a": "Europa Universalis IV is frozen at 1.37.5: Steam's public EU4 build hasn't changed since October 2024, so there "
+                           "are no new patches to break EU4 mods. ModSafe tracks Europa Universalis V, which still gets regular updates."})
     if (steam_item := guides_mod.game_faq_item(game)):
         items.append(steam_item)
     return items
@@ -1056,7 +1076,8 @@ def game_news(slug: str, data: dict) -> list[dict]:
 def host_label(url: str) -> str:
     h = url.split("/")[2].replace("www.", "")
     return {"nexusmods.com": "Nexus Mods", "github.com": "GitHub", "thunderstore.io": "Thunderstore", "modrinth.com": "Modrinth",
-            "flightsim.to": "flightsim.to", "ficsit.app": "ficsit.app", "gta5-mods.com": "GTA5-Mods.com"}.get(h, h)
+            "flightsim.to": "flightsim.to", "ficsit.app": "ficsit.app", "gta5-mods.com": "GTA5-Mods.com",
+            "steamcommunity.com": "the Steam Workshop"}.get(h, h)
 
 
 def mod_cards(game: dict, data: dict, mods: dict, limit: int | None = None) -> str:
@@ -1692,6 +1713,19 @@ def build_guides_index() -> str:
 ROLLBACK_VERDICTS = ("Just patched, wait", "Breakage reported", "Not ported yet")
 
 
+def matching_branch_html(data: dict) -> str:
+    """Games whose data names the branch matching the current version series (EU5: one Steam branch per release)."""
+    lp = (data.get("game") or {}).get("latest_patch") or {}
+    rb, same, s = lp.get("rollback_branch"), lp.get("rollback_branch_series"), lp.get("series")
+    if not rb:
+        return ""
+    out = (f"<p><strong>Mods not updated for {esc(s)} yet?</strong> Pick the <code>{esc(rb)}</code> branch: it's the last "
+           f"version before {esc(s)}, which those mods were built for.")
+    if same:
+        out += f" If only {esc(lp['label'])} broke something, <code>{esc(same)}</code> is the previous {esc(s)} build."
+    return out + " Back up your saves first: newer saves may not load in an older version.</p>"
+
+
 def rollback_callout(game: dict, data: dict) -> str:
     """Shown on Steam game pages while the verdict says mods may be broken: how to get the old version back."""
     if data.get("verdict") not in ROLLBACK_VERDICTS or not game.get("steam_appid") \
@@ -1700,7 +1734,7 @@ def rollback_callout(game: dict, data: dict) -> str:
     g = guides_mod.STEAM_GUIDE_PATH
     return f"""<section class="panel rollback" id="rollback" aria-labelledby="rollback-heading">
 <h2 id="rollback-heading">⏪ Already updated and your mods broke?</h2>
-<p>{esc(guides_mod.branch_summary(game["slug"]))}</p>
+<p>{esc(guides_mod.branch_summary(game["slug"]))}</p>{matching_branch_html(data)}
 <p class="rb-links"><a class="btn ghost" href="{g}#branches">Old versions on Steam</a> <a class="btn ghost" href="{g}#rollback">Roll back with download_depot</a> <a class="btn ghost" href="{g}#backup">Back up before the next patch</a></p>
 <p class="muted">Not updated yet? <a href="{g}#wait-until-launch">Stop Steam auto-updating {esc(game["short"])}</a> until the frameworks catch up.</p>
 </section>"""
