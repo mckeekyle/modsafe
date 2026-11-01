@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T12:41:51Z",
+  "generated_at": "2026-11-01T18:36:33Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,134 @@
     }
   ],
   "items": [
+    {
+      "title": "At Dead of Night sequel The Great Hugo is coming \"(very) soon\"",
+      "url": "https://www.eurogamer.net/at-dead-of-night-2-the-great-hugo-sequel-announced",
+      "source": "Eurogamer",
+      "published_at": "2026-11-01T18:16:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Final Fantasy 14: Evercold sets itself a release date at the tail end of winter, alongside offering a look at its second, avian-inclined new job",
+      "url": "https://www.rockpapershotgun.com/final-fantasy-14-evercold-sets-itself-a-release-date-at-the-tail-end-of-winter-alongside-offering-a-look-at-its-second-avian-inclined-new-job",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-01T18:07:48Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Grand Theft Auto 6 teased a handful of its upcoming radio stations and its music curation is as strong as ever",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/grand-theft-auto-6-teased-a-handful-of-its-upcoming-radio-stations-and-its-music-curation-is-as-strong-as-ever/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-01T18:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "GOG wants to bring back physical games, but it's 'a very, very complicated thing'",
+      "url": "https://www.pcgamer.com/games/gog-wants-to-bring-back-physical-games-but-its-a-very-very-complicated-thing/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-01T17:45:12Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Valve's long-lost prototype Portal prequel appears online after nearly 20 years",
+      "url": "https://www.pcgamer.com/games/fps/valves-long-lost-prototype-portal-prequel-appears-online-after-nearly-20-years/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-01T17:44:47Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Modern Warfare 4 on Switch 2 has much worse input lag than PS5",
+      "url": "https://www.eurogamer.net/modern-warfare-4-switch-2-input-lag-digital-foundry",
+      "source": "Eurogamer",
+      "published_at": "2026-11-01T17:27:29Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "It looks like footage of a Persona 1 remake has leaked, and if it's legit I really hope you don't hate the colour purple",
+      "url": "https://www.rockpapershotgun.com/it-looks-like-footage-of-a-persona-1-remake-has-leaked-and-if-its-legit-i-really-hope-you-dont-hate-the-colour-purple",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-01T17:17:15Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Composer and designer Lena Raine explains how Pigstep altered Minecraft's approach to music: 'The prompt I keep hearing is \"Oh, Pigstep was such a banger that they want more bangers\"'",
+      "url": "https://www.pcgamer.com/games/composer-and-designer-lena-raine-explains-how-pigstep-altered-minecrafts-approach-to-music-the-prompt-i-keep-hearing-is-oh-pigstep-was-such-a-banger-that-they-want-more-bangers/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-01T17:00:00Z",
+      "games": [
+        "minecraft"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "'An absolute behemoth': Wildly ambitious FPS Selaco is getting a massive update that doubles its size and adds 'a heavy machinegun that fires literal explosions'",
+      "url": "https://www.pcgamer.com/games/fps/an-absolute-behemoth-wildly-ambitious-fps-selaco-is-getting-a-massive-update-that-doubles-its-size-and-adds-a-heavy-machinegun-that-fires-literal-explosions/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-01T16:46:26Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Chronicles: Medieval developer faces imminent closure after losing funding: 'What makes it hurt is how close we are. Early access is in reach'",
+      "url": "https://www.pcgamer.com/games/sim/chronicles-medieval-developer-faces-imminent-closure-after-losing-funding-what-makes-it-hurt-is-how-close-we-are-early-access-is-in-reach/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-01T16:42:09Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Footage of a Persona 1 remake has seemingly leaked online",
+      "url": "https://www.eurogamer.net/persona-1-remake-be-your-true-mind-leak",
+      "source": "Eurogamer",
+      "published_at": "2026-11-01T16:35:17Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "It's not just Steam: New game pages created per day on Itch.io have doubled in the last two months, with AI slop the likely culprit",
+      "url": "https://www.pcgamer.com/gaming-industry/game-development/its-not-just-steam-new-game-pages-created-per-day-on-itch-io-has-doubled-in-the-last-two-months-with-ai-slop-the-likely-culprit/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-01T16:25:23Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "I'm glad that WoW: Forever'll have a slower, lo-fi update schedule, because I'm not playing this thing to be in a rush",
+      "url": "https://www.pcgamer.com/games/world-of-warcraft/im-glad-that-wow-foreverll-have-a-slower-lo-fi-update-schedule-because-im-not-playing-this-thing-to-be-in-a-rush/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-01T16:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Dune: Awakening's free Blood and Ice expansion swaps sand for snow on 1st December",
+      "url": "https://www.eurogamer.net/dune-awakening-blood-and-ice-free-expansion",
+      "source": "Eurogamer",
+      "published_at": "2026-11-01T13:44:34Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Pikmin 4 Nintendo Switch 2 Edition launches 12th November and a demo is out tomorrow",
       "url": "https://www.eurogamer.net/pikmin-4-switch-2-edition-release-date-demo",
@@ -435,132 +563,6 @@
       "url": "https://www.pcgamer.com/software/ai/sam-altman-argues-that-its-bad-you-want-dram-in-your-computer-and-not-a-data-center-actually/",
       "source": "PC Gamer",
       "published_at": "2026-10-30T16:45:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "EA reportedly canned BioWare and Mass Effect 5 to make a new Star Wars: Battlefront instead",
-      "url": "https://www.pcgamer.com/games/mass-effect/ea-reportedly-canned-bioware-and-mass-effect-5-to-make-a-new-star-wars-battlefront-instead/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-30T16:43:23Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "EA execs choosing Star Wars Battlefront 3 over Mass Effect 5 was the main factor in BioWare's demise, according to report",
-      "url": "https://www.rockpapershotgun.com/ea-execs-choosing-star-wars-battlefront-3-over-mass-effect-5-was-the-main-factor-in-biowares-demise-according-to-report",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-30T16:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Splendid Junji Ito-inspired RPG World of Horror is now 20% more horrible, thanks to a free PC update with extra gods, locations, and wounds",
-      "url": "https://www.rockpapershotgun.com/splendid-junji-ito-inspired-rpg-world-of-horror-is-now-20-more-horrible-thanks-to-a-free-pc-update-with-extra-gods-locations-and-wounds",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-30T15:29:54Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "GTA 6's souped-up Red Dead Redemption 2-style morality system will scale from 'Professional' to 'Irredeemable' so players can decide what kind of criminal they want to be",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6s-souped-up-red-dead-redemption-2-style-morality-system-will-scale-from-professional-to-irredeemable-so-players-can-decide-what-kind-of-criminal-they-want-to-be/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-30T15:23:59Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Screw Grand Theft Auto 6's supercars, I'm here for Leonida's robust public transportation system",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/screw-grand-theft-auto-6s-supercars-im-here-for-leonidas-robust-public-transportation-system/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-30T15:22:01Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Real-world disaster footage in Modern Warfare 4 opening cinematic will be removed following complaints from victims' families",
-      "url": "https://www.pcgamer.com/games/fps/real-world-disaster-footage-in-modern-warfare-4-opening-cinematic-will-be-removed-following-complaints-from-victims-families/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-30T15:20:25Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "8-bit horror Tenebris Somnia mixes weird live-action horror with a retro 2D adventure to impressive and unsettling effect",
-      "url": "https://www.eurogamer.net/tenebris-somnia-horror-game-fmv-live-action-faith",
-      "source": "Eurogamer",
-      "published_at": "2026-10-30T15:15:54Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Crimson Desert Enhanced Edition gets a surprise demo on PlayStation and Xbox, lets you play for 5 hours and carry over your save data",
-      "url": "https://www.eurogamer.net/crimson-desert-free-demo-xbox-playstation",
-      "source": "Eurogamer",
-      "published_at": "2026-10-30T14:58:30Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "EA reportedly closed BioWare because it was forced to choose between Mass Effect 5 and Star Wars Battlefront 3",
-      "url": "https://www.eurogamer.net/ea-closed-bioware-because-star-wars-battlefront-3",
-      "source": "Eurogamer",
-      "published_at": "2026-10-30T14:54:16Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Forza director, who'd been with Turn 10 for 27 years leaves Microsoft, following studios merger with Playground Games",
-      "url": "https://www.eurogamer.net/director-leaves-forza-playground-games-merge-microsoft",
-      "source": "Eurogamer",
-      "published_at": "2026-10-30T14:16:41Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Intel giving us a reason to be excited for Nova Lake: 'We've had a bit of a hole in our portfolio for high-end desktop, Nova Lake filled in that gap'",
-      "url": "https://www.pcgamer.com/hardware/processors/intel-giving-us-a-reason-to-be-excited-for-nova-lake-weve-had-a-bit-of-a-hole-in-our-portfolio-for-high-end-desktop-nova-lake-filled-in-that-gap/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-30T14:12:35Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "All the RPS Supporter rewards for October 2026: Hangout game angst, muddy RPGs, and one utterly useless butler",
-      "url": "https://www.rockpapershotgun.com/all-the-rps-supporter-rewards-for-october-2026-hangout-game-angst-muddy-rpgs-and-one-utterly-useless-butler",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-30T14:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Rockstar developer union could end up over 1,600 workers strong and encompass nearly all UK staff below senior management, IWGB claim",
-      "url": "https://www.rockpapershotgun.com/rockstar-developer-union-could-end-up-over-1600-workers-strong-and-encompass-nearly-all-uk-staff-below-senior-management-iwgb-claim",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-30T13:30:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Helldivers 2 boss can \"absolutely see\" making a game parody of generative AI, but it would need to be \"quirky\" rather than \"doom-laden\"",
-      "url": "https://www.rockpapershotgun.com/helldivers-2-boss-can-absolutely-see-making-a-game-parody-of-generative-ai-but-it-would-need-to-be-quirky-rather-than-doom-laden",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-30T12:58:41Z",
       "games": [],
       "kind": "news",
       "highlight": false
