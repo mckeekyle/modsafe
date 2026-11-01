@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T00:50:53Z",
+  "generated_at": "2026-11-01T01:47:40Z",
   "game": {
     "slug": "monster-hunter-wilds",
     "name": "Monster Hunter Wilds",
@@ -31,10 +31,10 @@
       "reason": "Latest release is newer than patch Ver.1.042.00.03, but notes do not explicitly mention that version. Each nightly is one build for every RE Engine game, so a newer nightly doesn't prove a Wilds fix. No open crash reports since the patch. (Searched praydog/REFramework issues that mention Wilds; the nightly repo has no tracker of its own.)",
       "breakage_reports": [],
       "official": null,
-      "release_tag": "nightly-01434-a67dfb06f7e051febdd880b5425cedf872303e59",
-      "release_name": "REF Nightly 01434 (a67dfb06f7e051febdd880b5425cedf872303e59)",
-      "release_published_at": "2026-10-31T23:45:07Z",
-      "release_url": "https://github.com/praydog/REFramework-nightly/releases/tag/nightly-01434-a67dfb06f7e051febdd880b5425cedf872303e59",
+      "release_tag": "nightly-01436-1813bf34f720cfed51c0e8f40fc90ed1459a3c6b",
+      "release_name": "REF Nightly 01436 (1813bf34f720cfed51c0e8f40fc90ed1459a3c6b)",
+      "release_published_at": "2026-11-01T01:37:33Z",
+      "release_url": "https://github.com/praydog/REFramework-nightly/releases/tag/nightly-01436-1813bf34f720cfed51c0e8f40fc90ed1459a3c6b",
       "mentions_patch": false,
       "newer_than_patch": true,
       "mention_releases": []
@@ -74,7 +74,7 @@
           "mentions_patch": false,
           "first_release_tag": "nightly-01434-a67dfb06f7e051febdd880b5425cedf872303e59",
           "first_release_at": "2026-10-31T23:45:07Z",
-          "data_from": "2026-06-13T20:56:34Z",
+          "data_from": "2026-06-22T11:12:46Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -98,7 +98,7 @@
           "mentions_patch": false,
           "first_release_tag": "nightly-01396-6dd6724325d13f05e2e897907aa568fc9cf72574",
           "first_release_at": "2026-08-19T12:47:56Z",
-          "data_from": "2026-06-13T20:56:34Z",
+          "data_from": "2026-06-22T11:12:46Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -122,7 +122,7 @@
           "mentions_patch": false,
           "first_release_tag": "nightly-01395-f9a4cf0e2f70a73c5552129f47fbdd95cb8d1903",
           "first_release_at": "2026-08-13T04:47:38Z",
-          "data_from": "2026-06-13T20:56:34Z",
+          "data_from": "2026-06-22T11:12:46Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -146,7 +146,7 @@
           "mentions_patch": false,
           "first_release_tag": "nightly-01395-f9a4cf0e2f70a73c5552129f47fbdd95cb8d1903",
           "first_release_at": "2026-08-13T04:47:38Z",
-          "data_from": "2026-06-13T20:56:34Z",
+          "data_from": "2026-06-22T11:12:46Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -165,12 +165,12 @@
           "short": "REFramework",
           "name": "REFramework (nightly)",
           "status": "Likely safe",
-          "release_tag": "nightly-01388-7f24389c96029ace77331e38f16313e8e3c6aaee",
-          "release_published_at": "2026-06-13T20:56:34Z",
+          "release_tag": "nightly-01391-a0e9010fb0449dc9d824b5978ee759eeaf50f7c6",
+          "release_published_at": "2026-06-22T11:12:46Z",
           "mentions_patch": false,
-          "first_release_tag": "nightly-01388-7f24389c96029ace77331e38f16313e8e3c6aaee",
-          "first_release_at": "2026-06-13T20:56:34Z",
-          "data_from": "2026-06-13T20:56:34Z",
+          "first_release_tag": "nightly-01391-a0e9010fb0449dc9d824b5978ee759eeaf50f7c6",
+          "first_release_at": "2026-06-22T11:12:46Z",
+          "data_from": "2026-06-22T11:12:46Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -189,12 +189,12 @@
           "short": "REFramework",
           "name": "REFramework (nightly)",
           "status": "Likely safe",
-          "release_tag": "nightly-01388-7f24389c96029ace77331e38f16313e8e3c6aaee",
-          "release_published_at": "2026-06-13T20:56:34Z",
+          "release_tag": "nightly-01391-a0e9010fb0449dc9d824b5978ee759eeaf50f7c6",
+          "release_published_at": "2026-06-22T11:12:46Z",
           "mentions_patch": false,
-          "first_release_tag": "nightly-01388-7f24389c96029ace77331e38f16313e8e3c6aaee",
-          "first_release_at": "2026-06-13T20:56:34Z",
-          "data_from": "2026-06-13T20:56:34Z",
+          "first_release_tag": "nightly-01391-a0e9010fb0449dc9d824b5978ee759eeaf50f7c6",
+          "first_release_at": "2026-06-22T11:12:46Z",
+          "data_from": "2026-06-22T11:12:46Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -213,12 +213,12 @@
           "short": "REFramework",
           "name": "REFramework (nightly)",
           "status": "Likely safe",
-          "release_tag": "nightly-01388-7f24389c96029ace77331e38f16313e8e3c6aaee",
-          "release_published_at": "2026-06-13T20:56:34Z",
+          "release_tag": "nightly-01391-a0e9010fb0449dc9d824b5978ee759eeaf50f7c6",
+          "release_published_at": "2026-06-22T11:12:46Z",
           "mentions_patch": false,
-          "first_release_tag": "nightly-01388-7f24389c96029ace77331e38f16313e8e3c6aaee",
-          "first_release_at": "2026-06-13T20:56:34Z",
-          "data_from": "2026-06-13T20:56:34Z",
+          "first_release_tag": "nightly-01391-a0e9010fb0449dc9d824b5978ee759eeaf50f7c6",
+          "first_release_at": "2026-06-22T11:12:46Z",
+          "data_from": "2026-06-22T11:12:46Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -237,12 +237,12 @@
           "short": "REFramework",
           "name": "REFramework (nightly)",
           "status": "Likely safe",
-          "release_tag": "nightly-01388-7f24389c96029ace77331e38f16313e8e3c6aaee",
-          "release_published_at": "2026-06-13T20:56:34Z",
+          "release_tag": "nightly-01391-a0e9010fb0449dc9d824b5978ee759eeaf50f7c6",
+          "release_published_at": "2026-06-22T11:12:46Z",
           "mentions_patch": false,
-          "first_release_tag": "nightly-01388-7f24389c96029ace77331e38f16313e8e3c6aaee",
-          "first_release_at": "2026-06-13T20:56:34Z",
-          "data_from": "2026-06-13T20:56:34Z",
+          "first_release_tag": "nightly-01391-a0e9010fb0449dc9d824b5978ee759eeaf50f7c6",
+          "first_release_at": "2026-06-22T11:12:46Z",
+          "data_from": "2026-06-22T11:12:46Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -261,12 +261,12 @@
           "short": "REFramework",
           "name": "REFramework (nightly)",
           "status": "Likely safe",
-          "release_tag": "nightly-01388-7f24389c96029ace77331e38f16313e8e3c6aaee",
-          "release_published_at": "2026-06-13T20:56:34Z",
+          "release_tag": "nightly-01391-a0e9010fb0449dc9d824b5978ee759eeaf50f7c6",
+          "release_published_at": "2026-06-22T11:12:46Z",
           "mentions_patch": false,
-          "first_release_tag": "nightly-01388-7f24389c96029ace77331e38f16313e8e3c6aaee",
-          "first_release_at": "2026-06-13T20:56:34Z",
-          "data_from": "2026-06-13T20:56:34Z",
+          "first_release_tag": "nightly-01391-a0e9010fb0449dc9d824b5978ee759eeaf50f7c6",
+          "first_release_at": "2026-06-22T11:12:46Z",
+          "data_from": "2026-06-22T11:12:46Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -285,12 +285,12 @@
           "short": "REFramework",
           "name": "REFramework (nightly)",
           "status": "Likely safe",
-          "release_tag": "nightly-01388-7f24389c96029ace77331e38f16313e8e3c6aaee",
-          "release_published_at": "2026-06-13T20:56:34Z",
+          "release_tag": "nightly-01391-a0e9010fb0449dc9d824b5978ee759eeaf50f7c6",
+          "release_published_at": "2026-06-22T11:12:46Z",
           "mentions_patch": false,
-          "first_release_tag": "nightly-01388-7f24389c96029ace77331e38f16313e8e3c6aaee",
-          "first_release_at": "2026-06-13T20:56:34Z",
-          "data_from": "2026-06-13T20:56:34Z",
+          "first_release_tag": "nightly-01391-a0e9010fb0449dc9d824b5978ee759eeaf50f7c6",
+          "first_release_at": "2026-06-22T11:12:46Z",
+          "data_from": "2026-06-22T11:12:46Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -309,12 +309,12 @@
           "short": "REFramework",
           "name": "REFramework (nightly)",
           "status": "Likely safe",
-          "release_tag": "nightly-01388-7f24389c96029ace77331e38f16313e8e3c6aaee",
-          "release_published_at": "2026-06-13T20:56:34Z",
+          "release_tag": "nightly-01391-a0e9010fb0449dc9d824b5978ee759eeaf50f7c6",
+          "release_published_at": "2026-06-22T11:12:46Z",
           "mentions_patch": false,
-          "first_release_tag": "nightly-01388-7f24389c96029ace77331e38f16313e8e3c6aaee",
-          "first_release_at": "2026-06-13T20:56:34Z",
-          "data_from": "2026-06-13T20:56:34Z",
+          "first_release_tag": "nightly-01391-a0e9010fb0449dc9d824b5978ee759eeaf50f7c6",
+          "first_release_at": "2026-06-22T11:12:46Z",
+          "data_from": "2026-06-22T11:12:46Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -333,12 +333,12 @@
           "short": "REFramework",
           "name": "REFramework (nightly)",
           "status": "Likely safe",
-          "release_tag": "nightly-01388-7f24389c96029ace77331e38f16313e8e3c6aaee",
-          "release_published_at": "2026-06-13T20:56:34Z",
+          "release_tag": "nightly-01391-a0e9010fb0449dc9d824b5978ee759eeaf50f7c6",
+          "release_published_at": "2026-06-22T11:12:46Z",
           "mentions_patch": false,
-          "first_release_tag": "nightly-01388-7f24389c96029ace77331e38f16313e8e3c6aaee",
-          "first_release_at": "2026-06-13T20:56:34Z",
-          "data_from": "2026-06-13T20:56:34Z",
+          "first_release_tag": "nightly-01391-a0e9010fb0449dc9d824b5978ee759eeaf50f7c6",
+          "first_release_at": "2026-06-22T11:12:46Z",
+          "data_from": "2026-06-22T11:12:46Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
