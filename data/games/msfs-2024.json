@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T18:34:54Z",
+  "generated_at": "2026-11-01T00:50:08Z",
   "game": {
     "slug": "msfs-2024",
     "name": "Microsoft Flight Simulator 2024",
@@ -146,7 +146,7 @@
           "mentions_patch": false,
           "first_release_tag": null,
           "first_release_at": null,
-          "data_from": "2026-03-08T20:24:40Z",
+          "data_from": "2026-03-16T14:50:54Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -198,7 +198,7 @@
           "mentions_patch": false,
           "first_release_tag": null,
           "first_release_at": null,
-          "data_from": "2026-03-08T20:24:40Z",
+          "data_from": "2026-03-16T14:50:54Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -250,7 +250,7 @@
           "mentions_patch": false,
           "first_release_tag": "11.2.0.3",
           "first_release_at": "2026-08-19T13:49:44Z",
-          "data_from": "2026-03-08T20:24:40Z",
+          "data_from": "2026-03-16T14:50:54Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -302,7 +302,7 @@
           "mentions_patch": false,
           "first_release_tag": "11.2.0",
           "first_release_at": "2026-07-29T13:25:58Z",
-          "data_from": "2026-03-08T20:24:40Z",
+          "data_from": "2026-03-16T14:50:54Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -354,7 +354,7 @@
           "mentions_patch": false,
           "first_release_tag": "11.1.0",
           "first_release_at": "2026-05-13T06:49:37Z",
-          "data_from": "2026-03-08T20:24:40Z",
+          "data_from": "2026-03-16T14:50:54Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -406,7 +406,7 @@
           "mentions_patch": false,
           "first_release_tag": "11.0.0",
           "first_release_at": "2026-03-16T14:50:54Z",
-          "data_from": "2026-03-08T20:24:40Z",
+          "data_from": "2026-03-16T14:50:54Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -458,7 +458,7 @@
           "mentions_patch": false,
           "first_release_tag": "11.0.0",
           "first_release_at": "2026-03-16T14:50:54Z",
-          "data_from": "2026-03-08T20:24:40Z",
+          "data_from": "2026-03-16T14:50:54Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -510,7 +510,7 @@
           "mentions_patch": true,
           "first_release_tag": "11.0.0",
           "first_release_at": "2026-03-16T14:50:54Z",
-          "data_from": "2026-03-08T20:24:40Z",
+          "data_from": "2026-03-16T14:50:54Z",
           "first_mention_tag": "11.0.0",
           "first_mention_at": "2026-03-16T14:50:54Z"
         }

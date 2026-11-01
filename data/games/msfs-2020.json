@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T18:35:07Z",
+  "generated_at": "2026-11-01T00:50:21Z",
   "game": {
     "slug": "msfs-2020",
     "name": "Microsoft Flight Simulator (2020)",
@@ -156,7 +156,7 @@
           "mentions_patch": false,
           "first_release_tag": "11.0.0",
           "first_release_at": "2026-03-16T14:50:54Z",
-          "data_from": "2026-03-08T20:24:40Z",
+          "data_from": "2026-03-16T14:50:54Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -208,7 +208,7 @@
           "mentions_patch": false,
           "first_release_tag": "11.0.0",
           "first_release_at": "2026-03-16T14:50:54Z",
-          "data_from": "2026-03-08T20:24:40Z",
+          "data_from": "2026-03-16T14:50:54Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -260,7 +260,7 @@
           "mentions_patch": false,
           "first_release_tag": "11.0.0",
           "first_release_at": "2026-03-16T14:50:54Z",
-          "data_from": "2026-03-08T20:24:40Z",
+          "data_from": "2026-03-16T14:50:54Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -312,7 +312,7 @@
           "mentions_patch": false,
           "first_release_tag": "11.0.0",
           "first_release_at": "2026-03-16T14:50:54Z",
-          "data_from": "2026-03-08T20:24:40Z",
+          "data_from": "2026-03-16T14:50:54Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -364,7 +364,7 @@
           "mentions_patch": false,
           "first_release_tag": "11.0.0",
           "first_release_at": "2026-03-16T14:50:54Z",
-          "data_from": "2026-03-08T20:24:40Z",
+          "data_from": "2026-03-16T14:50:54Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }

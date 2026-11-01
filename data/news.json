@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T18:35:52Z",
+  "generated_at": "2026-11-01T00:51:01Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,51 @@
     }
   ],
   "items": [
+    {
+      "title": "FromSoftware temporarily shuts down Dark Souls 2 and 3 multiplayer over 'server issue'",
+      "url": "https://www.pcgamer.com/games/dark-souls/fromsoftware-temporarily-shuts-down-dark-souls-2-and-3-multiplayer-over-server-issue/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-31T21:40:23Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Fanfiction Library of Alexandria AO3 down for up to a month following hack",
+      "url": "https://www.pcgamer.com/gaming-industry/fanfiction-library-of-alexandria-ao3-down-for-up-to-a-month-following-hack/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-31T21:11:46Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Elder Scrolls Skyblivion mod faces lawsuit from former volunteer, project lead urges 'Please don't turn this into any kind of witch hunt'",
+      "url": "https://www.pcgamer.com/games/the-elder-scrolls/elder-scrolls-skyblivion-mod-faces-lawsuit-from-former-volunteer-project-lead-urges-please-dont-turn-this-into-any-kind-of-witch-hunt/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-31T20:29:22Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Celeste and TowerFall have delisted from Xbox's digital storefronts to support BDS boycott",
+      "url": "https://www.pcgamer.com/games/action/celeste-and-towerfall-have-delisted-from-xboxs-digital-storefronts-to-support-bds-boycott/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-31T18:57:47Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Final Fantasy 14: Evercold delayed to February, preorders start next week",
+      "url": "https://www.pcgamer.com/games/final-fantasy/final-fantasy-14-evercold-delayed-to-february-preorders-start-next-week/",
+      "source": "PC Gamer",
+      "published_at": "2026-10-31T18:57:19Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Yacht Club confirms Mina the Hollower was the shot in the arm it needed stay alive\u2014'for now'",
       "url": "https://www.pcgamer.com/games/adventure/yacht-club-confirms-mina-the-hollower-was-the-shot-in-the-arm-it-needed-stay-alive-for-now/",
@@ -516,51 +561,6 @@
       "url": "https://www.eurogamer.net/mouthwashing-movie-rights-sony-director",
       "source": "Eurogamer",
       "published_at": "2026-10-30T12:00:41Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Games industry honours beloved actor Sir Patrick Stewart, as the legendary Star Trek and X-Men actor passes away",
-      "url": "https://www.eurogamer.net/patrick-stewart-dies-oblivion-uriel-septim-castlevania",
-      "source": "Eurogamer",
-      "published_at": "2026-10-30T11:35:58Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "There are currently \"no other Assassin's Creed remakes actively in development\", says Ubisoft",
-      "url": "https://www.eurogamer.net/no-new-assassins-creed-games-in-development-ubisoft",
-      "source": "Eurogamer",
-      "published_at": "2026-10-30T11:35:06Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "There are no more Assassin's Creed remakes in development, because Ubisoft are focused on Hexe, Invictus and \"projects you haven't heard about yet\"",
-      "url": "https://www.rockpapershotgun.com/there-are-no-more-assassins-creed-remakes-in-development-because-ubisoft-are-focused-on-hexe-invictus-and-projects-you-havent-heard-about-yet",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-10-30T11:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Bethesda reportedly revealing The Elder Scrolls 6 next month, and we may know what its subtitle is going to be",
-      "url": "https://www.eurogamer.net/elder-scrolls-6-reportedly-revealed-november",
-      "source": "Eurogamer",
-      "published_at": "2026-10-30T10:52:39Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Compromised laptop could be to blame for record $6.3 billion cryptocurrency heist: Binance rushes to freeze stolen assets as experts blame North Korean group",
-      "url": "https://www.pcgamer.com/software/security/compromised-laptop-could-be-to-blame-for-record-usd6-3-billion-cryptocurrency-heist-binance-rushes-to-freeze-stolen-assets-as-experts-blame-north-korean-group/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-30T10:52:32Z",
       "games": [],
       "kind": "news",
       "highlight": false
