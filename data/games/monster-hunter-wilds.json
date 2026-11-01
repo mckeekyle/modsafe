@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T18:35:43Z",
+  "generated_at": "2026-11-01T00:18:19Z",
   "game": {
     "slug": "monster-hunter-wilds",
     "name": "Monster Hunter Wilds",
@@ -14,7 +14,7 @@
       "steam_build": "25921695"
     }
   },
-  "verdict": "Just patched, wait",
+  "verdict": "Likely safe",
   "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
   "frameworks": [
     {
@@ -26,17 +26,17 @@
       "repo": "praydog/REFramework-nightly",
       "tracked": true,
       "sensitive": true,
-      "status": "Just patched, wait",
-      "base_status": "Unknown / check",
-      "reason": "Latest release predates patch Ver.1.042.00.03; compatibility is unverified \u2014 check the project page.",
+      "status": "Likely safe",
+      "base_status": "Likely OK",
+      "reason": "Latest release is newer than patch Ver.1.042.00.03, but notes do not explicitly mention that version. Each nightly is one build for every RE Engine game, so a newer nightly doesn't prove a Wilds fix. No open crash reports since the patch. (Searched praydog/REFramework issues that mention Wilds; the nightly repo has no tracker of its own.)",
       "breakage_reports": [],
       "official": null,
-      "release_tag": "nightly-01433-d4611aef1d63effd3a736bdf9404ea702428017d",
-      "release_name": "REF Nightly 01433 (d4611aef1d63effd3a736bdf9404ea702428017d)",
-      "release_published_at": "2026-10-21T04:37:39Z",
-      "release_url": "https://github.com/praydog/REFramework-nightly/releases/tag/nightly-01433-d4611aef1d63effd3a736bdf9404ea702428017d",
+      "release_tag": "nightly-01434-a67dfb06f7e051febdd880b5425cedf872303e59",
+      "release_name": "REF Nightly 01434 (a67dfb06f7e051febdd880b5425cedf872303e59)",
+      "release_published_at": "2026-10-31T23:45:07Z",
+      "release_url": "https://github.com/praydog/REFramework-nightly/releases/tag/nightly-01434-a67dfb06f7e051febdd880b5425cedf872303e59",
       "mentions_patch": false,
-      "newer_than_patch": false,
+      "newer_than_patch": true,
       "mention_releases": []
     },
     {
@@ -68,13 +68,13 @@
           "id": "reframework",
           "short": "REFramework",
           "name": "REFramework (nightly)",
-          "status": "No post-patch release",
-          "release_tag": null,
-          "release_published_at": null,
+          "status": "Likely safe",
+          "release_tag": "nightly-01434-a67dfb06f7e051febdd880b5425cedf872303e59",
+          "release_published_at": "2026-10-31T23:45:07Z",
           "mentions_patch": false,
-          "first_release_tag": null,
-          "first_release_at": null,
-          "data_from": "2026-06-03T19:16:48Z",
+          "first_release_tag": "nightly-01434-a67dfb06f7e051febdd880b5425cedf872303e59",
+          "first_release_at": "2026-10-31T23:45:07Z",
+          "data_from": "2026-06-13T20:56:34Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -98,7 +98,7 @@
           "mentions_patch": false,
           "first_release_tag": "nightly-01396-6dd6724325d13f05e2e897907aa568fc9cf72574",
           "first_release_at": "2026-08-19T12:47:56Z",
-          "data_from": "2026-06-03T19:16:48Z",
+          "data_from": "2026-06-13T20:56:34Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -122,7 +122,7 @@
           "mentions_patch": false,
           "first_release_tag": "nightly-01395-f9a4cf0e2f70a73c5552129f47fbdd95cb8d1903",
           "first_release_at": "2026-08-13T04:47:38Z",
-          "data_from": "2026-06-03T19:16:48Z",
+          "data_from": "2026-06-13T20:56:34Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -146,7 +146,7 @@
           "mentions_patch": false,
           "first_release_tag": "nightly-01395-f9a4cf0e2f70a73c5552129f47fbdd95cb8d1903",
           "first_release_at": "2026-08-13T04:47:38Z",
-          "data_from": "2026-06-03T19:16:48Z",
+          "data_from": "2026-06-13T20:56:34Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -165,12 +165,12 @@
           "short": "REFramework",
           "name": "REFramework (nightly)",
           "status": "Likely safe",
-          "release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
-          "release_published_at": "2026-06-03T19:16:48Z",
+          "release_tag": "nightly-01388-7f24389c96029ace77331e38f16313e8e3c6aaee",
+          "release_published_at": "2026-06-13T20:56:34Z",
           "mentions_patch": false,
-          "first_release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
-          "first_release_at": "2026-06-03T19:16:48Z",
-          "data_from": "2026-06-03T19:16:48Z",
+          "first_release_tag": "nightly-01388-7f24389c96029ace77331e38f16313e8e3c6aaee",
+          "first_release_at": "2026-06-13T20:56:34Z",
+          "data_from": "2026-06-13T20:56:34Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -189,12 +189,12 @@
           "short": "REFramework",
           "name": "REFramework (nightly)",
           "status": "Likely safe",
-          "release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
-          "release_published_at": "2026-06-03T19:16:48Z",
+          "release_tag": "nightly-01388-7f24389c96029ace77331e38f16313e8e3c6aaee",
+          "release_published_at": "2026-06-13T20:56:34Z",
           "mentions_patch": false,
-          "first_release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
-          "first_release_at": "2026-06-03T19:16:48Z",
-          "data_from": "2026-06-03T19:16:48Z",
+          "first_release_tag": "nightly-01388-7f24389c96029ace77331e38f16313e8e3c6aaee",
+          "first_release_at": "2026-06-13T20:56:34Z",
+          "data_from": "2026-06-13T20:56:34Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -213,12 +213,12 @@
           "short": "REFramework",
           "name": "REFramework (nightly)",
           "status": "Likely safe",
-          "release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
-          "release_published_at": "2026-06-03T19:16:48Z",
+          "release_tag": "nightly-01388-7f24389c96029ace77331e38f16313e8e3c6aaee",
+          "release_published_at": "2026-06-13T20:56:34Z",
           "mentions_patch": false,
-          "first_release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
-          "first_release_at": "2026-06-03T19:16:48Z",
-          "data_from": "2026-06-03T19:16:48Z",
+          "first_release_tag": "nightly-01388-7f24389c96029ace77331e38f16313e8e3c6aaee",
+          "first_release_at": "2026-06-13T20:56:34Z",
+          "data_from": "2026-06-13T20:56:34Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -237,12 +237,12 @@
           "short": "REFramework",
           "name": "REFramework (nightly)",
           "status": "Likely safe",
-          "release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
-          "release_published_at": "2026-06-03T19:16:48Z",
+          "release_tag": "nightly-01388-7f24389c96029ace77331e38f16313e8e3c6aaee",
+          "release_published_at": "2026-06-13T20:56:34Z",
           "mentions_patch": false,
-          "first_release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
-          "first_release_at": "2026-06-03T19:16:48Z",
-          "data_from": "2026-06-03T19:16:48Z",
+          "first_release_tag": "nightly-01388-7f24389c96029ace77331e38f16313e8e3c6aaee",
+          "first_release_at": "2026-06-13T20:56:34Z",
+          "data_from": "2026-06-13T20:56:34Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -261,12 +261,12 @@
           "short": "REFramework",
           "name": "REFramework (nightly)",
           "status": "Likely safe",
-          "release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
-          "release_published_at": "2026-06-03T19:16:48Z",
+          "release_tag": "nightly-01388-7f24389c96029ace77331e38f16313e8e3c6aaee",
+          "release_published_at": "2026-06-13T20:56:34Z",
           "mentions_patch": false,
-          "first_release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
-          "first_release_at": "2026-06-03T19:16:48Z",
-          "data_from": "2026-06-03T19:16:48Z",
+          "first_release_tag": "nightly-01388-7f24389c96029ace77331e38f16313e8e3c6aaee",
+          "first_release_at": "2026-06-13T20:56:34Z",
+          "data_from": "2026-06-13T20:56:34Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -285,12 +285,12 @@
           "short": "REFramework",
           "name": "REFramework (nightly)",
           "status": "Likely safe",
-          "release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
-          "release_published_at": "2026-06-03T19:16:48Z",
+          "release_tag": "nightly-01388-7f24389c96029ace77331e38f16313e8e3c6aaee",
+          "release_published_at": "2026-06-13T20:56:34Z",
           "mentions_patch": false,
-          "first_release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
-          "first_release_at": "2026-06-03T19:16:48Z",
-          "data_from": "2026-06-03T19:16:48Z",
+          "first_release_tag": "nightly-01388-7f24389c96029ace77331e38f16313e8e3c6aaee",
+          "first_release_at": "2026-06-13T20:56:34Z",
+          "data_from": "2026-06-13T20:56:34Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -309,12 +309,12 @@
           "short": "REFramework",
           "name": "REFramework (nightly)",
           "status": "Likely safe",
-          "release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
-          "release_published_at": "2026-06-03T19:16:48Z",
+          "release_tag": "nightly-01388-7f24389c96029ace77331e38f16313e8e3c6aaee",
+          "release_published_at": "2026-06-13T20:56:34Z",
           "mentions_patch": false,
-          "first_release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
-          "first_release_at": "2026-06-03T19:16:48Z",
-          "data_from": "2026-06-03T19:16:48Z",
+          "first_release_tag": "nightly-01388-7f24389c96029ace77331e38f16313e8e3c6aaee",
+          "first_release_at": "2026-06-13T20:56:34Z",
+          "data_from": "2026-06-13T20:56:34Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -333,12 +333,12 @@
           "short": "REFramework",
           "name": "REFramework (nightly)",
           "status": "Likely safe",
-          "release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
-          "release_published_at": "2026-06-03T19:16:48Z",
+          "release_tag": "nightly-01388-7f24389c96029ace77331e38f16313e8e3c6aaee",
+          "release_published_at": "2026-06-13T20:56:34Z",
           "mentions_patch": false,
-          "first_release_tag": "nightly-01383-1f45c83a45a228e8e82d8bd151008a91966a8700",
-          "first_release_at": "2026-06-03T19:16:48Z",
-          "data_from": "2026-06-03T19:16:48Z",
+          "first_release_tag": "nightly-01388-7f24389c96029ace77331e38f16313e8e3c6aaee",
+          "first_release_at": "2026-06-13T20:56:34Z",
+          "data_from": "2026-06-13T20:56:34Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -454,6 +454,21 @@
           "short": "REFramework",
           "status": "Just patched, wait",
           "release_tag": "nightly-01433-d4611aef1d63effd3a736bdf9404ea702428017d"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-01T00:18:19Z",
+      "patch": "Ver.1.042.00.03",
+      "patch_key": "1.042.00.03",
+      "patch_published_at": "2026-10-28T10:54:39Z",
+      "patch_url": "https://store.steampowered.com/news/app/2246340/view/1847920302230509",
+      "verdict": "Likely safe",
+      "frameworks": [
+        {
+          "short": "REFramework",
+          "status": "Likely safe",
+          "release_tag": "nightly-01434-a67dfb06f7e051febdd880b5425cedf872303e59"
         }
       ]
     }
