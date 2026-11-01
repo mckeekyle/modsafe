@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T00:51:01Z",
+  "generated_at": "2026-11-01T06:49:42Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,24 @@
     }
   ],
   "items": [
+    {
+      "title": "Forza co-creator Dan Greenawalt is reportedly leaving Microsoft",
+      "url": "https://www.pcgamer.com/games/racing/forza-co-creator-dan-greenawalt-is-reportedly-leaving-microsoft/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-01T04:05:48Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "After almost a decade of work, Alien: Isolation mod tools hit 1.0 with support for 'full custom maps, missions, modes, characters, weapons, animations, sounds, models, textures, and more'",
+      "url": "https://www.pcgamer.com/games/horror/after-almost-a-decade-of-work-alien-isolation-mod-tools-hit-1-0-with-support-for-full-custom-maps-missions-modes-characters-weapons-animations-sounds-models-textures-and-more/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-01T01:30:27Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "FromSoftware temporarily shuts down Dark Souls 2 and 3 multiplayer over 'server issue'",
       "url": "https://www.pcgamer.com/games/dark-souls/fromsoftware-temporarily-shuts-down-dark-souls-2-and-3-multiplayer-over-server-issue/",
@@ -543,24 +561,6 @@
       "url": "https://www.pcgamer.com/movies-tv/kane-parsons-believes-his-interpretation-of-the-backrooms-is-minor-cultural-shorthand-for-the-abstract-space-just-look-at-south-parks-recent-episode/",
       "source": "PC Gamer",
       "published_at": "2026-10-30T12:05:23Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "OCE players are stuck in perpetual night on WoW: Forever, but its devs are considering a fix",
-      "url": "https://www.pcgamer.com/games/world-of-warcraft/oce-players-are-stuck-in-perpetual-night-on-wow-forever-but-its-devs-are-considering-a-fix/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-30T12:04:16Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Sony has snapped up the film rights for Mouthwashing",
-      "url": "https://www.eurogamer.net/mouthwashing-movie-rights-sony-director",
-      "source": "Eurogamer",
-      "published_at": "2026-10-30T12:00:41Z",
       "games": [],
       "kind": "news",
       "highlight": false
