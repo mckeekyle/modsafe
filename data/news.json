@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T06:49:42Z",
+  "generated_at": "2026-11-01T12:41:51Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,24 @@
     }
   ],
   "items": [
+    {
+      "title": "Pikmin 4 Nintendo Switch 2 Edition launches 12th November and a demo is out tomorrow",
+      "url": "https://www.eurogamer.net/pikmin-4-switch-2-edition-release-date-demo",
+      "source": "Eurogamer",
+      "published_at": "2026-11-01T10:04:13Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The Sunday Papers",
+      "url": "https://www.rockpapershotgun.com/the-sunday-papers-834",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-01T10:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Forza co-creator Dan Greenawalt is reportedly leaving Microsoft",
       "url": "https://www.pcgamer.com/games/racing/forza-co-creator-dan-greenawalt-is-reportedly-leaving-microsoft/",
@@ -543,24 +561,6 @@
       "url": "https://www.rockpapershotgun.com/helldivers-2-boss-can-absolutely-see-making-a-game-parody-of-generative-ai-but-it-would-need-to-be-quirky-rather-than-doom-laden",
       "source": "Rock Paper Shotgun",
       "published_at": "2026-10-30T12:58:41Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Intel shifts Panther Lake capacity to data center chips while the memory crisis wreaks havoc on PC market; still sold out of budget Wildcat Lake chips",
-      "url": "https://www.pcgamer.com/hardware/processors/intel-shifts-panther-lake-capacity-to-data-center-chips-while-the-memory-crisis-wreaks-havoc-on-pc-market-still-sold-out-of-budget-wildcat-lake-chips/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-30T12:38:22Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Kane Parsons believes his interpretation of the backrooms is 'minor cultural shorthand' for the abstract space\u2014just look at South Park's recent episode",
-      "url": "https://www.pcgamer.com/movies-tv/kane-parsons-believes-his-interpretation-of-the-backrooms-is-minor-cultural-shorthand-for-the-abstract-space-just-look-at-south-parks-recent-episode/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-30T12:05:23Z",
       "games": [],
       "kind": "news",
       "highlight": false
