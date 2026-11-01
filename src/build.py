@@ -1594,7 +1594,8 @@ def build_home(games_data: list[tuple[dict, dict]]) -> str:
     itemlist = {"@context": "https://schema.org", "@type": "ItemList", "name": "Games tracked by ModSafe",
                 "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": g["name"], "url": f"{SITE_URL}/{g['slug']}/"}
                                     for i, (g, _) in enumerate(games_data)]}
-    n_fw = sum(1 for _, d in games_data for f in d["frameworks"] if f.get("tracked", True))
+    n_fw = sum(1 for _, d in games_data for f in d["frameworks"]
+               if f.get("tracked", True) and f.get("source") != "manual_shv")  # Script Hook V is checked by hand
     n_games = distinct_games([g for g, _ in games_data])
     n_plat = sum(1 for g, _ in games_data if g.get("genre") == "Platform")
     n_ok = sum(1 for _, d in games_data if d["verdict"] in ("Safe", "Likely safe"))
@@ -1825,7 +1826,10 @@ def build_patches_page(games_data, now: datetime | None = None) -> str:
           "itemListOrder": "https://schema.org/ItemListOrderDescending",
           "itemListElement": [{"@type": "ListItem", "position": n + 1, "name": f"{i['game']['name']} {i['label']}",
                                "url": f"{SITE_URL}/{i['game']['slug']}/"} for n, i in enumerate(items[:20])]}
-    desc = (f"{c['7d']} game patches in the last 7 days and {c['30d']} in 30 days across {len(games_data)} modded games, "
+    n_games = distinct_games([g for g, _ in games_data])
+    n_plat = sum(1 for g, _ in games_data if g.get("genre") == "Platform")
+    scope = f"{n_games} modded games" + (" and Steam Deck" if n_plat else "")
+    desc = (f"{c['7d']} game patches in the last 7 days and {c['30d']} in 30 days across {scope}, "
             "with the current mod verdict for each: is it safe to update?")
     return page_shell("Recent game patches & mod status — patch timeline for every game — ModSafe", _clip(desc), "/patches/", "patches",
                       body + LOCAL_TIME_JS, extra_jsonld=[ld, breadcrumb_ld([("Home", "/"), ("Patches", "/patches/")])],
