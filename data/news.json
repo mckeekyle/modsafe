@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T18:36:33Z",
+  "generated_at": "2026-11-02T00:51:57Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,42 @@
     }
   ],
   "items": [
+    {
+      "title": "Gag Order is a co-op, SCP-ish horror shooter about surviving as best you can against some nasty, tentacle covered cephalopod creatures",
+      "url": "https://www.rockpapershotgun.com/gag-order-is-a-co-op-scp-ish-horror-shooter-about-surviving-as-best-you-can-against-some-nasty-tentacle-covered-cephalopod-creatures",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-01T22:56:41Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Dune: Awakening's seasonally appropriate Blood and Ice expansion gets a December release date, and in a plus for preservation, an offline mode this month",
+      "url": "https://www.rockpapershotgun.com/dune-awakenings-seasonally-appropriate-blood-and-ice-expansion-gets-a-december-release-date-and-in-a-plus-for-preservation-an-offline-mode-this-month",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-01T21:34:06Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "What remains of canned Portal prequel white whale F-Stop is now fully playable thanks to modders and some big leaks",
+      "url": "https://www.rockpapershotgun.com/what-remains-of-canned-portal-prequel-white-whale-f-stop-is-now-fully-playable-thanks-to-modders-and-some-big-leaks",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-01T19:08:44Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Jagex partnered with a RuneScape-inspired idle game to turn the sequel into an official spinoff",
+      "url": "https://www.pcgamer.com/games/rpg/jagex-partnered-with-a-runescape-inspired-idle-game-to-turn-the-sequel-into-an-official-spinoff/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-01T18:41:29Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "At Dead of Night sequel The Great Hugo is coming \"(very) soon\"",
       "url": "https://www.eurogamer.net/at-dead-of-night-2-the-great-hugo-sequel-announced",
@@ -267,8 +303,8 @@
       "highlight": false
     },
     {
-      "title": "'Are we going too far with this?': One of the worst scenes in Outlast had its devs debating whether to add it to the game or not",
-      "url": "https://www.pcgamer.com/games/horror/are-we-going-too-far-with-this-one-of-the-worst-scenes-in-outlast-had-its-devs-debating-whether-to-add-it-to-the-game-or-not/",
+      "title": "I spoke to one of the world's only gaming political scientists and he taught me how to avoid getting murdered in Arc Raiders",
+      "url": "https://www.pcgamer.com/games/third-person-shooter/i-spoke-to-one-of-the-worlds-only-gaming-political-scientists-and-he-taught-me-how-to-avoid-getting-murdered-in-arc-raiders/",
       "source": "PC Gamer",
       "published_at": "2026-10-31T17:00:00Z",
       "games": [],
@@ -276,8 +312,8 @@
       "highlight": false
     },
     {
-      "title": "I spoke to one of the world's only gaming political scientists and he taught me how to avoid getting murdered in Arc Raiders",
-      "url": "https://www.pcgamer.com/games/third-person-shooter/i-spoke-to-one-of-the-worlds-only-gaming-political-scientists-and-he-taught-me-how-to-avoid-getting-murdered-in-arc-raiders/",
+      "title": "'Are we going too far with this?': One of the worst scenes in Outlast had its devs debating whether to add it to the game or not",
+      "url": "https://www.pcgamer.com/games/horror/are-we-going-too-far-with-this-one-of-the-worst-scenes-in-outlast-had-its-devs-debating-whether-to-add-it-to-the-game-or-not/",
       "source": "PC Gamer",
       "published_at": "2026-10-31T17:00:00Z",
       "games": [],
@@ -525,44 +561,6 @@
       "url": "https://www.pcgamer.com/games/adventure/a-daedalic-adventure-classic-is-free-on-gog/",
       "source": "PC Gamer",
       "published_at": "2026-10-30T17:42:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "This brutal Fallout 4 horror mod turns the Commonwealth into Silent Hill",
-      "url": "https://www.pcgamer.com/games/fallout/this-brutal-fallout-4-horror-mod-turns-the-commonwealth-into-silent-hill/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-30T17:38:41Z",
-      "games": [
-        "fallout-4"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "'We act as if Halloween is ours': The best way to spend spooky season is within The Outlast Trials' Sinyala Facility",
-      "url": "https://www.pcgamer.com/games/horror/we-act-as-if-halloween-is-ours-the-best-way-to-spend-spooky-season-is-within-the-outlast-trials-sinyala-facility/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-30T17:21:12Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Edifier G5 Max wireless gaming headset review",
-      "url": "https://www.pcgamer.com/hardware/gaming-headsets/edifier-g5-max-review/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-30T17:06:25Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Sam Altman argues that it's bad you want DRAM in your computer and not a data center, actually",
-      "url": "https://www.pcgamer.com/software/ai/sam-altman-argues-that-its-bad-you-want-dram-in-your-computer-and-not-a-data-center-actually/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-30T16:45:50Z",
       "games": [],
       "kind": "news",
       "highlight": false
