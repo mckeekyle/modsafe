@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T12:55:23Z",
+  "generated_at": "2026-11-03T18:45:39Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,217 @@
     }
   ],
   "items": [
+    {
+      "title": "Play as water and rain on wildfires in Atuel, a short, free game about the power and vulnerability of nature",
+      "url": "https://www.rockpapershotgun.com/have-you-played-atuel",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-03T18:30:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Frostpunk 2's The Surge DLC keeps the wintery apocalypse and adds in faction-clash-inducing electricity and sets a seasonally appropriate December release date",
+      "url": "https://www.rockpapershotgun.com/frostpunk-2s-the-surge-dlc-keeps-the-wintery-apocalypse-and-adds-in-faction-clash-inducing-electricity-and-sets-a-seasonally-appropriate-december-release-date",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-03T18:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "'Just deleted a couple terabytes of AI slop': Itch.io pushes back against the flood of AI on its storefront",
+      "url": "https://www.pcgamer.com/software/ai/just-deleted-a-couple-terabytes-of-ai-slop-itch-io-pushes-back-against-the-flood-of-ai-on-its-storefront/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-03T17:57:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The latest version of Metal Gear's must-have visual mod slices load times, adds raw mouse input, and restores Mel Gibson",
+      "url": "https://www.pcgamer.com/games/action/the-latest-version-of-metal-gears-must-have-visual-mod-slices-load-times-adds-raw-mouse-input-and-restores-mel-gibson/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-03T17:50:31Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Venom-toothed Noxious Terminids are soon to infest Helldivers 2, and it's your noble job to sterilise the galaxy for Super Earth",
+      "url": "https://www.rockpapershotgun.com/venom-toothed-noxious-terminids-are-soon-to-infest-helldivers-2-and-its-your-noble-job-to-sterilise-the-galaxy-for-super-earth",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-03T17:25:23Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "World of Warcraft's D&D crossover is neat, but inconsistent\u2014novel on one page, then shrugging and pointing to the PHB you already own on the next",
+      "url": "https://www.pcgamer.com/games/world-of-warcraft/world-of-warcrafts-d-and-d-crossover-is-neat-but-inconsistent-novel-on-one-page-then-shrugging-and-pointing-to-the-phb-you-already-own-on-the-next/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-03T17:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Mobile Suit Gundam Battle Operation 3 has been announced, marking another attempt at a free-to-play team game after Gundam Evolution's unfortunate fate",
+      "url": "https://www.rockpapershotgun.com/mobile-suit-gundam-battle-operation-3-has-been-announced-marking-another-attempt-at-a-free-to-play-team-game-after-gundam-evolutions-unfortunate-fate",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-03T16:53:42Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The Elder Scrolls 6: Sentinel teaser all but confirms Hammerfell setting and means we can finally stop using that eight year old header image with the hills",
+      "url": "https://www.rockpapershotgun.com/the-elder-scrolls-6-sentinel-teaser-all-but-confirms-hammerfell-setting-and-means-we-can-finally-stop-using-that-eight-year-old-header-image-with-the-hills",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-03T16:09:52Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Arc Raiders devs say that using generative AI voice acting was necessary as actors \"would just go crazy if they had to read all of that\"",
+      "url": "https://www.eurogamer.net/arc-raiders-ai-voice-acting-would-go-crazy",
+      "source": "Eurogamer",
+      "published_at": "2026-11-03T15:34:03Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The Elder Scrolls 6: Sentinel is finally made official",
+      "url": "https://www.pcgamer.com/games/the-elder-scrolls/the-elder-scrolls-6-sentinel-is-finally-made-official/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-03T15:33:59Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The top 100 PC games",
+      "url": "https://www.pcgamer.com/games/the-top-100-pc-games-2026/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-03T15:30:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Grand Theft Auto 6 pre-load begins on 10th November, file size and regional timings released",
+      "url": "https://www.eurogamer.net/grand-theft-auto-6-pre-load-date",
+      "source": "Eurogamer",
+      "published_at": "2026-11-03T15:26:02Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Morrowind's gravity is no longer '0.01% off' in the new release of its fan-made engine, finally making it playable",
+      "url": "https://www.pcgamer.com/games/the-elder-scrolls/morrowinds-gravity-is-no-longer-0-01-percent-off-in-the-new-release-of-its-fan-made-engine-finally-making-it-playable/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-03T15:19:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The Elder Scrolls VI: Official Name Reveal",
+      "url": "https://store.steampowered.com/news/app/489830/view/1847920302252394",
+      "source": "Steam \u00b7 Skyrim SE/AE",
+      "published_at": "2026-11-03T15:14:16Z",
+      "games": [
+        "skyrim-se"
+      ],
+      "kind": "announcement",
+      "highlight": false
+    },
+    {
+      "title": "The Elder Scrolls 6: Sentinel is confirmed, finally getting new trailer and full name, 8 years, 4 months, and 23 days after its reveal",
+      "url": "https://www.eurogamer.net/the-elder-scrolls-6-sentinel-revealed-bethesda-xbox",
+      "source": "Eurogamer",
+      "published_at": "2026-11-03T15:08:07Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Here's the WoW: Forever release time for your region",
+      "url": "https://www.pcgamer.com/games/world-of-warcraft/forever-release-date-launch-times/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-03T15:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "I'm sad that the Like A Dragon creator's new studio is closing, but I wish their now-cancelled debut Gang of Dragon wasn't just LAD again",
+      "url": "https://www.rockpapershotgun.com/im-sad-that-the-like-a-dragon-creators-new-studio-is-closing-but-i-wish-their-now-cancelled-debut-gang-of-dragon-wasnt-just-lad-again",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-03T14:51:18Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "2 of my favorite studios are teaming up for their first-ever showcase this week, and have a Steam sale going right now",
+      "url": "https://www.pcgamer.com/games/adventure/2-of-my-favorite-studios-are-teaming-up-for-their-first-ever-showcase-this-week-and-have-a-steam-sale-going-right-now/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-03T14:38:29Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Mike Flanagan thinks 'Warhammer is a fascinating world' but can't tell us anything else about the upcoming Warhammer 40,000 project because 'Henry Cavill would be furious'",
+      "url": "https://www.pcgamer.com/movies-tv/mike-flanagan-thinks-warhammer-is-a-fascinating-world-but-cant-tell-us-anything-else-about-the-upcoming-warhammer-40-000-project-because-henry-cavill-would-be-furious/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-03T14:08:33Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Workers & Resources: Soviet Republic's next DLC is set to expand the city building sim into the one place not corrupted by capitalism: SPACE",
+      "url": "https://www.rockpapershotgun.com/workers-resources-soviet-republics-next-dlc-is-set-to-expand-the-city-building-sim-into-the-one-place-not-corrupted-by-capitalism-space",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-03T14:03:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Modders bring Steam Frame build of SteamOS and all of its translation layer goodness to Mac",
+      "url": "https://www.pcgamer.com/software/operating-systems/modders-bring-steam-frame-build-of-steamos-and-all-of-its-translation-layer-goodness-to-mac/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-03T13:55:31Z",
+      "games": [
+        "steam-deck"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The Overwatch devs hear your complaints about skin distribution but concede that some cosmetics need to 'support the actual bottom-line business'",
+      "url": "https://www.pcgamer.com/games/fps/the-overwatch-devs-hear-your-complaints-about-skin-distribution-but-concede-that-some-cosmetics-need-to-support-the-actual-bottom-line-business/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-03T13:44:01Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "COD: Modern Warfare 4 DMZ patch has nerfed UAV Towers so you're not immediately visible everywhere you go",
+      "url": "https://www.eurogamer.net/call-of-duty-modern-warfare-4-dmz-uav-tower-nerf",
+      "source": "Eurogamer",
+      "published_at": "2026-11-03T13:36:19Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Arc Raiders devs Embark insist that using genAI for voice lines was necessary, as \"actors would just go crazy if they had to read all of that\"",
       "url": "https://www.rockpapershotgun.com/arc-raiders-devs-embark-insist-that-using-genai-for-voice-lines-was-necessary-as-actors-would-just-go-crazy-if-they-had-to-read-all-of-that",
@@ -354,215 +565,6 @@
       "url": "https://www.pcgamer.com/games/mmo/final-fantasy-14-evercolds-story-will-have-a-faster-tempo-with-worldbuilding-in-side-quests-says-yoshi-p-but-im-not-sure-that-was-the-problem-with-dawntrail/",
       "source": "PC Gamer",
       "published_at": "2026-11-02T11:53:51Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Skyblivion modders reveal a former volunteer is \"threatening to sue for damages upwards of \u20ac30,000\" over work on the unofficial Oblivion remake project",
-      "url": "https://www.rockpapershotgun.com/skyblivion-modders-reveal-a-former-volunteer-is-threatening-to-sue-for-damages-upwards-of-30000-over-work-on-the-unofficial-oblivion-remake-project",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-02T11:51:26Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Soulframe to launch into free open beta this week, as Warframe devs go head-to-head with WoW: Forever",
-      "url": "https://www.eurogamer.net/soulframe-open-prelude-date-verse-of-the-veillands",
-      "source": "Eurogamer",
-      "published_at": "2026-11-02T11:17:46Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "As if the injury descriptions weren't already ghastly enough in Dwarf Fortress, the legendary outpost builder is getting a \"meat biome\"",
-      "url": "https://www.rockpapershotgun.com/as-if-the-injury-descriptions-werent-already-ghastly-enough-in-dwarf-fortress-the-legendary-outpost-builder-is-getting-a-meat-biome",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-02T10:41:30Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Phantom Blade Zero is Steam's biggest launch of the year so far, selling over 4 million copies in three days",
-      "url": "https://www.eurogamer.net/phantom-blade-zero-4-million-copies-steam-biggest-launch",
-      "source": "Eurogamer",
-      "published_at": "2026-11-02T09:24:45Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The HeroQuest board game is coming to Steam with a quest editor and multiplayer",
-      "url": "https://www.pcgamer.com/games/board-games/the-heroquest-board-game-is-coming-to-steam-with-a-quest-editor-and-multiplayer/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-02T04:12:30Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Footage of what sure looks like a Persona 1 remake has leaked",
-      "url": "https://www.pcgamer.com/games/rpg/footage-of-what-sure-looks-like-a-persona-1-remake-has-leaked/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-02T02:06:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Obsidian's Josh Sawyer on RPG cities: 'Compared to a dungeon, generally speaking, a town is 4x the expense per square foot'",
-      "url": "https://www.pcgamer.com/games/rpg/obsidians-josh-sawyer-on-rpg-cities-compared-to-a-dungeon-generally-speaking-a-town-is-4x-the-expense-per-square-foot/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-02T01:39:58Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Here's one bit of good news for Mass Effect: modders are bringing the multiplayer mode to Mass Effect Legendary Edition",
-      "url": "https://www.pcgamer.com/games/mass-effect/heres-one-bit-of-good-news-for-mass-effect-modders-are-bringing-the-multiplayer-mode-to-mass-effect-legendary-edition/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-02T01:19:58Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Gag Order is a co-op, SCP-ish horror shooter about surviving as best you can against some nasty, tentacle covered cephalopod creatures",
-      "url": "https://www.rockpapershotgun.com/gag-order-is-a-co-op-scp-ish-horror-shooter-about-surviving-as-best-you-can-against-some-nasty-tentacle-covered-cephalopod-creatures",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-01T22:56:41Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Dune: Awakening's seasonally appropriate Blood and Ice expansion gets a December release date, and in a plus for preservation, an offline mode this month",
-      "url": "https://www.rockpapershotgun.com/dune-awakenings-seasonally-appropriate-blood-and-ice-expansion-gets-a-december-release-date-and-in-a-plus-for-preservation-an-offline-mode-this-month",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-01T21:34:06Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "What remains of canned Portal prequel white whale F-Stop is now fully playable thanks to modders and some big leaks",
-      "url": "https://www.rockpapershotgun.com/what-remains-of-canned-portal-prequel-white-whale-f-stop-is-now-fully-playable-thanks-to-modders-and-some-big-leaks",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-01T19:08:44Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Jagex partnered with a RuneScape-inspired idle game to turn the sequel into an official spinoff",
-      "url": "https://www.pcgamer.com/games/rpg/jagex-partnered-with-a-runescape-inspired-idle-game-to-turn-the-sequel-into-an-official-spinoff/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-01T18:41:29Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "At Dead of Night sequel The Great Hugo is coming \"(very) soon\"",
-      "url": "https://www.eurogamer.net/at-dead-of-night-2-the-great-hugo-sequel-announced",
-      "source": "Eurogamer",
-      "published_at": "2026-11-01T18:16:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Final Fantasy 14: Evercold sets itself a release date at the tail end of winter, alongside offering a look at its second, avian-inclined new job",
-      "url": "https://www.rockpapershotgun.com/final-fantasy-14-evercold-sets-itself-a-release-date-at-the-tail-end-of-winter-alongside-offering-a-look-at-its-second-avian-inclined-new-job",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-01T18:07:48Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Grand Theft Auto 6 teased a handful of its upcoming radio stations and its music curation is as strong as ever",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/grand-theft-auto-6-teased-a-handful-of-its-upcoming-radio-stations-and-its-music-curation-is-as-strong-as-ever/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-01T18:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "GOG wants to bring back physical games, but it's 'a very, very complicated thing'",
-      "url": "https://www.pcgamer.com/games/gog-wants-to-bring-back-physical-games-but-its-a-very-very-complicated-thing/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-01T17:45:12Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Valve's long-lost prototype Portal prequel appears online after nearly 20 years",
-      "url": "https://www.pcgamer.com/games/fps/valves-long-lost-prototype-portal-prequel-appears-online-after-nearly-20-years/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-01T17:44:47Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Modern Warfare 4 on Switch 2 has much worse input lag than PS5",
-      "url": "https://www.eurogamer.net/modern-warfare-4-switch-2-input-lag-digital-foundry",
-      "source": "Eurogamer",
-      "published_at": "2026-11-01T17:27:29Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "It looks like footage of a Persona 1 remake has leaked, and if it's legit I really hope you don't hate the colour purple",
-      "url": "https://www.rockpapershotgun.com/it-looks-like-footage-of-a-persona-1-remake-has-leaked-and-if-its-legit-i-really-hope-you-dont-hate-the-colour-purple",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-01T17:17:15Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Composer and designer Lena Raine explains how Pigstep altered Minecraft's approach to music: 'The prompt I keep hearing is \"Oh, Pigstep was such a banger that they want more bangers\"'",
-      "url": "https://www.pcgamer.com/games/composer-and-designer-lena-raine-explains-how-pigstep-altered-minecrafts-approach-to-music-the-prompt-i-keep-hearing-is-oh-pigstep-was-such-a-banger-that-they-want-more-bangers/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-01T17:00:00Z",
-      "games": [
-        "minecraft"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "'An absolute behemoth': Wildly ambitious FPS Selaco is getting a massive update that doubles its size and adds 'a heavy machinegun that fires literal explosions'",
-      "url": "https://www.pcgamer.com/games/fps/an-absolute-behemoth-wildly-ambitious-fps-selaco-is-getting-a-massive-update-that-doubles-its-size-and-adds-a-heavy-machinegun-that-fires-literal-explosions/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-01T16:46:26Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Chronicles: Medieval developer faces imminent closure after losing funding: 'What makes it hurt is how close we are. Early access is in reach'",
-      "url": "https://www.pcgamer.com/games/sim/chronicles-medieval-developer-faces-imminent-closure-after-losing-funding-what-makes-it-hurt-is-how-close-we-are-early-access-is-in-reach/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-01T16:42:09Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Footage of a Persona 1 remake has seemingly leaked online",
-      "url": "https://www.eurogamer.net/persona-1-remake-be-your-true-mind-leak",
-      "source": "Eurogamer",
-      "published_at": "2026-11-01T16:35:17Z",
       "games": [],
       "kind": "news",
       "highlight": false
