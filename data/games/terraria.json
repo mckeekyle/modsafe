@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T00:50:32Z",
+  "generated_at": "2026-11-03T01:45:55Z",
   "game": {
     "slug": "terraria",
     "name": "Terraria",
@@ -37,10 +37,10 @@
       "reason": "Latest release is newer than patch 1.4.5.8, but notes do not explicitly mention that version.",
       "breakage_reports": [],
       "official": null,
-      "release_tag": "v2026.08.3.0",
-      "release_name": "1.4.4-refs/heads/stable Version Update: v2026.08.3.0",
-      "release_published_at": "2026-10-01T00:08:55Z",
-      "release_url": "https://github.com/tModLoader/tModLoader/releases/tag/v2026.08.3.0",
+      "release_tag": "v2026.09.3.1",
+      "release_name": "1.4.4-refs/heads/stable Version Update: v2026.09.3.1",
+      "release_published_at": "2026-11-03T01:13:25Z",
+      "release_url": "https://github.com/tModLoader/tModLoader/releases/tag/v2026.09.3.1",
       "mentions_patch": false,
       "newer_than_patch": true,
       "mention_releases": []
@@ -72,7 +72,7 @@
           "mentions_patch": false,
           "first_release_tag": "v2026.07.3.0",
           "first_release_at": "2026-09-01T00:11:46Z",
-          "data_from": "2026-05-01T00:23:19Z",
+          "data_from": "2026-05-24T19:23:25Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -96,7 +96,7 @@
           "mentions_patch": false,
           "first_release_tag": "v2026.07.3.0",
           "first_release_at": "2026-09-01T00:11:46Z",
-          "data_from": "2026-05-01T00:23:19Z",
+          "data_from": "2026-05-24T19:23:25Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -120,7 +120,7 @@
           "mentions_patch": false,
           "first_release_tag": "v2026.04.3.0",
           "first_release_at": "2026-06-01T00:27:54Z",
-          "data_from": "2026-05-01T00:23:19Z",
+          "data_from": "2026-05-24T19:23:25Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
