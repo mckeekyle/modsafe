@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T18:51:10Z",
+  "generated_at": "2026-11-03T00:51:48Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -22,6 +22,51 @@
   ],
   "items": [
     {
+      "title": "Queen's Domain might be the best game like Metroid Prime since Metroid Prime",
+      "url": "https://www.pcgamer.com/games/rpg/queens-domain-might-be-the-best-game-like-metroid-prime-since-metroid-prime/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-02T22:41:29Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Enshrouded 1.0 review",
+      "url": "https://www.pcgamer.com/games/survival-crafting/enshrouded-1-0-review/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-02T21:47:58Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Xbox COO who left after just 3 months shoots down claims she was 'fired for a policy violation,' says her story is about 'core values'",
+      "url": "https://www.pcgamer.com/gaming-industry/xbox-coo-who-left-after-just-3-months-shoots-down-claims-she-was-fired-for-a-policy-violation-says-her-story-is-about-core-values/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-02T20:37:38Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Yakuza creator's new studio and its debut game Gang of Dragon are no more after losing funding from NetEase",
+      "url": "https://www.eurogamer.net/yakuza-creator-new-studio-closed-netease",
+      "source": "Eurogamer",
+      "published_at": "2026-11-02T20:30:09Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "You can make a vampire hunter who's afraid of the dark, disease and small spaces in Hunter: The Reckoning - Deathwish, and that's surely the best way to play",
+      "url": "https://www.rockpapershotgun.com/you-can-make-a-vampire-hunter-whos-afraid-of-the-dark-disease-and-small-spaces-in-hunter-the-reckoning-deathwish-and-thats-surely-the-best-way-to-play",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-02T19:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
       "title": "The Borderlands series has sold over 100 million copies, and Gearbox is \"cooking hard on more Borderlands 4 content for next year\"",
       "url": "https://www.eurogamer.net/borderlands-100-million-copies-gearbox",
       "source": "Eurogamer",
@@ -40,7 +85,7 @@
       "highlight": false
     },
     {
-      "title": "'There was some really fair criticism': Arc Raiders' devs understand why players were so upset about its AI use but admit that it was 'too impractical to record' every voice line",
+      "title": "'There was some really fair criticism': Arc Raiders' devs understand why players were so upset about its AI use but say that it was 'too impractical to record' every voice line",
       "url": "https://www.pcgamer.com/games/third-person-shooter/there-was-some-really-fair-criticism-arc-raiders-devs-understand-why-players-were-so-upset-about-its-ai-use-but-admit-that-it-was-too-impractical-to-record-every-voice-line/",
       "source": "PC Gamer",
       "published_at": "2026-11-02T17:55:20Z",
@@ -516,51 +561,6 @@
       "url": "https://www.pcgamer.com/games/the-elder-scrolls/elder-scrolls-skyblivion-mod-faces-lawsuit-from-former-volunteer-project-lead-urges-please-dont-turn-this-into-any-kind-of-witch-hunt/",
       "source": "PC Gamer",
       "published_at": "2026-10-31T20:29:22Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Celeste and TowerFall have delisted from Xbox's digital storefronts to support BDS boycott",
-      "url": "https://www.pcgamer.com/games/action/celeste-and-towerfall-have-delisted-from-xboxs-digital-storefronts-to-support-bds-boycott/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-31T18:57:47Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Final Fantasy 14: Evercold delayed to February, preorders start next week",
-      "url": "https://www.pcgamer.com/games/final-fantasy/final-fantasy-14-evercold-delayed-to-february-preorders-start-next-week/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-31T18:57:19Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Yacht Club confirms Mina the Hollower was the shot in the arm it needed stay alive\u2014'for now'",
-      "url": "https://www.pcgamer.com/games/adventure/yacht-club-confirms-mina-the-hollower-was-the-shot-in-the-arm-it-needed-stay-alive-for-now/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-31T17:41:22Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "PUBG live-action series in the works at Netflix, with Donald Glover set to direct and star",
-      "url": "https://www.eurogamer.net/pubg-live-action-netflix-series-donald-glover",
-      "source": "Eurogamer",
-      "published_at": "2026-10-31T17:35:36Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The top 10 scariest RPGs I've ever played\u2060\u2014and one I'm too afraid to try",
-      "url": "https://www.pcgamer.com/games/rpg/the-top-10-scariest-rpgs-ive-ever-played-and-one-im-too-afraid-to-try/",
-      "source": "PC Gamer",
-      "published_at": "2026-10-31T17:26:20Z",
       "games": [],
       "kind": "news",
       "highlight": false
