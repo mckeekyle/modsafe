@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T12:54:45Z",
+  "generated_at": "2026-11-04T15:02:23Z",
   "game": {
     "slug": "satisfactory",
     "name": "Satisfactory",
@@ -11,10 +11,17 @@
       "published_at": "2026-10-12T14:39:03Z",
       "published_unix": 1791815943,
       "url": "https://store.steampowered.com/news/app/526870/view/1846018067941164",
-      "steam_build": "25782416"
+      "steam_build": "26281294",
+      "unannounced_update": {
+        "version": null,
+        "label": "Unannounced update 2026-11-04",
+        "published_at": "2026-11-04T14:01:17Z",
+        "buildid": "26281294",
+        "source": "Steam public branch (api.steamcmd.net / PICS)"
+      }
     }
   },
-  "verdict": "Likely safe",
+  "verdict": "Just patched, wait",
   "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
   "frameworks": [
     {
@@ -26,9 +33,9 @@
       "repo": null,
       "tracked": true,
       "sensitive": true,
-      "status": "Likely safe",
+      "status": "Just patched, wait",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch 1.2.4.1; compatibility is unverified \u2014 check the project page. No open breakage reports 22 days after the patch. ficsit.app lists SML as Works on the stable branch. SML requires game build CL 491125 or newer (a minimum, not a match: Steam doesn't publish the game's CL, so ModSafe can't compare builds directly).",
+      "reason": "Latest release predates patch 1.2.4.1; compatibility is unverified \u2014 check the project page. No open breakage reports 23 days after the patch. ficsit.app lists SML as Works on the stable branch. SML requires game build CL 491125 or newer (a minimum, not a match: Steam doesn't publish the game's CL, so ModSafe can't compare builds directly). Steam's public build changed on 2026-11-04 (build 26281294) with no announcement, and this tool hasn't released since; wait for confirmation.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v3.12.0",
@@ -70,7 +77,14 @@
       "published_at": "2026-10-12T14:39:03Z",
       "published_unix": 1791815943,
       "url": "https://store.steampowered.com/news/app/526870/view/1846018067941164",
-      "steam_build": "25782416",
+      "steam_build": "26281294",
+      "unannounced_update": {
+        "version": null,
+        "label": "Unannounced update 2026-11-04",
+        "published_at": "2026-11-04T14:01:17Z",
+        "buildid": "26281294",
+        "source": "Steam public branch (api.steamcmd.net / PICS)"
+      },
       "frameworks": [
         {
           "id": "sml",
@@ -523,6 +537,12 @@
   ],
   "news": [
     {
+      "title": "Crossplay is now available in Satisfactory!",
+      "url": "https://store.steampowered.com/news/app/526870/view/1848557880479256",
+      "published_at": "2026-11-04T14:03:55Z",
+      "is_patch": false
+    },
+    {
       "title": "Satisfactory: The board game \u2013 Campaign live now!",
       "url": "https://store.steampowered.com/news/app/526870/view/1846018067945101",
       "published_at": "2026-10-13T19:10:28Z",
@@ -575,12 +595,6 @@
       "url": "https://store.steampowered.com/news/app/526870/view/1833968530900760",
       "published_at": "2026-06-02T15:05:04Z",
       "is_patch": true
-    },
-    {
-      "title": "1.2 Experimental Hotfix v1.2.2.2",
-      "url": "https://store.steampowered.com/news/app/526870/view/1832700592801015",
-      "published_at": "2026-05-19T13:43:04Z",
-      "is_patch": false
     }
   ],
   "channels": [],
@@ -599,6 +613,21 @@
         {
           "short": "SML",
           "status": "Likely safe",
+          "release_tag": "v3.12.0"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-04T15:02:23Z",
+      "patch": "1.2.4.1",
+      "patch_key": "1.2.4.1",
+      "patch_published_at": "2026-10-12T14:39:03Z",
+      "patch_url": "https://store.steampowered.com/news/app/526870/view/1846018067941164",
+      "verdict": "Just patched, wait",
+      "frameworks": [
+        {
+          "short": "SML",
+          "status": "Just patched, wait",
           "release_tag": "v3.12.0"
         }
       ]
