@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T07:02:04Z",
+  "generated_at": "2026-11-04T12:55:18Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,116 @@
     }
   ],
   "items": [
+    {
+      "title": "\"Keep talking about it\": Raw Power Games call for Wishlist aid as they, and their historical strategy sandbox Chronicles: Medieval, lose funding",
+      "url": "https://www.rockpapershotgun.com/keep-talking-about-it-raw-power-games-call-for-wishlist-aid-as-they-and-their-historical-strategy-sandbox-chronicles-medieval-lose-funding",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-04T12:43:24Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "AMD says it's going to beat Intel in total revenue for the very first time by the end of 2026",
+      "url": "https://www.pcgamer.com/hardware/processors/amd-says-its-going-to-beat-intel-in-total-revenue-for-the-very-first-time-by-the-end-of-2026/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-04T12:40:51Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Nexus Mods introduces new AI disclosure rules, but won't ban AI mods outright",
+      "url": "https://www.eurogamer.net/nexus-mods-gen-ai-disclosure-rules",
+      "source": "Eurogamer",
+      "published_at": "2026-11-04T12:18:44Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The Elder Scrolls 6: Sentinel already has a Nexus Mods page, so now all we have to do is wait",
+      "url": "https://www.rockpapershotgun.com/the-elder-scrolls-6-sentinel-already-has-a-nexus-mods-page-so-now-all-we-have-to-do-is-wait",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-04T12:08:24Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "WoW: Forever's massive pre-launch balance patch breaks from the chains Classic power, increasing 'the health of higher level creatures to compensate'",
+      "url": "https://www.pcgamer.com/games/world-of-warcraft/wow-forevers-massive-pre-launch-balance-patch-breaks-from-the-chains-classic-power-increasing-the-health-of-higher-level-creatures-to-compensate/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-04T11:45:45Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Dodgy download and spoofed job ad led to $6.3 billion Binance hack: attacker offered fake software and fake job to infiltrate company wallets and steal billions",
+      "url": "https://www.pcgamer.com/software/security/dodgy-download-and-spoofed-job-ad-led-to-usd6-3-billion-binance-hack-attacker-offered-fake-software-and-fake-job-to-infiltrate-company-wallets-and-steal-billions/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-04T11:12:58Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Smash hit cyberpunk storekeeper Probably Stolen was originally a different, non-cyberpunk game that seemed destined to sink without trace",
+      "url": "https://www.rockpapershotgun.com/smash-hit-cyberpunk-storekeeper-probably-stolen-was-originally-a-different-non-cyberpunk-game-that-seemed-destined-to-sink-without-trace",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-04T11:00:00Z",
+      "games": [
+        "cyberpunk-2077"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The Legend of Zelda: Ocarina of Time (2026) review",
+      "url": "https://www.eurogamer.net/the-legend-of-zelda-ocarina-of-time-remake-review",
+      "source": "Eurogamer",
+      "published_at": "2026-11-04T11:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "\"An outright ban will not eliminate AI from the modding process,\" Nexus Mods say as they rule out barring generated creations from their site",
+      "url": "https://www.rockpapershotgun.com/nexus-mods-rule-out-barring-ai-generated-creations-from-their-site",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-04T10:34:07Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Dragon's Dogma 2 gets a timed collaboration with beloved anime and manga series Delicious in Dungeon, and it's out right now on PC, PlayStation and Xbox",
+      "url": "https://www.eurogamer.net/dragons-dogma-2-dungeon-meshi-collaboration-out-now",
+      "source": "Eurogamer",
+      "published_at": "2026-11-04T10:03:46Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Guild Wars gets its first major gameplay update in almost 20 years",
+      "url": "https://www.eurogamer.net/guild-wars-1-afterlife-announced-20-years",
+      "source": "Eurogamer",
+      "published_at": "2026-11-04T09:59:17Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Ubisoft and at least two other companies are interested in buying Arkane, according to new report",
+      "url": "https://www.eurogamer.net/arkane-studios-ubisoft-interested-buyers",
+      "source": "Eurogamer",
+      "published_at": "2026-11-04T09:17:51Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Bethesda's associate art director really did try to fit 7,000 actual steps into Skyrim's 7,000 Steps: 'I take no responsibility for the Frost Troll'",
       "url": "https://www.pcgamer.com/games/the-elder-scrolls/bethesdas-associate-art-director-really-did-try-to-fit-7-000-actual-steps-into-skyrims-7-000-steps-i-take-no-responsibility-for-the-frost-troll/",
@@ -457,114 +567,6 @@
       "url": "https://www.pcgamer.com/gaming-industry/xbox-coo-who-left-after-just-3-months-shoots-down-claims-she-was-fired-for-a-policy-violation-says-her-story-is-about-core-values/",
       "source": "PC Gamer",
       "published_at": "2026-11-02T20:37:38Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Yakuza creator's new studio and its debut game Gang of Dragon are no more after losing funding from NetEase",
-      "url": "https://www.eurogamer.net/yakuza-creator-new-studio-closed-netease",
-      "source": "Eurogamer",
-      "published_at": "2026-11-02T20:30:09Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "You can make a vampire hunter who's afraid of the dark, disease and small spaces in Hunter: The Reckoning - Deathwish, and that's surely the best way to play",
-      "url": "https://www.rockpapershotgun.com/you-can-make-a-vampire-hunter-whos-afraid-of-the-dark-disease-and-small-spaces-in-hunter-the-reckoning-deathwish-and-thats-surely-the-best-way-to-play",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-02T19:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The Borderlands series has sold over 100 million copies, and Gearbox is \"cooking hard on more Borderlands 4 content for next year\"",
-      "url": "https://www.eurogamer.net/borderlands-100-million-copies-gearbox",
-      "source": "Eurogamer",
-      "published_at": "2026-11-02T18:44:15Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Nintendo tried adding fast travel to The Legend of Zelda: Ocarina of Time remake, before devs realised \"we were missing out on the moments of discovery\"",
-      "url": "https://www.eurogamer.net/nintendo-fast-travel-legend-of-zelda-ocarina-of-time-remake",
-      "source": "Eurogamer",
-      "published_at": "2026-11-02T18:01:38Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "'There was some really fair criticism': Arc Raiders' devs understand why players were so upset about its AI use but say that it was 'too impractical to record' every voice line",
-      "url": "https://www.pcgamer.com/games/third-person-shooter/there-was-some-really-fair-criticism-arc-raiders-devs-understand-why-players-were-so-upset-about-its-ai-use-but-admit-that-it-was-too-impractical-to-record-every-voice-line/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-02T17:55:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Thief Remastered's new expansion is being made by the legendary Black Parade mod team, and it's out next month",
-      "url": "https://www.pcgamer.com/games/fps/thief-remastereds-new-expansion-is-being-made-by-the-legendary-black-parade-mod-team-and-its-out-next-month/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-02T17:53:01Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The 28 cozy game launches in November technically include 3 horse games, which is actually a lot for the eternally underserved horse gamers",
-      "url": "https://www.pcgamer.com/games/new-cozy-games-november-2026/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-02T17:52:16Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Fix up towering robots while battle rages outside in Bay 12: Mech Repair, a first-person job sim with some handsome heavy duty analog tech",
-      "url": "https://www.rockpapershotgun.com/fix-up-towering-robots-while-battle-rages-outside-in-bay-12-mech-repair-a-first-person-job-sim-with-some-handsome-heavy-duty-analog-tech",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-02T17:30:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Yakuza creator's studio, and the game it was working on, are now officially gone",
-      "url": "https://www.pcgamer.com/gaming-industry/yakuza-creators-studio-and-the-game-it-was-working-on-are-now-officially-gone/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-02T16:59:36Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Turtle Beach Command Series MC7 review",
-      "url": "https://www.pcgamer.com/hardware/gaming-mice/turtle-beach-command-series-mc7-review/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-02T16:56:48Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Fewer genAI clones of \"someone else's specific game\" should flood the net going forwards, as Anthropic tell Claude to stop messing with some stuff other people own",
-      "url": "https://www.rockpapershotgun.com/fewer-genai-clones-of-someone-elses-specific-game-should-flood-the-net-going-forwards-as-anthropic-tell-claude-to-stop-messing-with-some-stuff-other-people-own",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-02T16:51:17Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Nightdive is reviving the iconic trapezoid big box for Thief: Remastered's special edition\u2026 but only on console",
-      "url": "https://www.pcgamer.com/games/fps/nightdive-is-reviving-the-iconic-trapezoid-big-box-for-thief-remastereds-special-edition-but-only-on-console/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-02T16:47:29Z",
       "games": [],
       "kind": "news",
       "highlight": false
