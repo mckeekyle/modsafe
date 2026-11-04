@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T18:45:39Z",
+  "generated_at": "2026-11-04T00:51:49Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,116 @@
     }
   ],
   "items": [
+    {
+      "title": "Bethesda's associate art director really did try to fit 7,000 actual steps into Skyrim's 7,000 Steps: 'I take no responsibility for the Frost Troll'",
+      "url": "https://www.pcgamer.com/games/the-elder-scrolls/bethesdas-associate-art-director-really-did-try-to-fit-7-000-actual-steps-into-skyrims-7-000-steps-i-take-no-responsibility-for-the-frost-troll/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-04T00:18:41Z",
+      "games": [
+        "skyrim-se"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Valve admits it's 'running behind' on approving Steam games because it has to keep re-reviewing them, which surely has nothing to do with AI",
+      "url": "https://www.pcgamer.com/gaming-industry/valve-admits-its-running-behind-on-approving-steam-games-because-it-has-to-keep-re-reviewing-them-which-surely-has-nothing-to-do-with-ai/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-03T23:51:13Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Google criticized by NYC mayor Zohran Mamdani following AI policy change: 'Google is trying to use its monopoly power to force AI into our public schools'",
+      "url": "https://www.pcgamer.com/software/ai/google-criticized-by-nyc-mayor-zohran-mamdani-following-ai-policy-change-google-is-trying-to-use-its-monopoly-power-to-force-ai-into-our-public-schools/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-03T22:58:03Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Ubisoft are reportedly tapped as one potential company that could acquire Arkane, though the Dishonored studio's own management may be in the running too",
+      "url": "https://www.rockpapershotgun.com/ubisoft-are-reportedly-tapped-as-one-potential-company-that-could-acquire-arkane-though-the-dishonored-studios-own-management-may-be-in-the-running-too",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-03T22:51:31Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Ubisoft reportedly wants to buy Arkane from Xbox",
+      "url": "https://www.pcgamer.com/gaming-industry/ubisoft-reportedly-wants-to-buy-arkane-from-xbox/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-03T22:12:35Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Control Resonant is Remedy's fastest-selling game to date, tripling the studio's quarterly revenue",
+      "url": "https://www.pcgamer.com/games/action/control-resonant-is-remedys-fastest-selling-game-to-date-tripling-the-studios-quarterly-revenue/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-03T21:54:41Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "\"Steam's review queue is clogged up by AI slop\": Salacious Fire Emblem-ish Food Devils gets a delay because its devs think Valve is inundated with genAI games",
+      "url": "https://www.rockpapershotgun.com/steams-review-queue-is-clogged-up-by-ai-slop-salacious-fire-emblem-ish-food-devils-gets-a-delay-because-its-devs-think-valve-is-inundated-with-genai-games",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-03T21:41:08Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The Citadel Project is a Thief-inspired dark fantasy, survival-horror lite stealth-em-up with some lovely shadows set in a medieval megastructure",
+      "url": "https://www.rockpapershotgun.com/the-citadel-project-is-a-thief-inspired-dark-fantasy-survival-horror-lite-stealth-em-up-with-some-lovely-shadows-set-in-a-medieval-megastructure",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-03T20:10:03Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Crowning the greatest FPS mode of all time through 1v1 combat\u2014SEMIFINALS!",
+      "url": "https://www.pcgamer.com/games/fps/crowning-the-greatest-fps-mode-of-all-time-through-1v1-combat-semifinals/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-03T19:41:04Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The Elder Scrolls 6 is still a long way off, Bethesda warns: 'It'll be some time before we're ready to share more'",
+      "url": "https://www.pcgamer.com/games/the-elder-scrolls/the-elder-scrolls-6-is-still-a-long-way-off-bethesda-warns-itll-be-some-time-before-were-ready-to-share-more/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-03T19:27:07Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Silica, an FPS and RTS hybrid that mixes a smidge of Dune and Helldivers together, has left early access and entered 1.0",
+      "url": "https://www.rockpapershotgun.com/silica-an-fps-and-rts-hybrid-that-mixes-a-smidge-of-dune-and-helldivers-together-has-left-early-access-and-entered-10",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-03T19:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Bethesda's first full-time QA tester got the job by being an extremely chill hang",
+      "url": "https://www.pcgamer.com/gaming-industry/bethesdas-first-full-time-qa-tester-got-the-job-by-being-an-extremely-chill-hang/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-03T18:49:23Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Play as water and rain on wildfires in Atuel, a short, free game about the power and vulnerability of nature",
       "url": "https://www.rockpapershotgun.com/have-you-played-atuel",
@@ -455,116 +565,6 @@
       "url": "https://www.pcgamer.com/games/fps/nightdive-is-reviving-the-iconic-trapezoid-big-box-for-thief-remastereds-special-edition-but-only-on-console/",
       "source": "PC Gamer",
       "published_at": "2026-11-02T16:47:29Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "COD Modern Warfare 4 has seemingly answered DMZ players' PvE calls with new Story Mission changes - but there are major caveats",
-      "url": "https://www.eurogamer.net/call-of-duty-modern-warfare-4-dmz-story-missions-pve",
-      "source": "Eurogamer",
-      "published_at": "2026-11-02T16:19:40Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "One World of Warcraft: Forever player is working on a first-person mod that's a love letter to retro RPGs like Hexen and Morrowind",
-      "url": "https://www.eurogamer.net/world-of-warcraft-forever-first-person-mod-rpg",
-      "source": "Eurogamer",
-      "published_at": "2026-11-02T15:21:24Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "As the controversy around AI-created video game copies continues, Anthropic seemingly restricts Claude's cloning abilities",
-      "url": "https://www.eurogamer.net/anthropic-claude-generative-ai-game-clones-update",
-      "source": "Eurogamer",
-      "published_at": "2026-11-02T14:29:41Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "After 500 hours in Monster Train 2, its final faction of bondage angels is teaching me new ways to win",
-      "url": "https://www.pcgamer.com/games/card-games/monster-train-2-the-punished-review/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-02T14:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Ray tracing memory usage could be reduced by up to 90% thanks to 'most significant' DirectX update",
-      "url": "https://www.pcgamer.com/hardware/memory/ray-tracing-memory-usage-could-be-reduced-by-up-to-90-percent-thanks-to-most-significant-directx-update/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-02T13:38:24Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Arc Raiders devs used a music sample 'from a piano in Chernobyl' that someone had discovered in the Forbidden Zone",
-      "url": "https://www.pcgamer.com/games/third-person-shooter/arc-raiders-devs-have-used-a-music-sample-from-a-piano-in-chernobyl-that-someone-had-discovered-in-the-forbidden-zone/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-02T13:35:31Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Over a decade later, Bloodborne remains so popular it reportedly sold a quarter of a million copies this year alone",
-      "url": "https://www.eurogamer.net/bloodborne-251-000-sales-in-2016-ps4",
-      "source": "Eurogamer",
-      "published_at": "2026-11-02T13:35:31Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "This week in PC games: go helldiving in Gravhounds, wreck a hoverbike in Airframe Ultra, or feed humans to a cutaway spaceship in Hull Rupture",
-      "url": "https://www.rockpapershotgun.com/this-week-in-pc-games-go-helldiving-in-gravhounds-wreck-a-hoverbike-in-airframe-ultra-or-feed-humans-to-a-cutaway-spaceship-in-hull-rupture",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-02T13:34:28Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Valve's Steam Frame has taken a spot in the top ten most popular VR headsets on Steam",
-      "url": "https://www.pcgamer.com/hardware/vr-hardware/valves-steam-frame-has-taken-a-spot-in-the-top-ten-most-popular-vr-headsets-on-steam/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-02T13:26:24Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Delve into \"a deep underground facility full of secrets and horrors\" in the latest Fallout 4 quest mod from the Commonwealth Story Expansion Project",
-      "url": "https://www.rockpapershotgun.com/delve-into-a-deep-underground-facility-full-of-secrets-and-horrors-in-the-latest-fallout-4-quest-mod-from-the-commonwealth-story-expansion-project",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-02T12:36:42Z",
-      "games": [
-        "fallout-4"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "\"We're doing great,\" says id Software boss, despite losing \"about half of our studio\" amid devastating Xbox cuts",
-      "url": "https://www.eurogamer.net/id-software-doing-great-losing-half-the-studio",
-      "source": "Eurogamer",
-      "published_at": "2026-11-02T12:12:11Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Final Fantasy 14: Evercold's story will have a faster tempo, with worldbuilding in side quests, says Yoshi-P\u2014but I'm not sure that was the problem with Dawntrail",
-      "url": "https://www.pcgamer.com/games/mmo/final-fantasy-14-evercolds-story-will-have-a-faster-tempo-with-worldbuilding-in-side-quests-says-yoshi-p-but-im-not-sure-that-was-the-problem-with-dawntrail/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-02T11:53:51Z",
       "games": [],
       "kind": "news",
       "highlight": false
