@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T12:53:56Z",
+  "generated_at": "2026-11-04T13:52:40Z",
   "game": {
     "slug": "valheim",
     "name": "Valheim",
@@ -14,7 +14,7 @@
       "steam_build": "26249040"
     }
   },
-  "verdict": "Just patched, wait",
+  "verdict": "Likely safe",
   "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
   "frameworks": [
     {
@@ -48,9 +48,9 @@
       "repo": "Valheim-Modding/Jotunn",
       "tracked": true,
       "sensitive": true,
-      "status": "Just patched, wait",
+      "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch 1.0.21; compatibility is unverified \u2014 check the project page.",
+      "reason": "Latest release predates patch 1.0.21; compatibility is unverified \u2014 check the project page. No open breakage reports 7 days after the patch.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v2.30.2",
@@ -644,6 +644,26 @@
         {
           "short": "J\u00f6tunn",
           "status": "Just patched, wait",
+          "release_tag": "v2.30.2"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-04T13:52:40Z",
+      "patch": "1.0.21",
+      "patch_key": "1.0.21",
+      "patch_published_at": "2026-10-28T13:11:25Z",
+      "patch_url": "https://store.steampowered.com/news/app/892970/view/1847920302230913",
+      "verdict": "Likely safe",
+      "frameworks": [
+        {
+          "short": "BepInEx",
+          "status": "Likely safe",
+          "release_tag": "5.4.2360"
+        },
+        {
+          "short": "J\u00f6tunn",
+          "status": "Likely safe",
           "release_tag": "v2.30.2"
         }
       ]
