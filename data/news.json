@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T12:55:18Z",
+  "generated_at": "2026-11-04T18:52:20Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,179 @@
     }
   ],
   "items": [
+    {
+      "title": "\"Arkane is profitable,\" say Marvel's Blade developers in fiery new statement, \"just not profitable enough for Microsoft\"",
+      "url": "https://www.rockpapershotgun.com/arkane-is-profitable-say-marvels-blade-developers-in-fiery-new-statement-just-not-profitable-enough-for-microsoft",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-04T18:02:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "I am back modding GTA 5 and being chased by a billion furious, armed cougars",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/i-am-back-modding-gta-5-and-being-chased-by-a-billion-furious-armed-cougars/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-04T18:00:00Z",
+      "games": [
+        "gta-v-legacy",
+        "gta-v-enhanced"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "God of War Laufey delayed three months to May 2027, as Sony Santa Monica escapes a packed February",
+      "url": "https://www.eurogamer.net/god-of-war-laufey-delayed-may-three-months",
+      "source": "Eurogamer",
+      "published_at": "2026-11-04T17:32:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Oblivion and Skyrim\u2019s gap was bridged by forward-looking books about a murderous floating island, so why is The Elder Scrolls 6 stuck reanimating a world that\u2019s stood still since 2011",
+      "url": "https://www.rockpapershotgun.com/oblivion-and-skyrims-gap-was-bridged-by-forward-looking-books-about-a-murderous-floating-island-so-why-is-the-elder-scrolls-6-stuck-reanimating-a-world-thats-stood-still-since-2011",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-04T17:30:00Z",
+      "games": [
+        "skyrim-se"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "New Blood CEO would rather shut down the boomer shooter studio than sell out: 'In 20 years, we're done. I'm gonna say goodbye, shut it down'",
+      "url": "https://www.pcgamer.com/games/fps/new-blood-ceo-would-rather-shut-down-the-boomer-shooter-studio-than-sell-out-in-20-years-were-done-im-gonna-say-goodbye-shut-it-down/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-04T17:28:16Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Nexus Mods takes the Valve approach to AI-generated content: No outright bans but mandatory disclosures",
+      "url": "https://www.pcgamer.com/games/nexus-mods-takes-the-valve-approach-to-ai-generated-content-no-outright-bans-but-mandatory-disclosures/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-04T17:12:53Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Rimworld-inspired colony sim Stardeus gets a huge update representing a year's worth of expansion and revision, with new tools for evil AI overlords",
+      "url": "https://www.rockpapershotgun.com/rimworld-inspired-colony-sim-stardeus-gets-a-huge-update-representing-a-years-worth-of-expansion-and-revision-with-new-tools-for-evil-ai-overlords",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-04T17:03:10Z",
+      "games": [
+        "rimworld"
+      ],
+      "kind": "news",
+      "highlight": true
+    },
+    {
+      "title": "'How can prices fall when there's nothing left?' TeamGroup CEO reckons supply-demand memory equilibrium may not happen until late 2028 at the earliest",
+      "url": "https://www.pcgamer.com/hardware/memory/how-can-prices-fall-when-theres-nothing-left-teamgroup-ceo-reckons-supply-demand-memory-equilibrium-may-not-happen-until-late-2028-at-the-earliest/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-04T16:39:11Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "I'm watching YouTube videos in glorious stereoscopic 3D on my Steam Frame with just a free plugin and a long-forgotten dream of a new Nintendo 3DS",
+      "url": "https://www.pcgamer.com/hardware/vr-hardware/im-watching-youtube-videos-in-glorious-stereoscopic-3d-on-my-steam-frame-with-just-a-free-plugin-and-a-long-forgotten-dream-of-a-new-nintendo-3ds/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-04T16:29:04Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Dead by Daylight apologises to fans after gifting DLC to TheBurntPeanut and has since 'removed the content that was granted'",
+      "url": "https://www.pcgamer.com/games/horror/dead-by-daylight-apologises-to-fans-after-gifting-dlc-to-theburntpeanut-and-has-since-removed-the-content-that-was-granted/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-04T16:14:53Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The Elder Scrolls 6: Sentinel fans ponder split timelines, alternative histories, and more as story speculation runs wild following latest teaser",
+      "url": "https://www.eurogamer.net/the-elder-scrolls-6-sentinel-story-speculation",
+      "source": "Eurogamer",
+      "published_at": "2026-11-04T16:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Formula V Line Air Power G10 review",
+      "url": "https://www.pcgamer.com/hardware/pc-cases/formula-v-line-air-power-g10-review/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-04T15:53:08Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Eight years ago the idea of The Elder Scrolls 6: Sentinel had me captivated, but can Bethesda recapture the magic?",
+      "url": "https://www.eurogamer.net/elder-scrolls-6-sentinel-bethesda-recapture-the-magic",
+      "source": "Eurogamer",
+      "published_at": "2026-11-04T15:02:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Crossplay is now available in Satisfactory!",
+      "url": "https://store.steampowered.com/news/app/526870/view/1848557880479256",
+      "source": "Steam \u00b7 Satisfactory",
+      "published_at": "2026-11-04T14:03:55Z",
+      "games": [
+        "satisfactory"
+      ],
+      "kind": "announcement",
+      "highlight": false
+    },
+    {
+      "title": "Tinto Talks 130 - Anniversary feedback, Hourly Tick Branch",
+      "url": "https://store.steampowered.com/news/app/3450310/view/1848557880479245",
+      "source": "Steam \u00b7 EU5",
+      "published_at": "2026-11-04T14:01:24Z",
+      "games": [
+        "europa-universalis-v"
+      ],
+      "kind": "announcement",
+      "highlight": false
+    },
+    {
+      "title": "One of Nintendo's Switch and Switch 2 cartridge manufacturers is exiting the business, which could make physical games more expensive",
+      "url": "https://www.eurogamer.net/nintendo-switch-2-cartridge-macronix-ending-rom-manufacturing",
+      "source": "Eurogamer",
+      "published_at": "2026-11-04T13:34:57Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Fate of the Galaxy is a huge, fully-featured Star Wars space combat sim that, thanks to being a total conversion mod for Freespace Open, even runs on my rubbish laptop",
+      "url": "https://www.rockpapershotgun.com/fate-of-the-galaxy-is-a-huge-fully-featured-star-wars-space-combat-sim-that-thanks-to-being-a-total-conversion-mod-for-freespace-open-even-runs-on-my-rubbish-laptop",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-04T13:15:44Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Halo and Destiny composer Marty O'Donnell loses his race for a seat in the US House of Representatives",
+      "url": "https://www.eurogamer.net/halo-destiny-composer-martin-o-donnell-projected-lose-us-congress-race",
+      "source": "Eurogamer",
+      "published_at": "2026-11-04T13:11:26Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "\"Keep talking about it\": Raw Power Games call for Wishlist aid as they, and their historical strategy sandbox Chronicles: Medieval, lose funding",
       "url": "https://www.rockpapershotgun.com/keep-talking-about-it-raw-power-games-call-for-wishlist-aid-as-they-and-their-historical-strategy-sandbox-chronicles-medieval-lose-funding",
@@ -401,172 +574,6 @@
       "url": "https://www.pcgamer.com/games/adventure/2-of-my-favorite-studios-are-teaming-up-for-their-first-ever-showcase-this-week-and-have-a-steam-sale-going-right-now/",
       "source": "PC Gamer",
       "published_at": "2026-11-03T14:38:29Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Mike Flanagan thinks 'Warhammer is a fascinating world' but can't tell us anything else about the upcoming Warhammer 40,000 project because 'Henry Cavill would be furious'",
-      "url": "https://www.pcgamer.com/movies-tv/mike-flanagan-thinks-warhammer-is-a-fascinating-world-but-cant-tell-us-anything-else-about-the-upcoming-warhammer-40-000-project-because-henry-cavill-would-be-furious/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-03T14:08:33Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Workers & Resources: Soviet Republic's next DLC is set to expand the city building sim into the one place not corrupted by capitalism: SPACE",
-      "url": "https://www.rockpapershotgun.com/workers-resources-soviet-republics-next-dlc-is-set-to-expand-the-city-building-sim-into-the-one-place-not-corrupted-by-capitalism-space",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-03T14:03:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Modders bring Steam Frame build of SteamOS and all of its translation layer goodness to Mac",
-      "url": "https://www.pcgamer.com/software/operating-systems/modders-bring-steam-frame-build-of-steamos-and-all-of-its-translation-layer-goodness-to-mac/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-03T13:55:31Z",
-      "games": [
-        "steam-deck"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The Overwatch devs hear your complaints about skin distribution but concede that some cosmetics need to 'support the actual bottom-line business'",
-      "url": "https://www.pcgamer.com/games/fps/the-overwatch-devs-hear-your-complaints-about-skin-distribution-but-concede-that-some-cosmetics-need-to-support-the-actual-bottom-line-business/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-03T13:44:01Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "COD: Modern Warfare 4 DMZ patch has nerfed UAV Towers so you're not immediately visible everywhere you go",
-      "url": "https://www.eurogamer.net/call-of-duty-modern-warfare-4-dmz-uav-tower-nerf",
-      "source": "Eurogamer",
-      "published_at": "2026-11-03T13:36:19Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Arc Raiders devs Embark insist that using genAI for voice lines was necessary, as \"actors would just go crazy if they had to read all of that\"",
-      "url": "https://www.rockpapershotgun.com/arc-raiders-devs-embark-insist-that-using-genai-for-voice-lines-was-necessary-as-actors-would-just-go-crazy-if-they-had-to-read-all-of-that",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-03T12:32:19Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Indie game website itch.io expands its AI disclosure filter as 'AI slop' continues to overwhelm Steam and other storefronts",
-      "url": "https://www.eurogamer.net/itchio-generative-ai-filters-slop",
-      "source": "Eurogamer",
-      "published_at": "2026-11-03T12:03:56Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "\"There\u2019s always a night when Rome burns\": South Of Midnight director says that Xbox funding it was \"unsustainable\", at least in hindsight",
-      "url": "https://www.rockpapershotgun.com/theres-always-a-night-when-rome-burns-south-of-midnight-director-says-that-xbox-funding-it-was-unsustainable-at-least-in-hindsight",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-03T11:49:29Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Upcoming Final Fantasy 14 update should massively cut down on dungeon queue times",
-      "url": "https://www.pcgamer.com/games/mmo/upcoming-final-fantasy-14-update-should-massively-cut-down-on-dungeon-queue-times/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-03T11:47:55Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "It looks like Call of Duty: Modern Warfare 4 had fewer active players at launch in the US compared to last year's Black Ops 7",
-      "url": "https://www.eurogamer.net/call-of-duty-modern-warfare-4-player-engagement-black-ops-7",
-      "source": "Eurogamer",
-      "published_at": "2026-11-03T11:22:41Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Users pull $3.6 bn from Binance as it reopens following $6.3 billion mega-hack - FBI says North Korean hacking group 'TraderTraitor' to blame, North Korea says nuh-uh",
-      "url": "https://www.pcgamer.com/software/security/users-pull-usd3-6-bn-from-binance-as-it-reopens-following-usd6-3-billion-mega-hack-fbi-says-north-korean-hacking-group-tradertraitor-to-blame-north-korea-says-nuh-uh/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-03T10:54:30Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "itch.io will soon let you filter games with genAI disclosures out of your search results on the site, after admitting it was previously \"critically lacking\"",
-      "url": "https://www.rockpapershotgun.com/itchio-will-soon-let-you-filter-games-with-genai-disclosures-out-of-your-search-results-on-the-site-after-admitting-it-was-previously-critically-lacking",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-03T10:12:22Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Patch 1.4.7",
-      "url": "https://store.steampowered.com/news/app/3450310/view/1847920302251349",
-      "source": "Steam \u00b7 EU5",
-      "published_at": "2026-11-03T10:02:03Z",
-      "games": [
-        "europa-universalis-v"
-      ],
-      "kind": "patch",
-      "highlight": true
-    },
-    {
-      "title": "Remedy revenue soars by 226% following release of Control Resonant, the developer's fastest-selling game ever",
-      "url": "https://www.eurogamer.net/control-resonant-remedy-revenue-leaps",
-      "source": "Eurogamer",
-      "published_at": "2026-11-03T09:56:48Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Days Gone studio's next PlayStation exclusive to be revealed and released in 2027, according to new report",
-      "url": "https://www.eurogamer.net/sony-bend-studio-next-playstation-game-2027",
-      "source": "Eurogamer",
-      "published_at": "2026-11-03T09:18:39Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Queen's Domain might be the best game like Metroid Prime since Metroid Prime",
-      "url": "https://www.pcgamer.com/games/rpg/queens-domain-might-be-the-best-game-like-metroid-prime-since-metroid-prime/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-02T22:41:29Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Enshrouded 1.0 review",
-      "url": "https://www.pcgamer.com/games/survival-crafting/enshrouded-1-0-review/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-02T21:47:58Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Xbox COO who left after just 3 months shoots down claims she was 'fired for a policy violation,' says her story is about 'core values'",
-      "url": "https://www.pcgamer.com/gaming-industry/xbox-coo-who-left-after-just-3-months-shoots-down-claims-she-was-fired-for-a-policy-violation-says-her-story-is-about-core-values/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-02T20:37:38Z",
       "games": [],
       "kind": "news",
       "highlight": false
