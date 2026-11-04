@@ -29,7 +29,7 @@
       "requires": [],
       "framework_id": "glorp-ui",
       "note": "Integrates with CMF's mod menu. Mods placed after it in the playset override its changes.",
-      "last_updated": "2026-10-30"
+      "last_updated": "2026-11-04"
     },
     {
       "id": "cheat-menu-pro",
