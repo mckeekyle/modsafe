@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T07:05:52Z",
+  "generated_at": "2026-11-05T12:59:35Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,125 @@
     }
   ],
   "items": [
+    {
+      "title": "Mass Effect petition has enough signatures for the Canadian Government to potentially save BioWare",
+      "url": "https://www.eurogamer.net/bioware-canada-house-of-commons-petition-save-mass-effect",
+      "source": "Eurogamer",
+      "published_at": "2026-11-05T12:48:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "You can now play Pillars of Eternity and Pillars of Eternity 2: Deadfire with a controller on PC from start to finish, thanks to a new update open for testing",
+      "url": "https://www.rockpapershotgun.com/you-can-now-play-pillars-of-eternity-and-pillars-of-eternity-2-deadfire-with-a-controller-on-pc-from-start-to-finish-thanks-to-a-new-update-open-for-testing",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-05T12:27:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Experimental project beats Intel in bringing 'real Intel XeSS super resolution' to SteamOS and Proton games on Linux",
+      "url": "https://www.pcgamer.com/hardware/handheld-gaming-pcs/experimental-project-beats-intel-in-bringing-real-intel-xess-super-resolution-to-steamos-and-proton-games-on-linux/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-05T12:26:37Z",
+      "games": [
+        "steam-deck"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "FSR 4.1.2 now on Xbox and Xbox handhelds, just in time for a certain big GTA 6-shaped game",
+      "url": "https://www.pcgamer.com/hardware/fsr-4-1-2-now-on-xbox-and-xbox-handhelds-just-in-time-for-a-certain-big-gta-6-shaped-game/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-05T12:12:38Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Nintendo game sales surge thanks to Tomodachi Life: Living the Dream, but Switch 2 hardware suffers big decline",
+      "url": "https://www.eurogamer.net/nintendo-switch-2-hardware-decline-software-boom",
+      "source": "Eurogamer",
+      "published_at": "2026-11-05T11:56:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Switch 2 sales dropped 37% this summer, mostly before the price hike hit; Nintendo now expects sales to slump 16.9% in console's second year",
+      "url": "https://www.pcgamer.com/hardware/handheld-gaming-pcs/switch-2-sales-dropped-37-percent-this-summer-mostly-before-the-price-hike-hit-nintendo-now-expects-sales-to-slump-16-9-percent-in-consoles-second-year/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-05T11:53:38Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "How to complete The Great Outdoors in WoW: Forever",
+      "url": "https://www.pcgamer.com/games/world-of-warcraft/forever-the-great-outdoors-sit-campfire/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-05T11:40:38Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Oh hell yes: Pillars of Eternity 1 and 2 are getting full-fat gamepad support and you can try it right now",
+      "url": "https://www.pcgamer.com/games/rpg/oh-hell-yes-pillars-of-eternity-1-and-2-are-getting-full-fat-gamepad-support-and-you-can-try-it-right-now/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-05T11:37:51Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "\"BioWare's closure represents an immense loss to and possibly a targeted attack on Canada's cultural legacy\" argues petition calling on Canadian government to step in",
+      "url": "https://www.rockpapershotgun.com/biowares-closure-represents-an-immense-loss-to-and-possibly-a-targeted-attack-on-canadas-cultural-legacy-argues-petition-calling-on-canadian-government-to-step-in",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-05T10:51:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "PlayStation sees record high player numbers and increased revenue for Q2 2026, and a lot of that success is down to Marvel's Wolverine",
+      "url": "https://www.eurogamer.net/sony-playstation-fy-2026-wolverine-sales",
+      "source": "Eurogamer",
+      "published_at": "2026-11-05T10:24:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "World of Warcraft: Forever is off to a great start with Blizzard's smoothest launch in memory",
+      "url": "https://www.eurogamer.net/world-of-warcraft-forever-launch-smooth",
+      "source": "Eurogamer",
+      "published_at": "2026-11-05T09:52:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Despite hardware worries and rising costs, Sony says PlayStation 6 development is on track and \"progressing as scheduled\"",
+      "url": "https://www.eurogamer.net/playstation-6-sony-financials-2026-hardware",
+      "source": "Eurogamer",
+      "published_at": "2026-11-05T09:42:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Valve explains why it's running behind on Steam game approvals, asks developers to perform basic release checks to prevent re-reviews",
+      "url": "https://www.eurogamer.net/steam-games-approvals-delayed-valve-response",
+      "source": "Eurogamer",
+      "published_at": "2026-11-05T09:22:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Critical Role's upcoming series with Hololive gave Matt Mercer 'a deeper understanding and appreciation' for vtubers",
       "url": "https://www.pcgamer.com/games/board-games/critical-roles-upcoming-series-with-hololive-gave-matt-mercer-a-deeper-understanding-and-appreciation-for-vtubers/",
@@ -455,123 +574,6 @@
       "url": "https://www.pcgamer.com/games/fps/crowning-the-greatest-fps-mode-of-all-time-through-1v1-combat-semifinals/",
       "source": "PC Gamer",
       "published_at": "2026-11-03T19:41:04Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The Elder Scrolls 6 is still a long way off, Bethesda warns: 'It'll be some time before we're ready to share more'",
-      "url": "https://www.pcgamer.com/games/the-elder-scrolls/the-elder-scrolls-6-is-still-a-long-way-off-bethesda-warns-itll-be-some-time-before-were-ready-to-share-more/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-03T19:27:07Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Silica, an FPS and RTS hybrid that mixes a smidge of Dune and Helldivers together, has left early access and entered 1.0",
-      "url": "https://www.rockpapershotgun.com/silica-an-fps-and-rts-hybrid-that-mixes-a-smidge-of-dune-and-helldivers-together-has-left-early-access-and-entered-10",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-03T19:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Bethesda's first full-time QA tester got the job by being an extremely chill hang",
-      "url": "https://www.pcgamer.com/gaming-industry/bethesdas-first-full-time-qa-tester-got-the-job-by-being-an-extremely-chill-hang/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-03T18:49:23Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Play as water and rain on wildfires in Atuel, a short, free game about the power and vulnerability of nature",
-      "url": "https://www.rockpapershotgun.com/have-you-played-atuel",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-03T18:30:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Frostpunk 2's The Surge DLC keeps the wintery apocalypse and adds in faction-clash-inducing electricity and sets a seasonally appropriate December release date",
-      "url": "https://www.rockpapershotgun.com/frostpunk-2s-the-surge-dlc-keeps-the-wintery-apocalypse-and-adds-in-faction-clash-inducing-electricity-and-sets-a-seasonally-appropriate-december-release-date",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-03T18:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "'Just deleted a couple terabytes of AI slop': Itch.io pushes back against the flood of AI on its storefront",
-      "url": "https://www.pcgamer.com/software/ai/just-deleted-a-couple-terabytes-of-ai-slop-itch-io-pushes-back-against-the-flood-of-ai-on-its-storefront/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-03T17:57:30Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The latest version of Metal Gear's must-have visual mod slices load times, adds raw mouse input, and restores Mel Gibson",
-      "url": "https://www.pcgamer.com/games/action/the-latest-version-of-metal-gears-must-have-visual-mod-slices-load-times-adds-raw-mouse-input-and-restores-mel-gibson/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-03T17:50:31Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Venom-toothed Noxious Terminids are soon to infest Helldivers 2, and it's your noble job to sterilise the galaxy for Super Earth",
-      "url": "https://www.rockpapershotgun.com/venom-toothed-noxious-terminids-are-soon-to-infest-helldivers-2-and-its-your-noble-job-to-sterilise-the-galaxy-for-super-earth",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-03T17:25:23Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "World of Warcraft's D&D crossover is neat, but inconsistent\u2014novel on one page, then shrugging and pointing to the PHB you already own on the next",
-      "url": "https://www.pcgamer.com/games/world-of-warcraft/world-of-warcrafts-d-and-d-crossover-is-neat-but-inconsistent-novel-on-one-page-then-shrugging-and-pointing-to-the-phb-you-already-own-on-the-next/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-03T17:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Mobile Suit Gundam Battle Operation 3 has been announced, marking another attempt at a free-to-play team game after Gundam Evolution's unfortunate fate",
-      "url": "https://www.rockpapershotgun.com/mobile-suit-gundam-battle-operation-3-has-been-announced-marking-another-attempt-at-a-free-to-play-team-game-after-gundam-evolutions-unfortunate-fate",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-03T16:53:42Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The Elder Scrolls 6: Sentinel teaser all but confirms Hammerfell setting and means we can finally stop using that eight year old header image with the hills",
-      "url": "https://www.rockpapershotgun.com/the-elder-scrolls-6-sentinel-teaser-all-but-confirms-hammerfell-setting-and-means-we-can-finally-stop-using-that-eight-year-old-header-image-with-the-hills",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-03T16:09:52Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Arc Raiders devs say that using generative AI voice acting was necessary as actors \"would just go crazy if they had to read all of that\"",
-      "url": "https://www.eurogamer.net/arc-raiders-ai-voice-acting-would-go-crazy",
-      "source": "Eurogamer",
-      "published_at": "2026-11-03T15:34:03Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The Elder Scrolls 6: Sentinel is finally made official",
-      "url": "https://www.pcgamer.com/games/the-elder-scrolls/the-elder-scrolls-6-sentinel-is-finally-made-official/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-03T15:33:59Z",
       "games": [],
       "kind": "news",
       "highlight": false
