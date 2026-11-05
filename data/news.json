@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T00:54:07Z",
+  "generated_at": "2026-11-05T07:05:52Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,15 @@
     }
   ],
   "items": [
+    {
+      "title": "Critical Role's upcoming series with Hololive gave Matt Mercer 'a deeper understanding and appreciation' for vtubers",
+      "url": "https://www.pcgamer.com/games/board-games/critical-roles-upcoming-series-with-hololive-gave-matt-mercer-a-deeper-understanding-and-appreciation-for-vtubers/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-05T01:52:06Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "The Elder Scrolls 6 is reportedly more than two years away, and some fans are not coping well",
       "url": "https://www.pcgamer.com/games/the-elder-scrolls/the-elder-scrolls-6-is-reportedly-more-than-two-years-away-and-some-fans-are-not-coping-well/",
@@ -563,15 +572,6 @@
       "url": "https://www.pcgamer.com/games/the-elder-scrolls/the-elder-scrolls-6-sentinel-is-finally-made-official/",
       "source": "PC Gamer",
       "published_at": "2026-11-03T15:33:59Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The top 100 PC games",
-      "url": "https://www.pcgamer.com/games/the-top-100-pc-games-2026/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-03T15:30:00Z",
       "games": [],
       "kind": "news",
       "highlight": false
