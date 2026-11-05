@@ -523,13 +523,16 @@ GAMES = [
         "genre": "Factory sim",
         "steam_appid": 526870,
         # Stable-branch posts only ("1.2 Update Fixes v1.2.4.1", "Satisfactory 1.2 Update out now!"). Experimental
-        # (test-branch) posts are excluded; the Steam check reads the public branch only.
+        # (test-branch) posts are excluded; the Steam check reads the public branch only. Feature updates can ship
+        # without a version in the title or notes ("Crossplay is now available in Satisfactory!", 2026-11-04);
+        # those are labelled by date, like Fallout 4's.
         "patch_rule": {
-            "include": r"^\d+\.\d+\s+(?:update\s+)?fixes\s+v\d|^satisfactory\s+\d+\.\d+\s+(?:update\s+)?out now|^fics\*mas update v\d",
+            "include": r"^\d+\.\d+\s+(?:update\s+)?fixes\s+v\d|^satisfactory\s+\d+\.\d+\s+(?:update\s+)?out now|^fics\*mas update v\d"
+                       r"|\bis now available in satisfactory\b",
             "exclude": r"experimental|\bptb\b|board game|anniversary",
             "version": r"(?:^.*\bv(?=\d)|^(?:satisfactory\s+)?)(\d+(?:\.\d+)+)",
-            "require_version": True,
             "label": "{v}",
+            "label_noversion": "Update {date}",
         },
         "frameworks": [
             {"id": "sml", "name": "Satisfactory Mod Loader (SML)", "short": "SML", "source": "ficsit_sml",

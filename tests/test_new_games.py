@@ -10,7 +10,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 import update  # noqa: E402
 from games import GAMES_BY_SLUG  # noqa: E402
-from status_logic import V_BROKEN, V_LIKELY, V_WAIT, detect_patch, ficsit_compat_adjust  # noqa: E402
+from status_logic import V_BROKEN, V_LIKELY, V_WAIT, detect_patch, ficsit_compat_adjust, list_patches_generic  # noqa: E402
 
 
 def unix(iso):
@@ -85,8 +85,16 @@ class TestSatisfactory(unittest.TestCase):
         self.assertEqual(detect_patch("Satisfactory 1.2 Update out now!", r)["version"], "1.2")
         self.assertEqual(detect_patch("1.1 Fixes v1.1.2.2", r)["version"], "1.1.2.2")
         for t in ("1.2 Experimental Hotfix v1.2.2.2", "EXPERIMENTAL Update v1.1.1.6", "Update 1.2 is out now on Experimental!",
-                  "Satisfactory: The board game – Campaign live now!", "Satisfactory 1.0 - 2nd Anniversary!"):
+                  "Satisfactory: The board game – Campaign live now!", "Satisfactory 1.0 - 2nd Anniversary!",
+                  "Satisfactory - September News", "Crossplay is now available in Satisfactory Experimental!"):
             self.assertIsNone(detect_patch(t, r), t)
+
+    def test_unversioned_feature_update_labelled_by_date(self):
+        news =[{"title": "Crossplay is now available in Satisfactory!", "date": 1793800980, "url": "u1"},   # 2026-11-04
+                {"title": "1.2 Update Fixes v1.2.4.1", "date": 1791815940, "url": "u2"}]                     # 2026-10-12
+        p = list_patches_generic(news, self.g["patch_rule"])
+        self.assertEqual([x["label"] for x in p], ["Update 2026-11-04", "1.2.4.1"])
+        self.assertIsNone(p[0]["version"])
 
     def test_compat_flag(self):
         lab, why = ficsit_compat_adjust(V_LIKELY, "x.", {"state": "Broken", "note": "crash"}, min_cl=">=491125")
