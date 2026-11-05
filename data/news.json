@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T18:52:20Z",
+  "generated_at": "2026-11-05T00:54:07Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,69 @@
     }
   ],
   "items": [
+    {
+      "title": "The Elder Scrolls 6 is reportedly more than two years away, and some fans are not coping well",
+      "url": "https://www.pcgamer.com/games/the-elder-scrolls/the-elder-scrolls-6-is-reportedly-more-than-two-years-away-and-some-fans-are-not-coping-well/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-05T00:18:02Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "No GTA 6 November: Here's what you can play on PC instead",
+      "url": "https://www.pcgamer.com/games/november-games-2026/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-04T23:37:01Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Data centers were some of the biggest losers in last night's US midterm elections",
+      "url": "https://www.pcgamer.com/gaming-industry/data-centers-were-some-of-the-biggest-losers-in-last-nights-us-midterm-elections/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-04T21:10:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "French game union accuses Microsoft of 'sabotaging' Blade and then using the fallout to justify closing Arkane",
+      "url": "https://www.pcgamer.com/gaming-industry/french-game-union-accuses-microsoft-of-sabotaging-blade-and-then-using-the-fallout-to-justify-closing-arkane/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-04T20:51:28Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Arkane union says closing the studio \"would probably be more expensive\" for Xbox than simply finishing Marvel's Blade",
+      "url": "https://www.eurogamer.net/arkane-union-xbox-more-expensive-marvels-blade",
+      "source": "Eurogamer",
+      "published_at": "2026-11-04T20:33:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Former Halo composer Marty O'Donnell loses election, then gets absolutely bodied by his opponent: 'The fight is finished'",
+      "url": "https://www.pcgamer.com/games/former-halo-composer-marty-odonnell-loses-election-then-gets-absolutely-bodied-by-his-opponent-the-fight-is-finished/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-04T19:21:48Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The Legend of Zelda: Ocarina of Time's Navi actor reprises her role after 28 years, but it was a total accident due to Nintendo's blind auditions",
+      "url": "https://www.eurogamer.net/nintendo-cast-navi-actor-zelda-ocarina-of-time",
+      "source": "Eurogamer",
+      "published_at": "2026-11-04T19:15:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "\"Arkane is profitable,\" say Marvel's Blade developers in fiery new statement, \"just not profitable enough for Microsoft\"",
       "url": "https://www.rockpapershotgun.com/arkane-is-profitable-say-marvels-blade-developers-in-fiery-new-statement-just-not-profitable-enough-for-microsoft",
@@ -153,8 +216,8 @@
       "games": [
         "satisfactory"
       ],
-      "kind": "announcement",
-      "highlight": false
+      "kind": "patch",
+      "highlight": true
     },
     {
       "title": "Tinto Talks 130 - Anniversary feedback, Hourly Tick Branch",
@@ -509,71 +572,6 @@
       "url": "https://www.pcgamer.com/games/the-top-100-pc-games-2026/",
       "source": "PC Gamer",
       "published_at": "2026-11-03T15:30:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Grand Theft Auto 6 pre-load begins on 10th November, file size and regional timings released",
-      "url": "https://www.eurogamer.net/grand-theft-auto-6-pre-load-date",
-      "source": "Eurogamer",
-      "published_at": "2026-11-03T15:26:02Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Morrowind's gravity is no longer '0.01% off' in the new release of its fan-made engine, finally making it playable",
-      "url": "https://www.pcgamer.com/games/the-elder-scrolls/morrowinds-gravity-is-no-longer-0-01-percent-off-in-the-new-release-of-its-fan-made-engine-finally-making-it-playable/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-03T15:19:10Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The Elder Scrolls VI: Official Name Reveal",
-      "url": "https://store.steampowered.com/news/app/489830/view/1847920302252394",
-      "source": "Steam \u00b7 Skyrim SE/AE",
-      "published_at": "2026-11-03T15:14:16Z",
-      "games": [
-        "skyrim-se"
-      ],
-      "kind": "announcement",
-      "highlight": false
-    },
-    {
-      "title": "The Elder Scrolls 6: Sentinel is confirmed, finally getting new trailer and full name, 8 years, 4 months, and 23 days after its reveal",
-      "url": "https://www.eurogamer.net/the-elder-scrolls-6-sentinel-revealed-bethesda-xbox",
-      "source": "Eurogamer",
-      "published_at": "2026-11-03T15:08:07Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Here's the WoW: Forever release time for your region",
-      "url": "https://www.pcgamer.com/games/world-of-warcraft/forever-release-date-launch-times/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-03T15:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "I'm sad that the Like A Dragon creator's new studio is closing, but I wish their now-cancelled debut Gang of Dragon wasn't just LAD again",
-      "url": "https://www.rockpapershotgun.com/im-sad-that-the-like-a-dragon-creators-new-studio-is-closing-but-i-wish-their-now-cancelled-debut-gang-of-dragon-wasnt-just-lad-again",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-03T14:51:18Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "2 of my favorite studios are teaming up for their first-ever showcase this week, and have a Steam sale going right now",
-      "url": "https://www.pcgamer.com/games/adventure/2-of-my-favorite-studios-are-teaming-up-for-their-first-ever-showcase-this-week-and-have-a-steam-sale-going-right-now/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-03T14:38:29Z",
       "games": [],
       "kind": "news",
       "highlight": false
