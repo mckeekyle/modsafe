@@ -1,24 +1,17 @@
 {
-  "generated_at": "2026-11-05T20:30:05Z",
+  "generated_at": "2026-11-06T00:23:24Z",
   "game": {
     "slug": "msfs-2024",
     "name": "Microsoft Flight Simulator 2024",
     "steam_appid": 2537590,
     "latest_patch": {
-      "version": "7.1",
-      "label": "Sim Update 7.1",
-      "title": "Sim Update 7.1 Release Notes [1.9.21.0] - Available Now",
-      "published_at": "2026-10-23T16:40:37Z",
-      "published_unix": 1792773637,
-      "url": "https://store.steampowered.com/news/app/2537590/view/1847286114037158",
-      "steam_build": "26385953",
-      "unannounced_update": {
-        "version": null,
-        "label": "Unannounced update 2026-11-05",
-        "published_at": "2026-11-05T19:39:36Z",
-        "buildid": "26385953",
-        "source": "Steam public branch (api.steamcmd.net / PICS)"
-      }
+      "version": "7.2",
+      "label": "Sim Update 7.2",
+      "title": "Sim Update 7.2 Release Notes [1.9.24.0] - Available Now",
+      "published_at": "2026-11-05T23:46:06Z",
+      "published_unix": 1793922366,
+      "url": "https://store.steampowered.com/news/app/2537590/view/1848664643343555",
+      "steam_build": "26385953"
     }
   },
   "verdict": "Just patched, wait",
@@ -35,7 +28,7 @@
       "sensitive": true,
       "status": "Just patched, wait",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch Sim Update 7.1; compatibility is unverified \u2014 check the project page. No open breakage reports 13 days after the patch. Steam's public build changed on 2026-11-05 (build 26385953) with no announcement, and this tool hasn't released since; wait for confirmation.",
+      "reason": "Latest release predates patch Sim Update 7.2; compatibility is unverified \u2014 check the project page.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v2024.1.0",
@@ -57,7 +50,7 @@
       "sensitive": true,
       "status": "Just patched, wait",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch Sim Update 7.1; compatibility is unverified \u2014 check the project page. Patch is 13 days old; no breakage signal available. Steam's public build changed on 2026-11-05 (build 26385953) with no announcement, and this tool hasn't released since; wait for confirmation.",
+      "reason": "Latest release predates patch Sim Update 7.2; compatibility is unverified \u2014 check the project page.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "7.5.9",
@@ -79,7 +72,7 @@
       "sensitive": true,
       "status": "Just patched, wait",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch Sim Update 7.1; compatibility is unverified \u2014 check the project page. No open breakage reports 13 days after the patch. Steam's public build changed on 2026-11-05 (build 26385953) with no announcement, and this tool hasn't released since; wait for confirmation.",
+      "reason": "Latest release predates patch Sim Update 7.2; compatibility is unverified \u2014 check the project page.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "11.3.1",
@@ -107,20 +100,65 @@
   ],
   "history": [
     {
+      "version": "7.2",
+      "label": "Sim Update 7.2",
+      "title": "Sim Update 7.2 Release Notes [1.9.24.0] - Available Now",
+      "published_at": "2026-11-05T23:46:06Z",
+      "published_unix": 1793922366,
+      "url": "https://store.steampowered.com/news/app/2537590/view/1848664643343555",
+      "steam_build": "26385953",
+      "frameworks": [
+        {
+          "id": "fbw-a32nx",
+          "short": "FBW A32NX",
+          "name": "FlyByWire A32NX (freeware)",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2026-06-07T03:26:42Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "fsuipc7",
+          "short": "FSUIPC7",
+          "name": "FSUIPC7",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2026-09-29T12:00:00Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "mobiflight",
+          "short": "MobiFlight",
+          "name": "MobiFlight Connector (SimConnect/WASM)",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2026-03-16T14:50:54Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
       "version": "7.1",
       "label": "Sim Update 7.1",
       "title": "Sim Update 7.1 Release Notes [1.9.21.0] - Available Now",
       "published_at": "2026-10-23T16:40:37Z",
       "published_unix": 1792773637,
       "url": "https://store.steampowered.com/news/app/2537590/view/1847286114037158",
-      "steam_build": "26385953",
-      "unannounced_update": {
-        "version": null,
-        "label": "Unannounced update 2026-11-05",
-        "published_at": "2026-11-05T19:39:36Z",
-        "buildid": "26385953",
-        "source": "Steam public branch (api.steamcmd.net / PICS)"
-      },
       "frameworks": [
         {
           "id": "fbw-a32nx",
@@ -533,6 +571,12 @@
   ],
   "news": [
     {
+      "title": "Sim Update 7.2 Release Notes [1.9.24.0] - Available Now",
+      "url": "https://store.steampowered.com/news/app/2537590/view/1848664643343555",
+      "published_at": "2026-11-05T23:46:06Z",
+      "is_patch": true
+    },
+    {
       "title": "World Update 23: Poland and the Baltics",
       "url": "https://store.steampowered.com/news/app/2537590/view/1847286114046193",
       "published_at": "2026-10-26T18:11:27Z",
@@ -585,12 +629,6 @@
       "url": "https://store.steampowered.com/news/app/2537590/view/1824644522840220",
       "published_at": "2026-02-13T18:33:54Z",
       "is_patch": false
-    },
-    {
-      "title": "Sim Update 4 Release Notes [1.6.32.0] - Available Now",
-      "url": "https://store.steampowered.com/news/app/2537590/view/1818118366182917",
-      "published_at": "2025-12-08T16:05:00Z",
-      "is_patch": true
     }
   ],
   "channels": [],
@@ -704,6 +742,31 @@
       "patch_key": "7.1",
       "patch_published_at": "2026-10-23T16:40:37Z",
       "patch_url": "https://store.steampowered.com/news/app/2537590/view/1847286114037158",
+      "verdict": "Just patched, wait",
+      "frameworks": [
+        {
+          "short": "FBW A32NX",
+          "status": "Just patched, wait",
+          "release_tag": "v2024.1.0"
+        },
+        {
+          "short": "FSUIPC7",
+          "status": "Just patched, wait",
+          "release_tag": "7.5.9"
+        },
+        {
+          "short": "MobiFlight",
+          "status": "Just patched, wait",
+          "release_tag": "11.3.1"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T00:23:24Z",
+      "patch": "Sim Update 7.2",
+      "patch_key": "7.2",
+      "patch_published_at": "2026-11-05T23:46:06Z",
+      "patch_url": "https://store.steampowered.com/news/app/2537590/view/1848664643343555",
       "verdict": "Just patched, wait",
       "frameworks": [
         {
