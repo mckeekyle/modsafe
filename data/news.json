@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T00:55:11Z",
+  "generated_at": "2026-11-06T07:04:18Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,24 @@
     }
   ],
   "items": [
+    {
+      "title": "Saudi Arabia owns EA, and according to a Reuters report, Unity is next",
+      "url": "https://www.pcgamer.com/gaming-industry/saudi-arabia-owns-ea-and-according-to-a-reuters-report-unity-is-next/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-06T05:27:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Richard Garriott on the state of the games industry: 'The bells and whistles are no longer what's important'",
+      "url": "https://www.pcgamer.com/gaming-industry/richard-garriott-on-the-state-of-the-games-industry-the-bells-and-whistles-are-no-longer-whats-important/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-06T03:17:27Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Sim Update 7.2 Release Notes [1.9.24.0] - Available Now",
       "url": "https://store.steampowered.com/news/app/2537590/view/1848664643343555",
@@ -556,26 +574,6 @@
       "games": [],
       "kind": "news",
       "highlight": false
-    },
-    {
-      "title": "Eight years ago the idea of The Elder Scrolls 6: Sentinel had me captivated, but can Bethesda recapture the magic?",
-      "url": "https://www.eurogamer.net/elder-scrolls-6-sentinel-bethesda-recapture-the-magic",
-      "source": "Eurogamer",
-      "published_at": "2026-11-04T15:02:30Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Crossplay is now available in Satisfactory!",
-      "url": "https://store.steampowered.com/news/app/526870/view/1848557880479256",
-      "source": "Steam \u00b7 Satisfactory",
-      "published_at": "2026-11-04T14:03:55Z",
-      "games": [
-        "satisfactory"
-      ],
-      "kind": "patch",
-      "highlight": true
     }
   ]
 }
