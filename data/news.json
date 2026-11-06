@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T07:04:18Z",
+  "generated_at": "2026-11-06T12:55:07Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,143 @@
     }
   ],
   "items": [
+    {
+      "title": "Steam gets a boatload of restored Wing Commanders and Ultima ports after EA producer stumbles across cupboard of old tapes",
+      "url": "https://www.rockpapershotgun.com/steam-gets-a-boatload-of-restored-wing-commanders-and-ultima-ports-after-ea-producer-stumbles-across-cupboard-of-old-tapes",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-06T12:38:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "In Charting the Unknown, Crimson Desert doubles down on its maximalism in audacious, faintly sinister style",
+      "url": "https://www.eurogamer.net/crimson-desert-charting-the-unknown-now-playing",
+      "source": "Eurogamer",
+      "published_at": "2026-11-06T12:32:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Square Enix accidentally botches a Nier: Automata update, balloons required file size from 50GB to 366GB on PC",
+      "url": "https://www.eurogamer.net/square-enix-nier-automata-update-required-file-size-366gb",
+      "source": "Eurogamer",
+      "published_at": "2026-11-06T12:28:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Following BioWare's shock closure, a new documentary capturing its final moments is coming next year",
+      "url": "https://www.eurogamer.net/bioware-closure-documentary-release",
+      "source": "Eurogamer",
+      "published_at": "2026-11-06T12:24:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Discord is cutting memory usage and speeding up boot times - joins Xbox, Epic, Steam, and more for similar upgrades just this year",
+      "url": "https://www.pcgamer.com/hardware/discord-is-cutting-memory-usage-and-speeding-up-boot-times-joins-xbox-epic-steam-and-more-for-similar-upgrades-just-this-year/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-06T12:06:34Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Former Rockstar Games tech director thinks GTA 6 could be coming to PC sooner than you'd expect to curb AI clones",
+      "url": "https://www.eurogamer.net/grand-theft-auto-6-pc-sooner-than-you-expect-curb-ai-clone",
+      "source": "Eurogamer",
+      "published_at": "2026-11-06T12:02:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Zelda: Ocarina of Time remake reportedly running at 60 fps on PC just hours after game's official Nintendo Switch 2 release",
+      "url": "https://www.pcgamer.com/software/zelda-ocarina-of-time-remake-reportedly-running-at-60-fps-on-pc-just-hours-after-games-official-nintendo-switch-2-release/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-06T11:43:06Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Zelnick doesn't regret GTA 6's delay because shipping an unfinished game rarely ends well: 'There was a very high profile release that fell into this category'",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/zelnick-doesnt-regret-gta-6s-delay-because-shipping-an-unfinished-game-rarely-ends-well-there-was-a-very-high-profile-release-that-fell-into-this-category/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-06T11:40:38Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "WoW: Forever is working on its server tech to make cities less empty, say devs",
+      "url": "https://www.pcgamer.com/games/world-of-warcraft/wow-forever-is-working-on-its-server-tech-to-make-cities-less-empty-say-devs/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-06T11:28:35Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "\"It's a brave new world\": GTA 6's PC port will release sooner than you think to avoid losing money to AI rip-offs, says former Rockstar tech director",
+      "url": "https://www.rockpapershotgun.com/its-a-brave-new-world-gta-6s-pc-port-will-release-sooner-than-you-think-to-avoid-losing-money-to-ai-rip-offs-says-former-rockstar-tech-director",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-06T11:09:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Take Down the Kortz Center and More High-Value Targets in The Heist Event",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1848664643345005",
+      "source": "Steam \u00b7 GTA V Legacy",
+      "published_at": "2026-11-06T10:31:32Z",
+      "games": [
+        "gta-v-legacy"
+      ],
+      "kind": "announcement",
+      "highlight": false
+    },
+    {
+      "title": "After taking over EA, Saudi Arabia and their private equity cronies have reportedly held talks about buying Unity",
+      "url": "https://www.rockpapershotgun.com/after-taking-over-ea-saudi-arabia-and-their-private-equity-cronies-have-reportedly-held-talks-about-buying-unity",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-06T10:25:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "\"Is there any accountability left in this world?\" Warren Spector pops off at EA executives and their massive payouts as BioWare shuts down",
+      "url": "https://www.eurogamer.net/bioware-closure-warren-spector-comments-accountability",
+      "source": "Eurogamer",
+      "published_at": "2026-11-06T10:15:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "After gobbling up EA, Saudi Arabia and private equity firm Silver Lake reportedly looking to buy Unity",
+      "url": "https://www.eurogamer.net/unity-game-engine-saudi-arabia-silver-lake",
+      "source": "Eurogamer",
+      "published_at": "2026-11-06T10:00:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Remakes and new games \"both have a place in the stable\" says Nintendo boss, buoyed by the success of Star Fox and Ocarina of Time",
+      "url": "https://www.eurogamer.net/remakes-and-new-games-both-have-a-place-in-the-stable-says-nintendo-boss-buoyed-by-the-success-of-star-fox-and-ocarina-of-time",
+      "source": "Eurogamer",
+      "published_at": "2026-11-06T09:40:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Saudi Arabia owns EA, and according to a Reuters report, Unity is next",
       "url": "https://www.pcgamer.com/gaming-industry/saudi-arabia-owns-ea-and-according-to-a-reuters-report-unity-is-next/",
@@ -429,148 +566,6 @@
       "url": "https://www.pcgamer.com/gaming-industry/french-game-union-accuses-microsoft-of-sabotaging-blade-and-then-using-the-fallout-to-justify-closing-arkane/",
       "source": "PC Gamer",
       "published_at": "2026-11-04T20:51:28Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Arkane union says closing the studio \"would probably be more expensive\" for Xbox than simply finishing Marvel's Blade",
-      "url": "https://www.eurogamer.net/arkane-union-xbox-more-expensive-marvels-blade",
-      "source": "Eurogamer",
-      "published_at": "2026-11-04T20:33:10Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Former Halo composer Marty O'Donnell loses election, then gets absolutely bodied by his opponent: 'The fight is finished'",
-      "url": "https://www.pcgamer.com/games/former-halo-composer-marty-odonnell-loses-election-then-gets-absolutely-bodied-by-his-opponent-the-fight-is-finished/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-04T19:21:48Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The Legend of Zelda: Ocarina of Time's Navi actor reprises her role after 28 years, but it was a total accident due to Nintendo's blind auditions",
-      "url": "https://www.eurogamer.net/nintendo-cast-navi-actor-zelda-ocarina-of-time",
-      "source": "Eurogamer",
-      "published_at": "2026-11-04T19:15:40Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "\"Arkane is profitable,\" say Marvel's Blade developers in fiery new statement, \"just not profitable enough for Microsoft\"",
-      "url": "https://www.rockpapershotgun.com/arkane-is-profitable-say-marvels-blade-developers-in-fiery-new-statement-just-not-profitable-enough-for-microsoft",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-04T18:02:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "I am back modding GTA 5 and being chased by a billion furious, armed cougars",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/i-am-back-modding-gta-5-and-being-chased-by-a-billion-furious-armed-cougars/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-04T18:00:00Z",
-      "games": [
-        "gta-v-legacy",
-        "gta-v-enhanced"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "God of War Laufey delayed three months to May 2027, as Sony Santa Monica escapes a packed February",
-      "url": "https://www.eurogamer.net/god-of-war-laufey-delayed-may-three-months",
-      "source": "Eurogamer",
-      "published_at": "2026-11-04T17:32:10Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Oblivion and Skyrim\u2019s gap was bridged by forward-looking books about a murderous floating island, so why is The Elder Scrolls 6 stuck reanimating a world that\u2019s stood still since 2011",
-      "url": "https://www.rockpapershotgun.com/oblivion-and-skyrims-gap-was-bridged-by-forward-looking-books-about-a-murderous-floating-island-so-why-is-the-elder-scrolls-6-stuck-reanimating-a-world-thats-stood-still-since-2011",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-04T17:30:00Z",
-      "games": [
-        "skyrim-se"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "New Blood CEO would rather shut down the boomer shooter studio than sell out: 'In 20 years, we're done. I'm gonna say goodbye, shut it down'",
-      "url": "https://www.pcgamer.com/games/fps/new-blood-ceo-would-rather-shut-down-the-boomer-shooter-studio-than-sell-out-in-20-years-were-done-im-gonna-say-goodbye-shut-it-down/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-04T17:28:16Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Nexus Mods takes the Valve approach to AI-generated content: No outright bans but mandatory disclosures",
-      "url": "https://www.pcgamer.com/games/nexus-mods-takes-the-valve-approach-to-ai-generated-content-no-outright-bans-but-mandatory-disclosures/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-04T17:12:53Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Rimworld-inspired colony sim Stardeus gets a huge update representing a year's worth of expansion and revision, with new tools for evil AI overlords",
-      "url": "https://www.rockpapershotgun.com/rimworld-inspired-colony-sim-stardeus-gets-a-huge-update-representing-a-years-worth-of-expansion-and-revision-with-new-tools-for-evil-ai-overlords",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-04T17:03:10Z",
-      "games": [
-        "rimworld"
-      ],
-      "kind": "news",
-      "highlight": true
-    },
-    {
-      "title": "'How can prices fall when there's nothing left?' TeamGroup CEO reckons supply-demand memory equilibrium may not happen until late 2028 at the earliest",
-      "url": "https://www.pcgamer.com/hardware/memory/how-can-prices-fall-when-theres-nothing-left-teamgroup-ceo-reckons-supply-demand-memory-equilibrium-may-not-happen-until-late-2028-at-the-earliest/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-04T16:39:11Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "I'm watching YouTube videos in glorious stereoscopic 3D on my Steam Frame with just a free plugin and a long-forgotten dream of a new Nintendo 3DS",
-      "url": "https://www.pcgamer.com/hardware/vr-hardware/im-watching-youtube-videos-in-glorious-stereoscopic-3d-on-my-steam-frame-with-just-a-free-plugin-and-a-long-forgotten-dream-of-a-new-nintendo-3ds/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-04T16:29:04Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Dead by Daylight apologises to fans after gifting DLC to TheBurntPeanut and has since 'removed the content that was granted'",
-      "url": "https://www.pcgamer.com/games/horror/dead-by-daylight-apologises-to-fans-after-gifting-dlc-to-theburntpeanut-and-has-since-removed-the-content-that-was-granted/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-04T16:14:53Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The Elder Scrolls 6: Sentinel fans ponder split timelines, alternative histories, and more as story speculation runs wild following latest teaser",
-      "url": "https://www.eurogamer.net/the-elder-scrolls-6-sentinel-story-speculation",
-      "source": "Eurogamer",
-      "published_at": "2026-11-04T16:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Formula V Line Air Power G10 review",
-      "url": "https://www.pcgamer.com/hardware/pc-cases/formula-v-line-air-power-g10-review/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-04T15:53:08Z",
       "games": [],
       "kind": "news",
       "highlight": false

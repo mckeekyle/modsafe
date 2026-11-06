@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T07:02:40Z",
+  "generated_at": "2026-11-06T12:53:27Z",
   "game": {
     "slug": "gta-v-legacy",
     "name": "Grand Theft Auto V Legacy",
@@ -348,6 +348,12 @@
   ],
   "news": [
     {
+      "title": "Take Down the Kortz Center and More High-Value Targets in The Heist Event",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1848664643345005",
+      "is_patch": false,
+      "published_at": "2026-11-06T10:31:32Z"
+    },
+    {
       "title": "Experience Halloween Thrills All Throughout October in GTA Online",
       "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1845383656393775",
       "is_patch": false,
@@ -400,12 +406,6 @@
       "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1835871199315621",
       "is_patch": false,
       "published_at": "2026-06-23T13:57:16Z"
-    },
-    {
-      "title": "The Next Big Score",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1835871199312632",
-      "is_patch": false,
-      "published_at": "2026-06-22T10:43:51Z"
     }
   ],
   "last_verified": "2026-11-05",
