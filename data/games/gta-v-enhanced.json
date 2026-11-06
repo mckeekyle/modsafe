@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T12:53:28Z",
+  "generated_at": "2026-11-06T18:05:18Z",
   "game": {
     "slug": "gta-v-enhanced",
     "name": "Grand Theft Auto V Enhanced",
@@ -47,7 +47,7 @@
       "sensitive": true,
       "release_url": "http://www.dev-c.com/gtav/scripthookv/",
       "status": "Just patched, wait",
-      "reason": "No build yet for Enhanced 1.0.1158.16. Steam's public Enhanced build changed on 2026-10-27 (build 25971420) after the last manual check; Script Hook V support for it is unconfirmed, so hold that update. (Manually verified 2026-11-05.)",
+      "reason": "No build yet for Enhanced 1.0.1158.16. Steam's public Enhanced build changed on 2026-10-27 (build 25971420) after the last manual check; Script Hook V support for it is unconfirmed, so hold that update. (Manually verified 2026-11-06.)",
       "release_tag": "v1158.13",
       "release_published_at": "2026-07-15T00:00:00Z",
       "manual_data": true
@@ -331,6 +331,12 @@
   ],
   "news": [
     {
+      "title": "Take Down the Kortz Center and More High-Value Targets in The Heist Event",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1848664643345922",
+      "is_patch": false,
+      "published_at": "2026-11-06T10:32:26Z"
+    },
+    {
       "title": "Experience Halloween Thrills All Throughout October in GTA Online",
       "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1845383656393780",
       "is_patch": false,
@@ -383,15 +389,9 @@
       "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1837955055356437",
       "is_patch": false,
       "published_at": "2026-07-10T10:51:12Z"
-    },
-    {
-      "title": "Enjoy Star-Spangled GTA Online Bonuses This Independence Day",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1836506165570548",
-      "is_patch": false,
-      "published_at": "2026-07-03T13:44:06Z"
     }
   ],
-  "last_verified": "2026-11-05",
+  "last_verified": "2026-11-06",
   "sources": {
     "manual": "data/manual/gta-v.json",
     "patch_sources": [
