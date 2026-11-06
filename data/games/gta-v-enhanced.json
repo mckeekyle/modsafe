@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T20:29:56Z",
+  "generated_at": "2026-11-06T00:00:42Z",
   "game": {
     "slug": "gta-v-enhanced",
     "name": "Grand Theft Auto V Enhanced",
@@ -22,7 +22,7 @@
         "https://w.atwiki.jp/lspdfrinfo/pages/16.html (as of 2026-10-28: Enhanced latest v1158.16, Script Hook V supports up to 1158.13)",
         "https://www.reddit.com/r/RAGEPluginHook/comments/1wjb502/unsupported_game_patch/ (Enhanced 'unsupported game patch', 2026-09-18)"
       ],
-      "notes": "On Sep 15, 2026 Rockstar pushed a PC Enhanced-only update ('General fixes') that moved Enhanced from 1.0.1158.13 to 1.0.1158.16. Script Hook V (checked by hand) still lists only 1.0.3889.0 / 1.0.1158.13. On Oct 27, 2026 Steam shipped another Enhanced-only build (25971420) with no patch notes; its exe version isn't published yet, so it is intentionally left unrecorded and the page holds Enhanced at 'Just patched, wait' until the version is known.",
+      "notes": "On Sep 15, 2026 Rockstar pushed a PC Enhanced-only update ('General fixes') that moved Enhanced from 1.0.1158.13 to 1.0.1158.16. Script Hook V (checked by hand) still lists only 1.0.3889.0 / 1.0.1158.13. On Oct 27, 2026 Rockstar shipped another Enhanced-only build (Steam 25971420; notes: 'Fixed an issue that resulted in the game crashing upon launch'); its exe version isn't published yet, so it is intentionally left unrecorded and the page holds Enhanced at 'Just patched, wait' until the version is known.",
       "edition": "enhanced",
       "unannounced_update": {
         "version": null,
@@ -47,7 +47,7 @@
       "sensitive": true,
       "release_url": "http://www.dev-c.com/gtav/scripthookv/",
       "status": "Just patched, wait",
-      "reason": "No build yet for Enhanced 1.0.1158.16. Steam's public Enhanced build changed on 2026-10-27 (build 25971420) after the last manual check; Script Hook V support for it is unconfirmed, so hold that update. (Manually verified 2026-11-04.)",
+      "reason": "No build yet for Enhanced 1.0.1158.16. Steam's public Enhanced build changed on 2026-10-27 (build 25971420) after the last manual check; Script Hook V support for it is unconfirmed, so hold that update. (Manually verified 2026-11-05.)",
       "release_tag": "v1158.13",
       "release_published_at": "2026-07-15T00:00:00Z",
       "manual_data": true
@@ -391,7 +391,7 @@
       "published_at": "2026-07-03T13:44:06Z"
     }
   ],
-  "last_verified": "2026-11-04",
+  "last_verified": "2026-11-05",
   "sources": {
     "manual": "data/manual/gta-v.json",
     "patch_sources": [
