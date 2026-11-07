@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T12:42:29Z",
+  "generated_at": "2026-11-07T18:37:08Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,98 @@
     }
   ],
   "items": [
+    {
+      "title": "AMD CEO Lisa Su: 'We are a data center-first company'",
+      "url": "https://www.pcgamer.com/gaming-industry/amd-ceo-lisa-su-we-are-a-data-center-first-company/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-07T18:10:16Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Path of Exile 2's 1.0 version is out this year after all, arriving in December with a full campaign, two neat new classes, and more",
+      "url": "https://www.rockpapershotgun.com/path-of-exile-2s-10-version-is-out-this-year-after-all-arriving-in-december-with-a-full-campaign-two-neat-new-classes-and-more",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-07T18:00:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "After seeing them myself, I'm convinced WoW: Forever's RP servers don't need to be this separate, and I say that as a decorated veteran of MMO roleplay",
+      "url": "https://www.pcgamer.com/games/world-of-warcraft/after-seeing-them-myself-im-convinced-wow-forevers-rp-servers-dont-need-to-be-this-separate-and-i-say-that-as-a-decorated-veteran-of-mmo-roleplay/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-07T18:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "What's the toughest choice you've made in an RPG?",
+      "url": "https://www.pcgamer.com/games/rpg/whats-the-toughest-choice-youve-made-in-an-rpg/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-07T17:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "\"I feel that sense of responsibility more acutely\": After BioWare's closure, the makers of a new Mass Effect 3 co-op remaster mod look to carry their legacy",
+      "url": "https://www.rockpapershotgun.com/i-feel-that-sense-of-responsibility-more-acutely-after-biowares-closure-the-makers-of-a-new-mass-effect-3-co-op-remaster-mod-look-to-carry-their-legacy",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-07T17:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "After Star Wars Zero Company dev Bit Reactor brought back an unspecified number of furloughed devs, some of those who weren't have seemingly been laid off",
+      "url": "https://www.rockpapershotgun.com/after-star-wars-zero-company-dev-bit-reactor-brought-back-an-unspecified-number-of-furloughed-devs-some-of-those-who-werent-have-seemingly-been-laid-off",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-07T16:57:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Wardogs Season 3 brings an urban map, Limited Mode, and a 185,000-account ban wave",
+      "url": "https://www.eurogamer.net/wardogs-season-3-release-date-limited-mode-ban-wave",
+      "source": "Eurogamer",
+      "published_at": "2026-11-07T16:55:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Linux on the desktop marches on as GOG announces its Galaxy client is getting a revamp headed to Windows, macOS, and your distro of choice",
+      "url": "https://www.pcgamer.com/software/linux/linux-on-the-desktop-marches-on-as-gog-announces-its-galaxy-client-is-getting-a-revamp-headed-to-windows-macos-and-your-distro-of-choice/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-07T15:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Mass Effect composer Sam Hulick releases his 're-scored' trailer for N7 Day, 'my way of saying goodbye\u2026 at least for now'",
+      "url": "https://www.pcgamer.com/games/mass-effect/mass-effect-composer-sam-hulick-releases-his-re-scored-trailer-for-n7-day-my-way-of-saying-goodbye-at-least-for-now/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-07T15:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Todd Howard's game design power is knowing when to make things 'simple and digestible' according to Skyrim's lead designer",
+      "url": "https://www.pcgamer.com/games/the-elder-scrolls/todd-howards-game-design-power-is-knowing-when-to-make-things-simple-and-digestible-according-to-skyrims-lead-designer/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-07T14:16:28Z",
+      "games": [
+        "skyrim-se"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Xbox is testing a way to use your phone as a controller on smart TVs",
       "url": "https://www.eurogamer.net/xbox-cloud-gaming-phone-controller-smart-tv-nano-cloud-connect",
@@ -477,99 +569,6 @@
       "url": "https://www.rockpapershotgun.com/bioware-are-gone-but-at-least-youll-be-able-to-watch-their-final-days-in-a-documentary-next-year-and-oh-wait-thats-really-sad-actually",
       "source": "Rock Paper Shotgun",
       "published_at": "2026-11-05T21:32:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Sam Altman is annoyed his DRAM comment was 'taken out of context'",
-      "url": "https://www.pcgamer.com/software/ai/sam-altman-is-annoyed-his-dram-comment-was-taken-out-of-context/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-05T20:34:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Nvidia, Micron, and other AI stocks take a dive after elections",
-      "url": "https://www.pcgamer.com/software/ai/nvidia-micron-and-other-ai-stocks-take-a-dive-after-elections/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-05T19:32:47Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Ablahshikar is a maximalist, sickos only salvage-survival CRPG about ripping organs out of warships and pawning off strange goods that's now out in early access",
-      "url": "https://www.rockpapershotgun.com/ablahshikar-is-a-maximalist-sickos-only-salvage-survival-crpg-about-ripping-organs-out-of-warships-and-pawning-off-strange-goods-thats-now-out-in-early-access",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-05T19:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "EA's releasing a truckload of classic games on Steam, and 7 of them are remasters",
-      "url": "https://www.pcgamer.com/games/eas-releasing-a-truckload-of-classic-games-on-steam-and-7-of-them-are-remasters/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-05T18:30:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "After a 16-year long dev period, Faraway, a shooting star arcade game about siphoning the energy of other stars, is out now",
-      "url": "https://www.rockpapershotgun.com/after-a-16-year-long-dev-period-faraway-a-shooting-star-arcade-game-about-siphoning-the-energy-of-other-stars-is-out-now",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-05T18:30:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "I have added parkour to GTA 5, and also accidentally turned on like 20 mods I forgot I'd installed",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/i-have-added-parkour-to-gta-5-and-also-accidentally-turned-on-like-20-mods-i-forgot-id-installed/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-05T18:00:00Z",
-      "games": [
-        "gta-v-legacy",
-        "gta-v-enhanced"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The Legend of Khiimori's Mongolian Expanse update brings in frosty mountains and scorching deserts that'll require a lot more than a fur coat and a sturdy horse",
-      "url": "https://www.rockpapershotgun.com/the-legend-of-khiimoris-mongolian-expanse-update-brings-in-frosty-mountains-and-scorching-deserts-thatll-require-a-lot-more-than-a-fur-coat-and-a-sturdy-horse",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-05T18:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Apex Legends adds a grumpy, teamwiping Godzilla to its growing history of unappealing crossovers",
-      "url": "https://www.rockpapershotgun.com/apex-legends-adds-a-grumpy-teamwiping-godzilla-to-its-growing-history-of-unappealing-crossovers",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-05T17:30:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Rockstar drops a pile of new GTA 6 launch screenshots featuring dancers, combat dogs, and so many pores",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/rockstar-drops-a-pile-of-new-gta-6-launch-screenshots-featuring-dancers-combat-dogs-and-so-many-pores/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-05T17:13:17Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Phantom Blade Zero review: Feel gud, not git gud",
-      "url": "https://www.pcgamer.com/games/action/phantom-blade-zero-review/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-05T17:10:23Z",
       "games": [],
       "kind": "news",
       "highlight": false
