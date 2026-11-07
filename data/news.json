@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T06:49:26Z",
+  "generated_at": "2026-11-07T12:42:29Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,51 @@
     }
   ],
   "items": [
+    {
+      "title": "Xbox is testing a way to use your phone as a controller on smart TVs",
+      "url": "https://www.eurogamer.net/xbox-cloud-gaming-phone-controller-smart-tv-nano-cloud-connect",
+      "source": "Eurogamer",
+      "published_at": "2026-11-07T12:30:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "After furloughing its developers and then hiring some of them back, Star Wars Zero Company developer has laid off an unspecified number of staff",
+      "url": "https://www.pcgamer.com/games/strategy/after-furloughing-its-developers-and-then-hiring-some-of-them-back-star-wars-zero-company-developer-has-laid-off-an-unspecified-number-of-staff/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-07T12:18:55Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Nier: Automata developer is 'currently investigating' a bizarre update bug that drastically inflated the game's file size from 50GB to 366GB",
+      "url": "https://www.pcgamer.com/games/rpg/nier-automata-developer-is-currently-investigating-a-bizarre-update-bug-that-drastically-inflated-the-games-file-size-from-50gb-to-366gb/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-07T11:15:54Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "What we've been playing - \"Sniffing out the warehouses on Prawn Island\"",
+      "url": "https://www.eurogamer.net/what-weve-been-playing-vice-city-zelda-world-of-warcraft-forever",
+      "source": "Eurogamer",
+      "published_at": "2026-11-07T08:02:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "What are we all playing this weekend?",
+      "url": "https://www.rockpapershotgun.com/what-are-we-all-playing-this-weekend-407",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-07T08:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Here's what's in Path of Exile 2\u2019s huge 1.0 release, coming in December",
       "url": "https://www.pcgamer.com/games/rpg/heres-whats-in-path-of-exile-2s-huge-1-0-release-coming-in-december/",
@@ -525,51 +570,6 @@
       "url": "https://www.pcgamer.com/games/action/phantom-blade-zero-review/",
       "source": "PC Gamer",
       "published_at": "2026-11-05T17:10:23Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Nvidia ensure unboxing a ludicrously expensive new graphics card isn't limited to real life in these RAM crisis times by releasing a GeForce 8800 GTX unpacking sim",
-      "url": "https://www.rockpapershotgun.com/nvidia-ensure-unboxing-a-ludicrously-expensive-new-graphics-card-isnt-limited-to-real-life-in-these-ram-crisis-times-by-releasing-a-geforce-8800-gtx-unpacking-sim",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-05T16:55:40Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "PC Gamer magazine's new issue is on sale now: Metro 2039",
-      "url": "https://www.pcgamer.com/games/pc-gamer-magazines-new-issue-is-on-sale-now-metro-2039/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-05T16:28:57Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Rockstar shares 38 new screenshots of Grand Theft Auto 6, showing off Vice City, Jason and Lucia, and much more",
-      "url": "https://www.eurogamer.net/grand-theft-auto-6-38-new-screenshots",
-      "source": "Eurogamer",
-      "published_at": "2026-11-05T16:18:40Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Goddess of Victory: Nikke's PC launcher suffers potential malware infection, with its publishers suggesting folks who've booted since late September do a security check",
-      "url": "https://www.rockpapershotgun.com/goddess-of-victory-nikkes-pc-launcher-suffers-potential-malware-infection-with-its-publishers-suggesting-folks-whove-booted-since-late-september-do-a-security-check",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-05T15:43:10Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "45% of PC Gamer readers cleaned out their rig in the last six months and now I feel like a right grubchild for not remembering the last time I dusted mine",
-      "url": "https://www.pcgamer.com/hardware/45-percent-of-pc-gamer-readers-cleaned-out-their-rig-in-the-last-six-months-and-now-i-feel-like-a-right-grubchild-for-not-remembering-the-last-time-i-dusted-mine/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-05T15:33:41Z",
       "games": [],
       "kind": "news",
       "highlight": false
