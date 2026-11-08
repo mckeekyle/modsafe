@@ -42,6 +42,7 @@ ALIASES = {
     "satisfactory": [r"(?-i:\bSatisfactory\b)(?!:? (?:the )?board game)(?=.*\b(?:update|patch|hotfix|mods?|factory|coffee stain|1\.\d))",
                      r"coffee stain'?s satisfactory"],
     "palworld": [r"palworld"],
+    "repo": [r"\br\.e\.p\.o\.?(?!\w)"],
     "monster-hunter-wilds": [r"monster hunter wilds", r"\bmh ?wilds\b"],
     "europa-universalis-v": [r"europa universalis (?:v|5)\b", r"\beu ?5\b"],
 }

@@ -78,6 +78,13 @@ class TestPatchRules(unittest.TestCase):
         self.check("lethal-company", "Version 80 Beta!", None)
         self.check("lethal-company", "1 Year Anniversary!", None)
 
+    def test_repo(self):
+        self.check("repo", "R.E.P.O. v0.5.1", "0.5.1")
+        self.check("repo", "R.E.P.O. v0.5.0 - The Sunstone Update", "0.5.0")
+        self.check("repo", "A NEW R.E.P.O. LEVEL?!", None)
+        self.check("repo", "Addressing the BIGGEST QUESTIONS about R.E.P.O. in 2026", None)
+        self.check("repo", "Vote R.E.P.O. for the \"Better With Friends\" award!!", None)
+
     def test_labels_and_dedupe(self):
         news = [
             {"title": "Fallout 4 Update - August 18th", "date": ts(2026, 8, 18)},

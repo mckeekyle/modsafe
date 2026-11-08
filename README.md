@@ -12,6 +12,7 @@ Static site that tracks whether each game's core mod frameworks/loaders have cau
 | Baldur's Gate 3 | `/baldurs-gate-3/` | Steam news (1086940) | Norbyte/bg3se, LaughingLeader/BG3ModManager |
 | Stardew Valley | `/stardew-valley/` | Steam news (413150) | SMAPI (+ link to smapi.io/mods) |
 | Lethal Company | `/lethal-company/` | Steam news (1966720) | BepInExPack, LethalLib, LethalLevelLoader, MoreCompany (Thunderstore API) |
+| R.E.P.O. | `/repo/` | Steam news (3241660) | BepInExPack (agnostic), REPOLib (GitHub releases), MoreHead, MoreUpgrades (Thunderstore API) |
 | GTA V (single-player) | `/gta-v/` | Hand-maintained `data/manual/gta-v.json` (Legacy 271590 + Enhanced 3240220 builds) | Script Hook V (manual, never fetched from dev-c.com), Ultimate ASI Loader (GitHub, version-agnostic) |
 | Starfield | `/starfield/` | Steam news (1716740) | SFSE (GitHub tags + sfse.silverlock.org); Address Library (Nexus, manual) |
 | Elden Ring | `/elden-ring/` | Steam news (1245620) | Seamless Co-op (`yuiamoroll/EldenRingSeamlessCoopRelease`, GitHub releases; issues disabled, so no breakage search), Mod Engine 3 (me3) |

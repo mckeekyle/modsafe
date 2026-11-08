@@ -179,6 +179,37 @@ GAMES = [
         "blurb": "Game version bumps (v50, v70, v80…) regularly break level, item and lobby mods built on BepInEx.",
     },
     {
+        "slug": "repo",
+        "genre": "Co-op horror",
+        "name": "R.E.P.O.",
+        "short": "R.E.P.O.",
+        "developer": "semiwork",
+        "steam_appid": 3241660,
+        # Patch posts are titled "R.E.P.O. v0.5.1" / "R.E.P.O. v0.5.0 - The Sunstone Update"; everything else
+        # (dev videos, Q&As, award votes) has no version.
+        "patch_rule": {
+            "include": r"^r\.e\.p\.o\.\s+v\d+\.\d+",
+            "exclude": r"\bbeta\b",
+            "version": r"^r\.e\.p\.o\.\s+v(\d+(?:\.\d+)+)",
+            "require_version": True,
+            "label": "v{v}",
+            "mention": r"(?<![\w.])v?{v}(?![\w.])",
+        },
+        "frameworks": [
+            {"id": "bepinexpack-repo", "name": "BepInExPack", "short": "BepInEx", "source": "thunderstore",
+             "package": "BepInEx/BepInExPack", "url": "https://thunderstore.io/c/repo/p/BepInEx/BepInExPack/",
+             "agnostic": True, "agnostic_note": "Generic Unity/Mono plugin loader, not built against a specific R.E.P.O. version."},
+            {"id": "repolib", "name": "REPOLib", "short": "REPOLib", "source": "github",
+             "repo": "ZehsTeam/REPOLib", "url": "https://thunderstore.io/c/repo/p/Zehs/REPOLib/"},
+            {"id": "morehead", "name": "MoreHead", "short": "MoreHead", "source": "thunderstore",
+             "package": "YMC_MHZ/MoreHead", "issues_repo": "Masaicker/repo-MoreHead", "url": "https://thunderstore.io/c/repo/p/YMC_MHZ/MoreHead/"},
+            {"id": "moreupgrades", "name": "MoreUpgrades", "short": "MoreUpgrades", "source": "thunderstore",
+             "package": "BULLETBOT/MoreUpgrades", "issues_repo": "BULL3TB0T/REPO-MoreUpgrades", "url": "https://thunderstore.io/c/repo/p/BULLETBOT/MoreUpgrades/"},
+        ],
+        "wiki": "https://thunderstore.io/c/repo/",
+        "blurb": "Each numbered update (v0.4, v0.5…) can break REPOLib and the content and upgrade mods built on it until they ship a fix.",
+    },
+    {
         "slug": "gta-v-legacy",
         "genre": "Action",
         "name": "Grand Theft Auto V Legacy",

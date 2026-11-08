@@ -1,0 +1,186 @@
+{
+  "game": "repo",
+  "verified_at": "2026-11-08",
+  "manager": {
+    "name": "r2modman",
+    "url": "https://thunderstore.io/c/repo/p/ebkr/r2modman/",
+    "alt": {
+      "name": "Thunderstore Mod Manager",
+      "url": "https://www.overwolf.com/app/thunderstore-thunderstore_mod_manager"
+    }
+  },
+  "intro": "Popular Thunderstore mods. Everyone in the lobby needs the same gameplay mods: share an r2modman profile code with your friends.",
+  "mods": [
+    {
+      "id": "bepinexpack",
+      "name": "BepInExPack",
+      "category": "Framework",
+      "summary": "Mod loader every R.E.P.O. mod runs on.",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/repo/p/BepInEx/BepInExPack/",
+      "requires": [],
+      "thunderstore_package": "BepInEx/BepInExPack",
+      "framework_id": "bepinexpack-repo",
+      "last_updated": "2026-03-17"
+    },
+    {
+      "id": "repolib",
+      "name": "REPOLib",
+      "category": "Framework",
+      "summary": "Library for adding valuables, items, monsters and levels; most content mods need it.",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/repo/p/Zehs/REPOLib/",
+      "requires": [
+        "bepinexpack"
+      ],
+      "thunderstore_package": "Zehs/REPOLib",
+      "framework_id": "repolib",
+      "last_updated": "2026-10-30"
+    },
+    {
+      "id": "menulib",
+      "name": "MenuLib",
+      "category": "Framework",
+      "summary": "UI library that menu and cosmetic mods build on.",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/repo/p/REPOModding/MenuLib/",
+      "requires": [
+        "bepinexpack"
+      ],
+      "thunderstore_package": "REPOModding/MenuLib",
+      "last_updated": "2026-11-05"
+    },
+    {
+      "id": "morehead",
+      "name": "MoreHead",
+      "category": "Cosmetics",
+      "summary": "Customizable cosmetics; you can import your own head models.",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/repo/p/YMC_MHZ/MoreHead/",
+      "requires": [
+        "bepinexpack",
+        "menulib"
+      ],
+      "thunderstore_package": "YMC_MHZ/MoreHead",
+      "framework_id": "morehead",
+      "last_updated": "2026-11-03"
+    },
+    {
+      "id": "moreupgrades",
+      "name": "MoreUpgrades",
+      "category": "Gameplay",
+      "summary": "Extra shop upgrades such as map trackers and an extra life.",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/repo/p/BULLETBOT/MoreUpgrades/",
+      "requires": [
+        "bepinexpack",
+        "repolib"
+      ],
+      "thunderstore_package": "BULLETBOT/MoreUpgrades",
+      "framework_id": "moreupgrades",
+      "last_updated": "2026-05-18",
+      "also_requires": [
+        "KeybindLib",
+        "TextUpgradesUIScale"
+      ]
+    },
+    {
+      "id": "moreshopitems",
+      "name": "MoreShopItems (Updated)",
+      "category": "Gameplay",
+      "summary": "Stocks more items on the shop shelves.",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/repo/p/Jettcodey/MoreShopItems_Updated/",
+      "requires": [
+        "bepinexpack"
+      ],
+      "thunderstore_package": "Jettcodey/MoreShopItems_Updated",
+      "also_requires": [
+        "REPOConfig",
+        "NoItemSpawnLimit"
+      ],
+      "last_updated": "2026-11-06"
+    },
+    {
+      "id": "stronghold",
+      "name": "Minecraft Stronghold Level",
+      "category": "Levels",
+      "summary": "Adds a Minecraft-style stronghold map with custom features.",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/repo/p/AriIcedT/MinecraftStrongholdLevel/",
+      "requires": [
+        "repolib"
+      ],
+      "thunderstore_package": "AriIcedT/MinecraftStrongholdLevel",
+      "last_updated": "2026-05-15"
+    },
+    {
+      "id": "wesleys_enemies",
+      "name": "Wesley's Enemies",
+      "category": "Monsters",
+      "summary": "Adds a few new enemies.",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/repo/p/Magic_Wesley/Wesleys_Enemies/",
+      "requires": [
+        "bepinexpack",
+        "repolib"
+      ],
+      "thunderstore_package": "Magic_Wesley/Wesleys_Enemies",
+      "last_updated": "2025-11-06"
+    },
+    {
+      "id": "deathheadhopper",
+      "name": "DeathHeadHopper",
+      "category": "Gameplay",
+      "summary": "Lets you hop around as a head after dying (better spectating).",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/repo/p/Cronchy/DeathHeadHopper/",
+      "requires": [
+        "bepinexpack",
+        "repolib"
+      ],
+      "thunderstore_package": "Cronchy/DeathHeadHopper",
+      "last_updated": "2025-08-20"
+    },
+    {
+      "id": "extraction_confirm",
+      "name": "Extraction Point Confirm Button",
+      "category": "Quality of life",
+      "summary": "Adds a confirm button to extraction points.",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/repo/p/Zehs/ExtractionPointConfirmButton/",
+      "requires": [
+        "bepinexpack",
+        "repolib"
+      ],
+      "thunderstore_package": "Zehs/ExtractionPointConfirmButton",
+      "last_updated": "2025-11-06"
+    },
+    {
+      "id": "deadtts",
+      "name": "DeadTTS",
+      "category": "Quality of life",
+      "summary": "Lets you hear text-to-speech from dead players.",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/repo/p/flipf17/DeadTTS/",
+      "requires": [
+        "bepinexpack"
+      ],
+      "thunderstore_package": "flipf17/DeadTTS",
+      "last_updated": "2026-05-16"
+    },
+    {
+      "id": "enemy_healthbar",
+      "name": "Enemy Health Bar",
+      "category": "Quality of life",
+      "summary": "Shows enemy health bars and damage numbers.",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/repo/p/XiaohaiMod/XH_DamageShow_EnemyHealthBar/",
+      "requires": [
+        "bepinexpack"
+      ],
+      "thunderstore_package": "XiaohaiMod/XH_DamageShow_EnemyHealthBar",
+      "last_updated": "2026-01-10"
+    }
+  ]
+}
