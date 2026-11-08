@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T06:51:38Z",
+  "generated_at": "2026-11-08T12:42:04Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,24 @@
     }
   ],
   "items": [
+    {
+      "title": "As Wardogs Season 3 looms, Bulkhead claims to have built 'one of the world's most sophisticated anti-cheat systems', assisted by 'machine learning and AI'",
+      "url": "https://www.pcgamer.com/games/fps/as-wardogs-season-3-looms-bulkhead-claims-to-have-built-one-of-the-worlds-most-sophisticated-anti-cheat-systems-assisted-by-machine-learning-and-ai/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-08T12:16:51Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The Sunday Papers",
+      "url": "https://www.rockpapershotgun.com/the-sunday-papers-835",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-08T11:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Path of Exile 2's game director thinks a death recap will finally allow us players to complain about the right things",
       "url": "https://www.pcgamer.com/games/rpg/path-of-exile-2s-game-director-thinks-a-death-recap-will-finally-allow-us-players-to-complain-about-the-right-things/",
@@ -549,26 +567,6 @@
         "gta-v-enhanced"
       ],
       "kind": "announcement",
-      "highlight": false
-    },
-    {
-      "title": "Take Down the Kortz Center and More High-Value Targets in The Heist Event",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1848664643345005",
-      "source": "Steam \u00b7 GTA V Legacy",
-      "published_at": "2026-11-06T10:31:32Z",
-      "games": [
-        "gta-v-legacy"
-      ],
-      "kind": "announcement",
-      "highlight": false
-    },
-    {
-      "title": "After taking over EA, Saudi Arabia and their private equity cronies have reportedly held talks about buying Unity",
-      "url": "https://www.rockpapershotgun.com/after-taking-over-ea-saudi-arabia-and-their-private-equity-cronies-have-reportedly-held-talks-about-buying-unity",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-06T10:25:10Z",
-      "games": [],
-      "kind": "news",
       "highlight": false
     }
   ]
