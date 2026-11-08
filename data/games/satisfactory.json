@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T09:28:30Z",
+  "generated_at": "2026-11-08T12:21:06Z",
   "game": {
     "slug": "satisfactory",
     "name": "Satisfactory",
@@ -49,16 +49,16 @@
       "tracked": true,
       "sensitive": false,
       "status": "Not affected by patches",
-      "base_status": "Unknown / check",
-      "reason": "Installs mods and picks SML versions for you; it isn't built against a game version. Latest release: v3.1.0 (2026-06-06).",
+      "base_status": "Likely OK",
+      "reason": "Installs mods and picks SML versions for you; it isn't built against a game version. Latest release: v3.2.0 (2026-11-08).",
       "breakage_reports": [],
       "official": null,
-      "release_tag": "v3.1.0",
-      "release_name": "SatisfactoryModManager v3.1.0",
-      "release_published_at": "2026-06-06T16:22:15Z",
-      "release_url": "https://github.com/satisfactorymodding/SatisfactoryModManager/releases/tag/v3.1.0",
+      "release_tag": "v3.2.0",
+      "release_name": "SatisfactoryModManager v3.2.0",
+      "release_published_at": "2026-11-08T11:21:42Z",
+      "release_url": "https://github.com/satisfactorymodding/SatisfactoryModManager/releases/tag/v3.2.0",
       "mentions_patch": false,
-      "newer_than_patch": false,
+      "newer_than_patch": true,
       "mention_releases": []
     }
   ],
@@ -91,12 +91,12 @@
           "short": "SMM",
           "name": "Satisfactory Mod Manager (SMM)",
           "status": "Not affected by patches",
-          "release_tag": null,
-          "release_published_at": null,
+          "release_tag": "v3.2.0",
+          "release_published_at": "2026-11-08T11:21:42Z",
           "mentions_patch": false,
-          "first_release_tag": null,
-          "first_release_at": null,
-          "data_from": "2021-05-02T22:58:44Z",
+          "first_release_tag": "v3.2.0",
+          "first_release_at": "2026-11-08T11:21:42Z",
+          "data_from": "2021-06-28T13:13:00Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -129,12 +129,12 @@
           "short": "SMM",
           "name": "Satisfactory Mod Manager (SMM)",
           "status": "Not affected by patches",
-          "release_tag": null,
-          "release_published_at": null,
+          "release_tag": "v3.2.0",
+          "release_published_at": "2026-11-08T11:21:42Z",
           "mentions_patch": false,
-          "first_release_tag": null,
-          "first_release_at": null,
-          "data_from": "2021-05-02T22:58:44Z",
+          "first_release_tag": "v3.2.0",
+          "first_release_at": "2026-11-08T11:21:42Z",
+          "data_from": "2021-06-28T13:13:00Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -167,12 +167,12 @@
           "short": "SMM",
           "name": "Satisfactory Mod Manager (SMM)",
           "status": "Not affected by patches",
-          "release_tag": null,
-          "release_published_at": null,
+          "release_tag": "v3.2.0",
+          "release_published_at": "2026-11-08T11:21:42Z",
           "mentions_patch": false,
-          "first_release_tag": null,
-          "first_release_at": null,
-          "data_from": "2021-05-02T22:58:44Z",
+          "first_release_tag": "v3.2.0",
+          "first_release_at": "2026-11-08T11:21:42Z",
+          "data_from": "2021-06-28T13:13:00Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -205,12 +205,12 @@
           "short": "SMM",
           "name": "Satisfactory Mod Manager (SMM)",
           "status": "Not affected by patches",
-          "release_tag": null,
-          "release_published_at": null,
+          "release_tag": "v3.2.0",
+          "release_published_at": "2026-11-08T11:21:42Z",
           "mentions_patch": false,
-          "first_release_tag": null,
-          "first_release_at": null,
-          "data_from": "2021-05-02T22:58:44Z",
+          "first_release_tag": "v3.2.0",
+          "first_release_at": "2026-11-08T11:21:42Z",
+          "data_from": "2021-06-28T13:13:00Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -243,12 +243,12 @@
           "short": "SMM",
           "name": "Satisfactory Mod Manager (SMM)",
           "status": "Not affected by patches",
-          "release_tag": null,
-          "release_published_at": null,
+          "release_tag": "v3.2.0",
+          "release_published_at": "2026-11-08T11:21:42Z",
           "mentions_patch": false,
-          "first_release_tag": null,
-          "first_release_at": null,
-          "data_from": "2021-05-02T22:58:44Z",
+          "first_release_tag": "v3.2.0",
+          "first_release_at": "2026-11-08T11:21:42Z",
+          "data_from": "2021-06-28T13:13:00Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -286,7 +286,7 @@
           "mentions_patch": true,
           "first_release_tag": "v3.1.0",
           "first_release_at": "2026-06-06T16:22:15Z",
-          "data_from": "2021-05-02T22:58:44Z",
+          "data_from": "2021-06-28T13:13:00Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -324,7 +324,7 @@
           "mentions_patch": false,
           "first_release_tag": "v3.0.4",
           "first_release_at": "2026-01-06T18:41:38Z",
-          "data_from": "2021-05-02T22:58:44Z",
+          "data_from": "2021-06-28T13:13:00Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -362,7 +362,7 @@
           "mentions_patch": false,
           "first_release_tag": "v3.0.4",
           "first_release_at": "2026-01-06T18:41:38Z",
-          "data_from": "2021-05-02T22:58:44Z",
+          "data_from": "2021-06-28T13:13:00Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -400,7 +400,7 @@
           "mentions_patch": false,
           "first_release_tag": "v3.0.4",
           "first_release_at": "2026-01-06T18:41:38Z",
-          "data_from": "2021-05-02T22:58:44Z",
+          "data_from": "2021-06-28T13:13:00Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -438,7 +438,7 @@
           "mentions_patch": false,
           "first_release_tag": "v3.0.4",
           "first_release_at": "2026-01-06T18:41:38Z",
-          "data_from": "2021-05-02T22:58:44Z",
+          "data_from": "2021-06-28T13:13:00Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -476,7 +476,7 @@
           "mentions_patch": false,
           "first_release_tag": "v3.0.4",
           "first_release_at": "2026-01-06T18:41:38Z",
-          "data_from": "2021-05-02T22:58:44Z",
+          "data_from": "2021-06-28T13:13:00Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -514,7 +514,7 @@
           "mentions_patch": false,
           "first_release_tag": "v3.0.4",
           "first_release_at": "2026-01-06T18:41:38Z",
-          "data_from": "2021-05-02T22:58:44Z",
+          "data_from": "2021-06-28T13:13:00Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
