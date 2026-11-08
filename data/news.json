@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T12:42:04Z",
+  "generated_at": "2026-11-08T18:37:31Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,107 @@
     }
   ],
   "items": [
+    {
+      "title": "Ichorous is the bloody platformer I've been waiting for ever since I finished Blasphemous 2",
+      "url": "https://www.pcgamer.com/games/roguelike/ichorous-is-the-bloody-platformer-ive-been-waiting-for-ever-since-i-finished-blasphemous-2/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-08T18:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "My apologies Deadlock, I wasn't familiar with your (musical) game",
+      "url": "https://www.pcgamer.com/games/moba/my-apologies-deadlock-i-wasnt-familiar-with-your-musical-game/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-08T18:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Ocarina of Time remake datamine suggests Master Quest is on the way",
+      "url": "https://www.eurogamer.net/zelda-ocarina-of-time-remake-master-quest-dlc-datamine",
+      "source": "Eurogamer",
+      "published_at": "2026-11-08T17:39:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Phasmophobia players raise over $230,000 for heart charity, more than double last year's total",
+      "url": "https://www.eurogamer.net/phasmophobia-ghost-hunts-for-hearts-230000-american-heart-association",
+      "source": "Eurogamer",
+      "published_at": "2026-11-08T16:41:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Dominic Armato, voice of Guybrush Threepwood, has always loved LucasArts' adventure games, but there's one he still can't get into: 'I get 10 minutes in and I'm like, oh, this is tedious, man'",
+      "url": "https://www.pcgamer.com/gaming-industry/dominic-armato-voice-of-guybrush-threepwood-has-always-loved-lucasarts-adventure-games-but-theres-one-he-still-cant-get-into-i-get-10-minutes-in-and-im-like-oh-this-is-tedious-man/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-08T16:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Inspired by Dark Messiah and Thief, this stealth game sees you sneak through a medieval megastructure prowled by undead guards",
+      "url": "https://www.pcgamer.com/games/sim/inspired-by-dark-messiah-and-thief-this-stealth-game-sees-you-sneak-through-a-medieval-megastructure-prowled-by-undead-guards/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-08T15:08:46Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "WoW: Forever is more than just a millennial retirement home",
+      "url": "https://www.pcgamer.com/games/world-of-warcraft/wow-forever-is-more-than-just-a-millennial-retirement-home/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-08T15:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Saving Mass Effect would take $200m+, says BioWare co-founder",
+      "url": "https://www.eurogamer.net/mass-effect-5-save-cost-200m-bioware-co-founder-trent-oster",
+      "source": "Eurogamer",
+      "published_at": "2026-11-08T14:31:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Missing teenager rescued after reaching out to another player in Among Us",
+      "url": "https://www.eurogamer.net/among-us-missing-teen-rescued-utah-oregon",
+      "source": "Eurogamer",
+      "published_at": "2026-11-08T13:28:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "This massive mod essentially turns Skyrim into a persistent MMO 'where player actions create lasting consequences'",
+      "url": "https://www.pcgamer.com/games/the-elder-scrolls/this-massive-mod-essentially-turns-skyrim-into-a-persistent-mmo-where-player-actions-create-lasting-consequences/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-08T13:19:55Z",
+      "games": [
+        "skyrim-se"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "WoW: Forever is the biggest launch in World of Warcraft history, says Blizzard",
+      "url": "https://www.eurogamer.net/wow-forever-biggest-launch-world-of-warcraft-history-concurrent-players",
+      "source": "Eurogamer",
+      "published_at": "2026-11-08T13:09:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "As Wardogs Season 3 looms, Bulkhead claims to have built 'one of the world's most sophisticated anti-cheat systems', assisted by 'machine learning and AI'",
       "url": "https://www.pcgamer.com/games/fps/as-wardogs-season-3-looms-bulkhead-claims-to-have-built-one-of-the-worlds-most-sophisticated-anti-cheat-systems-assisted-by-machine-learning-and-ai/",
@@ -193,8 +294,8 @@
       "highlight": false
     },
     {
-      "title": "Linux on the desktop marches on as GOG announces its Galaxy client is getting a revamp headed to Windows, macOS, and your distro of choice",
-      "url": "https://www.pcgamer.com/software/linux/linux-on-the-desktop-marches-on-as-gog-announces-its-galaxy-client-is-getting-a-revamp-headed-to-windows-macos-and-your-distro-of-choice/",
+      "title": "Mass Effect composer Sam Hulick releases his 're-scored' trailer for N7 Day, 'my way of saying goodbye\u2026 at least for now'",
+      "url": "https://www.pcgamer.com/games/mass-effect/mass-effect-composer-sam-hulick-releases-his-re-scored-trailer-for-n7-day-my-way-of-saying-goodbye-at-least-for-now/",
       "source": "PC Gamer",
       "published_at": "2026-11-07T15:00:00Z",
       "games": [],
@@ -202,8 +303,8 @@
       "highlight": false
     },
     {
-      "title": "Mass Effect composer Sam Hulick releases his 're-scored' trailer for N7 Day, 'my way of saying goodbye\u2026 at least for now'",
-      "url": "https://www.pcgamer.com/games/mass-effect/mass-effect-composer-sam-hulick-releases-his-re-scored-trailer-for-n7-day-my-way-of-saying-goodbye-at-least-for-now/",
+      "title": "Linux on the desktop marches on as GOG announces its Galaxy client is getting a revamp headed to Windows, macOS, and your distro of choice",
+      "url": "https://www.pcgamer.com/software/linux/linux-on-the-desktop-marches-on-as-gog-announces-its-galaxy-client-is-getting-a-revamp-headed-to-windows-macos-and-your-distro-of-choice/",
       "source": "PC Gamer",
       "published_at": "2026-11-07T15:00:00Z",
       "games": [],
@@ -466,107 +567,6 @@
       "published_at": "2026-11-06T13:49:21Z",
       "games": [],
       "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Steam gets a boatload of restored Wing Commanders and Ultima ports after EA producer stumbles across cupboard of old tapes",
-      "url": "https://www.rockpapershotgun.com/steam-gets-a-boatload-of-restored-wing-commanders-and-ultima-ports-after-ea-producer-stumbles-across-cupboard-of-old-tapes",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-06T12:38:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "In Charting the Unknown, Crimson Desert doubles down on its maximalism in audacious, faintly sinister style",
-      "url": "https://www.eurogamer.net/crimson-desert-charting-the-unknown-now-playing",
-      "source": "Eurogamer",
-      "published_at": "2026-11-06T12:32:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Square Enix accidentally botches a Nier: Automata update, balloons required file size from 50GB to 366GB on PC",
-      "url": "https://www.eurogamer.net/square-enix-nier-automata-update-required-file-size-366gb",
-      "source": "Eurogamer",
-      "published_at": "2026-11-06T12:28:10Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Following BioWare's shock closure, a new documentary capturing its final moments is coming next year",
-      "url": "https://www.eurogamer.net/bioware-closure-documentary-release",
-      "source": "Eurogamer",
-      "published_at": "2026-11-06T12:24:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Discord is cutting memory usage and speeding up boot times - joins Xbox, Epic, Steam, and more for similar upgrades just this year",
-      "url": "https://www.pcgamer.com/hardware/discord-is-cutting-memory-usage-and-speeding-up-boot-times-joins-xbox-epic-steam-and-more-for-similar-upgrades-just-this-year/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-06T12:06:34Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Former Rockstar Games tech director thinks GTA 6 could be coming to PC sooner than you'd expect to curb AI clones",
-      "url": "https://www.eurogamer.net/grand-theft-auto-6-pc-sooner-than-you-expect-curb-ai-clone",
-      "source": "Eurogamer",
-      "published_at": "2026-11-06T12:02:40Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Zelda: Ocarina of Time remake reportedly running at 60 fps on PC just hours after game's official Nintendo Switch 2 release",
-      "url": "https://www.pcgamer.com/software/zelda-ocarina-of-time-remake-reportedly-running-at-60-fps-on-pc-just-hours-after-games-official-nintendo-switch-2-release/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-06T11:43:06Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Zelnick doesn't regret GTA 6's delay because shipping an unfinished game rarely ends well: 'There was a very high profile release that fell into this category'",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/zelnick-doesnt-regret-gta-6s-delay-because-shipping-an-unfinished-game-rarely-ends-well-there-was-a-very-high-profile-release-that-fell-into-this-category/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-06T11:40:38Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "WoW: Forever is working on its server tech to make cities less empty, say devs",
-      "url": "https://www.pcgamer.com/games/world-of-warcraft/wow-forever-is-working-on-its-server-tech-to-make-cities-less-empty-say-devs/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-06T11:28:35Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "\"It's a brave new world\": GTA 6's PC port will release sooner than you think to avoid losing money to AI rip-offs, says former Rockstar tech director",
-      "url": "https://www.rockpapershotgun.com/its-a-brave-new-world-gta-6s-pc-port-will-release-sooner-than-you-think-to-avoid-losing-money-to-ai-rip-offs-says-former-rockstar-tech-director",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-06T11:09:10Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Take Down the Kortz Center and More High-Value Targets in The Heist Event",
-      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1848664643345922",
-      "source": "Steam \u00b7 GTA V Enhanced",
-      "published_at": "2026-11-06T10:32:26Z",
-      "games": [
-        "gta-v-enhanced"
-      ],
-      "kind": "announcement",
       "highlight": false
     }
   ]
