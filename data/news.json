@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T00:51:23Z",
+  "generated_at": "2026-11-08T06:51:38Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,24 @@
     }
   ],
   "items": [
+    {
+      "title": "Path of Exile 2's game director thinks a death recap will finally allow us players to complain about the right things",
+      "url": "https://www.pcgamer.com/games/rpg/path-of-exile-2s-game-director-thinks-a-death-recap-will-finally-allow-us-players-to-complain-about-the-right-things/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-08T02:13:27Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "A BioWare documentary was already in the works when the shutdown was announced: 'With the studio's recent closure, the film is now a profound valediction'",
+      "url": "https://www.pcgamer.com/gaming-industry/a-bioware-documentary-was-already-in-the-works-when-the-shutdown-was-announced-with-the-studios-recent-closure-the-film-is-now-a-profound-valediction/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-08T01:31:13Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Chess is immediately more fun if you jettison most of the rules and replace them with weapons-grade Game Boy Advance",
       "url": "https://www.pcgamer.com/games/puzzle/chess-is-immediately-more-fun-if-you-jettison-most-of-the-rules-and-replace-them-with-weapons-grade-game-boy-advance/",
@@ -549,24 +567,6 @@
       "url": "https://www.rockpapershotgun.com/after-taking-over-ea-saudi-arabia-and-their-private-equity-cronies-have-reportedly-held-talks-about-buying-unity",
       "source": "Rock Paper Shotgun",
       "published_at": "2026-11-06T10:25:10Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "\"Is there any accountability left in this world?\" Warren Spector pops off at EA executives and their massive payouts as BioWare shuts down",
-      "url": "https://www.eurogamer.net/bioware-closure-warren-spector-comments-accountability",
-      "source": "Eurogamer",
-      "published_at": "2026-11-06T10:15:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "After gobbling up EA, Saudi Arabia and private equity firm Silver Lake reportedly looking to buy Unity",
-      "url": "https://www.eurogamer.net/unity-game-engine-saudi-arabia-silver-lake",
-      "source": "Eurogamer",
-      "published_at": "2026-11-06T10:00:50Z",
       "games": [],
       "kind": "news",
       "highlight": false
