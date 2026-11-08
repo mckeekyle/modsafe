@@ -45,6 +45,7 @@ from status_logic import (  # noqa: E402
     is_breakage_title,
     parse_silverlock,
     manual_hook_verdict,
+    apply_build_drift,
     manual_build_drift,
     V_WAIT,
     V_SAFE,
@@ -679,11 +680,7 @@ def build_manual_game(game: dict) -> dict:
             shv = man["script_hook_v"]
             v = manual_hook_verdict(supported=shv["supported_builds"], current=dict(lp["builds"]),
                                     patch_age=age, verified_age=verified_age, build_ages=build_ages)
-            for d in drift:
-                # Steam shipped a build the manual record doesn't know about: never claim support for it.
-                v = {"status": V_WAIT, "reason": v["reason"] + (
-                    f" Steam's public {d['edition'].title()} build changed on {d['published_at'][:10]} (build {d['buildid']}) "
-                    "after the last manual check; Script Hook V support for it is unconfirmed, so hold that update.")}
+            v = apply_build_drift(v, drift)
             tag, rel_at = shv["version"], shv["released"]
             if ed:  # this edition's newest Script Hook V build, e.g. v1158.13, not the combined "v3889.0 / 1158.13"
                 rows = [r for r in man["editions"][ed].get("history", []) if r.get("shv_date")]

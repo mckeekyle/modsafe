@@ -4,7 +4,7 @@ Monster Hunter Wilds mods come from **Nexus Mods** and only work on the PC (Stea
 
 ## Steps
 
-1. **Back up your saves.** Wilds saves live in `Steam\userdata\<your Steam ID>\2246340` ([Steam community guide](https://steamcommunity.com/sharedfiles/filedetails/?id=3471173834)). Copy that folder somewhere safe before adding mods, especially mods that add or edit items.
+1. **Back up your saves.** Wilds saves live in `Steam\userdata\<your Steam ID>\2246340`. Copy that folder somewhere safe before adding mods, especially mods that add or edit items.
 2. **Install Fluffy Mod Manager.** Download it from [its Nexus page](https://www.nexusmods.com/site/mods/818), extract it, run `Modmanager.exe` and pick Monster Hunter Wilds from the game list.
 3. **Install REFramework.** Download `REFramework.zip` from the [latest nightly release](https://github.com/praydog/REFramework-nightly/releases/latest); one zip now covers every RE Engine game. Unless you play in VR, extract **only** `dinput8.dll` into the folder with `MonsterHunterWilds.exe`, as the [REFramework readme](https://github.com/praydog/REFramework#installation) says. You can also drag the zip onto Fluffy Mod Manager, as [FluffyQuack's guide](https://www.patreon.com/posts/113314784) shows.
 4. **Check it loads.** Start the game. REFramework's menu opens with the **Insert** key; it creates a `reframework` folder in the game directory on first launch.

@@ -770,6 +770,20 @@ def manual_build_drift(recorded: Optional[dict[str, str]], public: dict[str, Opt
     return out
 
 
+def apply_build_drift(v: dict[str, str], drift: list[dict[str, Any]]) -> dict[str, str]:
+    """Hold a hook verdict when Steam shipped a build the manual record doesn't know about: never claim support for it.
+    A verdict that is already "Not ported yet" (a recorded build is still unsupported past the grace week) stays put
+    and only gains the note, so an unrecorded later build can't keep the page on "Just patched, wait" indefinitely."""
+    for d in drift:
+        note = (f" Steam's public {d['edition'].title()} build changed on {d['published_at'][:10]} (build {d['buildid']}) "
+                "after the last manual check; Script Hook V support for it is unconfirmed")
+        if v["status"] == V_NOT_PORTED:
+            v = {"status": V_NOT_PORTED, "reason": v["reason"] + note + "."}
+        else:
+            v = {"status": V_WAIT, "reason": v["reason"] + note + ", so hold that update."}
+    return v
+
+
 def merge_silent_patches(patches: list[dict[str, Any]], silent: list[dict[str, Any]]) -> list[dict[str, Any]]:
     """
     Add hand-maintained, sourced updates that shipped without a Steam announcement (hotfixes posted on Discord,

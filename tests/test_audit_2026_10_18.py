@@ -10,7 +10,7 @@ sys.path.insert(0, str(ROOT / "src"))
 import update  # noqa: E402
 from games import GAMES_BY_SLUG  # noqa: E402
 from status_logic import (  # noqa: E402
-    V_NOT_PORTED, V_SAFE, V_WAIT, determine_framework_status, make_mention_fn, manual_build_drift, manual_hook_verdict,
+    V_NOT_PORTED, V_SAFE, V_WAIT, apply_build_drift, determine_framework_status, make_mention_fn, manual_build_drift, manual_hook_verdict,
 )
 
 
@@ -51,6 +51,17 @@ class TestGtaPerEdition(unittest.TestCase):
         # failed lookups / unrecorded editions never invent a change
         self.assertEqual(manual_build_drift(rec, {"legacy": None, "enhanced": {"buildid": None}}), [])
         self.assertEqual(manual_build_drift({}, moved), [])
+
+    def test_build_drift_holds_but_never_masks_not_ported(self):
+        d = [{"edition": "enhanced", "buildid": "25971420", "recorded": "25261616", "published_at": "2026-10-27T10:00:40Z"}]
+        held = apply_build_drift({"status": V_SAFE, "reason": "Supports Enhanced 1.0.1158.13."}, d)
+        self.assertEqual(held["status"], V_WAIT)
+        self.assertIn("25971420", held["reason"])
+        # 1158.16 unsupported for 54 days: the unrecorded Oct 27 build must not turn that back into "wait"
+        np = apply_build_drift({"status": V_NOT_PORTED, "reason": "No build yet for Enhanced 1.0.1158.16."}, d)
+        self.assertEqual(np["status"], V_NOT_PORTED)
+        self.assertIn("25971420", np["reason"])
+        self.assertEqual(apply_build_drift({"status": V_SAFE, "reason": "ok"}, []), {"status": V_SAFE, "reason": "ok"})
 
     def test_committed_record(self):
         d = json.loads((ROOT / "data/manual/gta-v.json").read_text())

@@ -1,6 +1,6 @@
 {
   "_comment": "Hand-maintained. Game updates shipped without their own Steam announcement (so the Steam-news patch detector can't see them). Each entry needs primary sources; published_at = when the build went live on Steam's public branch (api.steamcmd.net depots.branches.public.timeupdated).",
-  "last_verified": "2026-10-20",
+  "last_verified": "2026-11-08",
   "verified_by": "ModSafe ops (manual check)",
   "patches": {
     "lethal-company": [

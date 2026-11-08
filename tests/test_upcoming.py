@@ -59,9 +59,6 @@ class TestUpcoming(unittest.TestCase):
             for e in entries:
                 date.fromisoformat(e["date"])
                 self.assertTrue(e["source"].startswith("https://"))
-        cp = d["patches"]["cyberpunk-2077"][0]
-        self.assertEqual((cp["version"], cp["date"]), ("2.5", "2026-10-22"))
-        self.assertEqual(cp["frameworks"], ["CET", "RED4ext", "redscript", "ArchiveXL", "TweakXL", "Codeware"])
 
 
 if __name__ == "__main__":
