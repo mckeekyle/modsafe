@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T13:00:00Z",
+  "generated_at": "2026-11-09T18:50:02Z",
   "game": {
     "slug": "minecraft",
     "name": "Minecraft: Java Edition",
@@ -41,8 +41,8 @@
       "release_url": "https://modrinth.com/mod/fabric-api",
       "status": "Safe",
       "reason": "Fabric API publishes a stable build for Minecraft 26.3.",
-      "release_tag": "0.165.2+26.3",
-      "release_published_at": "2026-11-03T09:28:14.677569Z",
+      "release_tag": "0.166.0+26.3",
+      "release_published_at": "2026-11-09T15:27:33.590886Z",
       "base_status": "Updated for latest patch"
     },
     {
@@ -71,7 +71,7 @@
       "release_url": "https://neoforged.net/",
       "status": "Safe",
       "reason": "NeoForge publishes a stable build for Minecraft 26.3.",
-      "release_tag": "26.3.0.101",
+      "release_tag": "26.3.0.102",
       "release_published_at": null,
       "base_status": "Updated for latest patch"
     },
@@ -144,8 +144,8 @@
           "name": "Fabric API",
           "status": "Safe",
           "reason": "Fabric API publishes a stable build for Minecraft 26.3.",
-          "release_tag": "0.165.2+26.3",
-          "release_published_at": "2026-11-03T09:28:14.677569Z"
+          "release_tag": "0.166.0+26.3",
+          "release_published_at": "2026-11-09T15:27:33.590886Z"
         },
         {
           "id": "forge",
@@ -162,7 +162,7 @@
           "name": "NeoForge",
           "status": "Safe",
           "reason": "NeoForge publishes a stable build for Minecraft 26.3.",
-          "release_tag": "26.3.0.101",
+          "release_tag": "26.3.0.102",
           "release_published_at": null
         },
         {
