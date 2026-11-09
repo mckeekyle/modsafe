@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T07:18:05Z",
+  "generated_at": "2026-11-09T13:00:38Z",
   "game": {
     "slug": "satisfactory",
     "name": "Satisfactory",
@@ -523,6 +523,12 @@
   ],
   "news": [
     {
+      "title": "Satisfactory: The Board Game - Last 24 hours of the campaign!",
+      "url": "https://store.steampowered.com/news/app/526870/view/1848664643354937",
+      "published_at": "2026-11-09T10:26:40Z",
+      "is_patch": false
+    },
+    {
       "title": "Crossplay is now available in Satisfactory!",
       "url": "https://store.steampowered.com/news/app/526870/view/1848557880479256",
       "published_at": "2026-11-04T14:03:55Z",
@@ -574,12 +580,6 @@
       "title": "1.2 Update Fixes v1.2.3.0",
       "url": "https://store.steampowered.com/news/app/526870/view/1835236783559357",
       "published_at": "2026-06-11T06:07:33Z",
-      "is_patch": true
-    },
-    {
-      "title": "Satisfactory 1.2 Update out now!",
-      "url": "https://store.steampowered.com/news/app/526870/view/1833968530900760",
-      "published_at": "2026-06-02T15:05:04Z",
       "is_patch": true
     }
   ],

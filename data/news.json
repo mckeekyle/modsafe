@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T07:18:39Z",
+  "generated_at": "2026-11-09T13:01:11Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,150 @@
     }
   ],
   "items": [
+    {
+      "title": "Skyrim lead designer hopes Sentinel will finally solve The Elder Scrolls' ladder problem",
+      "url": "https://www.eurogamer.net/the-elder-scrolls-6-sentinel-ladders-skyrim-bethesda-designer",
+      "source": "Eurogamer",
+      "published_at": "2026-11-09T12:46:20Z",
+      "games": [
+        "skyrim-se"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "\"Art, including characters, terrain, animations, cutscenes and UI\" Bandai Namco and Monolith Soft helped out with Ocarina of Time on Switch 2",
+      "url": "https://www.eurogamer.net/ocarina-of-time-support-studios-confirmed-switch-2",
+      "source": "Eurogamer",
+      "published_at": "2026-11-09T12:45:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Rockstar were \"definitely\" thinking about giving a Japanese studio the keys to GTA, says former tech director - \"I have a name, but I'm not gonna say it\"",
+      "url": "https://www.rockpapershotgun.com/rockstar-were-definitely-thinking-about-giving-a-japanese-studio-the-keys-to-gta-says-former-tech-director-i-have-a-name-but-im-not-gonna-say-it",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-09T12:41:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Skyrim lead designer gives the most succinct summary of Bethesda's design I've ever heard: 'You're not playing my game, I'm making your game'",
+      "url": "https://www.pcgamer.com/games/the-elder-scrolls/skyrim-lead-designer-gives-the-most-succinct-summary-of-bethesdas-design-ive-ever-heard-youre-not-playing-my-game-im-making-your-game/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-09T12:28:31Z",
+      "games": [
+        "skyrim-se"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Consider this blackened plug your weekly reminder to check your RTX 50-series GPU cables",
+      "url": "https://www.pcgamer.com/hardware/graphics-cards/consider-this-blackened-plug-your-weekly-reminder-to-check-your-rtx-50-series-gpu-cables/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-09T12:24:38Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "London department store Selfridges launches sizeable GTA 6 takeover, featuring a varsity jacket that costs an eye-watering \u00a32,500",
+      "url": "https://www.eurogamer.net/selfridges-gta-6-collab-takeover",
+      "source": "Eurogamer",
+      "published_at": "2026-11-09T12:18:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "MSI Maestro 900R PC case review",
+      "url": "https://www.pcgamer.com/hardware/pc-cases/msi-maestro-900r-review/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-09T12:08:54Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "World of Warcraft: Forever bumps dungeon XP from monsters by 50% after some community feedback I will diplomatically call passionate",
+      "url": "https://www.pcgamer.com/games/world-of-warcraft/world-of-warcraft-forever-bumps-dungeon-xp-from-monsters-by-50-percent-after-some-community-feedback-i-will-diplomatically-call-passionate/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-09T12:00:26Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Dungeons in World of Warcraft: Forever get a huge XP buff, but power-levellers shouldn't celebrate just yet",
+      "url": "https://www.eurogamer.net/world-of-warcraft-forever-dungeon-mob-xp-rate-buff",
+      "source": "Eurogamer",
+      "published_at": "2026-11-09T11:41:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "'I think we'd accidentally created the most hardcore extraction game of all time:' EVE Vanguard is taking hard-won playtest lessons into a '24/7 Alpha'",
+      "url": "https://www.pcgamer.com/games/fps/i-think-wed-accidentally-created-the-most-hardcore-extraction-game-of-all-time-eve-vanguard-is-taking-hard-won-playtest-lessons-into-a-24-7-alpha/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-09T11:30:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "EVE Online's new expansion looks to make it simpler than ever to get into a huge space battle: 'Every 10 weeks or so, you're gonna know: I can roll up with whatever I have and go shoot some structures and have a big fight'",
+      "url": "https://www.pcgamer.com/games/mmo/eve-onlines-new-expansion-looks-to-make-it-simpler-than-ever-to-get-into-a-huge-space-battle-every-10-weeks-or-so-youre-gonna-know-i-can-roll-up-with-whatever-i-have-and-go-shoot-some-structures-and-have-a-big-fight/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-09T11:30:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Ahead of The Witcher 3: Songs of the Past, here's a \"lore friendly unofficial expansion to Geralt's life in Toussaint\" from a well-established quest modder",
+      "url": "https://www.rockpapershotgun.com/ahead-of-the-witcher-3-songs-of-the-past-heres-a-lore-friendly-unofficial-expansion-to-geralts-life-in-toussaint-from-a-well-established-quest-modder",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-09T11:25:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Satisfactory: The Board Game - Last 24 hours of the campaign!",
+      "url": "https://store.steampowered.com/news/app/526870/view/1848664643354937",
+      "source": "Steam \u00b7 Satisfactory",
+      "published_at": "2026-11-09T10:26:40Z",
+      "games": [
+        "satisfactory"
+      ],
+      "kind": "announcement",
+      "highlight": false
+    },
+    {
+      "title": "GTA 6 reportedly has 55 Achievements/Trophies, more than both GTA 5 and Red Dead Redemption 2 had at launch",
+      "url": "https://www.eurogamer.net/gta-6-achievements-trophies-55",
+      "source": "Eurogamer",
+      "published_at": "2026-11-09T09:41:40Z",
+      "games": [
+        "gta-v-legacy",
+        "gta-v-enhanced"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "COD: Modern Warfare 4 gets a surprisingly sudden free trial, so you can see what the game's extraction mode DMZ is like",
+      "url": "https://www.eurogamer.net/call-of-duty-modern-warfare-4-dmz-free-trial-november",
+      "source": "Eurogamer",
+      "published_at": "2026-11-09T09:24:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Lead designer Bruce Nesmith says Skyrim was a hit because it was built on institutional knowledge from Oblivion",
       "url": "https://www.pcgamer.com/games/the-elder-scrolls/lead-designer-bruce-nesmith-says-skyrim-was-a-hit-because-it-was-built-on-institutional-knowledge-from-oblivion/",
@@ -431,141 +575,6 @@
       "url": "https://www.pcgamer.com/games/grand-theft-auto/rockstars-having-sale-on-old-gta-games-on-the-only-platform-grand-theft-auto-6-isnt-coming-to-ours/",
       "source": "PC Gamer",
       "published_at": "2026-11-06T23:11:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The AI posting war is heating up: 'Please, leave me behind,' says artist who got into it with Epic CEO Tim Sweeney on X",
-      "url": "https://www.pcgamer.com/software/ai/the-ai-posting-war-is-heating-up-please-leave-me-behind-says-artist-who-got-into-it-with-epic-ceo-tim-sweeney-on-x/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-06T22:21:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Path of Exile 2 announces a second new class, the Shadow, for its December 1.0 release",
-      "url": "https://www.pcgamer.com/games/rpg/path-of-exile-2-announces-a-second-new-class-the-shadow-for-its-december-1-0-release/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-06T21:50:58Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Underkeep is my favorite old-school dungeon crawler since Legend of Grimrock, and yes that includes Queen's Domain",
-      "url": "https://www.pcgamer.com/games/rpg/underkeep-is-my-favorite-old-school-dungeon-crawler-since-legend-of-grimrock-and-yes-that-includes-queens-domain/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-06T21:14:51Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "'It came out of nowhere. I was shocked and sad': He was the face of Hunt: Showdown for years, then Crytek laid him off",
-      "url": "https://www.pcgamer.com/games/fps/it-came-out-of-nowhere-i-was-shocked-and-sad-he-was-the-face-of-hunt-showdown-for-years-then-crytek-laid-him-off/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-06T21:06:01Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Updated Xbox PC app promises 60% faster loading and easier access to games, but CEO Asha Sharma says there's \"plenty more to do\"",
-      "url": "https://www.eurogamer.net/updated-xbox-pc-app-faster-asha-sharma",
-      "source": "Eurogamer",
-      "published_at": "2026-11-06T19:58:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Mass Effect-like RPG The Expanse: Osiris Reborn ropes in David Gaider, the original lead writer of Bioware's Dragon Age series",
-      "url": "https://www.eurogamer.net/mass-effect-expanse-rpg-david-gaider",
-      "source": "Eurogamer",
-      "published_at": "2026-11-06T18:40:40Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "It's hard to meet women when I keep teleporting all the time",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/its-hard-to-meet-women-when-i-keep-teleporting-all-the-time/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-06T18:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Bringing Bloodborne back is tricky because \"there's a lot of involved rights associated,\" according to former PlayStation boss",
-      "url": "https://www.eurogamer.net/bloodborne-involved-rights-former-playstation-boss",
-      "source": "Eurogamer",
-      "published_at": "2026-11-06T17:49:40Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "All that stands between a hacker and admin privileges on some Linux distros is a 257-character long string of literally anything",
-      "url": "https://www.pcgamer.com/software/linux/all-that-stands-between-a-hacker-and-admin-privileges-on-some-linux-distros-is-a-257-character-long-string-of-literally-anything/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-06T17:31:29Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Real-time strategy game The Fertile Crescent 2 is an isometric odyssey inspired by Age of Empires, with the 1.0 release out now",
-      "url": "https://www.rockpapershotgun.com/real-time-strategy-game-the-fertile-crescent-2-is-an-isometric-odyssey-inspired-by-age-of-empires-releasing-out-of-early-access-now",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-06T17:20:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "A public petition to save BioWare has drawn enough signatures that the Canadian government will at least have to think about it: 'This is absolutely possible,' MP says",
-      "url": "https://www.pcgamer.com/games/mass-effect/a-public-petition-to-save-bioware-has-drawn-enough-signatures-that-the-canadian-government-will-at-least-have-to-think-about-it-this-is-absolutely-possible-mp-says/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-06T16:14:55Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Epomaker HE75 V2 TMR review",
-      "url": "https://www.pcgamer.com/hardware/gaming-keyboards/epomaker-he75-v2-tmr-review/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-06T15:58:29Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "David Gaider has been working on Owlcat's Expanse RPG: 'The Expanse has long been one of my favourite series, and so obviously I jumped at the opportunity to be involved'",
-      "url": "https://www.pcgamer.com/games/rpg/david-gaider-has-been-working-on-owlcats-expanse-rpg-the-expanse-has-long-been-one-of-my-favourite-series-and-so-obviously-i-jumped-at-the-opportunity-to-be-involved/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-06T15:53:01Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "WoW: Forever takes 250,000 GB of memory to run, and I can't even joke about Sam Altman being jealous because that's almost nothing compared to the monolithic demands of AI",
-      "url": "https://www.pcgamer.com/games/world-of-warcraft/wow-forever-takes-250-000-gb-of-memory-to-run-and-i-cant-even-joke-about-sam-altman-being-jealous-because-thats-almost-nothing-compared-to-the-monolithic-demands-of-ai/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-06T15:50:34Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "I just found out you can use your Steam Wishlist to search for deals on games outside of Steam, saving my nephew more than \u00a340 on Total War: Warhammer 3",
-      "url": "https://www.rockpapershotgun.com/i-just-found-out-you-can-use-your-steam-wishlist-to-search-for-deals-on-games-outside-of-steam-saving-my-nephew-more-than-40-on-total-war-warhammer-3",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-06T15:45:00Z",
       "games": [],
       "kind": "news",
       "highlight": false
