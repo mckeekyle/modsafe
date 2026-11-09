@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T18:37:31Z",
+  "generated_at": "2026-11-09T00:54:25Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -22,8 +22,47 @@
   ],
   "items": [
     {
-      "title": "Ichorous is the bloody platformer I've been waiting for ever since I finished Blasphemous 2",
-      "url": "https://www.pcgamer.com/games/roguelike/ichorous-is-the-bloody-platformer-ive-been-waiting-for-ever-since-i-finished-blasphemous-2/",
+      "title": "Warhammer Blood Bowl has been delayed into early 2027",
+      "url": "https://www.pcgamer.com/games/sports/warhammer-blood-bowl-has-been-delayed-into-2027/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-09T00:45:39Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Jackbox Games isn't interested in AI development: 'All that is done by people, and we have no intention of changing that'",
+      "url": "https://www.pcgamer.com/gaming-industry/game-development/jackbox-games-isnt-interested-in-ai-development-all-that-is-done-by-people-and-we-have-no-intention-of-changing-that/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-08T22:06:56Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Nvidia CEO Jensen Huang admits to affair with alleged Chinese spy as company board launches investigation",
+      "url": "https://www.pcgamer.com/gaming-industry/nvidia-ceo-jensen-huang-admits-to-affair-with-alleged-chinese-spy-as-company-board-launches-investigation/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-08T21:38:31Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Skyrim lead designer Bruce Nesmith loved that Baldur's Gate 3 closed off story paths based on your decisions, but defends Bethesda's approach: 'They were both fun, they're just fun in different ways'",
+      "url": "https://www.pcgamer.com/games/the-elder-scrolls/skyrim-lead-designer-bruce-nesmith-loved-that-baldurs-gate-3-closed-off-story-paths-based-on-your-decisions-but-defends-bethesdas-approach-they-were-both-fun-theyre-just-fun-in-different-ways/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-08T18:33:45Z",
+      "games": [
+        "skyrim-se",
+        "baldurs-gate-3"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "My apologies Deadlock, I wasn't familiar with your (musical) game",
+      "url": "https://www.pcgamer.com/games/moba/my-apologies-deadlock-i-wasnt-familiar-with-your-musical-game/",
       "source": "PC Gamer",
       "published_at": "2026-11-08T18:00:00Z",
       "games": [],
@@ -31,8 +70,8 @@
       "highlight": false
     },
     {
-      "title": "My apologies Deadlock, I wasn't familiar with your (musical) game",
-      "url": "https://www.pcgamer.com/games/moba/my-apologies-deadlock-i-wasnt-familiar-with-your-musical-game/",
+      "title": "Ichorous is the bloody platformer I've been waiting for ever since I finished Blasphemous 2",
+      "url": "https://www.pcgamer.com/games/roguelike/ichorous-is-the-bloody-platformer-ive-been-waiting-for-ever-since-i-finished-blasphemous-2/",
       "source": "PC Gamer",
       "published_at": "2026-11-08T18:00:00Z",
       "games": [],
@@ -294,8 +333,8 @@
       "highlight": false
     },
     {
-      "title": "Mass Effect composer Sam Hulick releases his 're-scored' trailer for N7 Day, 'my way of saying goodbye\u2026 at least for now'",
-      "url": "https://www.pcgamer.com/games/mass-effect/mass-effect-composer-sam-hulick-releases-his-re-scored-trailer-for-n7-day-my-way-of-saying-goodbye-at-least-for-now/",
+      "title": "Linux on the desktop marches on as GOG announces its Galaxy client is getting a revamp headed to Windows, macOS, and your distro of choice",
+      "url": "https://www.pcgamer.com/software/linux/linux-on-the-desktop-marches-on-as-gog-announces-its-galaxy-client-is-getting-a-revamp-headed-to-windows-macos-and-your-distro-of-choice/",
       "source": "PC Gamer",
       "published_at": "2026-11-07T15:00:00Z",
       "games": [],
@@ -303,8 +342,8 @@
       "highlight": false
     },
     {
-      "title": "Linux on the desktop marches on as GOG announces its Galaxy client is getting a revamp headed to Windows, macOS, and your distro of choice",
-      "url": "https://www.pcgamer.com/software/linux/linux-on-the-desktop-marches-on-as-gog-announces-its-galaxy-client-is-getting-a-revamp-headed-to-windows-macos-and-your-distro-of-choice/",
+      "title": "Mass Effect composer Sam Hulick releases his 're-scored' trailer for N7 Day, 'my way of saying goodbye\u2026 at least for now'",
+      "url": "https://www.pcgamer.com/games/mass-effect/mass-effect-composer-sam-hulick-releases-his-re-scored-trailer-for-n7-day-my-way-of-saying-goodbye-at-least-for-now/",
       "source": "PC Gamer",
       "published_at": "2026-11-07T15:00:00Z",
       "games": [],
@@ -525,46 +564,6 @@
       "url": "https://www.rockpapershotgun.com/terrific-fantasy-rpg-queens-blade-gets-first-proper-update-adding-a-new-throwing-weapon-and-options-to-make-puzzles-less-frustrating",
       "source": "Rock Paper Shotgun",
       "published_at": "2026-11-06T14:58:30Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "World of Warcraft: Forever hotfix puts a stop to super speedy flag carriers that were dominating PvP battlegrounds",
-      "url": "https://www.eurogamer.net/world-of-warcraft-forever-hotfix-flag-carrier-plainsrunning",
-      "source": "Eurogamer",
-      "published_at": "2026-11-06T14:38:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Skyrim's lead designer has 2 big asks of The Elder Scrolls 6: Sentinel, and only one of them is something most players have ever thought about",
-      "url": "https://www.pcgamer.com/games/the-elder-scrolls/skyrims-lead-designer-has-2-big-asks-of-the-elder-scrolls-6-sentinel-and-only-one-of-them-is-something-most-players-have-ever-thought-about/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-06T14:21:52Z",
-      "games": [
-        "skyrim-se"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Airframe Ultra's PS1 cyberpunk city is an amazing tribute to G-Police and WipEout, and I wish you people would slow down to appreciate it",
-      "url": "https://www.rockpapershotgun.com/airframe-ultras-ps1-cyberpunk-city-is-an-amazing-tribute-to-g-police-and-wipeout-and-i-wish-you-people-would-slow-down-to-appreciate-it",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-06T14:00:00Z",
-      "games": [
-        "cyberpunk-2077"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Adding PvE to Arc Raiders 'isn't a difficult thing to do' but the question still stands how Embark can 'cater to the specific needs of the players'",
-      "url": "https://www.pcgamer.com/games/third-person-shooter/adding-pve-to-arc-raiders-isnt-a-difficult-thing-to-do-but-the-question-still-stands-how-embark-can-cater-to-the-specific-needs-of-the-players/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-06T13:49:21Z",
       "games": [],
       "kind": "news",
       "highlight": false
