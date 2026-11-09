@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T00:54:25Z",
+  "generated_at": "2026-11-09T07:18:39Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,17 @@
     }
   ],
   "items": [
+    {
+      "title": "Lead designer Bruce Nesmith says Skyrim was a hit because it was built on institutional knowledge from Oblivion",
+      "url": "https://www.pcgamer.com/games/the-elder-scrolls/lead-designer-bruce-nesmith-says-skyrim-was-a-hit-because-it-was-built-on-institutional-knowledge-from-oblivion/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-09T04:45:28Z",
+      "games": [
+        "skyrim-se"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Warhammer Blood Bowl has been delayed into early 2027",
       "url": "https://www.pcgamer.com/games/sports/warhammer-blood-bowl-has-been-delayed-into-2027/",
@@ -555,15 +566,6 @@
       "url": "https://www.rockpapershotgun.com/i-just-found-out-you-can-use-your-steam-wishlist-to-search-for-deals-on-games-outside-of-steam-saving-my-nephew-more-than-40-on-total-war-warhammer-3",
       "source": "Rock Paper Shotgun",
       "published_at": "2026-11-06T15:45:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Terrific fantasy RPG Queen's Domain gets first proper update, adding a new throwing weapon and options to make puzzles \"less frustrating\"",
-      "url": "https://www.rockpapershotgun.com/terrific-fantasy-rpg-queens-blade-gets-first-proper-update-adding-a-new-throwing-weapon-and-options-to-make-puzzles-less-frustrating",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-06T14:58:30Z",
       "games": [],
       "kind": "news",
       "highlight": false
