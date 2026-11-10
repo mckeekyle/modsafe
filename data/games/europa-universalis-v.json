@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-10T06:58:52Z",
+  "generated_at": "2026-11-10T12:38:00Z",
   "game": {
     "slug": "europa-universalis-v",
     "name": "Europa Universalis V",
     "steam_appid": 3450310,
     "latest_patch": {
-      "version": "1.4.7",
-      "label": "1.4.7",
-      "title": "Patch 1.4.7",
-      "published_at": "2026-11-03T10:02:03Z",
-      "published_unix": 1793700123,
-      "url": "https://store.steampowered.com/news/app/3450310/view/1847920302251349",
+      "version": "1.4.8",
+      "label": "1.4.8",
+      "title": "Patch 1.4.8 - Testing Branch now live",
+      "published_at": "2026-11-10T11:05:33Z",
+      "published_unix": 1794308733,
+      "url": "https://store.steampowered.com/news/app/3450310/view/1848664643358975",
       "series": "1.4",
       "series_released_at": "2026-10-28T17:07:25Z",
       "series_url": "https://store.steampowered.com/news/app/3450310/view/1847920302231984",
@@ -45,7 +45,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Likely safe",
-      "reason": "Last Workshop update 2026-10-03, before 1.4 went live on 2026-10-28. It already carries the 1.4 version tag, but that build predates the release (open-beta era), so it isn't confirmed for the live 1.4. 1.4 has been out 12 days with no update needed so far; no breakage signal available. 1.4.7 is a hotfix within 1.4: it rarely breaks mods that already work on 1.4, but this mod changes the interface (UI), and UI mods can still break when a hotfix touches the same files. No open breakage reports on its GitHub tracker since 1.4 went live. Workshop comments since 1.4 went live report CMF breaking some interface graphics on 1.4.5 and the country-selection bonus icons (a UI function it calls was removed in 1.4). (Checked by hand 2026-10-30; user comments, not counted as confirmed breakage.)",
+      "reason": "Last Workshop update 2026-10-03, before 1.4 went live on 2026-10-28. It already carries the 1.4 version tag, but that build predates the release (open-beta era), so it isn't confirmed for the live 1.4. 1.4 has been out 12 days with no update needed so far; no breakage signal available. 1.4.8 is a hotfix within 1.4: it rarely breaks mods that already work on 1.4, but this mod changes the interface (UI), and UI mods can still break when a hotfix touches the same files. No open breakage reports on its GitHub tracker since 1.4 went live. Workshop comments since 1.4 went live report CMF breaking some interface graphics on 1.4.5 and the country-selection bonus icons (a UI function it calls was removed in 1.4). (Checked by hand 2026-10-30; user comments, not counted as confirmed breakage.)",
       "breakage_reports": [],
       "release_tag": "1.3, 1.4",
       "release_name": "Community Mod Framework - 1.4 R\u00edo Salado",
@@ -63,7 +63,7 @@
         "1.4"
       ],
       "tagged_for_series": true,
-      "subscriptions": 50295,
+      "subscriptions": 50303,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -78,7 +78,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Likely safe",
-      "reason": "Updated on the Workshop on 2026-11-04, after 1.4 went live on 2026-10-28. Its Workshop version tags (1.3) don't include 1.4. Support is inferred from the update date. 1.4.7 is a hotfix within 1.4: it rarely breaks mods that already work on 1.4, but this mod changes the interface (UI), and UI mods can still break when a hotfix touches the same files.",
+      "reason": "Updated on the Workshop on 2026-11-04, after 1.4 went live on 2026-10-28. Its Workshop version tags (1.3) don't include 1.4. Support is inferred from the update date. 1.4.8 is a hotfix within 1.4: it rarely breaks mods that already work on 1.4, but this mod changes the interface (UI), and UI mods can still break when a hotfix touches the same files.",
       "breakage_reports": [],
       "release_tag": "1.3",
       "release_name": "Glorp UI - 1.4 R\u00edo Salado",
@@ -95,9 +95,9 @@
         "1.3"
       ],
       "tagged_for_series": false,
-      "subscriptions": 50424,
+      "subscriptions": 50435,
       "mentions_patch": false,
-      "newer_than_patch": true
+      "newer_than_patch": false
     },
     {
       "id": "cheat-menu-pro",
@@ -110,7 +110,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Likely safe",
-      "reason": "Updated on the Workshop on 2026-10-30, after 1.4 went live on 2026-10-28. It doesn't use Workshop version tags. Support is inferred from the update date. 1.4.7 is a hotfix within 1.4: it rarely breaks mods that already work on 1.4, but this mod changes the interface (UI), and UI mods can still break when a hotfix touches the same files.",
+      "reason": "Updated on the Workshop on 2026-10-30, after 1.4 went live on 2026-10-28. It doesn't use Workshop version tags. Support is inferred from the update date. 1.4.8 is a hotfix within 1.4: it rarely breaks mods that already work on 1.4, but this mod changes the interface (UI), and UI mods can still break when a hotfix touches the same files.",
       "breakage_reports": [],
       "release_tag": null,
       "release_name": "Cheat Menu Pro",
@@ -125,7 +125,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 58970,
+      "subscriptions": 58988,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -140,7 +140,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Likely safe",
-      "reason": "Updated on the Workshop on 2026-10-28, after 1.4 went live on 2026-10-28. It doesn't use Workshop version tags. Support is inferred from the update date. 1.4.7 is a hotfix within 1.4: it rarely breaks mods that already work on 1.4, but this mod changes the interface (UI), and UI mods can still break when a hotfix touches the same files.",
+      "reason": "Updated on the Workshop on 2026-10-28, after 1.4 went live on 2026-10-28. It doesn't use Workshop version tags. Support is inferred from the update date. 1.4.8 is a hotfix within 1.4: it rarely breaks mods that already work on 1.4, but this mod changes the interface (UI), and UI mods can still break when a hotfix touches the same files.",
       "breakage_reports": [],
       "release_tag": null,
       "release_name": "Better Road Builder",
@@ -153,7 +153,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 49786,
+      "subscriptions": 49783,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -168,7 +168,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Likely safe",
-      "reason": "Updated on the Workshop on 2026-11-05, after 1.4 went live on 2026-10-28. It carries the 1.4 version tag. 1.4.7 is a hotfix within 1.4: it rarely breaks mods that already work on 1.4, but this mod changes the interface (UI), and UI mods can still break when a hotfix touches the same files.",
+      "reason": "Updated on the Workshop on 2026-11-05, after 1.4 went live on 2026-10-28. It carries the 1.4 version tag. 1.4.8 is a hotfix within 1.4: it rarely breaks mods that already work on 1.4, but this mod changes the interface (UI), and UI mods can still break when a hotfix touches the same files.",
       "breakage_reports": [],
       "release_tag": "1.4",
       "release_name": "[1.4 & 1.3] Construction Manager",
@@ -184,9 +184,9 @@
         "1.4"
       ],
       "tagged_for_series": true,
-      "subscriptions": 13160,
+      "subscriptions": 13166,
       "mentions_patch": false,
-      "newer_than_patch": true
+      "newer_than_patch": false
     },
     {
       "id": "thick-borders",
@@ -199,7 +199,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Likely safe",
-      "reason": "Updated on the Workshop on 2026-10-29, after 1.4 went live on 2026-10-28. It doesn't use Workshop version tags. Support is inferred from the update date. 1.4.7 is a hotfix within 1.4; hotfixes rarely break mods that already work on 1.4.",
+      "reason": "Updated on the Workshop on 2026-10-29, after 1.4 went live on 2026-10-28. It doesn't use Workshop version tags. Support is inferred from the update date. 1.4.8 is a hotfix within 1.4; hotfixes rarely break mods that already work on 1.4.",
       "breakage_reports": [],
       "release_tag": null,
       "release_name": "Thick borders",
@@ -211,7 +211,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 23296,
+      "subscriptions": 23300,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -226,7 +226,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Likely safe",
-      "reason": "Updated on the Workshop on 2026-10-29, after 1.4 went live on 2026-10-28. It doesn't use Workshop version tags. Support is inferred from the update date. 1.4.7 is a hotfix within 1.4; hotfixes rarely break mods that already work on 1.4.",
+      "reason": "Updated on the Workshop on 2026-10-29, after 1.4 went live on 2026-10-28. It doesn't use Workshop version tags. Support is inferred from the update date. 1.4.8 is a hotfix within 1.4; hotfixes rarely break mods that already work on 1.4.",
       "breakage_reports": [],
       "release_tag": null,
       "release_name": "Free Console Access",
@@ -238,7 +238,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 18602,
+      "subscriptions": 18600,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -253,7 +253,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Likely safe",
-      "reason": "Updated on the Workshop on 2026-11-04, after 1.4 went live on 2026-10-28. It doesn't use Workshop version tags. Support is inferred from the update date. 1.4.7 is a hotfix within 1.4; hotfixes rarely break mods that already work on 1.4.",
+      "reason": "Updated on the Workshop on 2026-11-04, after 1.4 went live on 2026-10-28. It doesn't use Workshop version tags. Support is inferred from the update date. 1.4.8 is a hotfix within 1.4; hotfixes rarely break mods that already work on 1.4.",
       "breakage_reports": [],
       "release_tag": null,
       "release_name": "National Destinies - Formables Content",
@@ -269,9 +269,9 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 11084,
+      "subscriptions": 11091,
       "mentions_patch": false,
-      "newer_than_patch": true
+      "newer_than_patch": false
     },
     {
       "id": "basileia-romaion",
@@ -284,7 +284,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Likely safe",
-      "reason": "Updated on the Workshop on 2026-11-04, after 1.4 went live on 2026-10-28. It doesn't use Workshop version tags. Support is inferred from the update date. 1.4.7 is a hotfix within 1.4; hotfixes rarely break mods that already work on 1.4.",
+      "reason": "Updated on the Workshop on 2026-11-04, after 1.4 went live on 2026-10-28. It doesn't use Workshop version tags. Support is inferred from the update date. 1.4.8 is a hotfix within 1.4; hotfixes rarely break mods that already work on 1.4.",
       "breakage_reports": [],
       "release_tag": null,
       "release_name": "[1.4] Basileia Romaion 1337: Update 28 'Steppe Rework`",
@@ -311,9 +311,9 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 8614,
+      "subscriptions": 8618,
       "mentions_patch": false,
-      "newer_than_patch": true
+      "newer_than_patch": false
     },
     {
       "id": "meiou",
@@ -326,7 +326,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Likely safe",
-      "reason": "Updated on the Workshop on 2026-11-08, after 1.4 went live on 2026-10-28. It doesn't use Workshop version tags. Support is inferred from the update date. 1.4.7 is a hotfix within 1.4; hotfixes rarely break mods that already work on 1.4.",
+      "reason": "Updated on the Workshop on 2026-11-08, after 1.4 went live on 2026-10-28. It doesn't use Workshop version tags. Support is inferred from the update date. 1.4.8 is a hotfix within 1.4; hotfixes rarely break mods that already work on 1.4.",
       "breakage_reports": [],
       "release_tag": null,
       "release_name": "MEIOU and Taxes",
@@ -338,19 +338,19 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 6787,
+      "subscriptions": 6792,
       "mentions_patch": false,
-      "newer_than_patch": true
+      "newer_than_patch": false
     }
   ],
   "history": [
     {
-      "version": "1.4.7",
-      "label": "1.4.7",
-      "title": "Patch 1.4.7",
-      "published_at": "2026-11-03T10:02:03Z",
-      "published_unix": 1793700123,
-      "url": "https://store.steampowered.com/news/app/3450310/view/1847920302251349",
+      "version": "1.4.8",
+      "label": "1.4.8",
+      "title": "Patch 1.4.8 - Testing Branch now live",
+      "published_at": "2026-11-10T11:05:33Z",
+      "published_unix": 1794308733,
+      "url": "https://store.steampowered.com/news/app/3450310/view/1848664643358975",
       "series": "1.4",
       "series_released_at": "2026-10-28T17:07:25Z",
       "series_url": "https://store.steampowered.com/news/app/3450310/view/1847920302231984",
@@ -389,11 +389,11 @@
           "short": "Glorp UI",
           "name": "Glorp UI",
           "status": "Likely safe",
-          "release_tag": "1.3",
-          "release_published_at": "2026-11-04T03:18:54Z",
+          "release_tag": null,
+          "release_published_at": null,
           "mentions_patch": false,
-          "first_release_tag": "1.3",
-          "first_release_at": "2026-11-04T03:18:54Z",
+          "first_release_tag": null,
+          "first_release_at": null,
           "data_from": "2026-11-04T03:18:54Z",
           "first_mention_tag": null,
           "first_mention_at": null
@@ -431,11 +431,11 @@
           "short": "Construction Mgr",
           "name": "Construction Manager",
           "status": "Likely safe",
-          "release_tag": "1.4",
-          "release_published_at": "2026-11-05T03:23:14Z",
+          "release_tag": null,
+          "release_published_at": null,
           "mentions_patch": false,
-          "first_release_tag": "1.4",
-          "first_release_at": "2026-11-05T03:23:14Z",
+          "first_release_tag": null,
+          "first_release_at": null,
           "data_from": "2026-11-05T03:23:14Z",
           "first_mention_tag": null,
           "first_mention_at": null
@@ -459,6 +459,156 @@
           "short": "Console Access",
           "name": "Free Console Access",
           "status": "Likely safe",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2026-10-29T20:32:16Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "national-destinies",
+          "short": "National Destinies",
+          "name": "National Destinies - Formables Content",
+          "status": "Likely safe",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2026-11-04T20:01:27Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "basileia-romaion",
+          "short": "BR 1337",
+          "name": "Basileia Romaion 1337",
+          "status": "Likely safe",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2026-11-04T12:10:03Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "meiou",
+          "short": "MEIOU",
+          "name": "MEIOU and Taxes",
+          "status": "Likely safe",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2026-11-08T08:55:40Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
+      "version": "1.4.7",
+      "label": "1.4.7",
+      "title": "Patch 1.4.7",
+      "published_at": "2026-11-03T10:02:03Z",
+      "published_unix": 1793700123,
+      "url": "https://store.steampowered.com/news/app/3450310/view/1847920302251349",
+      "frameworks": [
+        {
+          "id": "cmf",
+          "short": "CMF",
+          "name": "Community Mod Framework (CMF)",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2026-10-03T08:32:15Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "glorp-ui",
+          "short": "Glorp UI",
+          "name": "Glorp UI",
+          "status": "Likely safe",
+          "release_tag": "1.3",
+          "release_published_at": "2026-11-04T03:18:54Z",
+          "mentions_patch": false,
+          "first_release_tag": "1.3",
+          "first_release_at": "2026-11-04T03:18:54Z",
+          "data_from": "2026-11-04T03:18:54Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "cheat-menu-pro",
+          "short": "Cheat Menu Pro",
+          "name": "Cheat Menu Pro",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2026-10-30T08:43:56Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "better-road-builder",
+          "short": "Road Builder",
+          "name": "Better Road Builder",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2026-10-28T17:22:58Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "construction-manager",
+          "short": "Construction Mgr",
+          "name": "Construction Manager",
+          "status": "Likely safe",
+          "release_tag": "1.4",
+          "release_published_at": "2026-11-05T03:23:14Z",
+          "mentions_patch": false,
+          "first_release_tag": "1.4",
+          "first_release_at": "2026-11-05T03:23:14Z",
+          "data_from": "2026-11-05T03:23:14Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "thick-borders",
+          "short": "Thick borders",
+          "name": "Thick borders",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2026-10-29T10:42:39Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "free-console-access",
+          "short": "Console Access",
+          "name": "Free Console Access",
+          "status": "No post-patch release",
           "release_tag": null,
           "release_published_at": null,
           "mentions_patch": false,
@@ -2011,159 +2161,15 @@
           "first_mention_at": null
         }
       ]
-    },
-    {
-      "version": "1.1.10",
-      "label": "1.1.10",
-      "title": "Hotfix 1.1.10",
-      "published_at": "2026-03-17T11:05:24Z",
-      "published_unix": 1773745524,
-      "url": "https://store.steampowered.com/news/app/3450310/view/1826992588603494",
-      "frameworks": [
-        {
-          "id": "cmf",
-          "short": "CMF",
-          "name": "Community Mod Framework (CMF)",
-          "status": "Likely safe",
-          "release_tag": "1.3, 1.4",
-          "release_published_at": "2026-10-03T08:32:15Z",
-          "mentions_patch": false,
-          "first_release_tag": "1.3, 1.4",
-          "first_release_at": "2026-10-03T08:32:15Z",
-          "data_from": "2026-10-03T08:32:15Z",
-          "first_mention_tag": null,
-          "first_mention_at": null
-        },
-        {
-          "id": "glorp-ui",
-          "short": "Glorp UI",
-          "name": "Glorp UI",
-          "status": "Likely safe",
-          "release_tag": "1.3",
-          "release_published_at": "2026-11-04T03:18:54Z",
-          "mentions_patch": false,
-          "first_release_tag": "1.3",
-          "first_release_at": "2026-11-04T03:18:54Z",
-          "data_from": "2026-11-04T03:18:54Z",
-          "first_mention_tag": null,
-          "first_mention_at": null
-        },
-        {
-          "id": "cheat-menu-pro",
-          "short": "Cheat Menu Pro",
-          "name": "Cheat Menu Pro",
-          "status": "Likely safe",
-          "release_tag": null,
-          "release_published_at": "2026-10-30T08:43:56Z",
-          "mentions_patch": false,
-          "first_release_tag": null,
-          "first_release_at": "2026-10-30T08:43:56Z",
-          "data_from": "2026-10-30T08:43:56Z",
-          "first_mention_tag": null,
-          "first_mention_at": null
-        },
-        {
-          "id": "better-road-builder",
-          "short": "Road Builder",
-          "name": "Better Road Builder",
-          "status": "Likely safe",
-          "release_tag": null,
-          "release_published_at": "2026-10-28T17:22:58Z",
-          "mentions_patch": false,
-          "first_release_tag": null,
-          "first_release_at": "2026-10-28T17:22:58Z",
-          "data_from": "2026-10-28T17:22:58Z",
-          "first_mention_tag": null,
-          "first_mention_at": null
-        },
-        {
-          "id": "construction-manager",
-          "short": "Construction Mgr",
-          "name": "Construction Manager",
-          "status": "Likely safe",
-          "release_tag": "1.4",
-          "release_published_at": "2026-11-05T03:23:14Z",
-          "mentions_patch": false,
-          "first_release_tag": "1.4",
-          "first_release_at": "2026-11-05T03:23:14Z",
-          "data_from": "2026-11-05T03:23:14Z",
-          "first_mention_tag": null,
-          "first_mention_at": null
-        },
-        {
-          "id": "thick-borders",
-          "short": "Thick borders",
-          "name": "Thick borders",
-          "status": "Likely safe",
-          "release_tag": null,
-          "release_published_at": "2026-10-29T10:42:39Z",
-          "mentions_patch": false,
-          "first_release_tag": null,
-          "first_release_at": "2026-10-29T10:42:39Z",
-          "data_from": "2026-10-29T10:42:39Z",
-          "first_mention_tag": null,
-          "first_mention_at": null
-        },
-        {
-          "id": "free-console-access",
-          "short": "Console Access",
-          "name": "Free Console Access",
-          "status": "Likely safe",
-          "release_tag": null,
-          "release_published_at": "2026-10-29T20:32:16Z",
-          "mentions_patch": false,
-          "first_release_tag": null,
-          "first_release_at": "2026-10-29T20:32:16Z",
-          "data_from": "2026-10-29T20:32:16Z",
-          "first_mention_tag": null,
-          "first_mention_at": null
-        },
-        {
-          "id": "national-destinies",
-          "short": "National Destinies",
-          "name": "National Destinies - Formables Content",
-          "status": "Likely safe",
-          "release_tag": null,
-          "release_published_at": "2026-11-04T20:01:27Z",
-          "mentions_patch": false,
-          "first_release_tag": null,
-          "first_release_at": "2026-11-04T20:01:27Z",
-          "data_from": "2026-11-04T20:01:27Z",
-          "first_mention_tag": null,
-          "first_mention_at": null
-        },
-        {
-          "id": "basileia-romaion",
-          "short": "BR 1337",
-          "name": "Basileia Romaion 1337",
-          "status": "Likely safe",
-          "release_tag": null,
-          "release_published_at": "2026-11-04T12:10:03Z",
-          "mentions_patch": false,
-          "first_release_tag": null,
-          "first_release_at": "2026-11-04T12:10:03Z",
-          "data_from": "2026-11-04T12:10:03Z",
-          "first_mention_tag": null,
-          "first_mention_at": null
-        },
-        {
-          "id": "meiou",
-          "short": "MEIOU",
-          "name": "MEIOU and Taxes",
-          "status": "Likely safe",
-          "release_tag": null,
-          "release_published_at": "2026-11-08T08:55:40Z",
-          "mentions_patch": false,
-          "first_release_tag": null,
-          "first_release_at": "2026-11-08T08:55:40Z",
-          "data_from": "2026-11-08T08:55:40Z",
-          "first_mention_tag": null,
-          "first_mention_at": null
-        }
-      ]
     }
   ],
   "news": [
+    {
+      "title": "Patch 1.4.8 - Testing Branch now live",
+      "url": "https://store.steampowered.com/news/app/3450310/view/1848664643358975",
+      "is_patch": true,
+      "published_at": "2026-11-10T11:05:33Z"
+    },
     {
       "title": "Tinto Talks 130 - Anniversary feedback, Hourly Tick Branch",
       "url": "https://store.steampowered.com/news/app/3450310/view/1848557880479245",
@@ -2217,12 +2223,6 @@
       "url": "https://store.steampowered.com/news/app/3450310/view/1846651706677854",
       "is_patch": false,
       "published_at": "2026-10-15T14:03:20Z"
-    },
-    {
-      "title": "Tinto Talks 127 - The Machinery of Empire: AtP Mechanical Content",
-      "url": "https://store.steampowered.com/news/app/3450310/view/1846018067926053",
-      "is_patch": false,
-      "published_at": "2026-10-07T13:03:53Z"
     }
   ],
   "sources": {
@@ -2357,6 +2357,66 @@
       "patch_key": "1.4.7",
       "patch_published_at": "2026-11-03T10:02:03Z",
       "patch_url": "https://store.steampowered.com/news/app/3450310/view/1847920302251349",
+      "verdict": "Likely safe",
+      "frameworks": [
+        {
+          "short": "CMF",
+          "status": "Likely safe",
+          "release_tag": "1.3, 1.4"
+        },
+        {
+          "short": "Glorp UI",
+          "status": "Likely safe",
+          "release_tag": "1.3"
+        },
+        {
+          "short": "Cheat Menu Pro",
+          "status": "Likely safe",
+          "release_tag": null
+        },
+        {
+          "short": "Road Builder",
+          "status": "Likely safe",
+          "release_tag": null
+        },
+        {
+          "short": "Construction Mgr",
+          "status": "Likely safe",
+          "release_tag": "1.4"
+        },
+        {
+          "short": "Thick borders",
+          "status": "Likely safe",
+          "release_tag": null
+        },
+        {
+          "short": "Console Access",
+          "status": "Likely safe",
+          "release_tag": null
+        },
+        {
+          "short": "National Destinies",
+          "status": "Likely safe",
+          "release_tag": null
+        },
+        {
+          "short": "BR 1337",
+          "status": "Likely safe",
+          "release_tag": null
+        },
+        {
+          "short": "MEIOU",
+          "status": "Likely safe",
+          "release_tag": null
+        }
+      ]
+    },
+    {
+      "at": "2026-11-10T12:38:00Z",
+      "patch": "1.4.8",
+      "patch_key": "1.4.8",
+      "patch_published_at": "2026-11-10T11:05:33Z",
+      "patch_url": "https://store.steampowered.com/news/app/3450310/view/1848664643358975",
       "verdict": "Likely safe",
       "frameworks": [
         {
