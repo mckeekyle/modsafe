@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T12:56:39Z",
+  "generated_at": "2026-11-10T18:44:44Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,283 @@
     }
   ],
   "items": [
+    {
+      "title": "Marathon is becoming a whole new game next month with a roguelite PvE mode, a beta for a very Halo-esque team deathmatch mode, a vibey social space and more",
+      "url": "https://www.rockpapershotgun.com/marathon-is-becoming-a-whole-new-game-next-month-with-a-roguelite-pve-mode-a-beta-for-a-very-halo-esque-team-deathmatch-mode-a-vibey-social-space-and-more",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-10T18:30:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "I installed a GTA 5 mod that makes it rain human beings, and no I don't know why either",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/i-installed-a-gta-5-mod-that-makes-it-rain-human-beings-and-no-i-dont-know-why-either/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-10T18:00:00Z",
+      "games": [
+        "gta-v-legacy",
+        "gta-v-enhanced"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Nvidia shareholders have filed a lawsuit against the tech company over claims that they were misled regarding CEO Jensen Huang's affair",
+      "url": "https://www.rockpapershotgun.com/nvidia-shareholders-have-filed-a-lawsuit-against-the-tech-company-over-claims-that-they-were-misled-regarding-ceo-jensen-huangs-affair",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-10T18:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Grand Theft Auto 6 is 'the most pre-ordered' game of all time on both Xbox and PlayStation",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/grand-theft-auto-6-is-the-most-pre-ordered-game-of-all-time-on-both-xbox-and-playstation/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-10T17:34:18Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Company of Heroes 3 developer admits \"it was a lot\" to make the 3.0 overhaul patch alongside regular updates, singleplayer DLC, and a whole spinoff game",
+      "url": "https://www.rockpapershotgun.com/company-of-heroes-3-developer-admits-it-was-a-lot-to-make-the-30-overhaul-patch-alongside-regular-updates-singleplayer-dlc-and-a-whole-spinoff-game",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-10T17:30:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Note to self: If playing Call of Duty in an airport, don't say words like 'bomb' lest you want to evacuate an entire plane",
+      "url": "https://www.pcgamer.com/games/call-of-duty/note-to-self-if-playing-call-of-duty-in-an-airport-dont-say-words-like-bomb-lest-you-want-to-evacuate-an-entire-plane/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-10T17:15:33Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "MS has messily patched a Microsoft Paint security vulnerability, but the update still isn\u2019t showing up for some",
+      "url": "https://www.pcgamer.com/software/windows/ms-has-messily-patched-a-microsoft-paint-security-vulnerability-but-the-update-still-isnt-showing-up-for-some/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-10T17:14:03Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Here's our second wave of PS Plus games for November 2026 - and Sony's scrapping its barely used PC app",
+      "url": "https://www.eurogamer.net/ps-plus-games-november-2026-pc-app",
+      "source": "Eurogamer",
+      "published_at": "2026-11-10T17:10:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Acer Predator Atlas 8 (G3 Extreme) review",
+      "url": "https://www.pcgamer.com/hardware/handheld-gaming-pcs/acer-predator-atlas-8-g3-extreme-review/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-10T17:01:48Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Educational game dev program cancelled because students were submitting games made entirely with AI",
+      "url": "https://www.pcgamer.com/software/ai/educational-game-dev-program-cancelled-because-students-were-submitting-games-made-entirely-with-ai/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-10T16:59:19Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Bandai Namco is liquidating Unknown 9: Awakening studio Reflector Entertainment, following multiple previous layoffs since the game's launch",
+      "url": "https://www.rockpapershotgun.com/bandai-namco-is-liquidating-unknown-9-awakening-studio-reflector-entertainment-following-multiple-previous-layoffs-since-the-games-launch",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-10T16:58:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "\u2018AMDLSS5\u2019 gets Nvidia\u2019s neural rendering running on AMD graphics cards and claims 64% better performance than other mods",
+      "url": "https://www.pcgamer.com/hardware/graphics-cards/amdlss5-gets-nvidias-neural-rendering-running-on-amd-graphics-cards-and-claims-64-percent-better-performance-than-other-mods/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-10T16:53:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Grand Theft Auto 6 becomes the most pre-ordered game in PlayStation Store history",
+      "url": "https://www.eurogamer.net/gta-6-most-preordered-game-playstation-store-history",
+      "source": "Eurogamer",
+      "published_at": "2026-11-10T16:31:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Alienware AW3226Q OLED gaming monitor review",
+      "url": "https://www.pcgamer.com/hardware/gaming-monitors/alienware-aw3226q-review/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-10T16:26:09Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "In a reveal that might worry eventual PC players glancing at their GPUs, GTA 6 will target 30fps on all consoles",
+      "url": "https://www.rockpapershotgun.com/in-a-reveal-that-might-worry-eventual-pc-players-glancing-at-their-gpus-gta-6-will-target-30fps-on-all-consoles",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-10T16:19:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "I fought Queens and Knights, but somehow my hardest opponents in Stack Order, the next great deckbuilder, were 2 birds",
+      "url": "https://www.pcgamer.com/games/roguelike/i-fought-queens-and-knights-but-somehow-my-hardest-opponents-in-stack-order-the-next-great-deckbuilder-were-2-birds/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-10T16:12:12Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "I feel better than ever waiting for GTA 6 on PC now Rockstar confirms it's targeting 30 fps on PlayStation and Xbox",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/i-feel-better-than-ever-waiting-for-gta-6-on-pc-now-rockstar-confirms-its-targeting-30-fps-on-playstation-and-xbox/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-10T15:41:26Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "\"A fight for all workers\": SAG-AFTRA throw weight behind emerging Rockstar union ahead of its GTA 6 release week vote",
+      "url": "https://www.rockpapershotgun.com/a-fight-for-all-workers-sag-aftra-throw-weight-behind-emerging-rockstar-union-ahead-of-its-gta-6-release-week-vote",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-10T15:04:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Rockstar details Grand Theft Auto 6 PS5 Pro enhancements, but it'll still only run at 30FPS",
+      "url": "https://www.eurogamer.net/gta-6-30-fps-platforms-absolute-limit",
+      "source": "Eurogamer",
+      "published_at": "2026-11-10T15:01:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "How Silent Hill: Townfall's developer created a fictional town that's still real\u2014'It exists. It's there'",
+      "url": "https://www.pcgamer.com/games/horror/how-silent-hill-townfalls-developer-created-a-fictional-town-thats-still-real-it-exists-its-there/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-10T15:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Europe is about to get very tough on loot boxes in games, according to a leaked draft of the landmark Digital Fairness Act",
+      "url": "https://www.eurogamer.net/digital-fairness-act-eu-europe-loot-boxes-regulation",
+      "source": "Eurogamer",
+      "published_at": "2026-11-10T14:46:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Rockstar kills any hopes of streaming GTA 6 from Xbox to PC, but you can stream it to your old Xbox One if you like",
+      "url": "https://www.eurogamer.net/gta-6-xbox-cloud-streaming-pc-xbox-one",
+      "source": "Eurogamer",
+      "published_at": "2026-11-10T14:40:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Big Walk developer reveals it used generative AI 'sparingly', estimates 'well under 0.1%' was actually coded using LLMs",
+      "url": "https://www.pcgamer.com/games/puzzle/big-walk-developer-reveals-it-used-generative-ai-sparingly-estimates-well-under-0-1-percent-was-actually-coded-using-llms/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-10T14:36:16Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Despite promising a heady mix of Vampire Survivors and Warhammer fan-service, Warhammer Survivors is somehow less than the sum of its parts",
+      "url": "https://www.eurogamer.net/warhammer-survivors-now-playing",
+      "source": "Eurogamer",
+      "published_at": "2026-11-10T14:06:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Trump calls his pal Jensen Huang an \u2018honourable guy\u2019 and says he \u2018probably has an excuse\u2019 for Nvidia CEO\u2019s affair with alleged spy",
+      "url": "https://www.pcgamer.com/hardware/graphics-cards/trump-calls-his-pal-jensen-huang-an-honourable-guy-and-says-he-probably-has-an-excuse-for-nvidia-ceos-affair-with-alleged-spy/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-10T14:01:26Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Fallout and Elder Scrolls actor Stephen Russell returns as Garrett in Thief: The Tarnished Mirror: 'Great to be back with the old guy'",
+      "url": "https://www.pcgamer.com/games/fps/fallout-and-elder-scrolls-actor-stephen-russell-returns-as-garrett-in-thief-the-tarnished-mirror-great-to-be-back-with-the-old-guy/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-10T14:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Steam now shows average Steam Deck framerates when browsing games, but Valve says it's considering expanding the feature to other hardware",
+      "url": "https://www.eurogamer.net/steam-deck-framerate-average-data-store-widget",
+      "source": "Eurogamer",
+      "published_at": "2026-11-10T13:53:30Z",
+      "games": [
+        "steam-deck"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Steam now lets you see exactly what frame rate you should get in games using a Steam Deck",
+      "url": "https://www.pcgamer.com/hardware/handheld-gaming-pcs/steam-now-lets-you-see-exactly-what-frame-rate-you-should-get-in-games-using-a-steam-deck/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-10T13:31:56Z",
+      "games": [
+        "steam-deck"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "AMD's next-gen GPU architecture has appeared in new Linux kernel patches as GFX13 updates roll out",
+      "url": "https://www.pcgamer.com/hardware/graphics-cards/amds-next-gen-gpu-architecture-has-appeared-in-new-linux-kernel-patches-as-gfx13-updates-roll-out/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-10T13:06:31Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Tripwire Interactive says it's laying off 36 staff in a \"necessary\" decision, while reassuring that Killing Floor 3 and Maneater 2 are still in active development",
+      "url": "https://www.rockpapershotgun.com/tripwire-interactive-says-its-laying-off-36-staff-in-a-necessary-decision-while-reassuring-that-killing-floor-3-and-maneater-2-are-still-in-active-development",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-10T13:01:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "As Arc Raiders celebrates its first birthday, publisher Nexon reveals the extraction shooter has topped 17 million sales, but revenue is set to decline",
       "url": "https://www.eurogamer.net/arc-raiders-17-million-sales-nexon-decline",
@@ -296,285 +573,6 @@
       "published_at": "2026-11-09T17:06:59Z",
       "games": [],
       "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Swarmbreaker is an uncommonly mesmerising tower defence game in which enemies \"cluster, collide and flow like a fluid\"",
-      "url": "https://www.rockpapershotgun.com/swarmbreaker-is-an-uncommonly-mesmerising-tower-defence-game-in-which-enemies-cluster-collide-and-flow-like-a-fluid",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-09T17:05:10Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Cheaper OLEDs may be here even quicker than we thought as TCL CSOT says its new inkjet printing facility could be up and running as soon as this time next year",
-      "url": "https://www.pcgamer.com/hardware/gaming-monitors/cheaper-oleds-may-be-here-even-quicker-than-we-thought-as-tcl-csot-says-its-new-inkjet-printing-facility-could-be-up-and-running-as-soon-as-this-time-next-year/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-09T16:58:52Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Jensen Huang\u2019s affair with alleged Chinese spy highlights how the GPU company\u2019s dealings are now everyone\u2019s business",
-      "url": "https://www.pcgamer.com/hardware/graphics-cards/jensen-huangs-affair-with-alleged-chinese-spy-highlights-how-the-gpu-companys-dealings-are-now-everyones-business/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-09T16:56:37Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Anticipated Warhammer 40K tactical RPG Dark Heresy gets a release date",
-      "url": "https://www.eurogamer.net/warhammer-40k-dark-heresy-owlcat-crpg",
-      "source": "Eurogamer",
-      "published_at": "2026-11-09T16:50:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Nvidia CEO Jensen Huang under investigation after admitting affair with alleged Chinese spy in company-wide email",
-      "url": "https://www.eurogamer.net/nvidia-ceo-jensen-huang-investigation-affair-chinese-spy",
-      "source": "Eurogamer",
-      "published_at": "2026-11-09T16:45:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Cyberattack on Sega third-party newsletter distributor reportedly sees over two million email addresses leaked, but Sega accounts unaffected",
-      "url": "https://www.rockpapershotgun.com/cyberattack-on-sega-third-party-newsletter-distributor-reportedly-sees-over-two-million-email-addresses-leaked-but-sega-accounts-unaffected",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-09T16:30:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "'Floppy disks are out, 21st century tech is in': The FAA is finally ditching 55-year-old storage",
-      "url": "https://www.pcgamer.com/hardware/floppy-disks-are-out-21st-century-tech-is-in-the-faa-is-finally-ditching-55-year-old-storage/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-09T16:07:08Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Microsoft workers accuse company of trying to get customers \"addicted\" to AI while forcing it on their own staff and making them party to \"human rights violations\"",
-      "url": "https://www.rockpapershotgun.com/microsoft-workers-accuse-company-of-trying-to-get-customers-addicted-to-ai-while-forcing-it-on-their-own-staff-and-making-them-party-to-human-rights-violations",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-09T16:00:30Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Rockstar's doing a GTA 6 launch 'festival' in Miami featuring a lot of presumably expensive musical stars",
-      "url": "https://www.eurogamer.net/rockstar-gta-6-miami-music-festival",
-      "source": "Eurogamer",
-      "published_at": "2026-11-09T15:48:30Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The Golden Joystick Awards return this Wednesday\u2014here's how to watch them",
-      "url": "https://www.pcgamer.com/gaming-industry/events-conferences/the-golden-joystick-awards-return-this-wednesday-heres-how-to-watch-them/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-09T15:47:21Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Activision cracking down on popular Call of Duty: Warzone app that basically constituted cheating",
-      "url": "https://www.eurogamer.net/call-of-duty-warzone-agent-cheating-software-shutdown",
-      "source": "Eurogamer",
-      "published_at": "2026-11-09T15:23:30Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The pillars of AI are shaking beneath our feet",
-      "url": "https://www.pcgamer.com/software/ai/the-pillars-of-ai-are-shaking-beneath-our-feet/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-09T14:52:38Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Great news! Nier: Automata's install size is no longer 7x bigger than it should be (it was 366 GB)",
-      "url": "https://www.pcgamer.com/games/rpg/great-news-nier-automatas-install-size-is-no-longer-7x-bigger-than-it-should-be-it-was-366-gb/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-09T14:51:27Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Nintendo's legendary Kirby designer Masahiro Sakurai weighs in on gen-AI, saying \"it has yet to gain my trust\" but not to reject it completely",
-      "url": "https://www.eurogamer.net/masahiro-sakurai-generative-ai-famitsu",
-      "source": "Eurogamer",
-      "published_at": "2026-11-09T14:35:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "\"The lesson learned is you can have both\": Skyrim lead designer reckons there's merit in Baldur's Gate 3-style tough choices and Bethesda's do-anything approach",
-      "url": "https://www.rockpapershotgun.com/the-lesson-learned-is-you-can-have-both-skyrim-lead-designer-reckons-theres-merit-in-baldurs-gate-3-style-tough-choices-and-bethesdas-do-anything-approach",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-09T14:30:40Z",
-      "games": [
-        "skyrim-se",
-        "baldurs-gate-3"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "This week in PC games: solve the disappearance of 700 people, build a night market for spirits, and play chess on a board that disobeys physics",
-      "url": "https://www.rockpapershotgun.com/this-week-in-pc-games-solve-the-disappearance-of-700-people-build-a-night-market-for-spirits-and-play-chess-on-a-board-that-disobeys-physics",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-09T14:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "\"There is no excuse for what I did,\" Nvidia CEO says, as affair with an alleged Chinese spy makes the US-China AI race look even more ridiculous",
-      "url": "https://www.rockpapershotgun.com/there-is-no-excuse-for-what-i-did-nvidia-ceo-says-as-affair-with-an-alleged-chinese-spy-makes-the-us-china-ai-race-look-even-more-ridiculous",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-09T13:15:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Skyrim lead designer hopes Sentinel will finally solve The Elder Scrolls' ladder problem",
-      "url": "https://www.eurogamer.net/the-elder-scrolls-6-sentinel-ladders-skyrim-bethesda-designer",
-      "source": "Eurogamer",
-      "published_at": "2026-11-09T12:46:20Z",
-      "games": [
-        "skyrim-se"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "\"Art, including characters, terrain, animations, cutscenes and UI\" Bandai Namco and Monolith Soft helped out with Ocarina of Time on Switch 2",
-      "url": "https://www.eurogamer.net/ocarina-of-time-support-studios-confirmed-switch-2",
-      "source": "Eurogamer",
-      "published_at": "2026-11-09T12:45:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Rockstar were \"definitely\" thinking about giving a Japanese studio the keys to GTA, says former tech director - \"I have a name, but I'm not gonna say it\"",
-      "url": "https://www.rockpapershotgun.com/rockstar-were-definitely-thinking-about-giving-a-japanese-studio-the-keys-to-gta-says-former-tech-director-i-have-a-name-but-im-not-gonna-say-it",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-09T12:41:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Skyrim lead designer gives the most succinct summary of Bethesda's design I've ever heard: 'You're not playing my game, I'm making your game'",
-      "url": "https://www.pcgamer.com/games/the-elder-scrolls/skyrim-lead-designer-gives-the-most-succinct-summary-of-bethesdas-design-ive-ever-heard-youre-not-playing-my-game-im-making-your-game/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-09T12:28:31Z",
-      "games": [
-        "skyrim-se"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Consider this blackened plug your weekly reminder to check your RTX 50-series GPU cables",
-      "url": "https://www.pcgamer.com/hardware/graphics-cards/consider-this-blackened-plug-your-weekly-reminder-to-check-your-rtx-50-series-gpu-cables/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-09T12:24:38Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "London department store Selfridges launches sizeable GTA 6 takeover, featuring a varsity jacket that costs an eye-watering \u00a32,500",
-      "url": "https://www.eurogamer.net/selfridges-gta-6-collab-takeover",
-      "source": "Eurogamer",
-      "published_at": "2026-11-09T12:18:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "MSI Maestro 900R PC case review",
-      "url": "https://www.pcgamer.com/hardware/pc-cases/msi-maestro-900r-review/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-09T12:08:54Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "World of Warcraft: Forever bumps dungeon XP from monsters by 50% after some community feedback I will diplomatically call passionate",
-      "url": "https://www.pcgamer.com/games/world-of-warcraft/world-of-warcraft-forever-bumps-dungeon-xp-from-monsters-by-50-percent-after-some-community-feedback-i-will-diplomatically-call-passionate/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-09T12:00:26Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Dungeons in World of Warcraft: Forever get a huge XP buff, but power-levellers shouldn't celebrate just yet",
-      "url": "https://www.eurogamer.net/world-of-warcraft-forever-dungeon-mob-xp-rate-buff",
-      "source": "Eurogamer",
-      "published_at": "2026-11-09T11:41:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "EVE Online's new expansion looks to make it simpler than ever to get into a huge space battle: 'Every 10 weeks or so, you're gonna know: I can roll up with whatever I have and go shoot some structures and have a big fight'",
-      "url": "https://www.pcgamer.com/games/mmo/eve-onlines-new-expansion-looks-to-make-it-simpler-than-ever-to-get-into-a-huge-space-battle-every-10-weeks-or-so-youre-gonna-know-i-can-roll-up-with-whatever-i-have-and-go-shoot-some-structures-and-have-a-big-fight/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-09T11:30:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "'I think we'd accidentally created the most hardcore extraction game of all time:' EVE Vanguard is taking hard-won playtest lessons into a '24/7 Alpha'",
-      "url": "https://www.pcgamer.com/games/fps/i-think-wed-accidentally-created-the-most-hardcore-extraction-game-of-all-time-eve-vanguard-is-taking-hard-won-playtest-lessons-into-a-24-7-alpha/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-09T11:30:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Ahead of The Witcher 3: Songs of the Past, here's a \"lore friendly unofficial expansion to Geralt's life in Toussaint\" from a well-established quest modder",
-      "url": "https://www.rockpapershotgun.com/ahead-of-the-witcher-3-songs-of-the-past-heres-a-lore-friendly-unofficial-expansion-to-geralts-life-in-toussaint-from-a-well-established-quest-modder",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-09T11:25:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Satisfactory: The Board Game - Last 24 hours of the campaign!",
-      "url": "https://store.steampowered.com/news/app/526870/view/1848664643354937",
-      "source": "Steam \u00b7 Satisfactory",
-      "published_at": "2026-11-09T10:26:40Z",
-      "games": [
-        "satisfactory"
-      ],
-      "kind": "announcement",
       "highlight": false
     }
   ]
