@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T18:51:12Z",
+  "generated_at": "2026-11-10T00:53:01Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,78 @@
     }
   ],
   "items": [
+    {
+      "title": "'The experiences on console and PC tend to be roughly the same,' says Take-Two CEO in response to question about GTA roleplaying",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/the-experiences-on-console-and-pc-tend-to-be-roughly-the-same-says-take-two-ceo-in-response-to-question-about-gta-roleplaying/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-10T00:24:43Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "As investors ask about GTA 6 and AI, Take-Two CEO once again puts faith in dev creativity, states making hit games \"remains the purview of human beings\"",
+      "url": "https://www.eurogamer.net/gta-6-ai-strauss-zelnick-earnings-call-purview",
+      "source": "Eurogamer",
+      "published_at": "2026-11-09T22:47:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "A month after Paramount acquired Warner Bros. Discovery, its merged game division is laying people off",
+      "url": "https://www.pcgamer.com/gaming-industry/a-month-after-paramount-acquired-warner-bros-discovery-its-merged-game-division-is-laying-people-off/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-09T22:33:41Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Take-Two expects to make as much as $3.5 billion during the GTA 6 launch period",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/take-two-expects-to-make-as-much-as-usd3-5-billion-during-the-gta-6-launch-period/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-09T22:06:34Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "GTA 6 pre-orders are tracking \"well above expectations\" and the game will \"set a new baseline\" for Take-Two, says CEO Strauss Zelnick",
+      "url": "https://www.eurogamer.net/gta-6-preorders-tracking-take-two-earnings-call",
+      "source": "Eurogamer",
+      "published_at": "2026-11-09T22:02:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "\"Something's really possible\" - Mass Effect cast rally around efforts to save the franchise on the first N7 Day after BioWare's closure",
+      "url": "https://www.eurogamer.net/mass-effect-cast-save-bioware-n7-day",
+      "source": "Eurogamer",
+      "published_at": "2026-11-09T20:09:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "A week after expanding its publishing division, Killing Floor studio Tripwire Interactive lays off 36 people",
+      "url": "https://www.pcgamer.com/gaming-industry/a-week-after-expanding-its-publishing-division-killing-floor-studio-tripwire-interactive-lays-off-36-people/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-09T19:32:33Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "God of War: Ragnarok is reportedly the highest-earning PlayStation Studios game this generation, but Marvel's Spider-Man 2 isn't far behind",
+      "url": "https://www.eurogamer.net/god-of-war-ragnarok-highest-earning-playstation-game",
+      "source": "Eurogamer",
+      "published_at": "2026-11-09T19:02:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Hollow Knight Silksong physical editions mention multiple \"free content packs\" incoming, and call Sea of Sorrow a \"giant expansion\"",
       "url": "https://www.eurogamer.net/hollow-knight-silksong-physical-free-content-packs-sea-of-sorrow",
@@ -299,8 +371,8 @@
       "highlight": false
     },
     {
-      "title": "'I think we'd accidentally created the most hardcore extraction game of all time:' EVE Vanguard is taking hard-won playtest lessons into a '24/7 Alpha'",
-      "url": "https://www.pcgamer.com/games/fps/i-think-wed-accidentally-created-the-most-hardcore-extraction-game-of-all-time-eve-vanguard-is-taking-hard-won-playtest-lessons-into-a-24-7-alpha/",
+      "title": "EVE Online's new expansion looks to make it simpler than ever to get into a huge space battle: 'Every 10 weeks or so, you're gonna know: I can roll up with whatever I have and go shoot some structures and have a big fight'",
+      "url": "https://www.pcgamer.com/games/mmo/eve-onlines-new-expansion-looks-to-make-it-simpler-than-ever-to-get-into-a-huge-space-battle-every-10-weeks-or-so-youre-gonna-know-i-can-roll-up-with-whatever-i-have-and-go-shoot-some-structures-and-have-a-big-fight/",
       "source": "PC Gamer",
       "published_at": "2026-11-09T11:30:00Z",
       "games": [],
@@ -308,8 +380,8 @@
       "highlight": false
     },
     {
-      "title": "EVE Online's new expansion looks to make it simpler than ever to get into a huge space battle: 'Every 10 weeks or so, you're gonna know: I can roll up with whatever I have and go shoot some structures and have a big fight'",
-      "url": "https://www.pcgamer.com/games/mmo/eve-onlines-new-expansion-looks-to-make-it-simpler-than-ever-to-get-into-a-huge-space-battle-every-10-weeks-or-so-youre-gonna-know-i-can-roll-up-with-whatever-i-have-and-go-shoot-some-structures-and-have-a-big-fight/",
+      "title": "'I think we'd accidentally created the most hardcore extraction game of all time:' EVE Vanguard is taking hard-won playtest lessons into a '24/7 Alpha'",
+      "url": "https://www.pcgamer.com/games/fps/i-think-wed-accidentally-created-the-most-hardcore-extraction-game-of-all-time-eve-vanguard-is-taking-hard-won-playtest-lessons-into-a-24-7-alpha/",
       "source": "PC Gamer",
       "published_at": "2026-11-09T11:30:00Z",
       "games": [],
@@ -504,78 +576,6 @@
       "url": "https://www.eurogamer.net/wow-forever-biggest-launch-world-of-warcraft-history-concurrent-players",
       "source": "Eurogamer",
       "published_at": "2026-11-08T13:09:10Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "As Wardogs Season 3 looms, Bulkhead claims to have built 'one of the world's most sophisticated anti-cheat systems', assisted by 'machine learning and AI'",
-      "url": "https://www.pcgamer.com/games/fps/as-wardogs-season-3-looms-bulkhead-claims-to-have-built-one-of-the-worlds-most-sophisticated-anti-cheat-systems-assisted-by-machine-learning-and-ai/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-08T12:16:51Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The Sunday Papers",
-      "url": "https://www.rockpapershotgun.com/the-sunday-papers-835",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-08T11:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Path of Exile 2's game director thinks a death recap will finally allow us players to complain about the right things",
-      "url": "https://www.pcgamer.com/games/rpg/path-of-exile-2s-game-director-thinks-a-death-recap-will-finally-allow-us-players-to-complain-about-the-right-things/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-08T02:13:27Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "A BioWare documentary was already in the works when the shutdown was announced: 'With the studio's recent closure, the film is now a profound valediction'",
-      "url": "https://www.pcgamer.com/gaming-industry/a-bioware-documentary-was-already-in-the-works-when-the-shutdown-was-announced-with-the-studios-recent-closure-the-film-is-now-a-profound-valediction/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-08T01:31:13Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Chess is immediately more fun if you jettison most of the rules and replace them with weapons-grade Game Boy Advance",
-      "url": "https://www.pcgamer.com/games/puzzle/chess-is-immediately-more-fun-if-you-jettison-most-of-the-rules-and-replace-them-with-weapons-grade-game-boy-advance/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-08T00:40:53Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "One of the buggiest D&D games ever released, Pool of Radiance: Ruins of Myth Drannor, is back and actually playable again",
-      "url": "https://www.pcgamer.com/games/rpg/one-of-the-buggiest-d-and-d-games-ever-released-pool-of-radiance-ruins-of-myth-drannor-is-back-and-actually-playable-again/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-07T23:22:07Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Echoes of Mirror's Edge, Dishonored and a dream set in Italy I once had can be found in Boars in Rome, an expressive parkour platformer set in dystopian Rome",
-      "url": "https://www.rockpapershotgun.com/echoes-of-mirrors-edge-dishonored-and-a-dream-set-in-italy-i-once-had-can-be-found-in-boars-in-rome-an-expressive-parkour-platformer-set-in-dystopian-rome",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-07T22:52:30Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "County of Fortune, now out in early access, is a medieval city builder that asks, why limit yourself to just one city?",
-      "url": "https://www.rockpapershotgun.com/county-of-fortune-now-out-in-early-access-is-a-medieval-city-builder-that-asks-why-limit-yourself-to-just-one-city",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-07T21:30:50Z",
       "games": [],
       "kind": "news",
       "highlight": false
