@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T12:38:00Z",
+  "generated_at": "2026-11-10T12:56:35Z",
   "game": {
     "slug": "europa-universalis-v",
     "name": "Europa Universalis V",
@@ -63,7 +63,7 @@
         "1.4"
       ],
       "tagged_for_series": true,
-      "subscriptions": 50303,
+      "subscriptions": 50302,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -95,7 +95,7 @@
         "1.3"
       ],
       "tagged_for_series": false,
-      "subscriptions": 50435,
+      "subscriptions": 50434,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -125,7 +125,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 58988,
+      "subscriptions": 58990,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -184,7 +184,7 @@
         "1.4"
       ],
       "tagged_for_series": true,
-      "subscriptions": 13166,
+      "subscriptions": 13167,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -211,7 +211,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 23300,
+      "subscriptions": 23299,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -238,7 +238,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 18600,
+      "subscriptions": 18598,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -269,7 +269,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 11091,
+      "subscriptions": 11092,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -311,7 +311,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 8618,
+      "subscriptions": 8617,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -338,7 +338,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 6792,
+      "subscriptions": 6791,
       "mentions_patch": false,
       "newer_than_patch": false
     }
