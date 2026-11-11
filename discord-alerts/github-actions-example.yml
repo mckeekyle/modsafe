@@ -1,0 +1,46 @@
+# ModSafe alerts on GitHub Actions (free, nothing to keep running at home).
+#
+# 1. Create a new (private is fine) GitHub repository.
+# 2. Put modsafe_alerts.py at its top level, and this file at .github/workflows/modsafe-alerts.yml
+# 3. Settings -> Secrets and variables -> Actions -> New repository secret:
+#      Name: MODSAFE_DISCORD_WEBHOOK   Value: your channel's webhook URL
+#    Optional: add a repository *variable* MODSAFE_GAMES, e.g. "skyrim-se,fallout-4".
+# 4. Actions tab -> "ModSafe alerts" -> Run workflow, once, to record the current verdicts.
+name: ModSafe alerts
+
+on:
+  schedule:
+    - cron: "7,37 * * * *"   # every 30 minutes
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: modsafe-alerts
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Restore last verdicts
+        uses: actions/cache/restore@v4
+        with:
+          path: modsafe_alerts_state.json
+          key: modsafe-alerts-${{ github.run_id }}
+          restore-keys: modsafe-alerts-
+      - name: Check ModSafe and post changes
+        env:
+          MODSAFE_DISCORD_WEBHOOK: ${{ secrets.MODSAFE_DISCORD_WEBHOOK }}
+          MODSAFE_GAMES: ${{ vars.MODSAFE_GAMES }}
+          MODSAFE_STATE_FILE: modsafe_alerts_state.json
+        run: python3 modsafe_alerts.py
+      - name: Save verdicts
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: modsafe_alerts_state.json
+          key: modsafe-alerts-${{ github.run_id }}
