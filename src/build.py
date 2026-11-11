@@ -975,7 +975,7 @@ def build_game_page(game: dict, data: dict) -> str:
 {game_crumbs(game)}
 <section class="game-hero v-{vc}" style="--hero:url('{busted(game_img(slug, "hero"))}')">
 <div>
-<h1>Is it safe to update {esc(game['name'])}?</h1>
+<h1>{esc(seo_text(game, "status_h1", f"Is it safe to update {game['name']}?"))}</h1>
 <p>{vbadge(data['verdict'])}<span class="micro">{esc(MICROCOPY.get(data['verdict'], ''))}</span></p>
 <p class="lede">{esc(game['blurb'])}</p>
 {f'<p class="note" role="note"><strong>⚠ {esc(game["note"])}</strong></p>' if game.get("note") else ''}
@@ -1022,9 +1022,13 @@ def build_game_page(game: dict, data: dict) -> str:
 </section>
 {related_links(game, data, "status", wiki=True)}
 """
+    pshort, pfull = patch_names(data)
     return page_shell(
-        f"Is it safe to update {game['name']}? Mod status for {p['label']} — ModSafe",
-        f"{game['name']} {p['label']}: {data['verdict']}. Live status of " + ", ".join(f['short'] for f in data['frameworks']) + " after the latest patch.",
+        seo_text(game, "status_title", f"Is it safe to update {game['name']}? Mod status for {p['label']} — ModSafe", patch=pshort),
+        (_clip if game.get("seo") else str)(seo_text(
+            game, "status_desc",
+            f"{game['name']} {p['label']}: {data['verdict']}. Live status of " + ", ".join(f['short'] for f in data['frameworks']) + " after the latest patch.",
+            patch_full=pfull, verdict=data["verdict"])),
         f"/{slug}/", slug, body,
         extra_jsonld=[dataset, faq_ld(faq), breadcrumb_ld([("Games", "/")] + hub_crumb(game) + [(game["name"], f"/{slug}/")])],
     )
@@ -1142,6 +1146,26 @@ MIN_HISTORY = 2  # a history page needs at least two patches to say anything bey
 
 def has_history(data: dict) -> bool:
     return len(data.get("history") or []) >= MIN_HISTORY
+
+
+def patch_names(data: dict) -> tuple[str, str]:
+    """(short, full) name of the current patch for titles: "Title Update 1.73" / "Title Update 1.73 (build 1.0.3889.0)"
+    when the patch is a numbered GTA V title update, else "build 1.0.1158.16" (e.g. an Enhanced-only hotfix after it)."""
+    p = data["game"]["latest_patch"]
+    title, ver = p.get("title") or "", p.get("version")
+    m = re.search(r"Title Update (\d+(?:\.\d+)+)", title)
+    if m and "only update" not in title.lower():
+        short = f"Title Update {m.group(1)}"
+        return short, (f"{short} (build {ver})" if ver else short)
+    if ver:
+        return f"build {ver}", f"build {ver}"
+    return p["label"], p["label"]
+
+
+def seo_text(game: dict, key: str, default: str, **values) -> str:
+    """A game's own search-phrased title/description/H1 (games.py "seo") if it has one, else the default."""
+    template = (game.get("seo") or {}).get(key)
+    return template.format(**values) if template else default
 
 
 def _clip(text: str, n: int = 158) -> str:
@@ -1350,7 +1374,7 @@ def build_install_page(game: dict, data: dict, md: str) -> str:
     fw_li = "".join(f'<li>{badge(f["status"])} <strong>{esc(f["short"])}</strong> <code>{esc(display_tag(f.get("release_tag")))}</code></li>' for f in fws)
     body = f"""
 {game_crumbs(game, "Install guide")}
-<section class="page-hero"><h1>{esc(g['title'])}</h1>
+<section class="page-hero"><h1>{esc(seo_text(game, "guide_h1", g['title']))}</h1>
 <p class="lede">{esc(g['intro'])}</p></section>
 {hub_nav(game, data, "install")}
 <section class="panel"><h2 class="panel-h">Before you start: {vbadge(data['verdict'])} for {esc(data['game']['latest_patch']['label'])}</h2>
@@ -1364,12 +1388,17 @@ def build_install_page(game: dict, data: dict, md: str) -> str:
     howto = {"@context": "https://schema.org", "@type": "HowTo", "name": g["title"], "description": g["intro"][:300],
              "step": [{"@type": "HowToStep", "position": i, "name": s["name"], "text": s["text"],
                        "url": f"{SITE_URL}/{slug}/install/#steps"} for i, s in enumerate(g["steps"], 1)]}
-    desc = (f"Mod {game['name']} with {fws[0]['short'] if fws else 'the core frameworks'}: {len(g['steps'])} steps, "
-            f"install order, {len(errors)} common errors with sourced fixes, and how to roll back.")
+    fw = fws[0]["short"] if fws else "the core frameworks"
+    pshort, _ = patch_names(data)
+    desc = seo_text(game, "guide_desc",
+                    f"Mod {game['name']} with {fw}: {len(g['steps'])} steps, install order, {len(errors)} common errors with sourced fixes, and how to roll back.",
+                    fw=fw, steps=len(g["steps"]), errors=len(errors))
+    howto["name"] = seo_text(game, "guide_h1", g["title"])
     ld = [howto, breadcrumb_ld([("Games", "/")] + hub_crumb(game) + [(game["name"], f"/{slug}/"), ("Install guide", f"/{slug}/install/")])]
     if errors:
         ld.insert(1, faq_ld(errors))
-    return page_shell(f"{g['title']} (beginner guide) — ModSafe", _clip(desc), f"/{slug}/install/", slug, body, extra_jsonld=ld)
+    return page_shell(seo_text(game, "guide_title", f"{g['title']} (beginner guide) — ModSafe", patch=pshort),
+                      _clip(desc), f"/{slug}/install/", slug, body, extra_jsonld=ld)
 
 
 def dependency_map_html(game: dict, data: dict, mods: dict) -> tuple[str, list[dict]]:
@@ -1407,7 +1436,7 @@ def build_mods_page(game: dict, data: dict, mods: dict) -> str:
     deps, faq = dependency_map_html(game, data, mods)
     body = f"""
 {game_crumbs(game, "Essential " + noun)}
-<section class="page-hero"><h1>Essential {esc(game['name'])} {noun}</h1>
+<section class="page-hero"><h1>{esc(seo_text(game, "mods_h1", f"Essential {game['name']} {noun}"))}</h1>
 <p class="lede">{esc(mods['intro'])}</p>
 <p class="muted">Hand-picked by ModSafe, listed in install order. We link only to the official download pages and never host files. Badges reflect our live framework status for {esc(data['game']['latest_patch']['label'])}. List verified {esc(mods['verified_at'])}.</p>
 <p class="cta-row">{f'<a class="btn" href="/{slug}/install/">📘 How to install {noun}</a> ' if mods_mod.load_guide(slug) else ''}<a class="btn ghost" href="{esc(mgr['url'])}" rel="noopener external">Recommended manager: {esc(mgr['name'])} ↗</a>
@@ -1426,8 +1455,13 @@ def build_mods_page(game: dict, data: dict, mods: dict) -> str:
                 "itemListElement": [{"@type": "ListItem", "position": i, "name": m["name"], "url": m["url"]}
                                     for i, m in enumerate(mods["mods"], 1)]}
     top = ", ".join(m["name"] for m in mods["mods"][:3])
-    desc = f"{len(mods['mods'])} essential {game['name']} {noun}, what each needs, and live {data['game']['latest_patch']['label']} status. Install order: {top}…"
-    return page_shell(f"Essential {game['name']} {noun} ({len(mods['mods'])}) & install order — ModSafe", _clip(desc),
+    pshort, pfull = patch_names(data)
+    n = len(mods["mods"])
+    desc = seo_text(game, "mods_desc",
+                    f"{n} essential {game['name']} {noun}, what each needs, and live {data['game']['latest_patch']['label']} status. Install order: {top}…",
+                    n=n, patch_full=pfull, top=top)
+    title = seo_text(game, "mods_title", f"Essential {game['name']} {noun} ({n}) & install order — ModSafe", patch=pshort, n=n)
+    return page_shell(title, _clip(desc),
                       f"/{slug}/mods/", slug, body,
                       extra_jsonld=[itemlist, faq_ld(faq), breadcrumb_ld([("Games", "/")] + hub_crumb(game) + [(game["name"], f"/{slug}/"), ("Essential mods", f"/{slug}/mods/")])])
 

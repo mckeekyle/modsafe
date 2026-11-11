@@ -27,6 +27,28 @@ GTA_FRAMEWORKS = [
 GTA_NOTE = ("Single-player only. Never use mods in GTA Online: Script Hook V closes the game when you go online, and "
             "modding Online risks a permanent ban.")
 
+
+def gta_seo(ed: str) -> dict:
+    """Search-phrased titles, meta descriptions and H1s for a GTA V edition's status, mods and install pages
+    (worded like post-patch searches: "is it safe to update gta v", "gta 5 mods not working after update").
+    build.seo_text() fills {patch} ("Title Update 1.73" or "build 1.0.1158.16"), {patch_full}, {verdict}, {n},
+    {top}, {fw}, {steps} and {errors}. Page URLs don't change."""
+    return {
+        "status_title": f"Is it safe to update GTA V {ed}? Mod status after {{patch}}",
+        "status_h1": f"Is it safe to update GTA V {ed}? Mod status after the latest patch",
+        "status_desc": f"GTA 5 {ed} {{patch_full}}: {{verdict}}. Does Script Hook V work after the latest GTA V update? "
+                       "Live mod status, checked daily.",
+        "mods_title": f"GTA V {ed} mods that work after {{patch}}: {{n}} essentials",
+        "mods_h1": f"GTA V {ed} mods: what works after the latest update",
+        "mods_desc": f"{{n}} essential GTA 5 {ed} mods, what each needs, and whether they work after {{patch_full}}. "
+                     "Install order: {top}…",
+        "guide_title": f"How to install GTA V {ed} mods after {{patch}}",
+        "guide_h1": f"How to install GTA V {ed} mods after the latest update",
+        "guide_desc": f"How to mod GTA 5 {ed} with {{fw}}: {{steps}} steps, install order, {{errors}} common errors with "
+                      "sourced fixes, and what to do when a GTA V update breaks your mods.",
+    }
+
+
 GAMES = [
     {
         "slug": "cyberpunk-2077",
@@ -211,6 +233,7 @@ GAMES = [
     },
     {
         "slug": "gta-v-legacy",
+        "seo": gta_seo("Legacy"),
         "genre": "Action",
         "name": "Grand Theft Auto V Legacy",
         "short": "GTA V Legacy",
@@ -232,6 +255,7 @@ GAMES = [
     },
     {
         "slug": "gta-v-enhanced",
+        "seo": gta_seo("Enhanced"),
         "genre": "Action",
         "name": "Grand Theft Auto V Enhanced",
         "short": "GTA V Enhanced",
