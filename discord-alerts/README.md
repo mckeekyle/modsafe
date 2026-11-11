@@ -16,23 +16,47 @@ Discord → your server → the channel's ⚙️ *Edit Channel* → *Integration
 Name it "ModSafe", then *Copy Webhook URL*. Treat this URL like a password: anyone who has it can post in
 that channel.
 
-**2. Run the script somewhere every 30 minutes.** Pick one:
+**2. Download the script:** [`modsafe_alerts.py`](https://raw.githubusercontent.com/mckeekyle/modsafe/main/discord-alerts/modsafe_alerts.py)
+(right-click → *Save link as*). It's one file and needs Python 3.9 or newer, with no extra packages.
+
+**3. Run it every 30 minutes.** Pick one:
 
 - **GitHub Actions (free, nothing running at home):** follow the steps at the top of
   [`github-actions-example.yml`](github-actions-example.yml).
-- **Any computer or server with Python 3.9+:** no packages needed.
+- **Linux or macOS:**
 
   ```bash
   export MODSAFE_DISCORD_WEBHOOK="https://discord.com/api/webhooks/..."
   python3 modsafe_alerts.py --test        # posts one sample message so you can see it works
-  python3 modsafe_alerts.py --loop 30     # keeps checking every 30 minutes
+  python3 modsafe_alerts.py --loop 30     # keeps checking every 30 minutes (leave it running)
   ```
 
-  Or run `python3 modsafe_alerts.py` from cron (Linux/macOS) or Task Scheduler (Windows) every 30 minutes:
-  `*/30 * * * * MODSAFE_DISCORD_WEBHOOK=... python3 /path/to/modsafe_alerts.py`
+  Or from cron instead of `--loop`:
+  `*/30 * * * * MODSAFE_DISCORD_WEBHOOK="https://discord.com/api/webhooks/..." python3 /path/to/modsafe_alerts.py`
+
+- **Windows (PowerShell):**
+
+  ```powershell
+  $env:MODSAFE_DISCORD_WEBHOOK = "https://discord.com/api/webhooks/..."
+  py modsafe_alerts.py --test
+  py modsafe_alerts.py --loop 30
+  ```
+
+  Or use Task Scheduler to run `py C:\path\to\modsafe_alerts.py --webhook "https://discord.com/api/webhooks/..."`
+  every 30 minutes.
 
 The first run only remembers the current verdicts; alerts start with the next change. To post every game's
-current verdict once instead, add `--announce-current` to the first run.
+current verdict once instead, add `--announce-current` to the first run. To preview without posting, add `--dry-run`.
+
+## What an alert looks like
+
+> **Skyrim Special Edition: 🔴 Breakage reported** (links to the game's ModSafe page)
+> Mod verdict changed from **Likely safe** to **Breakage reported**.
+> **Game patch** 1.7.99 (2026-08-20) · **Trend** ⬇️ Worse
+> **Breakage reported in** • SSE Engine Fixes (7.0.21-beta5)
+
+When a game is on *Just patched, wait*, *Breakage reported* or *Not ported yet*, the alert names the mods causing it.
+Several changes found at once arrive as one message.
 
 ## Only some games
 
@@ -61,6 +85,10 @@ If a post fails (for example, the webhook was deleted), nothing is marked as sen
 
 - ModSafe's data refreshes about every 30 minutes on patch days and every 6 hours otherwise, so checking more
   often than every 30 minutes gains nothing.
+- On GitHub Actions, GitHub pauses scheduled workflows in a repository with no activity for 60 days and emails
+  you first. Click *Enable workflow* on the Actions tab to start it again.
+- The old combined "Grand Theft Auto V" entry is skipped because its Legacy and Enhanced editions are followed
+  separately (`gta-v-legacy`, `gta-v-enhanced`).
 - Verdicts are inferred from public release data and are not guarantees. Check each mod's own page before
   updating.
 - Questions or problems: open an issue at https://github.com/mckeekyle/modsafe/issues

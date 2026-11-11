@@ -66,6 +66,10 @@ def snapshot(feed: dict, only: set[str] | None = None) -> dict[str, dict]:
         gid = g.get("id")
         if not gid or not g.get("verdict") or (only and gid not in only):
             continue
+        # Retired combined entries (e.g. "gta-v", replaced by its Legacy and Enhanced editions) mirror an edition's
+        # verdict, so following them would post the same news twice. Still followed if asked for by id.
+        if g.get("deprecated") and not (only and gid in only):
+            continue
         patch = g.get("current_patch") or {}
         out[gid] = {
             "name": g.get("name") or gid,
@@ -75,8 +79,22 @@ def snapshot(feed: dict, only: set[str] | None = None) -> dict[str, dict]:
             "patch": patch.get("label"),
             "patch_published_at": patch.get("published_at"),
             "page_url": g.get("page_url") or f"https://modsafe.app/{gid}/",
+            "updated_at": g.get("updated_at"),
+            "holding_back": holding_back(g),
         }
     return out
+
+
+def holding_back(game: dict, limit: int = 5) -> list[str]:
+    """Names of the mods that set a not-yet-safe verdict (the ones with the game's own verdict), e.g. the mod
+    with reported breakage. Empty when the verdict is safe-ish, since then there's nothing to point at."""
+    if (game.get("severity") or 0) >= 5:  # likely-safe and better
+        return []
+    names = []
+    for m in game.get("mods") or []:
+        if m.get("counts_toward_verdict") and m.get("verdict") == game.get("verdict"):
+            names.append(f"{m.get('name') or m.get('id')} ({m['release']})" if m.get("release") else (m.get("name") or m.get("id")))
+    return names[:limit] + ([f"+{len(names) - limit} more"] if len(names) > limit else [])
 
 
 # ---------- change detection ----------
@@ -114,6 +132,11 @@ def build_embed(change: dict, disclaimer: str | None = None) -> dict:
                    {"name": "Trend", "value": trend, "inline": True}],
         "footer": {"text": (disclaimer or "ModSafe verdicts are inferred from public release data, not guarantees.")[:2048]},
     }
+    if new.get("holding_back"):
+        name = {"broken": "Breakage reported in", "wait": "Waiting on", "not-ported": "Not ported yet"}.get(new["verdict"], "Mods to check")
+        embed["fields"].append({"name": name, "value": "\n".join(f"• {n}" for n in new["holding_back"])[:1024], "inline": False})
+    if new.get("updated_at"):
+        embed["timestamp"] = new["updated_at"]
     return embed
 
 
@@ -234,6 +257,11 @@ def send_test(args) -> int:
 
 
 def main(argv: list[str] | None = None) -> int:
+    for stream in (sys.stdout, sys.stderr):  # Windows consoles default to cp1252, which can't print the emoji
+        try:
+            stream.reconfigure(encoding="utf-8", errors="replace")
+        except (AttributeError, ValueError):
+            pass
     p = argparse.ArgumentParser(description="Post ModSafe verdict changes to a Discord channel webhook.")
     p.add_argument("--webhook", default=os.environ.get("MODSAFE_DISCORD_WEBHOOK"))
     p.add_argument("--games", default=os.environ.get("MODSAFE_GAMES"))

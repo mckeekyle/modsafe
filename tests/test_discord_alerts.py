@@ -57,6 +57,28 @@ class TestChanges(unittest.TestCase):
         self.assertEqual(msgs[0]["allowed_mentions"], {"parse": []})
         self.assertIn("Worse", json.dumps(e, ensure_ascii=False))
 
+    def test_retired_combined_entry_skipped_unless_asked(self):
+        hub = {**game("gta-v", "wait", "W", 2), "deprecated": True}
+        f = feed(hub, game("gta-v-enhanced", "wait", "W", 2))
+        self.assertEqual(list(ma.snapshot(f)), ["gta-v-enhanced"])
+        self.assertEqual(list(ma.snapshot(f, {"gta-v"})), ["gta-v"])
+
+    def test_alert_names_the_mods_behind_a_bad_verdict(self):
+        g = game("skyrim-se", "broken", "Breakage reported", 0)
+        g["updated_at"] = "2026-11-11T00:50:04Z"
+        g["mods"] = [{"name": "SKSE", "verdict": "safe", "counts_toward_verdict": True, "release": "v2.3.1"},
+                     {"name": "Engine Fixes", "verdict": "broken", "counts_toward_verdict": True, "release": "7.0.21"},
+                     {"name": "Address Library", "verdict": "broken", "counts_toward_verdict": False}]
+        new = ma.snapshot(feed(g))["skyrim-se"]
+        e = ma.build_embed({"id": "skyrim-se", "old": {"verdict": "safe", "verdict_label": "Safe", "severity": 7}, "new": new})
+        field = [f for f in e["fields"] if f["name"] == "Breakage reported in"]
+        self.assertEqual(field[0]["value"], "• Engine Fixes (7.0.21)")
+        self.assertEqual(e["timestamp"], "2026-11-11T00:50:04Z")
+        g2 = game("repo", "safe", "Safe", 7)
+        g2["mods"] = [{"name": "X", "verdict": "safe", "counts_toward_verdict": True}]
+        e2 = ma.build_embed({"id": "repo", "old": {"verdict": "wait"}, "new": ma.snapshot(feed(g2))["repo"]})
+        self.assertEqual([f["name"] for f in e2["fields"]], ["Game patch", "Trend"])
+
     def test_messages_split_at_ten_embeds(self):
         ch = [{"id": str(i), "old": {"verdict": "wait"}, "new": ma.snapshot(feed(game(f"g{i}", "safe", "Safe", 7)))[f"g{i}"]}
               for i in range(23)]

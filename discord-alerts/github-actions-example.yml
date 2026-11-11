@@ -5,13 +5,20 @@
 # 3. Settings -> Secrets and variables -> Actions -> New repository secret:
 #      Name: MODSAFE_DISCORD_WEBHOOK   Value: your channel's webhook URL
 #    Optional: add a repository *variable* MODSAFE_GAMES, e.g. "skyrim-se,fallout-4".
-# 4. Actions tab -> "ModSafe alerts" -> Run workflow, once, to record the current verdicts.
+# 4. Actions tab -> "ModSafe alerts" -> Run workflow, with "Send a test message" ticked: a sample appears
+#    in your channel.
+# 5. Run workflow once more, unticked, to record the current verdicts. Alerts start with the next change.
 name: ModSafe alerts
 
 on:
   schedule:
     - cron: "7,37 * * * *"   # every 30 minutes
   workflow_dispatch:
+    inputs:
+      test:
+        description: "Send a test message"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -37,7 +44,12 @@ jobs:
           MODSAFE_DISCORD_WEBHOOK: ${{ secrets.MODSAFE_DISCORD_WEBHOOK }}
           MODSAFE_GAMES: ${{ vars.MODSAFE_GAMES }}
           MODSAFE_STATE_FILE: modsafe_alerts_state.json
-        run: python3 modsafe_alerts.py
+        run: |
+          if [ "${{ inputs.test }}" = "true" ]; then
+            python3 modsafe_alerts.py --test
+          else
+            python3 modsafe_alerts.py
+          fi
       - name: Save verdicts
         if: always()
         uses: actions/cache/save@v4
