@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T12:57:32Z",
+  "generated_at": "2026-11-11T18:50:42Z",
   "game": {
     "slug": "valheim",
     "name": "Valheim",
@@ -50,7 +50,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch 1.0.21; compatibility is unverified \u2014 check the project page. No open breakage reports 13 days after the patch.",
+      "reason": "Latest release predates patch 1.0.21; compatibility is unverified \u2014 check the project page. No open breakage reports 14 days after the patch.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v2.30.2",

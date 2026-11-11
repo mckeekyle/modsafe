@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T12:57:44Z",
+  "generated_at": "2026-11-11T18:50:57Z",
   "game": {
     "slug": "minecraft",
     "name": "Minecraft: Java Edition",
@@ -41,8 +41,8 @@
       "release_url": "https://modrinth.com/mod/fabric-api",
       "status": "Safe",
       "reason": "Fabric API publishes a stable build for Minecraft 26.3.",
-      "release_tag": "0.166.0+26.3",
-      "release_published_at": "2026-11-09T15:27:33.590886Z",
+      "release_tag": "0.166.2+26.3",
+      "release_published_at": "2026-11-11T13:38:52.250683Z",
       "base_status": "Updated for latest patch"
     },
     {
@@ -144,8 +144,8 @@
           "name": "Fabric API",
           "status": "Safe",
           "reason": "Fabric API publishes a stable build for Minecraft 26.3.",
-          "release_tag": "0.166.0+26.3",
-          "release_published_at": "2026-11-09T15:27:33.590886Z"
+          "release_tag": "0.166.2+26.3",
+          "release_published_at": "2026-11-11T13:38:52.250683Z"
         },
         {
           "id": "forge",
