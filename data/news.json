@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T07:03:09Z",
+  "generated_at": "2026-11-11T12:58:53Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,127 @@
     }
   ],
   "items": [
+    {
+      "title": "As of this week, PlayStation 5 has surpassed 100 million consoles sold",
+      "url": "https://www.eurogamer.net/playstation-5-100-million-sales-november-2026",
+      "source": "Eurogamer",
+      "published_at": "2026-11-11T12:49:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The Outer Worlds 2's first story expansion could well be the opening to the series' last hurrah and will have you hunting for a cure to \"explosive cell death\" in December",
+      "url": "https://www.rockpapershotgun.com/the-outer-worlds-2s-first-story-expansion-could-well-be-the-opening-to-the-series-last-hurrah-and-will-have-you-hunting-for-a-cure-to-explosive-cell-death-in-december",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-11T12:29:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "World of Warcraft: Forever secret hunters have found the MMO's first hidden treasure",
+      "url": "https://www.eurogamer.net/world-of-warcraft-forever-secret-dawn-walker-sword",
+      "source": "Eurogamer",
+      "published_at": "2026-11-11T12:15:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Microsoft\u2019s own upscaler and alternative to FSR just landed on Xbox Ally X handhelds - actually uses an NPU for something useful",
+      "url": "https://www.pcgamer.com/hardware/handheld-gaming-pcs/microsofts-own-upscaler-and-alternative-to-fsr-just-landed-on-xbox-ally-x-handhelds-actually-uses-an-npu-for-something-useful/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-11T12:11:36Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "WoW: Forever to add extra gold to high-level quests, since it turns out you don't get extra cash at 60",
+      "url": "https://www.pcgamer.com/games/world-of-warcraft/wow-forever-to-add-extra-gold-to-high-level-quests-since-it-turns-out-you-dont-get-extra-cash-at-60/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-11T11:41:45Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "'We're kind of friendslop': CEO of Jackbox Games sees the link between party games and this new trend but doesn't think it's necessarily 'a negative moniker'",
+      "url": "https://www.pcgamer.com/games/were-kind-of-friendslop-ceo-of-jackbox-games-sees-the-link-between-party-games-and-this-new-trend-but-doesnt-think-its-necessarily-a-negative-moniker/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-11T11:22:49Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Monster Hunter Wilds' upcoming Ascendance expansion may be getting a beta, some curious Steam backend updates suggest",
+      "url": "https://www.eurogamer.net/monster-hunter-wilds-ascendance-beta-steam-backend",
+      "source": "Eurogamer",
+      "published_at": "2026-11-11T11:16:50Z",
+      "games": [
+        "monster-hunter-wilds"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "World of Warcraft: Forever's magical opening week reminds us all about the power of the MMO, and the threat it poses to your free time",
+      "url": "https://www.eurogamer.net/world-of-warcraft-forever-now-playing",
+      "source": "Eurogamer",
+      "published_at": "2026-11-11T11:08:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "As The Elder Scrolls 5 turns 15, massive mod Beyond Skyrim: Bruma gets a 2.0 update delivering a new quest, extra dungeons and an \"expanded worldspace\"",
+      "url": "https://www.rockpapershotgun.com/as-the-elder-scrolls-5-turns-15-massive-mod-beyond-skyrim-bruma-gets-a-20-update-delivering-a-new-quest-extra-dungeons-and-an-expanded-worldspace",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-11T11:00:00Z",
+      "games": [
+        "skyrim-se"
+      ],
+      "kind": "news",
+      "highlight": true
+    },
+    {
+      "title": "Casualties: Unknown is a total pain simulator that makes other survival games seem like massive cowards",
+      "url": "https://www.rockpapershotgun.com/casualties-unknown-is-a-total-pain-simulator-that-makes-other-survival-games-seem-like-massive-cowards",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-11T10:28:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The Legend of Zelda: Ocarina of Time remake sells in huge numbers, becoming the fastest-selling Switch 2 game",
+      "url": "https://www.eurogamer.net/zelda-ocarina-of-time-switch-2-sales-nintendo",
+      "source": "Eurogamer",
+      "published_at": "2026-11-11T09:56:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Keeping hold of Company of Heroes was essential for Relic to leave Sega, Relic CEO says \u2013 \"Without it we would have been a dead studio\"",
+      "url": "https://www.rockpapershotgun.com/keeping-hold-of-company-of-heroes-was-essential-for-relic-to-leave-sega-relic-ceo-says-without-it-we-would-have-been-a-dead-studio",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-11T09:30:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "PlayStation's embattled shooter Fairgames has finally been cancelled, a new report says, as live service push withers away",
+      "url": "https://www.eurogamer.net/fairgames-playstation-heist-shooter-live-service-cancelled-haven",
+      "source": "Eurogamer",
+      "published_at": "2026-11-11T09:29:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Steam's age verification in Australia now takes your account's age into consideration",
       "url": "https://www.pcgamer.com/software/platforms/steams-age-verification-in-australia-now-takes-your-accounts-age-into-consideration/",
@@ -451,128 +572,6 @@
       "url": "https://www.rockpapershotgun.com/skydance-games-lay-off-an-undisclosed-number-of-staff-in-the-wake-of-paramount-warner-bros-merger-in-latest-case-of-consolidation-killing-livelihoods",
       "source": "Rock Paper Shotgun",
       "published_at": "2026-11-10T11:54:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Following site-wide discussion on AI use, Nexus Mods add a \"daily limit\" to the spots in the new mods tab one person can hog via multiple rapid-fire uploads",
-      "url": "https://www.rockpapershotgun.com/following-site-wide-discussion-on-ai-use-nexus-mods-add-a-daily-limit-to-the-spots-in-the-new-mods-tab-one-person-can-hog-via-multiple-rapid-fire-uploads",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-10T11:17:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Phasmophobia raises over $200,000 for charity in the annual Ghost Hunts for Hearts collaboration with the American Heart Association",
-      "url": "https://www.pcgamer.com/games/horror/phasmophobia-raises-over-usd200-000-for-charity-in-the-annual-ghost-hunts-for-hearts-collaboration-with-the-american-heart-association/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-10T11:17:09Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Patch 1.4.8 - Testing Branch now live",
-      "url": "https://store.steampowered.com/news/app/3450310/view/1848664643358975",
-      "source": "Steam \u00b7 EU5",
-      "published_at": "2026-11-10T11:05:33Z",
-      "games": [
-        "europa-universalis-v"
-      ],
-      "kind": "patch",
-      "highlight": true
-    },
-    {
-      "title": "Warhammer Survivors review: More than just Vampire Survivors with Space Marines",
-      "url": "https://www.pcgamer.com/games/roguelike/warhammer-survivors-review/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-10T11:02:26Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "World of Warcraft: Forever might live officially on PC, but people are playing it on phones and handhelds already",
-      "url": "https://www.eurogamer.net/world-of-warcraft-forever-ipad-handheld",
-      "source": "Eurogamer",
-      "published_at": "2026-11-10T10:55:40Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "I have converted GTA 5 to its final form: A GTA 6 countdown app",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/i-have-converted-gta-5-to-its-final-form-a-gta-6-countdown-app/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-10T10:52:35Z",
-      "games": [
-        "gta-v-legacy",
-        "gta-v-enhanced"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Under pressure, Big Walk studio reveals it used generative AI \"sparingly\" while making its hit 2026 game",
-      "url": "https://www.eurogamer.net/house-house-big-walk-generative-ai-development",
-      "source": "Eurogamer",
-      "published_at": "2026-11-10T10:51:40Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Big Walk developer House House reveal genAI use in final stretch of development, only revealing it now as \"it has become a matter of public interest\"",
-      "url": "https://www.rockpapershotgun.com/big-walk-developer-house-house-reveal-genai-use-in-final-stretch-of-development-only-revealing-it-now-as-it-has-become-a-matter-of-public-interest",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-10T10:19:30Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Switch 2 US sales soar again thanks to The Legend of Zelda effect, as it enjoys its best week of the year so far",
-      "url": "https://www.eurogamer.net/the-legend-of-zelda-ocarina-of-time-switch-2-best-week-sales",
-      "source": "Eurogamer",
-      "published_at": "2026-11-10T09:25:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Switch 2 and Switch consoles updated to version 23.5.0 as Nintendo quietly re-introduces eShop gifting",
-      "url": "https://www.eurogamer.net/switch-2-and-switch-consoles-updated-to-version-2350-as-nintendo-quietly-re-introduces-eshop-gifting",
-      "source": "Eurogamer",
-      "published_at": "2026-11-10T09:22:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Don't be fooled by Horses of Hoofprint Bay's hand-drawn art, this stable management game has all the drama of a Jilly Cooper novel",
-      "url": "https://www.rockpapershotgun.com/dont-be-fooled-by-horses-of-hoofprint-bays-hand-drawn-art-this-stable-management-game-has-all-the-drama-of-a-jilly-cooper-novel",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-10T09:02:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "'The experiences on console and PC tend to be roughly the same,' says Take-Two CEO in response to question about GTA roleplaying",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/the-experiences-on-console-and-pc-tend-to-be-roughly-the-same-says-take-two-ceo-in-response-to-question-about-gta-roleplaying/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-10T00:24:43Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "As investors ask about GTA 6 and AI, Take-Two CEO once again puts faith in dev creativity, states making hit games \"remains the purview of human beings\"",
-      "url": "https://www.eurogamer.net/gta-6-ai-strauss-zelnick-earnings-call-purview",
-      "source": "Eurogamer",
-      "published_at": "2026-11-09T22:47:40Z",
       "games": [],
       "kind": "news",
       "highlight": false
