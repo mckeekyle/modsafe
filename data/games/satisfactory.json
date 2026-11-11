@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T12:58:20Z",
+  "generated_at": "2026-11-11T14:37:05Z",
   "game": {
     "slug": "satisfactory",
     "name": "Satisfactory",
@@ -14,7 +14,7 @@
       "steam_build": "26281294"
     }
   },
-  "verdict": "Just patched, wait",
+  "verdict": "Likely safe",
   "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
   "frameworks": [
     {
@@ -26,9 +26,9 @@
       "repo": null,
       "tracked": true,
       "sensitive": true,
-      "status": "Just patched, wait",
+      "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch Update 2026-11-04; compatibility is unverified \u2014 check the project page. ficsit.app lists SML as Works on the stable branch, but that flag is set by hand and may not reflect this patch yet. SML requires game build CL 491125 or newer (a minimum, not a match: Steam doesn't publish the game's CL, so ModSafe can't compare builds directly).",
+      "reason": "Latest release predates patch Update 2026-11-04; compatibility is unverified \u2014 check the project page. No open breakage reports 7 days after the patch. ficsit.app lists SML as Works on the stable branch. SML requires game build CL 491125 or newer (a minimum, not a match: Steam doesn't publish the game's CL, so ModSafe can't compare builds directly).",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v3.12.0",
@@ -629,6 +629,21 @@
         {
           "short": "SML",
           "status": "Just patched, wait",
+          "release_tag": "v3.12.0"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-11T14:37:05Z",
+      "patch": "Update 2026-11-04",
+      "patch_key": "update-2026-11-04",
+      "patch_published_at": "2026-11-04T14:03:55Z",
+      "patch_url": "https://store.steampowered.com/news/app/526870/view/1848557880479256",
+      "verdict": "Likely safe",
+      "frameworks": [
+        {
+          "short": "SML",
+          "status": "Likely safe",
           "release_tag": "v3.12.0"
         }
       ]
