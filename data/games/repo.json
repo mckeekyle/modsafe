@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T07:04:54Z",
+  "generated_at": "2026-11-12T09:15:07Z",
   "game": {
     "slug": "repo",
     "name": "R.E.P.O.",
@@ -14,7 +14,7 @@
       "steam_build": "26407089"
     }
   },
-  "verdict": "Just patched, wait",
+  "verdict": "Likely safe",
   "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
   "frameworks": [
     {
@@ -48,9 +48,9 @@
       "repo": "ZehsTeam/REPOLib",
       "tracked": true,
       "sensitive": true,
-      "status": "Just patched, wait",
+      "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch v0.5.1; compatibility is unverified \u2014 check the project page.",
+      "reason": "Latest release predates patch v0.5.1; compatibility is unverified \u2014 check the project page. No open breakage reports 7 days after the patch.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v4.3.0",
@@ -70,9 +70,9 @@
       "repo": "YMC_MHZ/MoreHead",
       "tracked": true,
       "sensitive": true,
-      "status": "Just patched, wait",
+      "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch v0.5.1; compatibility is unverified \u2014 check the project page.",
+      "reason": "Latest release predates patch v0.5.1; compatibility is unverified \u2014 check the project page. No open breakage reports 7 days after the patch.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "1.4.6",
@@ -92,9 +92,9 @@
       "repo": "BULLETBOT/MoreUpgrades",
       "tracked": true,
       "sensitive": true,
-      "status": "Just patched, wait",
+      "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch v0.5.1; compatibility is unverified \u2014 check the project page.",
+      "reason": "Latest release predates patch v0.5.1; compatibility is unverified \u2014 check the project page. No open breakage reports 7 days after the patch.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "1.7.3",
@@ -989,6 +989,31 @@
         {
           "short": "MoreUpgrades",
           "status": "Just patched, wait",
+          "release_tag": "1.7.3"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-12T09:15:07Z",
+      "patch": "v0.5.1",
+      "patch_key": "0.5.1",
+      "patch_published_at": "2026-11-05T09:07:09Z",
+      "patch_url": "https://store.steampowered.com/news/app/3241660/view/1848664643340421",
+      "verdict": "Likely safe",
+      "frameworks": [
+        {
+          "short": "REPOLib",
+          "status": "Likely safe",
+          "release_tag": "v4.3.0"
+        },
+        {
+          "short": "MoreHead",
+          "status": "Likely safe",
+          "release_tag": "1.4.6"
+        },
+        {
+          "short": "MoreUpgrades",
+          "status": "Likely safe",
           "release_tag": "1.7.3"
         }
       ]
