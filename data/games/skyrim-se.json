@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T18:49:47Z",
+  "generated_at": "2026-11-12T00:58:45Z",
   "game": {
     "slug": "skyrim-se",
     "name": "Skyrim Special Edition",
@@ -940,6 +940,12 @@
   ],
   "news": [
     {
+      "title": "Celebrate 15 Years of Skyrim with the Anniversary Creation Bundle",
+      "url": "https://store.steampowered.com/news/app/489830/view/1849192144180604",
+      "published_at": "2026-11-11T22:16:14Z",
+      "is_patch": false
+    },
+    {
       "title": "The Elder Scrolls VI: Official Name Reveal",
       "url": "https://store.steampowered.com/news/app/489830/view/1847920302252394",
       "published_at": "2026-11-03T15:14:16Z",
@@ -991,12 +997,6 @@
       "title": "The Elder Scrolls V: Skyrim Anniversary Edition - Update 1.6.342",
       "url": "https://store.steampowered.com/news/app/489830/view/4224936849665461638",
       "published_at": "2021-12-13T15:36:09Z",
-      "is_patch": true
-    },
-    {
-      "title": "The Elder Scrolls V: Skyrim Anniversary Edition - Update 1.6.323",
-      "url": "https://store.steampowered.com/news/app/489830/view/4227186657155872732",
-      "published_at": "2021-11-22T15:45:53Z",
       "is_patch": true
     }
   ],

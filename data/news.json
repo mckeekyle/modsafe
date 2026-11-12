@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T18:52:07Z",
+  "generated_at": "2026-11-12T01:00:58Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,118 @@
     }
   ],
   "items": [
+    {
+      "title": "CD Projekt used AI to modify the voice of Geralt's Polish actor after a stroke left it significantly changed: 'This was a special case'",
+      "url": "https://www.pcgamer.com/games/the-witcher/cd-projekt-used-ai-to-modify-the-voice-of-geralts-polish-actor-after-a-stroke-left-it-significantly-changed-this-was-a-special-case/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-12T00:02:47Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "After cracking down on 'cheat' mods in Helldivers 2 and taking another Steam review beating, Arrowhead plans hotfix that should allow harmless cosmetics",
+      "url": "https://www.pcgamer.com/games/third-person-shooter/after-cracking-down-on-cheat-mods-in-helldivers-2-and-taking-another-steam-review-beating-arrowhead-plans-hotfix-that-should-allow-harmless-cosmetics/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-11T23:29:59Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Nvidia CEO Jensen Huang allegedly had a second affair with another Nvidia exec",
+      "url": "https://www.pcgamer.com/software/ai/nvidia-ceo-jensen-huang-allegedly-had-a-second-affair-with-another-nvidia-exec/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-11T23:25:39Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Giana Sisters developer Black Forest Games buys itself out of Embracer: 'Some of the best games of the last decade came from teams of fifty, not five hundred'",
+      "url": "https://www.pcgamer.com/gaming-industry/giana-sisters-developer-black-forest-games-buys-itself-out-of-embracer-some-of-the-best-games-of-the-last-decade-came-from-teams-of-fifty-not-five-hundred/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-11T22:57:44Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "This solo dev is building 'the most violent cozy farming game ever made' and lumberjacking has never looked cooler",
+      "url": "https://www.pcgamer.com/games/rpg/this-solo-dev-is-building-the-most-violent-cozy-farming-game-ever-made-and-lumberjacking-has-never-looked-cooler/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-11T22:38:37Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Celebrate 15 Years of Skyrim with the Anniversary Creation Bundle",
+      "url": "https://store.steampowered.com/news/app/489830/view/1849192144180604",
+      "source": "Steam \u00b7 Skyrim SE/AE",
+      "published_at": "2026-11-11T22:16:14Z",
+      "games": [
+        "skyrim-se"
+      ],
+      "kind": "announcement",
+      "highlight": false
+    },
+    {
+      "title": "Crimson Desert wins 'PC Game of the Year' at the 2026 Golden Joystick Awards",
+      "url": "https://www.pcgamer.com/games/crimson-desert-wins-pc-game-of-the-year-at-the-2026-golden-joystick-awards/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-11T21:31:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Destroy All Humans remake developer goes independent, splits from THQ Nordic and parent company Embracer Group",
+      "url": "https://www.eurogamer.net/destroy-all-humans-independent-thq-embracer",
+      "source": "Eurogamer",
+      "published_at": "2026-11-11T20:37:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Bethesda shoots down Elder Scrolls 6: Sentinel announcement rumor on Skyrim's 15th anniversary",
+      "url": "https://www.pcgamer.com/games/the-elder-scrolls/bethesda-shoots-down-elder-scrolls-6-sentinel-announcement-rumor-on-skyrims-15th-anniversary/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-11T20:13:02Z",
+      "games": [
+        "skyrim-se"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Former id Software developers form their own employee-owned shooter studio in the wake of Microsoft's mass layoffs",
+      "url": "https://www.pcgamer.com/gaming-industry/former-id-software-developers-form-their-own-employee-owned-shooter-studio-in-the-wake-of-microsofts-mass-layoffs/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-11T20:09:58Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Don't expect more information on The Elder Scrolls 6: Sentinel \"for some time,\" Bethesda says",
+      "url": "https://www.eurogamer.net/dont-expect-elder-scrolls-6-sentinel-for-some-time-bethesda",
+      "source": "Eurogamer",
+      "published_at": "2026-11-11T19:36:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Exterminauts looks like another Helldivers 2, but it's really the Deep Rock Galactic sickos who should take notice",
+      "url": "https://www.pcgamer.com/games/third-person-shooter/exterminauts-looks-like-another-helldivers-2-but-its-really-the-deep-rock-galactic-sickos-who-should-take-notice/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-11T19:09:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "GTA 6 might be censored in Japan, if the game's smaller install size and lack of \"strong sexual content\" warning is anything to go by",
       "url": "https://www.eurogamer.net/gta-6-censored-japan-smaller-install-size",
@@ -460,117 +572,6 @@
       "url": "https://www.rockpapershotgun.com/marathon-is-becoming-a-whole-new-game-next-month-with-a-roguelite-pve-mode-a-beta-for-a-very-halo-esque-team-deathmatch-mode-a-vibey-social-space-and-more",
       "source": "Rock Paper Shotgun",
       "published_at": "2026-11-10T18:30:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "I installed a GTA 5 mod that makes it rain human beings, and no I don't know why either",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/i-installed-a-gta-5-mod-that-makes-it-rain-human-beings-and-no-i-dont-know-why-either/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-10T18:00:00Z",
-      "games": [
-        "gta-v-legacy",
-        "gta-v-enhanced"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Nvidia shareholders have filed a lawsuit against the tech company over claims that they were misled regarding CEO Jensen Huang's affair",
-      "url": "https://www.rockpapershotgun.com/nvidia-shareholders-have-filed-a-lawsuit-against-the-tech-company-over-claims-that-they-were-misled-regarding-ceo-jensen-huangs-affair",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-10T18:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Grand Theft Auto 6 is 'the most pre-ordered' game of all time on both Xbox and PlayStation",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/grand-theft-auto-6-is-the-most-pre-ordered-game-of-all-time-on-both-xbox-and-playstation/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-10T17:34:18Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Company of Heroes 3 developer admits \"it was a lot\" to make the 3.0 overhaul patch alongside regular updates, singleplayer DLC, and a whole spinoff game",
-      "url": "https://www.rockpapershotgun.com/company-of-heroes-3-developer-admits-it-was-a-lot-to-make-the-30-overhaul-patch-alongside-regular-updates-singleplayer-dlc-and-a-whole-spinoff-game",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-10T17:30:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Note to self: If playing Call of Duty in an airport, don't say words like 'bomb' lest you want to evacuate an entire plane",
-      "url": "https://www.pcgamer.com/games/call-of-duty/note-to-self-if-playing-call-of-duty-in-an-airport-dont-say-words-like-bomb-lest-you-want-to-evacuate-an-entire-plane/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-10T17:15:33Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "MS has messily patched a Microsoft Paint security vulnerability, but the update still isn\u2019t showing up for some",
-      "url": "https://www.pcgamer.com/software/windows/ms-has-messily-patched-a-microsoft-paint-security-vulnerability-but-the-update-still-isnt-showing-up-for-some/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-10T17:14:03Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Here's our second wave of PS Plus games for November 2026 - and Sony's scrapping its barely used PC app",
-      "url": "https://www.eurogamer.net/ps-plus-games-november-2026-pc-app",
-      "source": "Eurogamer",
-      "published_at": "2026-11-10T17:10:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Acer Predator Atlas 8 (G3 Extreme) review",
-      "url": "https://www.pcgamer.com/hardware/handheld-gaming-pcs/acer-predator-atlas-8-g3-extreme-review/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-10T17:01:48Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Educational game dev program cancelled because students were submitting games made entirely with AI",
-      "url": "https://www.pcgamer.com/software/ai/educational-game-dev-program-cancelled-because-students-were-submitting-games-made-entirely-with-ai/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-10T16:59:19Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Bandai Namco is liquidating Unknown 9: Awakening studio Reflector Entertainment, following multiple previous layoffs since the game's launch",
-      "url": "https://www.rockpapershotgun.com/bandai-namco-is-liquidating-unknown-9-awakening-studio-reflector-entertainment-following-multiple-previous-layoffs-since-the-games-launch",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-10T16:58:10Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "\u2018AMDLSS5\u2019 gets Nvidia\u2019s neural rendering running on AMD graphics cards and claims 64% better performance than other mods",
-      "url": "https://www.pcgamer.com/hardware/graphics-cards/amdlss5-gets-nvidias-neural-rendering-running-on-amd-graphics-cards-and-claims-64-percent-better-performance-than-other-mods/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-10T16:53:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Grand Theft Auto 6 becomes the most pre-ordered game in PlayStation Store history",
-      "url": "https://www.eurogamer.net/gta-6-most-preordered-game-playstation-store-history",
-      "source": "Eurogamer",
-      "published_at": "2026-11-10T16:31:30Z",
       "games": [],
       "kind": "news",
       "highlight": false
