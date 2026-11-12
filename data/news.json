@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T07:06:32Z",
+  "generated_at": "2026-11-12T13:00:35Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,107 @@
     }
   ],
   "items": [
+    {
+      "title": "Will a Grand Theft Auto game ever be set outside of America? Rockstar offers a small glimmer of hope",
+      "url": "https://www.eurogamer.net/grand-theft-auto-gta-non-american-setting-rockstar",
+      "source": "Eurogamer",
+      "published_at": "2026-11-12T12:39:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Nvidia board reportedly prepare to give CEO Jensen Huang the boot, as second alleged affair thrusts him closer to seriously lusty Crusader Kings playthrough territory",
+      "url": "https://www.rockpapershotgun.com/nvidia-board-reportedly-prepare-to-give-ceo-jensen-huang-the-boot-as-second-alleged-affair-thrusts-him-closer-to-seriously-lusty-crusader-kings-playthrough-territory",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-12T12:38:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Humble Bundle's new redesign inexplicably removes 2-factor authentication, dramatically weakening account security",
+      "url": "https://www.pcgamer.com/software/platforms/humble-bundles-new-redesign-inexplicably-removes-2-factor-authentication-dramatically-weakening-account-security/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-12T12:29:45Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "If Jensen Huang goes, who could replace him? Here\u2019s who the board might pick if the Nvidia CEO is ousted in the wake of affair scandals",
+      "url": "https://www.pcgamer.com/hardware/if-jensen-huang-goes-who-could-replace-him-heres-who-the-board-might-pick-if-the-nvidia-ceo-is-ousted-in-the-wake-of-affair-scandals/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-12T12:18:35Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Amid soaring PC hardware prices, gaming monitors are getting cheaper and cheaper. Here's why, and what to buy",
+      "url": "https://www.rockpapershotgun.com/amid-soaring-pc-hardware-prices-gaming-monitors-are-getting-cheaper-and-cheaper-heres-why-and-what-to-buy",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-12T12:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Nvidia stock price plunges amid second Jensen Huang affair allegation \u2014 the AI company could be set to lose hundreds of billions in value",
+      "url": "https://www.pcgamer.com/hardware/nvidia-stock-price-plunges-amid-second-jensen-huang-affair-allegation-the-ai-company-could-be-set-to-lose-hundreds-of-billions-in-value/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-12T11:46:58Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Nvidia board considering ousting CEO Jensen Huang, report claims, as news of a second affair comes to light",
+      "url": "https://www.eurogamer.net/nvidia-ceo-jensen-huang-affair-share-price",
+      "source": "Eurogamer",
+      "published_at": "2026-11-12T11:37:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Amy Hennig's Marvel 1943: Rise of Hydra hasn't been cancelled, Skydance reportedly says, as rumours swirl to the contrary",
+      "url": "https://www.eurogamer.net/marvel-1943-rise-of-hydra-not-cancelled-skydance-says",
+      "source": "Eurogamer",
+      "published_at": "2026-11-12T11:13:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "'This would be an Apple firing Steve Jobs level of idiocy' says Tim Sweeney at the idea of ousting Jensen Huang - while Elon Musk says 'it would be an honor' to hire the Nvidia chief",
+      "url": "https://www.pcgamer.com/hardware/this-would-be-an-apple-firing-steve-jobs-level-of-idiocy-says-tim-sweeney-at-the-idea-of-ousting-jensen-huang-while-elon-musk-says-it-would-be-an-honor-to-hire-the-nvidia-chief/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-12T10:47:58Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "\"One of those ways where you can use AI ethically\": CDPR have modified Geralt's Polish voice in The Witcher 3: Songs of the Past with genAI, due to actor's stroke",
+      "url": "https://www.rockpapershotgun.com/one-of-those-ways-where-you-can-use-ai-ethically-cdpr-have-modified-geralts-polish-voice-in-the-witcher-3-songs-of-the-past-with-genai-due-to-actors-stroke",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-12T10:40:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Tinto Talks 131 - Across the Pillars retrospective",
+      "url": "https://store.steampowered.com/news/app/3450310/view/1849192144182383",
+      "source": "Steam \u00b7 EU5",
+      "published_at": "2026-11-12T10:27:40Z",
+      "games": [
+        "europa-universalis-v"
+      ],
+      "kind": "announcement",
+      "highlight": false
+    },
     {
       "title": "CD Projekt used AI to modify the voice of Geralt's Polish actor after a stroke left it significantly changed: 'This was a special case'",
       "url": "https://www.pcgamer.com/games/the-witcher/cd-projekt-used-ai-to-modify-the-voice-of-geralts-polish-actor-after-a-stroke-left-it-significantly-changed-this-was-a-special-case/",
@@ -471,107 +572,6 @@
       "url": "https://www.eurogamer.net/fairgames-playstation-heist-shooter-live-service-cancelled-haven",
       "source": "Eurogamer",
       "published_at": "2026-11-11T09:29:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Steam's age verification in Australia now takes your account's age into consideration",
-      "url": "https://www.pcgamer.com/software/platforms/steams-age-verification-in-australia-now-takes-your-accounts-age-into-consideration/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-11T01:34:31Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "One Elder Scrolls fan is reviving and upgrading (with AI) a lost spin-off for the Nokia N-Gage and porting it to PC",
-      "url": "https://www.pcgamer.com/games/the-elder-scrolls/one-elder-scrolls-fan-is-reviving-and-upgrading-a-lost-spin-off-for-the-nokia-n-gage-and-porting-it-to-pc/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-11T00:00:19Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Sony cancels another live service game ahead of release, but at least there won't be any layoffs this time",
-      "url": "https://www.pcgamer.com/gaming-industry/sony-cancels-another-live-service-game-ahead-of-release-but-at-least-there-wont-be-any-layoffs-this-time/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-10T23:15:38Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Sick BMX flips, colourful characters, a whole lot of mail and a charming raccoon dog await you in Tanuki: Pon's Summer, which you can pick up now",
-      "url": "https://www.rockpapershotgun.com/sick-bmx-flips-colourful-characters-a-whole-lot-of-mail-and-a-charming-raccoon-dog-await-you-in-tanuki-pons-summer-which-you-can-pick-up-now",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-10T22:49:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Capcom quietly updates the Monster Hunter Wilds beta listing on Steam, indicating a possible expansion playtest",
-      "url": "https://www.pcgamer.com/games/action/capcom-quietly-updates-the-monster-hunter-wilds-beta-listing-on-steam-indicating-a-possible-expansion-playtest/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-10T22:22:30Z",
-      "games": [
-        "monster-hunter-wilds"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Sony have cancelled Fairgame$, once again reminding us that chasing live service big bucks basically never works",
-      "url": "https://www.rockpapershotgun.com/sony-have-cancelled-fairgame-once-again-reminding-us-that-chasing-live-service-big-bucks-basically-never-works",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-10T21:28:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Bungie drops gameplay trailer for Marathon's 'co-op PvE roguelite' mode and swanky new social space",
-      "url": "https://www.pcgamer.com/games/fps/bungie-drops-gameplay-trailer-for-marathons-co-op-pve-roguelite-mode-and-swanky-new-social-space/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-10T21:16:59Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Ahead of GTA 6 and as concerns over genAI PC ports grow, Take-Two's CEO says they're revving up their \"technical defences\" and \"legal activites\" over piracy",
-      "url": "https://www.rockpapershotgun.com/ahead-of-gta-6-and-as-concerns-over-genai-pc-ports-grow-take-twos-ceo-says-theyre-revving-up-their-technical-defences-and-legal-activites-over-piracy",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-10T19:59:40Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "2 years after Unknown 9: Awakening bombed, Bandai Namco is closing the studio that made it",
-      "url": "https://www.pcgamer.com/gaming-industry/2-years-after-unknown-9-awakening-bombed-bandai-namco-is-closing-the-studio-that-made-it/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-10T19:55:36Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "PlayStation Plus PC app is being shut down in December because less than 0.4% of eligible subscribers are using it",
-      "url": "https://www.pcgamer.com/gaming-industry/playstation-plus-pc-app-is-being-shut-down-in-december-because-less-than-0-4-percent-of-eligible-subscribers-are-using-it/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-10T18:57:18Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Marathon is becoming a whole new game next month with a roguelite PvE mode, a beta for a very Halo-esque team deathmatch mode, a vibey social space and more",
-      "url": "https://www.rockpapershotgun.com/marathon-is-becoming-a-whole-new-game-next-month-with-a-roguelite-pve-mode-a-beta-for-a-very-halo-esque-team-deathmatch-mode-a-vibey-social-space-and-more",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-10T18:30:00Z",
       "games": [],
       "kind": "news",
       "highlight": false
