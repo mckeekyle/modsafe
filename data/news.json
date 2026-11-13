@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T18:49:49Z",
+  "generated_at": "2026-11-13T00:57:38Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,80 @@
     }
   ],
   "items": [
+    {
+      "title": "Slay the Spire 2's \"biggest\" beta patch yet adds its first new early access and foolish character, two game modes, and more tweaks than you can shake a stick at",
+      "url": "https://www.rockpapershotgun.com/slay-the-spire-2s-biggest-beta-patch-yet-adds-its-first-new-early-access-and-foolish-character-two-game-modes-and-more-tweaks-than-you-can-shake-a-stick-at",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-12T22:53:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "New 4-minute Fable gameplay trailer shows a game that doesn't look much like Fable",
+      "url": "https://www.pcgamer.com/games/rpg/new-4-minute-fable-gameplay-trailer-shows-a-game-that-doesnt-look-much-like-fable/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-12T22:43:21Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Palworld developer Pocketpair gives employees time off for 'a 5-day business trip in Vice City when GTA 6 launches'",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/palworld-developer-pocketpair-gives-employees-time-off-for-a-5-day-business-trip-in-vice-city-when-gta-6-launches/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-12T22:08:48Z",
+      "games": [
+        "palworld"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Cover your robot body in magical fungus aplenty and galavant across a mystical, Soulslike world in MycoRelic, now out in 1.0",
+      "url": "https://www.rockpapershotgun.com/cover-your-robot-body-in-magical-fungus-aplenty-and-galavant-across-a-mystical-soulslike-world-in-mycorelic-now-out-in-10",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-12T21:31:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Doom studio id Software confirms it's working on a new game",
+      "url": "https://www.pcgamer.com/games/fps/doom-studio-id-software-confirms-its-working-on-a-new-game/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-12T21:10:04Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Barbie Rewind, out now, invites you to take a trip down memory lane with a whole bunch of life in plastic classics, and one game that was previously unreleased",
+      "url": "https://www.rockpapershotgun.com/barbie-rewind-out-now-invites-you-to-take-a-trip-down-memory-lane-with-a-whole-bunch-of-life-in-plastic-classics-and-one-game-that-was-previously-unreleased",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-12T19:57:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Paradox Interactive is getting a new boss as Fredrik Wester steps down for the second time",
+      "url": "https://www.pcgamer.com/gaming-industry/paradox-interactive-is-getting-a-new-boss-as-fredrik-wester-steps-down-for-the-second-time/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-12T19:52:19Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "South Korean game rating board almost blocked GTA 6's release, fearing its 'out-of-context genital nudity' would 'disrupt social order'",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/south-korean-game-rating-board-almost-blocked-gta-6s-release-fearing-its-out-of-context-genital-nudity-would-disrupt-social-order/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-12T19:06:41Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Xbox CEO looks to the future as Microsoft's console turns 25: 'A single person will soon be able to wield capabilities that once required entire nations'",
       "url": "https://www.pcgamer.com/software/ai/xbox-ceo-looks-to-the-future-as-microsofts-console-turns-25-a-single-person-will-soon-be-able-to-wield-capabilities-that-once-required-entire-nations/",
@@ -295,7 +369,7 @@
       "highlight": false
     },
     {
-      "title": "Jensen Huang has resigned all his positions at Nvidia, effective immediately",
+      "title": "The resignation of Jensen Huang from Nvidia and everything that has followed",
       "url": "https://www.pcgamer.com/hardware/live/news/nvidia-jen-hsun-scandal/",
       "source": "PC Gamer",
       "published_at": "2026-11-12T14:05:27Z",
@@ -495,81 +569,6 @@
       "games": [
         "skyrim-se"
       ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Former id Software developers form their own employee-owned shooter studio in the wake of Microsoft's mass layoffs",
-      "url": "https://www.pcgamer.com/gaming-industry/former-id-software-developers-form-their-own-employee-owned-shooter-studio-in-the-wake-of-microsofts-mass-layoffs/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-11T20:09:58Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Don't expect more information on The Elder Scrolls 6: Sentinel \"for some time,\" Bethesda says",
-      "url": "https://www.eurogamer.net/dont-expect-elder-scrolls-6-sentinel-for-some-time-bethesda",
-      "source": "Eurogamer",
-      "published_at": "2026-11-11T19:36:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Exterminauts looks like another Helldivers 2, but it's really the Deep Rock Galactic sickos who should take notice",
-      "url": "https://www.pcgamer.com/games/third-person-shooter/exterminauts-looks-like-another-helldivers-2-but-its-really-the-deep-rock-galactic-sickos-who-should-take-notice/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-11T19:09:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "GTA 6 might be censored in Japan, if the game's smaller install size and lack of \"strong sexual content\" warning is anything to go by",
-      "url": "https://www.eurogamer.net/gta-6-censored-japan-smaller-install-size",
-      "source": "Eurogamer",
-      "published_at": "2026-11-11T18:17:10Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "After being laid off by Microsoft, former Doom devs found new Smash TV-influenced FPS studio that isn't \"subject to investor demands\"",
-      "url": "https://www.rockpapershotgun.com/after-being-laid-off-by-microsoft-former-doom-devs-found-new-smash-tv-influenced-fps-studio-that-isnt-subject-to-investor-demands",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-11T18:08:40Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "I have converted GTA 5 from crime sim to train sim",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/i-have-converted-gta-5-from-crime-sim-to-train-sim/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-11T18:00:00Z",
-      "games": [
-        "gta-v-legacy",
-        "gta-v-enhanced"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Marvel Rivals' creative director addresses hate speech controversy and promises 'we've ramped up our disciplinary measures'",
-      "url": "https://www.pcgamer.com/games/third-person-shooter/marvel-rivals-creative-director-addresses-hate-speech-controversy-and-promises-weve-ramped-up-our-disciplinary-measures/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-11T17:34:01Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The European Commission's new Digital Fairness Act could change monetisation in games forever - and not just in Europe",
-      "url": "https://www.eurogamer.net/eu-digital-fairness-act-what-is-it-video-games",
-      "source": "Eurogamer",
-      "published_at": "2026-11-11T17:25:50Z",
-      "games": [],
       "kind": "news",
       "highlight": false
     }
