@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T07:04:21Z",
+  "generated_at": "2026-11-13T12:58:15Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,87 @@
     }
   ],
   "items": [
+    {
+      "title": "AMD has patched its SSD-eating GPU driver bug with an optional Adrenalin update for RX 7000-series graphics cards and above",
+      "url": "https://www.pcgamer.com/hardware/graphics-cards/amd-has-patched-its-ssd-eating-gpu-driver-bug-with-an-optional-adrenalin-update-for-rx-7000-series-graphics-cards-and-above/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-13T12:42:43Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Xbox boss announces Wolfenstein 3 and confirms new game in development at idSoftware despite reported job cut \"bloodbath\"",
+      "url": "https://www.eurogamer.net/wolfenstein-3-new-id-software-game-announced-xbox",
+      "source": "Eurogamer",
+      "published_at": "2026-11-13T12:19:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Ex-Nvidia CEO Jensen Huang allegedly had an 'intimate relationship' with a second Nvidia employee, according to reports",
+      "url": "https://www.pcgamer.com/hardware/ex-nvidia-ceo-jensen-huang-allegedly-had-an-intimate-relationship-with-a-second-nvidia-employee-according-to-reports/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-13T11:33:19Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "'I stand by Jensen': Nvidia employees come out in support of Huang after resignation",
+      "url": "https://www.pcgamer.com/hardware/i-stand-by-jensen-nvidia-employees-come-out-in-support-of-huang-after-resignation/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-13T11:30:35Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Horu is a sci-fi 4X RTS inspired by Star Wars: Empire at War in which spaceships are spellcasters who can summon black holes",
+      "url": "https://www.rockpapershotgun.com/horu-is-a-sci-fi-4x-rts-inspired-by-star-wars-empire-at-war-in-which-spaceships-are-spellcasters-who-can-summon-black-holes",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-13T11:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Wolfenstein 3 and new id Software game confirmed, as Xbox boss somehow unrelatedly shouts about one person soon wielding \"capabilities that once required entire nations\"",
+      "url": "https://www.rockpapershotgun.com/wolfenstein-3-and-new-id-software-game-confirmed-as-xbox-boss-somehow-unrelatedly-shouts-about-one-person-soon-wieldling-capabilities-that-once-required-entire-nations",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-13T10:34:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Microsoft says there is 'no evidence of malicious activity' being the cause of the global service outage affecting governments and organisations around the world",
+      "url": "https://www.pcgamer.com/software/security/microsoft-says-there-is-no-evidence-of-malicious-activity-being-the-cause-of-the-global-service-outage-affecting-governments-and-organisations-around-the-world/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-13T10:33:22Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Will GTA 6 break the internet? UK broadband operator braces for impact, saying \"GTA 6 has been on our radar for a long time\"",
+      "url": "https://www.eurogamer.net/gta-6-internet-uk-broadband-ofcom-openreach",
+      "source": "Eurogamer",
+      "published_at": "2026-11-13T09:42:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Halo: Campaign Evolved is getting its own four-player version of the series' staple Firefight mode, for free, \"this winter\"",
+      "url": "https://www.eurogamer.net/halo-campaign-evovled-firefight-mode",
+      "source": "Eurogamer",
+      "published_at": "2026-11-13T09:36:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "SteamOS 3.9.6 Beta",
       "url": "https://store.steampowered.com/news/app/1675200/view/1849192144185473",
@@ -263,8 +344,8 @@
       "highlight": false
     },
     {
-      "title": "Every nominee for the PC Gaming Show: Most Wanted's top 20 upcoming games",
-      "url": "https://www.pcgamer.com/gaming-industry/events-conferences/every-nominee-for-the-pc-gaming-show-most-wanteds-top-20-upcoming-games/",
+      "title": "Award-winning presenter Frankie Ward returns to bring you this year's PC Gaming Show: Most Wanted",
+      "url": "https://www.pcgamer.com/gaming-industry/events-conferences/award-winning-presenter-frankie-ward-returns-to-bring-you-this-years-pc-gaming-show-most-wanted/",
       "source": "PC Gamer",
       "published_at": "2026-11-12T16:00:00Z",
       "games": [],
@@ -272,8 +353,8 @@
       "highlight": false
     },
     {
-      "title": "Award-winning presenter Frankie Ward returns to bring you this year's PC Gaming Show: Most Wanted",
-      "url": "https://www.pcgamer.com/gaming-industry/events-conferences/award-winning-presenter-frankie-ward-returns-to-bring-you-this-years-pc-gaming-show-most-wanted/",
+      "title": "Every nominee for the PC Gaming Show: Most Wanted's top 20 upcoming games",
+      "url": "https://www.pcgamer.com/gaming-industry/events-conferences/every-nominee-for-the-pc-gaming-show-most-wanteds-top-20-upcoming-games/",
       "source": "PC Gamer",
       "published_at": "2026-11-12T16:00:00Z",
       "games": [],
@@ -483,91 +564,6 @@
       "url": "https://www.pcgamer.com/hardware/this-would-be-an-apple-firing-steve-jobs-level-of-idiocy-says-tim-sweeney-at-the-idea-of-ousting-jensen-huang-while-elon-musk-says-it-would-be-an-honor-to-hire-the-nvidia-chief/",
       "source": "PC Gamer",
       "published_at": "2026-11-12T10:47:58Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "\"One of those ways where you can use AI ethically\": CDPR have modified Geralt's Polish voice in The Witcher 3: Songs of the Past with genAI, due to actor's stroke",
-      "url": "https://www.rockpapershotgun.com/one-of-those-ways-where-you-can-use-ai-ethically-cdpr-have-modified-geralts-polish-voice-in-the-witcher-3-songs-of-the-past-with-genai-due-to-actors-stroke",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-12T10:40:10Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Tinto Talks 131 - Across the Pillars retrospective",
-      "url": "https://store.steampowered.com/news/app/3450310/view/1849192144182383",
-      "source": "Steam \u00b7 EU5",
-      "published_at": "2026-11-12T10:27:40Z",
-      "games": [
-        "europa-universalis-v"
-      ],
-      "kind": "announcement",
-      "highlight": false
-    },
-    {
-      "title": "CD Projekt used AI to modify the voice of Geralt's Polish actor after a stroke left it significantly changed: 'This was a special case'",
-      "url": "https://www.pcgamer.com/games/the-witcher/cd-projekt-used-ai-to-modify-the-voice-of-geralts-polish-actor-after-a-stroke-left-it-significantly-changed-this-was-a-special-case/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-12T00:02:47Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "After cracking down on 'cheat' mods in Helldivers 2 and taking another Steam review beating, Arrowhead plans hotfix that should allow harmless cosmetics",
-      "url": "https://www.pcgamer.com/games/third-person-shooter/after-cracking-down-on-cheat-mods-in-helldivers-2-and-taking-another-steam-review-beating-arrowhead-plans-hotfix-that-should-allow-harmless-cosmetics/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-11T23:29:59Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Nvidia CEO Jensen Huang allegedly had a second affair with another Nvidia exec",
-      "url": "https://www.pcgamer.com/software/ai/nvidia-ceo-jensen-huang-allegedly-had-a-second-affair-with-another-nvidia-exec/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-11T23:25:39Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Giana Sisters developer Black Forest Games buys itself out of Embracer: 'Some of the best games of the last decade came from teams of fifty, not five hundred'",
-      "url": "https://www.pcgamer.com/gaming-industry/giana-sisters-developer-black-forest-games-buys-itself-out-of-embracer-some-of-the-best-games-of-the-last-decade-came-from-teams-of-fifty-not-five-hundred/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-11T22:57:44Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "This solo dev is building 'the most violent cozy farming game ever made' and lumberjacking has never looked cooler",
-      "url": "https://www.pcgamer.com/games/rpg/this-solo-dev-is-building-the-most-violent-cozy-farming-game-ever-made-and-lumberjacking-has-never-looked-cooler/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-11T22:38:37Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Celebrate 15 Years of Skyrim with the Anniversary Creation Bundle",
-      "url": "https://store.steampowered.com/news/app/489830/view/1849192144180604",
-      "source": "Steam \u00b7 Skyrim SE/AE",
-      "published_at": "2026-11-11T22:16:14Z",
-      "games": [
-        "skyrim-se"
-      ],
-      "kind": "announcement",
-      "highlight": false
-    },
-    {
-      "title": "Crimson Desert wins 'PC Game of the Year' at the 2026 Golden Joystick Awards",
-      "url": "https://www.pcgamer.com/games/crimson-desert-wins-pc-game-of-the-year-at-the-2026-golden-joystick-awards/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-11T21:31:30Z",
       "games": [],
       "kind": "news",
       "highlight": false
