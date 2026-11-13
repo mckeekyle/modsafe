@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T00:57:38Z",
+  "generated_at": "2026-11-13T07:04:21Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,26 @@
     }
   ],
   "items": [
+    {
+      "title": "SteamOS 3.9.6 Beta",
+      "url": "https://store.steampowered.com/news/app/1675200/view/1849192144185473",
+      "source": "Steam \u00b7 Steam Deck",
+      "published_at": "2026-11-13T02:05:23Z",
+      "games": [
+        "steam-deck"
+      ],
+      "kind": "announcement",
+      "highlight": false
+    },
+    {
+      "title": "Wolfenstein 3 is in production at MachineGames",
+      "url": "https://www.pcgamer.com/games/fps/wolfenstein-3-is-in-production-at-machinegames/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-13T01:35:32Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Slay the Spire 2's \"biggest\" beta patch yet adds its first new early access and foolish character, two game modes, and more tweaks than you can shake a stick at",
       "url": "https://www.rockpapershotgun.com/slay-the-spire-2s-biggest-beta-patch-yet-adds-its-first-new-early-access-and-foolish-character-two-game-modes-and-more-tweaks-than-you-can-shake-a-stick-at",
@@ -243,8 +263,8 @@
       "highlight": false
     },
     {
-      "title": "Award-winning presenter Frankie Ward returns to bring you this year's PC Gaming Show: Most Wanted",
-      "url": "https://www.pcgamer.com/gaming-industry/events-conferences/award-winning-presenter-frankie-ward-returns-to-bring-you-this-years-pc-gaming-show-most-wanted/",
+      "title": "Every nominee for the PC Gaming Show: Most Wanted's top 20 upcoming games",
+      "url": "https://www.pcgamer.com/gaming-industry/events-conferences/every-nominee-for-the-pc-gaming-show-most-wanteds-top-20-upcoming-games/",
       "source": "PC Gamer",
       "published_at": "2026-11-12T16:00:00Z",
       "games": [],
@@ -252,8 +272,8 @@
       "highlight": false
     },
     {
-      "title": "Every nominee for the PC Gaming Show: Most Wanted's top 20 upcoming games",
-      "url": "https://www.pcgamer.com/gaming-industry/events-conferences/every-nominee-for-the-pc-gaming-show-most-wanteds-top-20-upcoming-games/",
+      "title": "Award-winning presenter Frankie Ward returns to bring you this year's PC Gaming Show: Most Wanted",
+      "url": "https://www.pcgamer.com/gaming-industry/events-conferences/award-winning-presenter-frankie-ward-returns-to-bring-you-this-years-pc-gaming-show-most-wanted/",
       "source": "PC Gamer",
       "published_at": "2026-11-12T16:00:00Z",
       "games": [],
@@ -549,26 +569,6 @@
       "source": "PC Gamer",
       "published_at": "2026-11-11T21:31:30Z",
       "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Destroy All Humans remake developer goes independent, splits from THQ Nordic and parent company Embracer Group",
-      "url": "https://www.eurogamer.net/destroy-all-humans-independent-thq-embracer",
-      "source": "Eurogamer",
-      "published_at": "2026-11-11T20:37:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Bethesda shoots down Elder Scrolls 6: Sentinel announcement rumor on Skyrim's 15th anniversary",
-      "url": "https://www.pcgamer.com/games/the-elder-scrolls/bethesda-shoots-down-elder-scrolls-6-sentinel-announcement-rumor-on-skyrims-15th-anniversary/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-11T20:13:02Z",
-      "games": [
-        "skyrim-se"
-      ],
       "kind": "news",
       "highlight": false
     }
