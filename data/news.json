@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T00:52:37Z",
+  "generated_at": "2026-11-14T06:53:17Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,17 @@
     }
   ],
   "items": [
+    {
+      "title": "SteamOS 3.10.0 Preview",
+      "url": "https://store.steampowered.com/news/app/1675200/view/1849458702682104",
+      "source": "Steam \u00b7 Steam Deck",
+      "published_at": "2026-11-14T02:04:19Z",
+      "games": [
+        "steam-deck"
+      ],
+      "kind": "announcement",
+      "highlight": false
+    },
     {
       "title": "Yes, some brave games are still launching on Steam during GTA 6 week",
       "url": "https://www.pcgamer.com/games/yes-some-brave-games-are-still-launching-on-steam-during-gta-6-launch-week/",
@@ -560,15 +571,6 @@
       "url": "https://www.pcgamer.com/hardware/graphics-cards/next-nvidia-ceo-has-to-have-national-security-as-a-top-priority-says-chairman-of-us-gov-committee-on-china-claims-huang-departure-could-have-been-avoided/",
       "source": "PC Gamer",
       "published_at": "2026-11-12T17:27:15Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "'I'm a big Zach Cregger fan': Angela Sant'Albano gushes about the Resident Evil movie and likens Bryan to her own Grace Ashcroft",
-      "url": "https://www.pcgamer.com/games/resident-evil/im-a-big-zach-cregger-fan-angela-santalbano-gushes-about-the-resident-evil-movie-and-likens-bryan-to-her-own-grace-ashcroft/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-12T17:23:11Z",
       "games": [],
       "kind": "news",
       "highlight": false

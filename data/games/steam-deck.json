@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T00:51:33Z",
+  "generated_at": "2026-11-14T06:52:13Z",
   "game": {
     "slug": "steam-deck",
     "name": "Steam Deck (SteamOS)",
@@ -851,6 +851,12 @@
   ],
   "news": [
     {
+      "title": "SteamOS 3.10.0 Preview",
+      "url": "https://store.steampowered.com/news/app/1675200/view/1849458702682104",
+      "published_at": "2026-11-14T02:04:19Z",
+      "is_patch": false
+    },
+    {
       "title": "SteamOS 3.9.6 Beta",
       "url": "https://store.steampowered.com/news/app/1675200/view/1849192144185473",
       "published_at": "2026-11-13T02:05:23Z",
@@ -903,12 +909,6 @@
       "url": "https://store.steampowered.com/news/app/1675200/view/1843481262703165",
       "published_at": "2026-09-14T23:24:24Z",
       "is_patch": false
-    },
-    {
-      "title": "SteamOS 3.8.27 Beta",
-      "url": "https://store.steampowered.com/news/app/1675200/view/1843481262703043",
-      "published_at": "2026-09-14T21:51:09Z",
-      "is_patch": false
     }
   ],
   "channels": [
@@ -920,9 +920,9 @@
     },
     {
       "name": "Preview",
-      "title": "SteamOS 3.9.1 Preview",
-      "url": "https://store.steampowered.com/news/app/1675200/view/1843481262703165",
-      "published_at": "2026-09-14T23:24:24Z"
+      "title": "SteamOS 3.10.0 Preview",
+      "url": "https://store.steampowered.com/news/app/1675200/view/1849458702682104",
+      "published_at": "2026-11-14T02:04:19Z"
     }
   ],
   "sources": {
