@@ -689,7 +689,7 @@ GAMES = [
         # "Europa Universalis V - 1.0.5 Patch Notes". Open-beta posts, surveys, previews and Tinto Talks are excluded.
         "patch_rule": {
             "include": r"^(?:update|patch|hotfix)\s+\d+\.\d+|^europa universalis v\s*-\s*\d+\.\d+(?:\.\d+)*\s+patch notes",
-            "exclude": r"beta|survey|preview|release date|feature video|thoughts|tinto",
+            "exclude": r"beta|testing branch|survey|preview|release date|feature video|thoughts|tinto",
             "version": r"(\d+\.\d+(?:\.\d+)*)",
             "require_version": True,
             "label": "{v}",

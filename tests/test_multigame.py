@@ -85,6 +85,11 @@ class TestPatchRules(unittest.TestCase):
         self.check("repo", "Addressing the BIGGEST QUESTIONS about R.E.P.O. in 2026", None)
         self.check("repo", "Vote R.E.P.O. for the \"Better With Friends\" award!!", None)
 
+    def test_eu5_testing_branch_is_not_a_release(self):
+        self.check("europa-universalis-v", "Patch 1.4.7", "1.4.7")
+        self.check("europa-universalis-v", "Hotfix 1.4.6", "1.4.6")
+        self.check("europa-universalis-v", "Patch 1.4.8 - Testing Branch now live", None)
+
     def test_labels_and_dedupe(self):
         news = [
             {"title": "Fallout 4 Update - August 18th", "date": ts(2026, 8, 18)},
