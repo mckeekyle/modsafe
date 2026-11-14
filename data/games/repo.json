@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T06:51:38Z",
+  "generated_at": "2026-11-14T12:41:18Z",
   "game": {
     "slug": "repo",
     "name": "R.E.P.O.",
@@ -50,7 +50,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch v0.5.1; compatibility is unverified \u2014 check the project page. No open breakage reports 8 days after the patch.",
+      "reason": "Latest release predates patch v0.5.1; compatibility is unverified \u2014 check the project page. No open breakage reports 9 days after the patch.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v4.3.0",
@@ -72,7 +72,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch v0.5.1; compatibility is unverified \u2014 check the project page. No open breakage reports 8 days after the patch.",
+      "reason": "Latest release predates patch v0.5.1; compatibility is unverified \u2014 check the project page. No open breakage reports 9 days after the patch.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "1.4.6",
@@ -94,7 +94,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch v0.5.1; compatibility is unverified \u2014 check the project page. No open breakage reports 8 days after the patch.",
+      "reason": "Latest release predates patch v0.5.1; compatibility is unverified \u2014 check the project page. No open breakage reports 9 days after the patch.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "1.7.3",

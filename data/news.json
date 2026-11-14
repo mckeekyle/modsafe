@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T06:53:17Z",
+  "generated_at": "2026-11-14T12:42:55Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,69 @@
     }
   ],
   "items": [
+    {
+      "title": "Ubisoft is reportedly making a new Rainbow Six Vegas game, nearly two decades after Vegas 2",
+      "url": "https://www.eurogamer.net/rainbow-six-vegas-new-game-ubisoft-spades-report",
+      "source": "Eurogamer",
+      "published_at": "2026-11-14T12:19:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Indiana Jones and the Great Circle once had a Grand Theft Auto inspired wanted system, because MachineGames was 'afraid' players would kill all the Nazis 'with just guns'",
+      "url": "https://www.pcgamer.com/games/action/indiana-jones-and-the-great-circle-once-had-a-grand-theft-auto-inspired-wanted-system-because-machinegames-was-afraid-players-would-kill-all-the-nazis-with-just-guns/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-14T11:26:04Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Call of Duty Endowment marks Remembrance Day with veterans' Valor Pack push",
+      "url": "https://www.eurogamer.net/call-of-duty-endowment-valor-pack-remembrance-day-veterans",
+      "source": "Eurogamer",
+      "published_at": "2026-11-14T11:15:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Magic: The Gathering animated series Planeswalker is coming to Netflix in 2027",
+      "url": "https://www.eurogamer.net/magic-the-gathering-planeswalker-netflix-animated-series-2027",
+      "source": "Eurogamer",
+      "published_at": "2026-11-14T10:39:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Vice City was the GTA that established Rockstar's killer formula - and 24 years on, it's still one of the best games ever made",
+      "url": "https://www.eurogamer.net/gta-vice-city-retrospective",
+      "source": "Eurogamer",
+      "published_at": "2026-11-14T10:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "What are we all playing this weekend?",
+      "url": "https://www.rockpapershotgun.com/what-are-we-all-playing-this-weekend-408",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-14T08:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "What we've been playing - \"Whether he means to or not, he serves sass all over town\"",
+      "url": "https://www.eurogamer.net/what-weve-been-playing-sass-all-over-town-link-ocarina",
+      "source": "Eurogamer",
+      "published_at": "2026-11-14T08:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "SteamOS 3.10.0 Preview",
       "url": "https://store.steampowered.com/news/app/1675200/view/1849458702682104",
@@ -509,69 +572,6 @@
         "gta-v-legacy",
         "gta-v-enhanced"
       ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Now Jensen's gone, Intel\u2019s trouble finding a steady CEO should serve as cautionary tale to Nvidia\u2019s board",
-      "url": "https://www.pcgamer.com/hardware/now-jensens-gone-intels-trouble-finding-a-steady-ceo-should-serve-as-cautionary-tale-to-nvidias-board/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-12T17:50:22Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Darktide's getting a Sisters of Battle class on December 7",
-      "url": "https://www.pcgamer.com/games/fps/darktides-getting-a-sisters-of-battle-class-on-december-7/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-12T17:40:30Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Conan: The Black Pyramid shoves the titular barbarian into a very Hades-inspired action roguelite with the addition of a few other familiar heroes",
-      "url": "https://www.rockpapershotgun.com/conan-the-black-pyramid-shoves-the-titular-barbarian-into-a-very-hades-inspired-action-roguelite-with-the-addition-of-a-few-other-familiar-heroes",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-12T17:39:40Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "After Jensen Huang's resignation from Nvidia, it's all praise or political finger-wagging about the ex-CEO, with little in between",
-      "url": "https://www.pcgamer.com/hardware/after-jensen-huangs-resignation-from-nvidia-its-all-praise-or-political-finger-wagging-about-the-ex-ceo-with-little-in-between/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-12T17:35:37Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Nvidia stocks jump back up after ex-CEO Jensen Huang's ousting",
-      "url": "https://www.pcgamer.com/hardware/nvidia-stocks-jump-back-up-after-ex-ceo-jensen-huangs-ousting/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-12T17:34:31Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Xbox boss seemingly champions gen-AI development as she celebrates 25 years of Xbox: \"A small team will be able to build worlds that today demand hundreds of developers\"",
-      "url": "https://www.eurogamer.net/microsoft-xbox-gen-ai-asha-sharma-memo",
-      "source": "Eurogamer",
-      "published_at": "2026-11-12T17:32:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Next Nvidia CEO has to have national security as a 'top priority' says chairman of US Gov committee on China \u2013 claims Huang departure 'could have been avoided'",
-      "url": "https://www.pcgamer.com/hardware/graphics-cards/next-nvidia-ceo-has-to-have-national-security-as-a-top-priority-says-chairman-of-us-gov-committee-on-china-claims-huang-departure-could-have-been-avoided/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-12T17:27:15Z",
-      "games": [],
       "kind": "news",
       "highlight": false
     }
