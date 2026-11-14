@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T18:47:33Z",
+  "generated_at": "2026-11-14T00:52:37Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,78 @@
     }
   ],
   "items": [
+    {
+      "title": "Yes, some brave games are still launching on Steam during GTA 6 week",
+      "url": "https://www.pcgamer.com/games/yes-some-brave-games-are-still-launching-on-steam-during-gta-6-launch-week/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-13T22:28:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Don't like AI in games? Crimson Desert studio Pearl Abyss ain't care: it's expanding AI use 'throughout our entire development pipeline'",
+      "url": "https://www.pcgamer.com/software/ai/dont-like-ai-in-games-crimson-desert-studio-pearl-abyss-aint-care-its-expanding-ai-use-throughout-our-entire-development-pipeline/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-13T22:17:06Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The Blood of Dawnwalker is getting a New Game Plus mode in next week's update",
+      "url": "https://www.eurogamer.net/blood-of-dawnwalker-new-game-plus",
+      "source": "Eurogamer",
+      "published_at": "2026-11-13T20:49:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "A survival game we once called 'Stalker and Tarkov's alien baby' is closing down less than a year after launch",
+      "url": "https://www.pcgamer.com/games/fps/a-survival-game-we-once-called-stalker-and-tarkovs-alien-baby-is-closing-down-less-than-a-year-after-launch/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-13T20:37:35Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Microsoft \u2018deeply\u2019 apologizes for global service outage, says no AI or hackers are to blame",
+      "url": "https://www.pcgamer.com/software/microsoft-deeply-apologizes-for-global-service-outage-says-no-ai-or-hackers-are-to-blame/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-13T19:54:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Interest in The Legend of Zelda was \"getting smaller and smaller\" before Breath of the Wild, according to former Nintendo marketing leads",
+      "url": "https://www.eurogamer.net/legend-of-zelda-smaller-before-breath-of-the-wild",
+      "source": "Eurogamer",
+      "published_at": "2026-11-13T19:52:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "New Grand Theft Auto 6 trailer is for a TV show that exists within Grand Theft Auto 6",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/new-grand-theft-auto-6-trailer-is-for-a-tv-show-that-exists-within-grand-theft-auto-6/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-13T19:30:31Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Think you know videogame cats? Then name 17 of them",
+      "url": "https://www.pcgamer.com/games/think-you-know-videogame-cats-then-name-17-of-them/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-13T18:43:11Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Crimson Desert studio is implementing AI \"throughout our entire development pipeline,\" and expects DokeV to launch in 2028",
       "url": "https://www.eurogamer.net/crimson-desert-ai-pipeline-dokev-2028",
@@ -497,78 +569,6 @@
       "url": "https://www.pcgamer.com/games/resident-evil/im-a-big-zach-cregger-fan-angela-santalbano-gushes-about-the-resident-evil-movie-and-likens-bryan-to-her-own-grace-ashcroft/",
       "source": "PC Gamer",
       "published_at": "2026-11-12T17:23:11Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Cartoon-styled \"lite-vania\" Lola's Familiars: Prison of Argnoh will have you springing yourself, and your summoned pals, from magic jail",
-      "url": "https://www.rockpapershotgun.com/cartoon-styled-lite-vania-lolas-familiars-prison-of-argnoh-will-have-you-springing-yourself-and-your-summoned-pals-from-magic-jail",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-12T17:08:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Who is Colette Kress, Nvidia's new interim CEO?",
-      "url": "https://www.pcgamer.com/hardware/who-is-colette-kress-nvidias-new-interim-ceo/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-12T16:52:12Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Trump says the only man who should replace ex-Nvidia CEO Jensen Huang is Tim Cook of Apple fame",
-      "url": "https://www.pcgamer.com/hardware/trump-says-the-only-man-who-should-replace-ex-nvidia-ceo-jensen-huang-is-tim-cook-of-apple-fame/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-12T16:35:11Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "World of Warcraft: Forever players in Australia and New Zealand are struggling to get sunlight, and not for the usual MMO reasons",
-      "url": "https://www.eurogamer.net/world-of-warcraft-forever-oceania-sunlight",
-      "source": "Eurogamer",
-      "published_at": "2026-11-12T16:30:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "As low-effort AI slop continues to flood Steam, yet more developers announce game delays caused by Valve's growing approval backlog",
-      "url": "https://www.eurogamer.net/steam-game-submission-review-backlog-ai-slop-approval-delays",
-      "source": "Eurogamer",
-      "published_at": "2026-11-12T16:06:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Every nominee for the PC Gaming Show: Most Wanted's top 20 upcoming games",
-      "url": "https://www.pcgamer.com/gaming-industry/events-conferences/every-nominee-for-the-pc-gaming-show-most-wanteds-top-20-upcoming-games/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-12T16:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Award-winning presenter Frankie Ward returns to bring you this year's PC Gaming Show: Most Wanted",
-      "url": "https://www.pcgamer.com/gaming-industry/events-conferences/award-winning-presenter-frankie-ward-returns-to-bring-you-this-years-pc-gaming-show-most-wanted/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-12T16:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Fear not, Nvidians, the man who wrote the book on Nvidia says the company's success doesn't rely on Jensen Huang",
-      "url": "https://www.pcgamer.com/hardware/fear-not-nvidians-the-man-who-wrote-the-book-on-nvidia-says-the-companys-success-doesnt-rely-on-jensen-huang/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-12T15:58:11Z",
       "games": [],
       "kind": "news",
       "highlight": false
