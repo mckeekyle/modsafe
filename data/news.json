@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T13:43:16Z",
+  "generated_at": "2026-11-15T22:39:50Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,118 @@
     }
   ],
   "items": [
+    {
+      "title": "Are you more of an ambient music enjoyer or theatrical atmosphere appreciator?",
+      "url": "https://www.pcgamer.com/games/world-of-warcraft/are-you-more-of-an-ambient-music-enjoyer-or-theatrical-atmosphere-appreciator/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-15T18:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Police arrest suspect after drive-by shooting at office campus housing Xbox studio inXile",
+      "url": "https://www.eurogamer.net/inxile-office-shooting-tustin-suspect-arrested",
+      "source": "Eurogamer",
+      "published_at": "2026-11-15T17:47:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "League of Legends will get an overhaul called New Dawn with new visuals, build options, and an updated client",
+      "url": "https://www.pcgamer.com/games/moba/league-of-legends-will-get-an-overhaul-called-new-dawn-with-new-visuals-build-options-and-an-updated-client/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-15T17:45:48Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Cyberpunk 2077 mod Torrent adds 3D rain, lightning storms, and tyre spray to Night City",
+      "url": "https://www.eurogamer.net/cyberpunk-2077-torrent-rain-weather-mod",
+      "source": "Eurogamer",
+      "published_at": "2026-11-15T17:39:20Z",
+      "games": [
+        "cyberpunk-2077"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The pandemic was transformative for Jackbox: 'We went from a gamer name to a household name'",
+      "url": "https://www.pcgamer.com/games/the-pandemic-was-transformative-for-jackbox-we-went-from-a-gamer-name-to-a-household-name/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-15T17:30:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "YouTuber and comedian Ashens has 1,000 hours in Baldur's Gate 3 and reveals the worst retro game he's ever played: 'By the time you've hacked it to work, it's just no fun whatsoever'",
+      "url": "https://www.pcgamer.com/gaming-industry/youtuber-and-comedian-ashens-has-1-000-hours-in-baldurs-gate-3-and-reveals-the-worst-retro-game-hes-ever-played-by-the-time-youve-hacked-it-to-work-its-just-no-fun-whatsoever/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-15T17:00:00Z",
+      "games": [
+        "baldurs-gate-3"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Slay the Spire 2 has a new character in testing, and she's really quite busted",
+      "url": "https://www.pcgamer.com/games/roguelike/slay-the-spire-2-has-a-new-character-in-testing-and-shes-really-quite-busted/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-15T16:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Treyarch lays off lead Call of Duty writer and Zombies veteran after \"approximately 20 years\" of service",
+      "url": "https://www.eurogamer.net/craig-houston-layoff-treyarch-call-of-duty-layoffs",
+      "source": "Eurogamer",
+      "published_at": "2026-11-15T15:14:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Queen's Domain is the best Dark Souls 1 since Dark Souls 1",
+      "url": "https://www.pcgamer.com/games/rpg/queens-domain-is-the-best-dark-souls-1-since-dark-souls-1/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-15T15:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Blade Runner 2099 bosses hint at a possible \"triple-A\" Blade Runner game in the future - just don't expect it any time soon",
+      "url": "https://www.eurogamer.net/blade-runner-2099-triple-a-talks",
+      "source": "Eurogamer",
+      "published_at": "2026-11-15T14:43:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "This RTS inspired by Star Wars: Empire at War promises colossal space encounters and planetary battles with 'hundreds of thousands of units'",
+      "url": "https://www.pcgamer.com/games/rts/this-rts-inspired-by-star-wars-empire-at-war-promises-colossal-space-encounters-and-planetary-battles-with-hundreds-of-thousands-of-units/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-15T14:30:16Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The latest GTA 6 leak comes in the form of a 34-song tracklist for GTA 6: The Album, featuring Dua Lipa, Lana Del Rey, Rina Sawayama, and more",
+      "url": "https://www.eurogamer.net/gta-6-tracklist-leak",
+      "source": "Eurogamer",
+      "published_at": "2026-11-15T14:03:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "The Sunday Papers",
       "url": "https://www.rockpapershotgun.com/the-sunday-papers-836",
@@ -456,114 +568,6 @@
       "url": "https://www.pcgamer.com/hardware/chipmaking-giant-tsmc-discovers-major-employee-data-leak-reports-say-info-was-up-for-sale-for-three-bitcoin-on-shady-forums/",
       "source": "PC Gamer",
       "published_at": "2026-11-13T15:48:14Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Crusader Kings publishers Paradox announce CEO swap, say they're \"in a strong position at a time when much of the industry is facing major challenges\"",
-      "url": "https://www.rockpapershotgun.com/crusader-kings-publishers-paradox-announce-ceo-swap-say-theyre-in-a-strong-position-at-a-time-when-much-of-the-industry-is-facing-major-challenges",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-13T15:47:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "A new report reckons 40% of developers in the video games industry are using generative AI - but even more think it's harmful",
-      "url": "https://www.eurogamer.net/gdc-report-40-percent-developers-generative-ai",
-      "source": "Eurogamer",
-      "published_at": "2026-11-13T15:34:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Intel takes massive chunk out of AMD's desktop CPU market share in unexpected turnaround - may be due to the red team's dominance in gaming chips, weirdly",
-      "url": "https://www.pcgamer.com/hardware/processors/intel-takes-massive-chunk-out-of-amds-desktop-cpu-market-share-in-unexpected-turnaround-may-be-due-to-the-red-teams-dominance-in-gaming-chips-weirdly/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-13T15:23:48Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "One week from launch, GTA 6's physical map reportedly leaks online thanks to the \u00a3350 collector's edition on show in a UK department store",
-      "url": "https://www.eurogamer.net/gta-6-map-leak-online-collectors-edition",
-      "source": "Eurogamer",
-      "published_at": "2026-11-13T15:13:40Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Reddit tells me it\u2019s not going to make a penny in affiliates from Reddit Reviews and is working hard to avoid inauthentic content",
-      "url": "https://www.pcgamer.com/software/reddit-tells-me-its-not-going-to-make-a-penny-in-affiliates-from-reddit-reviews-and-is-working-hard-to-avoid-inauthentic-content/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-13T15:05:54Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Slay the Spire 2 gets its first new character since its massively successful launch in March as part of \"biggest\" beta patch yet",
-      "url": "https://www.eurogamer.net/slay-the-spire-2-biggest-update-new-character-the-fool",
-      "source": "Eurogamer",
-      "published_at": "2026-11-13T15:02:10Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "How Origame Digital are channelling and defacing Lovecraft over a trilogy of \"inherently indigenous\" anti-fascist games",
-      "url": "https://www.rockpapershotgun.com/how-origame-digital-are-channelling-and-defacing-lovecraft-over-a-trilogy-of-inherently-indigenous-anti-fascist-games",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-13T14:30:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "'Clear national security concerns that need to be addressed immediately': new letters to Jensen Huang from Congress strike a tougher tone for the ex-Nvidia CEO",
-      "url": "https://www.pcgamer.com/hardware/graphics-cards/clear-national-security-concerns-that-need-to-be-addressed-immediately-new-letters-to-jensen-huang-from-congress-strike-a-tougher-tone-for-the-ex-nvidia-ceo/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-13T13:09:17Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Microsoft suffer system outage affecting Outlook, Teams and Copilot, exec says there's \"no indication this is the result of malicious or cyber activity\"",
-      "url": "https://www.rockpapershotgun.com/microsoft-suffer-system-outage-affecting-outlook-teams-and-copilot-exec-says-theres-no-indication-this-is-the-result-of-malicious-or-cyber-activity",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-13T13:06:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "'Heist of a new kind': AI-enabled scam reportedly managed to steal $110 million from French bank",
-      "url": "https://www.pcgamer.com/software/ai/heist-of-a-new-kind-ai-enabled-scam-reportedly-managed-to-steal-usd110-million-from-french-bank/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-13T13:03:55Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "AMD has patched its SSD-eating GPU driver bug with an optional Adrenalin update for RX 7000-series graphics cards and above",
-      "url": "https://www.pcgamer.com/hardware/graphics-cards/amd-has-patched-its-ssd-eating-gpu-driver-bug-with-an-optional-adrenalin-update-for-rx-7000-series-graphics-cards-and-above/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-13T12:42:43Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Xbox boss announces Wolfenstein 3 and confirms new game in development at idSoftware despite reported job cut \"bloodbath\"",
-      "url": "https://www.eurogamer.net/wolfenstein-3-new-id-software-game-announced-xbox",
-      "source": "Eurogamer",
-      "published_at": "2026-11-13T12:19:50Z",
       "games": [],
       "kind": "news",
       "highlight": false
