@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T18:37:48Z",
+  "generated_at": "2026-11-15T00:53:26Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,60 @@
     }
   ],
   "items": [
+    {
+      "title": "Planeswalker, Netflix's Magic: The Gathering animated series, will have a different art style for each plane",
+      "url": "https://www.pcgamer.com/movies-tv/planeswalker-netflixs-magic-the-gathering-animated-series-will-have-a-different-art-style-for-each-plane/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-14T23:50:31Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Forage and fight for ingredients in a magical 1960s Italy and whip up some tasty meals Cooking Mama style in The Snackbar at the End of the World",
+      "url": "https://www.rockpapershotgun.com/forage-and-fight-for-ingredients-in-a-magical-1960s-italy-and-whip-up-some-tasty-meals-cooking-mama-style-in-the-snackbar-at-the-end-of-the-world",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-14T22:53:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "WoW: Forever dungeon mobs no longer give EXP if they're trivial for anyone in the party",
+      "url": "https://www.pcgamer.com/games/world-of-warcraft/wow-forever-dungeon-mobs-no-longer-give-exp-if-theyre-trivial-for-anyone-in-the-party/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-14T22:17:19Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Rasen, out in early access now, is a PvP focused take on Dark Souls that borrows one of fighting games' best techy tricks",
+      "url": "https://www.rockpapershotgun.com/rasen-out-in-early-access-now-is-a-pvp-focused-take-on-dark-souls-that-borrows-one-of-fighting-games-best-techy-tricks",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-14T21:31:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Is the game funny, or just the players? Jackbox CEO says they get 'a lot of false positives' with a staff of comedy writers",
+      "url": "https://www.pcgamer.com/games/is-the-game-funny-or-just-the-players-jackbox-ceo-says-they-get-a-lot-of-false-positives-with-a-staff-of-comedy-writers/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-14T20:45:44Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Congratulations to people who feel mean shooting random NPCs, because GTA 6 tries \"to provide mechanisms that encourage\" empathy",
+      "url": "https://www.rockpapershotgun.com/congratulations-to-people-who-feel-mean-shooting-random-npcs-because-gta-6-tries-to-provide-mechanisms-that-encourage-empathy",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-14T19:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "From 2D to 3D and back to 2D again, the original platforming classic Super Meat Boy returns with a slick remaster complete with new levels and too many old saws",
       "url": "https://www.rockpapershotgun.com/from-2d-to-3d-and-back-to-2d-again-the-original-platforming-classic-super-meat-boy-returns-with-a-slick-remaster-complete-with-new-levels-and-too-many-old-saws",
@@ -58,7 +112,7 @@
       "highlight": false
     },
     {
-      "title": "Dishonored 2 director Harvey Smith wants to honour sacred imsim texts while finding news ways to surprise fans: \"That's the two wolves inside me\"",
+      "title": "Dishonored 2 director Harvey Smith wants to honour sacred imsim texts while finding news ways to surprise fans: 'That's the two wolves inside me'",
       "url": "https://www.pcgamer.com/games/sim/dishonored-2-director-harvey-smith-wants-to-honour-sacred-imsim-texts-while-finding-news-ways-to-surprise-fans-thats-the-two-wolves-inside-me/",
       "source": "PC Gamer",
       "published_at": "2026-11-14T15:00:00Z",
@@ -103,7 +157,7 @@
       "highlight": false
     },
     {
-      "title": "Indiana Jones and the Great Circle once had a Grand Theft Auto inspired wanted system, because MachineGames was 'afraid' players would kill all the Nazis 'with just guns'",
+      "title": "Indiana Jones and the Great Circle once had a Grand Theft Auto-inspired wanted system, because MachineGames was 'afraid' players would kill all the Nazis 'with just guns'",
       "url": "https://www.pcgamer.com/games/action/indiana-jones-and-the-great-circle-once-had-a-grand-theft-auto-inspired-wanted-system-because-machinegames-was-afraid-players-would-kill-all-the-nazis-with-just-guns/",
       "source": "PC Gamer",
       "published_at": "2026-11-14T11:26:04Z",
@@ -511,64 +565,6 @@
       "source": "Eurogamer",
       "published_at": "2026-11-13T09:42:40Z",
       "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Halo: Campaign Evolved is getting its own four-player version of the series' staple Firefight mode, for free, \"this winter\"",
-      "url": "https://www.eurogamer.net/halo-campaign-evovled-firefight-mode",
-      "source": "Eurogamer",
-      "published_at": "2026-11-13T09:36:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "SteamOS 3.9.6 Beta",
-      "url": "https://store.steampowered.com/news/app/1675200/view/1849192144185473",
-      "source": "Steam \u00b7 Steam Deck",
-      "published_at": "2026-11-13T02:05:23Z",
-      "games": [
-        "steam-deck"
-      ],
-      "kind": "announcement",
-      "highlight": false
-    },
-    {
-      "title": "Wolfenstein 3 is in production at MachineGames",
-      "url": "https://www.pcgamer.com/games/fps/wolfenstein-3-is-in-production-at-machinegames/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-13T01:35:32Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Slay the Spire 2's \"biggest\" beta patch yet adds its first new early access and foolish character, two game modes, and more tweaks than you can shake a stick at",
-      "url": "https://www.rockpapershotgun.com/slay-the-spire-2s-biggest-beta-patch-yet-adds-its-first-new-early-access-and-foolish-character-two-game-modes-and-more-tweaks-than-you-can-shake-a-stick-at",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-12T22:53:40Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "New 4-minute Fable gameplay trailer shows a game that doesn't look much like Fable",
-      "url": "https://www.pcgamer.com/games/rpg/new-4-minute-fable-gameplay-trailer-shows-a-game-that-doesnt-look-much-like-fable/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-12T22:43:21Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Palworld developer Pocketpair gives employees time off for 'a 5-day business trip in Vice City when GTA 6 launches'",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/palworld-developer-pocketpair-gives-employees-time-off-for-a-5-day-business-trip-in-vice-city-when-gta-6-launches/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-12T22:08:48Z",
-      "games": [
-        "palworld"
-      ],
       "kind": "news",
       "highlight": false
     }
