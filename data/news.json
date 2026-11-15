@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T00:53:26Z",
+  "generated_at": "2026-11-15T13:43:16Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,60 @@
     }
   ],
   "items": [
+    {
+      "title": "The Sunday Papers",
+      "url": "https://www.rockpapershotgun.com/the-sunday-papers-836",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-15T13:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Former survival MMO Dune: Awakening can now be played 'without requiring an Internet connection at any point' as its much requested offline mode arrives",
+      "url": "https://www.pcgamer.com/games/survival-crafting/former-survival-mmo-dune-awakening-can-now-be-played-without-requiring-an-internet-connection-at-any-point-as-its-much-requested-offline-mode-arrives/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-15T12:33:46Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Chronicles: Medieval developer declared bankruptcy on the day it announced it was in trouble, but development will continue after a $5 million reprieve from Coffee Stain",
+      "url": "https://www.pcgamer.com/games/strategy/chronicles-medieval-developer-declared-bankruptcy-on-the-day-it-announced-it-was-in-trouble-but-development-will-continue-after-a-usd5-million-reprieve-from-coffee-stain/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-15T11:27:41Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "What's the best GTA?",
+      "url": "https://www.eurogamer.net/the-big-question-whats-the-best-gta",
+      "source": "Eurogamer",
+      "published_at": "2026-11-15T10:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The most annoying questgivers in PC games",
+      "url": "https://www.pcgamer.com/games/the-most-annoying-questgivers-in-pc-games/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-15T07:21:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "GTA 6 soundtrack leak confirmed accurate with new songs from Lana Del Rey, Playboi Carti, and Keith Richards",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-soundtrack-leak-confirmed-accurate-with-new-songs-from-lana-del-rey-playboi-carti-and-keith-richards/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-15T04:52:26Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Planeswalker, Netflix's Magic: The Gathering animated series, will have a different art style for each plane",
       "url": "https://www.pcgamer.com/movies-tv/planeswalker-netflixs-magic-the-gathering-animated-series-will-have-a-different-art-style-for-each-plane/",
@@ -510,60 +564,6 @@
       "url": "https://www.eurogamer.net/wolfenstein-3-new-id-software-game-announced-xbox",
       "source": "Eurogamer",
       "published_at": "2026-11-13T12:19:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Ex-Nvidia CEO Jensen Huang allegedly had an 'intimate relationship' with a second Nvidia employee, according to reports",
-      "url": "https://www.pcgamer.com/hardware/ex-nvidia-ceo-jensen-huang-allegedly-had-an-intimate-relationship-with-a-second-nvidia-employee-according-to-reports/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-13T11:33:19Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "'I stand by Jensen': Nvidia employees come out in support of Huang after resignation",
-      "url": "https://www.pcgamer.com/hardware/i-stand-by-jensen-nvidia-employees-come-out-in-support-of-huang-after-resignation/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-13T11:30:35Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Horu is a sci-fi 4X RTS inspired by Star Wars: Empire at War in which spaceships are spellcasters who can summon black holes",
-      "url": "https://www.rockpapershotgun.com/horu-is-a-sci-fi-4x-rts-inspired-by-star-wars-empire-at-war-in-which-spaceships-are-spellcasters-who-can-summon-black-holes",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-13T11:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Wolfenstein 3 and new id Software game confirmed, as Xbox boss somehow unrelatedly shouts about one person soon wielding \"capabilities that once required entire nations\"",
-      "url": "https://www.rockpapershotgun.com/wolfenstein-3-and-new-id-software-game-confirmed-as-xbox-boss-somehow-unrelatedly-shouts-about-one-person-soon-wieldling-capabilities-that-once-required-entire-nations",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-13T10:34:40Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Microsoft says there is 'no evidence of malicious activity' being the cause of the global service outage affecting governments and organisations around the world",
-      "url": "https://www.pcgamer.com/software/security/microsoft-says-there-is-no-evidence-of-malicious-activity-being-the-cause-of-the-global-service-outage-affecting-governments-and-organisations-around-the-world/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-13T10:33:22Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Will GTA 6 break the internet? UK broadband operator braces for impact, saying \"GTA 6 has been on our radar for a long time\"",
-      "url": "https://www.eurogamer.net/gta-6-internet-uk-broadband-ofcom-openreach",
-      "source": "Eurogamer",
-      "published_at": "2026-11-13T09:42:40Z",
       "games": [],
       "kind": "news",
       "highlight": false
