@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T22:39:50Z",
+  "generated_at": "2026-11-16T05:37:19Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,15 @@
     }
   ],
   "items": [
+    {
+      "title": "Influential Warhammer miniature designer Aly Morrison has died",
+      "url": "https://www.pcgamer.com/games/board-games/influential-warhammer-miniature-designer-aly-morrison-has-died/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-16T05:30:39Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Are you more of an ambient music enjoyer or theatrical atmosphere appreciator?",
       "url": "https://www.pcgamer.com/games/world-of-warcraft/are-you-more-of-an-ambient-music-enjoyer-or-theatrical-atmosphere-appreciator/",
@@ -559,15 +568,6 @@
       "url": "https://www.eurogamer.net/introducing-gta-and-not-gta-theme-weeks",
       "source": "Eurogamer",
       "published_at": "2026-11-13T15:51:40Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Chipmaking giant TSMC discovers major employee data leak\u2014reports say info was up for sale for three bitcoin on shady forums",
-      "url": "https://www.pcgamer.com/hardware/chipmaking-giant-tsmc-discovers-major-employee-data-leak-reports-say-info-was-up-for-sale-for-three-bitcoin-on-shady-forums/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-13T15:48:14Z",
       "games": [],
       "kind": "news",
       "highlight": false
