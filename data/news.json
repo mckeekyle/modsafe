@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T05:37:19Z",
+  "generated_at": "2026-11-16T15:16:06Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,156 @@
     }
   ],
   "items": [
+    {
+      "title": "World of Warcraft: Forever player turns their paladin into a near-unkillable healbot, solos a level 60 monster at level 30, and swims into the ocean",
+      "url": "https://www.pcgamer.com/games/world-of-warcraft/world-of-warcraft-forever-player-turns-their-paladin-into-a-near-unkillable-healbot-solos-a-level-60-monster-at-level-30-and-swims-into-the-ocean/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-16T14:34:01Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Ever wanted to play a multiplayer version of Cyberpunk 2077 with your friends? Well, thanks to a mod now in beta, you can",
+      "url": "https://www.eurogamer.net/cyberpunk-2077-multiplayer-mod-open-beta",
+      "source": "Eurogamer",
+      "published_at": "2026-11-16T14:19:10Z",
+      "games": [
+        "cyberpunk-2077"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Ashes of the Singularity 2 review: Some neat ideas undermined by a rubbish campaign and obtrusive generative AI",
+      "url": "https://www.pcgamer.com/games/rts/ashes-of-the-singularity-2-review/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-16T14:01:32Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "'Game dev isn't always straightforward': Overwatch's director responds to players upset about season 6's hero being a DPS",
+      "url": "https://www.pcgamer.com/games/fps/game-dev-isnt-always-straightforward-overwatchs-director-responds-to-players-upset-about-season-6s-hero-being-a-dps/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-16T13:35:19Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Intel hit with class action alleging it 'misled investors' \u2013 company's recent downturn due in part to how darn expensive PCs are right now",
+      "url": "https://www.pcgamer.com/hardware/processors/intel-hit-with-class-action-alleging-it-misled-investors-companys-recent-downturn-due-in-part-to-how-darn-expensive-pcs-are-right-now/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-16T13:28:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Can GTA 6 make $2 billion in its opening weekend? One industry analyst has run the numbers, and seems to think so",
+      "url": "https://www.eurogamer.net/can-gta-6-make-2-billion-in-its-opening-weekend-one-industry-analyst-has-run-the-numbers-and-seems-to-think-so",
+      "source": "Eurogamer",
+      "published_at": "2026-11-16T13:20:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "New Asus beta BIOS patches now include a fresh AMD feature to stop you thinking your PC's b0rked",
+      "url": "https://www.pcgamer.com/hardware/motherboards/new-asus-beta-bios-patches-now-include-a-fresh-amd-feature-to-stop-you-thinking-your-pcs-b0rked/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-16T13:16:34Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Jensen Huang reportedly eyeing up return to Nvidia as friendly tech execs form 'war room' to fight for him and over 175,000 people sign #bringjensenback petition",
+      "url": "https://www.pcgamer.com/software/ai/jensen-huang-reportedly-eyeing-up-return-to-nvidia-as-friendly-tech-execs-form-war-room-to-fight-for-him-and-over-175-000-people-sign-bringjensenback-petition/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-16T13:14:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "This week in PC games: start a new life in Vice City, escape a dying universe before the last black hole evaporates, and avenge your pigeon with a sledgehammer",
+      "url": "https://www.rockpapershotgun.com/this-week-in-pc-games-start-a-new-life-in-vice-city-escape-a-dying-universe-before-the-last-black-hole-evaporates-and-avenge-your-pigeon-with-a-sledgehammer",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-16T12:54:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "\"Nobody was hurt\" in shooting near Clockwork Revolution devs InXile Entertainment's office, the Xbox-owned studio and police confirm",
+      "url": "https://www.rockpapershotgun.com/nobody-was-hurt-in-shooting-near-clockwork-revolution-devs-inxile-entertainments-office-the-xbox-owned-studio-and-police-confirm",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-16T12:10:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The next Xbox, Project Helix, is a console and \"not a PC\" says Microsoft, as it clarifies that computational power isn't sole focus this time",
+      "url": "https://www.eurogamer.net/microsoft-project-helix-interview-details",
+      "source": "Eurogamer",
+      "published_at": "2026-11-16T12:08:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "WoW: Forever's continued to wrestle with dungeons, as Blizzard admits it briefly 'missed the mark' on hotfixes over the weekend",
+      "url": "https://www.pcgamer.com/games/world-of-warcraft/wow-forevers-continued-to-wrestle-with-dungeons-as-blizzard-admits-it-briefly-missed-the-mark-on-hotfixes-over-the-weekend/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-16T11:51:12Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The latest SteamOS update improves support on Nvidia-powered PCs: makes swapping your rig to the OS less painful",
+      "url": "https://www.pcgamer.com/hardware/steam-machines/the-latest-steamos-update-improves-support-on-nvidia-powered-pcs-makes-swapping-your-rig-to-the-os-less-painful/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-16T11:47:03Z",
+      "games": [
+        "steam-deck"
+      ],
+      "kind": "news",
+      "highlight": true
+    },
+    {
+      "title": "Umamusume: Pretty Derby parent company plans to release seven new games by 2030 as it boasts an \"88 percent hit rate\" on its mobile titles",
+      "url": "https://www.eurogamer.net/umamusume-dev-seven-new-games-2030",
+      "source": "Eurogamer",
+      "published_at": "2026-11-16T11:20:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "\"We've finally reached this milestone\": Cyberpunk 2077 multiplayer mod CyberMP kicks off open beta after around six years preparing for cybermayhem",
+      "url": "https://www.rockpapershotgun.com/weve-finally-reached-this-milestone-cyberpunk-2077-multiplayer-mod-cybermp-kicks-off-open-beta-after-around-six-years-preparing-for-cybermayhem",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-16T10:28:20Z",
+      "games": [
+        "cyberpunk-2077"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "EA hires another former Call of Duty boss to take the lead on all Battlefield Studios' projects",
+      "url": "https://www.eurogamer.net/battlefield-call-of-duty-sam-cooper-byron-beede-live-service",
+      "source": "Eurogamer",
+      "published_at": "2026-11-16T09:24:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Influential Warhammer miniature designer Aly Morrison has died",
       "url": "https://www.pcgamer.com/games/board-games/influential-warhammer-miniature-designer-aly-morrison-has-died/",
@@ -419,155 +569,6 @@
       "url": "https://www.eurogamer.net/blood-of-dawnwalker-new-game-plus",
       "source": "Eurogamer",
       "published_at": "2026-11-13T20:49:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "A survival game we once called 'Stalker and Tarkov's alien baby' is closing down less than a year after launch",
-      "url": "https://www.pcgamer.com/games/fps/a-survival-game-we-once-called-stalker-and-tarkovs-alien-baby-is-closing-down-less-than-a-year-after-launch/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-13T20:37:35Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Microsoft \u2018deeply\u2019 apologizes for global service outage, says no AI or hackers are to blame",
-      "url": "https://www.pcgamer.com/software/microsoft-deeply-apologizes-for-global-service-outage-says-no-ai-or-hackers-are-to-blame/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-13T19:54:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Interest in The Legend of Zelda was \"getting smaller and smaller\" before Breath of the Wild, according to former Nintendo marketing leads",
-      "url": "https://www.eurogamer.net/legend-of-zelda-smaller-before-breath-of-the-wild",
-      "source": "Eurogamer",
-      "published_at": "2026-11-13T19:52:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "New Grand Theft Auto 6 trailer is for a TV show that exists within Grand Theft Auto 6",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/new-grand-theft-auto-6-trailer-is-for-a-tv-show-that-exists-within-grand-theft-auto-6/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-13T19:30:31Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Think you know videogame cats? Then name 17 of them",
-      "url": "https://www.pcgamer.com/games/think-you-know-videogame-cats-then-name-17-of-them/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-13T18:43:11Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Crimson Desert studio is implementing AI \"throughout our entire development pipeline,\" and expects DokeV to launch in 2028",
-      "url": "https://www.eurogamer.net/crimson-desert-ai-pipeline-dokev-2028",
-      "source": "Eurogamer",
-      "published_at": "2026-11-13T18:29:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "I cannot stop everyone staring at me in GTA 5",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/i-cannot-stop-everyone-staring-at-me-in-gta-5/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-13T18:00:00Z",
-      "games": [
-        "gta-v-legacy",
-        "gta-v-enhanced"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Cyberpunk trading sim Probably Stolen is getting three big updates with new starting scenarios - organ trading, junk empires and fine dining",
-      "url": "https://www.rockpapershotgun.com/cyberpunk-trading-sim-probably-stolen-is-getting-three-big-updates-with-new-starting-scenarios-organ-trading-junk-empires-and-fine-dining",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-13T17:30:00Z",
-      "games": [
-        "cyberpunk-2077"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "8BitDo Ultimate 3E wireless controller review",
-      "url": "https://www.pcgamer.com/hardware/controllers/8bitdo-ultimate-3e-review/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-13T17:20:13Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Overwatch's creative director accidentally leaks the name of season 6's upcoming hero and reveals that he 'got the highest scores of any hero that we've tested'",
-      "url": "https://www.pcgamer.com/games/fps/overwatchs-creative-director-accidentally-leaks-the-name-of-season-6s-upcoming-hero-and-reveals-that-he-got-the-highest-scores-of-any-hero-that-weve-tested/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-13T17:15:16Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "22 years after the Hot Coffee controversy, UK politician says Grand Theft Auto 6 is 'something that we can be really proud of'",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/22-years-after-the-hot-coffee-controversy-uk-politician-says-grand-theft-auto-6-is-something-that-we-can-be-really-proud-of/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-13T17:12:56Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "While soulslikes went bigger than big, Death's Door swung open the appeal of a tighter adventure",
-      "url": "https://www.rockpapershotgun.com/have-you-played-deaths-door",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-13T17:05:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Worst Class Ever takes asymmetrical multiplayer back to school, with a teacher player trying to spot the naughty children among the NPCs",
-      "url": "https://www.rockpapershotgun.com/worst-class-ever-takes-asymmetrical-multiplayer-back-to-school-with-a-teacher-player-trying-to-spot-the-naughty-children-among-the-npcs",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-13T16:34:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "'Season 10 has been a challenging one for us': Marvel Rivals is upgrading Storm's summer skin after favouritism complaints",
-      "url": "https://www.pcgamer.com/games/third-person-shooter/season-10-has-been-a-challenging-one-for-us-marvel-rivals-is-upgrading-storms-summer-skin-after-favouritism-complaints/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-13T16:28:30Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Tell us your favourite Grand Theft Auto gaming memory and win a copy of GTA 6",
-      "url": "https://www.eurogamer.net/grand-theft-auto-gaming-memory-competition-gta-6-win",
-      "source": "Eurogamer",
-      "published_at": "2026-11-13T15:54:30Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Introducing three weeks of specialist GTA - and not-GTA! - programming on Eurogamer",
-      "url": "https://www.eurogamer.net/introducing-gta-and-not-gta-theme-weeks",
-      "source": "Eurogamer",
-      "published_at": "2026-11-13T15:51:40Z",
       "games": [],
       "kind": "news",
       "highlight": false
