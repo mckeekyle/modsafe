@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T01:46:36Z",
+  "generated_at": "2026-11-17T15:44:27Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,270 @@
     }
   ],
   "items": [
+    {
+      "title": "Former Dishonored designer joins the team on New Blood's Victorian immersive sim Gloomwood, with a new level and new weapons coming this year",
+      "url": "https://www.rockpapershotgun.com/former-dishonored-designer-joins-the-team-on-new-bloods-victorian-immersive-sim-gloomwood-with-a-new-level-and-new-weapons-coming-this-year",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-17T15:32:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Sci-fi RPG Exodus continues evoking Mass Effect by revealing female lead and nicknaming her FemJun",
+      "url": "https://www.eurogamer.net/exodus-femjun-femshep-mass-effect-bioware-sci-fi-rpg",
+      "source": "Eurogamer",
+      "published_at": "2026-11-17T15:30:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "TCL CSOT's new OLED panels might not only be cheaper, but also have high refresh rates and hassle-free pixel burn-in compensation",
+      "url": "https://www.pcgamer.com/hardware/gaming-monitors/tcl-csots-new-oled-panels-might-not-only-be-cheaper-but-also-have-high-refresh-rates-and-hassle-free-pixel-burn-in-compensation/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-17T15:22:45Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "I'm not saying Sleeping Dogs is the world's best life of crime sim, but no other game has replicated the importance of pork buns to whole manhood as deftly",
+      "url": "https://www.rockpapershotgun.com/im-not-saying-sleeping-dogs-is-the-worlds-best-life-of-crime-sim-but-no-other-game-has-replicated-the-importance-of-pork-buns-to-whole-manhood-as-deftly",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-17T15:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Twitchers rejoice: GTA 6 will have 62 different species of birds, though that falls a bit short of the over 500 native species found in Florida",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/twitchers-rejoice-gta-6-will-have-62-different-species-of-birds-though-that-falls-a-bit-short-of-the-over-500-native-species-found-in-florida/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-17T14:35:57Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The Legend of Zelda: Ocarina of Time on Switch 2 is the US' best-selling physical game so far this year",
+      "url": "https://www.eurogamer.net/the-legend-of-zelda-ocarina-of-time-remake-physical-sales-us-1-million",
+      "source": "Eurogamer",
+      "published_at": "2026-11-17T14:20:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "AMD introduces Capacity Aware Scheduling to the Linux kernel, which sure is the thing I'd do if I were introducing Zen 6 LP cores next year",
+      "url": "https://www.pcgamer.com/hardware/processors/amd-introduces-capacity-aware-scheduling-to-the-linux-kernel-which-sure-is-the-thing-id-do-if-i-were-introducing-zen-6-lp-cores-next-year/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-17T13:12:39Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Nvidia tightens up control of its own national security policies as it cozies up to US government with new board-controlled committee",
+      "url": "https://www.pcgamer.com/hardware/graphics-cards/nvidia-tightens-up-control-of-its-own-national-security-policies-as-it-cozies-up-to-us-government-with-new-board-controlled-committee/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-17T12:55:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Call of Duty might have swapped guns and tanks for knights and swords if an Infinity Ward experiment had panned out",
+      "url": "https://www.eurogamer.net/call-of-duty-medieval-prototype-infinity-ward",
+      "source": "Eurogamer",
+      "published_at": "2026-11-17T12:49:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "\"Games are best made by people\": The IWGB and other European unions publish joint manifesto calling on workers, employers and consumers to reject genAI",
+      "url": "https://www.rockpapershotgun.com/games-are-best-made-by-people-the-iwgb-and-other-european-unions-publish-joint-manifesto-calling-on-workers-employers-and-consumers-to-reject-genai",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-17T12:30:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Is it time to retire Dragon Quest as a series? Chrono Trigger composer Yasunori Mitsuda thinks it might be",
+      "url": "https://www.eurogamer.net/dragon-quest-series-composer-akira-toriyama",
+      "source": "Eurogamer",
+      "published_at": "2026-11-17T12:27:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "As blockbuster game releases run scared from GTA 6, meet the brave devs tackling Rockstar's behemoth head-on",
+      "url": "https://www.eurogamer.net/grand-theft-auto-6-meet-the-developers-tackling-it-head-on",
+      "source": "Eurogamer",
+      "published_at": "2026-11-17T12:01:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Unity launches new Fellowship program, offering a \"no recoup\" $50,000 grant to indie developers planning to launch their game in the next 12 months",
+      "url": "https://www.rockpapershotgun.com/unity-launches-new-fellowship-program-offering-a-no-recoup-50000-grant-to-indie-developers-planning-to-launch-their-game-in-the-next-12-months",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-17T12:00:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "WoW: Forever's economy has a problem, as a now-hotfixed grind rakes in thousands of gold for the people who got in early",
+      "url": "https://www.pcgamer.com/games/world-of-warcraft/wow-forevers-economy-has-a-problem-as-a-now-hotfixed-grind-rakes-in-thousands-of-gold-for-the-people-who-got-in-early/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-17T11:56:46Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "US agencies confirm criminal investigation into Megaspeed - datacenter company is in a colossal tangle over Nvidia chips",
+      "url": "https://www.pcgamer.com/hardware/graphics-cards/us-agencies-confirm-criminal-investigation-into-megaspeed-datacenter-company-is-in-a-colossal-tangle-over-nvidia-chips/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-17T11:50:33Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "\"Encouraging players to return is no mean feat\" - Square Enix tempts Final Fantasy 14 players back with free game-time to fill void before new expansion",
+      "url": "https://www.eurogamer.net/final-fantasy-14-free--game-time-expansion-evercold",
+      "source": "Eurogamer",
+      "published_at": "2026-11-17T11:48:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "'They would never stop working on this game': GTA 6's development could've gone on for longer just because 'it's really hard to close it down'",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/they-would-never-stop-working-on-this-game-gta-6s-development-couldve-gone-on-for-longer-just-because-its-really-hard-to-close-it-down/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-17T11:47:29Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Modder beats Valve to the punch adding Steam Controller tracking for the Steam Frame",
+      "url": "https://www.pcgamer.com/hardware/vr-hardware/modder-beats-valve-to-the-punch-adding-steam-controller-tracking-for-the-steam-frame/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-17T11:30:45Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Break up and re-commodify a fallen Earth in Steel Gullet, a satisfyingly funereal factory puzzler that really loves thermodynamics",
+      "url": "https://www.rockpapershotgun.com/break-up-and-re-commodify-a-fallen-earth-in-steel-gullet-a-satisfyingly-funereal-factory-puzzler-that-really-loves-thermodynamics",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-17T11:30:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Star Wars Galactic Racer will get local split-screen multiplayer in early 2027 with new 'Free Play' mode, finally letting racers yell at one another in a tangible space",
+      "url": "https://www.rockpapershotgun.com/star-wars-galactic-racer-will-get-local-split-screen-multiplayer-in-early-2027-with-new-free-play-mode-finally-letting-racers-yell-at-one-another-in-a-tangible-space",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-17T11:00:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "GTA 6 release times: How far behind the first launch will GTA 6 unlock in your time zone?",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-release-time-date/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-17T11:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "After GTA 6's original soundtrack, Justice probably won't work on any other video game ever again",
+      "url": "https://www.eurogamer.net/gta-6-justice-ost-only-game",
+      "source": "Eurogamer",
+      "published_at": "2026-11-17T10:57:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Sony squeezes out a PlayStation 5 firmware update before the release of GTA 6",
+      "url": "https://www.eurogamer.net/ps5-firmware-update-gta-6",
+      "source": "Eurogamer",
+      "published_at": "2026-11-17T10:51:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Judge denies motion to dismiss lawsuit accusing Samsung, SK Hynix and Micron of worsening RAM crisis by fixing memory prices and supply",
+      "url": "https://www.rockpapershotgun.com/judge-denies-motion-to-dismiss-lawsuit-accusing-samsung-sk-hynix-and-micron-of-worsening-ram-crisis-by-fixing-memory-prices-and-supply",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-17T10:27:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Grand Theft Auto: San Andreas is GTA 5 without the finesse - so why is the 2004 classic such a strange delight to return to?",
+      "url": "https://www.eurogamer.net/returning-to-gta-san-andreas-grand-theft-auto-5-6",
+      "source": "Eurogamer",
+      "published_at": "2026-11-17T10:11:00Z",
+      "games": [
+        "gta-v-legacy",
+        "gta-v-enhanced"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Ex-Call of Duty live service manager joins EA as the new GM of Battlefield",
+      "url": "https://www.pcgamer.com/games/fps/ex-call-of-duty-live-service-manager-joins-ea-as-the-new-gm-of-battlefield/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-17T09:57:28Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "World of Warcraft: Forever's in-game economy has been ravaged by an exploit that allowed players to farm thousands of gold",
+      "url": "https://www.eurogamer.net/world-of-warcraft-forever-gold-farm-exploit",
+      "source": "Eurogamer",
+      "published_at": "2026-11-17T09:51:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Microsoft's SideWinder Strategic Commander was a failed attempt to reimagine RTS controls. 23 years later, why are some players still using it?",
+      "url": "https://www.rockpapershotgun.com/microsofts-sidewinder-strategic-commander-was-a-failed-attempt-to-reimagine-rts-controls-23-years-later-why-are-some-players-still-using-it",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-17T09:31:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "EA really doesn't want you to delete Madden NFL 27 to make room for GTA 6",
+      "url": "https://www.eurogamer.net/ea-madden-nfl-27-dont-delete-gta-6",
+      "source": "Eurogamer",
+      "published_at": "2026-11-17T09:17:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "SteamOS 3.10.1 Preview",
       "url": "https://store.steampowered.com/news/app/1675200/view/1849458702691760",
@@ -305,275 +569,6 @@
       "url": "https://www.rockpapershotgun.com/this-week-in-pc-games-start-a-new-life-in-vice-city-escape-a-dying-universe-before-the-last-black-hole-evaporates-and-avenge-your-pigeon-with-a-sledgehammer",
       "source": "Rock Paper Shotgun",
       "published_at": "2026-11-16T12:54:10Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "\"Nobody was hurt\" in shooting near Clockwork Revolution devs InXile Entertainment's office, the Xbox-owned studio and police confirm",
-      "url": "https://www.rockpapershotgun.com/nobody-was-hurt-in-shooting-near-clockwork-revolution-devs-inxile-entertainments-office-the-xbox-owned-studio-and-police-confirm",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-16T12:10:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The next Xbox, Project Helix, is a console and \"not a PC\" says Microsoft, as it clarifies that computational power isn't sole focus this time",
-      "url": "https://www.eurogamer.net/microsoft-project-helix-interview-details",
-      "source": "Eurogamer",
-      "published_at": "2026-11-16T12:08:40Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "WoW: Forever's continued to wrestle with dungeons, as Blizzard admits it briefly 'missed the mark' on hotfixes over the weekend",
-      "url": "https://www.pcgamer.com/games/world-of-warcraft/wow-forevers-continued-to-wrestle-with-dungeons-as-blizzard-admits-it-briefly-missed-the-mark-on-hotfixes-over-the-weekend/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-16T11:51:12Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The latest SteamOS update improves support on Nvidia-powered PCs: makes swapping your rig to the OS less painful",
-      "url": "https://www.pcgamer.com/hardware/steam-machines/the-latest-steamos-update-improves-support-on-nvidia-powered-pcs-makes-swapping-your-rig-to-the-os-less-painful/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-16T11:47:03Z",
-      "games": [
-        "steam-deck"
-      ],
-      "kind": "news",
-      "highlight": true
-    },
-    {
-      "title": "Umamusume: Pretty Derby parent company plans to release seven new games by 2030 as it boasts an \"88 percent hit rate\" on its mobile titles",
-      "url": "https://www.eurogamer.net/umamusume-dev-seven-new-games-2030",
-      "source": "Eurogamer",
-      "published_at": "2026-11-16T11:20:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "\"We've finally reached this milestone\": Cyberpunk 2077 multiplayer mod CyberMP kicks off open beta after around six years preparing for cybermayhem",
-      "url": "https://www.rockpapershotgun.com/weve-finally-reached-this-milestone-cyberpunk-2077-multiplayer-mod-cybermp-kicks-off-open-beta-after-around-six-years-preparing-for-cybermayhem",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-16T10:28:20Z",
-      "games": [
-        "cyberpunk-2077"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "EA hires another former Call of Duty boss to take the lead on all Battlefield Studios' projects",
-      "url": "https://www.eurogamer.net/battlefield-call-of-duty-sam-cooper-byron-beede-live-service",
-      "source": "Eurogamer",
-      "published_at": "2026-11-16T09:24:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Influential Warhammer miniature designer Aly Morrison has died",
-      "url": "https://www.pcgamer.com/games/board-games/influential-warhammer-miniature-designer-aly-morrison-has-died/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-16T05:30:39Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Are you more of an ambient music enjoyer or theatrical atmosphere appreciator?",
-      "url": "https://www.pcgamer.com/games/world-of-warcraft/are-you-more-of-an-ambient-music-enjoyer-or-theatrical-atmosphere-appreciator/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-15T18:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Police arrest suspect after drive-by shooting at office campus housing Xbox studio inXile",
-      "url": "https://www.eurogamer.net/inxile-office-shooting-tustin-suspect-arrested",
-      "source": "Eurogamer",
-      "published_at": "2026-11-15T17:47:40Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "League of Legends will get an overhaul called New Dawn with new visuals, build options, and an updated client",
-      "url": "https://www.pcgamer.com/games/moba/league-of-legends-will-get-an-overhaul-called-new-dawn-with-new-visuals-build-options-and-an-updated-client/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-15T17:45:48Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Cyberpunk 2077 mod Torrent adds 3D rain, lightning storms, and tyre spray to Night City",
-      "url": "https://www.eurogamer.net/cyberpunk-2077-torrent-rain-weather-mod",
-      "source": "Eurogamer",
-      "published_at": "2026-11-15T17:39:20Z",
-      "games": [
-        "cyberpunk-2077"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The pandemic was transformative for Jackbox: 'We went from a gamer name to a household name'",
-      "url": "https://www.pcgamer.com/games/the-pandemic-was-transformative-for-jackbox-we-went-from-a-gamer-name-to-a-household-name/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-15T17:30:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "YouTuber and comedian Ashens has 1,000 hours in Baldur's Gate 3 and reveals the worst retro game he's ever played: 'By the time you've hacked it to work, it's just no fun whatsoever'",
-      "url": "https://www.pcgamer.com/gaming-industry/youtuber-and-comedian-ashens-has-1-000-hours-in-baldurs-gate-3-and-reveals-the-worst-retro-game-hes-ever-played-by-the-time-youve-hacked-it-to-work-its-just-no-fun-whatsoever/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-15T17:00:00Z",
-      "games": [
-        "baldurs-gate-3"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Slay the Spire 2 has a new character in testing, and she's really quite busted",
-      "url": "https://www.pcgamer.com/games/roguelike/slay-the-spire-2-has-a-new-character-in-testing-and-shes-really-quite-busted/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-15T16:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Treyarch lays off lead Call of Duty writer and Zombies veteran after \"approximately 20 years\" of service",
-      "url": "https://www.eurogamer.net/craig-houston-layoff-treyarch-call-of-duty-layoffs",
-      "source": "Eurogamer",
-      "published_at": "2026-11-15T15:14:10Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Queen's Domain is the best Dark Souls 1 since Dark Souls 1",
-      "url": "https://www.pcgamer.com/games/rpg/queens-domain-is-the-best-dark-souls-1-since-dark-souls-1/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-15T15:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Blade Runner 2099 bosses hint at a possible \"triple-A\" Blade Runner game in the future - just don't expect it any time soon",
-      "url": "https://www.eurogamer.net/blade-runner-2099-triple-a-talks",
-      "source": "Eurogamer",
-      "published_at": "2026-11-15T14:43:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "This RTS inspired by Star Wars: Empire at War promises colossal space encounters and planetary battles with 'hundreds of thousands of units'",
-      "url": "https://www.pcgamer.com/games/rts/this-rts-inspired-by-star-wars-empire-at-war-promises-colossal-space-encounters-and-planetary-battles-with-hundreds-of-thousands-of-units/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-15T14:30:16Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The latest GTA 6 leak comes in the form of a 34-song tracklist for GTA 6: The Album, featuring Dua Lipa, Lana Del Rey, Rina Sawayama, and more",
-      "url": "https://www.eurogamer.net/gta-6-tracklist-leak",
-      "source": "Eurogamer",
-      "published_at": "2026-11-15T14:03:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The Sunday Papers",
-      "url": "https://www.rockpapershotgun.com/the-sunday-papers-836",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-15T13:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Former survival MMO Dune: Awakening can now be played 'without requiring an Internet connection at any point' as its much requested offline mode arrives",
-      "url": "https://www.pcgamer.com/games/survival-crafting/former-survival-mmo-dune-awakening-can-now-be-played-without-requiring-an-internet-connection-at-any-point-as-its-much-requested-offline-mode-arrives/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-15T12:33:46Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Chronicles: Medieval developer declared bankruptcy on the day it announced it was in trouble, but development will continue after a $5 million reprieve from Coffee Stain",
-      "url": "https://www.pcgamer.com/games/strategy/chronicles-medieval-developer-declared-bankruptcy-on-the-day-it-announced-it-was-in-trouble-but-development-will-continue-after-a-usd5-million-reprieve-from-coffee-stain/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-15T11:27:41Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "What's the best GTA?",
-      "url": "https://www.eurogamer.net/the-big-question-whats-the-best-gta",
-      "source": "Eurogamer",
-      "published_at": "2026-11-15T10:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The most annoying questgivers in PC games",
-      "url": "https://www.pcgamer.com/games/the-most-annoying-questgivers-in-pc-games/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-15T07:21:40Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "GTA 6 soundtrack leak confirmed accurate with new songs from Lana Del Rey, Playboi Carti, and Keith Richards",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-soundtrack-leak-confirmed-accurate-with-new-songs-from-lana-del-rey-playboi-carti-and-keith-richards/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-15T04:52:26Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Planeswalker, Netflix's Magic: The Gathering animated series, will have a different art style for each plane",
-      "url": "https://www.pcgamer.com/movies-tv/planeswalker-netflixs-magic-the-gathering-animated-series-will-have-a-different-art-style-for-each-plane/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-14T23:50:31Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Forage and fight for ingredients in a magical 1960s Italy and whip up some tasty meals Cooking Mama style in The Snackbar at the End of the World",
-      "url": "https://www.rockpapershotgun.com/forage-and-fight-for-ingredients-in-a-magical-1960s-italy-and-whip-up-some-tasty-meals-cooking-mama-style-in-the-snackbar-at-the-end-of-the-world",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-14T22:53:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "WoW: Forever dungeon mobs no longer give EXP if they're trivial for anyone in the party",
-      "url": "https://www.pcgamer.com/games/world-of-warcraft/wow-forever-dungeon-mobs-no-longer-give-exp-if-theyre-trivial-for-anyone-in-the-party/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-14T22:17:19Z",
       "games": [],
       "kind": "news",
       "highlight": false

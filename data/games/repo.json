@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T01:44:56Z",
+  "generated_at": "2026-11-17T15:42:45Z",
   "game": {
     "slug": "repo",
     "name": "R.E.P.O.",
@@ -72,7 +72,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch v0.5.1; compatibility is unverified \u2014 check the project page. No open breakage reports 11 days after the patch.",
+      "reason": "Latest release predates patch v0.5.1; compatibility is unverified \u2014 check the project page. No open breakage reports 12 days after the patch.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "1.4.6",
@@ -94,7 +94,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch v0.5.1; compatibility is unverified \u2014 check the project page. No open breakage reports 11 days after the patch.",
+      "reason": "Latest release predates patch v0.5.1; compatibility is unverified \u2014 check the project page. No open breakage reports 12 days after the patch.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "1.7.3",
