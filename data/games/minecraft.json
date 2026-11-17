@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T18:05:25Z",
+  "generated_at": "2026-11-17T01:45:27Z",
   "game": {
     "slug": "minecraft",
     "name": "Minecraft: Java Edition",
@@ -71,7 +71,7 @@
       "release_url": "https://neoforged.net/",
       "status": "Safe",
       "reason": "NeoForge publishes a stable build for Minecraft 26.3.",
-      "release_tag": "26.3.0.103",
+      "release_tag": "26.3.0.108",
       "release_published_at": null,
       "base_status": "Updated for latest patch"
     },
@@ -162,7 +162,7 @@
           "name": "NeoForge",
           "status": "Safe",
           "reason": "NeoForge publishes a stable build for Minecraft 26.3.",
-          "release_tag": "26.3.0.103",
+          "release_tag": "26.3.0.108",
           "release_published_at": null
         },
         {
@@ -234,7 +234,7 @@
           "name": "NeoForge",
           "status": "Safe",
           "reason": "NeoForge publishes a stable build for Minecraft 26.2.",
-          "release_tag": "26.2.0.93",
+          "release_tag": "26.2.0.94",
           "release_published_at": null
         },
         {

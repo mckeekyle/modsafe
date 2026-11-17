@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T18:04:51Z",
+  "generated_at": "2026-11-17T01:44:56Z",
   "game": {
     "slug": "repo",
     "name": "R.E.P.O.",
@@ -53,10 +53,10 @@
       "reason": "Latest release is newer than patch v0.5.1, but notes do not explicitly mention that version.",
       "breakage_reports": [],
       "official": null,
-      "release_tag": "v4.4.0",
-      "release_name": "v4.4.0",
-      "release_published_at": "2026-11-15T21:54:38Z",
-      "release_url": "https://github.com/ZehsTeam/REPOLib/releases/tag/v4.4.0",
+      "release_tag": "v4.5.0",
+      "release_name": "v4.5.0",
+      "release_published_at": "2026-11-16T20:33:04Z",
+      "release_url": "https://github.com/ZehsTeam/REPOLib/releases/tag/v4.5.0",
       "mentions_patch": false,
       "newer_than_patch": true,
       "mention_releases": []

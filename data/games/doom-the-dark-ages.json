@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T18:05:57Z",
+  "generated_at": "2026-11-17T01:45:57Z",
   "game": {
     "slug": "doom-the-dark-ages",
     "name": "DOOM: The Dark Ages",
@@ -37,8 +37,8 @@
         "2026-07-09"
       ],
       "config_url": "https://dcealopez.es/AtlanPatcher.txt",
-      "release_tag": "AtlanModLoader_v_9_0.zip",
-      "release_published_at": "2026-10-07T19:38:57Z",
+      "release_tag": "AtlanModLoader_v_10.zip",
+      "release_published_at": "2026-11-16T20:26:49Z",
       "release_url": "https://github.com/FlavorfulGecko5/EntityAtlan/releases/tag/ModLoader",
       "mentions_patch": false,
       "newer_than_patch": false
