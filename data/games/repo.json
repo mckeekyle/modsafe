@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T15:22:08Z",
+  "generated_at": "2026-11-18T17:50:40Z",
   "game": {
     "slug": "repo",
     "name": "R.E.P.O.",
@@ -48,18 +48,20 @@
       "repo": "ZehsTeam/REPOLib",
       "tracked": true,
       "sensitive": true,
-      "status": "Just patched, wait",
-      "base_status": "Unknown / check",
-      "reason": "Latest release predates patch v0.5.2; compatibility is unverified \u2014 check the project page.",
+      "status": "Safe",
+      "base_status": "Updated for latest patch",
+      "reason": "Latest release notes mention patch v0.5.2 and the release is on/after the patch date.",
       "breakage_reports": [],
       "official": null,
-      "release_tag": "v4.5.0",
-      "release_name": "v4.5.0",
-      "release_published_at": "2026-11-16T20:33:04Z",
-      "release_url": "https://github.com/ZehsTeam/REPOLib/releases/tag/v4.5.0",
-      "mentions_patch": false,
-      "newer_than_patch": false,
-      "mention_releases": []
+      "release_tag": "v4.5.1",
+      "release_name": "v4.5.1",
+      "release_published_at": "2026-11-18T17:31:58Z",
+      "release_url": "https://github.com/ZehsTeam/REPOLib/releases/tag/v4.5.1",
+      "mentions_patch": true,
+      "newer_than_patch": true,
+      "mention_releases": [
+        "v4.5.1"
+      ]
     },
     {
       "id": "morehead",
@@ -134,15 +136,15 @@
           "id": "repolib",
           "short": "REPOLib",
           "name": "REPOLib",
-          "status": "No post-patch release",
-          "release_tag": null,
-          "release_published_at": null,
-          "mentions_patch": false,
-          "first_release_tag": null,
-          "first_release_at": null,
+          "status": "Safe",
+          "release_tag": "v4.5.1",
+          "release_published_at": "2026-11-18T17:31:58Z",
+          "mentions_patch": true,
+          "first_release_tag": "v4.5.1",
+          "first_release_at": "2026-11-18T17:31:58Z",
           "data_from": "2025-04-01T19:12:51Z",
-          "first_mention_tag": null,
-          "first_mention_at": null
+          "first_mention_tag": "v4.5.1",
+          "first_mention_at": "2026-11-18T17:31:58Z"
         },
         {
           "id": "morehead",
@@ -1030,6 +1032,31 @@
           "short": "REPOLib",
           "status": "Just patched, wait",
           "release_tag": "v4.5.0"
+        },
+        {
+          "short": "MoreHead",
+          "status": "Just patched, wait",
+          "release_tag": "1.4.6"
+        },
+        {
+          "short": "MoreUpgrades",
+          "status": "Just patched, wait",
+          "release_tag": "1.7.3"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-18T17:50:40Z",
+      "patch": "v0.5.2",
+      "patch_key": "0.5.2",
+      "patch_published_at": "2026-11-18T10:35:07Z",
+      "patch_url": "https://store.steampowered.com/news/app/3241660/view/1849827110423646",
+      "verdict": "Just patched, wait",
+      "frameworks": [
+        {
+          "short": "REPOLib",
+          "status": "Safe",
+          "release_tag": "v4.5.1"
         },
         {
           "short": "MoreHead",
