@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-11-19T15:29:34Z",
+  "generated_at": "2026-11-19T17:20:48Z",
   "game": {
     "slug": "doom-the-dark-ages",
     "name": "DOOM: The Dark Ages",
     "steam_appid": 3017860,
     "latest_patch": {
       "version": null,
-      "label": "Steam build 26633253",
-      "title": "Steam public build 26633253",
-      "published_at": "2026-11-16T16:00:33Z",
-      "buildid": "26633253",
+      "label": "Steam build 26749174",
+      "title": "Steam public build 26749174",
+      "published_at": "2026-11-19T17:02:14Z",
+      "buildid": "26749174",
       "url": "https://api.steamcmd.net/v1/info/3017860",
       "notes": "Steam doesn't publish version numbers for this game; the build id and its update time come from Steam's public branch."
     }
   },
-  "verdict": "Safe",
+  "verdict": "Just patched, wait",
   "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
   "frameworks": [
     {
@@ -26,8 +26,8 @@
       "repo": "FlavorfulGecko5/EntityAtlan",
       "tracked": true,
       "sensitive": true,
-      "status": "Safe",
-      "reason": "The Atlan patcher's supported-build list has an entry dated 2026-11-16, on/after the current Steam build (2026-11-16).",
+      "status": "Just patched, wait",
+      "reason": "Steam build updated 2026-11-19; the Atlan patcher's newest supported build is dated 2026-11-16. Wait for an updated config (it is fetched automatically).",
       "base_status": null,
       "supported_entries": [
         "2026-11-16",
@@ -139,6 +139,21 @@
           "short": "Atlan",
           "status": "Safe",
           "release_tag": "AtlanModLoader_v_9_0.zip"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-19T17:20:48Z",
+      "patch": "Steam build 26749174",
+      "patch_key": "steam-build-26749174",
+      "patch_published_at": "2026-11-19T17:02:14Z",
+      "patch_url": "https://api.steamcmd.net/v1/info/3017860",
+      "verdict": "Just patched, wait",
+      "frameworks": [
+        {
+          "short": "Atlan",
+          "status": "Just patched, wait",
+          "release_tag": "AtlanModLoader_v_10.zip"
         }
       ]
     }
