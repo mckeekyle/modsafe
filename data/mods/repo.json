@@ -35,7 +35,7 @@
       ],
       "thunderstore_package": "Zehs/REPOLib",
       "framework_id": "repolib",
-      "last_updated": "2026-11-16"
+      "last_updated": "2026-11-18"
     },
     {
       "id": "menulib",
@@ -48,7 +48,7 @@
         "bepinexpack"
       ],
       "thunderstore_package": "REPOModding/MenuLib",
-      "last_updated": "2026-11-05"
+      "last_updated": "2026-11-18"
     },
     {
       "id": "morehead",
