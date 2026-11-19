@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T00:03:05Z",
+  "generated_at": "2026-11-19T14:20:47Z",
   "game": {
     "slug": "gta-v-enhanced",
     "name": "Grand Theft Auto V Enhanced",
@@ -60,11 +60,11 @@
       "source": "github",
       "tracked": true,
       "sensitive": false,
-      "release_url": "https://github.com/ThirteenAG/Ultimate-ASI-Loader/releases/tag/v10.0.3",
+      "release_url": "https://github.com/ThirteenAG/Ultimate-ASI-Loader/releases/tag/v10.0.4",
       "status": "Not affected by patches",
       "reason": "Generic DLL/ASI loader used across many games; not tied to a GTA V build.",
-      "release_tag": "v10.0.3",
-      "release_published_at": "2026-11-17T21:32:27Z"
+      "release_tag": "v10.0.4",
+      "release_published_at": "2026-11-19T14:05:31Z"
     }
   ],
   "history": [
