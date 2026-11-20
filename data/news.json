@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T15:06:58Z",
+  "generated_at": "2026-11-20T23:50:44Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,188 @@
     }
   ],
   "items": [
+    {
+      "title": "Despite GTA 6's huge map, it only takes about 4 minutes to fly across it in a plane",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-how-long-to-fly-across-map/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-20T22:34:25Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Florida Joker gets his wish: He's a 'special voice actor' in Grand Theft Auto 6",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/florida-joker-gets-his-wish-hes-a-special-voice-actor-in-grand-theft-auto-6/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-20T22:02:48Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Try this GTA 6 movement speed setting to make Jason and Lucia walk faster",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-movement-speed-setting-walk-faster/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-20T21:52:04Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Stardew Valley Merchandise Spotlight",
+      "url": "https://store.steampowered.com/news/app/413150/view/1849827110433709",
+      "source": "Steam \u00b7 Stardew",
+      "published_at": "2026-11-20T21:02:25Z",
+      "games": [
+        "stardew-valley"
+      ],
+      "kind": "announcement",
+      "highlight": false
+    },
+    {
+      "title": "21% of Rockstar staff have been employed by the company for over 10 years, which explains a lot about GTA 6's record-breaking launch",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/21-percent-of-rockstar-staff-have-been-employed-by-the-company-for-over-10-years-which-explains-a-lot-about-gta-6s-record-breaking-launch/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-20T20:41:34Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "GTA 6 is officially the biggest entertainment launch of all time, selling 32.5 million pre-sale copies and a bonkers $3.79 billion in its first day",
+      "url": "https://www.eurogamer.net/gta-6-biggest-entertainment-launch",
+      "source": "Eurogamer",
+      "published_at": "2026-11-20T20:00:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Grand Theft Auto 6 earned $3.79 billion on launch day",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/grand-theft-auto-6-earned-usd3-79-billion-on-launch-day/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-20T19:51:48Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "After taking seven years to make Persona 6 and four years to make Persona 5, Atlus promises future games will come quicker",
+      "url": "https://www.eurogamer.net/persona-6-games-come-quicker-atlus",
+      "source": "Eurogamer",
+      "published_at": "2026-11-20T19:23:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Etsy sellers are closing their stores in response to the platform's new AI training policy",
+      "url": "https://www.pcgamer.com/software/ai/etsy-sellers-are-closing-their-stores-in-response-to-the-platforms-new-ai-training-policy/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-20T19:02:52Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "GTA 6 credits actually include 'Florida Joker', the viral internet personality who once demanded $10 million from Rockstar Games",
+      "url": "https://www.eurogamer.net/gta-6-credits-florida-joker-rockstar",
+      "source": "Eurogamer",
+      "published_at": "2026-11-20T18:23:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Nvidia co-founder Jensen Huang accused of decades of bullying and workplace abuse in new investigation",
+      "url": "https://www.eurogamer.net/jensen-huang-nvidia-investigation-harassment",
+      "source": "Eurogamer",
+      "published_at": "2026-11-20T17:19:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "NYT report documents ex-Nvidia CEO Jensen Huang's decades of berating employees: 'He said he would rip both arms off a subordinate and beat the person over the head to death with them'",
+      "url": "https://www.pcgamer.com/hardware/graphics-cards/nyt-report-documents-ex-nvidia-ceo-jensen-huangs-decades-of-berating-employees-he-said-he-would-rip-both-arms-off-a-subordinate-and-beat-the-person-over-the-head-to-death-with-them/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-20T16:52:44Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "GameStop boss calls for return of physical discs just as GTA 6 does digital gangbusters",
+      "url": "https://www.pcgamer.com/gaming-industry/gamestop-boss-calls-for-return-of-physical-discs-just-as-gta-6-does-digital-gangbusters/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-20T16:45:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "13 arrested in Shanghai as police crackdown on bootleg Final Fantasy 7 Tifa figurine operation",
+      "url": "https://www.eurogamer.net/final-fantasy-7-bootleg-tifa-figurine-china-13-arrested",
+      "source": "Eurogamer",
+      "published_at": "2026-11-20T16:39:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Want to stay anonymous when doing crimes in GTA 6? Grab yourself a mask",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-mask-location/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-20T16:22:53Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Nvidia's latest graphics card driver appears to be unnecessarily writing to PC SSDs, something that's dumb, annoying and definitely warrants reverting",
+      "url": "https://www.rockpapershotgun.com/nvidias-latest-graphics-card-driver-appears-to-be-unnecessarily-writing-to-pc-ssds-something-thats-dumb-annoying-and-definitely-warrants-reverting",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-20T16:04:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "GTA 6 players are already pulling off high-flying tricks and other impressive stunts, just days after launch",
+      "url": "https://www.eurogamer.net/gta-6-plane-vehicle-stunts-impressive",
+      "source": "Eurogamer",
+      "published_at": "2026-11-20T15:59:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Star Wars: Galactic Racer studio \"didn't dream\" Biddy Blas would be as popular as he is",
+      "url": "https://www.eurogamer.net/biddy-blas-star-wars-galactic-racer-viral-scrib-doon",
+      "source": "Eurogamer",
+      "published_at": "2026-11-20T15:54:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "It took me less than an hour to find my first incredibly minor Rockstar easter egg in GTA 6 - but it has some big implications for Leonida",
+      "url": "https://www.eurogamer.net/gta-6-early-game-connection-rockstar-gta-5",
+      "source": "Eurogamer",
+      "published_at": "2026-11-20T15:19:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The 5 year-long mystery of the UFO house has finally been solved in GTA 6, but one NPC knows too much",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/the-5-year-long-mystery-of-the-ufo-house-has-finally-been-solved-in-gta-6-but-one-npc-knows-too-much/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-20T15:09:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "A 'GTA 6 PC scam kit' using a fake PC port as bait is available for $200 on the dark web, says NordVPN, so watch what you click",
       "url": "https://www.pcgamer.com/games/grand-theft-auto/a-gta-6-pc-scam-kit-using-a-fake-pc-port-as-bait-is-available-for-usd200-on-the-dark-web-says-nordvpn-so-watch-what-you-click/",
@@ -380,191 +562,6 @@
       "url": "https://www.pcgamer.com/games/grand-theft-auto/peter-moore-who-famously-announced-gta-4-with-a-tattoo-posts-fake-gta-6-tattoo-pic-and-says-he-hopes-it-will-give-the-industry-a-shot-in-the-arm/",
       "source": "PC Gamer",
       "published_at": "2026-11-19T19:03:31Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "World of Warcraft: Forever has more weekly players than WoW has seen in 15 years, says Blizzard",
-      "url": "https://www.eurogamer.net/wow-forever-weekly-players-15-years",
-      "source": "Eurogamer",
-      "published_at": "2026-11-19T18:52:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Cheats in GTA 6 are weirdly restrictive, and I'm counting the minutes until the PC version fixes them",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/im-counting-the-minutes-until-the-pc-version-fixes-the-weirdly-restrictive-cheats-in-gta-6/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-19T18:35:22Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Slaughter Mode Update 5 Hotfix 1",
-      "url": "https://store.steampowered.com/news/app/3017860/view/1849827110429494",
-      "source": "Steam \u00b7 DOOM TDA",
-      "published_at": "2026-11-19T18:31:02Z",
-      "games": [
-        "doom-the-dark-ages"
-      ],
-      "kind": "announcement",
-      "highlight": false
-    },
-    {
-      "title": "It's time for GTA 5's last challenge: 20 more mods aimed at finally breaking it completely",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/its-time-for-gta-5s-last-challenge-20-more-mods-aimed-at-finally-breaking-it-completely/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-19T18:00:00Z",
-      "games": [
-        "gta-v-legacy",
-        "gta-v-enhanced"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Ubisoft says Assassin's Creed Black Flag Resynced 'outperformed expectations,' lays off 166 more people anyway",
-      "url": "https://www.pcgamer.com/gaming-industry/ubisoft-says-assassins-creed-black-flag-resynced-outperformed-expectations-lays-off-166-more-people-anyway/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-19T17:53:15Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "GTA 6 players are being abducted by aliens and knocked out by Bigfoot",
-      "url": "https://www.eurogamer.net/gta-6-ufo-bigfoot-easter-eggs",
-      "source": "Eurogamer",
-      "published_at": "2026-11-19T17:48:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Ubisoft cuts jobs at major Assassin's Creed and Far Cry studios as its year of layoffs continues",
-      "url": "https://www.eurogamer.net/ubisoft-layoffs-166-assassins-creed-far-cry-montreal-quebec",
-      "source": "Eurogamer",
-      "published_at": "2026-11-19T17:43:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "This is technically the worst version of GTA 6 that we'll ever play",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/this-is-technically-the-worst-version-of-gta-6-that-well-ever-play/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-19T17:40:19Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Space station horror-FPS Derelikt is a lively retro throwback to Alien: Resurrection, though it's better at shooting than scaring",
-      "url": "https://www.rockpapershotgun.com/space-station-horror-fps-derelikt-is-a-lively-retro-throwback-to-alien-resurrection-though-its-better-at-shooting-than-scaring",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-19T17:36:40Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Even our bunch of diehard PC gamers aren't that bothered by 30 fps in GTA 6",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/even-our-bunch-of-diehard-pc-gamers-arent-that-bothered-by-30-fps-in-gta-6/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-19T17:22:43Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Yes, you're hearing 'Weird Al' Yankovic hosting a radio station in GTA 6",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/yes-youre-hearing-weird-al-yankovic-hosting-a-radio-station-in-gta-6/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-19T17:07:18Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "I just found a verrrry familiar-looking hat in GTA 6, and it was in the last place I would have expected",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/arthur-morgan-hat-location-rdr2/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-19T17:05:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Ignore that other game about crime that's out and burgle some ugly farmhouses in Keepsake County, a \"midwestern stealth game\" with a 2000s Cartoon Network vibe",
-      "url": "https://www.rockpapershotgun.com/ignore-that-other-game-about-crime-thats-out-and-burgle-some-ugly-farmhouses-in-keepsake-county-a-midwestern-stealth-game-with-a-2000s-cartoon-network-vibe",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-19T17:05:40Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Corsair Sabre V3 Pro PureVector Ergo review",
-      "url": "https://www.pcgamer.com/hardware/gaming-mice/corsair-sabre-v3-pro-purevector-ergo-review/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-19T17:02:10Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "As a PC gamer, of course the first thing I did in GTA 6 was try a mouse and keyboard",
-      "url": "https://www.pcgamer.com/hardware/as-a-pc-gamer-of-course-the-first-thing-i-did-in-gta-6-was-try-a-mouse-and-keyboard/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-19T16:57:11Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Football Manager 27 review: Back on form, but not without its wayward touches",
-      "url": "https://www.pcgamer.com/games/sports/football-manager-27-review/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-19T16:48:49Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "'I'm all about the heist': 43 soldiers re-enlisted in the US army to get a 4-day weekend to play GTA 6",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/im-all-about-the-heist-43-soldiers-re-enlisted-in-the-us-army-to-get-a-4-day-weekend-to-play-gta-6/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-19T16:42:08Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Rockstar has finally posted GTA 6's full map online\u2014thank goodness, because clearing the entire thing in game takes ages",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/rockstar-has-finally-posted-gta-6s-full-map-online-thank-goodness-because-clearing-the-entire-thing-in-game-takes-ages/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-19T16:19:58Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Ubisoft lay off 166 more staff, this time at their Montreal and Quebec City studios, while mumbling about \"current production priorities and business needs\"",
-      "url": "https://www.rockpapershotgun.com/ubisoft-lay-off-166-more-staff-this-time-at-their-montreal-and-quebec-city-studios-while-mumbling-about-current-production-priorities-and-business-needs",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-19T16:12:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Bethesda confirms A Wasteland Full of Cats is 'a Fallout-inspired adventure' being made in partnership with a not-for-profit animal rescue",
-      "url": "https://www.pcgamer.com/games/fallout/a-new-fallout-game-has-been-rated-in-australia-and-its-a-hidden-object-game/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-19T16:09:40Z",
       "games": [],
       "kind": "news",
       "highlight": false

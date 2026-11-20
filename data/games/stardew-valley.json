@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T15:04:54Z",
+  "generated_at": "2026-11-20T23:48:39Z",
   "game": {
     "slug": "stardew-valley",
     "name": "Stardew Valley",
@@ -335,6 +335,12 @@
   ],
   "news": [
     {
+      "title": "Stardew Valley Merchandise Spotlight",
+      "url": "https://store.steampowered.com/news/app/413150/view/1849827110433709",
+      "published_at": "2026-11-20T21:02:25Z",
+      "is_patch": false
+    },
+    {
       "title": "Stardew Valley 10-year Anniversary",
       "url": "https://store.steampowered.com/news/app/413150/view/1825727806709248",
       "published_at": "2026-02-26T23:40:00Z",
@@ -386,12 +392,6 @@
       "title": "1.6.12 Update",
       "url": "https://store.steampowered.com/news/app/413150/view/6148070194801588759",
       "published_at": "2024-11-07T08:25:48Z",
-      "is_patch": true
-    },
-    {
-      "title": "Update 1.6.11",
-      "url": "https://store.steampowered.com/news/app/413150/view/6148070194801553515",
-      "published_at": "2024-11-06T06:46:34Z",
       "is_patch": true
     }
   ],
