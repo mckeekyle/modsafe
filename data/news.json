@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T15:30:14Z",
+  "generated_at": "2026-11-20T00:27:08Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,365 @@
     }
   ],
   "items": [
+    {
+      "title": "Cyberleek drops what they claim is a near-complete GTA 6 Xbox build online",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/cyberleek-drops-what-they-claim-is-a-near-complete-gta-6-xbox-build-online/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-19T23:17:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Help: I can't stop obeying traffic laws in GTA 6",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/help-i-cant-stop-obeying-traffic-laws-in-gta-6/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-19T22:46:37Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "GTA 6 has the best use of the PS5 controller I've ever seen",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-has-the-best-use-of-the-ps5-controller-ive-ever-seen/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-19T22:28:33Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Don't stress about collectathon completionism in Queen's Domain: It eventually gives you tools to help find hidden treasures",
+      "url": "https://www.pcgamer.com/games/rpg/dont-stress-about-collectathon-completionism-in-queens-domain-it-eventually-gives-you-tools-to-help-find-hidden-treasures/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-19T22:20:56Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "GTA 5's Steam concurrents have gone up rather than down now that GTA 6 is out, suggesting a lot of PC players are waiting",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-5s-steam-concurrents-have-gone-up-rather-than-down-now-that-gta-6-is-out-suggesting-a-lot-of-pc-players-are-waiting/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-19T22:00:43Z",
+      "games": [
+        "gta-v-legacy",
+        "gta-v-enhanced"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Should you give the statue to Benedict Halifax in GTA 6?",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-give-statue-to-benedict-halifax-or-not/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-19T21:56:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "In the GTA 6 Delights robbery mission, help or don't help Frankie and Mario?",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-delights-mission-help-or-dont-help/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-19T21:46:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Fact check: Does GTA 6 stop players from shooting inside gay nightclubs and crashing planes into buildings?",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/fact-check-does-gta-6-stop-players-from-shooting-inside-gay-nightclubs-and-crashing-planes-into-buildings/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-19T21:24:15Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Valve may raise Steam Machine prices yet again: 'Memory and storage costs continue to increase at unprecedented levels'",
+      "url": "https://www.pcgamer.com/hardware/steam-machines/valve-may-raise-steam-machine-prices-yet-again-memory-and-storage-costs-continue-to-increase-at-unprecedented-levels/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-19T21:10:22Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Ubisoft says Assassin's Creed Jade is still alive as it merges two of its Creative Houses",
+      "url": "https://www.eurogamer.net/ubisoft-assassins-creed-jade-still-in-development-creative-houses-merge",
+      "source": "Eurogamer",
+      "published_at": "2026-11-19T21:09:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Infamous GTA 6 leaker CyberLeek is back, and this time the group claims to have leaked a full development build of the game",
+      "url": "https://www.eurogamer.net/cyberleek-gta-6-dev-build",
+      "source": "Eurogamer",
+      "published_at": "2026-11-19T21:08:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Doom level designer Sandy Petersen on Gabe Newell: 'With Steam he is literally guarding the gates of Hell'",
+      "url": "https://www.pcgamer.com/gaming-industry/doom-level-designer-sandy-petersen-on-gabe-newell-with-steam-he-is-literally-guarding-the-gates-of-hell/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-19T20:49:29Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Where to have a bona fide bigfoot (skunk ape) sighting in GTA 6",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-bigfoot-location-skunk-ape/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-19T20:12:34Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Your GTA 6 car is your Red Dead 2 horse, and it's perfect",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/your-gta-6-car-is-your-red-dead-2-horse-and-its-perfect/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-19T19:54:22Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "If you bounced off indie hit Queen's Domain, try using the cheat code book to give yourself a gun",
+      "url": "https://www.pcgamer.com/games/rpg/if-you-bounced-off-indie-hit-queens-domain-try-using-the-cheat-code-book-to-give-yourself-a-gun/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-19T19:20:14Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Peter Moore, who famously announced GTA 4 with a tattoo, posts fake GTA 6 tattoo pic and says he hopes it will give the industry 'a shot in the arm'",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/peter-moore-who-famously-announced-gta-4-with-a-tattoo-posts-fake-gta-6-tattoo-pic-and-says-he-hopes-it-will-give-the-industry-a-shot-in-the-arm/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-19T19:03:31Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "World of Warcraft: Forever has more weekly players than WoW has seen in 15 years, says Blizzard",
+      "url": "https://www.eurogamer.net/wow-forever-weekly-players-15-years",
+      "source": "Eurogamer",
+      "published_at": "2026-11-19T18:52:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Cheats in GTA 6 are weirdly restrictive, and I'm counting the minutes until the PC version fixes them",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/im-counting-the-minutes-until-the-pc-version-fixes-the-weirdly-restrictive-cheats-in-gta-6/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-19T18:35:22Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Slaughter Mode Update 5 Hotfix 1",
+      "url": "https://store.steampowered.com/news/app/3017860/view/1849827110429494",
+      "source": "Steam \u00b7 DOOM TDA",
+      "published_at": "2026-11-19T18:31:02Z",
+      "games": [
+        "doom-the-dark-ages"
+      ],
+      "kind": "announcement",
+      "highlight": false
+    },
+    {
+      "title": "It's time for GTA 5's last challenge: 20 more mods aimed at finally breaking it completely",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/its-time-for-gta-5s-last-challenge-20-more-mods-aimed-at-finally-breaking-it-completely/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-19T18:00:00Z",
+      "games": [
+        "gta-v-legacy",
+        "gta-v-enhanced"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Ubisoft says Assassin's Creed Black Flag Resynced 'outperformed expectations,' lays off 166 more people anyway",
+      "url": "https://www.pcgamer.com/gaming-industry/ubisoft-says-assassins-creed-black-flag-resynced-outperformed-expectations-lays-off-166-more-people-anyway/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-19T17:53:15Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "GTA 6 players are being abducted by aliens and knocked out by Bigfoot",
+      "url": "https://www.eurogamer.net/gta-6-ufo-bigfoot-easter-eggs",
+      "source": "Eurogamer",
+      "published_at": "2026-11-19T17:48:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Ubisoft cuts jobs at major Assassin's Creed and Far Cry studios as its year of layoffs continues",
+      "url": "https://www.eurogamer.net/ubisoft-layoffs-166-assassins-creed-far-cry-montreal-quebec",
+      "source": "Eurogamer",
+      "published_at": "2026-11-19T17:43:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "This is technically the worst version of GTA 6 that we'll ever play",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/this-is-technically-the-worst-version-of-gta-6-that-well-ever-play/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-19T17:40:19Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Space station horror-FPS Derelikt is a lively retro throwback to Alien: Resurrection, though it's better at shooting than scaring",
+      "url": "https://www.rockpapershotgun.com/space-station-horror-fps-derelikt-is-a-lively-retro-throwback-to-alien-resurrection-though-its-better-at-shooting-than-scaring",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-19T17:36:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Even our bunch of diehard PC gamers aren't that bothered by 30 fps in GTA 6",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/even-our-bunch-of-diehard-pc-gamers-arent-that-bothered-by-30-fps-in-gta-6/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-19T17:22:43Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Yes, you're hearing 'Weird Al' Yankovic hosting a radio station in GTA 6",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/yes-youre-hearing-weird-al-yankovic-hosting-a-radio-station-in-gta-6/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-19T17:07:18Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "I just found a verrrry familiar-looking hat in GTA 6, and it was in the last place I would have expected",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/arthur-morgan-hat-location-rdr2/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-19T17:05:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Ignore that other game about crime that's out and burgle some ugly farmhouses in Keepsake County, a \"midwestern stealth game\" with a 2000s Cartoon Network vibe",
+      "url": "https://www.rockpapershotgun.com/ignore-that-other-game-about-crime-thats-out-and-burgle-some-ugly-farmhouses-in-keepsake-county-a-midwestern-stealth-game-with-a-2000s-cartoon-network-vibe",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-19T17:05:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Corsair Sabre V3 Pro PureVector Ergo review",
+      "url": "https://www.pcgamer.com/hardware/gaming-mice/corsair-sabre-v3-pro-purevector-ergo-review/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-19T17:02:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "As a PC gamer, of course the first thing I did in GTA 6 was try a mouse and keyboard",
+      "url": "https://www.pcgamer.com/hardware/as-a-pc-gamer-of-course-the-first-thing-i-did-in-gta-6-was-try-a-mouse-and-keyboard/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-19T16:57:11Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Football Manager 27 review: Back on form, but not without its wayward touches",
+      "url": "https://www.pcgamer.com/games/sports/football-manager-27-review/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-19T16:48:49Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "'I'm all about the heist': 43 soldiers re-enlisted in the US army to get a 4-day weekend to play GTA 6",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/im-all-about-the-heist-43-soldiers-re-enlisted-in-the-us-army-to-get-a-4-day-weekend-to-play-gta-6/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-19T16:42:08Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Rockstar has finally posted GTA 6's full map online\u2014thank goodness, because clearing the entire thing in game takes ages",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/rockstar-has-finally-posted-gta-6s-full-map-online-thank-goodness-because-clearing-the-entire-thing-in-game-takes-ages/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-19T16:19:58Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Ubisoft lay off 166 more staff, this time at their Montreal and Quebec City studios, while mumbling about \"current production priorities and business needs\"",
+      "url": "https://www.rockpapershotgun.com/ubisoft-lay-off-166-more-staff-this-time-at-their-montreal-and-quebec-city-studios-while-mumbling-about-current-production-priorities-and-business-needs",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-19T16:12:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Bethesda confirms A Wasteland Full of Cats is 'a Fallout-inspired adventure' being made in partnership with a not-for-profit animal rescue",
+      "url": "https://www.pcgamer.com/games/fallout/a-new-fallout-game-has-been-rated-in-australia-and-its-a-hidden-object-game/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-19T16:09:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Over 2 million Xbox players in the UK and US reportedly used the 'New Zealand trick' to play GTA 6 early - that's more than a third of the country's population",
+      "url": "https://www.eurogamer.net/gta-6-new-zealand-trick-2m-players-early",
+      "source": "Eurogamer",
+      "published_at": "2026-11-19T15:40:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The first images of the Lenovo Legion Go Beam have seemingly leaked, and it's got a love-it-or-hate-it colour palette",
+      "url": "https://www.pcgamer.com/hardware/handheld-gaming-pcs/the-first-image-of-the-lenovo-legion-go-beam-has-seemingly-leaked-and-its-got-a-love-it-or-hate-it-colour-palette/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-19T15:36:38Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Fish with a sniper rifle takes aim at Tim Sweeney's hopes and dreams, as genAI-free meme game tops Epic Games' vibe-coding megajam",
+      "url": "https://www.rockpapershotgun.com/fish-with-a-sniper-rifle-takes-aim-at-tim-sweeneys-hopes-and-dreams-as-genai-free-meme-game-tops-epic-games-vibe-coding-megajam",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-19T15:30:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Rockstar reveals full GTA 6 cast list, finally ending speculation about who plays Jason Duval in the game",
       "url": "https://www.eurogamer.net/gta-6-full-cast-list-jason-duval-actor",
@@ -206,360 +565,6 @@
       "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-free-guns-cop-cars/",
       "source": "PC Gamer",
       "published_at": "2026-11-19T10:11:46Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Refueling cars in GTA 6 is barely necessary, but there's much better reason to visit garages",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-refuel-repair-cars/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-19T10:11:36Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Bank your cash in GTA 6, but always keep a few hundred on you\u2014you never know when you'll need it",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-bank-cash/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-19T10:11:17Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "After Grand Theft Auto 6's launch, players are in love with wacky criminality, in-game social media, and animal fatalities",
-      "url": "https://www.eurogamer.net/grand-theft-auto-6-players-love-crime-social-media-animals",
-      "source": "Eurogamer",
-      "published_at": "2026-11-19T09:38:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Grand Theft Auto 6 launch day live - news and reaction as GTA 6 arrives around the world",
-      "url": "https://www.eurogamer.net/gta-6-grand-theft-auto-6-launch-day-live-blog",
-      "source": "Eurogamer",
-      "published_at": "2026-11-19T09:05:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "It really seems like Xbox isn't allowed to say GTA 6 at all",
-      "url": "https://www.eurogamer.net/xbox-cant-say-grand-theft-auto-6-marketing",
-      "source": "Eurogamer",
-      "published_at": "2026-11-19T08:41:40Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Not even Walton Goggins knows if Fallout will have a Season 4: 'if we get the opportunity to come back for season four, that would continue to honor how sacred this is to people'",
-      "url": "https://www.pcgamer.com/movies-tv/not-even-walton-goggins-knows-if-fallout-will-have-a-season-4-if-we-get-the-opportunity-to-come-back-for-season-four-that-would-continue-to-honor-how-sacred-this-is-to-people/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-19T03:30:59Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Over an hour of new Total War: Warhammer 40,000 campaign footage shows gear customization, fleet mechanics, and emphasizes space marines are not always trusted and hard to replace",
-      "url": "https://www.pcgamer.com/games/strategy/over-an-hour-of-new-total-war-warhammer-40-000-campaign-footage-shows-gear-customization-fleet-mechanics-and-emphasizes-space-marines-are-not-always-trusted-and-hard-to-replace/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-19T03:09:13Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Set phasers to stun (the contents of my wallet): Magic's Star Trek crossover is one of the good ones",
-      "url": "https://www.pcgamer.com/games/card-games/set-phasers-to-stun-the-contents-of-my-wallet-magics-star-trek-crossover-is-one-of-the-good-ones/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-18T22:53:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "GTA 6: Where to find your first plane and helicopter right away",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-first-plane-and-helicopter/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-18T22:51:08Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Clair Obscur: Expedition 33 lead writer left Sandfall Interactive last summer: 'We've parted ways'",
-      "url": "https://www.pcgamer.com/games/rpg/clair-obscur-expedition-33-lead-writer-left-sandfall-interactive-last-summer-weve-parted-ways/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-18T22:29:32Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Devolver's not just launching a game on the same day as GTA 6, it's using a shot-by-shot remake of the GTA 6 launch trailer too",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/devolvers-not-just-launching-a-game-on-the-same-day-as-gta-6-its-using-a-shot-by-shot-remake-of-the-gta-6-launch-trailer-too/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-18T22:12:08Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "GTA 6 airport location: Here's where to earn your wings less than legally",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-airport-location/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-18T21:52:44Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Rockstar says a PS5 Pro is simply 'not powerful enough' for 60 fps GTA 6, as I crack a smile at my 5090",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/rockstar-says-a-ps5-pro-is-simply-not-powerful-enough-for-60-fps-gta-6-as-i-crack-a-smile-at-my-5090/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-18T21:51:35Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Befuddled Japanese player fights GTA 6 controls, loses, becomes 'guy chugging two shakes I accidentally bought while walking around in a squat'",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/befuddled-japanese-player-fights-gta-6-controls-loses-becomes-guy-chugging-two-shakes-i-accidentally-bought-while-walking-around-in-a-squat/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-18T21:48:24Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "WoW: Forever is huge: Players have created over 15 million characters so far",
-      "url": "https://www.pcgamer.com/games/world-of-warcraft/wow-forever-is-huge-players-have-created-over-15-million-characters-so-far/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-18T21:34:18Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "GTA 6's Japanese version only partially obscures male nudity by putting Jason in a thong, seemingly due to regional censorship",
-      "url": "https://www.eurogamer.net/gta-6-japanese-jason-thong-regional-censorship",
-      "source": "Eurogamer",
-      "published_at": "2026-11-18T20:40:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "I finished GTA 6's main story: Ask me anything! (except for major spoilers)",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/i-finished-gta-6s-main-story-ask-me-anything-except-for-major-spoilers/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-18T20:23:24Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "GTA 6 changes the way you steal cars: here's everything you need to know about slim jims, key cloners, and tracking devices",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-how-to-steal-cars/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-18T19:22:44Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Embark Studios apologizes for replacing esports casters with AI voices in now-deleted The Finals video",
-      "url": "https://www.pcgamer.com/software/ai/embark-studios-apologizes-for-replacing-esports-casters-with-ai-voices-in-now-deleted-the-finals-video/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-18T19:10:43Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Delete GTA 6 from your hard drive and indie publisher Devolver Digital might give you a free game",
-      "url": "https://www.eurogamer.net/delete-gta-6-free-game-devolver-digital",
-      "source": "Eurogamer",
-      "published_at": "2026-11-18T19:08:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "GTA 6 won't let you use cheats until you complete the main story, and locks progression when you do",
-      "url": "https://www.eurogamer.net/gta-6-no-cheats-until-completing-main-story",
-      "source": "Eurogamer",
-      "published_at": "2026-11-18T18:42:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "How to get a snap gun in GTA 6",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-snap-gun/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-18T18:29:10Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "What's the first thing you're gonna do in GTA 6?",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/whats-the-first-thing-youre-gonna-do-in-gta-6/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-18T18:28:52Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "'I just hope GTA 6 is the last of its kind': Warren Spector congratulates Rockstar on its landmark accomplishment but says the industry can't keep this up",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/i-just-hope-gta-6-is-the-last-of-its-kind-warren-spector-congratulates-rockstar-on-its-landmark-accomplishment-but-says-the-industry-cant-keep-this-up/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-18T18:23:52Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "How to clone keys in GTA 6",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-clone-keys/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-18T18:21:15Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Even the PS5 Pro is \"not powerful enough\" to run GTA 6 at 60FPS or 40FPS, Rockstar says",
-      "url": "https://www.eurogamer.net/ps5-pro-not-powerful-enough-gta-6-60fps",
-      "source": "Eurogamer",
-      "published_at": "2026-11-18T18:17:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "It's almost time to say goodbye to modding GTA 5, if the game doesn't shatter into a thousand pieces first",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/its-almost-time-to-say-goodbye-to-modding-gta-5-if-the-game-doesnt-shatter-into-a-thousand-pieces-first/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-18T18:04:53Z",
-      "games": [
-        "gta-v-legacy",
-        "gta-v-enhanced"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "How to get a slim jim in GTA 6",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-slim-jim/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-18T18:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "How to get safe codes in GTA 6",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-safe-codes-combinations/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-18T18:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "GTA 6 fence locations: Everywhere you can sell your hot goods",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-fence-locations/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-18T18:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "GTA 6: The fastest ways to make money",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-how-to-make-money/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-18T18:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "GTA 6 military base location: How to get into Mile Zero Air Station",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-military-base-location/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-18T18:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "How to get a parachute in GTA 6: Buy before you fly",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-parachute-how-to-get/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-18T18:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "How to reach 6 stars in GTA 6",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-six-stars/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-18T18:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "How to save game in GTA 6",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-save-game/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-18T18:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Ex-Take Two boss believes that attitudes towards AI in game development will change for the better: 'We are one Toy Story moment away from consumer acceptance of AI'",
-      "url": "https://www.pcgamer.com/gaming-industry/ex-take-two-boss-believes-that-attitudes-towards-ai-in-game-development-will-change-for-the-better-we-are-one-toy-story-moment-away-from-consumer-acceptance-of-ai/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-18T17:49:59Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "World of Warcraft: Forever isn't mere nostalgia bait - it's rebuilding the MMO social architecture that Blizzard spent years dismantling",
-      "url": "https://www.rockpapershotgun.com/world-of-warcraft-forever-isnt-mere-nostalgia-bait-its-rebuilding-the-mmo-social-architecture-that-blizzard-spent-years-dismantling",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-18T17:44:10Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "PSA: Some GTA 6 Ultimate Edition content is only available for the first chapter, and you'll have to put in hard graft to unlock more",
-      "url": "https://www.eurogamer.net/gta-6-ultimate-edition-unlock-details-temporary-content",
-      "source": "Eurogamer",
-      "published_at": "2026-11-18T17:42:30Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "All 34 of the infamously fired Rockstar staff appear in GTA 6 game credits, though some aren't listed as \"former employees\", curiously",
-      "url": "https://www.eurogamer.net/fired-rockstar-employees-named-gta-6-credits-tribunal",
-      "source": "Eurogamer",
-      "published_at": "2026-11-18T17:35:50Z",
       "games": [],
       "kind": "news",
       "highlight": false

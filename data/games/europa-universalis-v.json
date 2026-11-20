@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T00:21:10Z",
+  "generated_at": "2026-11-20T00:27:06Z",
   "game": {
     "slug": "europa-universalis-v",
     "name": "Europa Universalis V",
@@ -238,7 +238,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 18615,
+      "subscriptions": 18616,
       "mentions_patch": false,
       "newer_than_patch": false
     },
