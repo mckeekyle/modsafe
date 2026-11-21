@@ -1,28 +1,26 @@
 {
-  "generated_at": "2026-11-21T18:52:44Z",
+  "generated_at": "2026-11-21T19:13:13Z",
   "game": {
     "slug": "skyrim-se",
     "name": "Skyrim Special Edition",
     "steam_appid": 489830,
     "latest_patch": {
-      "version": "1.7.99",
-      "label": "1.7.99",
-      "title": "The Elder Scrolls V: Skyrim Anniversary Edition - Update 1.7.99 (Updated Aug 27)",
-      "published_at": "2026-08-20T14:55:37Z",
-      "published_unix": 1787237737,
+      "version": "1.7.104",
+      "label": "1.7.104",
+      "title": "1.7.104 hotfix (added to the 'Update 1.7.99' Steam post as 'Additional Hotfix - August 27')",
+      "published_at": "2026-08-27T14:00:00Z",
+      "published_unix": 1787839200,
       "url": "https://store.steampowered.com/news/app/489830/view/1841579228665884",
-      "steam_build": "24914197",
-      "unannounced_update": {
-        "version": null,
-        "label": "Unannounced update 2026-08-27",
-        "published_at": "2026-08-27T14:00:09Z",
-        "buildid": "24914197",
-        "source": "Steam public branch (api.steamcmd.net / PICS)"
-      },
-      "runtime_note": "SKSE64's official page lists game runtime 1.7.104 as current (the announcement title says 1.7.99; Bethesda often ships silent hotfixes)."
+      "silent": true,
+      "sources": [
+        "https://store.steampowered.com/news/app/489830/view/1841579228665884 ('Additional Hotfix - August 27')",
+        "https://skse.silverlock.org/ ('Current Anniversary Edition build 2.3.1 (game version 1.7.104)')",
+        "https://api.steamcmd.net/v1/info/489830 (public build 24914197, updated 2026-08-27T14:00Z)"
+      ],
+      "steam_build": "24914197"
     }
   },
-  "verdict": "Likely safe",
+  "verdict": "Not ported yet",
   "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
   "frameworks": [
     {
@@ -61,9 +59,9 @@
       "repo": "aers/EngineFixesSkyrim64",
       "tracked": true,
       "sensitive": true,
-      "status": "Likely safe",
-      "base_status": "Likely OK",
-      "reason": "Latest release is newer than patch 1.7.99, but notes do not explicitly mention that version. Note: Steam's public build changed on 2026-08-27 (build 24914197) without an announcement; this status reflects the last announced patch, so recheck if you hit problems. (Note: the author labels this build a beta/pre-release in its tag.)",
+      "status": "Not ported yet",
+      "base_status": "Unknown / check",
+      "reason": "Latest release predates patch 1.7.104; compatibility is unverified \u2014 check the project page. No open breakage reports 86 days after the patch. (Note: the author labels this build a beta/pre-release in its tag.) Hand-checked 2026-11-21: The newest official Engine Fixes release (7.0.21-beta5, Aug 23) predates 1.7.104. The author committed a \"1.7.104 build\" on Aug 29 but hasn't published a release; players asked for one (issues #103 and #105) and many use an unofficial fork (kxgcayh 7.0.23) instead. Mods that require Engine Fixes, such as Community Shaders, need that fork or a downgrade to 1.7.99 until an official release.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "7.0.21-beta5",
@@ -71,8 +69,20 @@
       "release_published_at": "2026-08-23T20:18:38Z",
       "release_url": "https://github.com/aers/EngineFixesSkyrim64/releases/tag/7.0.21-beta5",
       "mentions_patch": false,
-      "newer_than_patch": true,
-      "mention_releases": []
+      "newer_than_patch": false,
+      "mention_releases": [],
+      "hand_check": {
+        "status": "Not ported yet",
+        "checked": "2026-11-21",
+        "text": "The newest official Engine Fixes release (7.0.21-beta5, Aug 23) predates 1.7.104. The author committed a \"1.7.104 build\" on Aug 29 but hasn't published a release; players asked for one (issues #103 and #105) and many use an unofficial fork (kxgcayh 7.0.23) instead. Mods that require Engine Fixes, such as Community Shaders, need that fork or a downgrade to 1.7.99 until an official release.",
+        "sources": [
+          "https://github.com/aers/EngineFixesSkyrim64/releases",
+          "https://github.com/aers/EngineFixesSkyrim64/commit/b289e3deae71ce3915bb19c5faeeda8bf6c6a25c",
+          "https://github.com/aers/EngineFixesSkyrim64/issues/103",
+          "https://github.com/aers/EngineFixesSkyrim64/issues/105",
+          "https://github.com/aers/EngineFixesSkyrim64/issues/107"
+        ]
+      }
     },
     {
       "id": "papyrus-extender",
@@ -85,7 +95,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Likely OK",
-      "reason": "Latest release is newer than patch 1.7.99, but notes do not explicitly mention that version.",
+      "reason": "Latest release is newer than patch 1.7.104, but notes do not explicitly mention that version.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v6.5.2",
@@ -105,20 +115,18 @@
       "repo": "alandtse/CrashLoggerSSE",
       "tracked": true,
       "sensitive": true,
-      "status": "Safe",
-      "base_status": "Updated for latest patch",
-      "reason": "Latest release is on/after patch 1.7.99; an earlier post-patch release (v1.25.0) explicitly mentioned that version.",
+      "status": "Likely safe",
+      "base_status": "Likely OK",
+      "reason": "Latest release is newer than patch 1.7.104, but notes do not explicitly mention that version.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v1.27.0",
       "release_name": "v1.27.0",
       "release_published_at": "2026-10-25T06:16:12Z",
       "release_url": "https://github.com/alandtse/CrashLoggerSSE/releases/tag/v1.27.0",
-      "mentions_patch": true,
+      "mentions_patch": false,
       "newer_than_patch": true,
-      "mention_releases": [
-        "v1.25.0"
-      ]
+      "mention_releases": []
     },
     {
       "id": "address-library",
@@ -137,21 +145,85 @@
   ],
   "history": [
     {
+      "version": "1.7.104",
+      "label": "1.7.104",
+      "title": "1.7.104 hotfix (added to the 'Update 1.7.99' Steam post as 'Additional Hotfix - August 27')",
+      "published_at": "2026-08-27T14:00:00Z",
+      "published_unix": 1787839200,
+      "url": "https://store.steampowered.com/news/app/489830/view/1841579228665884",
+      "silent": true,
+      "sources": [
+        "https://store.steampowered.com/news/app/489830/view/1841579228665884 ('Additional Hotfix - August 27')",
+        "https://skse.silverlock.org/ ('Current Anniversary Edition build 2.3.1 (game version 1.7.104)')",
+        "https://api.steamcmd.net/v1/info/489830 (public build 24914197, updated 2026-08-27T14:00Z)"
+      ],
+      "steam_build": "24914197",
+      "frameworks": [
+        {
+          "id": "skse64",
+          "short": "SKSE64",
+          "name": "Skyrim Script Extender (SKSE64)",
+          "status": "Likely safe",
+          "release_tag": "v2.3.1",
+          "release_published_at": "2026-08-27T15:43:38Z",
+          "mentions_patch": false,
+          "first_release_tag": "v2.3.1",
+          "first_release_at": "2026-08-27T15:43:38Z",
+          "data_from": "2026-08-20T04:57:20Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "engine-fixes",
+          "short": "Engine Fixes",
+          "name": "SSE Engine Fixes",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2021-07-14T19:09:15Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "papyrus-extender",
+          "short": "PapyrusExt",
+          "name": "powerofthree's Papyrus Extender",
+          "status": "Likely safe",
+          "release_tag": "v6.5.2",
+          "release_published_at": "2026-09-05T12:42:36Z",
+          "mentions_patch": false,
+          "first_release_tag": "v6.5.2",
+          "first_release_at": "2026-09-05T12:42:36Z",
+          "data_from": "2022-10-14T21:37:37Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "crash-logger",
+          "short": "CrashLogger",
+          "name": "Crash Logger SSE AE VR",
+          "status": "Likely safe",
+          "release_tag": "v1.26.0",
+          "release_published_at": "2026-10-24T09:33:43Z",
+          "mentions_patch": false,
+          "first_release_tag": "v1.26.0",
+          "first_release_at": "2026-10-24T09:33:43Z",
+          "data_from": "2023-01-13T07:41:48Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
       "version": "1.7.99",
       "label": "1.7.99",
       "title": "The Elder Scrolls V: Skyrim Anniversary Edition - Update 1.7.99 (Updated Aug 27)",
       "published_at": "2026-08-20T14:55:37Z",
       "published_unix": 1787237737,
       "url": "https://store.steampowered.com/news/app/489830/view/1841579228665884",
-      "steam_build": "24914197",
-      "unannounced_update": {
-        "version": null,
-        "label": "Unannounced update 2026-08-27",
-        "published_at": "2026-08-27T14:00:09Z",
-        "buildid": "24914197",
-        "source": "Steam public branch (api.steamcmd.net / PICS)"
-      },
-      "runtime_note": "SKSE64's official page lists game runtime 1.7.104 as current (the announcement title says 1.7.99; Bethesda often ships silent hotfixes).",
       "frameworks": [
         {
           "id": "skse64",
@@ -1091,6 +1163,36 @@
         {
           "short": "CrashLogger",
           "status": "Safe",
+          "release_tag": "v1.27.0"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-21T19:13:13Z",
+      "patch": "1.7.104",
+      "patch_key": "1.7.104",
+      "patch_published_at": "2026-08-27T14:00:00Z",
+      "patch_url": "https://store.steampowered.com/news/app/489830/view/1841579228665884",
+      "verdict": "Not ported yet",
+      "frameworks": [
+        {
+          "short": "SKSE64",
+          "status": "Safe",
+          "release_tag": "v2.3.1"
+        },
+        {
+          "short": "Engine Fixes",
+          "status": "Not ported yet",
+          "release_tag": "7.0.21-beta5"
+        },
+        {
+          "short": "PapyrusExt",
+          "status": "Likely safe",
+          "release_tag": "v6.5.2"
+        },
+        {
+          "short": "CrashLogger",
+          "status": "Likely safe",
           "release_tag": "v1.27.0"
         }
       ]

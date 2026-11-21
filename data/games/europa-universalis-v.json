@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T18:54:58Z",
+  "generated_at": "2026-11-21T19:13:19Z",
   "game": {
     "slug": "europa-universalis-v",
     "name": "Europa Universalis V",
@@ -31,7 +31,7 @@
       "rollback_branch_series": null
     }
   },
-  "verdict": "Likely safe",
+  "verdict": "Breakage reported",
   "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
   "frameworks": [
     {
@@ -43,9 +43,9 @@
       "workshop_id": "3692202776",
       "tracked": true,
       "sensitive": true,
-      "status": "Likely safe",
+      "status": "Breakage reported",
       "base_status": "Likely safe",
-      "reason": "Last Workshop update 2026-10-03, before 1.4 went live on 2026-10-28. It already carries the 1.4 version tag, but that build predates the release (open-beta era), so it isn't confirmed for the live 1.4. 1.4 has been out 24 days with no update needed so far; no breakage signal available. 1.4.9 is a hotfix within 1.4: it rarely breaks mods that already work on 1.4, but this mod changes the interface (UI), and UI mods can still break when a hotfix touches the same files. No open breakage reports on its GitHub tracker since 1.4 went live. Workshop comments since 1.4 went live report CMF breaking some interface graphics on 1.4.5 and the country-selection bonus icons (a UI function it calls was removed in 1.4). (Checked by hand 2026-10-30; user comments, not counted as confirmed breakage.)",
+      "reason": "Last Workshop update 2026-10-03, before 1.4 went live on 2026-10-28. It already carries the 1.4 version tag, but that build predates the release (open-beta era), so it isn't confirmed for the live 1.4. 1.4 has been out 24 days with no update needed so far; no breakage signal available. 1.4.9 is a hotfix within 1.4: it rarely breaks mods that already work on 1.4, but this mod changes the interface (UI), and UI mods can still break when a hotfix touches the same files. No open breakage reports on its GitHub tracker since 1.4 went live. Workshop comments since 1.4 went live report CMF breaking some interface graphics on 1.4.5 and the country-selection bonus icons (a UI function it calls was removed in 1.4). (Checked by hand 2026-10-30; user comments, not counted as confirmed breakage.) Hand-checked 2026-11-21: Since 1.4 went live, Workshop comments from many players report CMF crashing saves to desktop, hiding the laws tab and causing multiplayer checksum mismatches, and a Nov 18 comment says the Workshop download is still CMF 2.4.1 with metadata for EU5 1.3.*. It hasn't updated since Oct 3 and its GitHub shows no 1.4 work. Leave CMF, and mods that require it, off for 1.4 until it updates.",
       "breakage_reports": [],
       "release_tag": "1.3, 1.4",
       "release_name": "Community Mod Framework - 1.4 R\u00edo Salado",
@@ -63,9 +63,18 @@
         "1.4"
       ],
       "tagged_for_series": true,
-      "subscriptions": 51155,
+      "subscriptions": 51154,
       "mentions_patch": false,
-      "newer_than_patch": false
+      "newer_than_patch": false,
+      "hand_check": {
+        "status": "Breakage reported",
+        "checked": "2026-11-21",
+        "text": "Since 1.4 went live, Workshop comments from many players report CMF crashing saves to desktop, hiding the laws tab and causing multiplayer checksum mismatches, and a Nov 18 comment says the Workshop download is still CMF 2.4.1 with metadata for EU5 1.3.*. It hasn't updated since Oct 3 and its GitHub shows no 1.4 work. Leave CMF, and mods that require it, off for 1.4 until it updates.",
+        "sources": [
+          "https://steamcommunity.com/sharedfiles/filedetails/comments/3692202776",
+          "https://github.com/Europa-Universalis-5-Modding-Co-op/community-mod-framework/commits"
+        ]
+      }
     },
     {
       "id": "glorp-ui",
@@ -125,7 +134,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 59776,
+      "subscriptions": 59778,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -184,7 +193,7 @@
         "1.4"
       ],
       "tagged_for_series": true,
-      "subscriptions": 13508,
+      "subscriptions": 13507,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -311,7 +320,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 8646,
+      "subscriptions": 8647,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -2542,6 +2551,66 @@
         {
           "short": "CMF",
           "status": "Likely safe",
+          "release_tag": "1.3, 1.4"
+        },
+        {
+          "short": "Glorp UI",
+          "status": "Likely safe",
+          "release_tag": "1.3"
+        },
+        {
+          "short": "Cheat Menu Pro",
+          "status": "Likely safe",
+          "release_tag": null
+        },
+        {
+          "short": "Road Builder",
+          "status": "Likely safe",
+          "release_tag": null
+        },
+        {
+          "short": "Construction Mgr",
+          "status": "Likely safe",
+          "release_tag": "1.4"
+        },
+        {
+          "short": "Thick borders",
+          "status": "Likely safe",
+          "release_tag": null
+        },
+        {
+          "short": "Console Access",
+          "status": "Likely safe",
+          "release_tag": null
+        },
+        {
+          "short": "National Destinies",
+          "status": "Likely safe",
+          "release_tag": null
+        },
+        {
+          "short": "BR 1337",
+          "status": "Likely safe",
+          "release_tag": null
+        },
+        {
+          "short": "MEIOU",
+          "status": "Likely safe",
+          "release_tag": null
+        }
+      ]
+    },
+    {
+      "at": "2026-11-21T19:13:19Z",
+      "patch": "1.4.9",
+      "patch_key": "1.4.9",
+      "patch_published_at": "2026-11-18T10:48:55Z",
+      "patch_url": "https://store.steampowered.com/news/app/3450310/view/1849827110423687",
+      "verdict": "Breakage reported",
+      "frameworks": [
+        {
+          "short": "CMF",
+          "status": "Breakage reported",
           "release_tag": "1.3, 1.4"
         },
         {

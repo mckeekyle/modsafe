@@ -701,6 +701,34 @@ def user_verdict(
     return V_LIKELY
 
 
+def apply_hand_checks(frameworks: list[dict[str, Any]], latest: dict[str, Any], checks: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Fold sourced, hand-checked findings into framework verdicts (data/manual/hand-checks.json).
+
+    For evidence the automatic sources can't see: an author who never published a release for the current game
+    version (Skyrim Engine Fixes on 1.7.104), or breakage reported only in Steam Workshop comments (EU5 CMF on 1.4).
+    A check only ever lowers a verdict, and it expires by itself when the game's current patch label changes or the
+    framework publishes anything newer than `release_at_check` (so a fix is picked up without anyone editing it)."""
+    by_fw = {c["framework"]: c for c in checks or [] if c.get("framework")}
+    out = []
+    for fw in frameworks:
+        c = by_fw.get(fw.get("id"))
+        rel, cap = parse_iso(fw.get("release_published_at")), parse_iso((c or {}).get("release_at_check"))
+        same_patch = c and (c.get("patch_label") == latest.get("label")
+                            or (c.get("patch_series") and c.get("patch_series") == latest.get("series")))
+        active = (same_patch and c.get("status") in VERDICT_RANK
+                  and (rel is None or cap is None or rel <= cap) and fw.get("status") in VERDICT_RANK)
+        if not active:
+            out.append(fw)
+            continue
+        fw = dict(fw)
+        if VERDICT_RANK[c["status"]] < VERDICT_RANK[fw["status"]]:
+            fw["status"] = c["status"]
+        fw["reason"] = (fw.get("reason") or "") + f" Hand-checked {c['checked']}: {c['text']}"
+        fw["hand_check"] = {k: c.get(k) for k in ("status", "checked", "text", "sources")}
+        out.append(fw)
+    return out
+
+
 def game_verdict(labels: list[str]) -> str:
     ranked = [l for l in labels if l in VERDICT_RANK]
     if not ranked:

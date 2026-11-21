@@ -1,27 +1,20 @@
 {
-  "generated_at": "2026-11-21T18:54:26Z",
+  "generated_at": "2026-11-21T19:13:16Z",
   "game": {
     "slug": "satisfactory",
     "name": "Satisfactory",
     "steam_appid": 526870,
     "latest_patch": {
-      "version": null,
-      "label": "Update 2026-11-04",
-      "title": "Crossplay is now available in Satisfactory!",
-      "published_at": "2026-11-04T14:03:55Z",
-      "published_unix": 1793801035,
-      "url": "https://store.steampowered.com/news/app/526870/view/1848557880479256",
-      "steam_build": "26728002",
-      "unannounced_update": {
-        "version": null,
-        "label": "Unannounced update 2026-11-18",
-        "published_at": "2026-11-18T16:22:51Z",
-        "buildid": "26728002",
-        "source": "Steam public branch (api.steamcmd.net / PICS)"
-      }
+      "version": "1.2.5.1",
+      "label": "1.2.5.1",
+      "title": "Satisfactory Update v1.2.5.1",
+      "published_at": "2026-11-18T16:26:17Z",
+      "published_unix": 1795019177,
+      "url": "https://store.steampowered.com/news/app/526870/view/1849827110424942",
+      "steam_build": "26728002"
     }
   },
-  "verdict": "Likely safe",
+  "verdict": "Safe",
   "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
   "frameworks": [
     {
@@ -33,18 +26,20 @@
       "repo": null,
       "tracked": true,
       "sensitive": true,
-      "status": "Likely safe",
-      "base_status": "Likely OK",
-      "reason": "Latest release is newer than patch Update 2026-11-04, but notes do not explicitly mention that version. ficsit.app lists SML as Works on the stable branch. SML requires game build CL 520140 or newer (a minimum, not a match: Steam doesn't publish the game's CL, so ModSafe can't compare builds directly).",
+      "status": "Safe",
+      "base_status": "Updated for latest patch",
+      "reason": "Latest release notes mention patch 1.2.5.1 and the release is on/after the patch date. ficsit.app lists SML as Works on the stable branch. SML requires game build CL 520140 or newer (a minimum, not a match: Steam doesn't publish the game's CL, so ModSafe can't compare builds directly).",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v3.12.1",
       "release_name": "SML 3.12.1",
       "release_published_at": "2026-11-21T04:40:25Z",
       "release_url": "https://ficsit.app/mod/SML/version/CzPqe1eeMDoBUw",
-      "mentions_patch": false,
+      "mentions_patch": true,
       "newer_than_patch": true,
-      "mention_releases": []
+      "mention_releases": [
+        "v3.12.1"
+      ]
     },
     {
       "id": "smm",
@@ -56,7 +51,7 @@
       "tracked": true,
       "sensitive": false,
       "status": "Not affected by patches",
-      "base_status": "Likely OK",
+      "base_status": "Unknown / check",
       "reason": "Installs mods and picks SML versions for you; it isn't built against a game version. Latest release: v3.2.0 (2026-11-08).",
       "breakage_reports": [],
       "official": null,
@@ -65,11 +60,50 @@
       "release_published_at": "2026-11-08T11:21:42Z",
       "release_url": "https://github.com/satisfactorymodding/SatisfactoryModManager/releases/tag/v3.2.0",
       "mentions_patch": false,
-      "newer_than_patch": true,
+      "newer_than_patch": false,
       "mention_releases": []
     }
   ],
   "history": [
+    {
+      "version": "1.2.5.1",
+      "label": "1.2.5.1",
+      "title": "Satisfactory Update v1.2.5.1",
+      "published_at": "2026-11-18T16:26:17Z",
+      "published_unix": 1795019177,
+      "url": "https://store.steampowered.com/news/app/526870/view/1849827110424942",
+      "steam_build": "26728002",
+      "frameworks": [
+        {
+          "id": "sml",
+          "short": "SML",
+          "name": "Satisfactory Mod Loader (SML)",
+          "status": "Safe",
+          "release_tag": "v3.12.1",
+          "release_published_at": "2026-11-21T04:40:25Z",
+          "mentions_patch": true,
+          "first_release_tag": "v3.12.1",
+          "first_release_at": "2026-11-21T04:40:25Z",
+          "data_from": "2024-10-10T21:32:54Z",
+          "first_mention_tag": "v3.12.1",
+          "first_mention_at": "2026-11-21T04:40:25Z"
+        },
+        {
+          "id": "smm",
+          "short": "SMM",
+          "name": "Satisfactory Mod Manager (SMM)",
+          "status": "Not affected by patches",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2021-06-28T13:13:00Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
     {
       "version": null,
       "label": "Update 2026-11-04",
@@ -77,14 +111,6 @@
       "published_at": "2026-11-04T14:03:55Z",
       "published_unix": 1793801035,
       "url": "https://store.steampowered.com/news/app/526870/view/1848557880479256",
-      "steam_build": "26728002",
-      "unannounced_update": {
-        "version": null,
-        "label": "Unannounced update 2026-11-18",
-        "published_at": "2026-11-18T16:22:51Z",
-        "buildid": "26728002",
-        "source": "Steam public branch (api.steamcmd.net / PICS)"
-      },
       "frameworks": [
         {
           "id": "sml",
@@ -495,44 +521,6 @@
           "first_mention_at": null
         }
       ]
-    },
-    {
-      "version": "1.1.1.2",
-      "label": "1.1.1.2",
-      "title": "1.1 Fixes v1.1.1.2",
-      "published_at": "2025-07-17T16:19:16Z",
-      "published_unix": 1752769156,
-      "url": "https://store.steampowered.com/news/app/526870/view/1805431065341340",
-      "frameworks": [
-        {
-          "id": "sml",
-          "short": "SML",
-          "name": "Satisfactory Mod Loader (SML)",
-          "status": "Likely safe",
-          "release_tag": "v3.11.2",
-          "release_published_at": "2025-08-01T00:23:27Z",
-          "mentions_patch": false,
-          "first_release_tag": "v3.11.2",
-          "first_release_at": "2025-08-01T00:23:27Z",
-          "data_from": "2024-10-10T21:32:54Z",
-          "first_mention_tag": null,
-          "first_mention_at": null
-        },
-        {
-          "id": "smm",
-          "short": "SMM",
-          "name": "Satisfactory Mod Manager (SMM)",
-          "status": "Not affected by patches",
-          "release_tag": "v3.0.4",
-          "release_published_at": "2026-01-06T18:41:38Z",
-          "mentions_patch": false,
-          "first_release_tag": "v3.0.4",
-          "first_release_at": "2026-01-06T18:41:38Z",
-          "data_from": "2021-06-28T13:13:00Z",
-          "first_mention_tag": null,
-          "first_mention_at": null
-        }
-      ]
     }
   ],
   "news": [
@@ -540,7 +528,7 @@
       "title": "Satisfactory Update v1.2.5.1",
       "url": "https://store.steampowered.com/news/app/526870/view/1849827110424942",
       "published_at": "2026-11-18T16:26:17Z",
-      "is_patch": false
+      "is_patch": true
     },
     {
       "title": "Satisfactory: The Board Game - Last 24 hours of the campaign!",
@@ -688,6 +676,21 @@
         {
           "short": "SML",
           "status": "Likely safe",
+          "release_tag": "v3.12.1"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-21T19:13:16Z",
+      "patch": "1.2.5.1",
+      "patch_key": "1.2.5.1",
+      "patch_published_at": "2026-11-18T16:26:17Z",
+      "patch_url": "https://store.steampowered.com/news/app/526870/view/1849827110424942",
+      "verdict": "Safe",
+      "frameworks": [
+        {
+          "short": "SML",
+          "status": "Safe",
           "release_tag": "v3.12.1"
         }
       ]

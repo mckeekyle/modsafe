@@ -39,6 +39,7 @@ from status_logic import (  # noqa: E402
     series_release,
     version_series,
     workshop_mod_verdict,
+    apply_hand_checks,
     determine_with_lineage,
     game_verdict,
     history_label,
@@ -368,6 +369,14 @@ def unannounced_event(game: dict, patches: list[dict], latest: dict) -> Optional
         # Recorded so tools/fast_check.py can spot a new Steam build cheaply between full refreshes.
         latest["steam_build"] = build["buildid"]
     return detect_unannounced_update(build, patches)
+
+
+def hand_checks_for(slug: str) -> list[dict]:
+    try:
+        d = json.loads((ROOT / "data" / "manual" / "hand-checks.json").read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        return []
+    return (d.get("checks") or {}).get(slug, [])
 
 
 def silent_patches_for(slug: str) -> list[dict]:
@@ -1030,6 +1039,7 @@ def build_game(game: dict) -> dict:
     body = (build_minecraft(game) if kind == "minecraft" else build_manual_game(game) if kind == "manual"
             else build_atlan_game(game) if kind == "atlan" else build_workshop_game(game) if kind == "workshop"
             else build_steam_game(game))
+    body["frameworks"] = apply_hand_checks(body["frameworks"], body["latest_patch"], hand_checks_for(game["slug"]))
     tracked = [f["status"] for f in body["frameworks"] if f.get("tracked") and f.get("sensitive", True)]
     return {
         "generated_at": now_iso(),

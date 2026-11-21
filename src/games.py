@@ -583,6 +583,7 @@ GAMES = [
         # those are labelled by date, like Fallout 4's.
         "patch_rule": {
             "include": r"^\d+\.\d+\s+(?:update\s+)?fixes\s+v\d|^satisfactory\s+\d+\.\d+\s+(?:update\s+)?out now|^fics\*mas update v\d"
+                       r"|^satisfactory update v\d"
                        r"|\bis now available in satisfactory\b",
             "exclude": r"experimental|\bptb\b|board game|anniversary",
             "version": r"(?:^.*\bv(?=\d)|^(?:satisfactory\s+)?)(\d+(?:\.\d+)+)",

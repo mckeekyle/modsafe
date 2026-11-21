@@ -111,6 +111,20 @@
           "https://api.steamcmd.net/v1/info/1142710 (branch last_update: 'Rollback to 9.0.0 (Build #50218)')"
         ]
       }
+    ],
+    "skyrim-se": [
+      {
+        "version": "1.7.104",
+        "label": "1.7.104",
+        "title": "1.7.104 hotfix (added to the 'Update 1.7.99' Steam post as 'Additional Hotfix - August 27')",
+        "published_at": "2026-08-27T14:00:00Z",
+        "url": "https://store.steampowered.com/news/app/489830/view/1841579228665884",
+        "sources": [
+          "https://store.steampowered.com/news/app/489830/view/1841579228665884 ('Additional Hotfix - August 27')",
+          "https://skse.silverlock.org/ ('Current Anniversary Edition build 2.3.1 (game version 1.7.104)')",
+          "https://api.steamcmd.net/v1/info/489830 (public build 24914197, updated 2026-08-27T14:00Z)"
+        ]
+      }
     ]
   }
 }

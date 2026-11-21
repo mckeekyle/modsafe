@@ -114,6 +114,28 @@ class TestPatchRules(unittest.TestCase):
         self.assertEqual(series_release(ps, "9.0.5", 3)["version"], "9.0.5")  # each patch is its own series
         self.assertEqual(series_release(ps, "9.0")["version"], "9.0.4")  # EU5-style depth 2: first patch of 9.0
 
+    def test_satisfactory_update_title(self):
+        self.check("satisfactory", "Satisfactory Update v1.2.5.1", "1.2.5.1")
+        self.check("satisfactory", "Satisfactory: The Board Game - Last 24 hours of the campaign!", None)
+
+    def test_hand_checks_lower_and_expire(self):
+        from status_logic import apply_hand_checks
+        fw = {"id": "ef", "status": "Likely safe", "reason": "r", "release_published_at": "2026-08-23T20:18:38Z"}
+        chk = [{"framework": "ef", "patch_label": "1.7.104", "status": "Not ported yet",
+                "release_at_check": "2026-08-23T20:18:38Z", "checked": "2026-11-21", "text": "t", "sources": ["s"]}]
+        out = apply_hand_checks([fw], {"label": "1.7.104"}, chk)[0]
+        self.assertEqual(out["status"], "Not ported yet")
+        self.assertIn("Hand-checked 2026-11-21: t", out["reason"])
+        # Expires on the next game patch, or once the framework releases something newer.
+        self.assertEqual(apply_hand_checks([fw], {"label": "1.7.105"}, chk)[0]["status"], "Likely safe")
+        newer = {**fw, "release_published_at": "2026-11-25T00:00:00Z"}
+        self.assertEqual(apply_hand_checks([newer], {"label": "1.7.104"}, chk)[0]["status"], "Likely safe")
+        # Never upgrades a worse verdict; series-wide checks match by series.
+        worse = {**fw, "status": "Breakage reported"}
+        self.assertEqual(apply_hand_checks([worse], {"label": "1.7.104"}, chk)[0]["status"], "Breakage reported")
+        ser = [{**chk[0], "patch_label": None, "patch_series": "1.4"}]
+        self.assertEqual(apply_hand_checks([fw], {"label": "1.4.9", "series": "1.4"}, ser)[0]["status"], "Not ported yet")
+
     def test_eu5_testing_branch_is_not_a_release(self):
         self.check("europa-universalis-v", "Patch 1.4.7", "1.4.7")
         self.check("europa-universalis-v", "Hotfix 1.4.6", "1.4.6")
