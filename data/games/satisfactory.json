@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T23:50:10Z",
+  "generated_at": "2026-11-21T04:50:52Z",
   "game": {
     "slug": "satisfactory",
     "name": "Satisfactory",
@@ -21,7 +21,7 @@
       }
     }
   },
-  "verdict": "Just patched, wait",
+  "verdict": "Likely safe",
   "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
   "frameworks": [
     {
@@ -33,17 +33,17 @@
       "repo": null,
       "tracked": true,
       "sensitive": true,
-      "status": "Just patched, wait",
-      "base_status": "Unknown / check",
-      "reason": "Latest release predates patch Update 2026-11-04; compatibility is unverified \u2014 check the project page. No open breakage reports 16 days after the patch. ficsit.app lists SML as Works on the stable branch. SML requires game build CL 491125 or newer (a minimum, not a match: Steam doesn't publish the game's CL, so ModSafe can't compare builds directly). Steam's public build changed on 2026-11-18 (build 26728002) with no announcement, and this tool hasn't released since; wait for confirmation.",
+      "status": "Likely safe",
+      "base_status": "Likely OK",
+      "reason": "Latest release is newer than patch Update 2026-11-04, but notes do not explicitly mention that version. ficsit.app lists SML as Works on the stable branch. SML requires game build CL 520140 or newer (a minimum, not a match: Steam doesn't publish the game's CL, so ModSafe can't compare builds directly).",
       "breakage_reports": [],
       "official": null,
-      "release_tag": "v3.12.0",
-      "release_name": "SML 3.12.0",
-      "release_published_at": "2026-06-06T17:02:02Z",
-      "release_url": "https://ficsit.app/mod/SML/version/74YqQBq2KJKN77",
+      "release_tag": "v3.12.1",
+      "release_name": "SML 3.12.1",
+      "release_published_at": "2026-11-21T04:40:25Z",
+      "release_url": "https://ficsit.app/mod/SML/version/CzPqe1eeMDoBUw",
       "mentions_patch": false,
-      "newer_than_patch": false,
+      "newer_than_patch": true,
       "mention_releases": []
     },
     {
@@ -90,13 +90,13 @@
           "id": "sml",
           "short": "SML",
           "name": "Satisfactory Mod Loader (SML)",
-          "status": "No post-patch release",
-          "release_tag": null,
-          "release_published_at": null,
+          "status": "Likely safe",
+          "release_tag": "v3.12.1",
+          "release_published_at": "2026-11-21T04:40:25Z",
           "mentions_patch": false,
-          "first_release_tag": null,
-          "first_release_at": null,
-          "data_from": "2024-01-07T04:10:59Z",
+          "first_release_tag": "v3.12.1",
+          "first_release_at": "2026-11-21T04:40:25Z",
+          "data_from": "2024-10-10T21:32:54Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -128,13 +128,13 @@
           "id": "sml",
           "short": "SML",
           "name": "Satisfactory Mod Loader (SML)",
-          "status": "No post-patch release",
-          "release_tag": null,
-          "release_published_at": null,
+          "status": "Likely safe",
+          "release_tag": "v3.12.1",
+          "release_published_at": "2026-11-21T04:40:25Z",
           "mentions_patch": false,
-          "first_release_tag": null,
-          "first_release_at": null,
-          "data_from": "2024-01-07T04:10:59Z",
+          "first_release_tag": "v3.12.1",
+          "first_release_at": "2026-11-21T04:40:25Z",
+          "data_from": "2024-10-10T21:32:54Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -166,13 +166,13 @@
           "id": "sml",
           "short": "SML",
           "name": "Satisfactory Mod Loader (SML)",
-          "status": "No post-patch release",
-          "release_tag": null,
-          "release_published_at": null,
+          "status": "Likely safe",
+          "release_tag": "v3.12.1",
+          "release_published_at": "2026-11-21T04:40:25Z",
           "mentions_patch": false,
-          "first_release_tag": null,
-          "first_release_at": null,
-          "data_from": "2024-01-07T04:10:59Z",
+          "first_release_tag": "v3.12.1",
+          "first_release_at": "2026-11-21T04:40:25Z",
+          "data_from": "2024-10-10T21:32:54Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -204,13 +204,13 @@
           "id": "sml",
           "short": "SML",
           "name": "Satisfactory Mod Loader (SML)",
-          "status": "No post-patch release",
-          "release_tag": null,
-          "release_published_at": null,
+          "status": "Likely safe",
+          "release_tag": "v3.12.1",
+          "release_published_at": "2026-11-21T04:40:25Z",
           "mentions_patch": false,
-          "first_release_tag": null,
-          "first_release_at": null,
-          "data_from": "2024-01-07T04:10:59Z",
+          "first_release_tag": "v3.12.1",
+          "first_release_at": "2026-11-21T04:40:25Z",
+          "data_from": "2024-10-10T21:32:54Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -242,13 +242,13 @@
           "id": "sml",
           "short": "SML",
           "name": "Satisfactory Mod Loader (SML)",
-          "status": "No post-patch release",
-          "release_tag": null,
-          "release_published_at": null,
+          "status": "Likely safe",
+          "release_tag": "v3.12.1",
+          "release_published_at": "2026-11-21T04:40:25Z",
           "mentions_patch": false,
-          "first_release_tag": null,
-          "first_release_at": null,
-          "data_from": "2024-01-07T04:10:59Z",
+          "first_release_tag": "v3.12.1",
+          "first_release_at": "2026-11-21T04:40:25Z",
+          "data_from": "2024-10-10T21:32:54Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -281,12 +281,12 @@
           "short": "SML",
           "name": "Satisfactory Mod Loader (SML)",
           "status": "Safe",
-          "release_tag": "v3.12.0",
-          "release_published_at": "2026-06-06T17:02:02Z",
+          "release_tag": "v3.12.1",
+          "release_published_at": "2026-11-21T04:40:25Z",
           "mentions_patch": true,
           "first_release_tag": "v3.12.0",
           "first_release_at": "2026-06-06T17:02:02Z",
-          "data_from": "2024-01-07T04:10:59Z",
+          "data_from": "2024-10-10T21:32:54Z",
           "first_mention_tag": "v3.12.0",
           "first_mention_at": "2026-06-06T17:02:02Z"
         },
@@ -324,7 +324,7 @@
           "mentions_patch": false,
           "first_release_tag": "v3.12.0",
           "first_release_at": "2026-06-06T17:02:02Z",
-          "data_from": "2024-01-07T04:10:59Z",
+          "data_from": "2024-10-10T21:32:54Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -362,7 +362,7 @@
           "mentions_patch": false,
           "first_release_tag": "v3.12.0",
           "first_release_at": "2026-06-06T17:02:02Z",
-          "data_from": "2024-01-07T04:10:59Z",
+          "data_from": "2024-10-10T21:32:54Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -400,7 +400,7 @@
           "mentions_patch": false,
           "first_release_tag": "v3.12.0",
           "first_release_at": "2026-06-06T17:02:02Z",
-          "data_from": "2024-01-07T04:10:59Z",
+          "data_from": "2024-10-10T21:32:54Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -438,7 +438,7 @@
           "mentions_patch": false,
           "first_release_tag": "v3.12.0",
           "first_release_at": "2026-06-06T17:02:02Z",
-          "data_from": "2024-01-07T04:10:59Z",
+          "data_from": "2024-10-10T21:32:54Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -476,7 +476,7 @@
           "mentions_patch": false,
           "first_release_tag": "v3.12.0",
           "first_release_at": "2026-06-06T17:02:02Z",
-          "data_from": "2024-01-07T04:10:59Z",
+          "data_from": "2024-10-10T21:32:54Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -514,7 +514,7 @@
           "mentions_patch": false,
           "first_release_tag": "v3.11.2",
           "first_release_at": "2025-08-01T00:23:27Z",
-          "data_from": "2024-01-07T04:10:59Z",
+          "data_from": "2024-10-10T21:32:54Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -674,6 +674,21 @@
           "short": "SML",
           "status": "Just patched, wait",
           "release_tag": "v3.12.0"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-21T04:50:52Z",
+      "patch": "Update 2026-11-04",
+      "patch_key": "update-2026-11-04",
+      "patch_published_at": "2026-11-04T14:03:55Z",
+      "patch_url": "https://store.steampowered.com/news/app/526870/view/1848557880479256",
+      "verdict": "Likely safe",
+      "frameworks": [
+        {
+          "short": "SML",
+          "status": "Likely safe",
+          "release_tag": "v3.12.1"
         }
       ]
     }
