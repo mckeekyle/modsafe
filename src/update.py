@@ -907,8 +907,13 @@ def build_workshop_game(game: dict) -> dict:
     if not patches:
         raise RuntimeError(f"No patch announcements found in Steam news for {game['name']}")
     latest = patches[0]
-    series = version_series(latest.get("version"))
-    first = series_release(patches, series) or latest
+    # EU5 mods target a major series (1.4.*), so hotfixes inside it keep the verdict. Games whose every patch can
+    # break mods (Total War: WARHAMMER III) set workshop_series_depth=3, so each patch (9.0.5) is its own "series".
+    depth = game.get("workshop_series_depth", 2)
+    series = version_series(latest.get("version"), depth)
+    if series is None and depth > 2 and version_series(latest.get("version"), 2):
+        series = version_series(f"{latest['version']}.0", depth)  # "Patch 8.1" is the 8.1.0 release
+    first = series_release(patches, series, depth) or latest
     is_major = first["label"] == latest["label"]
     latest.update(series=series, series_released_at=first["published_at"], series_url=first.get("url"),
                   series_label=first["label"], is_major=is_major)

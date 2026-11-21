@@ -1,0 +1,999 @@
+{
+  "generated_at": "2026-11-21T17:58:30Z",
+  "game": {
+    "slug": "schedule-i",
+    "name": "Schedule I",
+    "steam_appid": 3164500,
+    "latest_patch": {
+      "version": "0.4.7",
+      "label": "v0.4.7",
+      "title": "v0.4.7: Special Customers",
+      "published_at": "2026-10-09T07:45:33Z",
+      "published_unix": 1791531933,
+      "url": "https://store.steampowered.com/news/app/3164500/view/1846018067932462",
+      "steam_build": "25796331"
+    }
+  },
+  "verdict": "Likely safe",
+  "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
+  "frameworks": [
+    {
+      "id": "melonloader-s1",
+      "name": "MelonLoader",
+      "short": "MelonLoader",
+      "url": "https://thunderstore.io/c/schedule-i/p/LavaGang/MelonLoader/",
+      "source": "thunderstore",
+      "repo": "LavaGang/MelonLoader",
+      "tracked": true,
+      "sensitive": false,
+      "status": "Not affected by patches",
+      "base_status": "Unknown / check",
+      "reason": "Generic Unity mod loader; it rebuilds its IL2CPP assemblies for each new game build itself, so it isn't tied to a Schedule I version. Latest release: 0.7.3 (2026-05-14).",
+      "breakage_reports": [],
+      "official": null,
+      "release_tag": "0.7.3",
+      "release_name": "LavaGang-MelonLoader 0.7.3",
+      "release_published_at": "2026-05-14T20:20:38Z",
+      "release_url": "https://thunderstore.io/c/schedule-i/p/LavaGang/MelonLoader/",
+      "mentions_patch": false,
+      "newer_than_patch": false,
+      "mention_releases": []
+    },
+    {
+      "id": "s1api",
+      "name": "S1API",
+      "short": "S1API",
+      "url": "https://thunderstore.io/c/schedule-i/p/ifBars/S1API_Forked/",
+      "source": "github",
+      "repo": "ifBars/S1API",
+      "tracked": true,
+      "sensitive": true,
+      "status": "Safe",
+      "base_status": "Updated for latest patch",
+      "reason": "Latest release is on/after patch v0.4.7; an earlier post-patch release (v3.2.1) explicitly mentioned that version.",
+      "breakage_reports": [],
+      "official": null,
+      "release_tag": "v3.2.3",
+      "release_name": "S1API 3.2.3",
+      "release_published_at": "2026-11-03T05:21:45Z",
+      "release_url": "https://github.com/ifBars/S1API/releases/tag/v3.2.3",
+      "mentions_patch": true,
+      "newer_than_patch": true,
+      "mention_releases": [
+        "v3.2.1"
+      ]
+    },
+    {
+      "id": "cartel-enforcer",
+      "name": "Cartel Enforcer",
+      "short": "Cartel Enforcer",
+      "url": "https://thunderstore.io/c/schedule-i/p/XO_WithSauce/Cartel_Enforcer_IL2CPP/",
+      "source": "thunderstore",
+      "repo": "XO_WithSauce/Cartel_Enforcer_IL2CPP",
+      "tracked": true,
+      "sensitive": true,
+      "status": "Likely safe",
+      "base_status": "Likely OK",
+      "reason": "Latest release is newer than patch v0.4.7, but notes do not explicitly mention that version.",
+      "breakage_reports": [],
+      "official": null,
+      "release_tag": "2.1.0",
+      "release_name": "XO_WithSauce-Cartel_Enforcer_IL2CPP 2.1.0",
+      "release_published_at": "2026-10-25T01:51:52Z",
+      "release_url": "https://thunderstore.io/c/schedule-i/p/XO_WithSauce/Cartel_Enforcer_IL2CPP/",
+      "mentions_patch": false,
+      "newer_than_patch": true,
+      "mention_releases": []
+    },
+    {
+      "id": "nacops",
+      "name": "NACops",
+      "short": "NACops",
+      "url": "https://thunderstore.io/c/schedule-i/p/XO_WithSauce/NACops_IL2CPP/",
+      "source": "thunderstore",
+      "repo": "XO_WithSauce/NACops_IL2CPP",
+      "tracked": true,
+      "sensitive": true,
+      "status": "Likely safe",
+      "base_status": "Likely OK",
+      "reason": "Latest release is newer than patch v0.4.7, but notes do not explicitly mention that version.",
+      "breakage_reports": [],
+      "official": null,
+      "release_tag": "2.1.5",
+      "release_name": "XO_WithSauce-NACops_IL2CPP 2.1.5",
+      "release_published_at": "2026-11-08T10:14:39Z",
+      "release_url": "https://thunderstore.io/c/schedule-i/p/XO_WithSauce/NACops_IL2CPP/",
+      "mentions_patch": false,
+      "newer_than_patch": true,
+      "mention_releases": []
+    }
+  ],
+  "history": [
+    {
+      "version": "0.4.7",
+      "label": "v0.4.7",
+      "title": "v0.4.7: Special Customers",
+      "published_at": "2026-10-09T07:45:33Z",
+      "published_unix": 1791531933,
+      "url": "https://store.steampowered.com/news/app/3164500/view/1846018067932462",
+      "steam_build": "25796331",
+      "frameworks": [
+        {
+          "id": "melonloader-s1",
+          "short": "MelonLoader",
+          "name": "MelonLoader",
+          "status": "Not affected by patches",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2026-05-14T20:20:38Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "s1api",
+          "short": "S1API",
+          "name": "S1API",
+          "status": "Safe",
+          "release_tag": "v3.2.1",
+          "release_published_at": "2026-10-09T12:03:46Z",
+          "mentions_patch": true,
+          "first_release_tag": "v3.2.1",
+          "first_release_at": "2026-10-09T12:03:46Z",
+          "data_from": "2026-07-27T11:41:17Z",
+          "first_mention_tag": "v3.2.1",
+          "first_mention_at": "2026-10-09T12:03:46Z"
+        },
+        {
+          "id": "cartel-enforcer",
+          "short": "Cartel Enforcer",
+          "name": "Cartel Enforcer",
+          "status": "Likely safe",
+          "release_tag": "2.1.0",
+          "release_published_at": "2026-10-25T01:51:52Z",
+          "mentions_patch": false,
+          "first_release_tag": "2.1.0",
+          "first_release_at": "2026-10-25T01:51:52Z",
+          "data_from": "2026-10-25T01:51:52Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "nacops",
+          "short": "NACops",
+          "name": "NACops",
+          "status": "Likely safe",
+          "release_tag": "2.1.5",
+          "release_published_at": "2026-11-08T10:14:39Z",
+          "mentions_patch": false,
+          "first_release_tag": "2.1.5",
+          "first_release_at": "2026-11-08T10:14:39Z",
+          "data_from": "2026-11-08T10:14:39Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
+      "version": "0.4.6f13",
+      "label": "v0.4.6f13",
+      "title": "Patch v0.4.6f13",
+      "published_at": "2026-08-14T04:00:07Z",
+      "published_unix": 1786680007,
+      "url": "https://store.steampowered.com/news/app/3164500/view/1840944183778521",
+      "frameworks": [
+        {
+          "id": "melonloader-s1",
+          "short": "MelonLoader",
+          "name": "MelonLoader",
+          "status": "Not affected by patches",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2026-05-14T20:20:38Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "s1api",
+          "short": "S1API",
+          "name": "S1API",
+          "status": "Likely safe",
+          "release_tag": "v3.2.0",
+          "release_published_at": "2026-08-16T10:23:59Z",
+          "mentions_patch": false,
+          "first_release_tag": "v3.2.0",
+          "first_release_at": "2026-08-16T10:23:59Z",
+          "data_from": "2026-07-27T11:41:17Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "cartel-enforcer",
+          "short": "Cartel Enforcer",
+          "name": "Cartel Enforcer",
+          "status": "Likely safe",
+          "release_tag": "2.1.0",
+          "release_published_at": "2026-10-25T01:51:52Z",
+          "mentions_patch": false,
+          "first_release_tag": "2.1.0",
+          "first_release_at": "2026-10-25T01:51:52Z",
+          "data_from": "2026-10-25T01:51:52Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "nacops",
+          "short": "NACops",
+          "name": "NACops",
+          "status": "Likely safe",
+          "release_tag": "2.1.5",
+          "release_published_at": "2026-11-08T10:14:39Z",
+          "mentions_patch": false,
+          "first_release_tag": "2.1.5",
+          "first_release_at": "2026-11-08T10:14:39Z",
+          "data_from": "2026-11-08T10:14:39Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
+      "version": "0.4.6f12",
+      "label": "v0.4.6f12",
+      "title": "Patch v0.4.6f12",
+      "published_at": "2026-08-08T02:26:45Z",
+      "published_unix": 1786156005,
+      "url": "https://store.steampowered.com/news/app/3164500/view/1840310314346673",
+      "frameworks": [
+        {
+          "id": "melonloader-s1",
+          "short": "MelonLoader",
+          "name": "MelonLoader",
+          "status": "Not affected by patches",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2026-05-14T20:20:38Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "s1api",
+          "short": "S1API",
+          "name": "S1API",
+          "status": "Safe",
+          "release_tag": "v3.1.11",
+          "release_published_at": "2026-08-08T11:40:57Z",
+          "mentions_patch": true,
+          "first_release_tag": "v3.1.11",
+          "first_release_at": "2026-08-08T11:40:57Z",
+          "data_from": "2026-07-27T11:41:17Z",
+          "first_mention_tag": "v3.1.11",
+          "first_mention_at": "2026-08-08T11:40:57Z"
+        },
+        {
+          "id": "cartel-enforcer",
+          "short": "Cartel Enforcer",
+          "name": "Cartel Enforcer",
+          "status": "Likely safe",
+          "release_tag": "2.1.0",
+          "release_published_at": "2026-10-25T01:51:52Z",
+          "mentions_patch": false,
+          "first_release_tag": "2.1.0",
+          "first_release_at": "2026-10-25T01:51:52Z",
+          "data_from": "2026-10-25T01:51:52Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "nacops",
+          "short": "NACops",
+          "name": "NACops",
+          "status": "Likely safe",
+          "release_tag": "2.1.5",
+          "release_published_at": "2026-11-08T10:14:39Z",
+          "mentions_patch": false,
+          "first_release_tag": "2.1.5",
+          "first_release_at": "2026-11-08T10:14:39Z",
+          "data_from": "2026-11-08T10:14:39Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
+      "version": "0.4.6",
+      "label": "v0.4.6",
+      "title": "v0.4.6: Gamepad Support + Optimization",
+      "published_at": "2026-08-01T00:08:26Z",
+      "published_unix": 1785542906,
+      "url": "https://store.steampowered.com/news/app/3164500/view/1839676055889605",
+      "frameworks": [
+        {
+          "id": "melonloader-s1",
+          "short": "MelonLoader",
+          "name": "MelonLoader",
+          "status": "Not affected by patches",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2026-05-14T20:20:38Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "s1api",
+          "short": "S1API",
+          "name": "S1API",
+          "status": "Likely safe",
+          "release_tag": "v3.1.0",
+          "release_published_at": "2026-08-01T06:06:14Z",
+          "mentions_patch": false,
+          "first_release_tag": "v3.1.0",
+          "first_release_at": "2026-08-01T06:06:14Z",
+          "data_from": "2026-07-27T11:41:17Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "cartel-enforcer",
+          "short": "Cartel Enforcer",
+          "name": "Cartel Enforcer",
+          "status": "Likely safe",
+          "release_tag": "2.1.0",
+          "release_published_at": "2026-10-25T01:51:52Z",
+          "mentions_patch": false,
+          "first_release_tag": "2.1.0",
+          "first_release_at": "2026-10-25T01:51:52Z",
+          "data_from": "2026-10-25T01:51:52Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "nacops",
+          "short": "NACops",
+          "name": "NACops",
+          "status": "Likely safe",
+          "release_tag": "2.1.5",
+          "release_published_at": "2026-11-08T10:14:39Z",
+          "mentions_patch": false,
+          "first_release_tag": "2.1.5",
+          "first_release_at": "2026-11-08T10:14:39Z",
+          "data_from": "2026-11-08T10:14:39Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
+      "version": "0.4.5f2",
+      "label": "v0.4.5f2",
+      "title": "Patch v0.4.5f2",
+      "published_at": "2026-04-17T08:11:49Z",
+      "published_unix": 1776413509,
+      "url": "https://store.steampowered.com/news/app/3164500/view/1830163047259391",
+      "frameworks": [
+        {
+          "id": "melonloader-s1",
+          "short": "MelonLoader",
+          "name": "MelonLoader",
+          "status": "Not affected by patches",
+          "release_tag": "0.7.3",
+          "release_published_at": "2026-05-14T20:20:38Z",
+          "mentions_patch": false,
+          "first_release_tag": "0.7.3",
+          "first_release_at": "2026-05-14T20:20:38Z",
+          "data_from": "2026-05-14T20:20:38Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "s1api",
+          "short": "S1API",
+          "name": "S1API",
+          "status": "Likely safe",
+          "release_tag": "v3.1.0",
+          "release_published_at": "2026-08-01T06:06:14Z",
+          "mentions_patch": false,
+          "first_release_tag": "v3.1.0",
+          "first_release_at": "2026-08-01T06:06:14Z",
+          "data_from": "2026-07-27T11:41:17Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "cartel-enforcer",
+          "short": "Cartel Enforcer",
+          "name": "Cartel Enforcer",
+          "status": "Likely safe",
+          "release_tag": "2.1.0",
+          "release_published_at": "2026-10-25T01:51:52Z",
+          "mentions_patch": false,
+          "first_release_tag": "2.1.0",
+          "first_release_at": "2026-10-25T01:51:52Z",
+          "data_from": "2026-10-25T01:51:52Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "nacops",
+          "short": "NACops",
+          "name": "NACops",
+          "status": "Likely safe",
+          "release_tag": "2.1.5",
+          "release_published_at": "2026-11-08T10:14:39Z",
+          "mentions_patch": false,
+          "first_release_tag": "2.1.5",
+          "first_release_at": "2026-11-08T10:14:39Z",
+          "data_from": "2026-11-08T10:14:39Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
+      "version": "0.4.5",
+      "label": "v0.4.5",
+      "title": "v0.4.5: Anniversary Update",
+      "published_at": "2026-03-30T01:18:20Z",
+      "published_unix": 1774833500,
+      "url": "https://store.steampowered.com/news/app/3164500/view/1828441623108889",
+      "frameworks": [
+        {
+          "id": "melonloader-s1",
+          "short": "MelonLoader",
+          "name": "MelonLoader",
+          "status": "Not affected by patches",
+          "release_tag": "0.7.3",
+          "release_published_at": "2026-05-14T20:20:38Z",
+          "mentions_patch": false,
+          "first_release_tag": "0.7.3",
+          "first_release_at": "2026-05-14T20:20:38Z",
+          "data_from": "2026-05-14T20:20:38Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "s1api",
+          "short": "S1API",
+          "name": "S1API",
+          "status": "Likely safe",
+          "release_tag": "v3.1.0",
+          "release_published_at": "2026-08-01T06:06:14Z",
+          "mentions_patch": false,
+          "first_release_tag": "v3.1.0",
+          "first_release_at": "2026-08-01T06:06:14Z",
+          "data_from": "2026-07-27T11:41:17Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "cartel-enforcer",
+          "short": "Cartel Enforcer",
+          "name": "Cartel Enforcer",
+          "status": "Likely safe",
+          "release_tag": "2.1.0",
+          "release_published_at": "2026-10-25T01:51:52Z",
+          "mentions_patch": false,
+          "first_release_tag": "2.1.0",
+          "first_release_at": "2026-10-25T01:51:52Z",
+          "data_from": "2026-10-25T01:51:52Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "nacops",
+          "short": "NACops",
+          "name": "NACops",
+          "status": "Likely safe",
+          "release_tag": "2.1.5",
+          "release_published_at": "2026-11-08T10:14:39Z",
+          "mentions_patch": false,
+          "first_release_tag": "2.1.5",
+          "first_release_at": "2026-11-08T10:14:39Z",
+          "data_from": "2026-11-08T10:14:39Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
+      "version": "0.4.4",
+      "label": "v0.4.4",
+      "title": "v0.4.4: Weather Update",
+      "published_at": "2026-03-19T04:56:41Z",
+      "published_unix": 1773896201,
+      "url": "https://store.steampowered.com/news/app/3164500/view/1827626365752067",
+      "frameworks": [
+        {
+          "id": "melonloader-s1",
+          "short": "MelonLoader",
+          "name": "MelonLoader",
+          "status": "Not affected by patches",
+          "release_tag": "0.7.3",
+          "release_published_at": "2026-05-14T20:20:38Z",
+          "mentions_patch": false,
+          "first_release_tag": "0.7.3",
+          "first_release_at": "2026-05-14T20:20:38Z",
+          "data_from": "2026-05-14T20:20:38Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "s1api",
+          "short": "S1API",
+          "name": "S1API",
+          "status": "Likely safe",
+          "release_tag": "v3.1.0",
+          "release_published_at": "2026-08-01T06:06:14Z",
+          "mentions_patch": false,
+          "first_release_tag": "v3.1.0",
+          "first_release_at": "2026-08-01T06:06:14Z",
+          "data_from": "2026-07-27T11:41:17Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "cartel-enforcer",
+          "short": "Cartel Enforcer",
+          "name": "Cartel Enforcer",
+          "status": "Likely safe",
+          "release_tag": "2.1.0",
+          "release_published_at": "2026-10-25T01:51:52Z",
+          "mentions_patch": false,
+          "first_release_tag": "2.1.0",
+          "first_release_at": "2026-10-25T01:51:52Z",
+          "data_from": "2026-10-25T01:51:52Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "nacops",
+          "short": "NACops",
+          "name": "NACops",
+          "status": "Likely safe",
+          "release_tag": "2.1.5",
+          "release_published_at": "2026-11-08T10:14:39Z",
+          "mentions_patch": false,
+          "first_release_tag": "2.1.5",
+          "first_release_at": "2026-11-08T10:14:39Z",
+          "data_from": "2026-11-08T10:14:39Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
+      "version": "0.4.3",
+      "label": "v0.4.3",
+      "title": "v0.4.3: Storage Closets",
+      "published_at": "2026-02-02T23:27:56Z",
+      "published_unix": 1770074876,
+      "url": "https://store.steampowered.com/news/app/3164500/view/1823191198612472",
+      "frameworks": [
+        {
+          "id": "melonloader-s1",
+          "short": "MelonLoader",
+          "name": "MelonLoader",
+          "status": "Not affected by patches",
+          "release_tag": "0.7.3",
+          "release_published_at": "2026-05-14T20:20:38Z",
+          "mentions_patch": false,
+          "first_release_tag": "0.7.3",
+          "first_release_at": "2026-05-14T20:20:38Z",
+          "data_from": "2026-05-14T20:20:38Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "s1api",
+          "short": "S1API",
+          "name": "S1API",
+          "status": "Likely safe",
+          "release_tag": "v3.1.0",
+          "release_published_at": "2026-08-01T06:06:14Z",
+          "mentions_patch": false,
+          "first_release_tag": "v3.1.0",
+          "first_release_at": "2026-08-01T06:06:14Z",
+          "data_from": "2026-07-27T11:41:17Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "cartel-enforcer",
+          "short": "Cartel Enforcer",
+          "name": "Cartel Enforcer",
+          "status": "Likely safe",
+          "release_tag": "2.1.0",
+          "release_published_at": "2026-10-25T01:51:52Z",
+          "mentions_patch": false,
+          "first_release_tag": "2.1.0",
+          "first_release_at": "2026-10-25T01:51:52Z",
+          "data_from": "2026-10-25T01:51:52Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "nacops",
+          "short": "NACops",
+          "name": "NACops",
+          "status": "Likely safe",
+          "release_tag": "2.1.5",
+          "release_published_at": "2026-11-08T10:14:39Z",
+          "mentions_patch": false,
+          "first_release_tag": "2.1.5",
+          "first_release_at": "2026-11-08T10:14:39Z",
+          "data_from": "2026-11-08T10:14:39Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
+      "version": "0.4.2",
+      "label": "v0.4.2",
+      "title": "v0.4.2: Shrooms Update",
+      "published_at": "2025-12-26T04:50:37Z",
+      "published_unix": 1766724637,
+      "url": "https://store.steampowered.com/news/app/3164500/view/1819386365108685",
+      "frameworks": [
+        {
+          "id": "melonloader-s1",
+          "short": "MelonLoader",
+          "name": "MelonLoader",
+          "status": "Not affected by patches",
+          "release_tag": "0.7.3",
+          "release_published_at": "2026-05-14T20:20:38Z",
+          "mentions_patch": false,
+          "first_release_tag": "0.7.3",
+          "first_release_at": "2026-05-14T20:20:38Z",
+          "data_from": "2026-05-14T20:20:38Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "s1api",
+          "short": "S1API",
+          "name": "S1API",
+          "status": "Likely safe",
+          "release_tag": "v3.1.0",
+          "release_published_at": "2026-08-01T06:06:14Z",
+          "mentions_patch": false,
+          "first_release_tag": "v3.1.0",
+          "first_release_at": "2026-08-01T06:06:14Z",
+          "data_from": "2026-07-27T11:41:17Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "cartel-enforcer",
+          "short": "Cartel Enforcer",
+          "name": "Cartel Enforcer",
+          "status": "Likely safe",
+          "release_tag": "2.1.0",
+          "release_published_at": "2026-10-25T01:51:52Z",
+          "mentions_patch": false,
+          "first_release_tag": "2.1.0",
+          "first_release_at": "2026-10-25T01:51:52Z",
+          "data_from": "2026-10-25T01:51:52Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "nacops",
+          "short": "NACops",
+          "name": "NACops",
+          "status": "Likely safe",
+          "release_tag": "2.1.5",
+          "release_published_at": "2026-11-08T10:14:39Z",
+          "mentions_patch": false,
+          "first_release_tag": "2.1.5",
+          "first_release_at": "2026-11-08T10:14:39Z",
+          "data_from": "2026-11-08T10:14:39Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
+      "version": "0.4.1f12",
+      "label": "v0.4.1f12",
+      "title": "Patch v0.4.1f12",
+      "published_at": "2025-11-18T08:26:13Z",
+      "published_unix": 1763454373,
+      "url": "https://store.steampowered.com/news/app/3164500/view/1816307528972747",
+      "frameworks": [
+        {
+          "id": "melonloader-s1",
+          "short": "MelonLoader",
+          "name": "MelonLoader",
+          "status": "Not affected by patches",
+          "release_tag": "0.7.3",
+          "release_published_at": "2026-05-14T20:20:38Z",
+          "mentions_patch": false,
+          "first_release_tag": "0.7.3",
+          "first_release_at": "2026-05-14T20:20:38Z",
+          "data_from": "2026-05-14T20:20:38Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "s1api",
+          "short": "S1API",
+          "name": "S1API",
+          "status": "Likely safe",
+          "release_tag": "v3.1.0",
+          "release_published_at": "2026-08-01T06:06:14Z",
+          "mentions_patch": false,
+          "first_release_tag": "v3.1.0",
+          "first_release_at": "2026-08-01T06:06:14Z",
+          "data_from": "2026-07-27T11:41:17Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "cartel-enforcer",
+          "short": "Cartel Enforcer",
+          "name": "Cartel Enforcer",
+          "status": "Likely safe",
+          "release_tag": "2.1.0",
+          "release_published_at": "2026-10-25T01:51:52Z",
+          "mentions_patch": false,
+          "first_release_tag": "2.1.0",
+          "first_release_at": "2026-10-25T01:51:52Z",
+          "data_from": "2026-10-25T01:51:52Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "nacops",
+          "short": "NACops",
+          "name": "NACops",
+          "status": "Likely safe",
+          "release_tag": "2.1.5",
+          "release_published_at": "2026-11-08T10:14:39Z",
+          "mentions_patch": false,
+          "first_release_tag": "2.1.5",
+          "first_release_at": "2026-11-08T10:14:39Z",
+          "data_from": "2026-11-08T10:14:39Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
+      "version": "0.4.1",
+      "label": "v0.4.1",
+      "title": "v0.4.1: Halloween Update",
+      "published_at": "2025-11-02T21:39:57Z",
+      "published_unix": 1762119597,
+      "url": "https://store.steampowered.com/news/app/3164500/view/1815034432980586",
+      "frameworks": [
+        {
+          "id": "melonloader-s1",
+          "short": "MelonLoader",
+          "name": "MelonLoader",
+          "status": "Not affected by patches",
+          "release_tag": "0.7.3",
+          "release_published_at": "2026-05-14T20:20:38Z",
+          "mentions_patch": false,
+          "first_release_tag": "0.7.3",
+          "first_release_at": "2026-05-14T20:20:38Z",
+          "data_from": "2026-05-14T20:20:38Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "s1api",
+          "short": "S1API",
+          "name": "S1API",
+          "status": "Likely safe",
+          "release_tag": "v3.1.0",
+          "release_published_at": "2026-08-01T06:06:14Z",
+          "mentions_patch": false,
+          "first_release_tag": "v3.1.0",
+          "first_release_at": "2026-08-01T06:06:14Z",
+          "data_from": "2026-07-27T11:41:17Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "cartel-enforcer",
+          "short": "Cartel Enforcer",
+          "name": "Cartel Enforcer",
+          "status": "Likely safe",
+          "release_tag": "2.1.0",
+          "release_published_at": "2026-10-25T01:51:52Z",
+          "mentions_patch": false,
+          "first_release_tag": "2.1.0",
+          "first_release_at": "2026-10-25T01:51:52Z",
+          "data_from": "2026-10-25T01:51:52Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "nacops",
+          "short": "NACops",
+          "name": "NACops",
+          "status": "Likely safe",
+          "release_tag": "2.1.5",
+          "release_published_at": "2026-11-08T10:14:39Z",
+          "mentions_patch": false,
+          "first_release_tag": "2.1.5",
+          "first_release_at": "2026-11-08T10:14:39Z",
+          "data_from": "2026-11-08T10:14:39Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
+      "version": "0.4.0f8",
+      "label": "v0.4.0f8",
+      "title": "Patch v0.4.0f8",
+      "published_at": "2025-09-27T10:05:03Z",
+      "published_unix": 1758967503,
+      "url": "https://store.steampowered.com/news/app/3164500/view/1811772772305948",
+      "frameworks": [
+        {
+          "id": "melonloader-s1",
+          "short": "MelonLoader",
+          "name": "MelonLoader",
+          "status": "Not affected by patches",
+          "release_tag": "0.7.3",
+          "release_published_at": "2026-05-14T20:20:38Z",
+          "mentions_patch": false,
+          "first_release_tag": "0.7.3",
+          "first_release_at": "2026-05-14T20:20:38Z",
+          "data_from": "2026-05-14T20:20:38Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "s1api",
+          "short": "S1API",
+          "name": "S1API",
+          "status": "Likely safe",
+          "release_tag": "v3.1.0",
+          "release_published_at": "2026-08-01T06:06:14Z",
+          "mentions_patch": false,
+          "first_release_tag": "v3.1.0",
+          "first_release_at": "2026-08-01T06:06:14Z",
+          "data_from": "2026-07-27T11:41:17Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "cartel-enforcer",
+          "short": "Cartel Enforcer",
+          "name": "Cartel Enforcer",
+          "status": "Likely safe",
+          "release_tag": "2.1.0",
+          "release_published_at": "2026-10-25T01:51:52Z",
+          "mentions_patch": false,
+          "first_release_tag": "2.1.0",
+          "first_release_at": "2026-10-25T01:51:52Z",
+          "data_from": "2026-10-25T01:51:52Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "nacops",
+          "short": "NACops",
+          "name": "NACops",
+          "status": "Likely safe",
+          "release_tag": "2.1.5",
+          "release_published_at": "2026-11-08T10:14:39Z",
+          "mentions_patch": false,
+          "first_release_tag": "2.1.5",
+          "first_release_at": "2026-11-08T10:14:39Z",
+          "data_from": "2026-11-08T10:14:39Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    }
+  ],
+  "news": [
+    {
+      "title": "v0.4.7: Special Customers",
+      "url": "https://store.steampowered.com/news/app/3164500/view/1846018067932462",
+      "published_at": "2026-10-09T07:45:33Z",
+      "is_patch": true
+    },
+    {
+      "title": "v0.4.7 Open Beta",
+      "url": "https://store.steampowered.com/news/app/3164500/view/1844115010496953",
+      "published_at": "2026-09-19T10:43:08Z",
+      "is_patch": false
+    },
+    {
+      "title": "Patch v0.4.6f13",
+      "url": "https://store.steampowered.com/news/app/3164500/view/1840944183778521",
+      "published_at": "2026-08-14T04:00:07Z",
+      "is_patch": true
+    },
+    {
+      "title": "v0.4.6f13 Open Beta",
+      "url": "https://store.steampowered.com/news/app/3164500/view/1840944183775607",
+      "published_at": "2026-08-13T03:27:15Z",
+      "is_patch": false
+    },
+    {
+      "title": "Patch v0.4.6f12",
+      "url": "https://store.steampowered.com/news/app/3164500/view/1840310314346673",
+      "published_at": "2026-08-08T02:26:45Z",
+      "is_patch": true
+    },
+    {
+      "title": "v0.4.6f12 Open Beta",
+      "url": "https://store.steampowered.com/news/app/3164500/view/1840310314340934",
+      "published_at": "2026-08-06T06:06:33Z",
+      "is_patch": false
+    },
+    {
+      "title": "v0.4.6: Gamepad Support + Optimization",
+      "url": "https://store.steampowered.com/news/app/3164500/view/1839676055889605",
+      "published_at": "2026-08-01T00:08:26Z",
+      "is_patch": true
+    },
+    {
+      "title": "v0.4.6 Open Beta",
+      "url": "https://store.steampowered.com/news/app/3164500/view/1836506165582327",
+      "published_at": "2026-07-09T05:36:36Z",
+      "is_patch": false
+    },
+    {
+      "title": "'Special customers' wins community vote #3",
+      "url": "https://store.steampowered.com/news/app/3164500/view/1830797770239647",
+      "published_at": "2026-04-26T04:25:35Z",
+      "is_patch": false
+    },
+    {
+      "title": "Community vote #3 is now open!",
+      "url": "https://store.steampowered.com/news/app/3164500/view/1830163047259398",
+      "published_at": "2026-04-17T08:13:51Z",
+      "is_patch": false
+    }
+  ],
+  "channels": [],
+  "sources": {
+    "steam_news": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=3164500&count=100"
+  },
+  "verdict_log": [
+    {
+      "at": "2026-11-21T17:58:30Z",
+      "patch": "v0.4.7",
+      "patch_key": "0.4.7",
+      "patch_published_at": "2026-10-09T07:45:33Z",
+      "patch_url": "https://store.steampowered.com/news/app/3164500/view/1846018067932462",
+      "verdict": "Likely safe",
+      "frameworks": [
+        {
+          "short": "S1API",
+          "status": "Safe",
+          "release_tag": "v3.2.3"
+        },
+        {
+          "short": "Cartel Enforcer",
+          "status": "Likely safe",
+          "release_tag": "2.1.0"
+        },
+        {
+          "short": "NACops",
+          "status": "Likely safe",
+          "release_tag": "2.1.5"
+        }
+      ]
+    }
+  ]
+}

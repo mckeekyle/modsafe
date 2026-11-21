@@ -1,0 +1,184 @@
+{
+  "game": "schedule-i",
+  "verified_at": "2026-11-21",
+  "manager": {
+    "name": "r2modman",
+    "url": "https://thunderstore.io/c/schedule-i/p/ebkr/r2modman/",
+    "alt": {
+      "name": "Gale",
+      "url": "https://thunderstore.io/c/schedule-i/p/Kesomannen/GaleModManager/"
+    }
+  },
+  "intro": "Popular Schedule I mods on Thunderstore, all updated in the last few months. Most come in IL2CPP and Mono builds: the default Steam version is IL2CPP. In co-op, everyone needs the same gameplay mods.",
+  "mods": [
+    {
+      "id": "melonloader",
+      "name": "MelonLoader",
+      "category": "Framework",
+      "summary": "Mod loader every Schedule I mod runs on; r2modman installs it for you.",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/schedule-i/p/LavaGang/MelonLoader/",
+      "requires": [],
+      "thunderstore_package": "LavaGang/MelonLoader",
+      "framework_id": "melonloader-s1",
+      "last_updated": "2026-05-14"
+    },
+    {
+      "id": "s1api",
+      "name": "S1API",
+      "category": "Framework",
+      "summary": "Shared modding API (IL2CPP and Mono) that many Schedule I mods build on.",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/schedule-i/p/ifBars/S1API_Forked/",
+      "requires": [
+        "melonloader"
+      ],
+      "thunderstore_package": "ifBars/S1API_Forked",
+      "framework_id": "s1api",
+      "last_updated": "2026-11-03"
+    },
+    {
+      "id": "cartel-enforcer",
+      "name": "Cartel Enforcer",
+      "category": "Gameplay",
+      "summary": "Tougher, more active cartel: new ambushes, drive-bys and more.",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/schedule-i/p/XO_WithSauce/Cartel_Enforcer_IL2CPP/",
+      "requires": [
+        "melonloader"
+      ],
+      "thunderstore_package": "XO_WithSauce/Cartel_Enforcer_IL2CPP",
+      "framework_id": "cartel-enforcer",
+      "last_updated": "2026-10-25"
+    },
+    {
+      "id": "nacops",
+      "name": "NACops",
+      "category": "Gameplay",
+      "summary": "Smarter police: property raids, investigators and more settings.",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/schedule-i/p/XO_WithSauce/NACops_IL2CPP/",
+      "requires": [
+        "melonloader"
+      ],
+      "thunderstore_package": "XO_WithSauce/NACops_IL2CPP",
+      "framework_id": "nacops",
+      "last_updated": "2026-11-08"
+    },
+    {
+      "id": "laundry-app",
+      "name": "LaundryApp",
+      "category": "Phone app",
+      "summary": "Manage money laundering at your businesses from the in-game phone.",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/schedule-i/p/DazUki/LaundryApp/",
+      "requires": [
+        "melonloader"
+      ],
+      "thunderstore_package": "DazUki/LaundryApp",
+      "last_updated": "2026-10-09"
+    },
+    {
+      "id": "furniture-delivery",
+      "name": "FurnitureDelivery",
+      "category": "Quality of life",
+      "summary": "Order furniture delivered straight to your property.",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/schedule-i/p/k0Mods/FurnitureDelivery/",
+      "requires": [
+        "melonloader"
+      ],
+      "thunderstore_package": "k0Mods/FurnitureDelivery",
+      "also_requires": [
+        "OTCLoader"
+      ],
+      "last_updated": "2026-10-09"
+    },
+    {
+      "id": "business-employment",
+      "name": "BusinessEmployment",
+      "category": "Gameplay",
+      "summary": "Hire employees for your businesses to automate laundering.",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/schedule-i/p/k0Mods/BusinessEmployment/",
+      "requires": [
+        "melonloader",
+        "s1api"
+      ],
+      "thunderstore_package": "k0Mods/BusinessEmployment",
+      "also_requires": [
+        "SwapperPlugin"
+      ],
+      "last_updated": "2026-10-09"
+    },
+    {
+      "id": "faster-dealers",
+      "name": "FasterDealers",
+      "category": "Quality of life",
+      "summary": "Makes your dealer NPCs move faster (configurable).",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/schedule-i/p/Riccaforte/FasterDealers/",
+      "requires": [
+        "melonloader",
+        "s1api"
+      ],
+      "thunderstore_package": "Riccaforte/FasterDealers",
+      "last_updated": "2026-11-01"
+    },
+    {
+      "id": "better-counteroffer-ui",
+      "name": "BetterCounterOfferUI",
+      "category": "Interface",
+      "summary": "Cleaner counter-offer popup that only lists products you have.",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/schedule-i/p/UnicornsCanMod/BetterCounterOfferUI/",
+      "requires": [
+        "melonloader"
+      ],
+      "thunderstore_package": "UnicornsCanMod/BetterCounterOfferUI",
+      "last_updated": "2026-10-18"
+    },
+    {
+      "id": "recipe-list-menu",
+      "name": "Recipe List Menu",
+      "category": "Interface",
+      "summary": "Quickly look up recipes for products you've discovered.",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/schedule-i/p/SFR/Recipe_List_Menu/",
+      "requires": [
+        "melonloader"
+      ],
+      "thunderstore_package": "SFR/Recipe_List_Menu",
+      "last_updated": "2026-08-09"
+    },
+    {
+      "id": "supergrow",
+      "name": "SuperGrow",
+      "category": "Gameplay",
+      "summary": "Craftable growth enhancer for your plants.",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/schedule-i/p/HazDS/SuperGrow/",
+      "requires": [
+        "melonloader"
+      ],
+      "thunderstore_package": "HazDS/SuperGrow",
+      "last_updated": "2026-10-21"
+    },
+    {
+      "id": "packrat",
+      "name": "PackRat",
+      "category": "Quality of life",
+      "summary": "Portable backpack storage.",
+      "source": "thunderstore",
+      "url": "https://thunderstore.io/c/schedule-i/p/SirTidez/PackRat/",
+      "requires": [
+        "melonloader"
+      ],
+      "thunderstore_package": "SirTidez/PackRat",
+      "also_requires": [
+        "SwapperPlugin"
+      ],
+      "last_updated": "2026-08-20"
+    }
+  ]
+}

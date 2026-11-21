@@ -920,9 +920,9 @@ def _vkey(v: str) -> tuple:
     return tuple(int(x) for x in re.findall(r"\d+", v or ""))
 
 
-def series_release(patches: list[dict[str, Any]], series: Optional[str]) -> Optional[dict[str, Any]]:
+def series_release(patches: list[dict[str, Any]], series: Optional[str], depth: int = 2) -> Optional[dict[str, Any]]:
     """The first tracked patch of a series (e.g. 'Update 1.4' for 1.4.6): the release that changed the major version."""
-    hits = [p for p in patches or [] if series and version_series(p.get("version")) == series and parse_iso(p.get("published_at"))]
+    hits = [p for p in patches or [] if series and version_series(p.get("version"), depth) == series and parse_iso(p.get("published_at"))]
     return min(hits, key=lambda p: parse_iso(p["published_at"])) if hits else None
 
 

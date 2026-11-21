@@ -85,6 +85,35 @@ class TestPatchRules(unittest.TestCase):
         self.check("repo", "Addressing the BIGGEST QUESTIONS about R.E.P.O. in 2026", None)
         self.check("repo", "Vote R.E.P.O. for the \"Better With Friends\" award!!", None)
 
+    def test_warhammer3(self):
+        g = "total-war-warhammer-3"
+        self.check(g, "Patch 9.0.5", "9.0.5")
+        self.check(g, "Hotfix 9.0.1", "9.0.1")
+        self.check(g, "Patch 8.1 Now Live", "8.1")
+        self.check(g, "Crossplay Patch 7.2.1", "7.2.1")
+        self.check(g, "Hotfix 7.0.3 Now Live for All Players", "7.0.3")
+        self.check(g, "Bhashiva Character Pack & Update 8.0 Out Now!", "8.0")
+        self.check(g, "Total War: WARHAMMER III - Hotfix 7.0.3 BETA", None)
+        self.check(g, "New Dwarf music coming with Update 9.0", None)
+        self.check(g, "Mod Manager Update", None)
+        self.check(g, "Lords of the End Times is OUT NOW!", None)  # Update 9.0: recorded in silent-patches.json
+
+    def test_schedule_i(self):
+        g = "schedule-i"
+        self.check(g, "v0.4.7: Special Customers", "0.4.7")
+        self.check(g, "Patch v0.4.6f13", "0.4.6f13")
+        self.check(g, "v0.4.6: Gamepad Support + Optimization", "0.4.6")
+        self.check(g, "v0.4.7 Open Beta", None)
+        self.check(g, "Open Beta Patch v0.4.0f3", None)
+        self.check(g, "'Special customers' wins community vote #3", None)
+
+    def test_workshop_series_depth(self):
+        from status_logic import series_release, version_series
+        self.assertEqual(version_series("9.0.5", 3), "9.0.5")
+        ps = [{"version": "9.0.5", "published_at": "2026-11-03T00:00:00Z"}, {"version": "9.0.4", "published_at": "2026-10-15T00:00:00Z"}]
+        self.assertEqual(series_release(ps, "9.0.5", 3)["version"], "9.0.5")  # each patch is its own series
+        self.assertEqual(series_release(ps, "9.0")["version"], "9.0.4")  # EU5-style depth 2: first patch of 9.0
+
     def test_eu5_testing_branch_is_not_a_release(self):
         self.check("europa-universalis-v", "Patch 1.4.7", "1.4.7")
         self.check("europa-universalis-v", "Hotfix 1.4.6", "1.4.6")

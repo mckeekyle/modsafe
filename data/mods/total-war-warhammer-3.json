@@ -1,0 +1,159 @@
+{
+  "game": "total-war-warhammer-3",
+  "verified_at": "2026-11-21",
+  "manager": {
+    "name": "Steam Workshop + the game's launcher mod manager",
+    "url": "https://steamcommunity.com/app/1142710/workshop/"
+  },
+  "intro": "Some of the most-subscribed Total War: WARHAMMER III mods on the Steam Workshop, all updated for the 9.0 era. Subscribe on the Workshop, then tick them in the launcher's mod manager. Use one big overhaul (SFO or Radious), not both.",
+  "mods": [
+    {
+      "id": "mct",
+      "name": "Mod Configuration Tool (MCT)",
+      "category": "Framework",
+      "summary": "In-game settings menu that many mods use for their options.",
+      "source": "workshop",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2927955021",
+      "requires": [],
+      "framework_id": "mct",
+      "note": "Load it near the top; mods that use it list it as a required item.",
+      "last_updated": "2026-07-19"
+    },
+    {
+      "id": "mixer",
+      "name": "MIXER - Mixu's Unlocker",
+      "category": "Framework",
+      "summary": "Unlocks extra starting lords and factions; lots of lord and campaign mods build on it.",
+      "source": "workshop",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2859968660",
+      "requires": [
+        "mct"
+      ],
+      "framework_id": "mixer",
+      "last_updated": "2026-11-09"
+    },
+    {
+      "id": "better-camera",
+      "name": "Better Camera Mod",
+      "category": "Interface",
+      "summary": "Lets the battle camera zoom out further and move more freely.",
+      "source": "workshop",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2789858755",
+      "requires": [],
+      "framework_id": "better-camera",
+      "last_updated": "2026-09-24"
+    },
+    {
+      "id": "recruit-defeated-ll",
+      "name": "Recruit Defeated Legendary Lords",
+      "category": "Campaign",
+      "summary": "Defeated legendary lords can join your faction instead of vanishing.",
+      "source": "workshop",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2854819509",
+      "requires": [],
+      "framework_id": "recruit-defeated-ll",
+      "last_updated": "2026-09-24"
+    },
+    {
+      "id": "double-skill-points",
+      "name": "Double Skill Points & Skill Dump",
+      "category": "Campaign",
+      "summary": "Lords and heroes earn twice the skill points.",
+      "source": "workshop",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2789845079",
+      "requires": [],
+      "last_updated": "2026-11-13"
+    },
+    {
+      "id": "mixu-ll-assets",
+      "name": "Mixu's Legendary Lords: Asset Pack",
+      "category": "Assets",
+      "summary": "Models and art that Mixu's Legendary Lords needs.",
+      "source": "workshop",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2802811244",
+      "requires": [],
+      "last_updated": "2026-09-25"
+    },
+    {
+      "id": "mixu-ll",
+      "name": "Mixu's Legendary Lords",
+      "category": "Lords",
+      "summary": "Adds dozens of extra legendary lords from Warhammer lore.",
+      "source": "workshop",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2802810577",
+      "requires": [
+        "mixu-ll-assets"
+      ],
+      "framework_id": "mixu-ll",
+      "last_updated": "2026-11-09"
+    },
+    {
+      "id": "iee",
+      "name": "Immortal Empires Expanded",
+      "category": "Campaign",
+      "summary": "Bigger Immortal Empires map with new regions and settlements.",
+      "source": "workshop",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3007996493",
+      "requires": [
+        "mixer",
+        "mct"
+      ],
+      "framework_id": "iee",
+      "note": "It lists several more required items on its Workshop page; subscribe to all of them.",
+      "last_updated": "2026-11-17"
+    },
+    {
+      "id": "sfo",
+      "name": "SFO: Grimhammer III",
+      "category": "Overhaul",
+      "summary": "Big gameplay overhaul of battles, campaign and units. Use it on its own, not with other overhauls.",
+      "source": "workshop",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2792731173",
+      "requires": [],
+      "framework_id": "sfo",
+      "last_updated": "2026-11-19"
+    },
+    {
+      "id": "radious",
+      "name": "Radious Total War Mod",
+      "category": "Overhaul",
+      "summary": "Overhaul with new units and rebalanced battles, in four parts. Pick it or SFO, not both.",
+      "source": "workshop",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2791750313",
+      "requires": [],
+      "framework_id": "radious",
+      "note": "Subscribe to all four parts (Part 1 lists the others as required items).",
+      "last_updated": "2026-11-15"
+    },
+    {
+      "id": "vco",
+      "name": "Victory Conditions Overhaul",
+      "category": "Campaign",
+      "summary": "Reworks the campaign victory conditions and rewards.",
+      "source": "workshop",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3140200173",
+      "requires": [],
+      "last_updated": "2026-11-10"
+    },
+    {
+      "id": "unique-faction-ui",
+      "name": "Unique Faction UI",
+      "category": "Interface",
+      "summary": "Gives each faction its own themed interface.",
+      "source": "workshop",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2789999718",
+      "requires": [],
+      "last_updated": "2026-11-07"
+    },
+    {
+      "id": "audio-mixer",
+      "name": "Audio Mixer",
+      "category": "Audio",
+      "summary": "Library other mods use to add new voice lines and sounds.",
+      "source": "workshop",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3149445431",
+      "requires": [],
+      "last_updated": "2026-10-30"
+    }
+  ]
+}

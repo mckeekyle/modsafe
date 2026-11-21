@@ -737,6 +737,92 @@ GAMES = [
         "blurb": ("Each EU5 major update (1.1, 1.2, 1.3, 1.4) changes the script and interface files Workshop mods "
                   "build on, so mods need an update for the new version; hotfixes within a version rarely break them."),
     },
+    {
+        "slug": "total-war-warhammer-3",
+        "name": "Total War: WARHAMMER III",
+        "short": "WARHAMMER III",
+        "developer": "Creative Assembly",
+        "genre": "Strategy",
+        "steam_appid": 1142710,
+        # Posts are titled "Patch 9.0.5", "Hotfix 9.0.1", "Crossplay Patch 7.2.1", "Patch 8.1 Now Live" or
+        # "Bhashiva Character Pack & Update 8.0 Out Now!". Big content updates can be titled by DLC only ("Lords of the
+        # End Times is OUT NOW!" = Update 9.0): those go in data/manual/silent-patches.json with the Steam post as source.
+        # Teasers ("... coming with Update 9.0"), "Hotfix 7.0.3 BETA" and the "Mod Manager Update" (no version) are skipped.
+        "patch_rule": {
+            "include": r"^(?:total war: warhammer iii\s*-\s*)?(?:crossplay\s+)?(?:patch|hotfix)\s+\d+\.\d+"
+                       r"|\bupdate\s+\d+\.\d+\b.*\b(?:out now|now live|live now)\b",
+            "exclude": r"\bbeta\b|coming|preview|what's included|survey",
+            "version": r"(\d+\.\d+(?:\.\d+)*)",
+            "require_version": True,
+            "label": "Patch {v}",
+        },
+        # Steam Workshop mods carry no game-version tags, and hotfixes regularly break script and database mods, so
+        # every patch counts: a key mod is "ready" once it has a Workshop update on/after the current patch went live.
+        "kind": "workshop",
+        "workshop_series_depth": 3,
+        "frameworks": [
+            {"id": "mct", "name": "Mod Configuration Tool (MCT)", "short": "MCT", "source": "workshop",
+             "workshop_id": "2927955021", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2927955021"},
+            {"id": "mixer", "name": "MIXER - Mixu's Unlocker", "short": "MIXER", "source": "workshop",
+             "workshop_id": "2859968660", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2859968660"},
+            {"id": "sfo", "name": "SFO: Grimhammer III", "short": "SFO", "source": "workshop",
+             "workshop_id": "2792731173", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2792731173"},
+            {"id": "radious", "name": "Radious Total War Mod (Part 1)", "short": "Radious", "source": "workshop",
+             "workshop_id": "2791750313", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2791750313"},
+            {"id": "iee", "name": "Immortal Empires Expanded", "short": "IEE", "source": "workshop",
+             "workshop_id": "3007996493", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3007996493"},
+            {"id": "mixu-ll", "name": "Mixu's Legendary Lords", "short": "Mixu's LL", "source": "workshop",
+             "workshop_id": "2802810577", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2802810577"},
+            {"id": "recruit-defeated-ll", "name": "Recruit Defeated Legendary Lords", "short": "Recruit Defeated LL",
+             "source": "workshop", "workshop_id": "2854819509",
+             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2854819509"},
+            {"id": "better-camera", "name": "Better Camera Mod", "short": "Better Camera", "source": "workshop",
+             "workshop_id": "2789858755", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2789858755"},
+        ],
+        "extra_links": [("Total War: WARHAMMER III Steam Workshop", "https://steamcommunity.com/app/1142710/workshop/")],
+        "wiki": "https://tw-modding.com/",
+        "note": ("Tracks the Steam PC version's public branch. Steam keeps rollback branches (last_release, last_update, "
+                 "last_patch) under Properties › Betas for when a patch breaks your mods."),
+        "blurb": ("Creative Assembly patches WARHAMMER III often (9.0 to 9.0.5 in six weeks), and even hotfixes can break "
+                  "script and database mods until their authors push a Workshop update."),
+    },
+    {
+        "slug": "schedule-i",
+        "genre": "Simulation",
+        "name": "Schedule I",
+        "short": "Schedule I",
+        "developer": "TVGS",
+        "steam_appid": 3164500,
+        # Live posts are titled "v0.4.7: Special Customers" or "Patch v0.4.6f13"; each has an "… Open Beta" post first,
+        # which is skipped, as are community votes and merch posts.
+        "patch_rule": {
+            "include": r"^v\d+\.\d+\.\d+(?:f\d+)?\s*:|^patch\s+v\d+\.\d+",
+            "exclude": r"\bbeta\b",
+            "version": r"v(\d+\.\d+\.\d+(?:f\d+)?)",
+            "require_version": True,
+            "label": "v{v}",
+            "mention": r"(?<![\w.])v?{v}(?![\w.])",
+        },
+        "frameworks": [
+            {"id": "melonloader-s1", "name": "MelonLoader", "short": "MelonLoader", "source": "thunderstore",
+             "package": "LavaGang/MelonLoader", "url": "https://thunderstore.io/c/schedule-i/p/LavaGang/MelonLoader/",
+             "agnostic": True, "agnostic_note": ("Generic Unity mod loader; it rebuilds its IL2CPP assemblies for each new "
+                                                 "game build itself, so it isn't tied to a Schedule I version.")},
+            {"id": "s1api", "name": "S1API", "short": "S1API", "source": "github",
+             "repo": "ifBars/S1API", "url": "https://thunderstore.io/c/schedule-i/p/ifBars/S1API_Forked/"},
+            {"id": "cartel-enforcer", "name": "Cartel Enforcer", "short": "Cartel Enforcer", "source": "thunderstore",
+             "package": "XO_WithSauce/Cartel_Enforcer_IL2CPP", "issues_repo": "XOWithSauce/schedule-cartelenforcer",
+             "url": "https://thunderstore.io/c/schedule-i/p/XO_WithSauce/Cartel_Enforcer_IL2CPP/"},
+            {"id": "nacops", "name": "NACops", "short": "NACops", "source": "thunderstore",
+             "package": "XO_WithSauce/NACops_IL2CPP", "issues_repo": "XOWithSauce/schedule-nacops",
+             "url": "https://thunderstore.io/c/schedule-i/p/XO_WithSauce/NACops_IL2CPP/"},
+        ],
+        "wiki": "https://thunderstore.io/c/schedule-i/",
+        "note": ("Tracks the default (IL2CPP) public branch. Mods are built for IL2CPP, Mono (Steam's 'alternate' branch) "
+                 "or both: pick the matching build of each mod."),
+        "blurb": ("Each Schedule I update (v0.4.6, v0.4.7…) changes the game code MelonLoader mods hook into, so many mods "
+                  "break until their authors ship a rebuild; Steam keeps a default-previous branch for rollbacks."),
+    },
 ]
 
 # GTA V used to be one page covering both PC editions. /gta-v/ is now a short hub that links to the two edition

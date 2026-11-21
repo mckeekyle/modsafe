@@ -98,6 +98,19 @@
           "https://api.steamcmd.net/v1/info/294100 (public build 23969874, updated 2026-06-30T17:12:35Z)"
         ]
       }
+    ],
+    "total-war-warhammer-3": [
+      {
+        "version": "9.0",
+        "label": "Update 9.0",
+        "title": "Update 9.0 (released with Lords of the End Times; the Steam post is titled by the DLC only)",
+        "published_at": "2026-09-24T14:00:51Z",
+        "url": "https://store.steampowered.com/news/app/1142710/view/1844751498221619",
+        "sources": [
+          "https://store.steampowered.com/news/app/1142710/view/1844751498221619 ('Lords of the End Times is OUT NOW alongside Update 9.0!')",
+          "https://api.steamcmd.net/v1/info/1142710 (branch last_update: 'Rollback to 9.0.0 (Build #50218)')"
+        ]
+      }
     ]
   }
 }
