@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T06:16:35Z",
+  "generated_at": "2026-11-21T18:10:20Z",
   "game": {
     "slug": "skyrim-se",
     "name": "Skyrim Special Edition",
@@ -18,8 +18,7 @@
         "published_at": "2026-08-27T14:00:09Z",
         "buildid": "24914197",
         "source": "Steam public branch (api.steamcmd.net / PICS)"
-      },
-      "runtime_note": "SKSE64's official page lists game runtime 1.7.104 as current (the announcement title says 1.7.99; Bethesda often ships silent hotfixes)."
+      }
     }
   },
   "verdict": "Likely safe",
@@ -34,16 +33,11 @@
       "repo": "ianpatt/skse64",
       "tracked": true,
       "sensitive": true,
-      "status": "Safe",
+      "status": "Likely safe",
       "base_status": "Likely OK",
-      "reason": "Official page (https://skse.silverlock.org/) lists build 2.3.1 for runtime 1.7.104, matching the latest tag (Bethesda often ships updates to a beta branch first). (Date is the tagged commit on GitHub; builds are published on the official site.)",
+      "reason": "Latest release is newer than patch 1.7.99, but notes do not explicitly mention that version. (Date is the tagged commit on GitHub; builds are published on the official site.)",
       "breakage_reports": [],
-      "official": {
-        "runtime": "1.7.104",
-        "build": "2.3.1",
-        "supports_current": true,
-        "page": "https://skse.silverlock.org/"
-      },
+      "official": null,
       "release_tag": "v2.3.1",
       "release_name": "v2.3.1",
       "release_published_at": "2026-08-27T15:43:38Z",
@@ -151,7 +145,6 @@
         "buildid": "24914197",
         "source": "Steam public branch (api.steamcmd.net / PICS)"
       },
-      "runtime_note": "SKSE64's official page lists game runtime 1.7.104 as current (the announcement title says 1.7.99; Bethesda often ships silent hotfixes).",
       "frameworks": [
         {
           "id": "skse64",
@@ -1032,6 +1025,36 @@
           "short": "CrashLogger",
           "status": "Safe",
           "release_tag": "v1.25.0"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-21T18:10:20Z",
+      "patch": "1.7.99",
+      "patch_key": "1.7.99",
+      "patch_published_at": "2026-08-20T14:55:37Z",
+      "patch_url": "https://store.steampowered.com/news/app/489830/view/1841579228665884",
+      "verdict": "Likely safe",
+      "frameworks": [
+        {
+          "short": "SKSE64",
+          "status": "Likely safe",
+          "release_tag": "v2.3.1"
+        },
+        {
+          "short": "Engine Fixes",
+          "status": "Likely safe",
+          "release_tag": "7.0.21-beta5"
+        },
+        {
+          "short": "PapyrusExt",
+          "status": "Likely safe",
+          "release_tag": "v6.5.2"
+        },
+        {
+          "short": "CrashLogger",
+          "status": "Safe",
+          "release_tag": "v1.27.0"
         }
       ]
     }
