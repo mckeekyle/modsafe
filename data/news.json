@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T18:55:13Z",
+  "generated_at": "2026-11-21T19:18:25Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,15 @@
     }
   ],
   "items": [
+    {
+      "title": "Eldritch Empathy is a Papers Please-esque roguelite about diagnosing cosmic horror creatures and trying not to lose your marbles as you do",
+      "url": "https://www.rockpapershotgun.com/eldritch-empathy-is-a-papers-please-esque-roguelite-about-diagnosing-cosmic-horror-creatures-and-trying-not-to-lose-your-marbles-as-you-do",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-21T18:57:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Skyrim lead chats about the Fallout diehards who hated that Bethesda got the series: 'We had to prove them wrong, and fortunately we did'",
       "url": "https://www.pcgamer.com/games/fallout/skyrim-lead-chats-about-the-fallout-diehards-who-hated-that-bethesda-got-the-series-we-had-to-prove-them-wrong-and-fortunately-we-did/",
@@ -554,15 +563,6 @@
       "url": "https://www.rockpapershotgun.com/amid-a-year-of-layoffs-ubisoft-yank-the-cover-off-motherbrain-their-new-studio-focused-on-ai-for-gameplay-innovation",
       "source": "Rock Paper Shotgun",
       "published_at": "2026-11-20T12:09:30Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "WoW: Forever item designer wants to 'get rid of BiS', encouraging players who want to sweatily optimise to bring unique sets of gear to raids",
-      "url": "https://www.pcgamer.com/games/world-of-warcraft/wow-forever-item-designer-wants-to-get-rid-of-bis-encouraging-players-who-want-to-sweatily-optimise-to-bring-unique-sets-of-gear-to-raids/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-20T12:07:57Z",
       "games": [],
       "kind": "news",
       "highlight": false
