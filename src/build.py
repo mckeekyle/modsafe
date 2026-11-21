@@ -20,6 +20,7 @@ import mods as mods_mod  # noqa: E402
 import feeds  # noqa: E402
 import badges  # noqa: E402
 import guides as guides_mod  # noqa: E402
+import gta6 as gta6_mod  # noqa: E402
 import history_stats as hstats  # noqa: E402
 GAMES_SLUGS = {g["slug"] for g in GAMES}
 HUB_SLUGS = set(HUBS)  # e.g. /gta-v/: short hub page linking to the per-edition pages
@@ -850,6 +851,9 @@ def game_faq(game: dict, data: dict) -> list[dict]:
                            "separately and Script Hook V can support one before the other, so each has its own verdict. "
                            + " ".join(f"{o['name']} (Steam app {o.get('steam_appid')}, {o.get('exe')}) is tracked at {SITE_URL}/{o['slug']}/." for o in others)
                            + f" Not sure which you have? See {SITE_URL}/gta-v/."})
+        items.append({"q": "Do GTA V mods work in GTA 6?",
+                      "a": "No. GTA 6 is a different game, so GTA V mods, Script Hook V, trainers and OpenIV won't load in it. GTA 6 is "
+                           f"console-only for now, and console games can't be modded. GTA 6 PC release and mod status: {SITE_URL}{gta6_mod.PATH}"})
         items.append({"q": f"Where do the {game['short']} patch history dates come from?",
                       "a": "From a hand-kept table of each PC build's release date and the date Script Hook V first listed it, cross-checked "
                            "against the lspdfrinfo wiki's GTA V build list. The sources give dates only, so update times are whole days."})
@@ -1207,6 +1211,8 @@ def related_links(game: dict, data: dict, current: str, wiki: bool = False) -> s
         out.append(f'<a href="{guides_mod.STEAM_GUIDE_PATH}">🛑 Stop Steam auto-updates</a>')
     if wiki and game.get("wiki"):
         out.append(f'<a href="{esc(game["wiki"])}">🛠 Modding resources</a>')
+    if game.get("hub") == "gta-v":
+        out.append(f'<a href="{gta6_mod.PATH}">🆕 Does GTA 6 have mods?</a>')
     out.append('<a href="/games/">🎮 All games</a>')
     return f'<section class="links" aria-label="Related pages">{" ".join(out)}</section>'
 
@@ -1932,7 +1938,7 @@ the other. ModSafe gives each edition its own verdict, install guide, mod list a
 <a href="/badge/{slug}.svg">/badge/{slug}.svg</a> still work and combine both editions (the worse verdict wins). New integrations should use
 {' and '.join(f'<a href="/{g["slug"]}/status.json">/{g["slug"]}/status.json</a>' for g, _ in editions)}; in <a href="/api/v1/status.json">api/v1</a> the
 <code>{esc(slug)}</code> entry is marked <code>deprecated</code> with <code>superseded_by</code>.</p>
-<section class="links" aria-label="Related pages">{" ".join(f'<a href="/{g["slug"]}/">🎮 {esc(g["short"])}</a>' for g, _ in editions)} <a href="/guides/stop-steam-auto-updates/">🛑 Stop Steam auto-updates</a> <a href="/games/">🎮 All games</a></section>
+<section class="links" aria-label="Related pages">{" ".join(f'<a href="/{g["slug"]}/">🎮 {esc(g["short"])}</a>' for g, _ in editions)} <a href="{gta6_mod.PATH}">🆕 Does GTA 6 have mods?</a> <a href="/guides/stop-steam-auto-updates/">🛑 Stop Steam auto-updates</a> <a href="/games/">🎮 All games</a></section>
 """
     itemlist = {"@context": "https://schema.org", "@type": "ItemList", "name": f"{hub['name']} PC editions",
                 "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": g["name"], "url": f"{SITE_URL}/{g['slug']}/"}
@@ -1943,6 +1949,20 @@ the other. ModSafe gives each edition its own verdict, install guide, mod list a
                             + ". Each has its own verdict, install guide and mod list."),
                       f"/{slug}/", slug, body + AGO_JS,
                       extra_jsonld=[itemlist, breadcrumb_ld([("Games", "/"), (short, f"/{slug}/")])])
+
+
+def build_gta6_page(games_data) -> str:
+    """/gta-6/: console-only so far; an info page (no verdict) that links to GTA V's edition pages."""
+    d = gta6_mod.load()
+    faq = gta6_mod.faq(d)
+    body = gta6_mod.body(d, hub_editions("gta-v", games_data), badge, "".join(faq_article(i) for i in faq))
+    article = {"@context": "https://schema.org", "@type": "Article", "headline": gta6_mod.TITLE,
+               "description": gta6_mod.description(d), "url": f"{SITE_URL}{gta6_mod.PATH}", "dateModified": d["last_verified"],
+               "about": {"@type": "VideoGame", "name": "Grand Theft Auto VI", "publisher": "Rockstar Games"},
+               "author": {"@type": "Organization", "name": SITE_NAME},
+               "publisher": {"@type": "Organization", "name": SITE_NAME, "logo": {"@type": "ImageObject", "url": f"{SITE_URL}/img/logo.png"}}}
+    return page_shell(f"{gta6_mod.TITLE} — ModSafe", _clip(gta6_mod.description(d)), gta6_mod.PATH, "games", body,
+                      extra_jsonld=[article, faq_ld(faq), breadcrumb_ld([("Games", "/"), ("GTA 6", gta6_mod.PATH)])])
 
 
 def hub_editions(hub_slug: str, games_data) -> list[tuple[dict, dict]]:
@@ -1984,6 +2004,13 @@ def build_llms_txt(games_data) -> str:
                   f"- Compatibility endpoints (both editions combined, worse verdict wins; deprecated, prefer the edition entries): "
                   f"{SITE_URL}/{hub['slug']}/status.json, {SITE_URL}/{hub['slug']}/feed.xml, {SITE_URL}/badge/{hub['slug']}.svg; "
                   f"api/v1 entry id '{hub['slug']}' has deprecated: true and superseded_by: {[g['slug'] for g, _ in eds]}", ""]
+    g6 = gta6_mod.load()
+    lines += ["## Grand Theft Auto VI (info page, not tracked yet)", f"- Page: {SITE_URL}{gta6_mod.PATH}",
+              f"- Console release: {g6['console_release']['date']} ({', '.join(g6['console_release']['platforms'])}); no console mods",
+              f"- PC version: {gta6_mod.pc_status_text(g6)}"
+              + (f"; reported, unconfirmed: {g6['pc_release']['reported']['window']} ({g6['pc_release']['reported']['by']})"
+                 if g6["pc_release"].get("reported") and g6["pc_release"].get("status") == "not-announced" else ""),
+              f"- Mods: {gta6_mod.mods_status_text(g6)}; hand-maintained, last verified {g6['last_verified']}", ""]
     lines += ["## Pages", f"- Patch timeline (newest game patches across all games, with verdicts and recent verdict changes): {SITE_URL}/patches/",
               f"- FAQ: {SITE_URL}/faq/", f"- Guides: {SITE_URL}/guides/",
               f"- Guide: How to stop Steam auto-updating a game (Wait until I launch, Offline Mode, Steam Deck, Game Versions & Betas, "
@@ -2012,7 +2039,7 @@ def build_redirects(games_data) -> str:
 
 def sitemap_urls() -> list[str]:
     urls = ["/", "/games/", "/patches/", "/news/", "/faq/", "/guides/", guides_mod.STEAM_GUIDE_PATH]
-    urls += [f"/{h}/" for h in HUBS]
+    urls += [f"/{h}/" for h in HUBS] + [gta6_mod.PATH]
     for g in GAMES:
         urls.append(f"/{g['slug']}/")
         if has_history(_game_data(g["slug"])):
@@ -2256,6 +2283,7 @@ def main() -> int:
         write(DIST / hub["slug"] / "feed.xml", feeds.game_feed(hub, d, SITE_URL))
         write(DIST / "badge" / f"{hub['slug']}.svg", badges.game_badge(hub, d, status_class(d["verdict"])))
         write(DIST / "badge" / f"{hub['slug']}.json", json.dumps(shields_endpoint(hub, d), indent=2, ensure_ascii=False) + "\n")
+    write(DIST / gta6_mod.PATH.strip("/") / "index.html", build_gta6_page(games_data))
     write(DIST / "games" / "index.html", build_games_index(games_data))
     write(DIST / "patches" / "index.html", build_patches_page(games_data))
     write(DIST / "news" / "index.html", build_news_page())

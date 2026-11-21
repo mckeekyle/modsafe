@@ -1,0 +1,31 @@
+{
+  "_comment": "Hand-maintained facts for /gta-6/ ('Does GTA 6 have mods?'). Every fact needs a primary or clearly attributed source. pc_release.status is 'not-announced', 'announced' (date set by Rockstar) or 'released'. The countdown on the page appears ONLY when status is 'announced' and date is an official Rockstar date (YYYY-MM-DD); reported/rumoured windows go in 'reported' and are never counted down. When Rockstar announces a PC date: set status, date, date_source (the Newswire URL) and bump last_verified. When the PC version ships, ModSafe can start tracking it like GTA V.",
+  "last_verified": "2026-11-21",
+  "console_release": {
+    "date": "2026-11-19",
+    "platforms": ["PlayStation 5", "Xbox Series X|S"],
+    "source": "https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026",
+    "source_title": "Rockstar Newswire: Grand Theft Auto VI is now set to launch November 19, 2026"
+  },
+  "pc_release": {
+    "status": "not-announced",
+    "date": null,
+    "date_source": null,
+    "official_note": "Take-Two CEO Strauss Zelnick declined to discuss a PC version on the November 2026 earnings call and said platform news will come from Rockstar.",
+    "official_note_source": "https://www.tweaktown.com/news/114580/grand-theft-auto-6-pc-and-physical-disc-news-will-come-from-rockstar-confirms-take-two/index.html",
+    "reported": {
+      "window": "early 2027 (Q1)",
+      "by": "GamesBeat, citing anonymous industry sources (Oct 13, 2026; updated Nov 18). Rockstar has not commented.",
+      "source": "https://videocardz.com/newz/gta-vi-pc-release-reportedly-planned-for-q1-2027",
+      "source_title": "VideoCardz: GTA VI PC release reportedly planned for Q1 2027 (summarising GamesBeat)"
+    }
+  },
+  "history": [
+    {"game": "GTA V", "console": "2013-09-17", "pc": "2015-04-14", "gap": "about 19 months"},
+    {"game": "Red Dead Redemption 2", "console": "2018-10-26", "pc": "2019-11-05", "gap": "about 12 months"}
+  ],
+  "mod_policy": {
+    "source": "https://support.rockstargames.com/articles/5NVOAYjcTomO8v6SX2k76k/pc-single-player-mods",
+    "source_title": "Rockstar Support: PC Single-Player Mods"
+  }
+}
