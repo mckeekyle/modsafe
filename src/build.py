@@ -1639,13 +1639,14 @@ def build_home(games_data: list[tuple[dict, dict]]) -> str:
     n_games = distinct_games([g for g, _ in games_data])
     n_plat = sum(1 for g, _ in games_data if g.get("genre") == "Platform")
     n_ok = sum(1 for _, d in games_data if d["verdict"] in ("Safe", "Likely safe"))
+    g6 = gta6_mod.load()
     body = f"""
-<section class="home-hero" style="--hero:url('/img/cyberpunk-2077-hero.webp')">
+<section class="home-hero" style="--hero:url('{gta6_mod.home_hero(g6)}')">
 <p class="eyebrow">Patch day, minus the panic</p>
 <h1>Did your mods <em>survive</em> the patch?</h1>
 <p class="lede">A new update drops, and script extenders and mod loaders break first. ModSafe watches every game's core frameworks so you know whether to hit update or hold the line.</p>
 <div class="legend"><span class="badge ok">{icon("Safe")}Safe</span><span class="badge likely">{icon("Likely safe")}Likely safe</span><span class="badge wait">{icon("Just patched, wait")}Just patched, wait</span><span class="badge broken">{icon("Breakage reported")}Breakage reported</span></div>
-<div class="hero-actions"><a class="btn" href="#games">🎮 Pick your game</a> <a class="btn ghost" href="/faq/">❓ How it works</a></div>
+<div class="hero-actions"><a class="btn" href="#games">🎮 Pick your game</a> <a class="btn ghost" href="/faq/">❓ How it works</a>{gta6_mod.home_cta(g6)}</div>
 <div class="stats"><div><strong>{n_games}</strong>games{f" + {n_plat} platform" if n_plat else ""}</div><div><strong>{n_fw}</strong>frameworks auto-tracked</div><div><strong>{n_ok}/{len(games_data)}</strong>status pages safe or likely safe now</div></div>
 </section>
 <div class="sec-head" id="games"><h2>Choose your game</h2><a href="/games/">All games →</a></div>

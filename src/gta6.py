@@ -43,6 +43,31 @@ def days_until(target: date, today: date | None = None) -> int:
     return (target - (today or datetime.now(timezone.utc).date())).days
 
 
+HERO_FILE = ROOT / "static" / "img" / "gta-6-hero.webp"
+HERO_URL = "/img/gta-6-hero.webp"
+DEFAULT_HOME_HERO = "/img/cyberpunk-2077-hero.webp"
+
+
+def home_spotlight(d: dict) -> bool:
+    """The home page features GTA 6 once Rockstar has announced a PC date (and while/after it's out on PC)."""
+    return bool(countdown_date(d)) or d["pc_release"].get("status") == "released"
+
+
+def home_hero(d: dict) -> str:
+    """Home hero background: GTA 6 art once spotlighted AND the art file has been added, else the usual Cyberpunk art.
+    The art must come from the same source as other games' art (the game's Steam store CDN, once it has a Steam page)."""
+    return HERO_URL if home_spotlight(d) and HERO_FILE.exists() else DEFAULT_HOME_HERO
+
+
+def home_cta(d: dict) -> str:
+    """A hero button to /gta-6/ while spotlighted (with the countdown date), else nothing."""
+    if not home_spotlight(d):
+        return ""
+    pc = d["pc_release"]
+    label = (f"⏳ GTA 6 on PC: {fmt(pc['date'])}" if pc.get("status") == "announced" else "🆕 GTA 6 on PC: mod status")
+    return f' <a class="btn ghost" href="{PATH}">{esc(label)}</a>'
+
+
 def pc_status_text(d: dict) -> str:
     pc = d["pc_release"]
     if pc.get("status") == "released":

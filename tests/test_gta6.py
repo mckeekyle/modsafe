@@ -45,6 +45,15 @@ class TestGta6(unittest.TestCase):
         self.assertIn("Coming March 1, 2027", gta6.pc_status_text(d))
         self.assertNotIn("Reported, not confirmed", gta6.body(d, [], build.badge, ""))
 
+    def test_home_hero_switches_only_after_announcement(self):
+        self.assertEqual(gta6.home_hero(self.d), gta6.DEFAULT_HOME_HERO)
+        self.assertEqual(gta6.home_cta(self.d), "")
+        d = copy.deepcopy(self.d)
+        d["pc_release"].update(status="announced", date="2027-03-01", date_source="https://www.rockstargames.com/newswire/x")
+        self.assertIn("GTA 6 on PC: March 1, 2027", gta6.home_cta(d))
+        expected = gta6.HERO_URL if gta6.HERO_FILE.exists() else gta6.DEFAULT_HOME_HERO  # no art file: keep Cyberpunk
+        self.assertEqual(gta6.home_hero(d), expected)
+
     def test_rumour_is_labelled(self):
         page = gta6.body(self.d, [], build.badge, "")
         self.assertIn("Reported, not confirmed", page)
