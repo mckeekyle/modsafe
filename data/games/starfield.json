@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T18:11:59Z",
+  "generated_at": "2026-11-21T18:36:35Z",
   "game": {
     "slug": "starfield",
     "name": "Starfield",
@@ -14,7 +14,7 @@
       "steam_build": "23518663"
     }
   },
-  "verdict": "Likely safe",
+  "verdict": "Safe",
   "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
   "frameworks": [
     {
@@ -26,11 +26,16 @@
       "repo": "ianpatt/sfse",
       "tracked": true,
       "sensitive": true,
-      "status": "Likely safe",
+      "status": "Safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch 1.16.244; compatibility is unverified \u2014 check the project page. No open breakage reports 163 days after the patch. (Date is the tagged commit on GitHub; builds are published on the official site.)",
+      "reason": "Official page (https://sfse.silverlock.org/) lists build 0.2.21 for runtime 1.16.244, matching the latest tag (Bethesda often ships updates to a beta branch first). (Date is the tagged commit on GitHub; builds are published on the official site.)",
       "breakage_reports": [],
-      "official": null,
+      "official": {
+        "runtime": "1.16.244",
+        "build": "0.2.21",
+        "supports_current": true,
+        "page": "https://sfse.silverlock.org/"
+      },
       "release_tag": "v0.2.21",
       "release_name": "v0.2.21",
       "release_published_at": "2026-06-10T04:45:17Z",
@@ -438,6 +443,21 @@
         {
           "short": "SFSE",
           "status": "Likely safe",
+          "release_tag": "v0.2.21"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-21T18:36:35Z",
+      "patch": "1.16.244",
+      "patch_key": "1.16.244",
+      "patch_published_at": "2026-06-11T15:15:06Z",
+      "patch_url": "https://store.steampowered.com/news/app/1716740/view/1835236783560763",
+      "verdict": "Safe",
+      "frameworks": [
+        {
+          "short": "SFSE",
+          "status": "Safe",
           "release_tag": "v0.2.21"
         }
       ]

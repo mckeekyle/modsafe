@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T18:10:52Z",
+  "generated_at": "2026-11-21T18:36:01Z",
   "game": {
     "slug": "fallout-4",
     "name": "Fallout 4",
@@ -14,7 +14,7 @@
       "steam_build": "24564252"
     }
   },
-  "verdict": "Likely safe",
+  "verdict": "Safe",
   "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
   "frameworks": [
     {
@@ -26,11 +26,16 @@
       "repo": "ianpatt/f4se",
       "tracked": true,
       "sensitive": true,
-      "status": "Likely safe",
+      "status": "Safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch Update 2026-08-18; compatibility is unverified \u2014 check the project page. No open breakage reports 95 days after the patch. (Date is the tagged commit on GitHub; builds are published on the official site.)",
+      "reason": "Official page (https://f4se.silverlock.org/) lists build 0.7.9 for runtime 1.11.240, matching the latest tag (Bethesda often ships updates to a beta branch first). (Date is the tagged commit on GitHub; builds are published on the official site.)",
       "breakage_reports": [],
-      "official": null,
+      "official": {
+        "runtime": "1.11.240",
+        "build": "0.7.9",
+        "supports_current": true,
+        "page": "https://f4se.silverlock.org/"
+      },
       "release_tag": "v0.7.9",
       "release_name": "v0.7.9",
       "release_published_at": "2026-08-16T18:48:30Z",
@@ -452,6 +457,21 @@
         {
           "short": "F4SE",
           "status": "Likely safe",
+          "release_tag": "v0.7.9"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-21T18:36:01Z",
+      "patch": "Update 2026-08-18",
+      "patch_key": "update-2026-08-18",
+      "patch_published_at": "2026-08-18T16:12:21Z",
+      "patch_url": "https://store.steampowered.com/news/app/377160/view/1840944183789236",
+      "verdict": "Safe",
+      "frameworks": [
+        {
+          "short": "F4SE",
+          "status": "Safe",
           "release_tag": "v0.7.9"
         }
       ]

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T18:12:25Z",
+  "generated_at": "2026-11-21T18:36:57Z",
   "game": {
     "slug": "minecraft",
     "name": "Minecraft: Java Edition",
@@ -86,8 +86,8 @@
       "release_url": "https://modrinth.com/mod/sodium",
       "status": "Safe",
       "reason": "Sodium publishes a stable build for Minecraft 26.3.",
-      "release_tag": "mc26.3-0.9.2-fabric",
-      "release_published_at": "2026-09-15T15:57:23.369305Z",
+      "release_tag": "mc26.3-0.9.3-fabric",
+      "release_published_at": "2026-11-21T18:19:30.089939Z",
       "base_status": "Updated for latest patch"
     },
     {
@@ -171,8 +171,8 @@
           "name": "Sodium",
           "status": "Safe",
           "reason": "Sodium publishes a stable build for Minecraft 26.3.",
-          "release_tag": "mc26.3-0.9.2-fabric",
-          "release_published_at": "2026-09-15T15:57:23.369305Z"
+          "release_tag": "mc26.3-0.9.3-fabric",
+          "release_published_at": "2026-11-21T18:19:30.089939Z"
         },
         {
           "id": "iris",
