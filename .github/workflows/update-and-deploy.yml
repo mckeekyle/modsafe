@@ -80,7 +80,13 @@ jobs:
             echo "No status changes."
           else
             git commit -m "chore: refresh modsafe status $(date -u +%Y-%m-%dT%H:%MZ)"
-            git push
+            # Someone else may have pushed while this run was fetching (e.g. the daily GTA V date bump):
+            # rebase onto it and retry instead of failing the run.
+            for attempt in 1 2 3; do
+              if git push; then break; fi
+              if [ "$attempt" = 3 ]; then echo "Push failed after 3 attempts."; exit 1; fi
+              git pull --rebase
+            done
             echo "pushed=1" >> "$GITHUB_OUTPUT"
           fi
 
