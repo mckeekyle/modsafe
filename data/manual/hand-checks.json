@@ -7,7 +7,7 @@
         "patch_label": "1.7.104",
         "status": "Not ported yet",
         "release_at_check": "2026-08-23T20:18:38Z",
-        "checked": "2026-11-21",
+        "checked": "2026-11-22",
         "text": "The newest official Engine Fixes release (7.0.21-beta5, Aug 23) predates 1.7.104. The author committed a \"1.7.104 build\" on Aug 29 but hasn't published a release; players asked for one (issues #103 and #105) and many use an unofficial fork (kxgcayh 7.0.23) instead. Mods that require Engine Fixes, such as Community Shaders, need that fork or a downgrade to 1.7.99 until an official release.",
         "sources": [
           "https://github.com/aers/EngineFixesSkyrim64/releases",
@@ -24,11 +24,25 @@
         "patch_series": "1.4",
         "status": "Breakage reported",
         "release_at_check": "2026-10-03T08:32:15Z",
-        "checked": "2026-11-21",
-        "text": "Since 1.4 went live, Workshop comments from many players report CMF crashing saves to desktop, hiding the laws tab and causing multiplayer checksum mismatches, and a Nov 18 comment says the Workshop download is still CMF 2.4.1 with metadata for EU5 1.3.*. It hasn't updated since Oct 3 and its GitHub shows no 1.4 work. Leave CMF, and mods that require it, off for 1.4 until it updates.",
+        "checked": "2026-11-22",
+        "text": "Since 1.4 went live, Workshop comments from many players report CMF crashing saves to desktop, hiding the laws tab and causing multiplayer checksum mismatches, and a Nov 18 comment says the Workshop download is still CMF 2.4.1 with metadata for EU5 1.3.*. It hasn't updated since Oct 3 and its GitHub shows no 1.4 work (last commit Aug 19). Leave CMF, and mods that require it, off for 1.4 until it updates.",
         "sources": [
           "https://steamcommunity.com/sharedfiles/filedetails/comments/3692202776",
           "https://github.com/Europa-Universalis-5-Modding-Co-op/community-mod-framework/commits"
+        ]
+      }
+    ],
+    "total-war-warhammer-3": [
+      {
+        "framework": "mct",
+        "patch_series": "9.0.5",
+        "status": "Breakage reported",
+        "release_at_check": "2026-07-19T22:41:14Z",
+        "checked": "2026-11-22",
+        "text": "Since Patch 9.0.5 (Nov 3), at least seven players have reported in Workshop comments (Nov 7-19, in English, Chinese and Russian) that Mod Configuration Tool resets every mod's settings to defaults after a manual battle or loading a save. MCT hasn't updated since Jul 19. Mods configured through MCT may quietly run on default settings until it updates.",
+        "sources": [
+          "https://steamcommunity.com/sharedfiles/filedetails/comments/2927955021",
+          "https://steamcommunity.com/sharedfiles/filedetails/changelog/2927955021"
         ]
       }
     ]

@@ -1,6 +1,6 @@
 {
   "_comment": "Hand-maintained list of Steam branches (Properties > Game Versions & Betas) that let you go back to an older game version. Checked against Steam's public app info (api.steamcmd.net, depots.branches) on `verified`. Only password-free branches are listed. Used by /guides/stop-steam-auto-updates/ and the per-game FAQ. Re-check when a game ships a big patch.",
-  "verified": "2026-10-26",
+  "verified": "2026-11-22",
   "source": "https://api.steamcmd.net/v1/info/",
   "games": {
     "cyberpunk-2077": {"rollback": [
@@ -29,12 +29,13 @@
       {"branch": "v1.2.4.1", "label": "1.2.4.1"}],
       "note": "tModLoader is a separate Steam app with its own 1.4.3-legacy and 1.3-legacy branches."},
     "rimworld": {"rollback": [
+      {"branch": "version-1.6", "label": "Latest 1.6 build"},
       {"branch": "version-1.6.4633", "label": "Previous 1.6 build"},
       {"branch": "version-1.5", "label": "1.5"},
       {"branch": "version-1.4.3901", "label": "1.4"}],
-      "note": "Older 1.0-1.3 and alpha builds are listed too."},
+      "note": "Older 1.0-1.3 and alpha builds are listed too. Update 1.7 (Waylith engine) is on the unstable branch; Steam describes version-1.6 as the latest 1.6 version."},
     "bannerlord": {"rollback": [
-      {"branch": "v1.4.7", "label": "v1.4.7"},
+      {"branch": "v1.4.8", "label": "v1.4.8 (last 1.4)"},
       {"branch": "v1.3.15", "label": "v1.3.15"},
       {"branch": "v1.2.12", "label": "v1.2.12"}],
       "note": "Nearly every release since v1.0.0 has its own branch."},
@@ -44,7 +45,7 @@
       {"branch": "1.1.10", "label": "Last 1.1 version"},
       {"branch": "1.0.11", "label": "Last 1.0 version"}],
       "note": "Also 1.3.10, 1.2.4, 1.2.0 and 1.0.10. No 1.4.x branch yet (open-beta branches aside).",
-      "verified": "2026-10-30"},
+      "verified": "2026-11-22"},
     "total-war-warhammer-3": {"rollback": [
       {"branch": "last_release", "label": "Previous patch (9.0.4)"},
       {"branch": "last_update", "label": "9.0.0 (start of Update 9.0)"},

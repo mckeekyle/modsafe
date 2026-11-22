@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T14:20:57Z",
+  "generated_at": "2026-11-22T20:13:35Z",
   "game": {
     "slug": "europa-universalis-v",
     "name": "Europa Universalis V",
@@ -45,7 +45,7 @@
       "sensitive": true,
       "status": "Breakage reported",
       "base_status": "Likely safe",
-      "reason": "Last Workshop update 2026-10-03, before 1.4 went live on 2026-10-28. It already carries the 1.4 version tag, but that build predates the release (open-beta era), so it isn't confirmed for the live 1.4. 1.4 has been out 24 days with no update needed so far; no breakage signal available. 1.4.9 is a hotfix within 1.4: it rarely breaks mods that already work on 1.4, but this mod changes the interface (UI), and UI mods can still break when a hotfix touches the same files. No open breakage reports on its GitHub tracker since 1.4 went live. Workshop comments since 1.4 went live report CMF breaking some interface graphics on 1.4.5 and the country-selection bonus icons (a UI function it calls was removed in 1.4). (Checked by hand 2026-10-30; user comments, not counted as confirmed breakage.) Hand-checked 2026-11-21: Since 1.4 went live, Workshop comments from many players report CMF crashing saves to desktop, hiding the laws tab and causing multiplayer checksum mismatches, and a Nov 18 comment says the Workshop download is still CMF 2.4.1 with metadata for EU5 1.3.*. It hasn't updated since Oct 3 and its GitHub shows no 1.4 work. Leave CMF, and mods that require it, off for 1.4 until it updates.",
+      "reason": "Last Workshop update 2026-10-03, before 1.4 went live on 2026-10-28. It already carries the 1.4 version tag, but that build predates the release (open-beta era), so it isn't confirmed for the live 1.4. 1.4 has been out 25 days with no update needed so far; no breakage signal available. 1.4.9 is a hotfix within 1.4: it rarely breaks mods that already work on 1.4, but this mod changes the interface (UI), and UI mods can still break when a hotfix touches the same files. No open breakage reports on its GitHub tracker since 1.4 went live. Workshop comments since 1.4 went live report CMF breaking some interface graphics on 1.4.5 and the country-selection bonus icons (a UI function it calls was removed in 1.4). (Checked by hand 2026-10-30; user comments, not counted as confirmed breakage.) Hand-checked 2026-11-22: Since 1.4 went live, Workshop comments from many players report CMF crashing saves to desktop, hiding the laws tab and causing multiplayer checksum mismatches, and a Nov 18 comment says the Workshop download is still CMF 2.4.1 with metadata for EU5 1.3.*. It hasn't updated since Oct 3 and its GitHub shows no 1.4 work (last commit Aug 19). Leave CMF, and mods that require it, off for 1.4 until it updates.",
       "breakage_reports": [],
       "release_tag": "1.3, 1.4",
       "release_name": "Community Mod Framework - 1.4 R\u00edo Salado",
@@ -63,13 +63,13 @@
         "1.4"
       ],
       "tagged_for_series": true,
-      "subscriptions": 51224,
+      "subscriptions": 51250,
       "mentions_patch": false,
       "newer_than_patch": false,
       "hand_check": {
         "status": "Breakage reported",
-        "checked": "2026-11-21",
-        "text": "Since 1.4 went live, Workshop comments from many players report CMF crashing saves to desktop, hiding the laws tab and causing multiplayer checksum mismatches, and a Nov 18 comment says the Workshop download is still CMF 2.4.1 with metadata for EU5 1.3.*. It hasn't updated since Oct 3 and its GitHub shows no 1.4 work. Leave CMF, and mods that require it, off for 1.4 until it updates.",
+        "checked": "2026-11-22",
+        "text": "Since 1.4 went live, Workshop comments from many players report CMF crashing saves to desktop, hiding the laws tab and causing multiplayer checksum mismatches, and a Nov 18 comment says the Workshop download is still CMF 2.4.1 with metadata for EU5 1.3.*. It hasn't updated since Oct 3 and its GitHub shows no 1.4 work (last commit Aug 19). Leave CMF, and mods that require it, off for 1.4 until it updates.",
         "sources": [
           "https://steamcommunity.com/sharedfiles/filedetails/comments/3692202776",
           "https://github.com/Europa-Universalis-5-Modding-Co-op/community-mod-framework/commits"
@@ -104,7 +104,7 @@
         "1.3"
       ],
       "tagged_for_series": false,
-      "subscriptions": 50792,
+      "subscriptions": 50798,
       "mentions_patch": false,
       "newer_than_patch": true
     },
@@ -134,7 +134,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 59835,
+      "subscriptions": 59854,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -162,7 +162,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 49918,
+      "subscriptions": 49924,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -193,7 +193,7 @@
         "1.4"
       ],
       "tagged_for_series": true,
-      "subscriptions": 13548,
+      "subscriptions": 13555,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -220,7 +220,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 23484,
+      "subscriptions": 23482,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -247,7 +247,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 18624,
+      "subscriptions": 18625,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -278,7 +278,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 11489,
+      "subscriptions": 11496,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -320,7 +320,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 8651,
+      "subscriptions": 8654,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -347,7 +347,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 6863,
+      "subscriptions": 6865,
       "mentions_patch": false,
       "newer_than_patch": false
     }

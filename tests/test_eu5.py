@@ -59,7 +59,9 @@ class TestRegistry(unittest.TestCase):
         b = guides.load_branches()
         self.assertEqual(b["games"][SLUG]["rollback"][0]["branch"], "1.3.11")
         self.assertIn("1.3.11", guides.branch_summary(SLUG))
-        self.assertIn("Oct 30, 2026", guides.branch_summary(SLUG))  # per-game verified date
+        import datetime as _dt
+        v = _dt.date.fromisoformat(b["games"][SLUG]["verified"])
+        self.assertIn(f"{v:%b} {v.day}, {v.year}", guides.branch_summary(SLUG))  # per-game verified date
 
 
 class TestPatchRule(unittest.TestCase):

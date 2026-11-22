@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T19:20:50Z",
+  "generated_at": "2026-11-22T20:13:46Z",
   "game": {
     "slug": "total-war-warhammer-3",
     "name": "Total War: WARHAMMER III",
@@ -29,7 +29,7 @@
       "rollback_branch_series": null
     }
   },
-  "verdict": "Just patched, wait",
+  "verdict": "Breakage reported",
   "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
   "frameworks": [
     {
@@ -41,9 +41,9 @@
       "workshop_id": "2927955021",
       "tracked": true,
       "sensitive": true,
-      "status": "Just patched, wait",
+      "status": "Breakage reported",
       "base_status": "Just patched, wait",
-      "reason": "Last Workshop update 2026-07-19, before 9.0.5 went live on 2026-11-03. It doesn't use Workshop version tags. 9.0.5 has been out 19 days with no update needed so far; no breakage signal available. Steam's public build changed on 2026-11-20 (build 26810549) with no announcement, and this tool hasn't released since; wait for confirmation.",
+      "reason": "Last Workshop update 2026-07-19, before 9.0.5 went live on 2026-11-03. It doesn't use Workshop version tags. 9.0.5 has been out 19 days with no update needed so far; no breakage signal available. Steam's public build changed on 2026-11-20 (build 26810549) with no announcement, and this tool hasn't released since; wait for confirmation. Hand-checked 2026-11-22: Since Patch 9.0.5 (Nov 3), at least seven players have reported in Workshop comments (Nov 7-19, in English, Chinese and Russian) that Mod Configuration Tool resets every mod's settings to defaults after a manual battle or loading a save. MCT hasn't updated since Jul 19. Mods configured through MCT may quietly run on default settings until it updates.",
       "breakage_reports": [],
       "release_tag": null,
       "release_name": "Mod Configuration Tool - v0.9 Beta",
@@ -56,9 +56,18 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 809035,
+      "subscriptions": 809040,
       "mentions_patch": false,
-      "newer_than_patch": false
+      "newer_than_patch": false,
+      "hand_check": {
+        "status": "Breakage reported",
+        "checked": "2026-11-22",
+        "text": "Since Patch 9.0.5 (Nov 3), at least seven players have reported in Workshop comments (Nov 7-19, in English, Chinese and Russian) that Mod Configuration Tool resets every mod's settings to defaults after a manual battle or loading a save. MCT hasn't updated since Jul 19. Mods configured through MCT may quietly run on default settings until it updates.",
+        "sources": [
+          "https://steamcommunity.com/sharedfiles/filedetails/comments/2927955021",
+          "https://steamcommunity.com/sharedfiles/filedetails/changelog/2927955021"
+        ]
+      }
     },
     {
       "id": "mixer",
@@ -84,7 +93,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 796781,
+      "subscriptions": 796792,
       "mentions_patch": false,
       "newer_than_patch": true
     },
@@ -112,7 +121,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 334574,
+      "subscriptions": 334580,
       "mentions_patch": false,
       "newer_than_patch": true
     },
@@ -140,7 +149,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 216089,
+      "subscriptions": 216082,
       "mentions_patch": false,
       "newer_than_patch": true
     },
@@ -168,7 +177,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 245438,
+      "subscriptions": 245439,
       "mentions_patch": false,
       "newer_than_patch": true
     },
@@ -224,7 +233,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 560839,
+      "subscriptions": 560835,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -252,7 +261,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 604201,
+      "subscriptions": 604204,
       "mentions_patch": false,
       "newer_than_patch": false
     }
@@ -1945,6 +1954,56 @@
         {
           "short": "MCT",
           "status": "Just patched, wait",
+          "release_tag": null
+        },
+        {
+          "short": "MIXER",
+          "status": "Just patched, wait",
+          "release_tag": null
+        },
+        {
+          "short": "SFO",
+          "status": "Just patched, wait",
+          "release_tag": null
+        },
+        {
+          "short": "Radious",
+          "status": "Just patched, wait",
+          "release_tag": null
+        },
+        {
+          "short": "IEE",
+          "status": "Just patched, wait",
+          "release_tag": null
+        },
+        {
+          "short": "Mixu's LL",
+          "status": "Just patched, wait",
+          "release_tag": null
+        },
+        {
+          "short": "Recruit Defeated LL",
+          "status": "Just patched, wait",
+          "release_tag": null
+        },
+        {
+          "short": "Better Camera",
+          "status": "Just patched, wait",
+          "release_tag": null
+        }
+      ]
+    },
+    {
+      "at": "2026-11-22T20:13:37Z",
+      "patch": "Patch 9.0.5",
+      "patch_key": "9.0.5",
+      "patch_published_at": "2026-11-03T10:58:35Z",
+      "patch_url": "https://store.steampowered.com/news/app/1142710/view/1847920302251502",
+      "verdict": "Breakage reported",
+      "frameworks": [
+        {
+          "short": "MCT",
+          "status": "Breakage reported",
           "release_tag": null
         },
         {
