@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T20:13:46Z",
+  "generated_at": "2026-11-22T23:26:52Z",
   "game": {
     "slug": "total-war-warhammer-3",
     "name": "Total War: WARHAMMER III",
@@ -56,7 +56,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 809040,
+      "subscriptions": 809121,
       "mentions_patch": false,
       "newer_than_patch": false,
       "hand_check": {
@@ -93,7 +93,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 796792,
+      "subscriptions": 796856,
       "mentions_patch": false,
       "newer_than_patch": true
     },
@@ -121,7 +121,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 334580,
+      "subscriptions": 334630,
       "mentions_patch": false,
       "newer_than_patch": true
     },
@@ -149,7 +149,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 216082,
+      "subscriptions": 216094,
       "mentions_patch": false,
       "newer_than_patch": true
     },
@@ -177,7 +177,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 245439,
+      "subscriptions": 245451,
       "mentions_patch": false,
       "newer_than_patch": true
     },
@@ -205,7 +205,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 255568,
+      "subscriptions": 255590,
       "mentions_patch": false,
       "newer_than_patch": true
     },
@@ -233,7 +233,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 560835,
+      "subscriptions": 560853,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -261,7 +261,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 604204,
+      "subscriptions": 604233,
       "mentions_patch": false,
       "newer_than_patch": false
     }
