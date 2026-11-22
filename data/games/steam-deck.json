@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T19:17:14Z",
+  "generated_at": "2026-11-22T05:50:19Z",
   "game": {
     "slug": "steam-deck",
     "name": "Steam Deck (SteamOS)",
@@ -146,7 +146,7 @@
           "mentions_patch": false,
           "first_release_tag": "v3.3.1",
           "first_release_at": "2026-10-27T04:26:19Z",
-          "data_from": "2025-07-09T03:38:53Z",
+          "data_from": "2025-07-13T06:35:59Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -226,7 +226,7 @@
           "mentions_patch": false,
           "first_release_tag": "v3.2.10",
           "first_release_at": "2026-10-04T21:22:37Z",
-          "data_from": "2025-07-09T03:38:53Z",
+          "data_from": "2025-07-13T06:35:59Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -306,7 +306,7 @@
           "mentions_patch": false,
           "first_release_tag": "v3.2.8",
           "first_release_at": "2026-09-02T22:46:56Z",
-          "data_from": "2025-07-09T03:38:53Z",
+          "data_from": "2025-07-13T06:35:59Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -386,7 +386,7 @@
           "mentions_patch": false,
           "first_release_tag": "v3.2.8",
           "first_release_at": "2026-09-02T22:46:56Z",
-          "data_from": "2025-07-09T03:38:53Z",
+          "data_from": "2025-07-13T06:35:59Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -466,7 +466,7 @@
           "mentions_patch": false,
           "first_release_tag": "v3.2.8",
           "first_release_at": "2026-09-02T22:46:56Z",
-          "data_from": "2025-07-09T03:38:53Z",
+          "data_from": "2025-07-13T06:35:59Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -546,7 +546,7 @@
           "mentions_patch": false,
           "first_release_tag": "v3.2.8",
           "first_release_at": "2026-09-02T22:46:56Z",
-          "data_from": "2025-07-09T03:38:53Z",
+          "data_from": "2025-07-13T06:35:59Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -626,7 +626,7 @@
           "mentions_patch": false,
           "first_release_tag": "v3.2.8",
           "first_release_at": "2026-09-02T22:46:56Z",
-          "data_from": "2025-07-09T03:38:53Z",
+          "data_from": "2025-07-13T06:35:59Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -706,7 +706,7 @@
           "mentions_patch": false,
           "first_release_tag": "v3.2.6",
           "first_release_at": "2026-06-24T18:26:57Z",
-          "data_from": "2025-07-09T03:38:53Z",
+          "data_from": "2025-07-13T06:35:59Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -786,7 +786,7 @@
           "mentions_patch": false,
           "first_release_tag": "v3.2.6",
           "first_release_at": "2026-06-24T18:26:57Z",
-          "data_from": "2025-07-09T03:38:53Z",
+          "data_from": "2025-07-13T06:35:59Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -923,6 +923,12 @@
       "title": "SteamOS 3.10.1 Preview",
       "url": "https://store.steampowered.com/news/app/1675200/view/1849458702691760",
       "published_at": "2026-11-17T00:18:05Z"
+    },
+    {
+      "name": "Decky pre-release",
+      "title": "v4.0.0-pre1",
+      "url": "https://github.com/SteamDeckHomebrew/decky-loader/releases/tag/v4.0.0-pre1",
+      "published_at": "2026-11-22T03:30:11Z"
     }
   ],
   "sources": {

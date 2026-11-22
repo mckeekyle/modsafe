@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T19:18:25Z",
+  "generated_at": "2026-11-22T05:51:29Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,71 @@
     }
   ],
   "items": [
+    {
+      "title": "Astarion's Baldur's Gate 3 prequel novel infuriated fans, now it's Shadowheart's turn",
+      "url": "https://www.pcgamer.com/games/baldurs-gate/astarions-baldurs-gate-3-prequel-novel-infuriated-fans-now-its-shadowhearts-turn/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-22T03:03:45Z",
+      "games": [
+        "baldurs-gate-3"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Wizards of the Coast to pass full AI copyright payout to D&D writers",
+      "url": "https://www.pcgamer.com/games/rpg/wizards-of-the-coast-to-pass-full-ai-copyright-payout-to-d-and-d-writers/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-21T23:40:42Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Alt Video is a digital, faux Blockbuster video store that you can fill with movies from your Letterboxd watchlist and Plex server",
+      "url": "https://www.rockpapershotgun.com/alt-video-is-a-digital-faux-blockbuster-video-store-that-you-can-fill-with-movies-from-your-letterboxd-watchlist-and-plex-server",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-21T22:50:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Comcast: 'At peak, GTA 6 accounted for nearly a quarter of all internet traffic'",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/comcast-at-peak-gta6-accounted-for-nearly-a-quarter-of-all-internet-traffic/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-21T21:42:29Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Public-access television is born anew in NIGHT EYE TV, a digital goggle box filled with art game curios",
+      "url": "https://www.rockpapershotgun.com/public-access-television-is-born-anew-in-night-eye-tv-a-digital-goggle-box-filled-with-art-game-curios",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-21T21:27:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The team behind Ubisoft's 'first playable AI-based R&D project' has been established as its own subsidiary called Motherbrain",
+      "url": "https://www.pcgamer.com/gaming-industry/the-team-behind-ubisofts-first-playable-ai-based-r-and-d-project-has-been-established-as-its-own-subsidiary-called-motherbrain/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-21T21:16:16Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "GTA 6 Protective Custody: Should you choose proceed or postpone when you go to meet Abe?",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-protective-custody-choice-proceed-or-postpone-meet-abe/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-21T20:32:43Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Eldritch Empathy is a Papers Please-esque roguelite about diagnosing cosmic horror creatures and trying not to lose your marbles as you do",
       "url": "https://www.rockpapershotgun.com/eldritch-empathy-is-a-papers-please-esque-roguelite-about-diagnosing-cosmic-horror-creatures-and-trying-not-to-lose-your-marbles-as-you-do",
@@ -498,71 +563,6 @@
       "url": "https://www.eurogamer.net/gta-6-uk-prime-minister-andy-burnham",
       "source": "Eurogamer",
       "published_at": "2026-11-20T13:08:30Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Akira Kurabayashi, company director at Arika and developer on Street Fighter EX, Tetris 99, Fighting EX Layer and more, has sadly passed away due to heart failure",
-      "url": "https://www.rockpapershotgun.com/akira-kurabayashi-company-director-at-arika-and-developer-on-street-fighter-ex-tetris-99-fighting-ex-layer-and-more-has-sadly-passed-away-due-to-heart-failure",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-20T13:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Is Niko Bellic in GTA 6?",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-niko-bellic/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-20T12:44:35Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "OpenAI says it redesigned an AMD GPU and AMD is using some of those tweaks \u2018for use in future products\u2019",
-      "url": "https://www.pcgamer.com/hardware/openai-says-it-redesigned-an-amd-gpu-and-amd-is-using-some-of-those-tweaks-for-use-in-future-products/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-20T12:40:28Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Playing GTA 6 this weekend? Here's 16 spoiler-free tips for your first playthrough",
-      "url": "https://www.eurogamer.net/gta-6-spoiler-free-advice",
-      "source": "Eurogamer",
-      "published_at": "2026-11-20T12:33:10Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The actress who plays Mandy in GTA 6 has revealed herself: 'If you play the game, let me know if you find me'",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/the-actress-who-plays-mandy-in-gta-6-has-revealed-herself-if-you-play-the-game-let-me-know-if-you-find-me/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-20T12:26:52Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Total War: Warhammer 40,000 breaks the game into star system mini-campaigns, each with their own stories and objectives",
-      "url": "https://www.eurogamer.net/total-war-warhammer-40000-campaign-space-marines",
-      "source": "Eurogamer",
-      "published_at": "2026-11-20T12:12:10Z",
-      "games": [
-        "total-war-warhammer-3"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Amid a year of layoffs, Ubisoft yank the cover off Motherbrain, their new studio \"focused on AI for gameplay innovation\"",
-      "url": "https://www.rockpapershotgun.com/amid-a-year-of-layoffs-ubisoft-yank-the-cover-off-motherbrain-their-new-studio-focused-on-ai-for-gameplay-innovation",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-20T12:09:30Z",
       "games": [],
       "kind": "news",
       "highlight": false
