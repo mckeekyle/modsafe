@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T05:49:16Z",
+  "generated_at": "2026-11-22T14:18:51Z",
   "game": {
     "slug": "skyrim-se",
     "name": "Skyrim Special Edition",
@@ -61,7 +61,7 @@
       "sensitive": true,
       "status": "Not ported yet",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch 1.7.104; compatibility is unverified \u2014 check the project page. No open breakage reports 86 days after the patch. (Note: the author labels this build a beta/pre-release in its tag.) Hand-checked 2026-11-21: The newest official Engine Fixes release (7.0.21-beta5, Aug 23) predates 1.7.104. The author committed a \"1.7.104 build\" on Aug 29 but hasn't published a release; players asked for one (issues #103 and #105) and many use an unofficial fork (kxgcayh 7.0.23) instead. Mods that require Engine Fixes, such as Community Shaders, need that fork or a downgrade to 1.7.99 until an official release.",
+      "reason": "Latest release predates patch 1.7.104; compatibility is unverified \u2014 check the project page. No open breakage reports 87 days after the patch. (Note: the author labels this build a beta/pre-release in its tag.) Hand-checked 2026-11-21: The newest official Engine Fixes release (7.0.21-beta5, Aug 23) predates 1.7.104. The author committed a \"1.7.104 build\" on Aug 29 but hasn't published a release; players asked for one (issues #103 and #105) and many use an unofficial fork (kxgcayh 7.0.23) instead. Mods that require Engine Fixes, such as Community Shaders, need that fork or a downgrade to 1.7.99 until an official release.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "7.0.21-beta5",

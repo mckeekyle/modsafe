@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T05:51:14Z",
+  "generated_at": "2026-11-22T14:20:57Z",
   "game": {
     "slug": "europa-universalis-v",
     "name": "Europa Universalis V",
@@ -63,7 +63,7 @@
         "1.4"
       ],
       "tagged_for_series": true,
-      "subscriptions": 51184,
+      "subscriptions": 51224,
       "mentions_patch": false,
       "newer_than_patch": false,
       "hand_check": {
@@ -104,7 +104,7 @@
         "1.3"
       ],
       "tagged_for_series": false,
-      "subscriptions": 50779,
+      "subscriptions": 50792,
       "mentions_patch": false,
       "newer_than_patch": true
     },
@@ -134,7 +134,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 59811,
+      "subscriptions": 59835,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -162,7 +162,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 49906,
+      "subscriptions": 49918,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -193,7 +193,7 @@
         "1.4"
       ],
       "tagged_for_series": true,
-      "subscriptions": 13528,
+      "subscriptions": 13548,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -220,7 +220,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 23476,
+      "subscriptions": 23484,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -247,7 +247,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 18622,
+      "subscriptions": 18624,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -278,7 +278,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 11473,
+      "subscriptions": 11489,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -320,7 +320,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 8650,
+      "subscriptions": 8651,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -347,7 +347,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 6860,
+      "subscriptions": 6863,
       "mentions_patch": false,
       "newer_than_patch": false
     }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T05:49:55Z",
+  "generated_at": "2026-11-22T14:19:34Z",
   "game": {
     "slug": "elden-ring",
     "name": "Elden Ring",
@@ -57,7 +57,7 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch 1.17.2; compatibility is unverified \u2014 check the project page. No open breakage reports 32 days after the patch.",
+      "reason": "Latest release predates patch 1.17.2; compatibility is unverified \u2014 check the project page. No open breakage reports 33 days after the patch.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v0.13.0",
