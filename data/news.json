@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T06:38:16Z",
+  "generated_at": "2026-11-23T23:39:03Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,408 @@
     }
   ],
   "items": [
+    {
+      "title": "GTA 6 players found a '60 fps glitch', but it\u2019s too unstable to stop me from wishing it was on PC already",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-players-found-a-60-fps-glitch-but-its-too-unstable-to-stop-me-from-wishing-it-was-on-pc-already/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-23T22:47:08Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "God of War: Laufey star Deborah Ann Woll will reprise the role in Amazon's God of War show",
+      "url": "https://www.pcgamer.com/movies-tv/god-of-war-laufey-star-deborah-ann-woll-will-reprise-the-role-in-amazons-god-of-war-show/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-23T22:20:08Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Every GTA 6 ending and how to get them",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-endings/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-23T21:33:58Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "2026 Steam Awards pit the GOTY winners of the past 10 years against each other in an all-out battle for supremacy",
+      "url": "https://www.pcgamer.com/games/2026-steam-awards-pit-the-goty-winners-of-the-past-10-years-against-each-other-in-an-all-out-battle-for-supremacy/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-23T21:29:46Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The Grand Theft Auto 6 hacker who was hospitalized in 2023 has been released on parole with a warning not to do it again",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/the-grand-theft-auto-6-hacker-who-was-hospitalized-in-2023-has-been-released-on-parole-with-a-warning-not-to-do-it-again/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-23T21:16:03Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Cyberpunk 2 creative director says he's suffering from 'GTA 6-induced-open-world-game-dev-depression,' jokes that 'Cyberpunk 2 is cancelled'",
+      "url": "https://www.pcgamer.com/games/cyberpunk-2-creative-director-says-hes-suffering-from-gta-6-induced-open-world-game-dev-depression-jokes-that-cyberpunk-2-is-cancelled/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-23T20:55:56Z",
+      "games": [
+        "cyberpunk-2077"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Deltarune Chapter 6 is playable \"from the beginning to the end,\" Toby Fox says, but the RPG's final part has \"only just started\"",
+      "url": "https://www.eurogamer.net/deltarune-chapter-6-playable-toby-fox",
+      "source": "Eurogamer",
+      "published_at": "2026-11-23T20:04:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "GTA 6 players swore the weather system was broken and the latest patch has confirmed those suspicions",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-players-swore-the-weather-system-was-broken-and-the-latest-patch-has-confirmed-those-suspicions/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-23T19:54:16Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Activision calls Banjo-Kazooie one of its \"iconic gaming franchises,\" raising hopes for long-awaited new game",
+      "url": "https://www.eurogamer.net/activision-banjo-kazooie-iconic-gaming-franchise",
+      "source": "Eurogamer",
+      "published_at": "2026-11-23T19:22:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "28 years later, grizzled XCOM-style WW2 tactics game Soldiers at War gets a fresh tour of duty on modern PCs",
+      "url": "https://www.rockpapershotgun.com/28-years-later-grizzled-xcom-style-ww2-tactics-game-soldiers-at-war-gets-a-fresh-tour-of-duty-on-modern-pcs",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-23T18:10:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "God of War Laufey's Faye actor jumps from games to live-action, as Amazon casts Deborah Ann Woll in upcoming series",
+      "url": "https://www.eurogamer.net/god-of-war-laufey-faye-amazon-series",
+      "source": "Eurogamer",
+      "published_at": "2026-11-23T18:09:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Please Nominate Palworld for the \"Just 5 More Minutes\" Award \u2014 Steam Awards 2026",
+      "url": "https://store.steampowered.com/news/app/1623730/view/1849827110442979",
+      "source": "Steam \u00b7 Palworld",
+      "published_at": "2026-11-23T18:01:33Z",
+      "games": [
+        "palworld"
+      ],
+      "kind": "announcement",
+      "highlight": false
+    },
+    {
+      "title": "Think you know games? That we liked? This year? Then join the RPS Advent Calendar Guessing Game 2026",
+      "url": "https://www.rockpapershotgun.com/rps-advent-calendar-guessing-game-2026",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-23T18:01:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Former Dragon Age boss questions whether BioWare should have become 'a one project studio' dropping either Mass Effect or Dragon Age to survive EA",
+      "url": "https://www.pcgamer.com/gaming-industry/former-dragon-age-boss-questions-whether-bioware-should-have-become-a-one-project-studio-dropping-either-mass-effect-or-dragon-age-to-survive-ea/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-23T18:01:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Cyberleek releases executable for GTA 6 Xbox build leaked last week: 'The torch passes to the open source recomp and emulation projects'",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/cyberleek-releases-executable-for-gta-6-xbox-build-leaked-last-week-the-torch-passes-to-the-open-source-recomp-and-emulation-projects/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-23T17:54:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Might and Magic meets, er, paper in sunny new RPG Rise of Furax, a turn-based island tale that is entirely drawn by hand",
+      "url": "https://www.rockpapershotgun.com/might-and-magic-meets-er-paper-in-sunny-new-rpg-rise-of-furax-a-turn-based-island-tale-that-is-entirely-drawn-by-hand",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-23T17:30:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Dawn of War 4's newest trailer teases the appearance of a fan-favourite character in the game's post-launch DLC",
+      "url": "https://www.eurogamer.net/dawn-of-war-4-trailer-vashtorr-chaos-tease",
+      "source": "Eurogamer",
+      "published_at": "2026-11-23T17:06:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "\"Don't let this happen again\": GTA 6 hacker who pleaded guilty to 2022 Rockstar Games breach released under supervision",
+      "url": "https://www.rockpapershotgun.com/dont-let-this-happen-again-gta-6-hacker-who-pleaded-guilty-to-2022-rockstar-games-breach-released-under-supervision",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-23T16:48:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "This fan-made map shows why Queen's Domain is the true GOTY, and you can even upload your save to it to track the things you have left to find",
+      "url": "https://www.pcgamer.com/games/rpg/this-fan-made-map-shows-why-queens-domain-is-the-true-goty-and-you-can-even-upload-your-save-to-it-to-track-the-things-you-have-left-to-find/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-23T16:11:47Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Finally, some former Valorant and Sky devs have answered the call for a Peak-style platformer about throwing a cat through a hole in spacetime",
+      "url": "https://www.rockpapershotgun.com/finally-some-former-valorant-and-sky-devs-have-answered-the-call-for-a-peak-style-platformer-about-throwing-a-cat-through-a-hole-in-spacetime",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-23T16:10:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "60 hours in GTA 6 has me yearning for an online Leonida",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/60-hours-in-gta-6-has-me-yearning-for-an-online-leonida/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-23T16:02:42Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "This week in PC games: Raise a psychedelic baby, invent terrible new religions, and run your own PC hardware business",
+      "url": "https://www.rockpapershotgun.com/this-week-in-pc-games-raise-a-psychedelic-baby-invent-terrible-new-religions-and-run-your-own-pc-hardware-business",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-23T15:43:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "World of Warcraft: Forever review: The first proper MMO adventure I've been on in years",
+      "url": "https://www.pcgamer.com/games/world-of-warcraft/world-of-warcraft-forever-review/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-23T15:36:34Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "GTA 6 just got a patch that fixed a progression bug on PS5 and Xbox Series X/S",
+      "url": "https://www.eurogamer.net/gta-6-xbox-playstation-patch-autosave-vignette",
+      "source": "Eurogamer",
+      "published_at": "2026-11-23T15:22:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Nvidia reinstate Jensen Huang as CEO following alleged affairs, as US government support renders 'please give me my job back, go USA' a highly persuasive plea",
+      "url": "https://www.rockpapershotgun.com/nvidia-reinstate-jensen-huang-as-ceo-following-alleged-affairs-as-us-government-support-renders-please-give-me-my-job-back-go-usa-a-highly-persuasive-plea",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-23T15:10:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Trump praises Jensen Huang's reinstatement as Nvidia CEO, calls him a 'great patriot and national treasure,' while Musk says 'the mistake has been corrected'",
+      "url": "https://www.pcgamer.com/hardware/graphics-cards/trump-praises-jensen-huangs-reinstatement-as-nvidia-ceo-calls-him-a-great-patriot-and-national-treasure-while-musk-says-the-mistake-has-been-corrected/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-23T15:09:09Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Nvidia makes stunning decision to reinstate Jensen Huang as CEO",
+      "url": "https://www.eurogamer.net/nvidia-jensen-huang-ceo-reinstated-affair",
+      "source": "Eurogamer",
+      "published_at": "2026-11-23T15:01:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Has Rockstar taken the \"Grand Theft Auto\" out of GTA 6? Or has it just gamified car-jacking properly for the first time?",
+      "url": "https://www.eurogamer.net/gta-6-car-theft-gamified",
+      "source": "Eurogamer",
+      "published_at": "2026-11-23T14:58:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Should you choose the cut or pure drugs in GTA 6?",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-cut-or-pure-dealers-choice/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-23T14:56:37Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Jensen Huang has been reinstated as Nvidia CEO: 'I take this responsibility with the greatest humility and renewed commitment'",
+      "url": "https://www.pcgamer.com/hardware/graphics-cards/jensen-huang-has-been-reinstated-as-nvidia-ceo-i-take-this-responsibility-with-the-greatest-humility-and-renewed-commitment/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-23T14:30:41Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Dragon Age's former boss explains that poor management from EA led to BioWare shutting down because 'the options on the table were all terrible'",
+      "url": "https://www.pcgamer.com/gaming-industry/dragon-ages-former-boss-explains-that-poor-management-from-ea-led-to-bioware-shutting-down-because-the-options-on-the-table-were-all-terrible/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-23T14:30:08Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "GTA 6 can run at 60fps on Xbox Series X if you use a glitch, but there's a catch",
+      "url": "https://www.eurogamer.net/grand-theft-auto-6-60-fps-glitch-xbox",
+      "source": "Eurogamer",
+      "published_at": "2026-11-23T14:12:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Nightdive's Thief remaster will make the most \"infamous\" Thief Gold level a little less maddening, by \"just kind of pointing the player in the right direction\"",
+      "url": "https://www.rockpapershotgun.com/nightdives-thief-remaster-will-make-the-most-infamous-thief-gold-level-a-little-less-maddening-by-just-kind-of-pointing-the-player-in-the-right-direction",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-23T13:30:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "How to steal the Schafter V12 in GTA 6",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-schafter-v12/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-23T13:08:09Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Nvidia release hotfix for latest graphics card driver battering SSDs with excessive writes, but it looks like reverting may still be the better option",
+      "url": "https://www.rockpapershotgun.com/nvidia-release-hotfix-for-latest-graphics-card-driver-battering-ssds-with-excessive-writes-but-it-looks-like-reverting-may-still-be-the-better-option",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-23T12:59:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Metacritic's user review problem worsens, as GTA 6's launch prompts review-bombing for completely unrelated games like Soul Calibur and The Ocarina of Time",
+      "url": "https://www.eurogamer.net/gta-6-metacritic-review-bomb",
+      "source": "Eurogamer",
+      "published_at": "2026-11-23T12:50:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "GTA's treatment of women 'has not been good', says Rockstar vet delighted by 'long overdue' female protagonist in GTA 6",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/gtas-treatment-of-women-has-not-been-good-says-rockstar-vet-delighted-by-long-overdue-female-protagonist-in-gta-6/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-23T12:15:35Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "GTA 6 laptop password and where to find Auntie's Place in La Perle",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-laptop-password-aunties-place-la-perle/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-23T12:10:56Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Undisclosed AI-generated music pulled from The Binding of Isaac Repentance+ update, as attempt to get satirical on GTA 6 launch day goes awry",
+      "url": "https://www.rockpapershotgun.com/undisclosed-ai-generated-music-pulled-from-the-binding-of-isaac-repentance-update-as-attempt-to-get-satirical-on-gta-6-launch-day-goes-awry",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-23T11:45:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "GTA 6 Kit Car locations: How to restore the fourth car for Wyman",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-kit-car-locations/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-23T11:25:34Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Queen's Domain review",
+      "url": "https://www.eurogamer.net/queens-domain-review",
+      "source": "Eurogamer",
+      "published_at": "2026-11-23T10:04:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Why can't you play darts in GTA 6 when you could in previous games? Because Rockstar \"didn't have the resources\" to do it to a standard it'd be happy with",
+      "url": "https://www.eurogamer.net/grand-theft-auto-6-no-darts-didnt-have-resources",
+      "source": "Eurogamer",
+      "published_at": "2026-11-23T09:50:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Activision patents AI voice system that learns from in-game chat and creates audio for NPCs who can even speak in place of you",
+      "url": "https://www.eurogamer.net/activision-ai-voice-chat-npc-patent",
+      "source": "Eurogamer",
+      "published_at": "2026-11-23T09:27:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "R.E.P.O. v0.5.3",
+      "url": "https://store.steampowered.com/news/app/3241660/view/1849827110440975",
+      "source": "Steam \u00b7 R.E.P.O.",
+      "published_at": "2026-11-23T09:13:42Z",
+      "games": [
+        "repo"
+      ],
+      "kind": "patch",
+      "highlight": true
+    },
     {
       "title": "Binding of Isaac DLC adds AI music in GTA 6-parodying update despite not having an AI disclosure, Steam reviews drop to Overwhelmingly Negative, music gets pulled",
       "url": "https://www.pcgamer.com/games/roguelike/binding-of-isaac-dlc-adds-ai-music-in-gta-6-parodying-update-despite-not-having-an-ai-disclosure-steam-reviews-drop-to-overwhelmingly-negative-music-gets-pulled/",
@@ -161,406 +563,6 @@
       "url": "https://www.pcgamer.com/games/grand-theft-auto/the-gtas-that-are-still-worth-playing-while-you-wait-for-gta-6-on-pc/",
       "source": "PC Gamer",
       "published_at": "2026-11-22T15:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "GTA 6 Mamba GT locations: How to restore the third car for Wyman",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-mamba-gt-locations/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-22T14:53:59Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "GTA 6 Riata locations: How to restore the second car for Wyman",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-riata-locations/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-22T13:48:06Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Grand Theft Auto 6 has a 'complex drug network' that tracks everything from where drugs come from to 'how they eventually reach the street-level buyer'",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/grand-theft-auto-6-has-a-complex-drug-network-that-tracks-everything-from-where-drugs-come-from-to-how-they-eventually-reach-the-street-level-buyer/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-22T13:25:42Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Binding of Isaac dev pulls AI-generated music from Repentance+ after players expose it",
-      "url": "https://www.eurogamer.net/binding-of-isaac-repentance-plus-ai-music-removed",
-      "source": "Eurogamer",
-      "published_at": "2026-11-22T13:19:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The designer of Atari's notorious E.T. likens the deluge of AI games to events that preceded the '80s industry crash: 'There was a glut of crap on the market'",
-      "url": "https://www.pcgamer.com/gaming-industry/game-development/the-designer-of-ataris-notorious-e-t-likens-the-deluge-of-ai-games-to-events-that-preceded-the-80s-industry-crash-there-was-a-glut-of-crap-on-the-market/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-22T12:44:48Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Over half of all console players active on GTA 6's launch day played it, says Circana",
-      "url": "https://www.eurogamer.net/gta-6-launch-day-engagement-circana",
-      "source": "Eurogamer",
-      "published_at": "2026-11-22T12:02:30Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "GTA 6 player gets 30-day PSN ban for sharing in-game nudist photo with a friend",
-      "url": "https://www.eurogamer.net/gta-6-psn-ban-nude-photos-nudist-resort",
-      "source": "Eurogamer",
-      "published_at": "2026-11-22T11:22:10Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The Sunday Papers",
-      "url": "https://www.rockpapershotgun.com/the-sunday-papers-837",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-22T11:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Jason's stoic character in Grand Theft Auto 6 was inspired by Steve McQueen and research into Army veterans: 'These guys typically aren't running their mouths'",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/jasons-stoic-character-in-grand-theft-auto-6-was-inspired-by-steve-mcqueen-and-research-into-army-veterans-these-guys-typically-arent-running-their-mouths/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-22T10:54:09Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "\"It stayed alive for so long\" - Behind the wheel with the Last Riders saying goodbye to GTA Online, amidst GTA 6's world-changing launch",
-      "url": "https://www.eurogamer.net/gta-6-grand-theft-auto-online-last-ride",
-      "source": "Eurogamer",
-      "published_at": "2026-11-22T10:00:10Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "I've never known a moment like this in video games",
-      "url": "https://www.eurogamer.net/gta-6-video-games-biggest-moment",
-      "source": "Eurogamer",
-      "published_at": "2026-11-22T09:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Astarion's Baldur's Gate 3 prequel novel infuriated fans, now it's Shadowheart's turn",
-      "url": "https://www.pcgamer.com/games/baldurs-gate/astarions-baldurs-gate-3-prequel-novel-infuriated-fans-now-its-shadowhearts-turn/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-22T03:03:45Z",
-      "games": [
-        "baldurs-gate-3"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Wizards of the Coast to pass full AI copyright payout to D&D writers",
-      "url": "https://www.pcgamer.com/games/rpg/wizards-of-the-coast-to-pass-full-ai-copyright-payout-to-d-and-d-writers/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-21T23:40:42Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Alt Video is a digital, faux Blockbuster video store that you can fill with movies from your Letterboxd watchlist and Plex server",
-      "url": "https://www.rockpapershotgun.com/alt-video-is-a-digital-faux-blockbuster-video-store-that-you-can-fill-with-movies-from-your-letterboxd-watchlist-and-plex-server",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-21T22:50:30Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Comcast: 'At peak, GTA 6 accounted for nearly a quarter of all internet traffic'",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/comcast-at-peak-gta6-accounted-for-nearly-a-quarter-of-all-internet-traffic/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-21T21:42:29Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Public-access television is born anew in NIGHT EYE TV, a digital goggle box filled with art game curios",
-      "url": "https://www.rockpapershotgun.com/public-access-television-is-born-anew-in-night-eye-tv-a-digital-goggle-box-filled-with-art-game-curios",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-21T21:27:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The team behind Ubisoft's 'first playable AI-based R&D project' has been established as its own subsidiary called Motherbrain",
-      "url": "https://www.pcgamer.com/gaming-industry/the-team-behind-ubisofts-first-playable-ai-based-r-and-d-project-has-been-established-as-its-own-subsidiary-called-motherbrain/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-21T21:16:16Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "GTA 6 Protective Custody: Should you choose proceed or postpone when you go to meet Abe?",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-protective-custody-choice-proceed-or-postpone-meet-abe/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-21T20:32:43Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Eldritch Empathy is a Papers Please-esque roguelite about diagnosing cosmic horror creatures and trying not to lose your marbles as you do",
-      "url": "https://www.rockpapershotgun.com/eldritch-empathy-is-a-papers-please-esque-roguelite-about-diagnosing-cosmic-horror-creatures-and-trying-not-to-lose-your-marbles-as-you-do",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-21T18:57:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Skyrim lead chats about the Fallout diehards who hated that Bethesda got the series: 'We had to prove them wrong, and fortunately we did'",
-      "url": "https://www.pcgamer.com/games/fallout/skyrim-lead-chats-about-the-fallout-diehards-who-hated-that-bethesda-got-the-series-we-had-to-prove-them-wrong-and-fortunately-we-did/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-21T18:00:00Z",
-      "games": [
-        "skyrim-se"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "\"Everyone agrees it's more fun this way\": Toby Fox won't tell his team how Deltarune ends until they've built enough of it",
-      "url": "https://www.rockpapershotgun.com/everyone-agrees-its-more-fun-this-way-toby-fox-wont-tell-his-team-how-deltarune-ends-until-theyve-built-enough-of-it",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-21T17:54:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "How to steal the BF Bandito in GTA 6",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-bf-bandito-location/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-21T17:34:25Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Unannounced Nioh 3 Complete Edition has been rated in Korea",
-      "url": "https://www.eurogamer.net/nioh-3-complete-edition-rated-korea",
-      "source": "Eurogamer",
-      "published_at": "2026-11-21T17:19:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Fake figures seized from dishonest dealer in Shanghai sting spurred by tacky Tifa tchotchke",
-      "url": "https://www.pcgamer.com/games/final-fantasy/fake-figures-seized-from-dishonest-dealer-in-shanghai-sting-spurred-by-tacky-tifa-tchotchke/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-21T17:08:06Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "World of Warcraft: Forever has turned me into a big, friendly golden retriever that says hello to everybody",
-      "url": "https://www.pcgamer.com/games/world-of-warcraft/world-of-warcraft-forever-has-turned-me-into-a-big-friendly-golden-retriever-that-says-hello-to-everybody/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-21T17:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Darkest Dungeon 2's next bit of DLC is a short run, combat focused gauntlet where you must do everything in your power to please the audience",
-      "url": "https://www.rockpapershotgun.com/darkest-dungeon-2s-next-bit-of-dlc-is-a-short-run-combat-focused-gauntlet-where-you-must-do-everything-in-your-power-to-please-the-audience",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-21T16:53:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "GTA 6 La Cascara Motel safe code",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-la-cascara-motel-safe-code/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-21T16:36:30Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "How to find the Avery Pawn Shop safe code in GTA 6",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-pawn-shop-safe-code/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-21T16:30:40Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The most unforgivable crime in GTA 6 is that TV placement",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/the-most-unforgivable-crime-in-gta-6-is-that-tv-placement/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-21T16:16:37Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "As a kid, I didn't have a monster in my attic, I had a LAN",
-      "url": "https://www.pcgamer.com/games/as-a-kid-i-didnt-have-a-monster-in-my-attic-i-had-a-lan/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-21T16:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Phasmophobia's next update lets you ask ghosts to throw things and it's out next week",
-      "url": "https://www.eurogamer.net/phasmophobia-resonance-update-release-date-dowsing-rods-unity-6",
-      "source": "Eurogamer",
-      "published_at": "2026-11-21T15:56:10Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "How to unlock the Brooks Boatworks safe in GTA 6",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-brooks-boatworks-safe-code/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-21T15:51:59Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "GTA 6 is crashing on some PS5s with error CE-108255-1 - here's what you can try",
-      "url": "https://www.eurogamer.net/gta-6-ps5-crashing-ce-108255-1-error-fix",
-      "source": "Eurogamer",
-      "published_at": "2026-11-21T15:03:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "While you wait for The Elder Scrolls 6: Sentinel, you owe it to yourself to play Tainted Grail",
-      "url": "https://www.pcgamer.com/games/rpg/while-you-wait-for-the-elder-scrolls-6-sentinel-you-owe-it-to-yourself-to-play-tainted-grail/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-21T15:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "GTA 6 Transgressor locations: How to restore the first car for Wyman",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-transgressor-locations/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-21T14:43:05Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Seven years on since Persona 5 Royal, Atlus says 'people won't have to wait as long as they have previously' for the next game after Persona 6",
-      "url": "https://www.pcgamer.com/games/rpg/seven-years-on-since-persona-5-royal-atlus-says-people-wont-have-to-wait-as-long-as-they-have-previously-for-the-next-game-after-persona-6/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-21T14:31:07Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "GTA 6 has a 99 Metascore from critics, but players are review bombing it",
-      "url": "https://www.eurogamer.net/gta-6-review-bombed-metacritic-user-score",
-      "source": "Eurogamer",
-      "published_at": "2026-11-21T14:19:40Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "GTA 6 Bowling Alley safe code",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-bowling-alley-safe-code-location/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-21T13:49:37Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "GTA 6 is a cozy game",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-is-a-cozy-game/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-21T13:45:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Deltarune chapter 6 is 'structurally complete' while development has begun on chapter 7, according to Toby Fox",
-      "url": "https://www.pcgamer.com/games/rpg/deltarune-chapter-6-is-structurally-complete-while-development-has-begun-on-chapter-7-according-to-toby-fox/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-21T13:09:55Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "GTA 6 features the series' first non-binary character, says actor Jesse James Rose, and players can't hurt them",
-      "url": "https://www.eurogamer.net/gta-6-first-non-binary-character-jesse-james-rose",
-      "source": "Eurogamer",
-      "published_at": "2026-11-21T12:50:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Expedition 33 lead writer says Grand Theft Auto 6 layoff concerns show that 'people creating the value do not receive a proportionate amount of that value'",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/expedition-33-lead-writer-says-grand-theft-auto-6-layoff-concerns-show-that-people-creating-the-value-do-not-receive-a-proportionate-amount-of-that-value/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-21T11:51:01Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "What are we all playing this weekend?",
-      "url": "https://www.rockpapershotgun.com/what-are-we-all-playing-this-weekend-409",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-21T11:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "What if Vampire Survivors met Grand Theft Auto 2? Maniac is a brilliant mash-up that dares to ask that question",
-      "url": "https://www.eurogamer.net/grand-theft-auto-6-vampire-survivors-maniac-interview",
-      "source": "Eurogamer",
-      "published_at": "2026-11-21T10:00:00Z",
       "games": [],
       "kind": "news",
       "highlight": false

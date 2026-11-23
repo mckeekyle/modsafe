@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T06:37:41Z",
+  "generated_at": "2026-11-23T23:38:30Z",
   "game": {
     "slug": "palworld",
     "name": "Palworld",
@@ -523,6 +523,12 @@
   ],
   "news": [
     {
+      "title": "Please Nominate Palworld for the \"Just 5 More Minutes\" Award \u2014 Steam Awards 2026",
+      "url": "https://store.steampowered.com/news/app/1623730/view/1849827110442979",
+      "published_at": "2026-11-23T18:01:33Z",
+      "is_patch": false
+    },
+    {
       "title": "Palworld \u00d7 Graveyard Keeper 2 Steam Bundle is Out Now!",
       "url": "https://store.steampowered.com/news/app/1623730/view/1847920302229254",
       "published_at": "2026-10-28T01:21:53Z",
@@ -575,12 +581,6 @@
       "url": "https://store.steampowered.com/news/app/1623730/view/1839676055884093",
       "published_at": "2026-07-30T03:05:21Z",
       "is_patch": false
-    },
-    {
-      "title": "v1.0.2: Bug fixes",
-      "url": "https://store.steampowered.com/news/app/1623730/view/1839676055881423",
-      "published_at": "2026-07-29T03:08:24Z",
-      "is_patch": true
     }
   ],
   "channels": [],
