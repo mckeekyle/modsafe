@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T07:50:42Z",
+  "generated_at": "2026-11-23T09:20:55Z",
   "game": {
     "slug": "repo",
     "name": "R.E.P.O.",
@@ -11,7 +11,14 @@
       "published_at": "2026-11-18T10:35:07Z",
       "published_unix": 1794998107,
       "url": "https://store.steampowered.com/news/app/3241660/view/1849827110423646",
-      "steam_build": "26732417"
+      "steam_build": "26813769",
+      "unannounced_update": {
+        "version": null,
+        "label": "Unannounced update 2026-11-23",
+        "published_at": "2026-11-23T09:13:17Z",
+        "buildid": "26813769",
+        "source": "Steam public branch (api.steamcmd.net / PICS)"
+      }
     }
   },
   "verdict": "Just patched, wait",
@@ -48,9 +55,9 @@
       "repo": "ZehsTeam/REPOLib",
       "tracked": true,
       "sensitive": true,
-      "status": "Safe",
+      "status": "Just patched, wait",
       "base_status": "Updated for latest patch",
-      "reason": "Latest release notes mention patch v0.5.2 and the release is on/after the patch date.",
+      "reason": "Latest release notes mention patch v0.5.2 and the release is on/after the patch date. Steam's public build changed on 2026-11-23 (build 26813769) with no announcement, and this tool hasn't released since; wait for confirmation.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v4.5.1",
@@ -74,7 +81,7 @@
       "sensitive": true,
       "status": "Just patched, wait",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch v0.5.2; compatibility is unverified \u2014 check the project page.",
+      "reason": "Latest release predates patch v0.5.2; compatibility is unverified \u2014 check the project page. Steam's public build changed on 2026-11-23 (build 26813769) with no announcement, and this tool hasn't released since; wait for confirmation.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "1.4.6",
@@ -96,7 +103,7 @@
       "sensitive": true,
       "status": "Just patched, wait",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch v0.5.2; compatibility is unverified \u2014 check the project page.",
+      "reason": "Latest release predates patch v0.5.2; compatibility is unverified \u2014 check the project page. Steam's public build changed on 2026-11-23 (build 26813769) with no announcement, and this tool hasn't released since; wait for confirmation.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "1.7.3",
@@ -116,7 +123,14 @@
       "published_at": "2026-11-18T10:35:07Z",
       "published_unix": 1794998107,
       "url": "https://store.steampowered.com/news/app/3241660/view/1849827110423646",
-      "steam_build": "26732417",
+      "steam_build": "26813769",
+      "unannounced_update": {
+        "version": null,
+        "label": "Unannounced update 2026-11-23",
+        "published_at": "2026-11-23T09:13:17Z",
+        "buildid": "26813769",
+        "source": "Steam public branch (api.steamcmd.net / PICS)"
+      },
       "frameworks": [
         {
           "id": "bepinexpack-repo",
@@ -1056,6 +1070,31 @@
         {
           "short": "REPOLib",
           "status": "Safe",
+          "release_tag": "v4.5.1"
+        },
+        {
+          "short": "MoreHead",
+          "status": "Just patched, wait",
+          "release_tag": "1.4.6"
+        },
+        {
+          "short": "MoreUpgrades",
+          "status": "Just patched, wait",
+          "release_tag": "1.7.3"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-23T09:20:55Z",
+      "patch": "v0.5.2",
+      "patch_key": "0.5.2",
+      "patch_published_at": "2026-11-18T10:35:07Z",
+      "patch_url": "https://store.steampowered.com/news/app/3241660/view/1849827110423646",
+      "verdict": "Just patched, wait",
+      "frameworks": [
+        {
+          "short": "REPOLib",
+          "status": "Just patched, wait",
           "release_tag": "v4.5.1"
         },
         {
