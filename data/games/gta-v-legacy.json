@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T18:04:57Z",
+  "generated_at": "2026-11-23T22:21:01Z",
   "game": {
     "slug": "gta-v-legacy",
     "name": "Grand Theft Auto V Legacy",
@@ -51,11 +51,11 @@
       "source": "github",
       "tracked": true,
       "sensitive": false,
-      "release_url": "https://github.com/ThirteenAG/Ultimate-ASI-Loader/releases/tag/v10.0.4",
+      "release_url": "https://github.com/ThirteenAG/Ultimate-ASI-Loader/releases/tag/v10.0.5",
       "status": "Not affected by patches",
       "reason": "Generic DLL/ASI loader used across many games; not tied to a GTA V build.",
-      "release_tag": "v10.0.4",
-      "release_published_at": "2026-11-19T14:05:31Z"
+      "release_tag": "v10.0.5",
+      "release_published_at": "2026-11-23T21:58:05Z"
     }
   ],
   "history": [
