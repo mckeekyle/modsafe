@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T15:20:46Z",
+  "generated_at": "2026-11-23T19:20:54Z",
   "game": {
     "slug": "cyberpunk-2077",
     "name": "Cyberpunk 2077",
@@ -79,10 +79,10 @@
       "reason": "Latest release is newer than patch Patch 2.5, but notes do not explicitly mention that version.",
       "breakage_reports": [],
       "official": null,
-      "release_tag": "v1.0.1",
-      "release_name": "v1.0.1",
-      "release_published_at": "2026-11-15T21:23:42Z",
-      "release_url": "https://github.com/jac3km4/redscript/releases/tag/v1.0.1",
+      "release_tag": "v1.0.2",
+      "release_name": "v1.0.2",
+      "release_published_at": "2026-11-23T19:11:57Z",
+      "release_url": "https://github.com/jac3km4/redscript/releases/tag/v1.0.2",
       "mentions_patch": false,
       "newer_than_patch": true,
       "mention_releases": []
@@ -208,7 +208,7 @@
           "mentions_patch": false,
           "first_release_tag": "v1.0.0",
           "first_release_at": "2026-11-10T21:12:08Z",
-          "data_from": "2024-09-01T03:57:54Z",
+          "data_from": "2025-01-18T16:21:19Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -302,7 +302,7 @@
           "mentions_patch": false,
           "first_release_tag": "v1.0.0",
           "first_release_at": "2026-11-10T21:12:08Z",
-          "data_from": "2024-09-01T03:57:54Z",
+          "data_from": "2025-01-18T16:21:19Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -396,7 +396,7 @@
           "mentions_patch": false,
           "first_release_tag": "v1.0.0",
           "first_release_at": "2026-11-10T21:12:08Z",
-          "data_from": "2024-09-01T03:57:54Z",
+          "data_from": "2025-01-18T16:21:19Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -490,7 +490,7 @@
           "mentions_patch": false,
           "first_release_tag": "v1.0.0",
           "first_release_at": "2026-11-10T21:12:08Z",
-          "data_from": "2024-09-01T03:57:54Z",
+          "data_from": "2025-01-18T16:21:19Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -584,7 +584,7 @@
           "mentions_patch": false,
           "first_release_tag": "v1.0.0",
           "first_release_at": "2026-11-10T21:12:08Z",
-          "data_from": "2024-09-01T03:57:54Z",
+          "data_from": "2025-01-18T16:21:19Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -678,7 +678,7 @@
           "mentions_patch": false,
           "first_release_tag": "v1.0.0",
           "first_release_at": "2026-11-10T21:12:08Z",
-          "data_from": "2024-09-01T03:57:54Z",
+          "data_from": "2025-01-18T16:21:19Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -772,7 +772,7 @@
           "mentions_patch": false,
           "first_release_tag": "v1.0.0",
           "first_release_at": "2026-11-10T21:12:08Z",
-          "data_from": "2024-09-01T03:57:54Z",
+          "data_from": "2025-01-18T16:21:19Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -866,7 +866,7 @@
           "mentions_patch": false,
           "first_release_tag": "v1.0.0",
           "first_release_at": "2026-11-10T21:12:08Z",
-          "data_from": "2024-09-01T03:57:54Z",
+          "data_from": "2025-01-18T16:21:19Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -960,7 +960,7 @@
           "mentions_patch": false,
           "first_release_tag": "v1.0.0",
           "first_release_at": "2026-11-10T21:12:08Z",
-          "data_from": "2024-09-01T03:57:54Z",
+          "data_from": "2025-01-18T16:21:19Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -1054,7 +1054,7 @@
           "mentions_patch": false,
           "first_release_tag": "v1.0.0",
           "first_release_at": "2026-11-10T21:12:08Z",
-          "data_from": "2024-09-01T03:57:54Z",
+          "data_from": "2025-01-18T16:21:19Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -1148,7 +1148,7 @@
           "mentions_patch": false,
           "first_release_tag": "v1.0.0",
           "first_release_at": "2026-11-10T21:12:08Z",
-          "data_from": "2024-09-01T03:57:54Z",
+          "data_from": "2025-01-18T16:21:19Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -1242,7 +1242,7 @@
           "mentions_patch": true,
           "first_release_tag": "v1.0.0",
           "first_release_at": "2026-11-10T21:12:08Z",
-          "data_from": "2024-09-01T03:57:54Z",
+          "data_from": "2025-01-18T16:21:19Z",
           "first_mention_tag": "v1.0.0",
           "first_mention_at": "2026-11-10T21:12:08Z"
         },
