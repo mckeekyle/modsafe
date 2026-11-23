@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T06:38:01Z",
+  "generated_at": "2026-11-23T18:20:53Z",
   "game": {
     "slug": "total-war-warhammer-3",
     "name": "Total War: WARHAMMER III",
@@ -43,7 +43,7 @@
       "sensitive": true,
       "status": "Breakage reported",
       "base_status": "Just patched, wait",
-      "reason": "Last Workshop update 2026-07-19, before 9.0.5 went live on 2026-11-03. It doesn't use Workshop version tags. 9.0.5 has been out 19 days with no update needed so far; no breakage signal available. Steam's public build changed on 2026-11-20 (build 26810549) with no announcement, and this tool hasn't released since; wait for confirmation. Hand-checked 2026-11-22: Since Patch 9.0.5 (Nov 3), at least seven players have reported in Workshop comments (Nov 7-19, in English, Chinese and Russian) that Mod Configuration Tool resets every mod's settings to defaults after a manual battle or loading a save. MCT hasn't updated since Jul 19. Mods configured through MCT may quietly run on default settings until it updates.",
+      "reason": "Last Workshop update 2026-07-19, before 9.0.5 went live on 2026-11-03. It doesn't use Workshop version tags. 9.0.5 has been out 20 days with no update needed so far; no breakage signal available. Steam's public build changed on 2026-11-20 (build 26810549) with no announcement, and this tool hasn't released since; wait for confirmation. Hand-checked 2026-11-22: Since Patch 9.0.5 (Nov 3), at least seven players have reported in Workshop comments (Nov 7-19, in English, Chinese and Russian) that Mod Configuration Tool resets every mod's settings to defaults after a manual battle or loading a save. MCT hasn't updated since Jul 19. Mods configured through MCT may quietly run on default settings until it updates.",
       "breakage_reports": [],
       "release_tag": null,
       "release_name": "Mod Configuration Tool - v0.9 Beta",
@@ -56,7 +56,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 809260,
+      "subscriptions": 809591,
       "mentions_patch": false,
       "newer_than_patch": false,
       "hand_check": {
@@ -93,7 +93,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 796941,
+      "subscriptions": 797165,
       "mentions_patch": false,
       "newer_than_patch": true
     },
@@ -106,13 +106,13 @@
       "workshop_id": "2792731173",
       "tracked": true,
       "sensitive": true,
-      "status": "Just patched, wait",
-      "base_status": "Just patched, wait",
-      "reason": "Updated on the Workshop on 2026-11-19, after 9.0.5 went live on 2026-11-03. It doesn't use Workshop version tags. Support is inferred from the update date. Steam's public build changed on 2026-11-20 (build 26810549) with no announcement, and this tool hasn't released since; wait for confirmation.",
+      "status": "Likely safe",
+      "base_status": "Likely safe",
+      "reason": "Updated on the Workshop on 2026-11-23, after 9.0.5 went live on 2026-11-03. It doesn't use Workshop version tags. Support is inferred from the update date.",
       "breakage_reports": [],
       "release_tag": null,
       "release_name": "SFO: Grimhammer III - REALM OF RENOWN",
-      "release_published_at": "2026-11-19T13:45:50Z",
+      "release_published_at": "2026-11-23T18:16:35Z",
       "release_url": "https://steamcommunity.com/sharedfiles/filedetails/changelog/2792731173",
       "workshop_title": "SFO: Grimhammer III - REALM OF RENOWN",
       "workshop_tags": [
@@ -121,7 +121,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 334693,
+      "subscriptions": 334848,
       "mentions_patch": false,
       "newer_than_patch": true
     },
@@ -149,7 +149,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 216116,
+      "subscriptions": 216157,
       "mentions_patch": false,
       "newer_than_patch": true
     },
@@ -177,7 +177,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 245522,
+      "subscriptions": 245654,
       "mentions_patch": false,
       "newer_than_patch": true
     },
@@ -205,7 +205,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 255631,
+      "subscriptions": 255706,
       "mentions_patch": false,
       "newer_than_patch": true
     },
@@ -220,7 +220,7 @@
       "sensitive": true,
       "status": "Just patched, wait",
       "base_status": "Just patched, wait",
-      "reason": "Last Workshop update 2026-09-24, before 9.0.5 went live on 2026-11-03. It doesn't use Workshop version tags. 9.0.5 has been out 19 days with no update needed so far; no breakage signal available. Steam's public build changed on 2026-11-20 (build 26810549) with no announcement, and this tool hasn't released since; wait for confirmation.",
+      "reason": "Last Workshop update 2026-09-24, before 9.0.5 went live on 2026-11-03. It doesn't use Workshop version tags. 9.0.5 has been out 20 days with no update needed so far; no breakage signal available. Steam's public build changed on 2026-11-20 (build 26810549) with no announcement, and this tool hasn't released since; wait for confirmation.",
       "breakage_reports": [],
       "release_tag": null,
       "release_name": "Recruit Defeated Legendary Lords",
@@ -233,7 +233,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 560897,
+      "subscriptions": 560983,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -248,7 +248,7 @@
       "sensitive": true,
       "status": "Just patched, wait",
       "base_status": "Just patched, wait",
-      "reason": "Last Workshop update 2026-09-24, before 9.0.5 went live on 2026-11-03. It doesn't use Workshop version tags. 9.0.5 has been out 19 days with no update needed so far; no breakage signal available. Steam's public build changed on 2026-11-20 (build 26810549) with no announcement, and this tool hasn't released since; wait for confirmation.",
+      "reason": "Last Workshop update 2026-09-24, before 9.0.5 went live on 2026-11-03. It doesn't use Workshop version tags. 9.0.5 has been out 20 days with no update needed so far; no breakage signal available. Steam's public build changed on 2026-11-20 (build 26810549) with no announcement, and this tool hasn't released since; wait for confirmation.",
       "breakage_reports": [],
       "release_tag": null,
       "release_name": "Better Camera Mod",
@@ -261,7 +261,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 604286,
+      "subscriptions": 604400,
       "mentions_patch": false,
       "newer_than_patch": false
     }
@@ -323,13 +323,13 @@
           "id": "sfo",
           "short": "SFO",
           "name": "SFO: Grimhammer III",
-          "status": "Just patched, wait",
+          "status": "Likely safe",
           "release_tag": null,
-          "release_published_at": "2026-11-19T13:45:50Z",
+          "release_published_at": "2026-11-23T18:16:35Z",
           "mentions_patch": false,
           "first_release_tag": null,
-          "first_release_at": "2026-11-19T13:45:50Z",
-          "data_from": "2026-11-19T13:45:50Z",
+          "first_release_at": "2026-11-23T18:16:35Z",
+          "data_from": "2026-11-23T18:16:35Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -447,11 +447,11 @@
           "name": "SFO: Grimhammer III",
           "status": "Likely safe",
           "release_tag": null,
-          "release_published_at": "2026-11-19T13:45:50Z",
+          "release_published_at": "2026-11-23T18:16:35Z",
           "mentions_patch": false,
           "first_release_tag": null,
-          "first_release_at": "2026-11-19T13:45:50Z",
-          "data_from": "2026-11-19T13:45:50Z",
+          "first_release_at": "2026-11-23T18:16:35Z",
+          "data_from": "2026-11-23T18:16:35Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -569,11 +569,11 @@
           "name": "SFO: Grimhammer III",
           "status": "Likely safe",
           "release_tag": null,
-          "release_published_at": "2026-11-19T13:45:50Z",
+          "release_published_at": "2026-11-23T18:16:35Z",
           "mentions_patch": false,
           "first_release_tag": null,
-          "first_release_at": "2026-11-19T13:45:50Z",
-          "data_from": "2026-11-19T13:45:50Z",
+          "first_release_at": "2026-11-23T18:16:35Z",
+          "data_from": "2026-11-23T18:16:35Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -691,11 +691,11 @@
           "name": "SFO: Grimhammer III",
           "status": "Likely safe",
           "release_tag": null,
-          "release_published_at": "2026-11-19T13:45:50Z",
+          "release_published_at": "2026-11-23T18:16:35Z",
           "mentions_patch": false,
           "first_release_tag": null,
-          "first_release_at": "2026-11-19T13:45:50Z",
-          "data_from": "2026-11-19T13:45:50Z",
+          "first_release_at": "2026-11-23T18:16:35Z",
+          "data_from": "2026-11-23T18:16:35Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -813,11 +813,11 @@
           "name": "SFO: Grimhammer III",
           "status": "Likely safe",
           "release_tag": null,
-          "release_published_at": "2026-11-19T13:45:50Z",
+          "release_published_at": "2026-11-23T18:16:35Z",
           "mentions_patch": false,
           "first_release_tag": null,
-          "first_release_at": "2026-11-19T13:45:50Z",
-          "data_from": "2026-11-19T13:45:50Z",
+          "first_release_at": "2026-11-23T18:16:35Z",
+          "data_from": "2026-11-23T18:16:35Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -940,11 +940,11 @@
           "name": "SFO: Grimhammer III",
           "status": "Likely safe",
           "release_tag": null,
-          "release_published_at": "2026-11-19T13:45:50Z",
+          "release_published_at": "2026-11-23T18:16:35Z",
           "mentions_patch": false,
           "first_release_tag": null,
-          "first_release_at": "2026-11-19T13:45:50Z",
-          "data_from": "2026-11-19T13:45:50Z",
+          "first_release_at": "2026-11-23T18:16:35Z",
+          "data_from": "2026-11-23T18:16:35Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -1062,11 +1062,11 @@
           "name": "SFO: Grimhammer III",
           "status": "Likely safe",
           "release_tag": null,
-          "release_published_at": "2026-11-19T13:45:50Z",
+          "release_published_at": "2026-11-23T18:16:35Z",
           "mentions_patch": false,
           "first_release_tag": null,
-          "first_release_at": "2026-11-19T13:45:50Z",
-          "data_from": "2026-11-19T13:45:50Z",
+          "first_release_at": "2026-11-23T18:16:35Z",
+          "data_from": "2026-11-23T18:16:35Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -1184,11 +1184,11 @@
           "name": "SFO: Grimhammer III",
           "status": "Likely safe",
           "release_tag": null,
-          "release_published_at": "2026-11-19T13:45:50Z",
+          "release_published_at": "2026-11-23T18:16:35Z",
           "mentions_patch": false,
           "first_release_tag": null,
-          "first_release_at": "2026-11-19T13:45:50Z",
-          "data_from": "2026-11-19T13:45:50Z",
+          "first_release_at": "2026-11-23T18:16:35Z",
+          "data_from": "2026-11-23T18:16:35Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -1306,11 +1306,11 @@
           "name": "SFO: Grimhammer III",
           "status": "Likely safe",
           "release_tag": null,
-          "release_published_at": "2026-11-19T13:45:50Z",
+          "release_published_at": "2026-11-23T18:16:35Z",
           "mentions_patch": false,
           "first_release_tag": null,
-          "first_release_at": "2026-11-19T13:45:50Z",
-          "data_from": "2026-11-19T13:45:50Z",
+          "first_release_at": "2026-11-23T18:16:35Z",
+          "data_from": "2026-11-23T18:16:35Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -1428,11 +1428,11 @@
           "name": "SFO: Grimhammer III",
           "status": "Likely safe",
           "release_tag": null,
-          "release_published_at": "2026-11-19T13:45:50Z",
+          "release_published_at": "2026-11-23T18:16:35Z",
           "mentions_patch": false,
           "first_release_tag": null,
-          "first_release_at": "2026-11-19T13:45:50Z",
-          "data_from": "2026-11-19T13:45:50Z",
+          "first_release_at": "2026-11-23T18:16:35Z",
+          "data_from": "2026-11-23T18:16:35Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -1550,11 +1550,11 @@
           "name": "SFO: Grimhammer III",
           "status": "Likely safe",
           "release_tag": null,
-          "release_published_at": "2026-11-19T13:45:50Z",
+          "release_published_at": "2026-11-23T18:16:35Z",
           "mentions_patch": false,
           "first_release_tag": null,
-          "first_release_at": "2026-11-19T13:45:50Z",
-          "data_from": "2026-11-19T13:45:50Z",
+          "first_release_at": "2026-11-23T18:16:35Z",
+          "data_from": "2026-11-23T18:16:35Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -1672,11 +1672,11 @@
           "name": "SFO: Grimhammer III",
           "status": "Likely safe",
           "release_tag": null,
-          "release_published_at": "2026-11-19T13:45:50Z",
+          "release_published_at": "2026-11-23T18:16:35Z",
           "mentions_patch": false,
           "first_release_tag": null,
-          "first_release_at": "2026-11-19T13:45:50Z",
-          "data_from": "2026-11-19T13:45:50Z",
+          "first_release_at": "2026-11-23T18:16:35Z",
+          "data_from": "2026-11-23T18:16:35Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -1794,11 +1794,11 @@
           "name": "SFO: Grimhammer III",
           "status": "Likely safe",
           "release_tag": null,
-          "release_published_at": "2026-11-19T13:45:50Z",
+          "release_published_at": "2026-11-23T18:16:35Z",
           "mentions_patch": false,
           "first_release_tag": null,
-          "first_release_at": "2026-11-19T13:45:50Z",
-          "data_from": "2026-11-19T13:45:50Z",
+          "first_release_at": "2026-11-23T18:16:35Z",
+          "data_from": "2026-11-23T18:16:35Z",
           "first_mention_tag": null,
           "first_mention_at": null
         },
@@ -2014,6 +2014,56 @@
         {
           "short": "SFO",
           "status": "Just patched, wait",
+          "release_tag": null
+        },
+        {
+          "short": "Radious",
+          "status": "Just patched, wait",
+          "release_tag": null
+        },
+        {
+          "short": "IEE",
+          "status": "Just patched, wait",
+          "release_tag": null
+        },
+        {
+          "short": "Mixu's LL",
+          "status": "Just patched, wait",
+          "release_tag": null
+        },
+        {
+          "short": "Recruit Defeated LL",
+          "status": "Just patched, wait",
+          "release_tag": null
+        },
+        {
+          "short": "Better Camera",
+          "status": "Just patched, wait",
+          "release_tag": null
+        }
+      ]
+    },
+    {
+      "at": "2026-11-23T18:20:53Z",
+      "patch": "Patch 9.0.5",
+      "patch_key": "9.0.5",
+      "patch_published_at": "2026-11-03T10:58:35Z",
+      "patch_url": "https://store.steampowered.com/news/app/1142710/view/1847920302251502",
+      "verdict": "Breakage reported",
+      "frameworks": [
+        {
+          "short": "MCT",
+          "status": "Breakage reported",
+          "release_tag": null
+        },
+        {
+          "short": "MIXER",
+          "status": "Just patched, wait",
+          "release_tag": null
+        },
+        {
+          "short": "SFO",
+          "status": "Likely safe",
           "release_tag": null
         },
         {
