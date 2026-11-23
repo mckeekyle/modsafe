@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T23:27:06Z",
+  "generated_at": "2026-11-23T06:38:16Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,24 @@
     }
   ],
   "items": [
+    {
+      "title": "Binding of Isaac DLC adds AI music in GTA 6-parodying update despite not having an AI disclosure, Steam reviews drop to Overwhelmingly Negative, music gets pulled",
+      "url": "https://www.pcgamer.com/games/roguelike/binding-of-isaac-dlc-adds-ai-music-in-gta-6-parodying-update-despite-not-having-an-ai-disclosure-steam-reviews-drop-to-overwhelmingly-negative-music-gets-pulled/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-23T01:11:23Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "SNEG has re-released three more venerable PC strategy games including Warlords 4: Heroes of Etheria",
+      "url": "https://www.pcgamer.com/games/strategy/sneg-has-re-released-three-more-venerable-pc-strategy-games-including-warlords-4-heroes-of-etheria/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-23T00:07:24Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Nvidia released a hotfix for its driver hammering your SSD, but it doesn't actually work",
       "url": "https://www.pcgamer.com/hardware/graphics-cards/nvidia-released-a-hotfix-for-its-driver-hammering-your-ssd-but-it-doesnt-actually-work/",
@@ -543,24 +561,6 @@
       "url": "https://www.eurogamer.net/grand-theft-auto-6-vampire-survivors-maniac-interview",
       "source": "Eurogamer",
       "published_at": "2026-11-21T10:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "What we've been playing - \"It's slow, it's awkward, it's weird, and it's hard\"",
-      "url": "https://www.eurogamer.net/what-weve-been-playing-its-slow-its-awkward-its-weird-and-its-hard",
-      "source": "Eurogamer",
-      "published_at": "2026-11-21T08:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "GTA 6 has secret playlists, and all you have to do is scan a few posters to unlock them",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-unique-playlists/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-21T00:46:24Z",
       "games": [],
       "kind": "news",
       "highlight": false
