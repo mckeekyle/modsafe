@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T09:06:41Z",
+  "generated_at": "2026-11-24T22:08:27Z",
   "game": {
     "slug": "total-war-warhammer-3",
     "name": "Total War: WARHAMMER III",
@@ -43,7 +43,7 @@
       "sensitive": true,
       "status": "Breakage reported",
       "base_status": "Just patched, wait",
-      "reason": "Last Workshop update 2026-07-19, before 9.0.5 went live on 2026-11-03. It doesn't use Workshop version tags. 9.0.5 has been out 20 days with no update needed so far; no breakage signal available. Steam's public build changed on 2026-11-20 (build 26810549) with no announcement, and this tool hasn't released since; wait for confirmation. Hand-checked 2026-11-22: Since Patch 9.0.5 (Nov 3), at least seven players have reported in Workshop comments (Nov 7-19, in English, Chinese and Russian) that Mod Configuration Tool resets every mod's settings to defaults after a manual battle or loading a save. MCT hasn't updated since Jul 19. Mods configured through MCT may quietly run on default settings until it updates.",
+      "reason": "Last Workshop update 2026-07-19, before 9.0.5 went live on 2026-11-03. It doesn't use Workshop version tags. 9.0.5 has been out 21 days with no update needed so far; no breakage signal available. Steam's public build changed on 2026-11-20 (build 26810549) with no announcement, and this tool hasn't released since; wait for confirmation. Hand-checked 2026-11-22: Since Patch 9.0.5 (Nov 3), at least seven players have reported in Workshop comments (Nov 7-19, in English, Chinese and Russian) that Mod Configuration Tool resets every mod's settings to defaults after a manual battle or loading a save. MCT hasn't updated since Jul 19. Mods configured through MCT may quietly run on default settings until it updates.",
       "breakage_reports": [],
       "release_tag": null,
       "release_name": "Mod Configuration Tool - v0.9 Beta",
@@ -56,7 +56,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 809862,
+      "subscriptions": 810140,
       "mentions_patch": false,
       "newer_than_patch": false,
       "hand_check": {
@@ -93,7 +93,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 797312,
+      "subscriptions": 797532,
       "mentions_patch": false,
       "newer_than_patch": true
     },
@@ -121,7 +121,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 334975,
+      "subscriptions": 335119,
       "mentions_patch": false,
       "newer_than_patch": true
     },
@@ -149,7 +149,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 216173,
+      "subscriptions": 216200,
       "mentions_patch": false,
       "newer_than_patch": true
     },
@@ -177,7 +177,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 245774,
+      "subscriptions": 245915,
       "mentions_patch": false,
       "newer_than_patch": true
     },
@@ -205,7 +205,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 255763,
+      "subscriptions": 255869,
       "mentions_patch": false,
       "newer_than_patch": true
     },
@@ -220,7 +220,7 @@
       "sensitive": true,
       "status": "Just patched, wait",
       "base_status": "Just patched, wait",
-      "reason": "Last Workshop update 2026-09-24, before 9.0.5 went live on 2026-11-03. It doesn't use Workshop version tags. 9.0.5 has been out 20 days with no update needed so far; no breakage signal available. Steam's public build changed on 2026-11-20 (build 26810549) with no announcement, and this tool hasn't released since; wait for confirmation.",
+      "reason": "Last Workshop update 2026-09-24, before 9.0.5 went live on 2026-11-03. It doesn't use Workshop version tags. 9.0.5 has been out 21 days with no update needed so far; no breakage signal available. Steam's public build changed on 2026-11-20 (build 26810549) with no announcement, and this tool hasn't released since; wait for confirmation.",
       "breakage_reports": [],
       "release_tag": null,
       "release_name": "Recruit Defeated Legendary Lords",
@@ -233,7 +233,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 561090,
+      "subscriptions": 561194,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -248,7 +248,7 @@
       "sensitive": true,
       "status": "Just patched, wait",
       "base_status": "Just patched, wait",
-      "reason": "Last Workshop update 2026-09-24, before 9.0.5 went live on 2026-11-03. It doesn't use Workshop version tags. 9.0.5 has been out 20 days with no update needed so far; no breakage signal available. Steam's public build changed on 2026-11-20 (build 26810549) with no announcement, and this tool hasn't released since; wait for confirmation.",
+      "reason": "Last Workshop update 2026-09-24, before 9.0.5 went live on 2026-11-03. It doesn't use Workshop version tags. 9.0.5 has been out 21 days with no update needed so far; no breakage signal available. Steam's public build changed on 2026-11-20 (build 26810549) with no announcement, and this tool hasn't released since; wait for confirmation.",
       "breakage_reports": [],
       "release_tag": null,
       "release_name": "Better Camera Mod",
@@ -261,7 +261,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 604509,
+      "subscriptions": 604616,
       "mentions_patch": false,
       "newer_than_patch": false
     }

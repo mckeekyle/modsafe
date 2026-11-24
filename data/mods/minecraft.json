@@ -24,7 +24,7 @@
       ],
       "modrinth_slug": "fabric-api",
       "framework_id": "fabric-api",
-      "last_updated": "2026-11-23"
+      "last_updated": "2026-11-24"
     },
     {
       "id": "sodium",
@@ -38,7 +38,7 @@
       ],
       "modrinth_slug": "sodium",
       "framework_id": "sodium",
-      "last_updated": "2026-11-23"
+      "last_updated": "2026-11-24"
     },
     {
       "id": "lithium",
