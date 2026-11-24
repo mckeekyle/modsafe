@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T09:05:33Z",
+  "generated_at": "2026-11-24T15:20:59Z",
   "game": {
     "slug": "terraria",
     "name": "Terraria",
@@ -17,10 +17,17 @@
         "https://github.com/tModLoader/tModLoader/releases/tag/v0.11.8.11 ('launch with Terraria 1.4.5.8 installed')",
         "https://api.steamcmd.net/v1/info/105600 (public build 24893155, updated 2026-08-23T18:47:09Z)"
       ],
-      "steam_build": "24893155"
+      "steam_build": "26896429",
+      "unannounced_update": {
+        "version": null,
+        "label": "Unannounced update 2026-11-24",
+        "published_at": "2026-11-24T15:09:46Z",
+        "buildid": "26896429",
+        "source": "Steam public branch (api.steamcmd.net / PICS)"
+      }
     }
   },
-  "verdict": "Likely safe",
+  "verdict": "Just patched, wait",
   "disclaimer": "Statuses are inferred from public release data (Steam news, GitHub, Thunderstore, Mojang/Fabric/Forge/NeoForge/Modrinth APIs). They are not guarantees \u2014 verify on each project's page before updating.",
   "frameworks": [
     {
@@ -32,9 +39,9 @@
       "repo": "tModLoader/tModLoader",
       "tracked": true,
       "sensitive": true,
-      "status": "Likely safe",
+      "status": "Just patched, wait",
       "base_status": "Likely OK",
-      "reason": "Latest release is newer than patch 1.4.5.8, but notes do not explicitly mention that version.",
+      "reason": "Latest release is newer than patch 1.4.5.8, but notes do not explicitly mention that version. Steam's public build changed on 2026-11-24 (build 26896429) with no announcement, and this tool hasn't released since; wait for confirmation.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v2026.09.3.1",
@@ -60,7 +67,14 @@
         "https://github.com/tModLoader/tModLoader/releases/tag/v0.11.8.11 ('launch with Terraria 1.4.5.8 installed')",
         "https://api.steamcmd.net/v1/info/105600 (public build 24893155, updated 2026-08-23T18:47:09Z)"
       ],
-      "steam_build": "24893155",
+      "steam_build": "26896429",
+      "unannounced_update": {
+        "version": null,
+        "label": "Unannounced update 2026-11-24",
+        "published_at": "2026-11-24T15:09:46Z",
+        "buildid": "26896429",
+        "source": "Steam public branch (api.steamcmd.net / PICS)"
+      },
       "frameworks": [
         {
           "id": "tmodloader",
@@ -129,6 +143,12 @@
   ],
   "news": [
     {
+      "title": "Terraria 1.4.6: Crossplay Phase One Launches Today!",
+      "url": "https://store.steampowered.com/news/app/105600/view/1849827110446549",
+      "published_at": "2026-11-24T15:14:44Z",
+      "is_patch": false
+    },
+    {
       "title": "Terraria State of the Game - October 2026",
       "url": "https://store.steampowered.com/news/app/105600/view/1847920302235929",
       "published_at": "2026-10-29T18:10:41Z",
@@ -181,12 +201,6 @@
       "url": "https://store.steampowered.com/news/app/105600/view/1833968530889388",
       "published_at": "2026-05-28T20:36:37Z",
       "is_patch": false
-    },
-    {
-      "title": "Celebrating 15 Years of Terraria!",
-      "url": "https://store.steampowered.com/news/app/105600/view/1832700592794921",
-      "published_at": "2026-05-16T19:02:27Z",
-      "is_patch": false
     }
   ],
   "channels": [],
@@ -206,6 +220,21 @@
           "short": "tModLoader",
           "status": "Likely safe",
           "release_tag": "v2026.08.3.0"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-24T15:20:59Z",
+      "patch": "1.4.5.8",
+      "patch_key": "1.4.5.8",
+      "patch_published_at": "2026-08-23T18:47:09Z",
+      "patch_url": "https://store.steampowered.com/news/app/105600/view/1844751498222763",
+      "verdict": "Just patched, wait",
+      "frameworks": [
+        {
+          "short": "tModLoader",
+          "status": "Just patched, wait",
+          "release_tag": "v2026.09.3.1"
         }
       ]
     }
