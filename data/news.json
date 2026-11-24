@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T23:39:03Z",
+  "generated_at": "2026-11-24T09:06:55Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,24 @@
     }
   ],
   "items": [
+    {
+      "title": "Trump claims credit for Jensen Huang's return to Nvidia, posts meme depicting Huang holding up a bra victoriously",
+      "url": "https://www.pcgamer.com/software/ai/trump-claims-credit-for-jensen-huangs-return-to-nvidia-posts-meme-depicting-huang-holding-up-a-bra-victoriously/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-24T01:06:57Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Sony: GTA 6 set record for 'highest number of concurrent players for any game on PlayStation' ever",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/sony-gta-6-set-record-for-highest-number-of-concurrent-players-for-any-game-on-playstation-ever/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-24T00:14:36Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "GTA 6 players found a '60 fps glitch', but it\u2019s too unstable to stop me from wishing it was on PC already",
       "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-players-found-a-60-fps-glitch-but-its-too-unstable-to-stop-me-from-wishing-it-was-on-pc-already/",
@@ -296,7 +314,7 @@
       "highlight": false
     },
     {
-      "title": "Dragon Age's former boss explains that poor management from EA led to BioWare shutting down because 'the options on the table were all terrible'",
+      "title": "Dragon Age's former boss says that poor management from EA led to BioWare shutting down because 'the options on the table were all terrible'",
       "url": "https://www.pcgamer.com/gaming-industry/dragon-ages-former-boss-explains-that-poor-management-from-ea-led-to-bioware-shutting-down-because-the-options-on-the-table-were-all-terrible/",
       "source": "PC Gamer",
       "published_at": "2026-11-23T14:30:08Z",
@@ -545,24 +563,6 @@
       "url": "https://www.eurogamer.net/gta-6-jason-steve-mcqueen-army-rangers",
       "source": "Eurogamer",
       "published_at": "2026-11-22T16:11:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "This '90s-inspired horror game has one of the coolest post-apocalyptic worlds I've ever seen",
-      "url": "https://www.pcgamer.com/games/horror/this-90s-inspired-horror-game-has-one-of-the-coolest-post-apocalyptic-worlds-ive-ever-seen/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-22T16:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The GTAs that are still worth playing while you wait for GTA 6 on PC",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/the-gtas-that-are-still-worth-playing-while-you-wait-for-gta-6-on-pc/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-22T15:00:00Z",
       "games": [],
       "kind": "news",
       "highlight": false
