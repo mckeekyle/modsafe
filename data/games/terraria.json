@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T15:20:59Z",
+  "generated_at": "2026-11-24T19:20:55Z",
   "game": {
     "slug": "terraria",
     "name": "Terraria",
@@ -17,12 +17,12 @@
         "https://github.com/tModLoader/tModLoader/releases/tag/v0.11.8.11 ('launch with Terraria 1.4.5.8 installed')",
         "https://api.steamcmd.net/v1/info/105600 (public build 24893155, updated 2026-08-23T18:47:09Z)"
       ],
-      "steam_build": "26896429",
+      "steam_build": "26902183",
       "unannounced_update": {
         "version": null,
         "label": "Unannounced update 2026-11-24",
-        "published_at": "2026-11-24T15:09:46Z",
-        "buildid": "26896429",
+        "published_at": "2026-11-24T19:15:44Z",
+        "buildid": "26902183",
         "source": "Steam public branch (api.steamcmd.net / PICS)"
       }
     }
@@ -41,7 +41,7 @@
       "sensitive": true,
       "status": "Just patched, wait",
       "base_status": "Likely OK",
-      "reason": "Latest release is newer than patch 1.4.5.8, but notes do not explicitly mention that version. Steam's public build changed on 2026-11-24 (build 26896429) with no announcement, and this tool hasn't released since; wait for confirmation.",
+      "reason": "Latest release is newer than patch 1.4.5.8, but notes do not explicitly mention that version. Steam's public build changed on 2026-11-24 (build 26902183) with no announcement, and this tool hasn't released since; wait for confirmation.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v2026.09.3.1",
@@ -67,12 +67,12 @@
         "https://github.com/tModLoader/tModLoader/releases/tag/v0.11.8.11 ('launch with Terraria 1.4.5.8 installed')",
         "https://api.steamcmd.net/v1/info/105600 (public build 24893155, updated 2026-08-23T18:47:09Z)"
       ],
-      "steam_build": "26896429",
+      "steam_build": "26902183",
       "unannounced_update": {
         "version": null,
         "label": "Unannounced update 2026-11-24",
-        "published_at": "2026-11-24T15:09:46Z",
-        "buildid": "26896429",
+        "published_at": "2026-11-24T19:15:44Z",
+        "buildid": "26902183",
         "source": "Steam public branch (api.steamcmd.net / PICS)"
       },
       "frameworks": [
