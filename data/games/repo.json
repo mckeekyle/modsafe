@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-25T09:50:57Z",
+  "generated_at": "2026-11-25T10:50:52Z",
   "game": {
     "slug": "repo",
     "name": "R.E.P.O.",
     "steam_appid": 3241660,
     "latest_patch": {
-      "version": "0.5.3",
-      "label": "v0.5.3",
-      "title": "R.E.P.O. v0.5.3",
-      "published_at": "2026-11-23T09:13:42Z",
-      "published_unix": 1795425222,
-      "url": "https://store.steampowered.com/news/app/3241660/view/1849827110440975",
-      "steam_build": "26813769"
+      "version": "0.5.4",
+      "label": "v0.5.4",
+      "title": "R.E.P.O. v0.5.4",
+      "published_at": "2026-11-25T10:26:33Z",
+      "published_unix": 1795602393,
+      "url": "https://store.steampowered.com/news/app/3241660/view/1850460852980616",
+      "steam_build": "26893562"
     }
   },
   "verdict": "Just patched, wait",
@@ -50,7 +50,7 @@
       "sensitive": true,
       "status": "Just patched, wait",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch v0.5.3; compatibility is unverified \u2014 check the project page.",
+      "reason": "Latest release predates patch v0.5.4; compatibility is unverified \u2014 check the project page.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v4.5.1",
@@ -72,7 +72,7 @@
       "sensitive": true,
       "status": "Just patched, wait",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch v0.5.3; compatibility is unverified \u2014 check the project page.",
+      "reason": "Latest release predates patch v0.5.4; compatibility is unverified \u2014 check the project page.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "1.4.6",
@@ -94,7 +94,7 @@
       "sensitive": true,
       "status": "Just patched, wait",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch v0.5.3; compatibility is unverified \u2014 check the project page.",
+      "reason": "Latest release predates patch v0.5.4; compatibility is unverified \u2014 check the project page.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "1.7.3",
@@ -108,13 +108,79 @@
   ],
   "history": [
     {
+      "version": "0.5.4",
+      "label": "v0.5.4",
+      "title": "R.E.P.O. v0.5.4",
+      "published_at": "2026-11-25T10:26:33Z",
+      "published_unix": 1795602393,
+      "url": "https://store.steampowered.com/news/app/3241660/view/1850460852980616",
+      "steam_build": "26893562",
+      "frameworks": [
+        {
+          "id": "bepinexpack-repo",
+          "short": "BepInEx",
+          "name": "BepInExPack",
+          "status": "Not affected by patches",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2026-03-17T05:05:21Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "repolib",
+          "short": "REPOLib",
+          "name": "REPOLib",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2025-04-01T19:12:51Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "morehead",
+          "short": "MoreHead",
+          "name": "MoreHead",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2026-11-03T05:43:49Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "moreupgrades",
+          "short": "MoreUpgrades",
+          "name": "MoreUpgrades",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2026-05-18T18:34:22Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
       "version": "0.5.3",
       "label": "v0.5.3",
       "title": "R.E.P.O. v0.5.3",
       "published_at": "2026-11-23T09:13:42Z",
       "published_unix": 1795425222,
       "url": "https://store.steampowered.com/news/app/3241660/view/1849827110440975",
-      "steam_build": "26813769",
       "frameworks": [
         {
           "id": "bepinexpack-repo",
@@ -833,75 +899,15 @@
           "first_mention_at": null
         }
       ]
-    },
-    {
-      "version": "0.3.0",
-      "label": "v0.3.0",
-      "title": "R.E.P.O. v0.3.0 - The Monster Update",
-      "published_at": "2025-10-30T13:01:39Z",
-      "published_unix": 1761829299,
-      "url": "https://store.steampowered.com/news/app/3241660/view/1815034432870600",
-      "frameworks": [
-        {
-          "id": "bepinexpack-repo",
-          "short": "BepInEx",
-          "name": "BepInExPack",
-          "status": "Not affected by patches",
-          "release_tag": "5.4.2305",
-          "release_published_at": "2026-03-17T05:05:21Z",
-          "mentions_patch": false,
-          "first_release_tag": "5.4.2305",
-          "first_release_at": "2026-03-17T05:05:21Z",
-          "data_from": "2026-03-17T05:05:21Z",
-          "first_mention_tag": null,
-          "first_mention_at": null
-        },
-        {
-          "id": "repolib",
-          "short": "REPOLib",
-          "name": "REPOLib",
-          "status": "Likely safe",
-          "release_tag": "v4.0.0",
-          "release_published_at": "2026-05-08T00:15:09Z",
-          "mentions_patch": false,
-          "first_release_tag": "v4.0.0",
-          "first_release_at": "2026-05-08T00:15:09Z",
-          "data_from": "2025-04-01T19:12:51Z",
-          "first_mention_tag": null,
-          "first_mention_at": null
-        },
-        {
-          "id": "morehead",
-          "short": "MoreHead",
-          "name": "MoreHead",
-          "status": "Likely safe",
-          "release_tag": "1.4.6",
-          "release_published_at": "2026-11-03T05:43:49Z",
-          "mentions_patch": false,
-          "first_release_tag": "1.4.6",
-          "first_release_at": "2026-11-03T05:43:49Z",
-          "data_from": "2026-11-03T05:43:49Z",
-          "first_mention_tag": null,
-          "first_mention_at": null
-        },
-        {
-          "id": "moreupgrades",
-          "short": "MoreUpgrades",
-          "name": "MoreUpgrades",
-          "status": "Likely safe",
-          "release_tag": "1.7.3",
-          "release_published_at": "2026-05-18T18:34:22Z",
-          "mentions_patch": false,
-          "first_release_tag": "1.7.3",
-          "first_release_at": "2026-05-18T18:34:22Z",
-          "data_from": "2026-05-18T18:34:22Z",
-          "first_mention_tag": null,
-          "first_mention_at": null
-        }
-      ]
     }
   ],
   "news": [
+    {
+      "title": "R.E.P.O. v0.5.4",
+      "url": "https://store.steampowered.com/news/app/3241660/view/1850460852980616",
+      "published_at": "2026-11-25T10:26:33Z",
+      "is_patch": true
+    },
     {
       "title": "R.E.P.O. v0.5.3",
       "url": "https://store.steampowered.com/news/app/3241660/view/1849827110440975",
@@ -954,12 +960,6 @@
       "title": "R.E.P.O. v0.4.1",
       "url": "https://store.steampowered.com/news/app/3241660/view/1832065502817573",
       "published_at": "2026-05-09T14:03:19Z",
-      "is_patch": true
-    },
-    {
-      "title": "R.E.P.O. v0.4.0 - The Cosmetic Update",
-      "url": "https://store.steampowered.com/news/app/3241660/view/1832065502811979",
-      "published_at": "2026-05-07T13:00:55Z",
       "is_patch": true
     }
   ],
@@ -1099,6 +1099,31 @@
       "patch_key": "0.5.3",
       "patch_published_at": "2026-11-23T09:13:42Z",
       "patch_url": "https://store.steampowered.com/news/app/3241660/view/1849827110440975",
+      "verdict": "Just patched, wait",
+      "frameworks": [
+        {
+          "short": "REPOLib",
+          "status": "Just patched, wait",
+          "release_tag": "v4.5.1"
+        },
+        {
+          "short": "MoreHead",
+          "status": "Just patched, wait",
+          "release_tag": "1.4.6"
+        },
+        {
+          "short": "MoreUpgrades",
+          "status": "Just patched, wait",
+          "release_tag": "1.7.3"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-25T10:50:52Z",
+      "patch": "v0.5.4",
+      "patch_key": "0.5.4",
+      "patch_published_at": "2026-11-25T10:26:33Z",
+      "patch_url": "https://store.steampowered.com/news/app/3241660/view/1850460852980616",
       "verdict": "Just patched, wait",
       "frameworks": [
         {
