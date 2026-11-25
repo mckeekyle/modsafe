@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T22:08:41Z",
+  "generated_at": "2026-11-25T07:44:20Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,47 @@
     }
   ],
   "items": [
+    {
+      "title": "SteamOS 3.9.7 Beta",
+      "url": "https://store.steampowered.com/news/app/1675200/view/1850460852979746",
+      "source": "Steam \u00b7 Steam Deck",
+      "published_at": "2026-11-25T04:21:02Z",
+      "games": [
+        "steam-deck"
+      ],
+      "kind": "announcement",
+      "highlight": false
+    },
+    {
+      "title": "Analyst estimates Call of Duty lost 44% of its players when GTA 6 came out, and unlike fans of its live-service competitors they've been slow to come back",
+      "url": "https://www.pcgamer.com/gaming-industry/analyst-says-call-of-duty-lost-an-estimated-44-percent-of-its-players-when-gta-6-came-out-and-unlike-fans-of-its-live-service-competitors-theyve-been-slow-to-come-back/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-25T03:34:01Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The difference between The Witcher 3 and Witcher 4 will be 'comparable' to that of GTA 5 and GTA 6, CD Projekt boss says: 'I mean, it's been 11 years'",
+      "url": "https://www.pcgamer.com/games/the-witcher/the-difference-between-the-witcher-3-and-witcher-4-will-be-comparable-to-that-of-gta-5-and-gta-6-cd-projekt-boss-says-i-mean-its-been-11-years/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-24T23:03:45Z",
+      "games": [
+        "gta-v-legacy",
+        "gta-v-enhanced"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "I'm not smart enough for the blocky, Factorio-esque spaceship and -station building sim Astario, but now that it's out in early access maybe you could be",
+      "url": "https://www.rockpapershotgun.com/im-not-smart-enough-for-the-blocky-factorio-esque-spaceship-and-station-building-sim-astario-but-now-that-its-out-in-early-access-maybe-you-could-be",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-24T22:51:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Nvidia patch finally eradicates the SSD-hammering bug its last hotfix didn't actually fix",
       "url": "https://www.pcgamer.com/hardware/graphics-cards/nvidia-patch-finally-eradicates-the-ssd-hammering-bug-its-last-hotfix-didnt-actually-fix/",
@@ -532,44 +573,6 @@
       "published_at": "2026-11-23T19:54:16Z",
       "games": [],
       "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Activision calls Banjo-Kazooie one of its \"iconic gaming franchises,\" raising hopes for long-awaited new game",
-      "url": "https://www.eurogamer.net/activision-banjo-kazooie-iconic-gaming-franchise",
-      "source": "Eurogamer",
-      "published_at": "2026-11-23T19:22:30Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "28 years later, grizzled XCOM-style WW2 tactics game Soldiers at War gets a fresh tour of duty on modern PCs",
-      "url": "https://www.rockpapershotgun.com/28-years-later-grizzled-xcom-style-ww2-tactics-game-soldiers-at-war-gets-a-fresh-tour-of-duty-on-modern-pcs",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-23T18:10:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "God of War Laufey's Faye actor jumps from games to live-action, as Amazon casts Deborah Ann Woll in upcoming series",
-      "url": "https://www.eurogamer.net/god-of-war-laufey-faye-amazon-series",
-      "source": "Eurogamer",
-      "published_at": "2026-11-23T18:09:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Please Nominate Palworld for the \"Just 5 More Minutes\" Award \u2014 Steam Awards 2026",
-      "url": "https://store.steampowered.com/news/app/1623730/view/1849827110442979",
-      "source": "Steam \u00b7 Palworld",
-      "published_at": "2026-11-23T18:01:33Z",
-      "games": [
-        "palworld"
-      ],
-      "kind": "announcement",
       "highlight": false
     }
   ]
