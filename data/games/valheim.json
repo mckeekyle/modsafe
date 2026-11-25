@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T10:50:59Z",
+  "generated_at": "2026-11-25T13:20:56Z",
   "game": {
     "slug": "valheim",
     "name": "Valheim",
@@ -523,6 +523,12 @@
   ],
   "news": [
     {
+      "title": "Vote For Valheim in the Steam Awards!",
+      "url": "https://store.steampowered.com/news/app/892970/view/1850460852981078",
+      "published_at": "2026-11-25T12:51:30Z",
+      "is_patch": false
+    },
+    {
       "title": "Patch 1.0.30",
       "url": "https://store.steampowered.com/news/app/892970/view/1850460852980500",
       "published_at": "2026-11-25T09:49:30Z",
@@ -575,12 +581,6 @@
       "url": "https://store.steampowered.com/news/app/892970/view/1843481262695240",
       "published_at": "2026-09-11T13:09:02Z",
       "is_patch": true
-    },
-    {
-      "title": "Valheim 1.0 Has Arrived!",
-      "url": "https://store.steampowered.com/news/app/892970/view/1843481262688942",
-      "published_at": "2026-09-09T12:55:35Z",
-      "is_patch": false
     }
   ],
   "channels": [],
