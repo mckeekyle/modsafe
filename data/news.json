@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T07:34:38Z",
+  "generated_at": "2026-11-26T21:11:05Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,356 @@
     }
   ],
   "items": [
+    {
+      "title": "EA removes some live service fluff from Skate and ends seasonal structure \"in favour of regular, agile content updates\"",
+      "url": "https://www.eurogamer.net/ea-removes-live-service-skate-seasons",
+      "source": "Eurogamer",
+      "published_at": "2026-11-26T20:35:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Steam isn't doing 'an official Black Friday fest,' but it does have a page with hundreds of discounts and 'Black Friday' splashed across the top so you might want to check it out anyway",
+      "url": "https://www.pcgamer.com/games/steam-isnt-doing-an-official-black-friday-fest-but-it-does-have-a-page-with-hundreds-of-discounts-and-black-friday-splashed-across-the-top-so-you-might-want-to-check-it-out-anyway/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-26T20:20:02Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The Witcher 3's new patch adds 40 cross-platform mods, fixes plenty of game-breaking bugs and \"various lighting issues\"",
+      "url": "https://www.eurogamer.net/the-witcher-3-patch-40-mods-bugs",
+      "source": "Eurogamer",
+      "published_at": "2026-11-26T19:20:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "HARK THE GHOUL is a Victorian gothic dungeon crawler RPG that features a trench-coat-wearing rat man who wants to sell you rats a la counterfeit watches",
+      "url": "https://www.rockpapershotgun.com/hark-the-ghoul-is-a-victorian-gothic-dungeon-crawler-rpg-that-features-a-trench-coat-wearing-rat-man-who-wants-to-sell-you-rats-a-la-counterfeit-watches",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-26T18:53:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Terraria State of the Game - November 2026",
+      "url": "https://store.steampowered.com/news/app/105600/view/1850460852986815",
+      "source": "Steam \u00b7 Terraria",
+      "published_at": "2026-11-26T18:47:13Z",
+      "games": [
+        "terraria"
+      ],
+      "kind": "announcement",
+      "highlight": false
+    },
+    {
+      "title": "Dev team who delayed their game a year to avoid Silksong says they won't do it again for whatever Team Cherry announces tomorrow: 'This time we're staying put'",
+      "url": "https://www.pcgamer.com/games/action/dev-team-who-delayed-their-game-a-year-to-avoid-silksong-says-they-wont-do-it-again-for-whatever-team-cherry-announces-tomorrow-this-time-were-staying-put/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-26T18:31:22Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Nioh and Ninja Gaiden studio is using AI for QA, but argues \"that a game becomes fun when crafted by human hands\"",
+      "url": "https://www.eurogamer.net/nioh-ai-qa-game-human-hands",
+      "source": "Eurogamer",
+      "published_at": "2026-11-26T18:14:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Palworld \u00d7 Dune: Awakening Steam Bundle Is Out Now!",
+      "url": "https://store.steampowered.com/news/app/1623730/view/1850460852986596",
+      "source": "Steam \u00b7 Palworld",
+      "published_at": "2026-11-26T18:00:37Z",
+      "games": [
+        "palworld"
+      ],
+      "kind": "announcement",
+      "highlight": false
+    },
+    {
+      "title": "Warhammer 40,000: Space Marine 2's latest updates introduces a Weekly Clash mode that shakes up PvP with some constricting modifiers",
+      "url": "https://www.rockpapershotgun.com/warhammer-40000-space-marine-2s-latest-updates-introduces-a-weekly-clash-mode-that-shakes-up-pvp-with-some-constricting-modifiers",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-26T17:58:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Black Friday SSD deals 2026",
+      "url": "https://www.pcgamer.com/black-friday-ssd-deals/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-26T17:33:16Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "GTA 6 causes surge in UK physical game sales, despite there being no disc in the box",
+      "url": "https://www.eurogamer.net/gta-6-boxed-physical-sales-uk",
+      "source": "Eurogamer",
+      "published_at": "2026-11-26T17:30:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "\"Where's the ding?!!\" - I asked the PowerWash Simulator 2 team what they thought of Jason's nozzle work in GTA 6",
+      "url": "https://www.eurogamer.net/gta-6-powerwashing-powerwash-simultor-futurlab",
+      "source": "Eurogamer",
+      "published_at": "2026-11-26T17:07:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The Witcher 3 Remastered's latest patch takes aim at mods nicking all of Geralt's possessions, disappearing buildings and an outbreak of \"overly bright red\" NPC leg areas",
+      "url": "https://www.rockpapershotgun.com/the-witcher-3-remastereds-latest-patch-takes-aim-at-mods-nicking-all-of-geralts-possessions-disappearing-buildings-and-an-outbreak-of-overly-bright-red-npc-leg-areas",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-26T17:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "I would die for this Razer Hello Kitty & Friends wired gaming keyboard, but now I don't have to thanks to this Black Friday deal",
+      "url": "https://www.pcgamer.com/hardware/gaming-keyboards/i-would-die-for-this-razer-hello-kitty-and-friends-wired-gaming-keyboard-but-now-i-dont-have-to-thanks-to-this-black-friday-deal/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-26T16:58:45Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "\"This isn't a sign to retreat\": Rockstar's historic union vote has failed, with 75% voting against, but the organisers are going to \"keep fighting\"",
+      "url": "https://www.rockpapershotgun.com/this-isnt-a-sign-to-retreat-rockstars-historic-union-vote-has-failed-with-75-voting-against-but-the-organisers-are-going-to-keep-fighting",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-26T16:39:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "An apology from RPS",
+      "url": "https://www.rockpapershotgun.com/an-apology-from-rps",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-26T16:38:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Aspects of GTA 6 are inspired by Red Dead Redemption 2's honor system because its player agency 'was a hard thing to ignore and walk away from'",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/aspects-of-gta-6-are-inspired-by-red-dead-redemption-2s-honor-system-because-its-player-agency-was-a-hard-thing-to-ignore-and-walk-away-from/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-26T16:28:37Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Where to find GTA 6's UFO and alien",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto-6/gta-6-alien-ufo-location/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-26T16:28:36Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Rockstar workers vote overwhelmingly against union recognition",
+      "url": "https://www.pcgamer.com/gaming-industry/rockstar-workers-vote-overwhelmingly-against-union-recognition/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-26T16:13:54Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "How to steal the Bravado Banshee in GTA 6",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-bravado-banshee-location/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-26T16:02:38Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "GTA 6 reportedly sets massive livestreaming record, watched more in its first week than Elden Ring, Diablo 4, Valorant, and Lost Ark combined",
+      "url": "https://www.eurogamer.net/grand-theft-auto-6-first-week-hours-watched-record",
+      "source": "Eurogamer",
+      "published_at": "2026-11-26T15:32:20Z",
+      "games": [
+        "elden-ring"
+      ],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Rockstar Games employees vote against union recognition",
+      "url": "https://www.eurogamer.net/rockstar-games-employees-vote-against-union-recognition",
+      "source": "Eurogamer",
+      "published_at": "2026-11-26T15:29:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Ubisoft now require their devs to explain why they aren't using genAI in game pitches, claims report, though the Assassin's Creed publishers deny they're mandating it",
+      "url": "https://www.rockpapershotgun.com/ubisoft-now-require-their-devs-to-explain-why-they-arent-using-genai-in-game-pitches-claims-report-though-the-assassins-creed-publishers-deny-theyre-mandating-it",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-26T14:57:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "GTA 6 Truffade Thrax: How to get Andrew Node's supercharged version",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-truffade-thrax-andrew-node-no-flusher/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-26T14:37:19Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "These budget-friendly pads are the cheapest, quickest way to instantly upgrade your setup for under $25",
+      "url": "https://www.pcgamer.com/hardware/game-pads/these-budget-friendly-pads-are-the-cheapest-quickest-way-to-instantly-upgrade-your-setup-for-under-usd25/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-26T14:20:36Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "We are already in a world where people think about promoting games as human-made, Citizen Sleeper creator says",
+      "url": "https://www.eurogamer.net/citizen-sleeper-creator-gen-ai-human-made-games-signet-city",
+      "source": "Eurogamer",
+      "published_at": "2026-11-26T14:18:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "After playing the game, 30% of polled GTA 6 players want to buy flowers for a loved one, 9% accidentally punched cats",
+      "url": "https://www.eurogamer.net/gta-6-30-percent-buy-flowers-punch-cats",
+      "source": "Eurogamer",
+      "published_at": "2026-11-26T14:09:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Hotfix 1.0.31",
+      "url": "https://store.steampowered.com/news/app/892970/view/1850460852985647",
+      "source": "Steam \u00b7 Valheim",
+      "published_at": "2026-11-26T14:06:26Z",
+      "games": [
+        "valheim"
+      ],
+      "kind": "patch",
+      "highlight": true
+    },
+    {
+      "title": "\"I'm betting on the sickos\" - Signet City plans to 'expand the scope of RPGs' by drawing on the success of Citizen Sleeper",
+      "url": "https://www.eurogamer.net/citizen-sleeper-signet-city-fungalpunk-1980s-rpg",
+      "source": "Eurogamer",
+      "published_at": "2026-11-26T13:54:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Fans report Umamusume: Pretty Derby AI clone brimming with ads, Cygames gets it taken offline",
+      "url": "https://www.eurogamer.net/umamusame-pretty-derby-ai-clone-taken-off-mobile-after-reports",
+      "source": "Eurogamer",
+      "published_at": "2026-11-26T13:15:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Should you participate in GTA 6's Safe Word mission?",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-safe-word-participate-or-not/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-26T13:03:16Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Fed up of Steam's lack of action regarding AI slop? Maybe you should take a look at the 'Games Without AI' event, instead",
+      "url": "https://www.eurogamer.net/games-without-ai-steam-event",
+      "source": "Eurogamer",
+      "published_at": "2026-11-26T12:22:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Ubisoft reportedly goes all in on company-wide generative-AI use, and if developers don't want to use it, they have to explain why in detail",
+      "url": "https://www.eurogamer.net/ubisoft-reportedly-goes-all-in-on-company-wide-generative-ai-use-and-if-developers-dont-want-to-use-it-they-have-to-explain-why-in-detail",
+      "source": "Eurogamer",
+      "published_at": "2026-11-26T12:15:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "\"Clearly not everything has gone well\" during Fable's lengthy creation, says Playground boss, but the \"original vision\" remains intact despite taking cues from other RPGs",
+      "url": "https://www.rockpapershotgun.com/clearly-not-everything-has-gone-well-during-fables-lengthy-creation-says-playground-boss-but-the-original-vision-remains-intact-despite-taking-cues-from-other-rpgs",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-26T12:07:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Forget the turkey, the best thing on your plate this Thanksgiving is this RTX 5070 laptop for just $1,300",
+      "url": "https://www.pcgamer.com/hardware/gaming-laptops/forget-the-turkey-the-best-thing-on-your-plate-this-thanksgiving-is-this-rtx-5070-laptop-for-just-usd1-299/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-26T12:00:26Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "WoW: Forever fixes one of its most annoying endgame quests the literal day after I do it",
+      "url": "https://www.pcgamer.com/games/world-of-warcraft/wow-forever-fixes-one-of-its-most-annoying-endgame-quests-the-literal-day-after-i-do-it/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-26T11:11:17Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Blizzard adjusts popular World of Warcraft: Forever Battleground to stop players power-grinding rewards",
+      "url": "https://www.eurogamer.net/world-of-warcraft-forever-alterac-valley-battleground-patched",
+      "source": "Eurogamer",
+      "published_at": "2026-11-26T10:46:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "GTA 6 reinvigorates PlayStation 5 and Xbox Series S/X console sales in the US, even at their inflated prices",
+      "url": "https://www.eurogamer.net/playstation-5-xbox-series-s-x-console-hardware-sales-gta-6",
+      "source": "Eurogamer",
+      "published_at": "2026-11-26T09:40:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "All Missing Persons locations in GTA 6",
       "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-missing-persons-locations/",
@@ -217,361 +567,6 @@
       "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-pegassi-infernus-location/",
       "source": "PC Gamer",
       "published_at": "2026-11-25T16:10:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "In good news for certain Slay the Spire 2 bosses, Mega Crit's latest beta patch is \"mostly Fool-centric\", with an absolute rain of nerfs",
-      "url": "https://www.rockpapershotgun.com/in-good-news-for-certain-slay-the-spire-2-bosses-mega-crits-latest-beta-patch-is-mostly-fool-centric-with-an-absolute-rain-of-nerfs",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-25T15:45:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Hollow Knight: Silksong devs announce a livestream for Friday, promise updates on the hotly-anticipated Sea of Sorrow DLC",
-      "url": "https://www.eurogamer.net/hollow-knight-silksong-dlc-livestream-sea-of-sorrows-update",
-      "source": "Eurogamer",
-      "published_at": "2026-11-25T15:32:40Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "GTA 6 recompilers and vibe-coders implore AI chatbots to 'work faster' and 'make no mistakes' as they race to get the game running on PC",
-      "url": "https://www.eurogamer.net/grand-theft-auto-6-gen-ai-chatbots-work-faster-prompts",
-      "source": "Eurogamer",
-      "published_at": "2026-11-25T15:19:10Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "EA Sports FC 27 to resurrect John Motson with help from generative AI, because apparently football games need someone yelling about goals from beyond the grave",
-      "url": "https://www.rockpapershotgun.com/ea-sports-fc-27-to-resurrect-john-motson-with-help-from-generative-ai-because-apparently-football-games-need-someone-yelling-about-goals-from-beyond-the-grave",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-25T15:12:40Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Letter from the Editor(s) #21: That game everyone is and isn't playing, and how we report on AI",
-      "url": "https://www.rockpapershotgun.com/letter-from-the-editors-21-that-game-everyone-is-and-isnt-playing-and-how-we-report-on-ai",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-25T14:41:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Tinto Talks #133 - 25th of November 2027",
-      "url": "https://store.steampowered.com/news/app/3450310/view/1850460852981436",
-      "source": "Steam \u00b7 EU5",
-      "published_at": "2026-11-25T14:31:07Z",
-      "games": [
-        "europa-universalis-v"
-      ],
-      "kind": "announcement",
-      "highlight": false
-    },
-    {
-      "title": "How to steal an ATM and get a winched vehicle in GTA 6",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-atm-winched-vehicle/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-25T14:27:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Even Max Verstappen has succumbed to GTA 6 fever, squeezing in 40 hours around his Las Vegas Grand Prix win",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/even-max-verstappen-has-succumbed-to-gta-6-fever-squeezing-in-40-hours-around-his-las-vegas-grand-prix-win/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-25T14:15:51Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "I'm having a much better time in GTA 6 now I've disabled its pesky Criminal Profile pings",
-      "url": "https://www.eurogamer.net/im-having-a-much-better-time-in-gta-6-now-ive-disabled-its-pesky-criminal-profile-pings",
-      "source": "Eurogamer",
-      "published_at": "2026-11-25T14:06:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Any official GTA 6 PC port\u2019s ability to deliver a proper first person mode would be its biggest ace in the hole, so reckon I, a traitor",
-      "url": "https://www.rockpapershotgun.com/official-gta-6-pc-port-proper-first-person-mode-would-be-biggest-ace-in-the-hole",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-25T14:00:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Blizzard is making a lot of the Diablo 4's event-specific Diablo 2 anniversary content permanent because everyone loved it in Season 15",
-      "url": "https://www.eurogamer.net/diablo-4-season-16-keeping-season-15-diablo-2-anniversary",
-      "source": "Eurogamer",
-      "published_at": "2026-11-25T13:51:10Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Tired of GTA 6? Here's 23 lesser-known gems that might beat it at its own game",
-      "url": "https://www.eurogamer.net/gta-6-23-lesser-known-gems-that-might-beat-it-at-its-own-game",
-      "source": "Eurogamer",
-      "published_at": "2026-11-25T13:41:40Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Inside Retro Reset, the \"really inspirational\" father and son project teaching kids about classic games hardware from aboard a converted bus",
-      "url": "https://www.rockpapershotgun.com/inside-retro-reset-the-really-inspirational-father-and-son-project-teaching-kids-about-classic-games-hardware-from-aboard-a-converted-bus",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-25T13:00:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Vote For Valheim in the Steam Awards!",
-      "url": "https://store.steampowered.com/news/app/892970/view/1850460852981078",
-      "source": "Steam \u00b7 Valheim",
-      "published_at": "2026-11-25T12:51:30Z",
-      "games": [
-        "valheim"
-      ],
-      "kind": "announcement",
-      "highlight": false
-    },
-    {
-      "title": "Players discover over 1,500 individual buildings you can enter in GTA 6, nearly 28% of all buildings on the map",
-      "url": "https://www.eurogamer.net/gta-6-over-1500-buildings-you-can-enter",
-      "source": "Eurogamer",
-      "published_at": "2026-11-25T12:42:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Capcom dinosaur shooter Exoprimal's servers will go extinct next year, as shutdown meteor looms",
-      "url": "https://www.rockpapershotgun.com/capcom-dinosaur-shooter-exoprimals-servers-will-go-extinct-next-year-as-shutdown-meteor-looms",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-25T12:30:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "\"More than just war and peace\": Total War: Medieval 3's diplomacy system will build on Three Kingdoms' backstabbing, with rulers who aren't just focused on you",
-      "url": "https://www.rockpapershotgun.com/more-than-just-war-and-peace-total-war-medieval-3s-diplomacy-system-will-build-on-three-kingdoms-backstabbing-with-rulers-who-arent-just-focused-on-you",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-25T12:08:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "CD Projekt Red signs new marketing partnership deal with Sony for The Witcher 4, and to increase \"the presence\" of its games on PlayStation",
-      "url": "https://www.eurogamer.net/cd-projekt-red-signs-new-marketing-partnership-deal-with-sony-for-the-witcher-4-and-to-increase-the-presence-of-its-games-on-playstation",
-      "source": "Eurogamer",
-      "published_at": "2026-11-25T12:04:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "GTA 6's best lore drops happen when you're chilling with your partner, so stop leaving them at home all the time",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6s-best-lore-drops-happen-when-youre-chilling-with-your-partner-so-stop-leaving-them-at-home-all-the-time/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-25T11:14:42Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Delivering \"a more modern Garry's Mod\" is the goal of spiritual successor S&box's revamped sandbox mode, as classic GMod's workshop addon system returns",
-      "url": "https://www.rockpapershotgun.com/delivering-a-more-modern-garrys-mod-is-the-goal-of-spiritual-successor-sboxs-revamped-sandbox-mode-as-classic-gmods-workshop-addon-system-returns",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-25T11:10:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "AI-generated GTA 6 PC ports get nuked in alleged Rockstar takedown spree, as former Bungie dev hails \"most ridiculous dumpster fire ever\"",
-      "url": "https://www.rockpapershotgun.com/ai-generated-gta-6-pc-ports-get-nuked-in-alleged-rockstar-takedown-spree-as-former-bungie-dev-hails-most-ridiculous-dumpster-fire-ever",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-25T10:38:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "R.E.P.O. v0.5.4",
-      "url": "https://store.steampowered.com/news/app/3241660/view/1850460852980616",
-      "source": "Steam \u00b7 R.E.P.O.",
-      "published_at": "2026-11-25T10:26:33Z",
-      "games": [
-        "repo"
-      ],
-      "kind": "patch",
-      "highlight": true
-    },
-    {
-      "title": "Promising action-RPG, Showa American Story, has been delayed into late 2027 in order to feel \"cohesive, responsive and complete\" at launch",
-      "url": "https://www.eurogamer.net/showa-american-story-delay-2027",
-      "source": "Eurogamer",
-      "published_at": "2026-11-25T10:11:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Patch 1.0.30",
-      "url": "https://store.steampowered.com/news/app/892970/view/1850460852980500",
-      "source": "Steam \u00b7 Valheim",
-      "published_at": "2026-11-25T09:49:30Z",
-      "games": [
-        "valheim"
-      ],
-      "kind": "patch",
-      "highlight": true
-    },
-    {
-      "title": "Capcom's sci-fi dinosaur shooter Exoprimal is shutting down next year",
-      "url": "https://www.eurogamer.net/exo-primal-shutting-down-2027",
-      "source": "Eurogamer",
-      "published_at": "2026-11-25T09:44:40Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Performance analysis reveals GTA 6 has a more stable frame-rate on Xbox Series X compared to PlayStation 5",
-      "url": "https://www.eurogamer.net/grand-theft-auto-6-frame-rate-xbox-series-x-ps5",
-      "source": "Eurogamer",
-      "published_at": "2026-11-25T09:15:10Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "SteamOS 3.9.7 Beta",
-      "url": "https://store.steampowered.com/news/app/1675200/view/1850460852979746",
-      "source": "Steam \u00b7 Steam Deck",
-      "published_at": "2026-11-25T04:21:02Z",
-      "games": [
-        "steam-deck"
-      ],
-      "kind": "announcement",
-      "highlight": false
-    },
-    {
-      "title": "Analyst estimates Call of Duty lost 44% of its players when GTA 6 came out, and unlike fans of its live-service competitors they've been slow to come back",
-      "url": "https://www.pcgamer.com/gaming-industry/analyst-says-call-of-duty-lost-an-estimated-44-percent-of-its-players-when-gta-6-came-out-and-unlike-fans-of-its-live-service-competitors-theyve-been-slow-to-come-back/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-25T03:34:01Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The difference between The Witcher 3 and Witcher 4 will be 'comparable' to that of GTA 5 and GTA 6, CD Projekt boss says: 'I mean, it's been 11 years'",
-      "url": "https://www.pcgamer.com/games/the-witcher/the-difference-between-the-witcher-3-and-witcher-4-will-be-comparable-to-that-of-gta-5-and-gta-6-cd-projekt-boss-says-i-mean-its-been-11-years/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-24T23:03:45Z",
-      "games": [
-        "gta-v-legacy",
-        "gta-v-enhanced"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "I'm not smart enough for the blocky, Factorio-esque spaceship and -station building sim Astario, but now that it's out in early access maybe you could be",
-      "url": "https://www.rockpapershotgun.com/im-not-smart-enough-for-the-blocky-factorio-esque-spaceship-and-station-building-sim-astario-but-now-that-its-out-in-early-access-maybe-you-could-be",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-24T22:51:40Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Nvidia patch finally eradicates the SSD-hammering bug its last hotfix didn't actually fix",
-      "url": "https://www.pcgamer.com/hardware/graphics-cards/nvidia-patch-finally-eradicates-the-ssd-hammering-bug-its-last-hotfix-didnt-actually-fix/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-24T22:04:28Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The race to port GTA 6 to PC, explained",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-recomp-explained/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-24T21:47:58Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Fan-favorite Diablo 2 anniversary bosses and items won't disappear when Diablo 4's next season starts",
-      "url": "https://www.pcgamer.com/games/rpg/fan-favorite-diablo-2-anniversary-bosses-and-items-wont-disappear-when-diablo-4s-next-season-starts/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-24T21:39:22Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Bitmap Brothers' iconic, robotic RTS game Z is unofficially back thanks to an open source, 3D remake",
-      "url": "https://www.rockpapershotgun.com/bitmap-brothers-iconic-robotic-rts-game-z-is-unofficially-back-thanks-to-an-open-source-3d-remake",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-24T21:34:40Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Marathon's new runner shell is a jet-propelled robot samurai who wants to hurt you",
-      "url": "https://www.pcgamer.com/games/fps/marathons-new-runner-shell-is-a-jet-propelled-robot-samurai-who-wants-to-hurt-you/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-24T21:26:03Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "An Among Us player and his mom helped rescue a kidnapped girl who'd been missing for more than a year",
-      "url": "https://www.pcgamer.com/games/an-among-us-player-and-his-mom-helped-rescue-a-kidnapped-girl-whod-been-missing-for-more-than-a-year/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-24T21:00:51Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Lords of the Fallen 2 delayed to April 2027, exact release date coming next month",
-      "url": "https://www.eurogamer.net/lords-of-the-fallen-2-delayed-april-2027",
-      "source": "Eurogamer",
-      "published_at": "2026-11-24T20:30:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Best unique weapons to grab early in GTA 6: Get yourself some silenced weapons without the price tag",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-unique-weapons/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-24T20:16:19Z",
       "games": [],
       "kind": "news",
       "highlight": false

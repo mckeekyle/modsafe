@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T20:21:16Z",
+  "generated_at": "2026-11-26T21:09:37Z",
   "game": {
     "slug": "valheim",
     "name": "Valheim",
@@ -48,17 +48,17 @@
       "repo": "Valheim-Modding/Jotunn",
       "tracked": true,
       "sensitive": true,
-      "status": "Just patched, wait",
-      "base_status": "Unknown / check",
-      "reason": "Latest release predates patch 1.0.31; compatibility is unverified \u2014 check the project page.",
+      "status": "Likely safe",
+      "base_status": "Likely OK",
+      "reason": "Latest release is newer than patch 1.0.31, but notes do not explicitly mention that version.",
       "breakage_reports": [],
       "official": null,
-      "release_tag": "v2.30.2",
-      "release_name": "v2.30.2",
-      "release_published_at": "2026-09-21T17:13:29Z",
-      "release_url": "https://github.com/Valheim-Modding/Jotunn/releases/tag/v2.30.2",
+      "release_tag": "v2.30.3",
+      "release_name": "v2.30.3",
+      "release_published_at": "2026-11-26T20:51:58Z",
+      "release_url": "https://github.com/Valheim-Modding/Jotunn/releases/tag/v2.30.3",
       "mentions_patch": false,
-      "newer_than_patch": false,
+      "newer_than_patch": true,
       "mention_releases": []
     }
   ],
@@ -90,13 +90,13 @@
           "id": "jotunn",
           "short": "J\u00f6tunn",
           "name": "J\u00f6tunn (mod library)",
-          "status": "No post-patch release",
-          "release_tag": null,
-          "release_published_at": null,
+          "status": "Likely safe",
+          "release_tag": "v2.30.3",
+          "release_published_at": "2026-11-26T20:51:58Z",
           "mentions_patch": false,
-          "first_release_tag": null,
-          "first_release_at": null,
-          "data_from": "2024-04-24T14:41:32Z",
+          "first_release_tag": "v2.30.3",
+          "first_release_at": "2026-11-26T20:51:58Z",
+          "data_from": "2024-05-05T15:21:46Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -128,15 +128,15 @@
           "id": "jotunn",
           "short": "J\u00f6tunn",
           "name": "J\u00f6tunn (mod library)",
-          "status": "No post-patch release",
-          "release_tag": null,
-          "release_published_at": null,
-          "mentions_patch": false,
-          "first_release_tag": null,
-          "first_release_at": null,
-          "data_from": "2024-04-24T14:41:32Z",
-          "first_mention_tag": null,
-          "first_mention_at": null
+          "status": "Safe",
+          "release_tag": "v2.30.3",
+          "release_published_at": "2026-11-26T20:51:58Z",
+          "mentions_patch": true,
+          "first_release_tag": "v2.30.3",
+          "first_release_at": "2026-11-26T20:51:58Z",
+          "data_from": "2024-05-05T15:21:46Z",
+          "first_mention_tag": "v2.30.3",
+          "first_mention_at": "2026-11-26T20:51:58Z"
         }
       ]
     },
@@ -166,13 +166,13 @@
           "id": "jotunn",
           "short": "J\u00f6tunn",
           "name": "J\u00f6tunn (mod library)",
-          "status": "No post-patch release",
-          "release_tag": null,
-          "release_published_at": null,
+          "status": "Likely safe",
+          "release_tag": "v2.30.3",
+          "release_published_at": "2026-11-26T20:51:58Z",
           "mentions_patch": false,
-          "first_release_tag": null,
-          "first_release_at": null,
-          "data_from": "2024-04-24T14:41:32Z",
+          "first_release_tag": "v2.30.3",
+          "first_release_at": "2026-11-26T20:51:58Z",
+          "data_from": "2024-05-05T15:21:46Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -204,13 +204,13 @@
           "id": "jotunn",
           "short": "J\u00f6tunn",
           "name": "J\u00f6tunn (mod library)",
-          "status": "No post-patch release",
-          "release_tag": null,
-          "release_published_at": null,
+          "status": "Likely safe",
+          "release_tag": "v2.30.3",
+          "release_published_at": "2026-11-26T20:51:58Z",
           "mentions_patch": false,
-          "first_release_tag": null,
-          "first_release_at": null,
-          "data_from": "2024-04-24T14:41:32Z",
+          "first_release_tag": "v2.30.3",
+          "first_release_at": "2026-11-26T20:51:58Z",
+          "data_from": "2024-05-05T15:21:46Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -242,13 +242,13 @@
           "id": "jotunn",
           "short": "J\u00f6tunn",
           "name": "J\u00f6tunn (mod library)",
-          "status": "No post-patch release",
-          "release_tag": null,
-          "release_published_at": null,
+          "status": "Likely safe",
+          "release_tag": "v2.30.3",
+          "release_published_at": "2026-11-26T20:51:58Z",
           "mentions_patch": false,
-          "first_release_tag": null,
-          "first_release_at": null,
-          "data_from": "2024-04-24T14:41:32Z",
+          "first_release_tag": "v2.30.3",
+          "first_release_at": "2026-11-26T20:51:58Z",
+          "data_from": "2024-05-05T15:21:46Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -280,13 +280,13 @@
           "id": "jotunn",
           "short": "J\u00f6tunn",
           "name": "J\u00f6tunn (mod library)",
-          "status": "No post-patch release",
-          "release_tag": null,
-          "release_published_at": null,
+          "status": "Likely safe",
+          "release_tag": "v2.30.3",
+          "release_published_at": "2026-11-26T20:51:58Z",
           "mentions_patch": false,
-          "first_release_tag": null,
-          "first_release_at": null,
-          "data_from": "2024-04-24T14:41:32Z",
+          "first_release_tag": "v2.30.3",
+          "first_release_at": "2026-11-26T20:51:58Z",
+          "data_from": "2024-05-05T15:21:46Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -324,7 +324,7 @@
           "mentions_patch": false,
           "first_release_tag": "v2.30.2",
           "first_release_at": "2026-09-21T17:13:29Z",
-          "data_from": "2024-04-24T14:41:32Z",
+          "data_from": "2024-05-05T15:21:46Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -362,7 +362,7 @@
           "mentions_patch": false,
           "first_release_tag": "v2.30.1",
           "first_release_at": "2026-09-17T21:24:00Z",
-          "data_from": "2024-04-24T14:41:32Z",
+          "data_from": "2024-05-05T15:21:46Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -400,7 +400,7 @@
           "mentions_patch": false,
           "first_release_tag": "v2.30.1",
           "first_release_at": "2026-09-17T21:24:00Z",
-          "data_from": "2024-04-24T14:41:32Z",
+          "data_from": "2024-05-05T15:21:46Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -438,7 +438,7 @@
           "mentions_patch": false,
           "first_release_tag": "v2.28.0",
           "first_release_at": "2026-03-06T18:54:13Z",
-          "data_from": "2024-04-24T14:41:32Z",
+          "data_from": "2024-05-05T15:21:46Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -476,7 +476,7 @@
           "mentions_patch": false,
           "first_release_tag": "v2.28.0",
           "first_release_at": "2026-03-06T18:54:13Z",
-          "data_from": "2024-04-24T14:41:32Z",
+          "data_from": "2024-05-05T15:21:46Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -514,7 +514,7 @@
           "mentions_patch": false,
           "first_release_tag": "v2.27.0",
           "first_release_at": "2025-10-07T19:35:26Z",
-          "data_from": "2024-04-24T14:41:32Z",
+          "data_from": "2024-05-05T15:21:46Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -705,6 +705,26 @@
           "short": "J\u00f6tunn",
           "status": "Just patched, wait",
           "release_tag": "v2.30.2"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-26T21:09:37Z",
+      "patch": "1.0.31",
+      "patch_key": "1.0.31",
+      "patch_published_at": "2026-11-26T14:06:26Z",
+      "patch_url": "https://store.steampowered.com/news/app/892970/view/1850460852985647",
+      "verdict": "Just patched, wait",
+      "frameworks": [
+        {
+          "short": "BepInEx",
+          "status": "Just patched, wait",
+          "release_tag": "5.4.2360"
+        },
+        {
+          "short": "J\u00f6tunn",
+          "status": "Likely safe",
+          "release_tag": "v2.30.3"
         }
       ]
     }

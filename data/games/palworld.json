@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T07:34:03Z",
+  "generated_at": "2026-11-26T21:10:31Z",
   "game": {
     "slug": "palworld",
     "name": "Palworld",
@@ -523,6 +523,12 @@
   ],
   "news": [
     {
+      "title": "Palworld \u00d7 Dune: Awakening Steam Bundle Is Out Now!",
+      "url": "https://store.steampowered.com/news/app/1623730/view/1850460852986596",
+      "published_at": "2026-11-26T18:00:37Z",
+      "is_patch": false
+    },
+    {
       "title": "Please Nominate Palworld for the \"Just 5 More Minutes\" Award \u2014 Steam Awards 2026",
       "url": "https://store.steampowered.com/news/app/1623730/view/1849827110442979",
       "published_at": "2026-11-23T18:01:33Z",
@@ -575,12 +581,6 @@
       "url": "https://store.steampowered.com/news/app/1623730/view/1839676055885050",
       "published_at": "2026-07-30T12:16:34Z",
       "is_patch": true
-    },
-    {
-      "title": "Mod Support Improvement",
-      "url": "https://store.steampowered.com/news/app/1623730/view/1839676055884093",
-      "published_at": "2026-07-30T03:05:21Z",
-      "is_patch": false
     }
   ],
   "channels": [],
