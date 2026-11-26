@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T14:30:56Z",
+  "generated_at": "2026-11-26T20:21:23Z",
   "game": {
     "slug": "terraria",
     "name": "Terraria",
@@ -143,6 +143,12 @@
   ],
   "news": [
     {
+      "title": "Terraria State of the Game - November 2026",
+      "url": "https://store.steampowered.com/news/app/105600/view/1850460852986815",
+      "published_at": "2026-11-26T18:47:13Z",
+      "is_patch": false
+    },
+    {
       "title": "Terraria 1.4.6: Crossplay Phase One Launches Today!",
       "url": "https://store.steampowered.com/news/app/105600/view/1849827110446549",
       "published_at": "2026-11-24T15:14:44Z",
@@ -194,12 +200,6 @@
       "title": "Terraria 15th Anniversary Collector's Edition - Preorders are now open!",
       "url": "https://store.steampowered.com/news/app/105600/view/1835236783558078",
       "published_at": "2026-06-10T16:13:50Z",
-      "is_patch": false
-    },
-    {
-      "title": "Terraria State of the Game - May 2026",
-      "url": "https://store.steampowered.com/news/app/105600/view/1833968530889388",
-      "published_at": "2026-05-28T20:36:37Z",
       "is_patch": false
     }
   ],

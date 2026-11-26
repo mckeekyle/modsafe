@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T07:31:58Z",
+  "generated_at": "2026-11-26T20:20:53Z",
   "game": {
     "slug": "cyberpunk-2077",
     "name": "Cyberpunk 2077",
@@ -101,10 +101,10 @@
       "reason": "Latest release is on/after patch Patch 2.5; an earlier post-patch release (v1.28.0) explicitly mentioned that version.",
       "breakage_reports": [],
       "official": null,
-      "release_tag": "v1.28.12",
-      "release_name": "ArchiveXL 1.28.12",
-      "release_published_at": "2026-11-25T18:52:08Z",
-      "release_url": "https://github.com/psiberx/cp2077-archive-xl/releases/tag/v1.28.12",
+      "release_tag": "v1.28.13",
+      "release_name": "ArchiveXL 1.28.13",
+      "release_published_at": "2026-11-25T20:44:30Z",
+      "release_url": "https://github.com/psiberx/cp2077-archive-xl/releases/tag/v1.28.13",
       "mentions_patch": true,
       "newer_than_patch": true,
       "mention_releases": [
@@ -149,10 +149,10 @@
       "reason": "Latest release is on/after patch Patch 2.5; an earlier post-patch release (v1.21.0) explicitly mentioned that version.",
       "breakage_reports": [],
       "official": null,
-      "release_tag": "v1.21.4",
-      "release_name": "Codeware 1.21.4",
-      "release_published_at": "2026-11-13T08:58:11Z",
-      "release_url": "https://github.com/psiberx/cp2077-codeware/releases/tag/v1.21.4",
+      "release_tag": "v1.21.5",
+      "release_name": "Codeware 1.21.5",
+      "release_published_at": "2026-11-26T20:19:53Z",
+      "release_url": "https://github.com/psiberx/cp2077-codeware/releases/tag/v1.21.5",
       "mentions_patch": true,
       "newer_than_patch": true,
       "mention_releases": [
@@ -250,7 +250,7 @@
           "mentions_patch": true,
           "first_release_tag": "v1.21.0",
           "first_release_at": "2026-10-25T08:07:31Z",
-          "data_from": "2024-09-10T14:49:16Z",
+          "data_from": "2024-09-15T11:47:25Z",
           "first_mention_tag": "v1.21.0",
           "first_mention_at": "2026-10-25T08:07:31Z"
         }
@@ -344,7 +344,7 @@
           "mentions_patch": true,
           "first_release_tag": "v1.18.0",
           "first_release_at": "2025-09-11T18:37:56Z",
-          "data_from": "2024-09-10T14:49:16Z",
+          "data_from": "2024-09-15T11:47:25Z",
           "first_mention_tag": "v1.18.0",
           "first_mention_at": "2025-09-11T18:37:56Z"
         }
@@ -438,7 +438,7 @@
           "mentions_patch": true,
           "first_release_tag": "v1.17.0",
           "first_release_at": "2025-07-17T21:23:37Z",
-          "data_from": "2024-09-10T14:49:16Z",
+          "data_from": "2024-09-15T11:47:25Z",
           "first_mention_tag": "v1.17.0",
           "first_mention_at": "2025-07-17T21:23:37Z"
         }
@@ -532,7 +532,7 @@
           "mentions_patch": true,
           "first_release_tag": "v1.15.0",
           "first_release_at": "2025-01-23T17:02:14Z",
-          "data_from": "2024-09-10T14:49:16Z",
+          "data_from": "2024-09-15T11:47:25Z",
           "first_mention_tag": "v1.15.0",
           "first_mention_at": "2025-01-23T17:02:14Z"
         }
@@ -626,7 +626,7 @@
           "mentions_patch": true,
           "first_release_tag": "v1.14.0",
           "first_release_at": "2025-01-04T23:15:01Z",
-          "data_from": "2024-09-10T14:49:16Z",
+          "data_from": "2024-09-15T11:47:25Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -714,15 +714,15 @@
           "id": "codeware",
           "short": "Codeware",
           "name": "Codeware",
-          "status": "Safe",
-          "release_tag": "v1.12.7",
-          "release_published_at": "2024-09-10T14:49:16Z",
-          "mentions_patch": true,
+          "status": "Likely safe",
+          "release_tag": "v1.12.8",
+          "release_published_at": "2024-09-15T11:47:25Z",
+          "mentions_patch": false,
           "first_release_tag": "v1.12.8",
           "first_release_at": "2024-09-15T11:47:25Z",
-          "data_from": "2024-09-10T14:49:16Z",
-          "first_mention_tag": "v1.12.7",
-          "first_mention_at": "2024-09-10T14:49:16Z"
+          "data_from": "2024-09-15T11:47:25Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
         }
       ]
     },
@@ -809,12 +809,12 @@
           "short": "Codeware",
           "name": "Codeware",
           "status": "Likely safe",
-          "release_tag": "v1.12.7",
-          "release_published_at": "2024-09-10T14:49:16Z",
+          "release_tag": "v1.12.8",
+          "release_published_at": "2024-09-15T11:47:25Z",
           "mentions_patch": false,
-          "first_release_tag": "v1.12.7",
-          "first_release_at": "2024-09-10T14:49:16Z",
-          "data_from": "2024-09-10T14:49:16Z",
+          "first_release_tag": "v1.12.8",
+          "first_release_at": "2024-09-15T11:47:25Z",
+          "data_from": "2024-09-15T11:47:25Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -903,12 +903,12 @@
           "short": "Codeware",
           "name": "Codeware",
           "status": "Likely safe",
-          "release_tag": "v1.12.7",
-          "release_published_at": "2024-09-10T14:49:16Z",
+          "release_tag": "v1.12.8",
+          "release_published_at": "2024-09-15T11:47:25Z",
           "mentions_patch": false,
-          "first_release_tag": "v1.12.7",
-          "first_release_at": "2024-09-10T14:49:16Z",
-          "data_from": "2024-09-10T14:49:16Z",
+          "first_release_tag": "v1.12.8",
+          "first_release_at": "2024-09-15T11:47:25Z",
+          "data_from": "2024-09-15T11:47:25Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -997,12 +997,12 @@
           "short": "Codeware",
           "name": "Codeware",
           "status": "Likely safe",
-          "release_tag": "v1.12.7",
-          "release_published_at": "2024-09-10T14:49:16Z",
+          "release_tag": "v1.12.8",
+          "release_published_at": "2024-09-15T11:47:25Z",
           "mentions_patch": false,
-          "first_release_tag": "v1.12.7",
-          "first_release_at": "2024-09-10T14:49:16Z",
-          "data_from": "2024-09-10T14:49:16Z",
+          "first_release_tag": "v1.12.8",
+          "first_release_at": "2024-09-15T11:47:25Z",
+          "data_from": "2024-09-15T11:47:25Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -1091,12 +1091,12 @@
           "short": "Codeware",
           "name": "Codeware",
           "status": "Likely safe",
-          "release_tag": "v1.12.7",
-          "release_published_at": "2024-09-10T14:49:16Z",
+          "release_tag": "v1.12.8",
+          "release_published_at": "2024-09-15T11:47:25Z",
           "mentions_patch": false,
-          "first_release_tag": "v1.12.7",
-          "first_release_at": "2024-09-10T14:49:16Z",
-          "data_from": "2024-09-10T14:49:16Z",
+          "first_release_tag": "v1.12.8",
+          "first_release_at": "2024-09-15T11:47:25Z",
+          "data_from": "2024-09-15T11:47:25Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -1185,12 +1185,12 @@
           "short": "Codeware",
           "name": "Codeware",
           "status": "Likely safe",
-          "release_tag": "v1.12.7",
-          "release_published_at": "2024-09-10T14:49:16Z",
+          "release_tag": "v1.12.8",
+          "release_published_at": "2024-09-15T11:47:25Z",
           "mentions_patch": false,
-          "first_release_tag": "v1.12.7",
-          "first_release_at": "2024-09-10T14:49:16Z",
-          "data_from": "2024-09-10T14:49:16Z",
+          "first_release_tag": "v1.12.8",
+          "first_release_at": "2024-09-15T11:47:25Z",
+          "data_from": "2024-09-15T11:47:25Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -1279,12 +1279,12 @@
           "short": "Codeware",
           "name": "Codeware",
           "status": "Likely safe",
-          "release_tag": "v1.12.7",
-          "release_published_at": "2024-09-10T14:49:16Z",
+          "release_tag": "v1.12.8",
+          "release_published_at": "2024-09-15T11:47:25Z",
           "mentions_patch": false,
-          "first_release_tag": "v1.12.7",
-          "first_release_at": "2024-09-10T14:49:16Z",
-          "data_from": "2024-09-10T14:49:16Z",
+          "first_release_tag": "v1.12.8",
+          "first_release_at": "2024-09-15T11:47:25Z",
+          "data_from": "2024-09-15T11:47:25Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
