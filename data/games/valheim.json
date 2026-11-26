@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-26T07:33:08Z",
+  "generated_at": "2026-11-26T14:21:05Z",
   "game": {
     "slug": "valheim",
     "name": "Valheim",
     "steam_appid": 892970,
     "latest_patch": {
-      "version": "1.0.30",
-      "label": "1.0.30",
-      "title": "Patch 1.0.30",
-      "published_at": "2026-11-25T09:49:30Z",
-      "published_unix": 1795600170,
-      "url": "https://store.steampowered.com/news/app/892970/view/1850460852980500",
-      "steam_build": "26870846"
+      "version": "1.0.31",
+      "label": "1.0.31",
+      "title": "Hotfix 1.0.31",
+      "published_at": "2026-11-26T14:06:26Z",
+      "published_unix": 1795701986,
+      "url": "https://store.steampowered.com/news/app/892970/view/1850460852985647",
+      "steam_build": "26948984"
     }
   },
   "verdict": "Just patched, wait",
@@ -28,7 +28,7 @@
       "sensitive": true,
       "status": "Just patched, wait",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch 1.0.30; compatibility is unverified \u2014 check the project page.",
+      "reason": "Latest release predates patch 1.0.31; compatibility is unverified \u2014 check the project page.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "5.4.2360",
@@ -50,7 +50,7 @@
       "sensitive": true,
       "status": "Just patched, wait",
       "base_status": "Unknown / check",
-      "reason": "Latest release predates patch 1.0.30; compatibility is unverified \u2014 check the project page.",
+      "reason": "Latest release predates patch 1.0.31; compatibility is unverified \u2014 check the project page.",
       "breakage_reports": [],
       "official": null,
       "release_tag": "v2.30.2",
@@ -64,13 +64,51 @@
   ],
   "history": [
     {
+      "version": "1.0.31",
+      "label": "1.0.31",
+      "title": "Hotfix 1.0.31",
+      "published_at": "2026-11-26T14:06:26Z",
+      "published_unix": 1795701986,
+      "url": "https://store.steampowered.com/news/app/892970/view/1850460852985647",
+      "steam_build": "26948984",
+      "frameworks": [
+        {
+          "id": "bepinexpack-valheim",
+          "short": "BepInEx",
+          "name": "BepInExPack Valheim",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2026-10-28T15:59:55Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        },
+        {
+          "id": "jotunn",
+          "short": "J\u00f6tunn",
+          "name": "J\u00f6tunn (mod library)",
+          "status": "No post-patch release",
+          "release_tag": null,
+          "release_published_at": null,
+          "mentions_patch": false,
+          "first_release_tag": null,
+          "first_release_at": null,
+          "data_from": "2024-04-24T14:41:32Z",
+          "first_mention_tag": null,
+          "first_mention_at": null
+        }
+      ]
+    },
+    {
       "version": "1.0.30",
       "label": "1.0.30",
       "title": "Patch 1.0.30",
       "published_at": "2026-11-25T09:49:30Z",
       "published_unix": 1795600170,
       "url": "https://store.steampowered.com/news/app/892970/view/1850460852980500",
-      "steam_build": "26870846",
       "frameworks": [
         {
           "id": "bepinexpack-valheim",
@@ -481,47 +519,15 @@
           "first_mention_at": null
         }
       ]
-    },
-    {
-      "version": "0.220.5",
-      "label": "0.220.5",
-      "title": "Patch 0.220.5",
-      "published_at": "2025-04-01T07:06:14Z",
-      "published_unix": 1743491174,
-      "url": "https://store.steampowered.com/news/app/892970/view/1795283637972351",
-      "frameworks": [
-        {
-          "id": "bepinexpack-valheim",
-          "short": "BepInEx",
-          "name": "BepInExPack Valheim",
-          "status": "Likely safe",
-          "release_tag": "5.4.2360",
-          "release_published_at": "2026-10-28T15:59:55Z",
-          "mentions_patch": false,
-          "first_release_tag": "5.4.2360",
-          "first_release_at": "2026-10-28T15:59:55Z",
-          "data_from": "2026-10-28T15:59:55Z",
-          "first_mention_tag": null,
-          "first_mention_at": null
-        },
-        {
-          "id": "jotunn",
-          "short": "J\u00f6tunn",
-          "name": "J\u00f6tunn (mod library)",
-          "status": "Likely safe",
-          "release_tag": "v2.25.0",
-          "release_published_at": "2025-05-18T20:36:07Z",
-          "mentions_patch": false,
-          "first_release_tag": "v2.25.0",
-          "first_release_at": "2025-05-18T20:36:07Z",
-          "data_from": "2024-04-24T14:41:32Z",
-          "first_mention_tag": null,
-          "first_mention_at": null
-        }
-      ]
     }
   ],
   "news": [
+    {
+      "title": "Hotfix 1.0.31",
+      "url": "https://store.steampowered.com/news/app/892970/view/1850460852985647",
+      "published_at": "2026-11-26T14:06:26Z",
+      "is_patch": true
+    },
     {
       "title": "Vote For Valheim in the Steam Awards!",
       "url": "https://store.steampowered.com/news/app/892970/view/1850460852981078",
@@ -574,12 +580,6 @@
       "title": "Patch 1.0.14",
       "url": "https://store.steampowered.com/news/app/892970/view/1844115010491701",
       "published_at": "2026-09-17T11:12:10Z",
-      "is_patch": true
-    },
-    {
-      "title": "Hotfix 1.0.10 & 1.0.12",
-      "url": "https://store.steampowered.com/news/app/892970/view/1843481262695240",
-      "published_at": "2026-09-11T13:09:02Z",
       "is_patch": true
     }
   ],
@@ -674,6 +674,26 @@
       "patch_key": "1.0.30",
       "patch_published_at": "2026-11-25T09:49:30Z",
       "patch_url": "https://store.steampowered.com/news/app/892970/view/1850460852980500",
+      "verdict": "Just patched, wait",
+      "frameworks": [
+        {
+          "short": "BepInEx",
+          "status": "Just patched, wait",
+          "release_tag": "5.4.2360"
+        },
+        {
+          "short": "J\u00f6tunn",
+          "status": "Just patched, wait",
+          "release_tag": "v2.30.2"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-26T14:21:05Z",
+      "patch": "1.0.31",
+      "patch_key": "1.0.31",
+      "patch_published_at": "2026-11-26T14:06:26Z",
+      "patch_url": "https://store.steampowered.com/news/app/892970/view/1850460852985647",
       "verdict": "Just patched, wait",
       "frameworks": [
         {
