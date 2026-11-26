@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T06:21:04Z",
+  "generated_at": "2026-11-26T07:34:23Z",
   "game": {
     "slug": "europa-universalis-v",
     "name": "Europa Universalis V",
@@ -63,7 +63,7 @@
         "1.4"
       ],
       "tagged_for_series": true,
-      "subscriptions": 51412,
+      "subscriptions": 51416,
       "mentions_patch": false,
       "newer_than_patch": false,
       "hand_check": {
@@ -134,7 +134,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 59975,
+      "subscriptions": 59980,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -220,7 +220,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 23504,
+      "subscriptions": 23506,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -247,7 +247,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 18638,
+      "subscriptions": 18639,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -278,7 +278,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 11572,
+      "subscriptions": 11573,
       "mentions_patch": false,
       "newer_than_patch": true
     },
@@ -347,7 +347,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 6877,
+      "subscriptions": 6876,
       "mentions_patch": false,
       "newer_than_patch": false
     }
