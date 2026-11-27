@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T18:07:10Z",
+  "generated_at": "2026-11-27T20:55:24Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,69 @@
     }
   ],
   "items": [
+    {
+      "title": "Marvel's Iron Man might be planning to rear its head at The Game Awards, if EA Motive's updated website is any indication",
+      "url": "https://www.eurogamer.net/iron-man-game-awards-ea-motive",
+      "source": "Eurogamer",
+      "published_at": "2026-11-27T20:27:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Digital Extremes says Warframe's imminent Tau update is practically big enough to be a sequel as it reveals new details, including dog walking",
+      "url": "https://www.eurogamer.net/warframe-tau-dev-stream-december-9th",
+      "source": "Eurogamer",
+      "published_at": "2026-11-27T20:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "After falling in love with PS5 haptic feedback in GTA 6, I'm eyeing these Black Friday deals on DualSense controllers",
+      "url": "https://www.pcgamer.com/hardware/controllers/after-falling-in-love-with-ps5-haptic-feedback-in-gta-6-im-eyeing-these-black-friday-deals-on-dualsense-controllers/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-27T19:40:21Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "After drawing ire for selling new Mass Effect merch following BioWare closure, EA is now flogging new Dragon Age tat too",
+      "url": "https://www.eurogamer.net/dragon-age-mass-effect-bioware-closure-ea-new-merchandise",
+      "source": "Eurogamer",
+      "published_at": "2026-11-27T19:20:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Yooka-Laylee studio explains upcoming Definitive Edition's absence on Xbox to 'frustrated' fans",
+      "url": "https://www.eurogamer.net/yooka-laylee-skipping-xbox-costs",
+      "source": "Eurogamer",
+      "published_at": "2026-11-27T19:08:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Good coffee is one of our last comforts in a cruel universe, which is why I'm tempted by this Black Friday coffee grinder deal",
+      "url": "https://www.pcgamer.com/hardware/good-coffee-is-one-of-our-last-comforts-in-a-cruel-universe-which-is-why-im-tempted-by-this-black-friday-coffee-grinder-deal/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-27T18:23:33Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Rumored The Simpsons: Hit & Run remake may be in trouble after one developer says their \"mind-blowingly awesome\" project is cancelled",
+      "url": "https://www.eurogamer.net/simpsons-hit-and-run-remake-rumored-cancelled",
+      "source": "Eurogamer",
+      "published_at": "2026-11-27T18:08:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "The PC specs for Mass Effect-like RPG Exodus are basically bearable for a blockbuster space opera in 2026",
       "url": "https://www.rockpapershotgun.com/the-pc-specs-for-mass-effect-like-rpg-exodus-are-basically-bearable-for-a-blockbuster-space-opera-in-2026",
@@ -504,71 +567,6 @@
       "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-truffade-thrax-andrew-node-no-flusher/",
       "source": "PC Gamer",
       "published_at": "2026-11-26T14:37:19Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "These budget-friendly pads are the cheapest, quickest way to instantly upgrade your setup for under $25",
-      "url": "https://www.pcgamer.com/hardware/game-pads/these-budget-friendly-pads-are-the-cheapest-quickest-way-to-instantly-upgrade-your-setup-for-under-usd25/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-26T14:20:36Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "We are already in a world where people think about promoting games as human-made, Citizen Sleeper creator says",
-      "url": "https://www.eurogamer.net/citizen-sleeper-creator-gen-ai-human-made-games-signet-city",
-      "source": "Eurogamer",
-      "published_at": "2026-11-26T14:18:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "After playing the game, 30% of polled GTA 6 players want to buy flowers for a loved one, 9% accidentally punched cats",
-      "url": "https://www.eurogamer.net/gta-6-30-percent-buy-flowers-punch-cats",
-      "source": "Eurogamer",
-      "published_at": "2026-11-26T14:09:10Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Hotfix 1.0.31",
-      "url": "https://store.steampowered.com/news/app/892970/view/1850460852985647",
-      "source": "Steam \u00b7 Valheim",
-      "published_at": "2026-11-26T14:06:26Z",
-      "games": [
-        "valheim"
-      ],
-      "kind": "patch",
-      "highlight": true
-    },
-    {
-      "title": "\"I'm betting on the sickos\" - Signet City plans to 'expand the scope of RPGs' by drawing on the success of Citizen Sleeper",
-      "url": "https://www.eurogamer.net/citizen-sleeper-signet-city-fungalpunk-1980s-rpg",
-      "source": "Eurogamer",
-      "published_at": "2026-11-26T13:54:50Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Fans report Umamusume: Pretty Derby AI clone brimming with ads, Cygames gets it taken offline",
-      "url": "https://www.eurogamer.net/umamusame-pretty-derby-ai-clone-taken-off-mobile-after-reports",
-      "source": "Eurogamer",
-      "published_at": "2026-11-26T13:15:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Should you participate in GTA 6's Safe Word mission?",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-safe-word-participate-or-not/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-26T13:03:16Z",
       "games": [],
       "kind": "news",
       "highlight": false
