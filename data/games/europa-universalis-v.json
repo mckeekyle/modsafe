@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T20:54:56Z",
+  "generated_at": "2026-11-27T21:51:05Z",
   "game": {
     "slug": "europa-universalis-v",
     "name": "Europa Universalis V",
@@ -104,7 +104,7 @@
         "1.3"
       ],
       "tagged_for_series": false,
-      "subscriptions": 50897,
+      "subscriptions": 50898,
       "mentions_patch": false,
       "newer_than_patch": true
     },
@@ -134,7 +134,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 60048,
+      "subscriptions": 60052,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -162,7 +162,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 49982,
+      "subscriptions": 49983,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -193,7 +193,7 @@
         "1.4"
       ],
       "tagged_for_series": true,
-      "subscriptions": 13672,
+      "subscriptions": 13671,
       "mentions_patch": false,
       "newer_than_patch": true
     },
@@ -220,7 +220,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 23541,
+      "subscriptions": 23540,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -247,7 +247,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 18641,
+      "subscriptions": 18642,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -278,7 +278,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 11622,
+      "subscriptions": 11626,
       "mentions_patch": false,
       "newer_than_patch": true
     },
@@ -335,11 +335,11 @@
       "sensitive": true,
       "status": "Likely safe",
       "base_status": "Likely safe",
-      "reason": "Updated on the Workshop on 2026-11-08, after 1.4 went live on 2026-10-28. It doesn't use Workshop version tags. Support is inferred from the update date. 1.4.9 is a hotfix within 1.4; hotfixes rarely break mods that already work on 1.4.",
+      "reason": "Updated on the Workshop on 2026-11-27, after 1.4 went live on 2026-10-28. It doesn't use Workshop version tags. Support is inferred from the update date. 1.4.9 is a hotfix within 1.4; hotfixes rarely break mods that already work on 1.4.",
       "breakage_reports": [],
       "release_tag": null,
       "release_name": "MEIOU and Taxes",
-      "release_published_at": "2026-11-08T08:55:40Z",
+      "release_published_at": "2026-11-27T21:44:45Z",
       "release_url": "https://steamcommunity.com/sharedfiles/filedetails/changelog/3735059838",
       "workshop_title": "MEIOU and Taxes",
       "workshop_tags": [
@@ -347,9 +347,9 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 6878,
+      "subscriptions": 6879,
       "mentions_patch": false,
-      "newer_than_patch": false
+      "newer_than_patch": true
     }
   ],
   "history": [
@@ -511,11 +511,11 @@
           "name": "MEIOU and Taxes",
           "status": "Likely safe",
           "release_tag": null,
-          "release_published_at": null,
+          "release_published_at": "2026-11-27T21:44:45Z",
           "mentions_patch": false,
           "first_release_tag": null,
-          "first_release_at": null,
-          "data_from": "2026-11-08T08:55:40Z",
+          "first_release_at": "2026-11-27T21:44:45Z",
+          "data_from": "2026-11-27T21:44:45Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -661,11 +661,11 @@
           "name": "MEIOU and Taxes",
           "status": "Likely safe",
           "release_tag": null,
-          "release_published_at": "2026-11-08T08:55:40Z",
+          "release_published_at": "2026-11-27T21:44:45Z",
           "mentions_patch": false,
           "first_release_tag": null,
-          "first_release_at": "2026-11-08T08:55:40Z",
-          "data_from": "2026-11-08T08:55:40Z",
+          "first_release_at": "2026-11-27T21:44:45Z",
+          "data_from": "2026-11-27T21:44:45Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -811,11 +811,11 @@
           "name": "MEIOU and Taxes",
           "status": "Likely safe",
           "release_tag": null,
-          "release_published_at": "2026-11-08T08:55:40Z",
+          "release_published_at": "2026-11-27T21:44:45Z",
           "mentions_patch": false,
           "first_release_tag": null,
-          "first_release_at": "2026-11-08T08:55:40Z",
-          "data_from": "2026-11-08T08:55:40Z",
+          "first_release_at": "2026-11-27T21:44:45Z",
+          "data_from": "2026-11-27T21:44:45Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -961,11 +961,11 @@
           "name": "MEIOU and Taxes",
           "status": "Likely safe",
           "release_tag": null,
-          "release_published_at": "2026-11-08T08:55:40Z",
+          "release_published_at": "2026-11-27T21:44:45Z",
           "mentions_patch": false,
           "first_release_tag": null,
-          "first_release_at": "2026-11-08T08:55:40Z",
-          "data_from": "2026-11-08T08:55:40Z",
+          "first_release_at": "2026-11-27T21:44:45Z",
+          "data_from": "2026-11-27T21:44:45Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -1111,11 +1111,11 @@
           "name": "MEIOU and Taxes",
           "status": "Likely safe",
           "release_tag": null,
-          "release_published_at": "2026-11-08T08:55:40Z",
+          "release_published_at": "2026-11-27T21:44:45Z",
           "mentions_patch": false,
           "first_release_tag": null,
-          "first_release_at": "2026-11-08T08:55:40Z",
-          "data_from": "2026-11-08T08:55:40Z",
+          "first_release_at": "2026-11-27T21:44:45Z",
+          "data_from": "2026-11-27T21:44:45Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -1261,11 +1261,11 @@
           "name": "MEIOU and Taxes",
           "status": "Likely safe",
           "release_tag": null,
-          "release_published_at": "2026-11-08T08:55:40Z",
+          "release_published_at": "2026-11-27T21:44:45Z",
           "mentions_patch": false,
           "first_release_tag": null,
-          "first_release_at": "2026-11-08T08:55:40Z",
-          "data_from": "2026-11-08T08:55:40Z",
+          "first_release_at": "2026-11-27T21:44:45Z",
+          "data_from": "2026-11-27T21:44:45Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -1411,11 +1411,11 @@
           "name": "MEIOU and Taxes",
           "status": "Likely safe",
           "release_tag": null,
-          "release_published_at": "2026-11-08T08:55:40Z",
+          "release_published_at": "2026-11-27T21:44:45Z",
           "mentions_patch": false,
           "first_release_tag": null,
-          "first_release_at": "2026-11-08T08:55:40Z",
-          "data_from": "2026-11-08T08:55:40Z",
+          "first_release_at": "2026-11-27T21:44:45Z",
+          "data_from": "2026-11-27T21:44:45Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -1561,11 +1561,11 @@
           "name": "MEIOU and Taxes",
           "status": "Likely safe",
           "release_tag": null,
-          "release_published_at": "2026-11-08T08:55:40Z",
+          "release_published_at": "2026-11-27T21:44:45Z",
           "mentions_patch": false,
           "first_release_tag": null,
-          "first_release_at": "2026-11-08T08:55:40Z",
-          "data_from": "2026-11-08T08:55:40Z",
+          "first_release_at": "2026-11-27T21:44:45Z",
+          "data_from": "2026-11-27T21:44:45Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -1711,11 +1711,11 @@
           "name": "MEIOU and Taxes",
           "status": "Likely safe",
           "release_tag": null,
-          "release_published_at": "2026-11-08T08:55:40Z",
+          "release_published_at": "2026-11-27T21:44:45Z",
           "mentions_patch": false,
           "first_release_tag": null,
-          "first_release_at": "2026-11-08T08:55:40Z",
-          "data_from": "2026-11-08T08:55:40Z",
+          "first_release_at": "2026-11-27T21:44:45Z",
+          "data_from": "2026-11-27T21:44:45Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -1861,11 +1861,11 @@
           "name": "MEIOU and Taxes",
           "status": "Likely safe",
           "release_tag": null,
-          "release_published_at": "2026-11-08T08:55:40Z",
+          "release_published_at": "2026-11-27T21:44:45Z",
           "mentions_patch": false,
           "first_release_tag": null,
-          "first_release_at": "2026-11-08T08:55:40Z",
-          "data_from": "2026-11-08T08:55:40Z",
+          "first_release_at": "2026-11-27T21:44:45Z",
+          "data_from": "2026-11-27T21:44:45Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -2011,11 +2011,11 @@
           "name": "MEIOU and Taxes",
           "status": "Likely safe",
           "release_tag": null,
-          "release_published_at": "2026-11-08T08:55:40Z",
+          "release_published_at": "2026-11-27T21:44:45Z",
           "mentions_patch": false,
           "first_release_tag": null,
-          "first_release_at": "2026-11-08T08:55:40Z",
-          "data_from": "2026-11-08T08:55:40Z",
+          "first_release_at": "2026-11-27T21:44:45Z",
+          "data_from": "2026-11-27T21:44:45Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
@@ -2161,11 +2161,11 @@
           "name": "MEIOU and Taxes",
           "status": "Likely safe",
           "release_tag": null,
-          "release_published_at": "2026-11-08T08:55:40Z",
+          "release_published_at": "2026-11-27T21:44:45Z",
           "mentions_patch": false,
           "first_release_tag": null,
-          "first_release_at": "2026-11-08T08:55:40Z",
-          "data_from": "2026-11-08T08:55:40Z",
+          "first_release_at": "2026-11-27T21:44:45Z",
+          "data_from": "2026-11-27T21:44:45Z",
           "first_mention_tag": null,
           "first_mention_at": null
         }
