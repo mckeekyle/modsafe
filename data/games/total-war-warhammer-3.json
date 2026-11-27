@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T07:32:25Z",
+  "generated_at": "2026-11-27T18:06:56Z",
   "game": {
     "slug": "total-war-warhammer-3",
     "name": "Total War: WARHAMMER III",
@@ -42,8 +42,8 @@
       "tracked": true,
       "sensitive": true,
       "status": "Breakage reported",
-      "base_status": "Just patched, wait",
-      "reason": "Last Workshop update 2026-07-19, before 9.0.5 went live on 2026-11-03. It doesn't use Workshop version tags. 9.0.5 has been out 23 days with no update needed so far; no breakage signal available. Steam's public build changed on 2026-11-20 (build 26810549) with no announcement, and this tool hasn't released since; wait for confirmation. Hand-checked 2026-11-22: Since Patch 9.0.5 (Nov 3), at least seven players have reported in Workshop comments (Nov 7-19, in English, Chinese and Russian) that Mod Configuration Tool resets every mod's settings to defaults after a manual battle or loading a save. MCT hasn't updated since Jul 19. Mods configured through MCT may quietly run on default settings until it updates.",
+      "base_status": "Likely safe",
+      "reason": "Last Workshop update 2026-07-19, before 9.0.5 went live on 2026-11-03. It doesn't use Workshop version tags. 9.0.5 has been out 24 days with no update needed so far; no breakage signal available. Note: Steam's public build changed on 2026-11-20 (build 26810549) without an announcement; this status reflects the last announced patch, so recheck if you hit problems. Hand-checked 2026-11-22: Since Patch 9.0.5 (Nov 3), at least seven players have reported in Workshop comments (Nov 7-19, in English, Chinese and Russian) that Mod Configuration Tool resets every mod's settings to defaults after a manual battle or loading a save. MCT hasn't updated since Jul 19. Mods configured through MCT may quietly run on default settings until it updates.",
       "breakage_reports": [],
       "release_tag": null,
       "release_name": "Mod Configuration Tool - v0.9 Beta",
@@ -56,7 +56,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 811159,
+      "subscriptions": 811394,
       "mentions_patch": false,
       "newer_than_patch": false,
       "hand_check": {
@@ -78,9 +78,9 @@
       "workshop_id": "2859968660",
       "tracked": true,
       "sensitive": true,
-      "status": "Just patched, wait",
-      "base_status": "Just patched, wait",
-      "reason": "Updated on the Workshop on 2026-11-09, after 9.0.5 went live on 2026-11-03. It doesn't use Workshop version tags. Support is inferred from the update date. Steam's public build changed on 2026-11-20 (build 26810549) with no announcement, and this tool hasn't released since; wait for confirmation.",
+      "status": "Likely safe",
+      "base_status": "Likely safe",
+      "reason": "Updated on the Workshop on 2026-11-09, after 9.0.5 went live on 2026-11-03. It doesn't use Workshop version tags. Support is inferred from the update date. Note: Steam's public build changed on 2026-11-20 (build 26810549) without an announcement; this status reflects the last announced patch, so recheck if you hit problems.",
       "breakage_reports": [],
       "release_tag": null,
       "release_name": "MIXER - Mixu's Unlocker",
@@ -93,7 +93,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 798357,
+      "subscriptions": 798539,
       "mentions_patch": false,
       "newer_than_patch": true
     },
@@ -121,7 +121,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 335651,
+      "subscriptions": 335742,
       "mentions_patch": false,
       "newer_than_patch": true
     },
@@ -134,9 +134,9 @@
       "workshop_id": "2791750313",
       "tracked": true,
       "sensitive": true,
-      "status": "Just patched, wait",
-      "base_status": "Just patched, wait",
-      "reason": "Updated on the Workshop on 2026-11-15, after 9.0.5 went live on 2026-11-03. It doesn't use Workshop version tags. Support is inferred from the update date. Steam's public build changed on 2026-11-20 (build 26810549) with no announcement, and this tool hasn't released since; wait for confirmation.",
+      "status": "Likely safe",
+      "base_status": "Likely safe",
+      "reason": "Updated on the Workshop on 2026-11-15, after 9.0.5 went live on 2026-11-03. It doesn't use Workshop version tags. Support is inferred from the update date. Note: Steam's public build changed on 2026-11-20 (build 26810549) without an announcement; this status reflects the last announced patch, so recheck if you hit problems.",
       "breakage_reports": [],
       "release_tag": null,
       "release_name": "Radious Total War Mod - Part 1",
@@ -149,7 +149,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 216338,
+      "subscriptions": 216365,
       "mentions_patch": false,
       "newer_than_patch": true
     },
@@ -162,9 +162,9 @@
       "workshop_id": "3007996493",
       "tracked": true,
       "sensitive": true,
-      "status": "Just patched, wait",
-      "base_status": "Just patched, wait",
-      "reason": "Updated on the Workshop on 2026-11-17, after 9.0.5 went live on 2026-11-03. It doesn't use Workshop version tags. Support is inferred from the update date. Steam's public build changed on 2026-11-20 (build 26810549) with no announcement, and this tool hasn't released since; wait for confirmation.",
+      "status": "Likely safe",
+      "base_status": "Likely safe",
+      "reason": "Updated on the Workshop on 2026-11-17, after 9.0.5 went live on 2026-11-03. It doesn't use Workshop version tags. Support is inferred from the update date. Note: Steam's public build changed on 2026-11-20 (build 26810549) without an announcement; this status reflects the last announced patch, so recheck if you hit problems.",
       "breakage_reports": [],
       "release_tag": null,
       "release_name": "Immortal Empires Expanded",
@@ -177,7 +177,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 246475,
+      "subscriptions": 246598,
       "mentions_patch": false,
       "newer_than_patch": true
     },
@@ -190,9 +190,9 @@
       "workshop_id": "2802810577",
       "tracked": true,
       "sensitive": true,
-      "status": "Just patched, wait",
-      "base_status": "Just patched, wait",
-      "reason": "Updated on the Workshop on 2026-11-09, after 9.0.5 went live on 2026-11-03. It doesn't use Workshop version tags. Support is inferred from the update date. Steam's public build changed on 2026-11-20 (build 26810549) with no announcement, and this tool hasn't released since; wait for confirmation.",
+      "status": "Likely safe",
+      "base_status": "Likely safe",
+      "reason": "Updated on the Workshop on 2026-11-09, after 9.0.5 went live on 2026-11-03. It doesn't use Workshop version tags. Support is inferred from the update date. Note: Steam's public build changed on 2026-11-20 (build 26810549) without an announcement; this status reflects the last announced patch, so recheck if you hit problems.",
       "breakage_reports": [],
       "release_tag": null,
       "release_name": "Mixu's Legendary Lords",
@@ -205,7 +205,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 256202,
+      "subscriptions": 256267,
       "mentions_patch": false,
       "newer_than_patch": true
     },
@@ -218,9 +218,9 @@
       "workshop_id": "2854819509",
       "tracked": true,
       "sensitive": true,
-      "status": "Just patched, wait",
-      "base_status": "Just patched, wait",
-      "reason": "Last Workshop update 2026-09-24, before 9.0.5 went live on 2026-11-03. It doesn't use Workshop version tags. 9.0.5 has been out 23 days with no update needed so far; no breakage signal available. Steam's public build changed on 2026-11-20 (build 26810549) with no announcement, and this tool hasn't released since; wait for confirmation.",
+      "status": "Likely safe",
+      "base_status": "Likely safe",
+      "reason": "Last Workshop update 2026-09-24, before 9.0.5 went live on 2026-11-03. It doesn't use Workshop version tags. 9.0.5 has been out 24 days with no update needed so far; no breakage signal available. Note: Steam's public build changed on 2026-11-20 (build 26810549) without an announcement; this status reflects the last announced patch, so recheck if you hit problems.",
       "breakage_reports": [],
       "release_tag": null,
       "release_name": "Recruit Defeated Legendary Lords",
@@ -233,7 +233,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 561550,
+      "subscriptions": 561594,
       "mentions_patch": false,
       "newer_than_patch": false
     },
@@ -246,9 +246,9 @@
       "workshop_id": "2789858755",
       "tracked": true,
       "sensitive": true,
-      "status": "Just patched, wait",
-      "base_status": "Just patched, wait",
-      "reason": "Last Workshop update 2026-09-24, before 9.0.5 went live on 2026-11-03. It doesn't use Workshop version tags. 9.0.5 has been out 23 days with no update needed so far; no breakage signal available. Steam's public build changed on 2026-11-20 (build 26810549) with no announcement, and this tool hasn't released since; wait for confirmation.",
+      "status": "Likely safe",
+      "base_status": "Likely safe",
+      "reason": "Last Workshop update 2026-09-24, before 9.0.5 went live on 2026-11-03. It doesn't use Workshop version tags. 9.0.5 has been out 24 days with no update needed so far; no breakage signal available. Note: Steam's public build changed on 2026-11-20 (build 26810549) without an announcement; this status reflects the last announced patch, so recheck if you hit problems.",
       "breakage_reports": [],
       "release_tag": null,
       "release_name": "Better Camera Mod",
@@ -261,7 +261,7 @@
       ],
       "version_tags": [],
       "tagged_for_series": false,
-      "subscriptions": 605032,
+      "subscriptions": 605124,
       "mentions_patch": false,
       "newer_than_patch": false
     }
@@ -295,7 +295,7 @@
           "id": "mct",
           "short": "MCT",
           "name": "Mod Configuration Tool (MCT)",
-          "status": "Just patched, wait",
+          "status": "Likely safe",
           "release_tag": null,
           "release_published_at": null,
           "mentions_patch": false,
@@ -309,7 +309,7 @@
           "id": "mixer",
           "short": "MIXER",
           "name": "MIXER - Mixu's Unlocker",
-          "status": "Just patched, wait",
+          "status": "Likely safe",
           "release_tag": null,
           "release_published_at": "2026-11-09T17:29:06Z",
           "mentions_patch": false,
@@ -337,7 +337,7 @@
           "id": "radious",
           "short": "Radious",
           "name": "Radious Total War Mod (Part 1)",
-          "status": "Just patched, wait",
+          "status": "Likely safe",
           "release_tag": null,
           "release_published_at": "2026-11-15T17:03:12Z",
           "mentions_patch": false,
@@ -351,7 +351,7 @@
           "id": "iee",
           "short": "IEE",
           "name": "Immortal Empires Expanded",
-          "status": "Just patched, wait",
+          "status": "Likely safe",
           "release_tag": null,
           "release_published_at": "2026-11-17T19:57:18Z",
           "mentions_patch": false,
@@ -365,7 +365,7 @@
           "id": "mixu-ll",
           "short": "Mixu's LL",
           "name": "Mixu's Legendary Lords",
-          "status": "Just patched, wait",
+          "status": "Likely safe",
           "release_tag": null,
           "release_published_at": "2026-11-09T17:13:15Z",
           "mentions_patch": false,
@@ -379,7 +379,7 @@
           "id": "recruit-defeated-ll",
           "short": "Recruit Defeated LL",
           "name": "Recruit Defeated Legendary Lords",
-          "status": "Just patched, wait",
+          "status": "Likely safe",
           "release_tag": null,
           "release_published_at": null,
           "mentions_patch": false,
@@ -393,7 +393,7 @@
           "id": "better-camera",
           "short": "Better Camera",
           "name": "Better Camera Mod",
-          "status": "Just patched, wait",
+          "status": "Likely safe",
           "release_tag": null,
           "release_published_at": null,
           "mentions_patch": false,
@@ -2089,6 +2089,56 @@
         {
           "short": "Better Camera",
           "status": "Just patched, wait",
+          "release_tag": null
+        }
+      ]
+    },
+    {
+      "at": "2026-11-27T18:06:56Z",
+      "patch": "Patch 9.0.5",
+      "patch_key": "9.0.5",
+      "patch_published_at": "2026-11-03T10:58:35Z",
+      "patch_url": "https://store.steampowered.com/news/app/1142710/view/1847920302251502",
+      "verdict": "Breakage reported",
+      "frameworks": [
+        {
+          "short": "MCT",
+          "status": "Breakage reported",
+          "release_tag": null
+        },
+        {
+          "short": "MIXER",
+          "status": "Likely safe",
+          "release_tag": null
+        },
+        {
+          "short": "SFO",
+          "status": "Likely safe",
+          "release_tag": null
+        },
+        {
+          "short": "Radious",
+          "status": "Likely safe",
+          "release_tag": null
+        },
+        {
+          "short": "IEE",
+          "status": "Likely safe",
+          "release_tag": null
+        },
+        {
+          "short": "Mixu's LL",
+          "status": "Likely safe",
+          "release_tag": null
+        },
+        {
+          "short": "Recruit Defeated LL",
+          "status": "Likely safe",
+          "release_tag": null
+        },
+        {
+          "short": "Better Camera",
+          "status": "Likely safe",
           "release_tag": null
         }
       ]

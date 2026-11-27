@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T07:50:47Z",
+  "generated_at": "2026-11-27T18:05:16Z",
   "game": {
     "slug": "repo",
     "name": "R.E.P.O.",
@@ -903,6 +903,12 @@
   ],
   "news": [
     {
+      "title": "DEVLOG TIME!",
+      "url": "https://store.steampowered.com/news/app/3241660/view/1850460852989500",
+      "published_at": "2026-11-27T12:50:18Z",
+      "is_patch": false
+    },
+    {
       "title": "R.E.P.O. v0.5.4",
       "url": "https://store.steampowered.com/news/app/3241660/view/1850460852980616",
       "published_at": "2026-11-25T10:26:33Z",
@@ -954,12 +960,6 @@
       "title": "R.E.P.O. v0.4.2",
       "url": "https://store.steampowered.com/news/app/3241660/view/1832065502823937",
       "published_at": "2026-05-12T13:59:55Z",
-      "is_patch": true
-    },
-    {
-      "title": "R.E.P.O. v0.4.1",
-      "url": "https://store.steampowered.com/news/app/3241660/view/1832065502817573",
-      "published_at": "2026-05-09T14:03:19Z",
       "is_patch": true
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T07:32:40Z",
+  "generated_at": "2026-11-27T18:07:10Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,190 @@
     }
   ],
   "items": [
+    {
+      "title": "The PC specs for Mass Effect-like RPG Exodus are basically bearable for a blockbuster space opera in 2026",
+      "url": "https://www.rockpapershotgun.com/the-pc-specs-for-mass-effect-like-rpg-exodus-are-basically-bearable-for-a-blockbuster-space-opera-in-2026",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-27T17:30:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Rumoured Simpsons: Hit & Run remake could be dead in the water, as New Radical Games devs suggest their unannounced game's been cancelled",
+      "url": "https://www.rockpapershotgun.com/rumoured-simpsons-hit-run-remake-could-be-dead-in-the-water-as-new-radical-games-devs-suggest-their-unannounced-games-been-cancelled",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-27T17:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Don't expect a GTA set outside the USA anytime soon, as Rockstar has \"not had a lot of conversations over doing it anywhere else\"",
+      "url": "https://www.eurogamer.net/gta-outside-usa-unlikely-rockstar-not-had-conversations-over-anywhere-else",
+      "source": "Eurogamer",
+      "published_at": "2026-11-27T16:46:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Silksong is getting a free expansion in 2 weeks",
+      "url": "https://www.pcgamer.com/games/action/silksong-is-getting-a-free-expansion-its-first-content-update-since-launch-in-2-weeks/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-27T16:31:53Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Warhammer 40,000: Dawn of War 4 gets a model painter demo, so you can make a mess of your Orks, Necrons, Space Marines and AdMech before they even hit the battlefield",
+      "url": "https://www.rockpapershotgun.com/warhammer-40000-dawn-of-war-4-gets-a-model-painter-demo-so-you-can-make-a-mess-of-your-orks-necrons-space-marines-and-admech-before-they-even-hit-the-battlefield",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-27T16:31:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Go fishing and fire Hornet out of a cannon in Silksong's December-bound Sea of Sorrow expansion, which Team Cherry say is \"unlike anything we\u2019ve done before\"",
+      "url": "https://www.rockpapershotgun.com/go-fishing-and-fire-hornet-out-of-a-cannon-in-silksongs-december-bound-sea-of-sorrow-expansion-which-team-cherry-say-is-unlike-anything-weve-done-before",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-27T15:58:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Keep the lighthouse on and the villagers obedient in Glagstone, an eerie island city-builder with Macintosh-style graphics",
+      "url": "https://www.rockpapershotgun.com/keep-the-lighthouse-on-and-the-villagers-obedient-in-glagstone-an-eerie-island-city-builder-with-macintosh-style-graphics",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-27T15:22:50Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Hollow Knight: Silksong's first big expansion, Sea of Sorrow, comes out in two weeks - and seems to include a fishing minigame",
+      "url": "https://www.eurogamer.net/hollow-knight-silksongs-first-big-expansion-sea-of-sorrows-comes-out-in-two-weeks-and-seems-to-include-a-fishing-minigame",
+      "source": "Eurogamer",
+      "published_at": "2026-11-27T15:16:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "If you're not using Auto Drive and Cinematic Camera in GTA 6, you're missing out on some of the best experiences in the game",
+      "url": "https://www.eurogamer.net/gta-6-cinematic-camera-hidden-gem",
+      "source": "Eurogamer",
+      "published_at": "2026-11-27T14:43:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Make the PC gamer in your life very happy with the best Black Friday gift ideas under $50",
+      "url": "https://www.pcgamer.com/hardware/make-the-pc-gamer-in-your-life-very-happy-with-the-best-black-friday-gift-ideas-under-usd50/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-27T14:21:18Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "It\u2019s All About You! \u2014 Cyberpunk: Edgerunners 2: The Next Edgerunners Legend",
+      "url": "https://store.steampowered.com/news/app/1091500/view/1850460852989830",
+      "source": "Steam \u00b7 Cyberpunk",
+      "published_at": "2026-11-27T14:20:26Z",
+      "games": [
+        "cyberpunk-2077"
+      ],
+      "kind": "announcement",
+      "highlight": false
+    },
+    {
+      "title": "Physical media is cool again, baby, so drop the needle on some videogame vinyls this Black Friday",
+      "url": "https://www.pcgamer.com/hardware/physical-media-is-cool-again-baby-so-drop-the-needle-on-some-videogame-vinyls-this-black-friday/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-27T12:56:27Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "\"A new era\" for Vermintide 2 modding dawneth, as Fatshark release powerful new tools for custom levels, models and animations",
+      "url": "https://www.rockpapershotgun.com/a-new-era-for-vermintide-2-modding-dawneth-as-fatshark-release-powerful-new-tools-for-custom-levels-models-and-animations",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-27T12:52:30Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "DEVLOG TIME!",
+      "url": "https://store.steampowered.com/news/app/3241660/view/1850460852989500",
+      "source": "Steam \u00b7 R.E.P.O.",
+      "published_at": "2026-11-27T12:50:18Z",
+      "games": [
+        "repo"
+      ],
+      "kind": "announcement",
+      "highlight": false
+    },
+    {
+      "title": "At last, I've finally played Faraway, an enigma I've been waiting 16 years to see",
+      "url": "https://www.eurogamer.net/faraway-eliss-annapurna-interactive-16-years-finally-here",
+      "source": "Eurogamer",
+      "published_at": "2026-11-27T12:33:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Are you a warlock tired of being summon-kicked in World of Warcraft: Forever? There's now a mod to fight back with",
+      "url": "https://www.eurogamer.net/world-of-warcraft-forever-summon-kicking-warlock-addon",
+      "source": "Eurogamer",
+      "published_at": "2026-11-27T12:09:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Drone Pilots have come to Cyber Knights: Flashpoint, the stealth tactics game's \"most complex\" class yet, alongside a pet system and the promise of \"assassin cats\"",
+      "url": "https://www.rockpapershotgun.com/drone-pilots-have-come-to-cyber-knights-flashpoint-the-stealth-tactics-games-most-complex-class-yet-alongside-a-pet-system-and-the-promise-of-assassin-cats",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-27T12:00:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Rockstar boss \"so grateful\" to have kept GTA 6's big prologue twist a secret - and reveals Tom\u00e1s' story could have been very different",
+      "url": "https://www.eurogamer.net/gta-6-rockstar-debated-changing-jason-lucias-big-secret",
+      "source": "Eurogamer",
+      "published_at": "2026-11-27T11:31:00Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "\"Does changing where games run cross a legal line?\" Microsoft-owned Github ask in now-deleted post celebrating GTA 6's effect on PC port-focused PS5 emulator",
+      "url": "https://www.rockpapershotgun.com/does-changing-where-games-run-cross-a-legal-line-microsoft-owned-github-ask-in-now-deleted-post-celebrating-gta-6s-effect-on-pc-port-focused-ps5-emulator",
+      "source": "Rock Paper Shotgun",
+      "published_at": "2026-11-27T11:27:40Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Marvelous, developer of the Story of Seasons series, opens up voluntary redundancy scheme as it seeks to reduce headcount by 65 employees",
+      "url": "https://www.eurogamer.net/marvelous-developer-volentary-redundancy-amidst-console-business-restructuring",
+      "source": "Eurogamer",
+      "published_at": "2026-11-27T09:52:10Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
     {
       "title": "Witcher 3 Remastered patch has lighting fixes, sign nerfs, and gets rid of a nasty werewolf bug",
       "url": "https://www.pcgamer.com/games/the-witcher/witcher-3-remastered-patch-has-lighting-fixes-sign-nerfs-and-gets-rid-of-a-nasty-werewolf-bug/",
@@ -385,188 +569,6 @@
       "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-safe-word-participate-or-not/",
       "source": "PC Gamer",
       "published_at": "2026-11-26T13:03:16Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Fed up of Steam's lack of action regarding AI slop? Maybe you should take a look at the 'Games Without AI' event, instead",
-      "url": "https://www.eurogamer.net/games-without-ai-steam-event",
-      "source": "Eurogamer",
-      "published_at": "2026-11-26T12:22:30Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Ubisoft reportedly goes all in on company-wide generative-AI use, and if developers don't want to use it, they have to explain why in detail",
-      "url": "https://www.eurogamer.net/ubisoft-reportedly-goes-all-in-on-company-wide-generative-ai-use-and-if-developers-dont-want-to-use-it-they-have-to-explain-why-in-detail",
-      "source": "Eurogamer",
-      "published_at": "2026-11-26T12:15:40Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "\"Clearly not everything has gone well\" during Fable's lengthy creation, says Playground boss, but the \"original vision\" remains intact despite taking cues from other RPGs",
-      "url": "https://www.rockpapershotgun.com/clearly-not-everything-has-gone-well-during-fables-lengthy-creation-says-playground-boss-but-the-original-vision-remains-intact-despite-taking-cues-from-other-rpgs",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-26T12:07:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Forget the turkey, the best thing on your plate this Thanksgiving is this RTX 5070 laptop for just $1,300",
-      "url": "https://www.pcgamer.com/hardware/gaming-laptops/forget-the-turkey-the-best-thing-on-your-plate-this-thanksgiving-is-this-rtx-5070-laptop-for-just-usd1-299/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-26T12:00:26Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "WoW: Forever fixes one of its most annoying endgame quests the literal day after I do it",
-      "url": "https://www.pcgamer.com/games/world-of-warcraft/wow-forever-fixes-one-of-its-most-annoying-endgame-quests-the-literal-day-after-i-do-it/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-26T11:11:17Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Blizzard adjusts popular World of Warcraft: Forever Battleground to stop players power-grinding rewards",
-      "url": "https://www.eurogamer.net/world-of-warcraft-forever-alterac-valley-battleground-patched",
-      "source": "Eurogamer",
-      "published_at": "2026-11-26T10:46:10Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "GTA 6 reinvigorates PlayStation 5 and Xbox Series S/X console sales in the US, even at their inflated prices",
-      "url": "https://www.eurogamer.net/playstation-5-xbox-series-s-x-console-hardware-sales-gta-6",
-      "source": "Eurogamer",
-      "published_at": "2026-11-26T09:40:10Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "All Missing Persons locations in GTA 6",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-missing-persons-locations/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-26T05:24:13Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The latest adult game in the Muv-Luv series has some woeful AI translation and players aren't happy about it",
-      "url": "https://www.pcgamer.com/games/visual-novel/the-latest-adult-game-in-the-muv-luv-series-has-some-woeful-ai-translation-and-players-arent-happy-about-it/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-26T05:03:03Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "GTA 6 has weird purple streetlights because actual Florida screwed up its streetlights",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-has-weird-purple-streetlights-because-actual-florida-screwed-up-its-streetlights/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-25T22:36:12Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Warhammer Survivors update buffs XP and weapons, nerfs those damn Beasts of Nurgle",
-      "url": "https://www.pcgamer.com/games/roguelike/warhammer-survivors-update-buffs-xp-and-weapons-nerfs-those-damn-beasts-of-nurgle/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-25T22:32:23Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Capcom's quirky dinosaur-fighting hero shooter is shutting down in 2027",
-      "url": "https://www.pcgamer.com/games/third-person-shooter/capcoms-quirky-dinosaur-fighting-hero-shooter-is-shutting-down-in-2027/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-25T21:37:51Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Trump admin didn't investigate Jensen Huang before pushing Nvidia to bring him back: 'What does that mean, had Huang been investigated? For what?'",
-      "url": "https://www.pcgamer.com/software/ai/trump-admin-didnt-investigate-jensen-huang-before-pushing-nvidia-to-bring-him-back-what-does-that-mean-had-huang-been-investigated-for-what/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-25T21:31:41Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "GTA 6 vault: How to open them during big bank jobs",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-vault-how-to-open/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-25T21:31:26Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Deceased BBC football commentator resurrected with AI for EA Sports FC: The family says it's a 'touching tribute' but some fans call it 'gross' and 'bleak'",
-      "url": "https://www.pcgamer.com/software/ai/deceased-bbc-football-commentator-resurrected-with-ai-for-ea-sports-fc-the-family-says-its-a-touching-tribute-but-some-fans-call-it-gross-and-bleak/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-25T20:23:51Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "The Fable reboot had to look beyond Lionhead's RPG trilogy because games like The Witcher 3 \"became the gold standard\"",
-      "url": "https://www.eurogamer.net/fable-the-witcher-3-gold-standard",
-      "source": "Eurogamer",
-      "published_at": "2026-11-25T19:57:10Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "As the US Treasury suffers a cybersecurity breach, its chief tech guy is vibecoding a Civilization clone",
-      "url": "https://www.pcgamer.com/software/ai/as-the-us-treasury-suffers-a-cybersecurity-breach-its-chief-tech-guy-is-vibecoding-a-civilization-clone/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-25T19:00:25Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Original Devil May Cry and Bayonetta director Hideki Kamiya really wants Konami to let him make a \"truly insane\" Castlevania game",
-      "url": "https://www.eurogamer.net/hideki-kamiya-konami-truly-insane-castlevania",
-      "source": "Eurogamer",
-      "published_at": "2026-11-25T18:55:20Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Nominate us for a 2026 Steam Award!",
-      "url": "https://store.steampowered.com/news/app/3450310/view/1850460852982544",
-      "source": "Steam \u00b7 EU5",
-      "published_at": "2026-11-25T18:43:27Z",
-      "games": [
-        "europa-universalis-v"
-      ],
-      "kind": "announcement",
-      "highlight": false
-    },
-    {
-      "title": "EA is resurrecting a dead commentator with AI for EA Sports FC 27, years after his last appearance in a FIFA game",
-      "url": "https://www.eurogamer.net/ea-sports-fc27-dead-commentator-ai",
-      "source": "Eurogamer",
-      "published_at": "2026-11-25T17:59:00Z",
       "games": [],
       "kind": "news",
       "highlight": false
