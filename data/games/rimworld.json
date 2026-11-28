@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T20:53:51Z",
+  "generated_at": "2026-11-28T06:59:39Z",
   "game": {
     "slug": "rimworld",
     "name": "RimWorld",
@@ -573,6 +573,12 @@
   ],
   "news": [
     {
+      "title": "Bundle up with the RimWorld winter collection \u2744\ufe0f",
+      "url": "https://store.steampowered.com/news/app/294100/view/1850460852991371",
+      "published_at": "2026-11-27T20:56:57Z",
+      "is_patch": false
+    },
+    {
       "title": "It's RimWorld's birthday!",
       "url": "https://store.steampowered.com/news/app/294100/view/1847286114046348",
       "published_at": "2026-10-26T18:49:58Z",
@@ -624,12 +630,6 @@
       "title": "The winter merch collection is here! \u2744\ufe0f",
       "url": "https://store.steampowered.com/news/app/294100/view/1817483467037824",
       "published_at": "2025-11-27T21:09:31Z",
-      "is_patch": false
-    },
-    {
-      "title": "Happy birthday, RimWorld!",
-      "url": "https://store.steampowered.com/news/app/294100/view/1815034433047502",
-      "published_at": "2025-11-04T22:55:25Z",
       "is_patch": false
     }
   ],

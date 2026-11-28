@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T20:55:24Z",
+  "generated_at": "2026-11-28T07:01:00Z",
   "sources": [
     {
       "name": "PC Gamer",
@@ -21,6 +21,62 @@
     }
   ],
   "items": [
+    {
+      "title": "The better version of the wireless headset I love is $40 off right now",
+      "url": "https://www.pcgamer.com/hardware/the-better-version-of-the-wireless-headset-i-love-is-usd40-off-right-now/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-28T00:01:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "The canonical USB microphone is still great, and now a total steal for $70",
+      "url": "https://www.pcgamer.com/hardware/the-canonical-usb-microphone-is-still-great-and-now-a-total-steal-for-usd70/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-27T23:00:01Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "All I want for Christmas is plastic crap based on Armored Core",
+      "url": "https://www.pcgamer.com/games/action/all-i-want-for-christmas-is-plastic-crap-based-on-armored-core/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-27T22:24:20Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Skate is dropping seasons and season passes in favor of 'regular, agile content updates'",
+      "url": "https://www.pcgamer.com/games/sports/skate-is-dropping-seasons-and-season-passes-in-favor-of-regular-agile-content-updates/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-27T22:13:12Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "I went completely cordless and for $185 you can get better prices on better products than I did with these Black Friday PC peripheral deals",
+      "url": "https://www.pcgamer.com/hardware/i-went-completely-cordless-and-for-usd185-you-can-get-better-prices-on-better-products-than-i-did-with-these-black-friday-pc-peripheral-deals/",
+      "source": "PC Gamer",
+      "published_at": "2026-11-27T20:57:32Z",
+      "games": [],
+      "kind": "news",
+      "highlight": false
+    },
+    {
+      "title": "Bundle up with the RimWorld winter collection \u2744\ufe0f",
+      "url": "https://store.steampowered.com/news/app/294100/view/1850460852991371",
+      "source": "Steam \u00b7 RimWorld",
+      "published_at": "2026-11-27T20:56:57Z",
+      "games": [
+        "rimworld"
+      ],
+      "kind": "announcement",
+      "highlight": false
+    },
     {
       "title": "Marvel's Iron Man might be planning to rear its head at The Game Awards, if EA Motive's updated website is any indication",
       "url": "https://www.eurogamer.net/iron-man-game-awards-ea-motive",
@@ -76,7 +132,7 @@
       "highlight": false
     },
     {
-      "title": "Rumored The Simpsons: Hit & Run remake may be in trouble after one developer says their \"mind-blowingly awesome\" project is cancelled",
+      "title": "Rumoured The Simpsons: Hit & Run remake may be in trouble after one developer says their \"mind-blowingly awesome\" project is cancelled",
       "url": "https://www.eurogamer.net/simpsons-hit-and-run-remake-rumored-cancelled",
       "source": "Eurogamer",
       "published_at": "2026-11-27T18:08:20Z",
@@ -511,62 +567,6 @@
       "url": "https://www.pcgamer.com/games/grand-theft-auto-6/gta-6-alien-ufo-location/",
       "source": "PC Gamer",
       "published_at": "2026-11-26T16:28:36Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Rockstar workers vote overwhelmingly against union recognition",
-      "url": "https://www.pcgamer.com/gaming-industry/rockstar-workers-vote-overwhelmingly-against-union-recognition/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-26T16:13:54Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "How to steal the Bravado Banshee in GTA 6",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-bravado-banshee-location/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-26T16:02:38Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "GTA 6 reportedly sets massive livestreaming record, watched more in its first week than Elden Ring, Diablo 4, Valorant, and Lost Ark combined",
-      "url": "https://www.eurogamer.net/grand-theft-auto-6-first-week-hours-watched-record",
-      "source": "Eurogamer",
-      "published_at": "2026-11-26T15:32:20Z",
-      "games": [
-        "elden-ring"
-      ],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Rockstar Games employees vote against union recognition",
-      "url": "https://www.eurogamer.net/rockstar-games-employees-vote-against-union-recognition",
-      "source": "Eurogamer",
-      "published_at": "2026-11-26T15:29:00Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "Ubisoft now require their devs to explain why they aren't using genAI in game pitches, claims report, though the Assassin's Creed publishers deny they're mandating it",
-      "url": "https://www.rockpapershotgun.com/ubisoft-now-require-their-devs-to-explain-why-they-arent-using-genai-in-game-pitches-claims-report-though-the-assassins-creed-publishers-deny-theyre-mandating-it",
-      "source": "Rock Paper Shotgun",
-      "published_at": "2026-11-26T14:57:30Z",
-      "games": [],
-      "kind": "news",
-      "highlight": false
-    },
-    {
-      "title": "GTA 6 Truffade Thrax: How to get Andrew Node's supercharged version",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-truffade-thrax-andrew-node-no-flusher/",
-      "source": "PC Gamer",
-      "published_at": "2026-11-26T14:37:19Z",
       "games": [],
       "kind": "news",
       "highlight": false
